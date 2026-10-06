@@ -154,14 +154,10 @@ function loodWidget() {
 
 // ================================================================ 2b. Oldehove (scheefstand in graden)
 function oldehoveWidget() {
-  // Eigen, vereenvoudigde SVG-illustratie (geen foto) – geen rechtenproblemen.
-  const levels = [[440, 360, 108, 0], [360, 280, 104, 2], [280, 200, 100, 4], [200, 128, 96, 6]];
-  const body = levels.map(([y2, y1, w, inset]) => {
-    const x = 210 - w / 2;
-    return `<rect x="${x}" y="${y1}" width="${w}" height="${y2 - y1}" fill="url(#ol-bricks)" stroke="#7a3a26" stroke-width="2"/>
-          <rect x="${x - 4}" y="${y1 - 6}" width="${w + 8}" height="8" fill="#8c4a33"/>
-          <path d="M${210 - 14 + inset / 2} ${y2 - 22} v-34 a14 14 0 0 1 ${28 - inset} 0 v34 z" fill="#2b3440" opacity=".85"/>`;
-  }).join('\n          ');
+  // Silhouet van de Oldehove (aangeleverd door MV Funderingsscan), transparante PNG in public/assets/img.
+  // 214 x 455 px → in de tekening 360 hoog, onderkant gecentreerd op x=210, y=440.
+  const OL_H = 360;
+  const OL_W = Math.round(OL_H * 214 / 455 * 10) / 10;
   return `
 <figure class="sim sim-oldehove" data-sim="oldehove" aria-labelledby="sim-ol-title">
   <div class="sim-head">
@@ -172,17 +168,9 @@ function oldehoveWidget() {
   <div class="sim-lood-grid">
     <div class="sim-stage sim-stage-lood">
       <svg class="sim-drawing" viewBox="0 0 420 480" role="img" aria-label="Vereenvoudigde illustratie van de Oldehove met een verticale loodlijn; de toren kantelt naar rechts naarmate de ingestelde scheefstand groter wordt">
-        <defs>
-          <pattern id="ol-bricks" width="24" height="12" patternUnits="userSpaceOnUse">
-            <rect width="24" height="12" fill="#b0603f"/>
-            <path d="M0 0.5H24M0 6.5H24M0.5 0V6M12.5 6V12" stroke="#d9b49a" stroke-width=".8"/>
-          </pattern>
-        </defs>
         <rect x="0" y="440" width="420" height="40" fill="#cfd8df"/>
         <g data-ol-tower>
-          ${body}
-          <rect x="160" y="112" width="100" height="16" fill="#8c4a33"/>
-          <g fill="#8c4a33"><rect x="160" y="100" width="12" height="14"/><rect x="182" y="100" width="12" height="14"/><rect x="204" y="100" width="12" height="14"/><rect x="226" y="100" width="12" height="14"/><rect x="248" y="100" width="12" height="14"/></g>
+          <image href="/assets/img/oldehove-silhouet.png" x="${(210 - OL_W / 2).toFixed(1)}" y="${440 - OL_H}" width="${OL_W}" height="${OL_H}" preserveAspectRatio="xMidYMax meet"/>
         </g>
         <line class="sim-plumb" x1="210" y1="60" x2="210" y2="432"/>
         <path class="sim-bob" d="M203 418 L217 418 L210 436 Z"/>

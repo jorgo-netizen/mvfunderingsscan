@@ -401,7 +401,7 @@
         "answer": "Een loodmeting legt vast hoeveel een gevel, wand of toren afwijkt van de zuivere verticaal. De Oldehove in Leeuwarden laat dat principe goed zien: de toren begon al tijdens de bouw in de zestiende eeuw scheef te zakken en is nooit afgebouwd.",
         "widget": "oldehove",
         "widget_position": "after",
-        "body": "<p>Voor de illustratie hieronder gebruiken we een eigen, vereenvoudigde tekening van de Oldehove – geen foto en geen meting. Met de schuifregelaar kies je een scheefstand van 0 tot 4 graden en zie je hoe de toren steeds verder van de loodlijn afwijkt. De graden en de richting zijn voorbeeldwaarden; de simulatie zegt niets over de werkelijke scheefstand van de toren.</p>"
+        "body": "<p>Voor de illustratie hieronder gebruiken we een silhouet van de Oldehove – geen foto en geen meting. Met de schuifregelaar kies je een scheefstand van 0 tot 4 graden en zie je hoe de toren steeds verder van de loodlijn afwijkt. De graden en de richting zijn voorbeeldwaarden; de simulatie zegt niets over de werkelijke scheefstand van de toren.</p>"
       },
       {
         "id": "wat-is-een-loodmeting",
@@ -571,7 +571,7 @@
       },
       {
         "q": "Meet de Oldehove-simulatie de echte scheefstand van de toren?",
-        "a": "<p>Nee. De Oldehove dient alleen als herkenbaar voorbeeld van scheefstand. De illustratie is een eigen, vereenvoudigde tekening en de graden in de simulatie zijn voorbeeldwaarden.</p>"
+        "a": "<p>Nee. De Oldehove dient alleen als herkenbaar voorbeeld van scheefstand. De illustratie is een silhouet van de toren en de graden in de simulatie zijn voorbeeldwaarden.</p>"
       },
       {
         "q": "Valt een lintvoegwaterpassing onder fase 0 of fase 1?",

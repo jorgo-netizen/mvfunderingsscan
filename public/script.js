@@ -629,7 +629,7 @@
     const value = $('[data-ol-value]', sim);
     const text = $('[data-ol-text]', sim);
     const chips = $$('[data-ol-set]', sim);
-    const CX = 210; const BASE = 440; const H = 340; // toren van y=100 tot y=440
+    const CX = 210; const BASE = 440; const H = 360; // silhouet van y=80 (spits) tot y=440
     const VISUAL = 2.2; // visuele overdrijving zodat kleine hoeken zichtbaar worden
     let current = 0; let anim = null;
     const render = (deg) => {

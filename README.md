@@ -94,7 +94,7 @@ als het verzenden mislukt.
 
 ## Interactieve kennismodules
 
-`src/lib/widgets.mjs` bevat zeven interactieve modules: lintvoegwaterpassing (punten A–F), loodmeting (gevel), Oldehove-scheefstand (eigen SVG), klikbare scheuren met scheurpatronen, scheuranalyse-keuzehulp, vloerveldwaterpassing (raster met doorsnede) en de keuzehulp "Welke meting past bij mijn situatie?". Ze staan samen op `/funderingsmetingen/` en los op de kennisbankpagina's over lintvoegwaterpassing, loodmeting, vloerveldwaterpassing en scheurpatronen. Toevoegen aan een pagina: zet in een sectie `"widget": "lintvoeg" | "lood" | "oldehove" | "scheuren" | "scheurkeuze" | "vloerveld" | "keuze"`. Alle uitleg en FAQ's staan in de HTML; JavaScript voegt alleen de interactie toe. De meetwaarden zijn fictief en als zodanig gelabeld.
+`src/lib/widgets.mjs` bevat zeven interactieve modules: lintvoegwaterpassing (punten A–F), loodmeting (gevel), Oldehove-scheefstand (silhouet), klikbare scheuren met scheurpatronen, scheuranalyse-keuzehulp, vloerveldwaterpassing (raster met doorsnede) en de keuzehulp "Welke meting past bij mijn situatie?". Ze staan samen op `/funderingsmetingen/` en los op de kennisbankpagina's over lintvoegwaterpassing, loodmeting, vloerveldwaterpassing en scheurpatronen. Toevoegen aan een pagina: zet in een sectie `"widget": "lintvoeg" | "lood" | "oldehove" | "scheuren" | "scheurkeuze" | "vloerveld" | "keuze"`. Alle uitleg en FAQ's staan in de HTML; JavaScript voegt alleen de interactie toe. De meetwaarden zijn fictief en als zodanig gelabeld.
 
 ## Lokale SEO
 

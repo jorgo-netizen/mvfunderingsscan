@@ -275,6 +275,14 @@
         "body": "<p>De kanteling is in de simulatie sterk overdreven en de waarden zijn fictief. In de <a href=\"/funderingsmetingen/\">interactieve uitleg van funderingsmetingen</a> combineer je de loodmeting met een lintvoegwaterpassing en zie je welke meting bij jouw situatie past.</p>"
       },
       {
+        "id": "scheefstand-oldehove",
+        "h2": "Scheefstand zichtbaar gemaakt: de Oldehove in Leeuwarden",
+        "answer": "De Oldehove in Leeuwarden is een bekend voorbeeld van scheefstand: de toren begon al tijdens de bouw in de zestiende eeuw scheef te zakken en is nooit afgebouwd. Met de schuifregelaar hieronder zie je hoe een toren steeds verder van de loodlijn afwijkt – precies wat een loodmeting vastlegt.",
+        "widget": "oldehove",
+        "widget_position": "after",
+        "body": "<p>De simulatie gebruikt een silhouet van de Oldehove en meet <strong>niet</strong> de werkelijke scheefstand van de toren; de graden en de richting zijn voorbeeldwaarden. Alle meetmethoden naast elkaar zie je op de pagina <a href=\"/funderingsmetingen/\">funderingsmetingen uitgelegd</a>.</p>"
+      },
+      {
         "id": "welke-richting",
         "h2": "Welke richting wordt gemeten?",
         "answer": "Bij een loodmeting wordt gekeken of een bouwdeel naar voren of naar achteren helt, en waar zinvol ook of het naar links of naar rechts helt. Beide richtingen samen geven het volledige beeld.",

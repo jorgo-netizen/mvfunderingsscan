@@ -16,7 +16,7 @@ if errorlevel 1 (
   exit /b 1
 )
 echo.
-echo Klaar. 13 bestanden bijgewerkt.
+echo Klaar. 8 bestanden bijgewerkt (Oldehove-silhouet).
 echo Test lokaal: cd /d "%DOEL%" en daarna npm run dev
-echo Open http://localhost:3000/funderingsmetingen/
+echo Open http://localhost:3000/kennisbank/loodmeting/
 pause
