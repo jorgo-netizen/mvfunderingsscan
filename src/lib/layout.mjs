@@ -15,6 +15,7 @@ export const IMAGES = site.images;
 export const NAV = site.nav;
 export const SERVICES = site.services;
 export const DEFAULT_SIDE = site.defaultSide;
+export const GEMEENTEN = site.gemeenten || [];
 export const ORG_ID = `${DOMAIN}/#organisatie`;
 export const SITE_ID = `${DOMAIN}/#website`;
 
@@ -52,10 +53,22 @@ export const ICON_MAIL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M
 
 // ---------------------------------------------------------------- structured data
 
-const AREA = () => [
-  { '@type': 'AdministrativeArea', name: 'Friesland' },
-  { '@type': 'AdministrativeArea', name: 'Groningen' },
+const PROVINCE = (name) => ({ '@type': 'AdministrativeArea', name, containedInPlace: { '@type': 'Country', name: 'Nederland' } });
+const AREA = () => [PROVINCE('Friesland'), PROVINCE('Groningen')];
+
+/** Werkgebied op gemeenteniveau (voor de organisatie). */
+const AREA_DETAILED = () => [
+  ...AREA(),
+  ...GEMEENTEN.map((g) => ({ '@type': 'AdministrativeArea', name: `Gemeente ${g.naam}`, containedInPlace: { '@type': 'AdministrativeArea', name: g.provincie } })),
 ];
+
+/** Werkgebied voor één gemeente, inclusief kernen. */
+export function gemeenteArea(g) {
+  return [
+    { '@type': 'AdministrativeArea', name: `Gemeente ${g.naam}`, containedInPlace: { '@type': 'AdministrativeArea', name: g.provincie } },
+    ...g.kernen.map((k) => ({ '@type': 'Place', name: k.replace(/ \(Gn\)$/, ''), containedInPlace: { '@type': 'AdministrativeArea', name: `Gemeente ${g.naam}` } })),
+  ];
+}
 
 export function orgSchema() {
   return {
@@ -82,7 +95,7 @@ export function orgSchema() {
       opens: '09:00',
       closes: '17:00',
     }],
-    areaServed: AREA(),
+    areaServed: AREA_DETAILED(),
     knowsAbout: [
       'Funderingsonderzoek', 'Funderingsscan', 'Quick Scan fundering (fase 0)',
       'Funderingsonderzoek fase 1', 'Lintvoegwaterpassing', 'Loodmeting',
@@ -103,17 +116,18 @@ export function websiteSchema() {
   };
 }
 
-export function serviceSchema(key) {
+export function serviceSchema(key, area = null) {
   const s = SERVICES[key];
   const out = {
     '@type': 'Service',
     '@id': s.url + '#dienst',
     name: s.name,
+    ...(s.alternateName ? { alternateName: s.alternateName } : {}),
     serviceType: s.serviceType,
     description: s.description,
     url: s.url,
     provider: { '@id': ORG_ID },
-    areaServed: AREA(),
+    areaServed: area || AREA(),
   };
   if (s.offers) {
     const spec = { '@type': 'PriceSpecification', priceCurrency: 'EUR', ...s.offers };
@@ -192,10 +206,23 @@ export function head(page) {
 </head>`;
 }
 
+const CHEVRON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.4 8.6 12 13.2l4.6-4.6L18 10l-6 6-6-6z"/></svg>';
+
+/** Hoofdnavigatie met dropdowns. Alle links staan in de HTML (crawlbaar, ook zonder JS). */
 export function header(active) {
-  const nav = NAV.map(({ href, label }) => {
-    const cur = href === active ? ' aria-current="page" class="is-active"' : '';
-    return `<a href="${href}"${cur}>${label}</a>`;
+  const nav = NAV.map((item, i) => {
+    const kidsActive = (item.children || []).some((c) => c.href === active);
+    const isActive = item.href === active || kidsActive;
+    const self = item.href === active ? ' aria-current="page"' : '';
+    if (!item.children) {
+      return `<a class="nav-link${isActive ? ' is-active' : ''}" href="${item.href}"${self}>${item.label}</a>`;
+    }
+    const kids = item.children.map((c) => `<li><a href="${c.href}"${c.href === active ? ' aria-current="page"' : ''}>${c.label}</a></li>`).join('');
+    return `<div class="nav-item${isActive ? ' is-active' : ''}">
+        <a class="nav-link" href="${item.href}"${self}>${item.label}</a>
+        <button class="nav-sub-toggle" type="button" aria-expanded="false" aria-controls="sub-${i}" aria-label="Submenu ${item.label}">${CHEVRON}</button>
+        <ul class="nav-dropdown" id="sub-${i}">${kids}</ul>
+      </div>`;
   }).join('\n      ');
   return `<body>
 <a class="skip-link" href="#main">Direct naar de inhoud</a>
@@ -212,7 +239,7 @@ export function header(active) {
     <nav class="main-nav" id="mainNav" aria-label="Hoofdmenu">
       ${nav}
       <div class="nav-mobile-extra">
-        <a class="btn btn-gold btn-block" href="/contact/">Vraag een funderingsscan aan <span aria-hidden="true">→</span></a>
+        <a class="btn btn-gold btn-block" href="/funderingsscan-aanvragen/">Vraag een funderingsscan aan <span aria-hidden="true">→</span></a>
         <a class="btn btn-ghost-dark btn-block" href="${NAP.phone_href}">Bel ${NAP.phone_display}</a>
       </div>
     </nav>
@@ -222,7 +249,7 @@ export function header(active) {
         ${ICON_PHONE}
         <span>${NAP.phone_display}</span>
       </a>
-      <a class="btn btn-gold header-cta" href="/contact/"><span class="cta-long">Vraag een funderingsscan aan</span><span class="cta-short">Scan aanvragen</span></a>
+      <a class="btn btn-gold header-cta" href="/funderingsscan-aanvragen/"><span class="cta-long">Vraag een funderingsscan aan</span><span class="cta-short">Scan aanvragen</span></a>
       <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="mainNav">
         <span></span><span></span><span></span>
       </button>
@@ -233,39 +260,45 @@ export function header(active) {
 `;
 }
 
+const FOOTER_COLS = [
+  ['Onderzoek', [
+    ['/funderingsscan/', 'Funderingsscan'], ['/quickscan-fundering/', 'Quickscan fundering'],
+    ['/fase-0-funderingsonderzoek/', 'Fase 0 funderingsonderzoek'], ['/fase-1-funderingsonderzoek/', 'Fase 1 funderingsonderzoek'],
+    ['/funderingsinspectie/', 'Funderingsinspectie'], ['/funderingsmetingen/', 'Funderingsmetingen'],
+    ['/funderingsrapport/', 'Funderingsrapport'], ['/prijzen/', 'Prijzen']]],
+  ['Situaties & problemen', [
+    ['/funderingsonderzoek-bij-aankoop/', 'Onderzoek bij aankoop'], ['/funderingsonderzoek-bij-verkoop/', 'Onderzoek bij verkoop'],
+    ['/funderingsonderzoek-taxatie/', 'Funderingsonderzoek en taxatie'], ['/funderingsproblemen/', 'Funderingsproblemen'],
+    ['/scheuren-in-gevel/', 'Scheuren in de gevel'], ['/verzakking-woning/', 'Verzakking woning'],
+    ['/problemen-met-houten-palen/', 'Houten palen'], ['/funderingsscan-check/', 'Online funderingscheck'],
+    ['/kennisbank/lintvoegwaterpassing/', 'Lintvoegwaterpassing'], ['/kennisbank/loodmeting/', 'Loodmeting'],
+    ['/kennisbank/vloerveldwaterpassing/', 'Vloerveldwaterpassing'], ['/kennisbank/scheurpatronen/', 'Scheurpatronen'], ['/kennisbank/begrippenlijst/', 'Begrippenlijst']]],
+  ['Werkgebied', [
+    ['/funderingsonderzoek-friesland/', 'Funderingsonderzoek Friesland'], ['/funderingsonderzoek-groningen/', 'Funderingsonderzoek Groningen'],
+    ['/funderingsonderzoek-leeuwarden/', 'Leeuwarden'], ['/funderingsonderzoek-sneek/', 'Sneek'],
+    ['/funderingsonderzoek-harlingen/', 'Harlingen'], ['/funderingsonderzoek-drachten/', 'Drachten'],
+    ['/funderingsonderzoek-heerenveen/', 'Heerenveen'], ['/funderingsonderzoek-groningen-stad/', 'Groningen stad'],
+    ['/funderingsonderzoek-appingedam/', 'Appingedam'], ['/funderingsonderzoek-delfzijl/', 'Delfzijl'],
+    ['/funderingsonderzoek-franeker/', 'Franeker'], ['/funderingsonderzoek-haren/', 'Haren'], ['/funderingsonderzoek-veendam/', 'Veendam'],
+    ['/funderingsonderzoek-winschoten/', 'Winschoten'], ['/funderingsscan-leeuwarden/', 'Funderingsscan Leeuwarden']]],
+];
+
 export function footer() {
+  const cols = FOOTER_COLS.map(([title, links]) => `    <div>
+      <h2 class="footer-title">${title}</h2>
+      <ul>
+${links.map(([h, l]) => `        <li><a href="${h}">${l}</a></li>`).join('\n')}
+      </ul>
+    </div>`).join('\n');
   return `
 <footer class="site-footer">
-  <div class="container footer-grid">
+  <div class="container footer-grid footer-grid-wide">
     <div class="footer-brand">
       <picture>
         <source srcset="/assets/logo-midea-wit.webp" type="image/webp">
         <img src="/assets/logo-midea-wit.png" width="480" height="137" loading="lazy" alt="MV Funderingsscan – Midea Vastgoed Adviseurs">
       </picture>
       <p>MV Funderingsscan voert onafhankelijk funderingsonderzoek uit voor woningen in Friesland en Groningen – van Quick Scan tot onderzoek met metingen.</p>
-    </div>
-    <div>
-      <h2 class="footer-title">Onderzoek</h2>
-      <ul>
-        <li><a href="/funderingsscan/">Funderingsscan</a></li>
-        <li><a href="/fase-0/">Fase 0 · Quick Scan</a></li>
-        <li><a href="/fase-1/">Fase 1 · Metingen</a></li>
-        <li><a href="/kennisbank/wat-kost-een-funderingsonderzoek/">Kosten funderingsonderzoek</a></li>
-        <li><a href="/kennisbank/funderingsonderzoek-bij-aankoop/">Onderzoek bij aankoop</a></li>
-      </ul>
-    </div>
-    <div>
-      <h2 class="footer-title">Werkgebied</h2>
-      <ul>
-        <li><a href="/funderingsonderzoek-friesland/">Funderingsonderzoek Friesland</a></li>
-        <li><a href="/funderingsonderzoek-groningen/">Funderingsonderzoek Groningen</a></li>
-        <li><a href="/funderingsonderzoek-leeuwarden/">Funderingsonderzoek Leeuwarden</a></li>
-        <li><a href="/funderingsonderzoek-sneek/">Funderingsonderzoek Sneek</a></li>
-        <li><a href="/funderingsonderzoek-groningen-stad/">Funderingsonderzoek Groningen stad</a></li>
-      </ul>
-    </div>
-    <div>
-      <h2 class="footer-title">Contact</h2>
       <address>
         <strong>${NAP.name}</strong><br>
         ${NAP.street}<br>
@@ -274,18 +307,18 @@ export function footer() {
         <a href="mailto:${NAP.email}">${NAP.email}</a><br>
         ${NAP.hours_display}
       </address>
-      <p class="footer-links"><a href="/kennisbank/">Kennisbank</a> · <a href="/contact/">Contact</a></p>
     </div>
+${cols}
   </div>
   <div class="container footer-bottom">
     <span>© <span id="year">2026</span> MV Funderingsscan · mvfunderingsscan.nl</span>
-    <a href="#top" class="to-top">Naar boven <span aria-hidden="true">↑</span></a>
+    <nav class="footer-meta" aria-label="Overige pagina's"><a href="/over-ons/">Over ons</a><a href="/werkwijze/">Werkwijze</a><a href="/kennisbank/">Kennisbank</a><a href="/contact/">Contact</a><a href="/funderingsscan-aanvragen/">Aanvragen</a></nav>
   </div>
 </footer>
 
 <div class="mobile-cta" id="mobileCta">
   <a class="btn btn-outline-light" href="${NAP.phone_href}" aria-label="Bel ${NAP.phone_display}">Bellen</a>
-  <a class="btn btn-gold" href="/contact/">Vraag scan aan <span aria-hidden="true">→</span></a>
+  <a class="btn btn-gold" href="/funderingsscan-aanvragen/">Vraag scan aan <span aria-hidden="true">→</span></a>
 </div>
 
 <script src="/script.js" defer></script>
@@ -336,9 +369,10 @@ export function ctaBand(
       <p>${text}</p>
     </div>
     <div class="cta-band-actions">
-      <a class="btn btn-gold btn-lg" href="/contact/">Vraag een funderingsscan aan <span aria-hidden="true">→</span></a>
+      <a class="btn btn-gold btn-lg" href="/funderingsscan-aanvragen/">Vraag een funderingsscan aan <span aria-hidden="true">→</span></a>
       <a class="btn btn-outline-light btn-lg" href="${NAP.phone_href}">Bel ${NAP.phone_display}</a>
     </div>
   </div>
+  <p class="container cta-band-note">Twijfel je nog? <a href="/funderingsscan-check/">Doe de online funderingscheck</a> of <a href="/contact/">stel je vraag</a>.</p>
 </section>`;
 }

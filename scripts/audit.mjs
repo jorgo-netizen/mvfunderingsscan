@@ -9,7 +9,7 @@
  * FAQPage-schema == zichtbare FAQ, sitemap == pagina's, robots.txt en
  * inkomende interne links. Exit-code 1 bij problemen (handig voor CI).
  */
-import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
+import { readFileSync, readdirSync, statSync, existsSync, writeFileSync } from 'node:fs';
 import { join, relative, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -51,7 +51,7 @@ function parse(html) {
   p.imgs = [...html.matchAll(/<img\s[^>]*>/g)].map((m) => m[0]);
   p.ids = new Set([...html.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]));
   p.jsonld = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1]);
-  p.faqQ = [...html.matchAll(/<summary>([\s\S]*?)<\/summary>/g)].map((m) => norm(m[1]));
+  p.faqQ = [...html.matchAll(/<details class="faq-item"[^>]*>\s*<summary>([\s\S]*?)<\/summary>/g)].map((m) => norm(m[1]));
   p.faqA = [...html.matchAll(/<div class="faq-body">([\s\S]*?)<\/div>\s*<\/details>/g)].map((m) => norm(m[1]));
   return p;
 }
@@ -144,6 +144,41 @@ for (const [path, p] of Object.entries(pages)) {
 for (const [p, n] of Object.entries(inbound)) {
   if (n < 2 && p !== '/404.html') problems.push(`weinig inkomende links (${n}) naar ${p}`);
 }
+
+// ---------------------------------------------------------------- eindoverzicht (AUDIT.md)
+const urlMeta = Object.fromEntries(JSON.parse(readFileSync(join(ROOT, 'src', 'content', 'urls.json'), 'utf8')).map((u) => [u.path, u]));
+const rows = [];
+for (const [path, p] of Object.entries(pages).sort((a, b) => a[0].localeCompare(b[0]))) {
+  if (path === '/404.html') continue;
+  const html = readFileSync(join(DIST, path === '/' ? 'index.html' : join(path, 'index.html')), 'utf8');
+  const main = (html.match(/<main[\s\S]*?<\/main>/) || [''])[0];
+  const words = (norm(main.replace(/<script[\s\S]*?<\/script>/g, '')).match(/\S+/g) || []).length;
+  if (/lorem|ipsum|coming soon|hier komt tekst/i.test(main) || /VUL IN/.test(main)) problems.push(`[${path}] placeholdertekst gevonden`);
+  if (/href="#"/.test(html)) problems.push(`[${path}] lege #-link`);
+  if (/javascript:void/i.test(html)) problems.push(`[${path}] javascript:void-link`);
+  if (/<a(?![^>]*\shref=)(?:\s[^>]*)?>/.test(html)) problems.push(`[${path}] <a> zonder href`);
+  if (/href=""/.test(html)) problems.push(`[${path}] lege href`);
+  if (words < 250) problems.push(`[${path}] pagina lijkt leeg (${words} woorden)`);
+  const internal = new Set(p.links.filter((h) => h.startsWith('/') && h.split('#')[0] !== path).map((h) => h.split('#')[0])).size;
+  const types = new Set();
+  for (const raw of p.jsonld) {
+    try { for (const n of JSON.parse(raw)['@graph'] || []) types.add(n['@type']); } catch { /* al gemeld */ }
+  }
+  const indexable = !(p.meta.robots || '').includes('noindex') && p.canonical === DOMAIN + path && locs.has(path);
+  const h1 = (p.headings.find(([l]) => l === 1) || [, ''])[1];
+  rows.push({ path, title: p.title, h1, keyword: urlMeta[path]?.keyword || '', intent: urlMeta[path]?.intent || '', internal, schema: [...types].join(', '), indexable, words });
+}
+const cell = (s) => String(s).replace(/\|/g, '\\|');
+const report = `# SEO/GEO-audit mvfunderingsscan.nl
+
+Gegenereerd door \`npm run audit\` op ${new Date().toISOString().slice(0, 10)} – ${rows.length} indexeerbare pagina's, ${rows.reduce((a, r) => a + r.words, 0).toLocaleString('nl-NL')} woorden in totaal.
+
+| URL | Title | H1 | Primair zoekwoord | Zoekintentie | Interne links | Schema | Indexeerbaar | Woorden |
+|---|---|---|---|---|---|---|---|---|
+${rows.map((r) => `| ${r.path} | ${cell(r.title)} | ${cell(r.h1)} | ${cell(r.keyword)} | ${r.intent} | ${r.internal} | ${r.schema} | ${r.indexable ? 'ja' : 'NEE'} | ${r.words} |`).join('\n')}
+`;
+writeFileSync(join(ROOT, 'AUDIT.md'), report, 'utf8');
+console.log(`Eindoverzicht geschreven naar AUDIT.md (${rows.length} pagina's, ${rows.reduce((a, r) => a + r.words, 0)} woorden)`);
 
 console.log(`${Object.keys(pages).length} pagina's gecontroleerd`);
 if (problems.length) {

@@ -58,6 +58,14 @@
         "body": "<ol class=\"mini-steps\"><li><strong>Voeg kiezen</strong><span>Per gevel wordt één horizontale voeg gekozen die over de volle lengte doorloopt en niet is verstoord door latere aanpassingen.</span></li><li><strong>Referentiepunt vastleggen</strong><span>Alle hoogtes worden bepaald ten opzichte van één vast punt.</span></li><li><strong>Meetpunten aflopen</strong><span>Op elke gekozen plek wordt de hoogte van diezelfde voeg afgelezen of digitaal vastgelegd.</span></li><li><strong>Bijzonderheden noteren</strong><span>Herstelde delen, scheuren en onbereikbare stukken worden genoteerd.</span></li><li><strong>Uitwerken</strong><span>De waarden worden verwerkt tot een hoogteprofiel en samen met de andere bevindingen geïnterpreteerd.</span></li></ol>\n<p>Waar mogelijk worden meerdere gevels gemeten.</p>"
       },
       {
+        "id": "probeer-het-zelf",
+        "h2": "Probeer het zelf: interactieve lintvoegwaterpassing",
+        "answer": "In deze educatieve simulatie meet je zelf zeven punten langs een lintvoeg en zie je hoe het hoogteprofiel en het hoogteverschil van de gevel ontstaan.",
+        "widget": "lintvoeg",
+        "widget_position": "after",
+        "body": "<p>De simulatie gebruikt fictieve waarden en laat het principe zien, niet de toestand van een echte woning. Wil je ook zien hoe een loodmeting werkt en welke meting bij jouw situatie past? Bekijk dan de <a href=\"/funderingsmetingen/\">interactieve uitleg van funderingsmetingen</a>.</p>"
+      },
+      {
         "id": "welke-meetpunten",
         "h2": "Op welke punten wordt gemeten?",
         "answer": "Er wordt gemeten op punten die verspreid over de gevel liggen: bij de hoeken, naast kozijnen, bij aansluitingen op buurwoningen of aanbouwen en op regelmatige afstanden daartussen.",
@@ -257,6 +265,14 @@
         "h2": "Hoe meet je scheefstand?",
         "answer": "Scheefstand meet je door op meerdere hoogtes de afstand van een gevel of wand tot een zuiver verticale lijn te bepalen. Het verschil tussen boven en onder geeft de afwijking en de richting.",
         "body": "<p>De uitvoering van een loodmeting verloopt in een paar heldere stappen:</p>\n<ol class=\"mini-steps\"><li><strong>Meetplekken kiezen</strong><span>De onderzoeker bepaalt welke gevels, wanden of kozijnstijlen relevant zijn, bijvoorbeeld bij hoeken, bij scheuren en bij de aansluiting op buurwoningen.</span></li><li><strong>Verticale referentie opzetten</strong><span>Met een schietlood, waterpas of (laser)meetinstrument wordt een zuiver verticale lijn langs het bouwdeel gecreëerd.</span></li><li><strong>Op meerdere hoogtes meten</strong><span>De afstand tussen het bouwdeel en de verticale lijn wordt onder, halverwege en boven bepaald, voor zover bereikbaar.</span></li><li><strong>Richting vaststellen</strong><span>Uit de verschillen volgt of het bouwdeel voorover, achterover of opzij helt.</span></li><li><strong>Bijzonderheden noteren</strong><span>Uitbuikingen, eerdere reparaties of afwijkende bouwdelen worden vastgelegd, omdat ze de uitkomst kunnen beïnvloeden.</span></li></ol>\n<p>Een uitgebreidere beschrijving van het meten van scheefstand aan de buitengevel vind je op de pagina over de <a href=\"/kennisbank/scheefstandsmeting/\">scheefstandsmeting</a>.</p>"
+      },
+      {
+        "id": "probeer-het-zelf",
+        "h2": "Probeer het zelf: interactieve loodmeting",
+        "answer": "Met de schuifregelaar in deze educatieve simulatie zie je hoe een gevel afwijkt van een rechte loodlijn en hoe die afwijking als meetwaarde wordt vastgelegd.",
+        "widget": "lood",
+        "widget_position": "after",
+        "body": "<p>De kanteling is in de simulatie sterk overdreven en de waarden zijn fictief. In de <a href=\"/funderingsmetingen/\">interactieve uitleg van funderingsmetingen</a> combineer je de loodmeting met een lintvoegwaterpassing en zie je welke meting bij jouw situatie past.</p>"
       },
       {
         "id": "welke-richting",

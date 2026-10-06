@@ -12,12 +12,13 @@
  */
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
-import { watch, existsSync } from 'node:fs';
+import { watch, existsSync, readFileSync, realpathSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { join, extname, normalize, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+// realpath: voorkomt problemen met korte Windows-padnamen (bv. GEBRUI~1) bij fs.watch
+const ROOT = realpathSync.native(join(dirname(fileURLToPath(import.meta.url)), '..'));
 const DIST = join(ROOT, 'dist');
 const args = process.argv.slice(2);
 const WATCH = !args.includes('--no-watch');
@@ -42,6 +43,13 @@ const TYPES = {
   '.ico': 'image/x-icon',
   '.woff2': 'font/woff2',
 };
+
+// Redirects zonder host-voorwaarde uit vercel.json, zodat lokaal hetzelfde gedrag geldt.
+const REDIRECTS = new Map(
+  (JSON.parse(readFileSync(join(ROOT, 'vercel.json'), 'utf8')).redirects || [])
+    .filter((r) => !r.has && !r.source.includes(':'))
+    .map((r) => [r.source, r.destination]),
+);
 
 // ---------------------------------------------------------------- bouwen
 function runBuild() {
@@ -113,6 +121,19 @@ const server = createServer(async (req, res) => {
       req.on('close', () => clients.delete(res));
       return;
     }
+
+    // Serverless functies uit api/ lokaal uitvoeren (zoals Vercel dat in productie doet)
+    if (pathname.startsWith('/api/')) {
+      const name = pathname.slice(5).replace(/\/$/, '');
+      const file = join(ROOT, 'api', `${name}.js`);
+      if (!/^[a-z0-9-]+$/.test(name) || !existsSync(file)) { res.writeHead(404); return res.end('Onbekende API'); }
+      const mod = await import(`${pathToFileURL(file).href}?t=${Date.now()}`);
+      return mod.default(req, res);
+    }
+
+    // redirects uit vercel.json (exacte paden, met of zonder slash)
+    const target = REDIRECTS.get(pathname) || REDIRECTS.get(pathname + '/');
+    if (target) { res.writeHead(308, { Location: target + url.search }); return res.end(); }
 
     // padtraversal voorkomen
     const safe = normalize(pathname).replace(/^(\.\.[/\\])+/, '');

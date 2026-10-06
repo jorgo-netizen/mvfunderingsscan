@@ -19,7 +19,7 @@ e-mailadres, zodat er geen aanvragen ongemerkt verloren gaan.
 
 ## 2. Publiceren
 
-- [ ] Vercel → Add New Project → GitHub-repo → **Root Directory: `mvfunderingsscan`**.
+- [ ] Vercel → Add New Project → kies de GitHub-repo van MV Funderingsscan → Root Directory leeg laten.
 - [ ] Domains: `mvfunderingsscan.nl` en `www.mvfunderingsscan.nl` (www stuurt automatisch door).
 - [ ] Controleer: `https://mvfunderingsscan.nl/robots.txt`, `/sitemap.xml`, `/llms.txt` en een paar pagina's.
 

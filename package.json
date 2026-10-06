@@ -2,7 +2,7 @@
   "name": "mvfunderingsscan",
   "version": "1.0.0",
   "private": true,
-  "description": "Website MV Funderingsscan (mvfunderingsscan.nl) – statische site, gegenereerd met Node, zonder dependencies.",
+  "description": "Website en kennisplatform MV Funderingsscan (mvfunderingsscan.nl) – statische site, gegenereerd met Node, zonder dependencies.",
   "type": "module",
   "engines": {
     "node": ">=20"
@@ -11,7 +11,9 @@
     "dev": "node scripts/dev.mjs",
     "build": "node scripts/build.mjs",
     "preview": "node scripts/build.mjs && node scripts/dev.mjs --no-watch",
-    "audit": "node scripts/build.mjs && node scripts/audit.mjs",
-    "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\""
+    "check": "node scripts/check-content.mjs",
+    "audit": "node scripts/check-content.mjs && node scripts/build.mjs && node scripts/audit.mjs",
+    "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\"",
+    "autolink": "node scripts/autolink.mjs"
   }
 }

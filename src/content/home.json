@@ -2,7 +2,7 @@
   "faqs": [
     {
       "q": "Wat is een funderingsscan?",
-      "a": "<p>Een funderingsscan is een eerste, niet-destructieve beoordeling van de staat en de mogelijke risico's van de fundering van een woning. MV Funderingsscan combineert daarvoor archief- en bodemgegevens met een inspectie van de woning, zonder graafwerk.</p>"
+      "a": "<p>Een funderingsscan is een eerste, niet-destructieve beoordeling van de staat en de mogelijke risico's van de fundering van een woning. MV Funderingsscan combineert daarvoor archief- en bodemgegevens met een inspectie van de woning, zonder graafwerk. Lees meer op de pagina <a href=\"/funderingsscan/\">funderingsscan</a>.</p>"
     },
     {
       "q": "Wat is het verschil tussen fase 0 en fase 1?",
@@ -10,11 +10,11 @@
     },
     {
       "q": "Wat is fase 0?",
-      "a": "<p>Fase 0 is de Quick Scan: een vooronderzoek zonder graafwerk. We combineren gegevens uit archieven en bodemkaarten met een inspectie van gevels, binnenzijde en kruipruimte, en geven een eerste inschatting van het funderingsrisico met advies over de vervolgstap.</p>"
+      "a": "<p>Fase 0 is de Quick Scan: een vooronderzoek zonder graafwerk. We combineren gegevens uit archieven en bodemkaarten met een inspectie van gevels, binnenzijde en kruipruimte, en geven een eerste inschatting van het funderingsrisico met advies over de vervolgstap. Zie <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>.</p>"
     },
     {
       "q": "Wat is fase 1?",
-      "a": "<p>Fase 1 is een uitgebreider vervolgonderzoek waarin we de woning doormeten om vast te stellen of die stabiel staat of nog zakt. Fase 1 is alleen nodig als de Quick Scan wijst op een verhoogd risico, en gebeurt ook zonder de fundering open te graven.</p>"
+      "a": "<p>Fase 1 is een uitgebreider vervolgonderzoek waarin we de woning doormeten om vast te stellen of die stabiel staat of nog zakt. Fase 1 is alleen nodig als de Quick Scan wijst op een verhoogd risico, en gebeurt ook zonder de fundering open te graven. Zie <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>.</p>"
     },
     {
       "q": "Wanneer heb ik een funderingsonderzoek nodig?",
@@ -22,7 +22,7 @@
     },
     {
       "q": "Wat kost een funderingsscan?",
-      "a": "<p>Een fase 0 funderingsscan begint indicatief vanaf ongeveer €350. Een fase 1 onderzoek kost indicatief €750 tot €1.500, afhankelijk van de woning en de benodigde metingen. Je krijgt altijd vooraf een vaste prijs.</p>"
+      "a": "<p>Een fase 0 funderingsscan begint indicatief vanaf ongeveer €350. Een fase 1 onderzoek kost indicatief €750 tot €1.500, afhankelijk van de woning en de benodigde metingen. Je krijgt altijd vooraf een vaste prijs. Bekijk alle <a href=\"/prijzen/\">prijzen</a>.</p>"
     },
     {
       "q": "Hoe lang duurt een funderingsonderzoek?",
@@ -34,7 +34,7 @@
     },
     {
       "q": "Kan ik een funderingsscan laten uitvoeren voordat ik een woning koop?",
-      "a": "<p>Ja. Een Quick Scan vóór de aankoop laat zien of er funderingsrisico's spelen voordat je definitief tekent. Plan de scan bij voorkeur binnen een ontbindende voorwaarde; we stemmen de afspraak af met de verkopende makelaar.</p>"
+      "a": "<p>Ja. Een Quick Scan vóór de aankoop laat zien of er funderingsrisico's spelen voordat je definitief tekent. Plan de scan bij voorkeur binnen een ontbindende voorwaarde; we stemmen de afspraak af met de verkopende makelaar. Lees meer over <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>.</p>"
     },
     {
       "q": "Wat gebeurt er als de fundering risico's vertoont?",
@@ -46,7 +46,7 @@
     },
     {
       "q": "Werkt MV Funderingsscan in Friesland en Groningen?",
-      "a": "<p>Ja. MV Funderingsscan is gevestigd in Leeuwarden en voert funderingsonderzoek uit in heel Friesland en de hele provincie Groningen, waaronder Leeuwarden, Sneek, Harlingen, Drachten, Heerenveen, de stad Groningen, Appingedam en Delfzijl.</p>"
+      "a": "<p>Ja. MV Funderingsscan is gevestigd in Leeuwarden en voert funderingsonderzoek uit in heel Friesland en de hele provincie Groningen, waaronder Leeuwarden, Sneek, Harlingen, Drachten, Heerenveen, de stad Groningen, Appingedam en Delfzijl. Bekijk <a href=\"/werkgebied/\">ons werkgebied</a>.</p>"
     },
     {
       "q": "Voert MV Funderingsscan ook funderingsherstel uit?",
@@ -55,9 +55,9 @@
   ],
   "kbHighlights": [
     "wat-is-een-funderingsscan",
-    "wat-kost-een-funderingsonderzoek",
-    "scheuren-in-de-gevel-en-fundering",
-    "funderingsonderzoek-bij-aankoop",
+    "wat-kost-een-funderingsscan",
+    "scheuren-in-gevel",
+    "funderingsscan-bij-aankoop",
     "funderingsproblemen-friesland",
     "funderingsproblemen-groningen"
   ]

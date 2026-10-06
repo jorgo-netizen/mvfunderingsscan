@@ -24,18 +24,58 @@
       "permanent": true
     },
     {
+      "source": "/fase-0/",
+      "destination": "/fase-0-funderingsonderzoek/",
+      "permanent": true
+    },
+    {
+      "source": "/fase-1/",
+      "destination": "/fase-1-funderingsonderzoek/",
+      "permanent": true
+    },
+    {
       "source": "/fase0/",
-      "destination": "/fase-0/",
+      "destination": "/fase-0-funderingsonderzoek/",
       "permanent": true
     },
     {
       "source": "/fase1/",
-      "destination": "/fase-1/",
+      "destination": "/fase-1-funderingsonderzoek/",
       "permanent": true
     },
     {
       "source": "/quickscan/",
-      "destination": "/fase-0/",
+      "destination": "/quickscan-fundering/",
+      "permanent": true
+    },
+    {
+      "source": "/aanvragen/",
+      "destination": "/funderingsscan-aanvragen/",
+      "permanent": true
+    },
+    {
+      "source": "/kennisbank/wat-is-fase-0-funderingsonderzoek/",
+      "destination": "/kennisbank/wat-is-fase-0/",
+      "permanent": true
+    },
+    {
+      "source": "/kennisbank/wat-is-fase-1-funderingsonderzoek/",
+      "destination": "/kennisbank/wat-is-fase-1/",
+      "permanent": true
+    },
+    {
+      "source": "/kennisbank/wat-kost-een-funderingsonderzoek/",
+      "destination": "/kennisbank/wat-kost-een-funderingsscan/",
+      "permanent": true
+    },
+    {
+      "source": "/kennisbank/funderingsonderzoek-bij-aankoop/",
+      "destination": "/kennisbank/funderingsscan-bij-aankoop/",
+      "permanent": true
+    },
+    {
+      "source": "/kennisbank/scheuren-in-de-gevel-en-fundering/",
+      "destination": "/kennisbank/scheuren-in-gevel/",
       "permanent": true
     }
   ],

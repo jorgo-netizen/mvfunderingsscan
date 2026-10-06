@@ -192,3 +192,6 @@ Gebruik voor tijdelijke scripts een eigen map buiten `src/` (bijv. `tmp/<jouwnaa
 - **Westerkwartier**: in het noorden klei, in het zuiden zand en veen; mix van dorpen en het groeikerngebied Leek/Zuidhorn.
 - **Westerwolde**: zandgronden met esdorpen; Bourtange is een gerestaureerde vestingstad; Ter Apel bekend om het klooster.
 - Gaswinning: alleen benoemen waar hierboven genoemd; altijd met de nuance dat een funderingsscan geen schademelding is (IMG).
+
+### 7.8 Interactieve modules
+Een sectie kan een veld `"widget"` hebben: `"lintvoeg"` (simulatie lintvoegwaterpassing), `"lood"` (simulatie loodmeting met schuifregelaar) of `"keuze"` (keuzehulp welke meting past). Met `"widget_position": "after"` komt de module na de body, anders ervoor. De modules staan in `src/lib/widgets.mjs`; alle uitleg staat als HTML in de pagina. Gebruik elke widget maximaal één keer per pagina.
