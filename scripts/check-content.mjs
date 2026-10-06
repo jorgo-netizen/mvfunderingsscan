@@ -9,6 +9,7 @@
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname, basename, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { WIDGET_NAMES } from '../src/lib/widgets.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const PAGES_DIR = join(ROOT, 'src', 'content', 'pages');
@@ -77,7 +78,7 @@ function checkPage(p) {
     ids.add(s.id);
     if (/<[^>]+>/.test(s.h2 || '')) E(`HTML in h2: ${s.h2}`);
     if (!s.answer) W(`sectie zonder answer: ${s.h2}`);
-    if (s.widget && !['lintvoeg', 'lood', 'keuze'].includes(s.widget)) E(`onbekende widget: ${s.widget}`);
+    if (s.widget && !WIDGET_NAMES.includes(s.widget)) E(`onbekende widget: ${s.widget}`);
   }
   const qs = new Set();
   for (const f of p.faqs || []) {

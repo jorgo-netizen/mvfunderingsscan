@@ -60,7 +60,7 @@
       {
         "id": "probeer-het-zelf",
         "h2": "Probeer het zelf: interactieve lintvoegwaterpassing",
-        "answer": "In deze educatieve simulatie meet je zelf zeven punten langs een lintvoeg en zie je hoe het hoogteprofiel en het hoogteverschil van de gevel ontstaan.",
+        "answer": "In deze educatieve simulatie meet je zelf zes punten (A tot en met F) langs een lintvoeg en zie je hoe het hoogteprofiel en het hoogteverschil van de gevel ontstaan.",
         "widget": "lintvoeg",
         "widget_position": "after",
         "body": "<p>De simulatie gebruikt fictieve waarden en laat het principe zien, niet de toestand van een echte woning. Wil je ook zien hoe een loodmeting werkt en welke meting bij jouw situatie past? Bekijk dan de <a href=\"/funderingsmetingen/\">interactieve uitleg van funderingsmetingen</a>.</p>"

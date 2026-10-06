@@ -1,0 +1,702 @@
+[
+  {
+    "path": "/funderingsonderzoek-midden-groningen/",
+    "title": "Funderingsonderzoek Hoogezand en Slochteren | MV Funderingsscan",
+    "description": "Funderingsonderzoek in Midden-Groningen: Hoogezand, Sappemeer, Slochteren en dorpen. Onafhankelijke Quick Scan op veen en klei, los van een IMG-melding.",
+    "keyword": "funderingsonderzoek hoogezand",
+    "intent": "lokaal-commercieel",
+    "nav_active": "/werkgebied/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/werkgebied/",
+        "name": "Werkgebied"
+      },
+      {
+        "href": "/funderingsonderzoek-groningen/",
+        "name": "Funderingsonderzoek Groningen"
+      },
+      {
+        "href": "/funderingsonderzoek-midden-groningen/",
+        "name": "Midden-Groningen"
+      }
+    ],
+    "eyebrow": "Werkgebied · Gemeente Midden-Groningen",
+    "h1": "Funderingsonderzoek in Midden-Groningen",
+    "lead": "MV Funderingsscan voert <strong>funderingsonderzoek uit in de gemeente Midden-Groningen</strong>, waaronder in Hoogezand, Sappemeer, Slochteren, Siddeburen en Muntendam. We starten met een onafhankelijke Quick Scan van je woning en meten alleen verder als daar aanleiding voor is. Let op: een <a href=\"/funderingsscan/\">funderingsscan</a> is geen schademelding voor gaswinning.",
+    "hero_image": {
+      "name": "funderingsinspectie-woning-gevel",
+      "alt": "Specialist met een waterpas bij de gevel van een woning"
+    },
+    "facts": [
+      {
+        "label": "Ondergrond",
+        "value": "veen- en kleigronden"
+      },
+      {
+        "label": "Quick Scan",
+        "value": "vanaf ca. €350"
+      },
+      {
+        "label": "Rapport",
+        "value": "binnen 5 werkdagen na inspectie"
+      },
+      {
+        "label": "Fase 1",
+        "value": "indicatief €750 – €1.500"
+      }
+    ],
+    "services": [
+      "fase0",
+      "fase1"
+    ],
+    "sections": [
+      {
+        "id": "gemeente-in-beeld",
+        "h2": "Wat maakt Midden-Groningen bijzonder als het om funderingen gaat?",
+        "answer": "In Midden-Groningen komen een ondergrond van veen en klei en bodembeweging door gaswinning samen. Bij Slochteren werd in 1959 het Groningen-gasveld ontdekt.",
+        "body": "<p>De gemeente bestaat uit twee heel verschillende delen. Aan de ene kant de grotere kernen Hoogezand en Sappemeer, samen ook bekend als Hoogezand-Sappemeer, met een stedelijk karakter. Aan de andere kant dorpen als Slochteren, Siddeburen, Harkstede, Kolham, Zuidbroek en Muntendam. De woningvoorraad is daardoor gevarieerd: van oudere panden in de dorpskernen tot nieuwere wijken.</p>\n<p>Voor een fundering telt vooral wat er onder en rond die woningen gebeurt. De bodem bestaat in grote delen uit veen en klei, twee grondsoorten die kunnen bewegen. Daarnaast ligt de gemeente in het gebied waar gaswinning tot bodembeweging heeft geleid. Dat maakt het voor bewoners extra lastig om te beoordelen waar een scheur vandaan komt. Een onafhankelijke blik kan dan helpen om de feiten op een rij te zetten.</p>"
+      },
+      {
+        "id": "scan-of-schademelding",
+        "h2": "Is een funderingsscan hetzelfde als een schademelding bij het IMG?",
+        "answer": "Nee. Schade door gaswinning meld je bij het Instituut Mijnbouwschade Groningen. Een funderingsscan brengt de staat en de risico’s van je fundering in beeld, maar is geen melding en geen beoordeling van de oorzaak in het kader van een schadeprocedure.",
+        "body": "<p>Veel bewoners van Midden-Groningen hebben al met schademeldingen te maken gehad. Toch blijft vaak de vraag hoe de fundering er zelf voor staat. Daar is onze scan voor bedoeld: we kijken naar bouwjaar, vermoedelijk funderingstype, bodemopbouw, grondwater en de zichtbare signalen aan de woning.</p>\n<div class=\"two-col-list\"><div><h3>Wat de scan wel doet</h3><ul class=\"checklist\"><li>De fundering en de risico’s van je woning onafhankelijk in kaart brengen</li><li>Scheuren, scheefstand en vloeren beoordelen en vastleggen met foto’s</li><li>Advies geven over een eventuele vervolgstap</li></ul></div><div><h3>Wat de scan niet doet</h3><ul class=\"checklist\"><li>Een schade melden of afhandelen</li><li>Een herstelplan of herstelofferte maken</li><li>Een garantie geven over de toekomst</li></ul></div></div>\n<div class=\"callout callout-warn\"><strong>Schade door gaswinning?</strong><p>Meld die rechtstreeks bij het <a href=\"https://www.schadedoormijnbouw.nl/\" rel=\"noopener\" target=\"_blank\">Instituut Mijnbouwschade Groningen (IMG)</a>. Een rapport van ons kan je wel helpen om zelf beter te begrijpen wat je ziet.</p></div>"
+      },
+      {
+        "id": "veen-en-klei",
+        "h2": "Wat betekenen veen en klei voor funderingen in Midden-Groningen?",
+        "answer": "Veen kan inklinken en bij droogvallen oxideren, waardoor de grond daalt. Klei krimpt bij droogte en zwelt weer bij nat weer. Beide kunnen leiden tot ongelijke zetting, maar of dat bij jouw woning speelt, verschilt per plek.",
+        "body": "<p>Hoe de ondergrond is opgebouwd, kan per kern en zelfs per straat verschillen. Waar veen aan of dicht onder het oppervlak ligt, is <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a> een aandachtspunt. In kleigebieden spelen vooral de seizoenen een rol: in droge zomers krimpt de klei, in natte perioden zwelt hij weer op. Een woning kan die bewegingen een tijd lang goed opvangen, maar ongelijke bewegingen geven spanning in het metselwerk.</p>\n<div class=\"term-box\"><strong>Wat betekent ongelijke zetting?</strong><p>Bij ongelijke <a href=\"/kennisbank/zetting/\">zetting</a> zakken delen van een woning niet even veel. Dat is schadelijker dan wanneer het hele huis gelijkmatig een beetje zakt, omdat het tot scheuren en scheefstand kan leiden.</p><a href=\"/kennisbank/ongelijke-zetting/\">Lees meer over ongelijke zetting</a></div>\n<p>Wil je meer weten over de grondsoorten zelf, lees dan over de <a href=\"/kennisbank/veenbodem/\">veenbodem</a> en de <a href=\"/kennisbank/kleibodem/\">kleibodem</a>.</p>"
+      },
+      {
+        "id": "woningen-midden-groningen",
+        "h2": "Welke woningen in Midden-Groningen verdienen extra aandacht?",
+        "answer": "Vooral oudere woningen, gebouwd vóór circa 1970, omdat die vaker een fundering op houten palen of op staal hebben. Ook woningen met een aanbouw of eerdere verbouwingen zijn het bekijken waard.",
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Oudere woningen</h3><p>Een fundering op <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a> of op staal is niet per definitie een probleem, maar is gevoeliger voor veranderingen in grondwater en bodem.</p></div><div class=\"info-card\"><h3>Aanbouwen</h3><p>Een aanbouw heeft vaak een eigen, ondiepere fundering. Een scheur bij de aansluiting kan daardoor ontstaan zonder dat het hoofdhuis beweegt.</p></div><div class=\"info-card\"><h3>Eerder verbouwd</h3><p>Verbouwingen en eerdere reparaties kunnen het beeld vertroebelen. In het <a href=\"/kennisbank/archiefonderzoek-fundering/\">archiefonderzoek</a> zoeken we op wat er bekend is.</p></div></div>\n<p>Lees meer over een <a href=\"/fundering-op-staal/\">fundering op staal</a> of over <a href=\"/problemen-met-houten-palen/\">problemen met houten palen</a>.</p>"
+      },
+      {
+        "id": "wanneer-scan",
+        "h2": "Wanneer is een funderingsscan in Hoogezand of Slochteren zinvol?",
+        "answer": "Een scan is zinvol als je twijfelt over de staat van je fundering, bij aankoop of verkoop van een oudere woning, en wanneer de taxateur aanvullend funderingsonderzoek vraagt.",
+        "body": "<ul class=\"checklist\"><li>Je ziet scheuren die groter lijken te worden of steeds terugkomen</li><li>Deuren en ramen gaan klemmen, of een vloer loopt merkbaar af</li><li>Je wilt een oudere woning kopen en vooraf weten waar je aan begint</li><li>Bij de taxatie valt je woning in risicoklasse D of E van het KCAF</li><li>Je wilt los van een schadeprocedure een onafhankelijk beeld van je fundering</li></ul>\n<p>Niet elke scheur betekent funderingsschade. Krimp van metselwerk, temperatuurwisselingen, een roestende latei of vocht kunnen ook scheuren of klemmende deuren veroorzaken. Bij een woningaankoop lees je meer op de pagina over <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>; over de funderingsparagraaf in het taxatierapport bij <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek en taxatie</a>.</p>"
+      },
+      {
+        "id": "verloop-onderzoek",
+        "h2": "Hoe verloopt funderingsonderzoek in Midden-Groningen?",
+        "answer": "We beginnen met fase 0, de Quick Scan: archief- en bodemonderzoek, een visuele inspectie en een rapport met advies. Alleen als dat nodig is, volgt fase 1 met metingen.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Je vraagt de scan aan en hoort vooraf de definitieve prijs.</span></li><li><strong>Archief en bodem</strong><span>We zoeken bouwjaar, tekeningen en funderingstype op en kijken naar bodem, grondwater en bodemdaling.</span></li><li><strong>Inspectie</strong><span>Meestal binnen enkele werkdagen bekijken we gevels, scheuren, kozijnen, vloeren en de kruipruimte voor zover toegankelijk.</span></li><li><strong>Rapport</strong><span>Binnen 5 werkdagen na de inspectie ontvang je foto’s, conclusie en advies.</span></li></ol>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Niet-destructief vooronderzoek, vanaf ca. €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Onderzoek met metingen</strong><span>Lintvoeg, scheefstand en vloervelden, indicatief €750 – €1.500.</span></a></div>\n<p>Het complete traject staat op de pagina over onze <a href=\"/werkwijze/\">werkwijze</a>. We voeren zelf geen funderingsherstel uit, zodat ons advies onafhankelijk blijft.</p>"
+      },
+      {
+        "id": "kernen-midden-groningen",
+        "h2": "Funderingsonderzoek in Hoogezand, Sappemeer en omliggende dorpen",
+        "answer": "We werken in alle kernen van Midden-Groningen, van Hoogezand en Sappemeer tot Slochteren, Siddeburen, Harkstede, Kolham, Zuidbroek en Muntendam.",
+        "body": "<ul class=\"town-chips\"><li>Hoogezand</li><li>Sappemeer</li><li>Slochteren</li><li>Siddeburen</li><li>Muntendam</li><li>Zuidbroek</li><li>Harkstede</li><li>Kolham</li></ul>\n<p>Of je nu een rijwoning in Sappemeer hebt, een vrijstaand huis in Harkstede of een oudere woning in Zuidbroek: de aanpak is hetzelfde, maar de conclusie hangt af van jouw woning en ondergrond. We werken ook in de buurgemeenten; lees bijvoorbeeld over <a href=\"/funderingsonderzoek-veendam/\">funderingsonderzoek in Veendam</a>.</p>\n<p>Meer over de provincie lees je bij <a href=\"/funderingsonderzoek-groningen/\">funderingsonderzoek in Groningen</a>, of bekijk ons hele <a href=\"/werkgebied/\">werkgebied</a>. Klaar om te starten? <a href=\"/funderingsscan-aanvragen/\">Vraag de funderingsscan aan</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Waar kan ik funderingsonderzoek laten uitvoeren in Hoogezand?",
+        "a": "<p>Bij MV Funderingsscan. We voeren funderingsonderzoek uit in heel Midden-Groningen, ook in Hoogezand, en plannen de inspectie meestal binnen enkele werkdagen in. Het rapport volgt binnen 5 werkdagen na de inspectie.</p>"
+      },
+      {
+        "q": "Komen jullie ook naar Slochteren of Siddeburen?",
+        "a": "<p>Ja. Alle kernen van de gemeente horen bij ons werkgebied, dus ook Slochteren, Siddeburen, Harkstede en Kolham. De werkwijze en de prijsindicatie zijn daar hetzelfde als in Hoogezand.</p>"
+      },
+      {
+        "q": "Ik heb al een schademelding lopen. Heeft een funderingsscan dan nog zin?",
+        "a": "<p>Dat kan, als je los van de schadeprocedure wilt weten hoe je fundering ervoor staat. De scan vervangt de melding niet en beoordeelt geen schadeclaim; die loopt via het IMG.</p>"
+      },
+      {
+        "q": "Wat kost funderingsonderzoek in Midden-Groningen?",
+        "a": "<p>De Quick Scan kost vanaf circa €350, bij grotere of complexere woningen indicatief tot circa €550. Fase 1 kost indicatief €750 – €1.500. Bekijk ook onze <a href=\"/prijzen/\">prijzen</a>.</p>"
+      },
+      {
+        "q": "Kunnen jullie de houten palen onder mijn woning beoordelen?",
+        "a": "<p>Niet rechtstreeks. In fase 0 en fase 1 graven we niet; de palen zelf bekijken kan alleen via een inspectieput, eventueel met houtonderzoek. Dat valt buiten onze scan, maar we adviseren je wel of die stap zinvol is.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/funderingsscan-groningen/",
+        "label": "Funderingsscan in Groningen aanvragen",
+        "text": "Wat de scan in de provincie Groningen inhoudt en hoe je hem aanvraagt."
+      },
+      {
+        "href": "/kennisbank/bodemdaling/",
+        "label": "Bodemdaling en je fundering",
+        "text": "Hoe dalende grond woningen kan beïnvloeden."
+      },
+      {
+        "href": "/funderingsonderzoek-taxatie/",
+        "label": "Funderingsonderzoek bij taxatie",
+        "text": "Wat de funderingsparagraaf en de KCAF-klassen betekenen."
+      }
+    ],
+    "cta": [
+      "Woning in Midden-Groningen laten onderzoeken?",
+      "Start met een onafhankelijke Quick Scan; de prijs hoor je vooraf."
+    ]
+  },
+  {
+    "path": "/funderingsonderzoek-pekela/",
+    "title": "Funderingsonderzoek Oude en Nieuwe Pekela | MV Funderingsscan",
+    "description": "Funderingsonderzoek in de gemeente Pekela, in Oude Pekela en Nieuwe Pekela. Lees hoe je scheuren in een lintwoning duidt en wanneer een Quick Scan helpt.",
+    "keyword": "funderingsonderzoek oude pekela",
+    "intent": "lokaal-commercieel",
+    "nav_active": "/werkgebied/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/werkgebied/",
+        "name": "Werkgebied"
+      },
+      {
+        "href": "/funderingsonderzoek-groningen/",
+        "name": "Funderingsonderzoek Groningen"
+      },
+      {
+        "href": "/funderingsonderzoek-pekela/",
+        "name": "Pekela"
+      }
+    ],
+    "eyebrow": "Werkgebied · Gemeente Pekela",
+    "h1": "Funderingsonderzoek in Pekela",
+    "lead": "MV Funderingsscan voert <strong>funderingsonderzoek uit in de gemeente Pekela</strong>, waaronder in <strong>Oude Pekela</strong> en <strong>Nieuwe Pekela</strong>. Twijfel je over scheuren, klemmende deuren of een aflopende vloer, dan geeft een onafhankelijke Quick Scan je een rapport met foto’s, een risico-inschatting en advies over de volgende stap.",
+    "hero_image": {
+      "name": "metselwerk-gevel-detail",
+      "alt": "Close-up van metselwerk en voegen in een bakstenen gevel"
+    },
+    "facts": [
+      {
+        "label": "Kernen",
+        "value": "Oude Pekela en Nieuwe Pekela"
+      },
+      {
+        "label": "Ondergrond",
+        "value": "van oorsprong veen op zand"
+      },
+      {
+        "label": "Quick Scan",
+        "value": "vanaf ca. €350"
+      },
+      {
+        "label": "Inspectie",
+        "value": "meestal binnen enkele werkdagen"
+      }
+    ],
+    "services": [
+      "fase0",
+      "fase1"
+    ],
+    "sections": [
+      {
+        "id": "wonen-in-pekela",
+        "h2": "Hoe ziet wonen in Pekela eruit?",
+        "answer": "Pekela hoort bij de Veenkoloniën: een landschap dat door vervening is ontstaan, met lange kanalen en woningen die als een lint langs het water en de wegen staan.",
+        "body": "<p>De gemeente heeft twee kernen, Oude Pekela en Nieuwe Pekela. Typisch voor beide is de lintbebouwing: woningen staan achter elkaar langs een kanaal of weg, en zijn in de loop van de tijd stuk voor stuk gebouwd, verbouwd of uitgebreid. Daardoor staan oudere en nieuwere panden vaak naast elkaar, elk met een eigen bouwwijze en een eigen fundering.</p>\n<p>Dat heeft gevolgen voor funderingsonderzoek. Wat bij de buren speelt, zegt niet automatisch iets over jouw woning. Andersom kan een scheur bij jou een andere oorzaak hebben dan bij de woning ernaast. Daarom kijken we altijd naar de woning zelf, en niet naar de straat als geheel.</p>"
+      },
+      {
+        "id": "ondergrond-pekela",
+        "h2": "Wat ligt er onder de woningen in Pekela?",
+        "answer": "De ondergrond bestaat van oorsprong uit veen op zand. Door de vervening kan de laag veen die nog over is per plek verschillen, en dat maakt de bodem minder voorspelbaar dan je op het eerste gezicht zou denken.",
+        "body": "<dl class=\"def-list\"><div><dt>Veen</dt><dd>Kan inklinken onder gewicht en oxideren als het droogvalt. Daardoor kan de grond langzaam dalen.</dd></div><div><dt>Zand</dt><dd>Is meestal stabieler en vormt in de Veenkoloniën de laag onder het veen.</dd></div><div><dt>Grondwater</dt><dd>Bepaalt of veen nat blijft en of eventuele <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a> onder water staan.</dd></div></dl>\n<p>Voor je fundering is vooral van belang of de bodem onder de woning overal hetzelfde reageert. In het bodemonderzoek van de Quick Scan nemen we bodemopbouw, grondwater en bodemdaling op jouw adres mee. Meer achtergrond vind je bij de <a href=\"/kennisbank/veenbodem/\">veenbodem</a>, de <a href=\"/kennisbank/zandbodem/\">zandbodem</a> en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>.</p>"
+      },
+      {
+        "id": "scheur-in-lintwoning",
+        "h2": "Wat kan een scheur in een woning aan het lint betekenen?",
+        "answer": "Een scheur kan op beweging van de fundering wijzen, maar ook op krimp, temperatuur, een roestende latei of een aanbouw met een eigen fundering. Het patroon, de breedte en het verloop in de tijd geven de doorslag.",
+        "body": "<p>Bij woningen die in fases zijn uitgebreid, zie je vaak scheuren op de plek waar oud en nieuw elkaar raken. Een aanbouw heeft meestal een eigen, ondiepere fundering en kan daardoor anders bewegen dan het hoofdhuis. Zo’n scheur is dan een aansluitingsprobleem en niet per se een teken dat de hele woning zakt.</p>\n<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Wat je ziet</th><th>Mogelijke oorzaken</th></tr></thead><tbody><tr><td>Scheur bij de aansluiting van een aanbouw</td><td>Verschil in fundering tussen aanbouw en hoofdhuis</td></tr><tr><td>Scheur boven een raam of deur</td><td>Roestende latei, maar ook zakking van een gevel</td></tr><tr><td>Trapvormige scheur in het metselwerk</td><td><a href=\"/kennisbank/ongelijke-zetting/\">Ongelijke zetting</a>, soms krimp of temperatuur</td></tr><tr><td>Klemmende deur</td><td>Houtwerking, vocht of slechte afstelling, soms vervorming</td></tr></tbody></table></div>\n<p>Lees meer over <a href=\"/scheuren-in-gevel/\">scheuren in de gevel</a> en over <a href=\"/kennisbank/scheuren-bij-aanbouw/\">scheuren bij een aanbouw</a>.</p>"
+      },
+      {
+        "id": "zelf-volgen",
+        "h2": "Hoe houd je een scheur zelf in de gaten?",
+        "answer": "Maak een foto met een liniaal of meetlint ernaast, noteer de datum en herhaal dat na enkele maanden. Zo zie je of een scheur groeit en heb je bij een onderzoek meteen nuttige informatie.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Vastleggen</strong><span>Fotografeer de scheur recht van voren, met een liniaal of meetlint ernaast.</span></li><li><strong>Noteren</strong><span>Schrijf de datum op en markeer eventueel het begin- en eindpunt van de scheur.</span></li><li><strong>Herhalen</strong><span>Maak na enkele maanden een nieuwe foto vanaf dezelfde plek.</span></li><li><strong>Vergelijken</strong><span>Is de scheur langer of breder geworden, of zijn er nieuwe bijgekomen? Laat dan een scan doen.</span></li></ol>\n<div class=\"callout callout-tip\"><strong>Neem je foto’s mee</strong><p>Een eigen fotoreeks is waardevol bij de inspectie. Het laat zien hoe een scheur zich over de tijd heeft ontwikkeld, iets wat één bezoek niet kan tonen.</p></div>\n<p>Meer tips staan in het artikel over <a href=\"/kennisbank/monitoring-scheuren/\">het monitoren van scheuren</a>.</p>"
+      },
+      {
+        "id": "wanneer-onderzoek",
+        "h2": "Wanneer laat je in Pekela een funderingsscan doen?",
+        "answer": "Als signalen aan je woning toenemen, als je een oudere woning koopt of verkoopt, of als de taxateur om aanvullend funderingsonderzoek vraagt.",
+        "body": "<div class=\"two-col-list\"><div><h3>In je eigen woning</h3><ul class=\"checklist\"><li>Scheuren die groeien of na herstel terugkomen</li><li>Deuren en ramen die steeds lastiger sluiten</li><li>Een vloer die naar één kant afloopt</li></ul></div><div><h3>Bij kopen of verkopen</h3><ul class=\"checklist\"><li>Een woning van vóór circa 1970</li><li>Twijfel over eerdere verbouwingen of aanbouwen</li><li>Risicoklasse D of E bij de taxatie</li></ul></div></div>\n<p>Lees meer over <a href=\"/funderingsonderzoek-bij-verkoop/\">funderingsonderzoek bij verkoop</a> of doe eerst de <a href=\"/funderingsscan-check/\">online funderingscheck</a> om je situatie in te schatten.</p>"
+      },
+      {
+        "id": "onderzoek-en-uitkomst",
+        "h2": "Hoe verloopt het onderzoek en wat kan eruit komen?",
+        "answer": "Fase 0 combineert archief- en bodemonderzoek met een visuele inspectie en eindigt in een rapport met één van vier adviezen. Alleen als daar aanleiding voor is, volgt fase 1 met metingen.",
+        "body": "<p>Tijdens de inspectie bekijken we gevels, metselwerk, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, kozijnen, deuren, vloeren en de kruipruimte voor zover die toegankelijk is. Binnen 5 werkdagen na de inspectie heb je het rapport. Het advies valt in een van deze categorieën:</p>\n<div class=\"mini-outcomes\"><div class=\"mini-outcome mini-ok\"><strong>Geen directe aanleiding</strong><span>Er is geen reden voor vervolgonderzoek.</span></div><div class=\"mini-outcome mini-watch\"><strong>Monitoren</strong><span>Signalen een tijd volgen om te zien of er beweging is.</span></div><div class=\"mini-outcome mini-extra\"><strong>Aanvullend onderzoek</strong><span>Bijvoorbeeld gericht op één onderdeel of de kruipruimte.</span></div><div class=\"mini-outcome mini-next\"><strong>Fase 1</strong><span>Metingen aan lintvoeg, scheefstand en vloervelden.</span></div></div>\n<p>Alles over de eerste stap lees je bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>; de metingen staan bij <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>. Het volledige traject vind je in onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
+      },
+      {
+        "id": "kernen-pekela",
+        "h2": "Funderingsonderzoek in Oude Pekela, Nieuwe Pekela en omliggende dorpen",
+        "answer": "We onderzoeken woningen in beide kernen van de gemeente, Oude Pekela en Nieuwe Pekela, en in de omliggende gemeenten in Oost-Groningen.",
+        "body": "<ul class=\"town-chips\"><li>Oude Pekela</li><li>Nieuwe Pekela</li><li><a href=\"/funderingsonderzoek-veendam/\">Veendam</a></li><li><a href=\"/funderingsonderzoek-winschoten/\">Winschoten</a></li><li><a href=\"/funderingsonderzoek-stadskanaal/\">Stadskanaal</a></li></ul>\n<p>Woon je aan het lint in Oude Pekela of in een straat in Nieuwe Pekela: de werkwijze is hetzelfde, de uitkomst hangt af van je woning. Een algemeen overzicht van de <a href=\"/funderingsscan/\">funderingsscan</a> helpt je bij de keuze. Meer over de provincie lees je bij <a href=\"/funderingsonderzoek-groningen/\">funderingsonderzoek in Groningen</a>; ons hele <a href=\"/werkgebied/\">werkgebied</a> staat op een aparte pagina. Je kunt de scan direct <a href=\"/funderingsscan-aanvragen/\">aanvragen</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Waar kan ik funderingsonderzoek laten uitvoeren in Oude Pekela?",
+        "a": "<p>Bij MV Funderingsscan. We werken in de hele gemeente Pekela, ook in Oude Pekela, en plannen de inspectie meestal binnen enkele werkdagen in.</p>"
+      },
+      {
+        "q": "Doen jullie ook funderingsonderzoek in Nieuwe Pekela?",
+        "a": "<p>Ja. Nieuwe Pekela valt net als Oude Pekela binnen ons werkgebied. De Quick Scan, de prijsindicatie en de doorlooptijd van het rapport zijn hetzelfde.</p>"
+      },
+      {
+        "q": "De buren hebben funderingsproblemen. Moet ik mijn woning ook laten onderzoeken?",
+        "a": "<p>Niet automatisch, maar het is een goede reden om alert te zijn. Woningen aan een lint zijn vaak op verschillende momenten en manieren gebouwd. Zie je zelf signalen, dan geeft een Quick Scan duidelijkheid over jouw woning.</p>"
+      },
+      {
+        "q": "Hoe lang duurt het van aanvraag tot rapport?",
+        "a": "<p>De inspectie wordt meestal binnen enkele werkdagen ingepland en het rapport volgt binnen 5 werkdagen na de inspectie. Bij fase 1 stemmen we de doorlooptijd bij de offerte af.</p>"
+      },
+      {
+        "q": "Wat kost een Quick Scan in Pekela?",
+        "a": "<p>Vanaf circa €350; bij grotere of complexere woningen indicatief tot circa €550. De definitieve prijs hoor je vooraf. Zie onze <a href=\"/prijzen/\">prijzen</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/scheurpatronen/",
+        "label": "Scheurpatronen herkennen",
+        "text": "Wat richting en vorm van een scheur kunnen zeggen."
+      },
+      {
+        "href": "/funderingsproblemen-veen/",
+        "label": "Funderingsproblemen bij veen",
+        "text": "Signalen en oorzaken bij woningen op een veenbodem."
+      },
+      {
+        "href": "/quickscan-fundering/",
+        "label": "Quickscan fundering",
+        "text": "Wat een quickscan inhoudt en wat je ervan mag verwachten."
+      }
+    ],
+    "cta": [
+      "Twijfel over je woning in Pekela?",
+      "Een Quick Scan geeft je een rapport met advies, met de prijs vooraf bekend."
+    ]
+  },
+  {
+    "path": "/funderingsonderzoek-stadskanaal/",
+    "title": "Funderingsonderzoek Stadskanaal, Musselkanaal | MV Funderingsscan",
+    "description": "Funderingsonderzoek in de gemeente Stadskanaal: Stadskanaal, Musselkanaal, Onstwedde en meer. Handig bij aankoop, taxatie of twijfel over je woning.",
+    "keyword": "funderingsonderzoek stadskanaal",
+    "intent": "lokaal-commercieel",
+    "nav_active": "/werkgebied/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/werkgebied/",
+        "name": "Werkgebied"
+      },
+      {
+        "href": "/funderingsonderzoek-groningen/",
+        "name": "Funderingsonderzoek Groningen"
+      },
+      {
+        "href": "/funderingsonderzoek-stadskanaal/",
+        "name": "Stadskanaal"
+      }
+    ],
+    "eyebrow": "Werkgebied · Gemeente Stadskanaal",
+    "h1": "Funderingsonderzoek in Stadskanaal",
+    "lead": "MV Funderingsscan voert <strong>funderingsonderzoek uit in de gemeente Stadskanaal</strong>, waaronder in Stadskanaal, Musselkanaal, Mussel, Onstwedde en Alteveer. Of je een woning koopt, je taxateur om onderzoek vraagt of zelf signalen ziet: we starten met een onafhankelijke Quick Scan en adviseren daarna of metingen nodig zijn.",
+    "hero_image": {
+      "name": "vooroorlogse-woning-voordeur",
+      "alt": "Klassieke voordeur in een bakstenen gevel"
+    },
+    "facts": [
+      {
+        "label": "Kernen",
+        "value": "o.a. Stadskanaal, Musselkanaal, Onstwedde"
+      },
+      {
+        "label": "Quick Scan",
+        "value": "vanaf ca. €350"
+      },
+      {
+        "label": "Fase 1",
+        "value": "indicatief €750 – €1.500"
+      },
+      {
+        "label": "Rapport",
+        "value": "binnen 5 werkdagen na inspectie"
+      }
+    ],
+    "services": [
+      "fase0",
+      "fase1"
+    ],
+    "sections": [
+      {
+        "id": "gemeente-stadskanaal",
+        "h2": "Wat voor gemeente is Stadskanaal?",
+        "answer": "Stadskanaal ligt in de Veenkoloniën. Het gebied is ontstaan door vervening en kenmerkt zich door lange kanalen met lintbebouwing; de kernen liggen verspreid langs die kanalen en wegen.",
+        "body": "<p>De gemeente bestaat uit meerdere kernen met elk een eigen karakter: Stadskanaal als grootste plaats, Musselkanaal, Mussel, Onstwedde en Alteveer. Langs de kanalen staan woningen uit verschillende periodes, van oudere panden tot woningen uit latere decennia. Die afwisseling betekent dat er geen standaardantwoord is op de vraag hoe het met funderingen in Stadskanaal gesteld is. Het hangt af van de woning, het bouwjaar en de plek.</p>"
+      },
+      {
+        "id": "kopen-in-stadskanaal",
+        "h2": "Koop je een woning in Stadskanaal of Musselkanaal? Let dan op de fundering",
+        "answer": "Bij een oudere woning is het verstandig om vóór de aankoop te weten hoe de fundering ervoor staat. Sinds 1 april 2026 bevat het taxatierapport bovendien een vaste funderingsparagraaf, waarin het funderingsrisico wordt meegenomen.",
+        "body": "<p>Volgens de huidige richtlijnen gebruikt de taxateur het funderingsrisicorapport van het KCAF, met risicoklassen A (laag) tot en met E (hoog). Valt een woning in klasse D of E, dan is aanvullend funderingsonderzoek nodig voordat de taxatie kan worden afgerond. Zonder afgeronde taxatie geen hypotheek. Bij klasse A tot en met C is onderzoek in de regel vrijwillig, maar kan het je wel zekerheid geven.</p>\n<div class=\"callout callout-note\"><strong>Stem het af met je taxateur</strong><p>Overleg met je taxateur of geldverstrekker welk onderzoek in jouw situatie nodig is. Onze Quick Scan is vaak een logische eerste stap.</p></div>\n<p>Lees meer bij <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek en taxatie</a>, <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a> en <a href=\"/kennisbank/funderingsscan-en-hypotheek/\">funderingsscan en hypotheek</a>. Algemene informatie over het KCAF vind je op <a href=\"https://www.kcaf.nl/\" rel=\"noopener\" target=\"_blank\">kcaf.nl</a>.</p>"
+      },
+      {
+        "id": "ondergrond-stadskanaal",
+        "h2": "Op welke ondergrond staan de woningen in de gemeente Stadskanaal?",
+        "answer": "De ondergrond bestaat van oorsprong uit veen op zand. Hoeveel veen er nog ligt, kan per kern en per plek verschillen, en dat bepaalt mee hoe gevoelig een woning is voor zakking.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Laag</th><th>Gedrag</th><th>Betekenis voor de fundering</th></tr></thead><tbody><tr><td>Veen</td><td>Klinkt in en kan oxideren bij droogvallen</td><td>Kans op <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a> en <a href=\"/kennisbank/ongelijke-zetting/\">ongelijke zetting</a></td></tr><tr><td>Zand</td><td>Meestal stabiel</td><td>Vaak een goede draagkrachtige laag</td></tr><tr><td>Grondwater</td><td>Wisselt met seizoen en peilbeheer</td><td>Belangrijk voor veen en voor houten palen</td></tr></tbody></table></div>\n<p>Omdat het verschil tussen plekken groot kan zijn, maken we geen uitspraken op basis van alleen het adres. Meer over veen lees je bij <a href=\"/funderingsproblemen-veen/\">funderingsproblemen bij veen</a> en in het artikel over de <a href=\"/kennisbank/veenbodem/\">veenbodem</a>.</p>"
+      },
+      {
+        "id": "woningtypen-stadskanaal",
+        "h2": "Welke woningen in de gemeente vragen extra aandacht?",
+        "answer": "Woningen van vóór circa 1970 hebben vaker een fundering op houten palen of op staal en verdienen daarom meer aandacht. Dat betekent niet dat er automatisch iets mis is.",
+        "body": "<p>Bij een <a href=\"/kennisbank/fundering-op-staal/\">fundering op staal</a> rust de woning direct op de ondergrond, vaak op een gemetselde of betonnen strook. Houten palen blijven goed zolang ze permanent onder water staan; bij een lage grondwaterstand kunnen paalkoppen droog komen te staan en kan het hout worden aangetast. Nieuwere woningen zijn meestal anders gefundeerd, maar ook daar kan een aanbouw met een eigen fundering of ongelijke <a href=\"/kennisbank/zetting/\">zetting</a> tot scheuren leiden.</p>\n<p>Lees meer over <a href=\"/kennisbank/houten-paalfundering/\">houten paalfunderingen</a> en <a href=\"/fundering-op-staal/\">fundering op staal</a>.</p>"
+      },
+      {
+        "id": "metingen-fase-1",
+        "h2": "Wat meten we als de Quick Scan aanleiding geeft?",
+        "answer": "In fase 1 meten we onder meer de lintvoeg, de scheefstand en de vloervelden en leggen we scheurpatronen vast. Dat gebeurt niet-destructief, zonder graafwerk.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Meting</th><th>Wat het laat zien</th></tr></thead><tbody><tr><td>Lintvoegwaterpassing</td><td>Hoogteverschillen langs een doorlopende metselvoeg, als teken van ongelijke zakking</td></tr><tr><td><a href=\"/kennisbank/loodmeting/\">Loodmeting</a></td><td>Hoe ver een gevel of wand afwijkt van de verticaal</td></tr><tr><td><a href=\"/kennisbank/vloerveldwaterpassing/\">Vloerveldwaterpassing</a></td><td>Hoogteverschillen in de begane grondvloer per vertrek</td></tr><tr><td><a href=\"/kennisbank/scheurpatronen/\">Scheurpatronen</a></td><td>Richting, verloop en samenhang van scheuren</td></tr></tbody></table></div>\n<p>Eén meting is een momentopname; of beweging doorgaat, blijkt pas uit herhaling. Meer uitleg vind je bij <a href=\"/funderingsmetingen/\">funderingsmetingen</a> en <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a>.</p>"
+      },
+      {
+        "id": "van-aanvraag-tot-rapport",
+        "h2": "Hoe verloopt het onderzoek van aanvraag tot rapport?",
+        "answer": "Na je aanvraag plannen we de inspectie meestal binnen enkele werkdagen. Fase 0 bestaat uit archief- en bodemonderzoek plus een visuele inspectie; het rapport volgt binnen 5 werkdagen na de inspectie.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Aanvragen</strong><span>Je geeft je adres en vraag door; de prijs is vooraf bekend.</span></li><li><strong>Voorbereiden</strong><span>We verzamelen bouwjaar, tekeningen en bodemgegevens.</span></li><li><strong>Inspecteren</strong><span>We bekijken de woning buiten en binnen, inclusief kruipruimte als die toegankelijk is.</span></li><li><strong>Adviseren</strong><span>Je krijgt een rapport met foto’s, conclusie en vervolgadvies.</span></li></ol>\n<p>De details lees je bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a> en <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>. Hoe alles op elkaar aansluit, staat in onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
+      },
+      {
+        "id": "kernen-stadskanaal",
+        "h2": "Funderingsonderzoek in Stadskanaal, Musselkanaal en omliggende dorpen",
+        "answer": "We werken in alle kernen van de gemeente: Stadskanaal, Musselkanaal, Mussel, Onstwedde en Alteveer.",
+        "body": "<ul class=\"town-chips\"><li>Stadskanaal</li><li>Musselkanaal</li><li>Mussel</li><li>Onstwedde</li><li>Alteveer</li></ul>\n<p>Een woning aan het kanaal in Musselkanaal vraagt om dezelfde zorgvuldigheid als een huis in Onstwedde of Alteveer; de conclusie is altijd specifiek voor jouw pand. Ook in de buurgemeenten werken we; zie <a href=\"/funderingsonderzoek-pekela/\">funderingsonderzoek in Pekela</a> of <a href=\"/funderingsonderzoek-westerwolde/\">Westerwolde</a>.</p>\n<p>Meer achtergrond over de provincie vind je bij <a href=\"/funderingsonderzoek-groningen/\">funderingsonderzoek in Groningen</a> en in ons <a href=\"/werkgebied/\">werkgebied</a>. Wil je weten wat de <a href=\"/funderingsscan/\">funderingsscan</a> precies inhoudt, of direct starten? <a href=\"/funderingsscan-aanvragen/\">Vraag de scan aan</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Waar kan ik funderingsonderzoek laten uitvoeren in Stadskanaal?",
+        "a": "<p>Bij MV Funderingsscan. We werken in de hele gemeente Stadskanaal en plannen de inspectie meestal binnen enkele werkdagen in. Je ontvangt het rapport binnen 5 werkdagen na de inspectie.</p>"
+      },
+      {
+        "q": "Komen jullie ook naar Onstwedde of Alteveer?",
+        "a": "<p>Ja. Onstwedde, Alteveer, Mussel en Musselkanaal horen allemaal bij ons werkgebied, met dezelfde werkwijze en prijsindicatie.</p>"
+      },
+      {
+        "q": "Mijn taxateur noemt risicoklasse D. Wat moet ik nu doen?",
+        "a": "<p>Dan is volgens de huidige richtlijnen aanvullend funderingsonderzoek nodig voordat de taxatie kan worden afgerond. Stem met je taxateur of geldverstrekker af welk onderzoek nodig is; een Quick Scan is vaak de eerste stap.</p>"
+      },
+      {
+        "q": "Voeren jullie ook funderingsherstel uit?",
+        "a": "<p>Nee. We voeren zelf geen funderingsherstel uit, zodat ons advies onafhankelijk is. Is herstel nodig, dan laat je een herstelplan en offerte maken door een gespecialiseerde partij.</p>"
+      },
+      {
+        "q": "Wat kost funderingsonderzoek in Stadskanaal?",
+        "a": "<p>De Quick Scan kost vanaf circa €350, bij grotere of complexere woningen indicatief tot circa €550. Fase 1 kost indicatief €750 – €1.500. Zie ook onze <a href=\"/prijzen/\">prijzen</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/funderingsonderzoek-taxatie/",
+        "label": "Funderingsonderzoek bij taxatie",
+        "text": "De funderingsparagraaf en de KCAF-risicoklassen uitgelegd."
+      },
+      {
+        "href": "/funderingsmetingen/",
+        "label": "Funderingsmetingen",
+        "text": "Welke metingen we doen en wat ze laten zien."
+      },
+      {
+        "href": "/kennisbank/funderingsscan-bij-aankoop/",
+        "label": "Funderingsscan bij aankoop",
+        "text": "Waarom een scan vóór de koop je meer zekerheid geeft."
+      }
+    ],
+    "cta": [
+      "Woning in Stadskanaal laten onderzoeken?",
+      "Begin met een onafhankelijke Quick Scan, met de prijs vooraf bekend."
+    ]
+  },
+  {
+    "path": "/funderingsonderzoek-westerkwartier/",
+    "title": "Funderingsonderzoek Zuidhorn, Leek en Grootegast | MV Funderingsscan",
+    "description": "Funderingsonderzoek in Westerkwartier: Zuidhorn, Leek, Grootegast, Marum en dorpen. Klei in het noorden, zand en veen in het zuiden. Start met een Quick Scan.",
+    "keyword": "funderingsonderzoek zuidhorn",
+    "intent": "lokaal-commercieel",
+    "nav_active": "/werkgebied/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/werkgebied/",
+        "name": "Werkgebied"
+      },
+      {
+        "href": "/funderingsonderzoek-groningen/",
+        "name": "Funderingsonderzoek Groningen"
+      },
+      {
+        "href": "/funderingsonderzoek-westerkwartier/",
+        "name": "Westerkwartier"
+      }
+    ],
+    "eyebrow": "Werkgebied · Gemeente Westerkwartier",
+    "h1": "Funderingsonderzoek in Westerkwartier",
+    "lead": "MV Funderingsscan voert <strong>funderingsonderzoek uit in de gemeente Westerkwartier</strong>, waaronder in <strong>Zuidhorn</strong>, Leek, Grootegast, Marum en Aduard. Omdat de bodem binnen de gemeente sterk verschilt, beginnen we met een onafhankelijke Quick Scan die kijkt naar jouw woning en jouw ondergrond.",
+    "hero_image": {
+      "name": "jaren-dertig-woningen-straat",
+      "alt": "Rij jaren-dertigwoningen in een groene straat"
+    },
+    "facts": [
+      {
+        "label": "Ondergrond",
+        "value": "noorden klei, zuiden zand en veen"
+      },
+      {
+        "label": "Quick Scan",
+        "value": "vanaf ca. €350"
+      },
+      {
+        "label": "Rapport",
+        "value": "binnen 5 werkdagen na inspectie"
+      }
+    ],
+    "services": [
+      "fase0",
+      "fase1"
+    ],
+    "sections": [
+      {
+        "id": "twee-bodems",
+        "h2": "Waarom verschilt het funderingsrisico binnen het Westerkwartier?",
+        "answer": "Omdat de gemeente op twee soorten ondergrond ligt: in het noorden vooral klei, in het zuiden zand en veen. Elke grondsoort reageert anders op droogte, nattigheid en belasting.",
+        "body": "<p>Het Westerkwartier is een gemeente van dorpen en groeikernen. Leek en Zuidhorn zijn de grotere plaatsen, met daaromheen dorpen als Grootegast, Marum, Aduard, Grijpskerk en Tolbert. Wie in het ene deel van de gemeente woont, heeft daardoor met een andere bodem te maken dan iemand verderop. Een algemene uitspraak over “funderingen in het Westerkwartier” zegt dus weinig.</p>\n<p>In het bodemonderzoek van de Quick Scan bekijken we daarom eerst wat er op jouw adres bekend is over bodemopbouw, grondwater en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>. Pas daarna kijken we of de signalen aan je woning daarbij passen.</p>"
+      },
+      {
+        "id": "klei-zand-veen",
+        "h2": "Hoe gedragen klei, zand en veen zich onder een woning?",
+        "answer": "Klei krimpt bij droogte en zwelt bij nat weer, veen kan inklinken en oxideren, en zand is meestal het stabielst. Ongelijke bewegingen zijn schadelijker dan gelijkmatige.",
+        "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Klei\"><h3>Klei</h3><p>Klei werkt met de seizoenen mee. In droge perioden krimpt de grond, in natte perioden zwelt hij weer op. Woningen op klei kunnen daardoor scheuren laten zien die in de zomer anders ogen dan in de winter. Lees meer over de <a href=\"/kennisbank/kleibodem/\">kleibodem</a>.</p></section><section class=\"tab-panel\" data-tab=\"Zand\"><h3>Zand</h3><p>Zand is meestal stabieler en minder gevoelig voor inklinking. Dat betekent niet dat een woning op zand nooit beweegt, bijvoorbeeld bij een aanbouw met een eigen fundering. Lees meer over de <a href=\"/kennisbank/zandbodem/\">zandbodem</a>.</p></section><section class=\"tab-panel\" data-tab=\"Veen\"><h3>Veen</h3><p>Veen is samendrukbaar en verliest volume als het uitdroogt. Daardoor kan de grond dalen, ook rond de woning. Lees meer over de <a href=\"/kennisbank/veenbodem/\">veenbodem</a>.</p></section></div>"
+      },
+      {
+        "id": "dorp-of-groeikern",
+        "h2": "Maakt het uit of je in een dorpskern of in een groeikern woont?",
+        "answer": "Ja, vooral door het bouwjaar. In oudere dorpskernen staan vaker woningen van vóór circa 1970, die vaker op houten palen of op staal zijn gefundeerd. In nieuwere wijken spelen andere aandachtspunten.",
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Oudere dorpswoning</h3><p>Vaker een <a href=\"/kennisbank/fundering-op-staal/\">fundering op staal</a> of op <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a>. Grondwater en bodemdaling verdienen daar extra aandacht in de <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a>.</p></div><div class=\"info-card\"><h3>Woning in een groeikern</h3><p>Meestal later gebouwd en anders gefundeerd. Let wel op aanbouwen en uitbouwen, die vaak een eigen, ondiepere fundering hebben.</p></div></div>\n<p>Een fundering op houten palen is niet automatisch een probleem. Wil je weten hoe dat zit, lees dan over <a href=\"/problemen-met-houten-palen/\">problemen met houten palen</a>.</p>"
+      },
+      {
+        "id": "signalen-westerkwartier",
+        "h2": "Welke signalen zijn reden om onderzoek te laten doen?",
+        "answer": "Scheuren die groeien, deuren en ramen die gaan klemmen, een aflopende vloer of een gevel die uit het lood lijkt te staan. Vink hieronder aan wat je herkent.",
+        "body": "<ul class=\"check-interactive\"><li>Scheuren die na een droge zomer duidelijk zijn veranderd</li><li>Trapvormige scheuren in het metselwerk</li><li>Een scheur op de aansluiting tussen woning en aanbouw</li><li>Deuren of ramen die steeds lastiger sluiten</li><li>Een vloer die merkbaar naar één kant afloopt</li></ul>\n<p>Herken je iets, dan is dat nog geen diagnose. Scheuren kunnen ook ontstaan door krimp van metselwerk, temperatuur of een roestende latei, en klemmende deuren door houtwerking of vocht. Bij een kleibodem kan het helpen om te weten wat seizoensbeweging doet; zie <a href=\"/funderingsproblemen-klei/\">funderingsproblemen bij klei</a>. Wil je eerst zelf inschatten of een scan nodig is, gebruik dan de <a href=\"/funderingsscan-check/\">online funderingscheck</a>.</p>"
+      },
+      {
+        "id": "onderzoek-westerkwartier",
+        "h2": "Hoe verloopt funderingsonderzoek in het Westerkwartier?",
+        "answer": "Je start met fase 0: archief- en bodemonderzoek, een visuele inspectie en een rapport met risico-inschatting en advies. Fase 1 met metingen volgt alleen als fase 0 daar aanleiding voor geeft.",
+        "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Vooronderzoek en inspectie, rapport binnen 5 werkdagen na de inspectie.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Lintvoeg-, lood- en vloerveldmetingen, zonder graafwerk.</span></a></div>\n<p>De inspectie wordt meestal binnen enkele werkdagen ingepland. De Quick Scan kost vanaf circa €350, bij grotere of complexere woningen indicatief tot circa €550; fase 1 kost indicatief €750 – €1.500. Na de scan kan het advies zijn om niets te doen, te monitoren, iets aanvullend te onderzoeken of fase 1 te laten uitvoeren. Hoe alles samenhangt, lees je bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
+      },
+      {
+        "id": "kernen-westerkwartier",
+        "h2": "Funderingsonderzoek in Zuidhorn, Leek en omliggende dorpen",
+        "answer": "We werken in alle kernen van het Westerkwartier, waaronder Zuidhorn, Leek, Grootegast, Marum, Aduard, Grijpskerk en Tolbert.",
+        "body": "<ul class=\"town-chips\"><li>Zuidhorn</li><li>Leek</li><li>Grootegast</li><li>Marum</li><li>Aduard</li><li>Grijpskerk</li><li>Tolbert</li></ul>\n<p>Of je een oudere woning in Aduard bekijkt, een gezinswoning in Tolbert bewoont of een huis in Grijpskerk wilt kopen: de werkwijze is overal gelijk, het advies is altijd toegespitst op jouw woning. Ook in de stad werken we; zie <a href=\"/funderingsonderzoek-groningen-stad/\">funderingsonderzoek in Groningen stad</a>.</p>\n<p>Lees meer over de provincie bij <a href=\"/funderingsonderzoek-groningen/\">funderingsonderzoek in Groningen</a>, bekijk ons volledige <a href=\"/werkgebied/\">werkgebied</a> of de uitleg over de <a href=\"/funderingsscan/\">funderingsscan</a>. Direct een afspraak? <a href=\"/funderingsscan-aanvragen/\">Vraag de funderingsscan aan</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Waar kan ik funderingsonderzoek laten uitvoeren in Leek?",
+        "a": "<p>Bij MV Funderingsscan. We voeren funderingsonderzoek uit in heel het Westerkwartier, ook in Leek, en plannen de inspectie meestal binnen enkele werkdagen in.</p>"
+      },
+      {
+        "q": "Doen jullie ook funderingsonderzoek in Zuidhorn en Aduard?",
+        "a": "<p>Ja. Zuidhorn, Aduard, Grijpskerk en de andere kernen van de gemeente horen bij ons werkgebied. De werkwijze en de prijsindicatie zijn overal hetzelfde.</p>"
+      },
+      {
+        "q": "Staat mijn woning op klei of op veen?",
+        "a": "<p>Dat hangt af van waar in de gemeente je woont: in het noorden is de ondergrond vooral klei, in het zuiden zand en veen. In het bodemonderzoek van de Quick Scan zoeken we uit wat er op jouw adres bekend is.</p>"
+      },
+      {
+        "q": "Zijn scheuren die in de zomer ontstaan altijd een funderingsprobleem?",
+        "a": "<p>Nee. Bij klei kan droogte de grond laten krimpen, maar scheuren kunnen ook door temperatuur of krimp van het metselwerk ontstaan. Volg de scheur met foto’s en laat bij twijfel een scan doen.</p>"
+      },
+      {
+        "q": "Wat staat er in het rapport?",
+        "a": "<p>Foto’s, de bevindingen uit archief- en bodemonderzoek en inspectie, een risico-inschatting, een conclusie en advies over een eventuele vervolgstap. Lees meer bij het <a href=\"/funderingsrapport/\">funderingsrapport</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/funderingsproblemen-klei/",
+        "label": "Funderingsproblemen bij klei",
+        "text": "Hoe krimp en zwel van klei woningen kan beïnvloeden."
+      },
+      {
+        "href": "/kennisbank/zandbodem/",
+        "label": "Wonen op een zandbodem",
+        "text": "Waarom zand meestal stabieler is, en waar het toch misgaat."
+      },
+      {
+        "href": "/funderingsscan-groningen/",
+        "label": "Funderingsscan in Groningen aanvragen",
+        "text": "Alles over de scan in de provincie Groningen."
+      }
+    ],
+    "cta": [
+      "Woning in het Westerkwartier laten onderzoeken?",
+      "Start met een Quick Scan die rekening houdt met jouw ondergrond."
+    ]
+  },
+  {
+    "path": "/funderingsonderzoek-westerwolde/",
+    "title": "Funderingsonderzoek Ter Apel en Vlagtwedde | MV Funderingsscan",
+    "description": "Funderingsonderzoek in Westerwolde: Ter Apel, Vlagtwedde, Bellingwolde, Sellingen en Bourtange. Ook op zandgrond geeft een Quick Scan duidelijkheid.",
+    "keyword": "funderingsonderzoek ter apel",
+    "intent": "lokaal-commercieel",
+    "nav_active": "/werkgebied/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/werkgebied/",
+        "name": "Werkgebied"
+      },
+      {
+        "href": "/funderingsonderzoek-groningen/",
+        "name": "Funderingsonderzoek Groningen"
+      },
+      {
+        "href": "/funderingsonderzoek-westerwolde/",
+        "name": "Westerwolde"
+      }
+    ],
+    "eyebrow": "Werkgebied · Gemeente Westerwolde",
+    "h1": "Funderingsonderzoek in Westerwolde",
+    "lead": "MV Funderingsscan voert <strong>funderingsonderzoek uit in de gemeente Westerwolde</strong>, waaronder in <strong>Ter Apel</strong>, Vlagtwedde, Bellingwolde, Sellingen en Bourtange. Ook op de zandgronden van Westerwolde kunnen scheuren en scheefstand ontstaan; met een onafhankelijke Quick Scan weet je of de fundering de oorzaak kan zijn.",
+    "hero_image": {
+      "name": "vooroorlogse-woning-voordeur",
+      "alt": "Klassieke voordeur in een bakstenen gevel van een oudere woning"
+    },
+    "facts": [
+      {
+        "label": "Ondergrond",
+        "value": "zandgronden"
+      },
+      {
+        "label": "Quick Scan",
+        "value": "vanaf ca. €350"
+      },
+      {
+        "label": "Inspectie",
+        "value": "meestal binnen enkele werkdagen"
+      },
+      {
+        "label": "Fase 1",
+        "value": "indicatief €750 – €1.500"
+      }
+    ],
+    "services": [
+      "fase0",
+      "fase1"
+    ],
+    "sections": [
+      {
+        "id": "zand-en-fundering",
+        "h2": "Heeft een woning op zandgrond in Westerwolde wel funderingsonderzoek nodig?",
+        "answer": "Niet altijd, maar het kan wel. Zand is meestal stabieler dan veen of klei, toch kunnen ongelijke zetting, een aanbouw met een eigen fundering of de ouderdom van een woning tot signalen leiden. Een Quick Scan maakt duidelijk of er aanleiding is voor zorg.",
+        "body": "<p>Westerwolde is een gemeente met zandgronden en esdorpen. Dat is een andere situatie dan in de veen- en kleigebieden elders in de provincie. Toch komen ook hier vragen over funderingen voor, bijvoorbeeld bij de aankoop van een oudere woning of wanneer er scheuren ontstaan na een verbouwing.</p>\n<p>Juist omdat de bodem minder vaak de hoofdrol speelt, is het belangrijk om breder te kijken. Misschien is de fundering de oorzaak, misschien ook niet. In het rapport lees je welke verklaring het meest voor de hand ligt en of verder onderzoek zinvol is. Meer over deze grondsoort lees je bij de <a href=\"/kennisbank/zandbodem/\">zandbodem</a>.</p>"
+      },
+      {
+        "id": "zetting-op-zand",
+        "h2": "Kan een woning op zand ook ongelijk zakken?",
+        "answer": "Ja. Zetting is het normale samendrukken van de grond onder het gewicht van een woning, vooral in de eerste jaren na de bouw. Als delen van een woning verschillend belast zijn of anders gefundeerd, kunnen ze ook op zand ongelijk zakken.",
+        "body": "<div class=\"term-box\"><strong>Wat is zetting?</strong><p>Zetting is het samendrukken van de ondergrond onder belasting. Gelijkmatige zetting is meestal geen probleem; als delen van een woning verschillend zakken, kan dat scheuren en scheefstand geven.</p><a href=\"/kennisbank/zetting/\">Lees meer over zetting</a></div>\n<p>Een veelvoorkomend voorbeeld is een aanbouw of uitbouw die later is toegevoegd. Die heeft vaak een eigen, ondiepere fundering en kan daardoor anders bewegen dan het hoofdhuis. Ook bij oudere woningen, die vaker op staal of op <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a> zijn gefundeerd, is het goed om te weten hoe de fundering is opgebouwd. Lees meer over een <a href=\"/fundering-op-staal/\">fundering op staal</a>.</p>"
+      },
+      {
+        "id": "historische-panden",
+        "h2": "Hoe kijken we naar oudere panden in Bourtange en Ter Apel?",
+        "answer": "Niet-destructief en met extra aandacht voor de geschiedenis van het pand. Bourtange is een gerestaureerde vestingstad en Ter Apel is bekend om het klooster; in zulke omgevingen staan vaak oudere woningen met een eigen bouwgeschiedenis.",
+        "body": "<p>Bij een ouder pand begint het onderzoek met het archief: wat is er bekend over het bouwjaar, over eerdere verbouwingen en over het vermoedelijke funderingstype? Niet bij elke woning zijn tekeningen beschikbaar; ontbrekende gegevens noemen we in het rapport als beperking. Lees meer over <a href=\"/kennisbank/archiefonderzoek-fundering/\">archiefonderzoek naar de fundering</a>.</p>\n<p>Daarna volgt de inspectie ter plaatse. We bekijken gevels, metselwerk, scheuren en <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, kozijnen, vloeren en de kruipruimte voor zover die toegankelijk is. We graven niet en maken niets open. Is meer zekerheid nodig over de fundering zelf, dan kan een inspectieput het advies zijn; dat valt buiten fase 0 en fase 1.</p>"
+      },
+      {
+        "id": "andere-oorzaken",
+        "h2": "Welke andere oorzaken van scheuren en klemmende deuren zijn er?",
+        "answer": "Lang niet elke scheur komt door de fundering. Krimp, temperatuur, een roestende latei, houtwerking, vocht of een slecht afgestelde deur kunnen vergelijkbare signalen geven.",
+        "body": "<dl class=\"def-list\"><div><dt>Krimp en temperatuur</dt><dd>Metselwerk zet uit en krimpt; daardoor kunnen fijne scheuren ontstaan, vaak zonder dat er iets met de fundering aan de hand is.</dd></div><div><dt>Roestende latei</dt><dd>Een stalen balk boven een raam of deur kan door roest uitzetten en het metselwerk erboven laten scheuren.</dd></div><div><dt>Hout en vocht</dt><dd>Deuren en kozijnen kunnen door vocht gaan werken en klemmen, los van beweging in de fundering.</dd></div><div><dt>Aanbouw</dt><dd>Een eigen, ondiepere fundering kan op de aansluiting met het hoofdhuis tot een scheur leiden.</dd></div></dl>\n<p>Meer over het duiden van scheuren lees je bij <a href=\"/scheuren-in-gevel/\">scheuren in de gevel</a> en <a href=\"/klemmende-deuren-en-ramen/\">klemmende deuren en ramen</a>.</p>"
+      },
+      {
+        "id": "wanneer-westerwolde",
+        "h2": "Wanneer is een scan in Westerwolde verstandig?",
+        "answer": "Bij de aankoop van een oudere woning, wanneer signalen toenemen, of als je taxateur aanvullend funderingsonderzoek vraagt omdat de woning in risicoklasse D of E valt.",
+        "body": "<ul class=\"checklist\"><li>Je overweegt een woning van vóór circa 1970 te kopen</li><li>Je ziet scheuren die groter worden of na herstel terugkomen</li><li>Een vloer loopt af of een gevel lijkt uit het lood te staan</li><li>Je wilt vóór een verbouwing weten hoe de fundering ervoor staat</li></ul>\n<p>Bij twijfel helpt de <a href=\"/funderingsscan-check/\">online funderingscheck</a> je op weg. Over kopen lees je meer bij <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>.</p>"
+      },
+      {
+        "id": "verloop-westerwolde",
+        "h2": "Hoe verloopt het onderzoek in Westerwolde?",
+        "answer": "Je begint met de Quick Scan (fase 0). Die levert binnen 5 werkdagen na de inspectie een rapport op met risico-inschatting en advies. Fase 1 met metingen volgt alleen als dat nodig is.",
+        "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Fase 0\"><h3>Fase 0</h3><p>Archief- en bodemonderzoek, een <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a> en een rapport met foto’s, conclusie en advies. Vanaf circa €350, bij grotere of complexere woningen indicatief tot circa €550. Lees meer bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>.</p></section><section class=\"tab-panel\" data-tab=\"Fase 1\"><h3>Fase 1</h3><p><a href=\"/kennisbank/lintvoegwaterpassing/\">Lintvoegwaterpassing</a>, <a href=\"/kennisbank/loodmeting/\">loodmeting</a>, <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a> en het vastleggen van scheurpatronen. Indicatief €750 – €1.500. Lees meer bij <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>.</p></section><section class=\"tab-panel\" data-tab=\"Daarna\"><h3>Daarna</h3><p>Monitoren, een inspectieput of een herstelplan door een gespecialiseerde partij. Wij voeren zelf geen herstel uit, zodat ons advies onafhankelijk blijft.</p></section></div>\n<p>Het hele traject staat beschreven in onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
+      },
+      {
+        "id": "kernen-westerwolde",
+        "h2": "Funderingsonderzoek in Ter Apel, Vlagtwedde en omliggende dorpen",
+        "answer": "We werken in alle kernen van Westerwolde: Ter Apel, Vlagtwedde, Bellingwolde, Sellingen en Bourtange.",
+        "body": "<ul class=\"town-chips\"><li>Ter Apel</li><li>Vlagtwedde</li><li>Bellingwolde</li><li>Sellingen</li><li>Bourtange</li></ul>\n<p>Van een woning in Sellingen tot een huis in Bellingwolde: we beoordelen elke woning op zichzelf. Ook in de buurgemeenten werken we; zie bijvoorbeeld <a href=\"/funderingsonderzoek-stadskanaal/\">funderingsonderzoek in Stadskanaal</a> of <a href=\"/funderingsonderzoek-winschoten/\">Winschoten</a>.</p>\n<p>Meer over de provincie lees je bij <a href=\"/funderingsonderzoek-groningen/\">funderingsonderzoek in Groningen</a>; ons volledige <a href=\"/werkgebied/\">werkgebied</a> staat op een eigen pagina. Benieuwd wat de <a href=\"/funderingsscan/\">funderingsscan</a> je oplevert? <a href=\"/funderingsscan-aanvragen/\">Vraag de scan direct aan</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Waar kan ik funderingsonderzoek laten uitvoeren in Ter Apel?",
+        "a": "<p>Bij MV Funderingsscan. We werken in de hele gemeente Westerwolde, ook in Ter Apel, en plannen de inspectie meestal binnen enkele werkdagen in.</p>"
+      },
+      {
+        "q": "Komen jullie ook naar Bourtange of Sellingen?",
+        "a": "<p>Ja. Bourtange, Sellingen, Vlagtwedde en Bellingwolde horen allemaal bij ons werkgebied, met dezelfde werkwijze en prijsindicatie als in Ter Apel.</p>"
+      },
+      {
+        "q": "Is funderingsonderzoek op zandgrond minder vaak nodig?",
+        "a": "<p>Zand is meestal stabieler dan veen of klei, maar dat zegt niet alles over jouw woning. Bouwjaar, funderingstype en aanbouwen spelen ook mee. Of vervolgonderzoek nodig is, blijkt uit de Quick Scan.</p>"
+      },
+      {
+        "q": "Maken jullie iets open of graven jullie bij de fundering?",
+        "a": "<p>Nee. Fase 0 en fase 1 zijn niet-destructief en zonder graafwerk. Een inspectieput valt buiten ons onderzoek, maar we adviseren wel of die stap zinvol is.</p>"
+      },
+      {
+        "q": "Wat kost een Quick Scan in Westerwolde?",
+        "a": "<p>Vanaf circa €350; bij grotere of complexere woningen indicatief tot circa €550. De definitieve prijs hoor je vooraf. Zie onze <a href=\"/prijzen/\">prijzen</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/zetting/",
+        "label": "Zetting uitgelegd",
+        "text": "Wat zetting is en wanneer ongelijke zakking een probleem wordt."
+      },
+      {
+        "href": "/fundering-op-staal/",
+        "label": "Fundering op staal",
+        "text": "Hoe een fundering zonder palen werkt en waar je op let."
+      },
+      {
+        "href": "/funderingsonderzoek-bij-aankoop/",
+        "label": "Funderingsonderzoek bij aankoop",
+        "text": "Weet waar je aan begint voordat je een woning koopt."
+      }
+    ],
+    "cta": [
+      "Woning in Westerwolde laten onderzoeken?",
+      "Een Quick Scan geeft duidelijkheid, met de prijs vooraf bekend."
+    ]
+  }
+]

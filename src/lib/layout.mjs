@@ -360,6 +360,7 @@ ${faqItems(faqs)}
 export function ctaBand(
   title = 'Weten hoe jouw fundering ervoor staat?',
   text = 'Vraag een Quick Scan aan. Je ontvangt vooraf een vaste prijs en binnen vijf werkdagen na de inspectie een helder rapport.',
+  button = 'Vraag een funderingsscan aan',
 ) {
   return `<section class="cta-band" aria-labelledby="cta-title">
   <div class="container cta-band-inner reveal">
@@ -369,7 +370,7 @@ export function ctaBand(
       <p>${text}</p>
     </div>
     <div class="cta-band-actions">
-      <a class="btn btn-gold btn-lg" href="/funderingsscan-aanvragen/">Vraag een funderingsscan aan <span aria-hidden="true">→</span></a>
+      <a class="btn btn-gold btn-lg" href="/funderingsscan-aanvragen/">${button} <span aria-hidden="true">→</span></a>
       <a class="btn btn-outline-light btn-lg" href="${NAP.phone_href}">Bel ${NAP.phone_display}</a>
     </div>
   </div>

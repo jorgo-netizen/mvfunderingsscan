@@ -442,6 +442,8 @@
   $$('[data-sim="lintvoeg"]').forEach((sim) => {
     const points = $$('.sim-point', sim);
     const heights = points.map((p) => parseFloat(p.dataset.h));
+    const labels = points.map((p, i) => p.dataset.label || String(i + 1));
+    const trend = $('[data-sim-trend]', sim);
     const selected = new Set();
     const readings = $('[data-sim-readings]', sim);
     const status = $('[data-sim-status]', sim);
@@ -470,7 +472,7 @@
       const xOf = (i) => x0 + i * xStep;
       for (let i = 0; i < N; i++) {
         profile.appendChild(svgEl('line', { x1: xOf(i), y1: T, x2: xOf(i), y2: B, class: 'sim-grid' }));
-        profile.appendChild(svgEl('text', { x: xOf(i), y: B + (narrow ? 24 : 16), 'text-anchor': 'middle', class: 'sim-tick' }, String(i + 1)));
+        profile.appendChild(svgEl('text', { x: xOf(i), y: B + (narrow ? 24 : 16), 'text-anchor': 'middle', class: 'sim-tick' }, labels[i]));
       }
       if (idx.length < 2) {
         profile.appendChild(svgEl('text', { x: W / 2, y: (T + B) / 2, 'text-anchor': 'middle', class: 'sim-placeholder' },
@@ -512,12 +514,12 @@
         const on = selected.has(i);
         p.classList.toggle('is-selected', on);
         p.setAttribute('aria-pressed', String(on));
-        p.setAttribute('aria-label', on ? `Meetpunt ${i + 1}, hoogte ${fmt(heights[i])} centimeter` : `Meetpunt ${i + 1}`);
+        p.setAttribute('aria-label', on ? `Meetpunt ${labels[i]}, hoogte ${fmt(heights[i])} centimeter` : `Meetpunt ${labels[i]}`);
         let tip = $('.sim-point-value', p);
         if (on && !tip) { tip = document.createElement('em'); tip.className = 'sim-point-value'; tip.textContent = `${fmt(heights[i])} cm`; p.appendChild(tip); }
         if (!on && tip) tip.remove();
       });
-      readings.innerHTML = idx.map((i) => `<li><span>Meetpunt ${i + 1}</span><strong>Hoogte: ${fmt(heights[i])} cm</strong></li>`).join('');
+      readings.innerHTML = idx.map((i) => `<li><span>Punt ${labels[i]}</span><strong>Hoogte: ${fmt(heights[i])} cm</strong></li>`).join('');
       lastIdx = idx;
       drawProfile(idx);
       if (idx.length >= 2) {
@@ -527,17 +529,27 @@
         const iMax = idx[vals.indexOf(max)];
         const iMin = idx[vals.indexOf(min)];
         const mm = Math.round((max - min) * 10);
-        $('[data-sim-max]', sim).textContent = `Meetpunt ${iMax + 1} · ${fmt(max)} cm`;
-        $('[data-sim-min]', sim).textContent = `Meetpunt ${iMin + 1} · ${fmt(min)} cm`;
+        $('[data-sim-max]', sim).textContent = `Punt ${labels[iMax]} · ${fmt(max)} cm`;
+        $('[data-sim-min]', sim).textContent = `Punt ${labels[iMin]} · ${fmt(min)} cm`;
         $('[data-sim-diff]', sim).textContent = `${mm} mm`;
         result.hidden = false;
         status.textContent = `${idx.length} van ${N} meetpunten gemeten. Hoogteverschil tussen de gemeten punten: ${mm} mm.`;
+        // verloop: richting en grootste stap tussen opeenvolgende gemeten punten
+        const steps = idx.slice(1).map((i, n) => ({ from: idx[n], to: i, d: heights[i] - heights[idx[n]] }));
+        const down = steps.every((st) => st.d <= 0);
+        const up = steps.every((st) => st.d >= 0);
+        const big = steps.reduce((a, b) => (Math.abs(b.d) > Math.abs(a.d) ? b : a));
+        const dir = down ? `loopt van links (punt ${labels[idx[0]]}) naar rechts (punt ${labels[idx.at(-1)]}) geleidelijk af`
+          : up ? 'loopt van links naar rechts geleidelijk op' : 'loopt niet gelijkmatig: er zitten zowel dalingen als stijgingen in';
+        trend.innerHTML = `<strong>Verloop:</strong> de lintvoeg ${dir}. De grootste stap zit tussen punt ${labels[big.from]} en punt ${labels[big.to]} (${Math.round(Math.abs(big.d) * 10)} mm).`;
+        trend.hidden = false;
         explain.textContent = idx.length === N
-          ? `De meetpunten liggen niet allemaal op dezelfde hoogte. Tussen meetpunt ${iMax + 1} en meetpunt ${iMin + 1} zit ${mm} mm verschil. In deze simulatie loopt de voeg van links naar rechts geleidelijk af en stijgt aan het eind weer licht – het patroon is belangrijker dan één los getal.`
-          : `De meetpunten liggen niet allemaal op dezelfde hoogte. Het verschil tussen meetpunt ${iMax + 1} (hoogste) en meetpunt ${iMin + 1} (laagste) is ${mm} mm. Meet meer punten om het verloop van de hele voeg te zien.`;
+          ? `De meetpunten liggen niet allemaal op dezelfde hoogte. Tussen punt ${labels[iMax]} (hoogste) en punt ${labels[iMin]} (laagste) zit ${mm} mm verschil. Juist het verloop over de hele gevel – een geleidelijke daling of juist een knik – zegt meer dan één los getal.`
+          : `De meetpunten liggen niet allemaal op dezelfde hoogte. Het verschil tussen punt ${labels[iMax]} (hoogste) en punt ${labels[iMin]} (laagste) is ${mm} mm. Meet meer punten om het verloop van de hele voeg te zien.`;
       } else {
         result.hidden = true;
-        status.textContent = idx.length ? `Meetpunt ${idx[0] + 1} gemeten: ${fmt(heights[idx[0]])} cm. Meet nog een punt om te vergelijken.` : 'Nog geen meetpunten gemeten. Kies een meetpunt in de gevel.';
+        trend.hidden = true;
+        status.textContent = idx.length ? `Punt ${labels[idx[0]]} gemeten: ${fmt(heights[idx[0]])} cm. Meet nog een punt om te vergelijken.` : 'Nog geen meetpunten gemeten. Kies een meetpunt in de gevel.';
         explain.textContent = explainDefault;
       }
     };
@@ -596,7 +608,7 @@
       const from = current;
       const t0 = performance.now();
       const step = (now) => {
-        const p = Math.min((now - t0) / 450, 1);
+        const p = Math.max(0, Math.min((now - t0) / 450, 1));
         current = from + (target - from) * (1 - Math.pow(1 - p, 3));
         render(current);
         if (p < 1) anim = requestAnimationFrame(step);
@@ -608,7 +620,158 @@
     render(0);
   });
 
-  // Keuzehulp: welke meting past bij mijn situatie?
+  // Oldehove: schuifregelaar in graden → toren helt naar rechts, loodlijn blijft recht
+  $$('[data-sim="oldehove"]').forEach((sim) => {
+    const range = $('[data-ol-range]', sim);
+    const tower = $('[data-ol-tower]', sim);
+    const offset = $('[data-ol-offset]', sim);
+    const label = $('[data-ol-label]', sim);
+    const value = $('[data-ol-value]', sim);
+    const text = $('[data-ol-text]', sim);
+    const chips = $$('[data-ol-set]', sim);
+    const CX = 210; const BASE = 440; const H = 340; // toren van y=100 tot y=440
+    const VISUAL = 2.2; // visuele overdrijving zodat kleine hoeken zichtbaar worden
+    let current = 0; let anim = null;
+    const render = (deg) => {
+      const vis = deg * VISUAL;
+      tower.setAttribute('transform', `rotate(${vis.toFixed(2)} ${CX} ${BASE})`);
+      const rad = vis * Math.PI / 180;
+      const topX = CX + H * Math.sin(rad);
+      const topY = BASE - H * Math.cos(rad);
+      offset.setAttribute('y1', topY.toFixed(1));
+      offset.setAttribute('y2', topY.toFixed(1));
+      offset.setAttribute('x2', topX.toFixed(1));
+      const shown = Math.round(deg * 2) / 2;
+      const txt = `${fmt(shown, shown % 1 ? 1 : 0)}°`;
+      label.textContent = shown > 0 ? txt : '';
+      label.setAttribute('x', (topX + 8).toFixed(1));
+      label.setAttribute('y', (topY - 8).toFixed(1));
+      value.textContent = txt;
+      text.textContent = shown === 0 ? 'De toren staat in deze illustratie loodrecht.'
+        : shown < 1.5 ? 'De toren helt visueel naar rechts.'
+        : 'De toren helt visueel naar rechts. De scheefstand neemt toe.';
+      range.setAttribute('aria-valuetext', `${txt} scheefstand naar rechts`);
+      chips.forEach((c) => c.setAttribute('aria-pressed', String(Number(c.dataset.olSet) === shown)));
+    };
+    const animateTo = (target) => {
+      cancelAnimationFrame(anim);
+      if (reduceMotion) { current = target; render(current); return; }
+      const from = current; const t0 = performance.now();
+      const step = (now) => {
+        const p = Math.max(0, Math.min((now - t0) / 500, 1));
+        current = from + (target - from) * (1 - Math.pow(1 - p, 3));
+        render(current);
+        if (p < 1) anim = requestAnimationFrame(step);
+      };
+      anim = requestAnimationFrame(step);
+    };
+    range.addEventListener('input', () => { cancelAnimationFrame(anim); current = Number(range.value); render(current); });
+    chips.forEach((c) => c.addEventListener('click', () => { range.value = c.dataset.olSet; animateTo(Number(c.dataset.olSet)); }));
+    render(0);
+  });
+
+  // Scheuren: klikbare scheuren in de gevel → infopaneel
+  $$('[data-sim="scheuren"]').forEach((sim) => {
+    const cracks = $$('[data-crack]', sim);
+    const panels = $$('[data-crack-panel]', sim);
+    panels.forEach((p) => { p.hidden = p.dataset.crackPanel !== 'start'; });
+    sim.classList.add('is-ready');
+    const select = (g) => {
+      cracks.forEach((c) => { c.classList.toggle('is-active', c === g); c.setAttribute('aria-pressed', String(c === g)); });
+      panels.forEach((p) => { p.hidden = p.dataset.crackPanel !== g.dataset.crack; });
+      if (window.matchMedia('(max-width: 900px)').matches) {
+        const panel = panels.find((p) => !p.hidden);
+        if (panel) panel.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'nearest' });
+      }
+    };
+    cracks.forEach((g) => {
+      g.addEventListener('click', () => select(g));
+      g.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(g); }
+      });
+    });
+  });
+
+  // Vloerveldwaterpassing: raster aanklikken → kleur, hoogteverschil en doorsnede
+  $$('[data-sim="vloerveld"]').forEach((sim) => {
+    const cells = $$('.vv-cell', sim);
+    const status = $('[data-vv-status]', sim);
+    const result = $('[data-vv-result]', sim);
+    const profile = $('[data-vv-profile]', sim);
+    const rowBtns = $$('[data-vv-row]', sim);
+    const all = cells.map((c) => parseFloat(c.dataset.h));
+    const gMax = Math.max(...all); const gMin = Math.min(...all);
+    const ROWS = 'ABCDE';
+    const id = (c) => `${ROWS[c.dataset.r]}${Number(c.dataset.c) + 1}`;
+    const selected = new Set();
+    let row = 2;
+    const color = (h) => {
+      const t = (gMax - h) / Math.max(gMax - gMin, 0.01); // 0 = hoog, 1 = laag
+      return `hsl(${(205 - t * 170).toFixed(0)} ${(45 + t * 20).toFixed(0)}% ${(80 - t * 22).toFixed(0)}%)`;
+    };
+    const drawRow = () => {
+      const vals = cells.filter((c) => Number(c.dataset.r) === row).map((c) => parseFloat(c.dataset.h));
+      profile.innerHTML = '';
+      const L = 20; const R = 380; const T = 34; const B = 110;
+      const xOf = (i) => L + 30 + i * ((R - L - 60) / 4);
+      const yOf = (h) => T + ((gMax - h) / Math.max(gMax - gMin, 0.01)) * (B - T);
+      profile.appendChild(svgEl('line', { x1: L, y1: yOf(gMax), x2: R, y2: yOf(gMax), class: 'sim-profile-ref' }));
+      profile.appendChild(svgEl('text', { x: R, y: yOf(gMax) - 8, 'text-anchor': 'end', class: 'sim-tick' }, 'waterpas'));
+      const pts = vals.map((h, i) => `${xOf(i)},${yOf(h)}`);
+      profile.appendChild(svgEl('polygon', { points: `${L},${B + 26} ${L},${yOf(vals[0])} ${pts.join(' ')} ${R},${yOf(vals[4])} ${R},${B + 26}`, class: 'vv-slab' }));
+      profile.appendChild(svgEl('polyline', { points: `${L},${yOf(vals[0])} ${pts.join(' ')} ${R},${yOf(vals[4])}`, class: 'sim-profile-line' }));
+      vals.forEach((h, i) => {
+        profile.appendChild(svgEl('circle', { cx: xOf(i), cy: yOf(h), r: 5, class: 'sim-dot' }));
+        profile.appendChild(svgEl('text', { x: xOf(i), y: B + 50, 'text-anchor': 'middle', class: 'sim-tick' }, `${ROWS[row]}${i + 1}`));
+        profile.appendChild(svgEl('text', { x: xOf(i), y: yOf(h) - 12, 'text-anchor': 'middle', class: 'sim-dot-label' }, fmt(h)));
+      });
+      const d = Math.round((Math.max(...vals) - Math.min(...vals)) * 10);
+      profile.setAttribute('aria-label', `Doorsnede rij ${ROWS[row]}: ${d} mm verschil tussen het hoogste en laagste punt van deze rij`);
+      rowBtns.forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.vvRow) === row)));
+    };
+    const update = () => {
+      cells.forEach((c, i) => {
+        const on = selected.has(i);
+        c.classList.toggle('is-measured', on);
+        c.setAttribute('aria-pressed', String(on));
+        c.style.background = on ? color(all[i]) : '';
+        c.setAttribute('aria-label', on ? `Meetpunt ${id(c)}, ${fmt(all[i])} centimeter` : `Meetpunt ${id(c)}`);
+      });
+      const idx = [...selected];
+      if (idx.length >= 2) {
+        const vals = idx.map((i) => all[i]);
+        const max = Math.max(...vals); const min = Math.min(...vals);
+        const cMax = cells[idx[vals.indexOf(max)]]; const cMin = cells[idx[vals.indexOf(min)]];
+        const mm = Math.round((max - min) * 10);
+        $('[data-vv-max]', sim).textContent = `${id(cMax)} · ${fmt(max)} cm`;
+        $('[data-vv-min]', sim).textContent = `${id(cMin)} · ${fmt(min)} cm`;
+        $('[data-vv-diff]', sim).textContent = `${mm} mm`;
+        result.hidden = false;
+        status.textContent = `${idx.length} van ${cells.length} meetpunten gemeten. Hoogteverschil tussen hoogste en laagste meetpunt: ${mm} mm.`
+          + (idx.length === cells.length ? ' In deze simulatie loopt de vloer geleidelijk af van hoek A1 naar hoek E5.' : '');
+      } else {
+        result.hidden = true;
+        status.textContent = idx.length ? `Meetpunt ${id(cells[idx[0]])}: ${fmt(all[idx[0]])} cm. Meet nog een punt om te vergelijken.` : 'Nog geen meetpunten gemeten.';
+      }
+    };
+    sim.classList.add('is-ready');
+    cells.forEach((c, i) => c.addEventListener('click', () => {
+      if (selected.has(i)) selected.delete(i); else selected.add(i);
+      row = Number(c.dataset.r); drawRow();
+      update();
+    }));
+    rowBtns.forEach((b) => b.addEventListener('click', () => { row = Number(b.dataset.vvRow); drawRow(); }));
+    $('[data-vv-reset]', sim).addEventListener('click', () => { selected.clear(); update(); });
+    $('[data-vv-all]', sim).addEventListener('click', () => {
+      const todo = cells.map((_, i) => i).filter((i) => !selected.has(i));
+      if (reduceMotion) { todo.forEach((i) => selected.add(i)); update(); return; }
+      todo.forEach((i, n) => setTimeout(() => { selected.add(i); update(); }, n * 45));
+    });
+    drawRow();
+    update();
+  });
+
+  // Keuzehulpen (situatie en scheuranalyse)
   $$('[data-sim="keuze"]').forEach((sim) => {
     const buttons = $$('[data-keuze]', sim);
     const panels = $$('[data-keuze-panel]', sim);

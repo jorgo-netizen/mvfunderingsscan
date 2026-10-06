@@ -1565,6 +1565,95 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 .prose .sim-choice-result p { color: var(--text); font-size: 15px; }
 .prose .sim-choice-result .btn { color: #fff; border-bottom: 0; }
 
+/* Lintvoeg: verloop */
+.prose .sim-trend { margin: 12px 0 0; padding: 10px 12px; border-radius: 10px; background: rgba(255, 255, 255, .08); color: #e3eaf1; font-size: 14.5px; animation: pop .3s var(--ease); }
+.prose .sim-trend strong { color: var(--gold-light); }
+.prose .sim-oldehove .sim-level { color: var(--navy); }
+.sim-trend[hidden] { display: none; }
+
+/* Oldehove */
+.sim-oldehove .sim-panel { margin-top: 0; }
+.sim-small-label { font-size: 12px; fill: var(--muted); font-style: italic; }
+[data-ol-tower] { transform-box: view-box; }
+
+/* Scheuren */
+.sim-sc-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+.crack { cursor: pointer; outline: none; }
+.crack-hit { fill: none; stroke: transparent; stroke-width: 26; stroke-linecap: round; pointer-events: stroke; }
+.crack-line { fill: none; stroke: #2a1a14; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; transition: stroke .2s ease, stroke-width .2s ease; }
+.crack-line.crack-wide { stroke-width: 6; }
+.crack-badge { fill: #fff; stroke: var(--navy); stroke-width: 2.5; transition: fill .2s ease, stroke .2s ease; }
+.crack-num { font-size: 14px; font-weight: 700; fill: var(--navy); pointer-events: none; }
+.crack:hover .crack-line, .crack:focus-visible .crack-line, .crack.is-active .crack-line { stroke: var(--gold); stroke-width: 5; }
+.crack:hover .crack-line.crack-wide, .crack.is-active .crack-line.crack-wide { stroke-width: 8; }
+.crack:focus-visible .crack-badge { stroke: var(--gold); stroke-width: 5; }
+.crack.is-active .crack-badge { fill: var(--gold); stroke: #fff; }
+.crack.is-active .crack-num { fill: #fff; }
+.sim-scheuren:not(.is-ready) .crack-badge { animation: none; }
+.sim-scheuren.is-ready .crack:not(.is-active) .crack-badge { animation: simPulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.crack-panel { display: grid; gap: 10px; }
+.crack-info { padding: 18px 20px; border-radius: 14px; background: var(--light); border: 1px solid var(--line); }
+.crack-info[hidden] { display: none; }
+.sim-scheuren.is-ready .crack-info:not([hidden]) { animation: pop .3s var(--ease); background: var(--gold-soft); border-color: rgba(201, 155, 62, .45); }
+.prose .crack-info h4 { margin: 4px 0 6px; font-size: 18px; color: var(--navy); }
+.prose .crack-info p { margin: 0; font-size: 15px; color: var(--text); }
+.crack-info-start strong { display: block; color: var(--navy); margin-bottom: 4px; }
+.sim-patronen h5 { margin: 0 0 8px; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
+.prose .sim-patronen .two-col-list p { font-size: 15px; margin: 0 0 12px; }
+.prose .sim-patronen .tab-panel h4 { margin: 0 0 6px; color: var(--navy); font-size: 19px; }
+.sim-choice-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.prose .sim-choice-result .btn-ghost-dark { color: var(--navy); }
+.route-list { margin: 10px 0 0; padding-left: 22px; }
+.prose .route-list li { margin-bottom: 4px; font-size: 15px; }
+
+/* Vloerveld */
+.sim-vv-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+.sim-vloerveld .sim-panel { margin-top: 0; }
+.vv-floor-wrap { padding: 16px; border-radius: 14px; background: #d9cdb8; background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, .05) 0 2px, transparent 2px 48px); border: 6px solid #8a7a62; }
+.vv-floor { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.vv-cell {
+  aspect-ratio: 1; min-height: 46px; border-radius: 10px; border: 2px dashed rgba(16, 41, 69, .35); background: rgba(255, 255, 255, .55);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; cursor: pointer; font-family: inherit; color: var(--navy);
+  transition: background-color .25s ease, border-color .2s ease, transform .2s var(--ease);
+}
+.vv-cell:hover, .vv-cell:focus-visible { border-color: var(--gold); transform: scale(1.05); }
+.vv-cell:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.vv-cell.is-measured { border-style: solid; border-color: #fff; animation: pop .25s var(--ease); }
+.vv-id { font-size: 12px; font-weight: 700; }
+.vv-val { font-size: 13px; font-weight: 700; }
+.js .vv-val { opacity: 0; }
+.js .vv-cell.is-measured .vv-val { opacity: 1; }
+.vv-legend { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 12.5px; font-weight: 700; color: #3d3325; }
+.vv-legend i { flex: 1; height: 8px; border-radius: 8px; background: linear-gradient(90deg, hsl(205 45% 80%), hsl(120 55% 69%), hsl(35 65% 58%)); }
+.sim-result-light > div { background: var(--light); border: 1px solid var(--line); }
+.sim-result-light span { color: var(--muted); }
+.sim-result-light strong { color: var(--navy); }
+.sim-result-light .sim-result-diff { background: var(--gold); border-color: var(--gold); }
+.sim-result-light .sim-result-diff span, .sim-result-light .sim-result-diff strong { color: #fff; }
+.sim-vloerveld .sim-result { grid-template-columns: 1fr 1fr; }
+.sim-vloerveld .sim-result-diff { grid-column: 1 / -1; }
+.vv-section { padding: 16px; border-radius: 14px; background: var(--navy); }
+.vv-section .sim-presets { margin-bottom: 8px; }
+.vv-section .sim-chip { min-height: 36px; padding: 6px 12px; font-size: 13.5px; }
+.vv-section .sim-chip[aria-pressed="true"] { background: var(--gold); border-color: var(--gold); color: #fff; }
+.vv-profile { display: block; width: 100%; height: auto; }
+.vv-slab { fill: rgba(223, 182, 90, .18); }
+
+@media (max-width: 900px) {
+  .sim-sc-grid, .sim-vv-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .vv-floor { gap: 5px; }
+  .vv-floor-wrap { padding: 10px; border-width: 4px; }
+  .vv-id { font-size: 11px; }
+  .vv-val { font-size: 11.5px; }
+  .crack-num { font-size: 20px; }
+  .crack-badge { r: 18; }
+  .sim-small-label { font-size: 15px; }
+  .sim-oldehove .sim-ref-label { font-size: 18px; }
+  .sim-choice-actions .btn { flex: 1 1 100%; }
+}
+
 @media (max-width: 760px) {
   .sim { padding: 18px 16px; }
   .sim-lood-grid, .sim-explain { grid-template-columns: 1fr; }

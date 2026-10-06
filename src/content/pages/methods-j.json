@@ -52,6 +52,14 @@
         "body": "<p>Hoe fijn het raster is, hangt af van de woning, de grootte van de vertrekken en de vraag die beantwoord moet worden. Er is geen vast aantal punten dat altijd geldt. Wel volgt de opbouw meestal dezelfde logica:</p><ol class=\"mini-steps\"><li><strong>Plattegrond vastleggen</strong><span>Een schets van de te meten vertrekken, met dragende muren, deuropeningen en eventuele aanbouwen.</span></li><li><strong>Referentiepunt kiezen</strong><span>Eén vast punt waartegen alle hoogtes worden bepaald, zodat alle vertrekken vergelijkbaar zijn.</span></li><li><strong>Raster uitzetten</strong><span>Punten in een regelmatig patroon over elk vloerveld, zodat het hele oppervlak wordt gedekt.</span></li><li><strong>Extra punten toevoegen</strong><span>Langs gevels, in hoeken, bij overgangen tussen vertrekken en bij de aansluiting met een aanbouw worden vaak aanvullende punten gemeten.</span></li><li><strong>Punten nummeren</strong><span>Elk punt krijgt een nummer op de plattegrond, zodat de meting later te herhalen is.</span></li></ol><p>Waar vaste kasten of een keukenblok staan, wordt genoteerd dat het beeld minder compleet is.</p>"
       },
       {
+        "id": "probeer-het-zelf",
+        "h2": "Probeer het zelf: een vloerveld meten",
+        "answer": "In deze educatieve simulatie meet je zelf een raster van 5 bij 5 meetpunten op een vloer. Je ziet per punt de hoogte, het hoogteverschil tussen het hoogste en laagste punt en een doorsnede van de vloer.",
+        "widget": "vloerveld",
+        "widget_position": "after",
+        "body": "<p>Wil je alle meetmethoden naast elkaar zien, inclusief lintvoegwaterpassing en loodmeting? Bekijk dan de pagina <a href=\"/funderingsmetingen/\">funderingsmetingen uitgelegd</a>.</p>"
+      },
+      {
         "id": "hoe-meet-je-hoogteverschillen",
         "h2": "Hoe meet je hoogteverschillen in een woning?",
         "answer": "Hoogteverschillen in een woning meet je met een waterpasinstrument of een vergelijkbaar digitaal of laserinstrument, waarbij je van elk meetpunt het hoogteverschil ten opzichte van één referentiepunt bepaalt.",
@@ -235,6 +243,14 @@
         "h2": "Welke soorten scheuren zijn er?",
         "answer": "Naar richting worden vooral horizontale, verticale, diagonale en trapsgewijze scheuren onderscheiden; elke richting kan verschillende oorzaken hebben en zegt pas iets in combinatie met andere signalen.",
         "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Horizontaal\"><h3>Horizontaal</h3><p>Een horizontale scheur loopt evenwijdig aan de lagen metselwerk. Hij kan ontstaan door uitzetten en krimpen van materialen, door roestende ankers of lateien, of doordat een muur uitbuigt. Vaak vraagt dit eerder om bouwkundig dan om funderingsonderzoek, al hangt dat af van de plek.</p></section><section class=\"tab-panel\" data-tab=\"Verticaal\"><h3>Verticaal</h3><p>Een verticale scheur loopt van boven naar beneden. Bij lange gevels kan krimp of temperatuurwerking een rol spelen, zeker als er geen dilatatievoegen zijn. Op de aansluiting van twee bouwdelen kan het ook gaan om delen die afzonderlijk bewegen.</p></section><section class=\"tab-panel\" data-tab=\"Diagonaal\"><h3>Diagonaal</h3><p>Een schuine scheur ontstaat vaak waar spanning schuin door een wand loopt, bijvoorbeeld vanuit de hoek van een raam. Diagonale scheuren worden bij funderingsonderzoek extra bekeken, omdat ze kunnen passen bij een deel van de woning dat lager is komen te liggen.</p></section><section class=\"tab-panel\" data-tab=\"Trapsgewijs\"><h3>Trapsgewijs</h3><p>Een trapsgewijze scheur volgt de voegen en springt als een trap om de stenen heen. Ook dit wijst op schuine spanning in het metselwerk. Het patroon kan passen bij ongelijke zakking, maar ook bij andere bewegingen of bij zwakke voegen.</p></section></div><p>De richting is een eerste aanwijzing, niet meer. Pas de combinatie met plaats, breedte en verloop in de tijd geeft een beter beeld. Meer specifiek over de buitenmuur lees je bij <a href=\"/scheuren-in-gevel/\">scheuren in de gevel</a> en <a href=\"/kennisbank/scheuren-in-metselwerk/\">scheuren in metselwerk</a>.</p>"
+      },
+      {
+        "id": "probeer-het-zelf",
+        "h2": "Probeer het zelf: klik op een scheur",
+        "answer": "In deze educatieve illustratie klik je op acht soorten scheuren in een gevel en lees je per scheur waar een onderzoeker op let. Daaronder vergelijk je vijf veelvoorkomende scheurpatronen.",
+        "widget": "scheuren",
+        "widget_position": "after",
+        "body": "<p>Op de pagina <a href=\"/funderingsmetingen/\">funderingsmetingen uitgelegd</a> vind je daarnaast een scheuranalyse-keuzehulp en de bijbehorende metingen.</p>"
       },
       {
         "id": "scheuren-bij-kozijnen",

@@ -1,0 +1,16 @@
+WAT DIT IS: grote interactieve pagina /funderingsmetingen/
+"Funderingsmetingen uitgelegd: zie hoe funderingsonderzoek werkt"
+(lintvoeg A-F, Oldehove-scheefstand, klikbare scheuren + patronen,
+scheuranalyse, vloerveld-raster, keuzehulp A-E, lokale context, 14 FAQ's).
+
+STAP 1 - install.bat uitvoeren (dubbelklik).
+STAP 2 - lokaal testen (optioneel):
+cd C:\Users\Gebruiker\Desktop\mvfunderingsscan\mvfunderingsscan
+npm run dev
+STAP 3 - pushen:
+cd C:\Users\Gebruiker\Desktop\mvfunderingsscan\mvfunderingsscan
+git add -A
+git commit -m "Funderingsmetingen: interactieve pagina met lintvoeg, Oldehove, scheuren en vloerveld" -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+git push
+
+Geen SQL nodig.
