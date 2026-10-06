@@ -1,0 +1,19 @@
+{
+  "path": "/kennisbank/",
+  "nav_active": "/kennisbank/",
+  "title": "Kennisbank funderingsonderzoek | Uitleg en antwoorden | MV Funderingsscan",
+  "description": "Heldere antwoorden over funderingsonderzoek: funderingsscan, fase 0 en fase 1, kosten, scheuren in de gevel en funderingsproblemen in Friesland en Groningen.",
+  "crumbs": [
+    {
+      "href": "/",
+      "name": "Home"
+    },
+    {
+      "href": "/kennisbank/",
+      "name": "Kennisbank"
+    }
+  ],
+  "eyebrow": "Kennisbank",
+  "h1": "Kennisbank funderingsonderzoek",
+  "lead": "Korte, feitelijke antwoorden op de vragen die we het vaakst krijgen over funderingen, funderingsonderzoek en funderingsrisico's in Friesland en Groningen."
+}

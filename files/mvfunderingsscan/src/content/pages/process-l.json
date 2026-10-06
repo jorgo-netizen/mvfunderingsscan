@@ -1,0 +1,600 @@
+[
+  {
+    "path": "/kennisbank/wat-is-funderingsonderzoek/",
+    "title": "Wat is funderingsonderzoek? Fasen en keuzes | MV Funderingsscan",
+    "description": "Wat is funderingsonderzoek en welke stap past bij jouw woning? Uitleg over fase 0, fase 1, nader onderzoek en herstelplan, plus wie wat doet en wanneer.",
+    "keyword": "wat is funderingsonderzoek",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/wat-is-funderingsonderzoek/",
+        "name": "Wat is funderingsonderzoek?"
+      }
+    ],
+    "eyebrow": "Kennisbank · Proces",
+    "h1": "Wat is funderingsonderzoek? Alle stappen op een rij",
+    "lead": "Funderingsonderzoek is het <strong>stapsgewijs in kaart brengen</strong> van de staat en het risico van de fundering van een woning. Het begint meestal met een niet-destructief vooronderzoek (<a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>), gevolgd door metingen (fase 1) als daar aanleiding voor is. Pas daarna komen eventueel een inspectieput en een herstelplan door een specialist in beeld.",
+    "defined_term": {
+      "name": "Funderingsonderzoek",
+      "description": "Het stapsgewijs onderzoeken van de staat en het risico van de fundering van een woning, van niet-destructief vooronderzoek en metingen tot eventueel vrijgraven en een herstelplan door een specialist."
+    },
+    "hero_image": {
+      "name": "funderingsinspectie-woning-gevel",
+      "alt": "Specialist met een waterpas bij de gevel van een woning"
+    },
+    "article": true,
+    "sections": [
+      {
+        "id": "wat-is-funderingsonderzoek-precies",
+        "h2": "Wat is funderingsonderzoek precies?",
+        "answer": "Funderingsonderzoek is een verzamelnaam voor alle onderzoeksstappen die duidelijk maken hoe het met de fundering van een woning staat en hoe groot het risico op problemen is.",
+        "body": "<p>De fundering zelf zit onder de grond en is bij de meeste woningen niet zichtbaar. Onderzoek werkt daarom vaak indirect: je verzamelt gegevens over de woning en de ondergrond, je kijkt naar wat er boven de grond gebeurt en je meet waar nodig hoe de constructie zich gedraagt. Pas als die stappen daar aanleiding voor geven, wordt de fundering plaatselijk zelf bekeken.</p><p>Het woord wordt in de praktijk breed gebruikt. Iemand die over funderingsonderzoek spreekt, kan een korte <a href=\"/quickscan-fundering/\">quickscan</a> bedoelen, maar ook een uitgebreid traject met graafwerk. Daarom helpt het om in fasen te denken. Elke fase beantwoordt een eigen vraag en bepaalt of een volgende stap zinvol is.</p>"
+      },
+      {
+        "id": "waarom-in-fasen",
+        "h2": "Waarom wordt funderingsonderzoek in fasen uitgevoerd?",
+        "answer": "Werken in fasen voorkomt dat je meteen kiest voor duur of ingrijpend onderzoek terwijl een eenvoudigere stap al voldoende duidelijkheid kan geven.",
+        "body": "<p>Je kunt funderingsonderzoek zien als een trechter. Bovenaan staat een brede, relatief eenvoudige verkenning. Elke volgende stap is gerichter, specialistischer en meestal kostbaarder. Bij veel woningen geeft de eerste stap al genoeg houvast; bij andere woningen is juist een volgende stap nodig om een signaal goed te kunnen duiden.</p><p>Die opbouw heeft nog een voordeel: elke fase levert informatie op waarmee de volgende stap beter wordt afgebakend. Wie na fase 0 metingen laat doen, weet bijvoorbeeld al welke gevel of welk deel van de woning de meeste aandacht vraagt.</p>"
+      },
+      {
+        "id": "welke-fasen-zijn-er",
+        "h2": "Welke fasen kent funderingsonderzoek?",
+        "answer": "Gebruikelijk is de volgorde fase 0 (vooronderzoek), fase 1 (metingen), nader onderzoek zoals een inspectieput, en tot slot een herstelplan door een gespecialiseerde partij.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Fase 0: vooronderzoek</strong><span>Archief- en bodemonderzoek, een visuele inspectie en een eerste risico-inschatting met rapport. Niet-destructief.</span></li><li><strong>Fase 1: metingen</strong><span>Onder meer lintvoegwaterpassing, loodmeting en vloerveldwaterpassing, plus het vastleggen van scheurpatronen. Ook niet-destructief, zonder graafwerk.</span></li><li><strong>Nader onderzoek</strong><span>Bijvoorbeeld een inspectieput, waarbij de fundering plaatselijk wordt vrijgegraven en bij houten palen eventueel houtonderzoek volgt.</span></li><li><strong>Herstelplan</strong><span>Als herstel nodig blijkt, werkt een gespecialiseerde partij een plan en offerte uit.</span></li></ol><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Vooronderzoek met archief, inspectie en risico-inschatting.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Vervolgonderzoek als fase 0 daar aanleiding voor geeft.</span></a></div><p>Het verschil tussen de eerste twee stappen lees je uitgebreid in <a href=\"/kennisbank/verschil-fase-0-en-fase-1/\">verschil tussen fase 0 en fase 1</a>.</p>"
+      },
+      {
+        "id": "onderdelen-fase-0",
+        "h2": "Uit welke onderdelen bestaat het vooronderzoek?",
+        "answer": "Fase 0 bestaat uit drie onderdelen: archief- en bodemonderzoek, een visuele inspectie van de woning en een risico-inschatting die in een rapport wordt vastgelegd.",
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Archief- en bodemonderzoek</h3><p>Bouwjaar, verbouwingen, vermoedelijk funderingstype, bodemopbouw, grondwater en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>. Lees verder over <a href=\"/kennisbank/archiefonderzoek-fundering/\">archiefonderzoek bij funderingsonderzoek</a>.</p></div><div class=\"info-card\"><h3>Visuele inspectie</h3><p>Gevels, scheuren, scheefstand, deuren, ramen, vloeren en de kruipruimte voor zover toegankelijk. Zie <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele funderingsinspectie</a>.</p></div><div class=\"info-card\"><h3>Risico-inschatting en rapport</h3><p>Alle gegevens samen leiden tot een eerste inschatting, een fotoverslag, een conclusie en een advies. Zie <a href=\"/kennisbank/funderingsrisico-inschatting/\">funderingsrisico-inschatting</a>.</p></div></div><p>Hoe deze onderdelen als dienst worden uitgevoerd, wat het kost en hoe snel je een rapport hebt, staat op de pagina over <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>.</p>"
+      },
+      {
+        "id": "meetmethoden-fase-1",
+        "h2": "Welke meetmethoden horen bij fase 1?",
+        "answer": "In fase 1 wordt gemeten hoe de woning is vervormd, onder meer met lintvoegwaterpassing, loodmeting en vloerveldwaterpassing, aangevuld met het vastleggen van scheurpatronen.",
+        "body": "<dl class=\"def-list\"><div><dt><a href=\"/kennisbank/lintvoegwaterpassing/\">Lintvoegwaterpassing</a></dt><dd>Hoogtemeting langs een doorlopende horizontale metselvoeg, die laat zien of delen van een gevel ongelijk zijn gezakt.</dd></div><div><dt><a href=\"/kennisbank/loodmeting/\">Loodmeting</a></dt><dd>Meting van de afwijking van gevels, wanden of kozijnstijlen ten opzichte van de verticaal.</dd></div><div><dt><a href=\"/kennisbank/vloerveldwaterpassing/\">Vloerveldwaterpassing</a></dt><dd>Een raster van hoogtemetingen over de begane grondvloer, vaak weergegeven als hoogtekaart.</dd></div><div><dt><a href=\"/kennisbank/scheurpatronen/\">Scheurpatronen</a></dt><dd>Het vastleggen van locatie, richting, lengte en breedte van scheuren en hoe ze zich ontwikkelen.</dd></div></dl><p>Losse meetmethoden hebben geen eigen prijs: ze maken deel uit van fase 1, die indicatief tussen €750 en €1.500 kost, afhankelijk van welke metingen nodig zijn. Meer over de dienst lees je op <a href=\"/funderingsmetingen/\">funderingsmetingen</a>.</p>"
+      },
+      {
+        "id": "wie-voert-het-uit",
+        "h2": "Wie voert welk deel van het funderingsonderzoek uit?",
+        "answer": "Fase 0 en fase 1 worden uitgevoerd door een onafhankelijk onderzoeksbureau zoals MV Funderingsscan; graafwerk, houtonderzoek en herstelplannen liggen bij gespecialiseerde partijen.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Stap</th><th>Wie</th><th>Wat je krijgt</th></tr></thead><tbody><tr><td>Fase 0</td><td>MV Funderingsscan</td><td>Rapport met foto's, conclusie en advies</td></tr><tr><td>Fase 1</td><td>MV Funderingsscan</td><td>Meetresultaten met duiding en advies</td></tr><tr><td>Inspectieput en houtonderzoek</td><td>Gespecialiseerde partij</td><td>Inzicht in de fundering zelf</td></tr><tr><td>Herstelplan en offerte</td><td>Herstelspecialist</td><td>Plan en prijs voor herstel</td></tr></tbody></table></div><p>MV Funderingsscan voert zelf geen funderingsherstel uit. Daardoor heeft het advies geen belang bij de uitkomst: het onderzoek is erop gericht om eerlijk te laten zien wat er wel en niet bekend is.</p>"
+      },
+      {
+        "id": "wanneer-funderingsonderzoek",
+        "h2": "Wanneer is funderingsonderzoek zinvol?",
+        "answer": "Funderingsonderzoek is vooral zinvol bij aankoop of verkoop van een oudere woning, bij een taxatie die erom vraagt en wanneer je signalen ziet zoals scheuren, scheefstand of klemmende deuren.",
+        "body": "<ul class=\"checklist\"><li>Je wilt een woning kopen die vóór circa 1970 is gebouwd, of in een gebied met veen of klei ligt</li><li>Je wilt je woning verkopen en kopers vooraf duidelijkheid geven</li><li>Bij een taxatie komt de funderingsparagraaf ter sprake</li><li>Je ziet scheuren, scheefstand, een hellende vloer of deuren en ramen die gaan klemmen</li><li>Je overweegt een verbouwing of aanbouw en wilt weten waar je op bouwt</li></ul><p>Situaties rond aankoop en taxatie worden verder uitgewerkt in <a href=\"/kennisbank/wanneer-funderingsonderzoek/\">wanneer funderingsonderzoek</a> en <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek en taxatie</a>.</p>"
+      },
+      {
+        "id": "juiste-stap-kiezen",
+        "h2": "Hoe kies je de juiste stap?",
+        "answer": "In de meeste gevallen is fase 0 de logische eerste stap; fase 1 en nader onderzoek volgen alleen als het vooronderzoek daar aanleiding voor geeft.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Jouw situatie</th><th>Passende eerste stap</th></tr></thead><tbody><tr><td>Je weet nog weinig van de woning</td><td>Fase 0</td></tr><tr><td>Je ziet scheuren of scheefstand en wilt weten wat ze betekenen</td><td>Fase 0, met eventueel fase 1 als vervolg</td></tr><tr><td>Een eerder rapport adviseert metingen</td><td>Fase 1</td></tr><tr><td>Metingen tonen duidelijke vervorming</td><td>Nader onderzoek, bijvoorbeeld een inspectieput</td></tr><tr><td>Herstel is nodig gebleken</td><td>Herstelplan door een specialist</td></tr></tbody></table></div><div class=\"callout callout-tip\"><strong>Twijfel je?</strong><p>Doe eerst de online <a href=\"/funderingsscan-check/\">funderingscheck</a> of <a href=\"/contact/\">stel je vraag</a>. Weet je al genoeg, dan kun je direct <a href=\"/funderingsscan-aanvragen/\">een fase 0 funderingsscan aanvragen</a>.</p></div>"
+      },
+      {
+        "id": "wat-funderingsonderzoek-niet-is",
+        "h2": "Wat valt er niet onder een eerste funderingsonderzoek?",
+        "answer": "Een vooronderzoek is geen constructieve berekening, geen vrijlegging van de fundering, geen houtonderzoek, geen herstelplan en geen garantie.",
+        "body": "<div class=\"callout callout-warn\"><strong>Let op de grenzen van fase 0</strong><p>Een quickscan is ook geen bouwkundige keuring van de hele woning en geen schademelding, bijvoorbeeld bij schade door gaswinning. Wat je wel krijgt, is een onderbouwde eerste inschatting en een advies over de vervolgstap.</p></div><div class=\"term-box\"><strong>Wat betekent niet-destructief?</strong><p>Niet-destructief onderzoek laat de woning intact: er wordt niet gegraven, gesloopt of geboord. Fase 0 en fase 1 zijn allebei niet-destructief.</p><a href=\"/kennisbank/begrippenlijst/\">Bekijk de begrippenlijst</a></div><div class=\"term-box\"><strong>Wat is een inspectieput?</strong><p>Een inspectieput is een plaatselijke uitgraving naast de woning om de fundering zelf te bekijken. Bij houten palen kan daarbij houtonderzoek worden gedaan. Dit valt buiten fase 0 en fase 1.</p><a href=\"/kennisbank/houten-paalfundering/\">Lees meer over houten paalfunderingen</a></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Wat is het verschil tussen funderingsonderzoek en een funderingsscan?",
+        "a": "<p>Een funderingsscan is de eerste stap van funderingsonderzoek. Funderingsonderzoek is het hele traject; de scan is het niet-destructieve vooronderzoek dat in fase 0 wordt uitgevoerd. Zie ook <a href=\"/kennisbank/wat-is-een-funderingsscan/\">wat is een funderingsscan</a>.</p>"
+      },
+      {
+        "q": "Moet ik altijd met fase 0 beginnen?",
+        "a": "<p>In de meeste gevallen wel, omdat fase 0 bepaalt of en welke vervolgstap zinvol is. Heb je al een recent rapport met een advies voor metingen, dan kan fase 1 een logische start zijn.</p>"
+      },
+      {
+        "q": "Wordt er bij funderingsonderzoek gegraven?",
+        "a": "<p>Niet in fase 0 en fase 1. Graafwerk hoort bij nader onderzoek, zoals een inspectieput, en wordt alleen geadviseerd als eerdere stappen daar aanleiding voor geven.</p>"
+      },
+      {
+        "q": "Wat kost funderingsonderzoek?",
+        "a": "<p>Dat hangt af van de fase. Fase 0 kost vanaf circa €350 (bij grotere of complexere woningen indicatief tot circa €550) en fase 1 indicatief €750 – €1.500. Meer staat op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
+      },
+      {
+        "q": "Hoe snel heb ik de uitkomst van fase 0?",
+        "a": "<p>Het rapport volgt binnen 5 werkdagen na de inspectie. De inspectie zelf wordt meestal binnen enkele werkdagen ingepland.</p>"
+      },
+      {
+        "q": "Voert MV Funderingsscan ook funderingsherstel uit?",
+        "a": "<p>Nee, MV Funderingsscan voert zelf geen herstel uit. Voor een herstelplan en offerte heb je een gespecialiseerde partij nodig; meer achtergrond lees je bij <a href=\"/kennisbank/funderingsherstel/\">funderingsherstel</a>.</p>"
+      },
+      {
+        "q": "Doet MV Funderingsscan funderingsonderzoek in mijn regio?",
+        "a": "<p>Het werkgebied omvat heel Friesland en de hele provincie Groningen. Het kantoor staat in Leeuwarden.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/fase-0-funderingsonderzoek/",
+        "label": "Fase 0 funderingsonderzoek",
+        "text": "Alles over het vooronderzoek: inhoud, prijs en doorlooptijd."
+      },
+      {
+        "href": "/kennisbank/verschil-fase-0-en-fase-1/",
+        "label": "Verschil fase 0 en fase 1",
+        "text": "Wanneer volstaat een vooronderzoek en wanneer zijn metingen nodig?"
+      },
+      {
+        "href": "/kennisbank/funderingsrisico-inschatting/",
+        "label": "Hoe een risico-inschatting werkt",
+        "text": "Hoe gegevens en waarnemingen samen tot een advies leiden."
+      }
+    ],
+    "cta": [
+      "Vraag een fase 0 funderingsscan aan",
+      "Begin met een niet-destructief vooronderzoek en krijg binnen 5 werkdagen na de inspectie een rapport met advies."
+    ]
+  },
+  {
+    "path": "/kennisbank/archiefonderzoek-fundering/",
+    "title": "Archiefonderzoek fundering: wat zoeken we uit? | MV Funderingsscan",
+    "description": "Wat levert archiefonderzoek op bij funderingsonderzoek? Lees welke gegevens over bouwjaar, funderingstype, bodem en grondwater worden gezocht, en waarom.",
+    "keyword": "archiefonderzoek fundering",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/archiefonderzoek-fundering/",
+        "name": "Archiefonderzoek fundering"
+      }
+    ],
+    "eyebrow": "Kennisbank · Fase 0 · Stap A",
+    "h1": "Archiefonderzoek bij funderingsonderzoek: wat zoeken we uit?",
+    "lead": "Archiefonderzoek is het <strong>bureauwerk</strong> van funderingsonderzoek: het verzamelen van gegevens over de woning en de ondergrond, zoals bouwjaar, verbouwingen, vermoedelijk funderingstype, bodemopbouw, grondwater en bodemdaling. Het is de eerste stap van <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a> en geeft context aan wat er tijdens de inspectie wordt gezien.",
+    "hero_image": {
+      "name": "vooroorlogse-woning-voordeur",
+      "alt": "Klassieke voordeur in een bakstenen gevel van een oudere woning"
+    },
+    "article": true,
+    "sections": [
+      {
+        "id": "wat-is-archiefonderzoek",
+        "h2": "Wat is archiefonderzoek bij een fundering?",
+        "answer": "Archiefonderzoek is het opzoeken en ordenen van bestaande gegevens over een woning en haar omgeving, zodat duidelijk wordt hoe de woning vermoedelijk is gefundeerd en op welke ondergrond ze staat.",
+        "body": "<p>De fundering is meestal niet te zien. Toch is er vaak veel over te achterhalen zonder één schop in de grond te zetten. Bouwtekeningen, vergunningen, kaarten en openbare gegevens vertellen samen een verhaal: wanneer de woning is gebouwd, hoe er destijds werd gefundeerd, wat er later is veranderd en hoe de bodem zich in de omgeving gedraagt.</p><p>Archiefonderzoek levert geen oordeel over de staat van de fundering. Het levert een <strong>verwachting</strong>: wat voor fundering ligt hier waarschijnlijk, en met welke omstandigheden heeft die te maken? Die verwachting wordt daarna getoetst aan wat de <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a> laat zien.</p>"
+      },
+      {
+        "id": "welke-informatie",
+        "h2": "Welke informatie wordt gezocht?",
+        "answer": "Er wordt gezocht naar gegevens over de woning zelf (bouwjaar, tekeningen, verbouwingen, funderingstype, eerdere rapporten) en over de omgeving (bodemopbouw, grondwater en bodemdaling).",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Gegeven</th><th>Waarom het ertoe doet</th></tr></thead><tbody><tr><td>Bouwjaar</td><td>Geeft een indicatie van de bouwwijze en het vermoedelijke funderingstype</td></tr><tr><td>Bouwtekeningen</td><td>Kunnen funderingsdetails, maatvoering en constructie tonen</td></tr><tr><td>Verbouwingen en aanbouwen</td><td>Verklaren soms scheuren of verschillen in zakking</td></tr><tr><td>Eerdere rapporten of herstel</td><td>Laten zien wat al bekend of aangepakt is</td></tr><tr><td>Bodemopbouw</td><td>Veen, klei en zand gedragen zich verschillend</td></tr><tr><td>Grondwater</td><td>Vooral van belang bij houten palen en bij veen en klei</td></tr><tr><td>Bodemdaling</td><td>Kan in de loop van de tijd extra belasting en vervorming geven</td></tr></tbody></table></div><p>Niet elk gegeven weegt even zwaar. De waarde zit vooral in de combinatie, zoals verderop bij de risico-inschatting wordt uitgelegd.</p>"
+      },
+      {
+        "id": "bouwjaar",
+        "h2": "Wat zegt het bouwjaar over de fundering?",
+        "answer": "Het bouwjaar geeft een eerste aanwijzing: woningen van vóór circa 1970 hebben vaker een fundering op houten palen of op staal, terwijl later vaker andere funderingswijzen zijn toegepast.",
+        "body": "<p>Het bouwjaar is daarmee een startpunt, geen conclusie. Twee woningen uit hetzelfde jaar kunnen heel verschillend zijn gefundeerd, afhankelijk van de ondergrond, de aannemer en de plek. Bovendien is het officieel geregistreerde bouwjaar niet altijd gelijk aan het moment waarop alle delen van de woning zijn gebouwd. Een voorhuis kan ouder zijn dan het achterhuis, of andersom.</p><p>Voor vooroorlogse en vroeg-naoorlogse woningen is het bouwjaar vooral een reden om extra zorgvuldig te kijken. Lees meer over de typische funderingen in <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a> en <a href=\"/kennisbank/fundering-op-staal/\">fundering op staal</a>.</p>"
+      },
+      {
+        "id": "verbouwingen-en-aanbouwen",
+        "h2": "Waarom zijn verbouwingen en aanbouwen belangrijk?",
+        "answer": "Verbouwingen en aanbouwen kunnen de belasting op de fundering veranderen en hebben vaak een eigen, ondiepere fundering, wat scheuren op aansluitingen kan verklaren.",
+        "body": "<p>Een uitbouw, dakkapel, extra verdieping of het verwijderen van een dragende muur verandert hoe het gewicht van de woning naar de ondergrond gaat. Als bekend is wanneer en waar zo'n ingreep plaatsvond, kun je een scheur of hoogteverschil soms direct plaatsen. Zonder die kennis lijkt hetzelfde signaal misschien op een funderingsprobleem.</p><ul class=\"checklist\"><li>Aanbouwen met een eigen fundering kunnen anders zakken dan het hoofdgebouw</li><li>Hermetselde gevels of vervangen kozijnen kunnen eerdere scheuren of vervorming maskeren</li><li>Eerder herstel aan een deel van de fundering verklaart soms verschillen tussen voor- en achterzijde</li></ul><p>Zie ook <a href=\"/kennisbank/scheuren-bij-aanbouw/\">scheuren bij een aanbouw</a>.</p>"
+      },
+      {
+        "id": "funderingstype",
+        "h2": "Hoe wordt het funderingstype bepaald?",
+        "answer": "Bij archiefonderzoek wordt het funderingstype meestal afgeleid uit tekeningen, bouwjaar en ondergrond; zonder vrijgraven blijft het een vermoeden.",
+        "body": "<p>Soms staat de fundering duidelijk op een bouwtekening: een strook op staal, of palen met een bepaalde opbouw. Vaak ontbreken zulke details, zeker bij oudere woningen. Dan wordt het type afgeleid uit wat gangbaar is voor het bouwjaar, de ondergrond en de omgeving, eventueel aangevuld met wat er in de kruipruimte zichtbaar is.</p><div class=\"term-box\"><strong>Wat betekent fundering op staal?</strong><p>Bij een fundering op staal rust de woning direct op de ondergrond, zonder palen. Vaak gaat het om een gemetselde of betonnen strook of voet.</p><a href=\"/kennisbank/fundering-op-staal/\">Lees meer over fundering op staal</a></div><p>Het rapport benoemt daarom altijd of het funderingstype bekend is uit stukken, of dat het om een vermoeden gaat. Wie zekerheid wil over de fundering zelf, heeft nader onderzoek nodig, zoals een inspectieput.</p>"
+      },
+      {
+        "id": "historische-gegevens",
+        "h2": "Welke historische gegevens kunnen helpen?",
+        "answer": "Naast tekeningen kunnen eerdere funderingsrapporten, gegevens over eerder herstel en informatie over de ontwikkeling van de buurt helpen om het beeld compleet te maken.",
+        "body": "<p>Een eerder rapport, bijvoorbeeld van een vorige eigenaar, kan waardevol zijn: het laat zien hoe de woning er toen bij stond en maakt vergelijking mogelijk. Ook informatie over herstel in de straat of het bouwblok is relevant, omdat woningen in een rij vaak op dezelfde manier zijn gefundeerd en elkaar beïnvloeden.</p><div class=\"callout callout-tip\"><strong>Heb je zelf stukken?</strong><p>Bewaar je bouwtekeningen, een verkoopbrochure met technische gegevens of een oud rapport? Deel ze bij je aanvraag. Hoe meer bekend is, hoe gerichter de inspectie kan worden voorbereid.</p></div>"
+      },
+      {
+        "id": "bodemgegevens",
+        "h2": "Welke bodemgegevens worden bekeken?",
+        "answer": "Er wordt gekeken naar de bodemopbouw onder en rond de woning: of er veen, klei of zand in de ondergrond zit, omdat elke grondsoort anders reageert op belasting en vocht.",
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Veen</h3><p>Klinkt in en oxideert bij droogvallen, wat bodemdaling kan geven. Zie <a href=\"/kennisbank/veenbodem/\">veenbodem</a>.</p></div><div class=\"info-card\"><h3>Klei</h3><p>Krimpt bij droogte en zwelt bij nat weer, wat beweging kan veroorzaken. Zie <a href=\"/kennisbank/kleibodem/\">kleibodem</a>.</p></div><div class=\"info-card\"><h3>Zand</h3><p>Is meestal stabieler, maar ook dan blijft de opbouw eronder relevant. Zie <a href=\"/kennisbank/zandbodem/\">zandbodem</a>.</p></div></div><p>In Friesland en Groningen wisselt de ondergrond sterk, soms al binnen één stad of dorp. Daarom is de bodemopbouw op de specifieke plek belangrijker dan een algemene indruk van de regio.</p>"
+      },
+      {
+        "id": "grondwater",
+        "h2": "Waarom wordt er naar grondwater gekeken?",
+        "answer": "De grondwaterstand is vooral belangrijk bij houten palen, die goed blijven zolang ze permanent onder water staan, en bij veen en klei, die reageren op uitdroging.",
+        "body": "<p>Als de grondwaterstand daalt, kunnen de koppen van houten palen droog komen te staan. Schimmels en bacteriën kunnen het hout dan aantasten; dat staat bekend als <a href=\"/kennisbank/paalrot/\">paalrot</a>. Ook onder water kan langzaam bacteriële aantasting optreden. Een woning met houten palen heeft daardoor niet automatisch problemen, maar de waterstand is wel een belangrijk aandachtspunt.</p><p>Grondwaterstanden worden gemeten in peilbuizen. Gemeenten, waterschappen en provincies beheren vaak meetnetten, en in polders regelt het waterschap het peilbeheer. Meer daarover lees je bij <a href=\"/kennisbank/grondwatermeting/\">grondwatermeting</a>.</p><div class=\"term-box\"><strong>Wat is een peilbuis?</strong><p>Een peilbuis is een buis in de grond waarin de grondwaterstand kan worden gemeten. Reeksen van zulke metingen laten zien hoe het grondwater zich over langere tijd gedraagt.</p><a href=\"/kennisbank/grondwater-en-fundering/\">Lees meer over grondwater en fundering</a></div>"
+      },
+      {
+        "id": "bodemdaling",
+        "h2": "Hoe speelt bodemdaling mee?",
+        "answer": "Bodemdaling kan de omstandigheden rond een fundering geleidelijk veranderen, bijvoorbeeld doordat het maaiveld zakt of de grondwaterstand ten opzichte van de fundering verschuift.",
+        "body": "<p>In veenweidegebieden daalt de bodem door inklinking en oxidatie van veen. In delen van het werkgebied spelen daarnaast zoutwinning of gaswinning een rol. Openbare gegevens over bodemdaling geven aan of een woning in een gebied ligt waar de ondergrond in beweging is.</p><p>Een verzakt maaiveld rond de woning kan op bodemdaling of inklinking wijzen, maar zegt niet automatisch iets over de fundering. Zie <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a> en <a href=\"/kennisbank/maaiveldhoogte/\">maaiveldhoogte</a> voor de achtergrond.</p>"
+      },
+      {
+        "id": "bronnen",
+        "h2": "Welke bronnen worden geraadpleegd?",
+        "answer": "Bronnen kunnen onder meer zijn: het gemeentelijk bouwarchief, gegevens over bouwjaar en verbouwingen, eerdere funderingsrapporten, bodemkaarten en openbare gegevens over grondwater en bodemdaling.",
+        "body": "<ul class=\"checklist\"><li><strong>Bouwarchief:</strong> bouwvergunningen en bouwtekeningen, voor zover bewaard</li><li><strong>Woninggegevens:</strong> bouwjaar en informatie over latere verbouwingen of aanbouwen</li><li><strong>Eerdere rapporten:</strong> funderingsonderzoek of herstel uit het verleden</li><li><strong>Bodemkaarten:</strong> de opbouw van de ondergrond</li><li><strong>Openbare meetgegevens:</strong> grondwaterstanden en bodemdaling</li></ul><p>Welke bronnen bruikbaar zijn, verschilt per woning en per gemeente. Het archief van een recente woning is vaak completer dan dat van een pand dat al generaties lang bestaat.</p>"
+      },
+      {
+        "id": "als-gegevens-ontbreken",
+        "h2": "Wat als er gegevens ontbreken?",
+        "answer": "Ontbrekende gegevens worden in het rapport als beperking genoemd; de inspectie ter plaatse en eventueel vervolgonderzoek moeten die leemte dan opvangen.",
+        "body": "<p>Bij lang niet elke woning is alles beschikbaar. Tekeningen kunnen verloren zijn gegaan, verbouwingen zijn niet altijd vergund of gedocumenteerd en het funderingstype staat lang niet altijd op papier. Dat is geen reden om het onderzoek niet te doen, maar wel een reden om voorzichtig te zijn met conclusies.</p><div class=\"callout callout-note\"><strong>Eerlijk over onzekerheid</strong><p>Een goed rapport maakt onderscheid tussen wat vaststaat, wat vermoed wordt en wat onbekend is. Juist dat onderscheid helpt je om een verantwoorde keuze te maken over een vervolgstap.</p></div>"
+      },
+      {
+        "id": "waarom-belangrijk",
+        "h2": "Waarom is archiefonderzoek belangrijk?",
+        "answer": "Archiefonderzoek voorkomt dat waarnemingen los van hun context worden beoordeeld en helpt om de inspectie gericht voor te bereiden.",
+        "body": "<p>Een scheur in de gevel van een woning op zand met een recente aanbouw vraagt om een andere duiding dan dezelfde scheur in een vooroorlogse woning op veen met houten palen. Zonder de achtergrond uit het archief zou je die situaties niet goed uit elkaar kunnen houden.</p><p>Daarnaast helpt het archief om tijdens de inspectie op de juiste plekken te letten, bijvoorbeeld bij de aansluiting van een aanbouw of aan de zijde waar de ondergrond anders is.</p>"
+      },
+      {
+        "id": "rol-bij-risico-inschatting",
+        "h2": "Hoe helpt archiefonderzoek bij de risico-inschatting?",
+        "answer": "De archiefgegevens vormen de achtergrond waartegen de zichtbare signalen worden gewogen; samen leiden ze tot een eerste inschatting van het funderingsrisico.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Verwachting</strong><span>Archief en bodemgegevens geven een beeld van het vermoedelijke funderingstype en de omstandigheden.</span></li><li><strong>Toetsing</strong><span>De visuele inspectie laat zien of de woning signalen vertoont die bij die verwachting passen.</span></li><li><strong>Weging</strong><span>Beide worden gecombineerd tot een eerste risico-inschatting met advies.</span></li></ol><p>Hoe die weging precies werkt, lees je in <a href=\"/kennisbank/funderingsrisico-inschatting/\">funderingsrisico-inschatting</a>. Wil je het archiefonderzoek voor jouw woning laten doen als onderdeel van fase 0? <a href=\"/funderingsscan-aanvragen/\">Vraag een fase 0 funderingsscan aan</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Kan ik zelf archiefonderzoek naar mijn fundering doen?",
+        "a": "<p>Deels wel: je kunt bij je gemeente vragen naar bouwtekeningen en vergunningen. De duiding van die gegevens in combinatie met bodem, grondwater en de woning zelf vraagt wel om ervaring met funderingsonderzoek.</p>"
+      },
+      {
+        "q": "Staat het funderingstype altijd op de bouwtekening?",
+        "a": "<p>Nee, zeker bij oudere woningen ontbreken funderingsdetails vaak. Dan wordt het type afgeleid uit bouwjaar, ondergrond en omgeving, en blijft het een vermoeden tot de fundering zelf wordt bekeken.</p>"
+      },
+      {
+        "q": "Wat als er geen bouwtekeningen meer zijn?",
+        "a": "<p>Dan wordt dat als beperking in het rapport genoemd. De visuele inspectie en andere bronnen, zoals bodemgegevens, wegen dan relatief zwaarder.</p>"
+      },
+      {
+        "q": "Is archiefonderzoek een apart te bestellen dienst?",
+        "a": "<p>Nee, het is een vast onderdeel van <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>, samen met de visuele inspectie en de risico-inschatting. Fase 0 kost vanaf circa €350.</p>"
+      },
+      {
+        "q": "Zegt archiefonderzoek iets over de staat van de fundering?",
+        "a": "<p>Niet direct. Het geeft een verwachting over het funderingstype en de omstandigheden, maar de staat blijkt pas uit waarnemingen, metingen of het bekijken van de fundering zelf.</p>"
+      },
+      {
+        "q": "Waarom is een oud funderingsrapport nuttig?",
+        "a": "<p>Een eerder rapport maakt vergelijking mogelijk. Als je weet hoe de woning er eerder bij stond, kun je beter inschatten of er iets is veranderd. Tips om een rapport te lezen staan in <a href=\"/kennisbank/funderingsrapport-lezen/\">funderingsrapport lezen</a>.</p>"
+      },
+      {
+        "q": "Speelt de ligging in Friesland of Groningen een rol?",
+        "a": "<p>Ja, de ondergrond verschilt sterk binnen beide provincies, van zeeklei en veen tot zand. Lees meer in <a href=\"/kennisbank/funderingsproblemen-friesland/\">funderingsproblemen in Friesland</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/visuele-funderingsinspectie/",
+        "label": "Visuele funderingsinspectie",
+        "text": "De volgende stap van fase 0: wat er buiten en binnen wordt bekeken."
+      },
+      {
+        "href": "/fase-0-funderingsonderzoek/",
+        "label": "Fase 0 funderingsonderzoek",
+        "text": "Het volledige vooronderzoek met prijs, doorlooptijd en uitkomsten."
+      },
+      {
+        "href": "/kennisbank/grondwater-en-fundering/",
+        "label": "Grondwater en fundering",
+        "text": "Waarom de grondwaterstand zo belangrijk is voor houten palen."
+      }
+    ],
+    "cta": [
+      "Vraag een fase 0 funderingsscan aan",
+      "Archiefonderzoek, visuele inspectie en risico-inschatting in één vooronderzoek, vanaf circa €350."
+    ]
+  },
+  {
+    "path": "/kennisbank/visuele-funderingsinspectie/",
+    "title": "Visuele funderingsinspectie: waar let je op? | MV Funderingsscan",
+    "description": "Wat wordt er bekeken bij een visuele funderingsinspectie? Van gevels en scheuren tot vloeren, kozijnen en kruipruimte, plus de grenzen van wat je ziet.",
+    "keyword": "visuele funderingsinspectie",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/visuele-funderingsinspectie/",
+        "name": "Visuele funderingsinspectie"
+      }
+    ],
+    "eyebrow": "Kennisbank · Fase 0 · Stap B",
+    "h1": "Visuele funderingsinspectie: wat wordt er buiten en binnen bekeken?",
+    "lead": "Een visuele funderingsinspectie is het <strong>systematisch bekijken van een woning</strong> op signalen die met de fundering te maken kunnen hebben: scheuren, scheefstand, klemmende deuren en ramen, hellende vloeren en de kruipruimte voor zover toegankelijk. Het is de tweede stap van <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a> en gebeurt zonder graven, slopen of meten met instrumenten.",
+    "hero_image": {
+      "name": "metselwerk-gevel-detail",
+      "alt": "Close-up van metselwerk en voegen in een bakstenen gevel"
+    },
+    "article": true,
+    "sections": [
+      {
+        "id": "wat-is-een-visuele-inspectie",
+        "h2": "Wat is een visuele funderingsinspectie?",
+        "answer": "Een visuele funderingsinspectie is een niet-destructieve rondgang door en om de woning, waarbij zichtbare signalen van mogelijke funderingsbewegingen worden opgespoord, gefotografeerd en beschreven.",
+        "body": "<p>Een fundering laat zich zelden direct zien, maar de woning erboven reageert wel op wat er onder de grond gebeurt. Als een deel van de fundering zakt, vervormt het metselwerk, gaan kozijnen scheef staan of gaat een vloer hellen. Een visuele inspectie zoekt naar die sporen en beschrijft ze zo, dat ze later te vergelijken en te duiden zijn.</p><p>Het verschil met een algemene bouwkundige keuring is de focus. De inspectie richt zich op wat iets zegt over de fundering en de ondergrond, niet op de staat van het dak, de installaties of het schilderwerk. De dienstkant van deze stap, inclusief wat je ervan kunt verwachten, staat op <a href=\"/funderingsinspectie/\">funderingsinspectie</a>.</p>"
+      },
+      {
+        "id": "hoe-verloopt-de-inspectie",
+        "h2": "Hoe verloopt een visuele inspectie?",
+        "answer": "De inspectie volgt een vaste volgorde: eerst de buitenkant rondom, dan de binnenkant per verdieping, daarna de kruipruimte voor zover toegankelijk, en tot slot het vastleggen van alle waarnemingen.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Voorbereiding</strong><span>De gegevens uit het <a href=\"/kennisbank/archiefonderzoek-fundering/\">archiefonderzoek</a> bepalen waar extra aandacht nodig is.</span></li><li><strong>Buiten</strong><span>Alle bereikbare gevels, de aansluitingen met buren en aanbouwen, en het maaiveld rondom.</span></li><li><strong>Binnen</strong><span>Muren, plafonds, vloeren, deuren, ramen en trappen, per vertrek.</span></li><li><strong>Kruipruimte</strong><span>Voor zover toegankelijk: zichtbare funderingsdelen, vocht en de staat van de vloerconstructie.</span></li><li><strong>Vastleggen</strong><span>Foto's, beschrijvingen en de locatie van elke waarneming, als basis voor het rapport.</span></li></ol><p>Een vaste volgorde zorgt ervoor dat niets wordt overgeslagen en dat waarnemingen binnen en buiten met elkaar in verband kunnen worden gebracht. Een scheur binnen op dezelfde plek als een scheur buiten zegt bijvoorbeeld meer dan twee losse scheuren.</p>"
+      },
+      {
+        "id": "wat-buiten-bekeken",
+        "h2": "Wat wordt er buiten bekeken?",
+        "answer": "Buiten wordt gelet op gevels en metselwerk, scheuren en hun verloop, de horizontale voegen, de stand van kozijnen, aansluitingen met buurwoningen en aanbouwen, en het maaiveld rond de woning.",
+        "body": "<ul class=\"checklist\"><li><strong>Gevels en metselwerk:</strong> scheuren, uitbuiging, verschoven stenen en plaatselijk hermetselde delen</li><li><strong>Voegen:</strong> of horizontale voegen recht lijken te lopen of zichtbaar afbuigen</li><li><strong>Kozijnen:</strong> scheve stand, scheuren in de hoeken en kieren langs de aansluiting met het metselwerk</li><li><strong>Aansluitingen:</strong> naden tussen het hoofdgebouw en een aanbouw, en tussen de woning en de buren</li><li><strong>Maaiveld:</strong> verzakte bestrating, kieren langs de gevel en het verloop van het terrein</li><li><strong>Zichtbare funderingsdelen:</strong> voor zover boven het maaiveld te zien</li></ul><p>Het voordeel van buiten kijken is overzicht: je ziet de woning als geheel en kunt vergelijken met de buurwoningen. Vertoont het hele bouwblok hetzelfde beeld, dan kan dat iets zeggen over de gezamenlijke fundering of ondergrond.</p>"
+      },
+      {
+        "id": "wat-binnen-bekeken",
+        "h2": "Wat wordt er binnen bekeken?",
+        "answer": "Binnen gaat het om scheuren in muren en plafonds, scheve of hellende vloeren, klemmende deuren en ramen, scheefstand van kozijnen en trappen, en vochtplekken die met de fundering te maken kunnen hebben.",
+        "body": "<p>Binnen zijn signalen vaak beter te zien dan buiten, omdat stucwerk en tegelwerk snel reageren op beweging. Tegelijk zijn er binnen ook meer verklaringen die niets met de fundering te maken hebben, zoals krimp van stucwerk of werking van houten vloeren. Daarom wordt elke waarneming binnen gekoppeld aan wat er buiten op dezelfde plek te zien is.</p><p>Vragen over specifieke binnensignalen worden verder uitgewerkt in <a href=\"/kennisbank/klemmende-deuren/\">klemmende deuren</a> en <a href=\"/kennisbank/helling-in-vloer/\">helling in de vloer</a>.</p>"
+      },
+      {
+        "id": "onderdelen-per-bouwdeel",
+        "h2": "Waar let de inspecteur op per bouwdeel?",
+        "answer": "Elk bouwdeel reageert anders op funderingsbewegingen: gevels en muren scheuren, vloeren gaan hellen, kozijnen en deuren gaan scheef staan en in de kruipruimte zijn soms funderingsdelen en vocht te zien.",
+        "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Gevels en muren\"><h3>Gevels en muren</h3><p>Gekeken wordt naar de plek, richting en vorm van scheuren, naar uitbuiging en naar plaatsen waar metselwerk is vervangen. Een scheur die van boven naar beneden breder wordt, vertelt iets anders dan een scheur die naar onderen toe smaller wordt. Binnenmuren worden vergeleken met de gevel aan dezelfde kant.</p></section><section class=\"tab-panel\" data-tab=\"Vloeren\"><h3>Vloeren</h3><p>Een vloer die naar één kant afloopt, kieren onder plinten of een tegelvloer met scheuren in een lijn kunnen wijzen op ongelijke zakking. Houten vloeren kunnen ook doorbuigen door de balklaag zelf. Exact meten gebeurt pas in fase 1 met een <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a>.</p></section><section class=\"tab-panel\" data-tab=\"Kozijnen\"><h3>Kozijnen</h3><p>Scheve kozijnen, scheuren vanuit de hoeken en ramen die moeilijk sluiten kunnen op vervorming wijzen. Boven kozijnen kunnen scheuren ook ontstaan door een roestende latei, wat geen funderingsoorzaak heeft. Zie <a href=\"/kennisbank/scheuren-boven-kozijnen/\">scheuren boven kozijnen</a>.</p></section><section class=\"tab-panel\" data-tab=\"Deuren\"><h3>Deuren</h3><p>Een deur die klemt of vanzelf open- of dichtvalt, kan op scheefstand wijzen. Vaak zijn er eenvoudiger verklaringen, zoals vocht in het hout of slecht afgestelde scharnieren. Het patroon over meerdere deuren in dezelfde richting is daarom belangrijker dan één deur.</p></section><section class=\"tab-panel\" data-tab=\"Kruipruimte\"><h3>Kruipruimte</h3><p>Als de kruipruimte toegankelijk is, kunnen soms delen van de fundering, de onderkant van de vloer en de vochthuishouding worden bekeken. Is de kruipruimte niet bereikbaar, dan wordt dat als beperking genoemd. Meer in <a href=\"/kennisbank/kruipruimte-inspectie/\">kruipruimte-inspectie</a>.</p></section></div>"
+      },
+      {
+        "id": "scheuren",
+        "h2": "Hoe worden scheuren beoordeeld?",
+        "answer": "Bij scheuren wordt gekeken naar plaats, richting, vorm, breedte en verloop, en vooral naar het patroon over de hele woning; één scheur zegt zelden genoeg.",
+        "body": "<p>Verticale, horizontale, diagonale en trapvormige scheuren kunnen elk verschillende oorzaken hebben. Een trapvormige scheur die schuin door het metselwerk loopt en breder wordt naar één kant, kan bijvoorbeeld passen bij een hoek die lager ligt. Maar ook krimp, temperatuurwerking of een aanbouw met een eigen fundering kunnen scheuren geven.</p><div class=\"term-box\"><strong>Wat is een trapvormige scheur?</strong><p>Een trapvormige scheur volgt de voegen van het metselwerk in een trapjespatroon, meestal schuin over de gevel. Het patroon en de richting zeggen iets over welke kant mogelijk beweegt.</p><a href=\"/kennisbank/scheurpatronen/\">Lees meer over scheurpatronen</a></div><p>In fase 0 worden scheuren beschreven en gefotografeerd. Gedetailleerd vastleggen en volgen in de tijd hoort bij fase 1 en bij <a href=\"/kennisbank/monitoring-scheuren/\">het monitoren van scheuren</a>.</p>"
+      },
+      {
+        "id": "scheefstand",
+        "h2": "Hoe wordt scheefstand zichtbaar?",
+        "answer": "Scheefstand valt vaak op door gevels die zichtbaar voorover of achterover hellen, kozijnen die uit het lood staan, deuren die vanzelf bewegen en vloeren die naar één kant aflopen.",
+        "body": "<p>Met het blote oog is grove scheefstand goed te herkennen, zeker als je de woning vergelijkt met de buren of met rechte lijnen zoals een dakgoot of een raamstijl. Kleine afwijkingen zijn visueel niet betrouwbaar vast te stellen. Daarvoor bestaat de <a href=\"/kennisbank/loodmeting/\">loodmeting</a> in fase 1.</p><p>Belangrijk is ook dat niet elke gevel ooit perfect te lood is gebouwd. Een lichte afwijking kan er altijd al gezeten hebben. Meer achtergrond lees je in <a href=\"/kennisbank/scheefstand/\">scheefstand</a>.</p>"
+      },
+      {
+        "id": "signalen-van-zetting",
+        "h2": "Welke signalen kunnen wijzen op zetting?",
+        "answer": "Signalen van mogelijke ongelijke zetting zijn vooral combinaties: scheuren die in dezelfde richting wijzen, scheefstand aan dezelfde kant, en vloeren en deuren die dat beeld bevestigen.",
+        "body": "<div class=\"two-col-list\"><div><h3>Sterker signaal</h3><ul class=\"checklist\"><li>Scheuren binnen en buiten op dezelfde plek</li><li>Trapvormige scheuren die naar één hoek wijzen</li><li>Meerdere kozijnen en deuren scheef in dezelfde richting</li><li>Vloer die afloopt naar dezelfde kant als de gevel helt</li></ul></div><div><h3>Vaak andere oorzaak</h3><ul class=\"checklist\"><li>Haarscheurtjes in nieuw stucwerk</li><li>Eén klemmende deur na een vochtige periode</li><li>Scheur boven een kozijn met roestvorming</li><li>Naad bij een aanbouw met eigen fundering</li></ul></div></div><div class=\"term-box\"><strong>Wat betekent ongelijke zetting?</strong><p>Bij ongelijke <a href=\"/kennisbank/zetting/\">zetting</a> zakken delen van een woning niet even veel. Dat geeft spanning in de constructie, met scheuren en scheefstand als mogelijk gevolg.</p><a href=\"/kennisbank/ongelijke-zetting/\">Lees meer over ongelijke zetting</a></div>"
+      },
+      {
+        "id": "beperkingen",
+        "h2": "Wat zijn de beperkingen van een visuele inspectie?",
+        "answer": "Een visuele inspectie ziet alleen wat zichtbaar en bereikbaar is, meet niet, en laat niet zien of bewegingen nog doorgaan; de conclusie is daarom een inschatting, geen vaststelling.",
+        "body": "<div class=\"callout callout-warn\"><strong>Wat een visuele inspectie niet kan</strong><p>De fundering zelf wordt niet vrijgelegd, er wordt geen houtonderzoek gedaan en er worden geen metingen met instrumenten uitgevoerd. Afwerklagen, behang, meubels en vloerbedekking kunnen signalen verbergen. Een gesloten of onbereikbare kruipruimte beperkt het zicht op de onderbouw. En één bezoek is een momentopname: of een scheur nog groeit, blijkt pas uit herhaalde waarnemingen.</p></div><p>Deze beperkingen worden in het rapport benoemd. Ze zijn ook de reden dat fase 0 soms uitmondt in een advies voor metingen in <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a> of voor het toegankelijk maken van de kruipruimte.</p>"
+      },
+      {
+        "id": "zelf-voorbereiden",
+        "h2": "Wat kun je zelf doen voor de inspectie?",
+        "answer": "Je helpt de inspectie door de kruipruimte en zolder bereikbaar te maken, bekende scheuren en klachten te noteren en eventuele tekeningen of eerdere rapporten klaar te leggen.",
+        "body": "<ul class=\"check-interactive\"><li>Maak het kruipluik vrij en zorg dat het open kan</li><li>Noteer welke deuren of ramen klemmen en sinds wanneer</li><li>Maak een lijstje van scheuren die je zelf hebt gezien</li><li>Zoek bouwtekeningen, verbouwingsgegevens of oude rapporten op</li><li>Zorg dat alle gevels en de tuin bereikbaar zijn</li></ul><p>Wil je eerst zelf inschatten of onderzoek zinvol is, doe dan de online <a href=\"/funderingsscan-check/\">funderingscheck</a>.</p>"
+      },
+      {
+        "id": "wat-gebeurt-met-waarnemingen",
+        "h2": "Wat gebeurt er met de waarnemingen?",
+        "answer": "Alle waarnemingen worden gecombineerd met de archief- en bodemgegevens tot een risico-inschatting, en vastgelegd in een rapport met foto's, conclusie en advies.",
+        "body": "<p>De inspectie op zich levert nog geen oordeel op. Pas door de waarnemingen naast het bouwjaar, het vermoedelijke funderingstype en de ondergrond te leggen, ontstaat een samenhangend beeld. Hoe dat gebeurt, lees je in <a href=\"/kennisbank/funderingsrisico-inschatting/\">funderingsrisico-inschatting</a>. Hoe het rapport eruitziet, staat op <a href=\"/funderingsrapport/\">funderingsrapport</a>.</p><p>Wil je de inspectie voor jouw woning laten uitvoeren als onderdeel van het vooronderzoek? <a href=\"/funderingsscan-aanvragen/\">Vraag een fase 0 funderingsscan aan</a>; de inspectie wordt meestal binnen enkele werkdagen ingepland.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is een visuele inspectie genoeg om funderingsschade vast te stellen?",
+        "a": "<p>Nee, een visuele inspectie geeft een onderbouwde inschatting, geen vaststelling. Voor meer zekerheid zijn metingen nodig, en voor de staat van de fundering zelf nader onderzoek zoals een inspectieput.</p>"
+      },
+      {
+        "q": "Wordt er bij een visuele inspectie gemeten?",
+        "a": "<p>Niet met meetinstrumenten zoals bij een waterpassing of loodmeting; dat gebeurt in fase 1. Waarnemingen worden wel nauwkeurig beschreven en gefotografeerd.</p>"
+      },
+      {
+        "q": "Hoe lang duurt een visuele funderingsinspectie?",
+        "a": "<p>Daar is geen vaste duur voor te geven; het hangt af van de woning. Wel wordt de inspectie meestal binnen enkele werkdagen ingepland en volgt het rapport binnen 5 werkdagen na de inspectie.</p>"
+      },
+      {
+        "q": "Moet ik thuis zijn bij de inspectie?",
+        "a": "<p>Ja, of iemand anders die toegang kan geven, omdat ook de binnenkant en de kruipruimte worden bekeken. Afspraken hierover worden bij het inplannen gemaakt via <a href=\"/contact/\">contact</a>.</p>"
+      },
+      {
+        "q": "Wat als mijn woning geen toegankelijke kruipruimte heeft?",
+        "a": "<p>Dan wordt dat in het rapport als beperking genoemd. Het advies kan zijn om de kruipruimte toegankelijk te maken als aanvullend onderzoek.</p>"
+      },
+      {
+        "q": "Wordt ook de buurwoning bekeken?",
+        "a": "<p>Alleen van buitenaf, voor zover zichtbaar vanaf de openbare weg of je eigen terrein. Vergelijken met de buren helpt om te zien of een beeld bij het hele bouwblok hoort.</p>"
+      },
+      {
+        "q": "Betekent elke scheur een funderingsprobleem?",
+        "a": "<p>Nee, scheuren kunnen ook ontstaan door krimp, temperatuur, roestende lateien, houtwerking of een aanbouw met eigen fundering. Het patroon en de combinatie met andere signalen zijn bepalend; zie <a href=\"/kennisbank/scheuren-in-woning/\">scheuren in de woning</a>.</p>"
+      },
+      {
+        "q": "Is een visuele funderingsinspectie hetzelfde als een bouwkundige keuring?",
+        "a": "<p>Nee, de inspectie richt zich alleen op signalen die met de fundering en de ondergrond te maken hebben. Een bouwkundige keuring kijkt naar de hele woning.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/funderingsinspectie/",
+        "label": "Funderingsinspectie als dienst",
+        "text": "Hoe een inspectie wordt aangevraagd en wat je ervan kunt verwachten."
+      },
+      {
+        "href": "/kennisbank/scheurpatronen/",
+        "label": "Scheurpatronen herkennen",
+        "text": "Wat de richting en vorm van scheuren kunnen betekenen."
+      },
+      {
+        "href": "/fase-0-funderingsonderzoek/",
+        "label": "Fase 0 funderingsonderzoek",
+        "text": "Het vooronderzoek waar de visuele inspectie onderdeel van is."
+      }
+    ],
+    "cta": [
+      "Vraag een fase 0 funderingsscan aan",
+      "Laat je woning buiten en binnen bekijken en ontvang een rapport met foto's, conclusie en advies."
+    ]
+  },
+  {
+    "path": "/kennisbank/funderingsrisico-inschatting/",
+    "title": "Funderingsrisico-inschatting: zo werkt het | MV Funderingsscan",
+    "description": "Hoe komt een funderingsrisico-inschatting tot stand? Lees hoe bodem, bouwjaar, funderingstype en zichtbare signalen samen worden gewogen tot een advies.",
+    "keyword": "funderingsrisico inschatting",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/funderingsrisico-inschatting/",
+        "name": "Funderingsrisico-inschatting"
+      }
+    ],
+    "eyebrow": "Kennisbank · Fase 0 · Stap C",
+    "h1": "Funderingsrisico-inschatting: hoe komen we tot een oordeel?",
+    "lead": "Een funderingsrisico-inschatting is het <strong>combineren van alle gegevens en waarnemingen</strong> uit het vooronderzoek tot één onderbouwde eerste inschatting: hoe groot is de kans op funderingsproblemen bij deze woning, en welke vervolgstap is verstandig? Het is de afsluitende stap van <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a> en vormt de kern van het rapport.",
+    "hero_image": {
+      "name": "jaren-dertig-woningen-straat",
+      "alt": "Rij jaren-dertigwoningen in een groene straat"
+    },
+    "article": true,
+    "sections": [
+      {
+        "id": "wat-is-een-risico-inschatting",
+        "h2": "Wat is een funderingsrisico-inschatting?",
+        "answer": "Een funderingsrisico-inschatting is een onderbouwd oordeel over de kans op funderingsproblemen bij één specifieke woning, gebaseerd op archiefgegevens, bodemgegevens en een visuele inspectie ter plaatse.",
+        "body": "<p>Het woord inschatting is bewust gekozen. Zonder metingen en zonder de fundering zelf te zien, is een definitief oordeel niet mogelijk. Wat wel kan, is alle beschikbare informatie zorgvuldig naast elkaar leggen en eerlijk aangeven wat dat beeld oplevert, inclusief de onzekerheden.</p><p>De inschatting bouwt voort op de twee eerdere stappen van fase 0: het <a href=\"/kennisbank/archiefonderzoek-fundering/\">archief- en bodemonderzoek</a> en de <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a>. Het algemene begrip funderingsrisico, los van het onderzoeksproces, wordt uitgelegd in <a href=\"/kennisbank/funderingsrisico/\">funderingsrisico</a>.</p>"
+      },
+      {
+        "id": "hoe-observaties-combineren",
+        "h2": "Hoe worden observaties gecombineerd?",
+        "answer": "Observaties worden gecombineerd door te kijken of ze elkaar bevestigen of tegenspreken: past wat je ziet bij wat je op basis van bouwjaar, funderingstype en bodem zou verwachten?",
+        "body": "<ol class=\"mini-steps\"><li><strong>Uitgangssituatie</strong><span>Bouwjaar, vermoedelijk funderingstype en bodemopbouw bepalen hoe gevoelig de woning in principe is.</span></li><li><strong>Omstandigheden</strong><span>Grondwater en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a> geven aan of die gevoeligheid ook daadwerkelijk wordt aangesproken.</span></li><li><strong>Signalen</strong><span>Scheuren, scheefstand, vloeren, deuren en de kruipruimte laten zien hoe de woning zich gedraagt.</span></li><li><strong>Samenhang</strong><span>Wijzen de signalen in dezelfde richting en passen ze bij de uitgangssituatie, dan weegt het beeld zwaarder.</span></li></ol><p>Het gaat dus niet om het optellen van punten, maar om het zoeken naar een samenhangend verhaal. Twee kleine signalen die elkaar versterken, kunnen meer zeggen dan één opvallende scheur die nergens bij aansluit.</p>"
+      },
+      {
+        "id": "waarom-een-signaal-niet-genoeg",
+        "h2": "Waarom is één signaal niet genoeg?",
+        "answer": "Vrijwel elk afzonderlijk signaal kan ook een andere oorzaak hebben dan de fundering; pas in combinatie met andere signalen en met de achtergrond van de woning krijgt het betekenis.",
+        "body": "<p>Een klemmende deur kan komen door vocht of slecht afgestelde scharnieren. Een scheur boven een raam kan ontstaan door een roestende latei. Een scheur bij een aanbouw kan het gevolg zijn van de eigen, ondiepere fundering van die aanbouw. En een hellende houten vloer kan door de balklaag zelf komen.</p><div class=\"callout callout-note\"><strong>Andersom geldt het ook</strong><p>Het ontbreken van zichtbare signalen betekent niet dat er niets aan de hand is. Afwerklagen kunnen scheuren verbergen en een probleem kan zich nog in een vroeg stadium bevinden. Daarom wegen bouwjaar, funderingstype en bodem ook mee als de woning er goed uitziet.</p></div><p>Meer over de vele oorzaken van scheuren lees je in <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>.</p>"
+      },
+      {
+        "id": "factoren-samen-bekeken",
+        "h2": "Hoe worden bodem, bouwjaar, funderingstype en signalen samen bekeken?",
+        "answer": "Elke factor zegt iets, maar heeft ook een eigen beperking; de inschatting ontstaat door de factoren naast elkaar te leggen en te kijken waar ze elkaar versterken of afzwakken.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Factor</th><th>Wat het zegt</th><th>Beperking</th></tr></thead><tbody><tr><td>Bouwjaar</td><td>Woningen van vóór circa 1970 hebben vaker houten palen of een <a href=\"/kennisbank/fundering-op-staal/\">fundering op staal</a></td><td>Zegt niets over de werkelijke staat; delen kunnen later zijn gebouwd</td></tr><tr><td>Funderingstype</td><td>Houten palen en ondiepe funderingen zijn gevoeliger voor veranderingen in de omgeving</td><td>Zonder vrijgraven blijft het type vaak een vermoeden</td></tr><tr><td>Bodemopbouw</td><td>Veen en klei bewegen meer dan zand</td><td>De ondergrond kan op korte afstand verschillen</td></tr><tr><td>Grondwater</td><td>Een lage stand kan houten paalkoppen droog zetten</td><td>Openbare gegevens geven niet altijd de situatie direct onder de woning weer</td></tr><tr><td>Bodemdaling</td><td>Kan omstandigheden rond de fundering geleidelijk veranderen</td><td>Zegt op zichzelf niets over deze specifieke woning</td></tr><tr><td>Zichtbare signalen</td><td>Laten zien hoe de woning zich gedraagt</td><td>Kunnen andere oorzaken hebben of verborgen zijn</td></tr></tbody></table></div><p>Een voorbeeld ter illustratie: bij een vooroorlogse woning op veen met vermoedelijk houten palen, waar scheuren en scheefstand naar dezelfde hoek wijzen, versterken de factoren elkaar. Bij een woning op zand met één scheur bij de aanbouw ligt een andere verklaring meer voor de hand. Zie ook <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a> en <a href=\"/kennisbank/veenbodem/\">veenbodem</a>.</p>"
+      },
+      {
+        "id": "wat-betekent-het-wel-en-niet",
+        "h2": "Wat betekent een risico-inschatting wel en niet?",
+        "answer": "Een risico-inschatting zegt iets over de kans op problemen en de logische vervolgstap; het is geen vaststelling van schade, geen garantie en geen herstelplan.",
+        "body": "<div class=\"two-col-list\"><div><h3>Wat het wel is</h3><ul class=\"checklist\"><li>Een onderbouwde eerste inschatting voor deze woning</li><li>Een overzicht van wat bekend, vermoed en onbekend is</li><li>Een advies over de verstandige vervolgstap</li><li>Een vertrekpunt voor gesprekken bij aankoop of verkoop</li></ul></div><div><h3>Wat het niet is</h3><ul class=\"checklist\"><li>Een vaststelling van funderingsschade</li><li>Een constructieve berekening</li><li>Een garantie dat er geen problemen zijn of komen</li><li>Een herstelplan of herstelofferte</li></ul></div></div><div class=\"term-box\"><strong>Wat is het verschil tussen risico en schade?</strong><p>Risico gaat over de kans dat er problemen zijn of ontstaan; schade gaat over wat er werkelijk aan de woning mankeert. Een hoog risico betekent dat beter kijken verstandig is, niet dat er iets mis is.</p><a href=\"/kennisbank/funderingsrisico/\">Lees meer over funderingsrisico</a></div>"
+      },
+      {
+        "id": "verschil-kcaf-risicoklasse",
+        "h2": "Wat is het verschil met de KCAF-risicoklasse bij een taxatie?",
+        "answer": "De KCAF-risicoklasse in een taxatierapport is gebaseerd op het funderingsrisicorapport van het KCAF, terwijl een risico-inschatting in fase 0 voortkomt uit onderzoek ter plaatse bij jouw woning.",
+        "body": "<p>Volgens de huidige richtlijnen werkt het model Taxatierapport Woonruimte sinds 1 april 2026 met een vaste funderingsparagraaf. De basis daarvan is het funderingsrisicorapport van het <a href=\"https://www.kcaf.nl/\" rel=\"noopener\" target=\"_blank\">KCAF</a> (Kenniscentrum Aanpak Funderingsproblematiek), met risicoklassen A (laag) tot en met E (hoog). Bij klasse D of E is aanvullend funderingsonderzoek nodig voordat de taxatie kan worden afgerond; bij A tot en met C is aanvullend onderzoek in de regel vrijwillig.</p><p>De risico-inschatting uit fase 0 is iets anders: geen klasse uit een rapport, maar een oordeel op basis van wat er bij de woning zelf is gezien en uitgezocht. Beide kunnen elkaar aanvullen, maar het ene vervangt het andere niet automatisch. Of en welk onderzoek in jouw situatie volstaat, stem je af met je taxateur of geldverstrekker. Meer hierover lees je in <a href=\"/kennisbank/funderingsscan-en-taxatie/\">funderingsscan en taxatie</a>.</p>"
+      },
+      {
+        "id": "twijfelachtig-beeld",
+        "h2": "Wat gebeurt er als het beeld niet eenduidig is?",
+        "answer": "Als gegevens en signalen elkaar tegenspreken of te weinig houvast geven, wordt dat in het rapport benoemd en volgt meestal een advies om te monitoren of gericht aanvullend onderzoek te doen.",
+        "body": "<p>Niet elke woning levert een helder verhaal op. Soms ontbreken tekeningen, is de kruipruimte niet bereikbaar of wijzen de signalen verschillende kanten op. Dan is het niet verantwoord om een stellige conclusie te trekken. Het rapport maakt dan duidelijk welke vraag nog openstaat en welke stap die vraag het beste kan beantwoorden.</p><p>Dat kan een eenvoudige stap zijn, zoals het periodiek fotograferen van een scheur volgens de aanpak in <a href=\"/kennisbank/monitoring-scheuren/\">scheuren monitoren</a>. Het kan ook gaan om metingen die de vervorming objectief vastleggen, zoals een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a>. Zo blijft de vervolgstap in verhouding tot de vraag.</p>"
+      },
+      {
+        "id": "opbouw-rapport",
+        "h2": "Hoe wordt het rapport opgebouwd?",
+        "answer": "Het rapport volgt de lijn van het onderzoek: eerst de gegevens over woning en ondergrond, dan de waarnemingen met foto's, vervolgens de risico-inschatting en tot slot de conclusie en het advies.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Gegevens</strong><span>Bouwjaar, verbouwingen, vermoedelijk funderingstype, bodemopbouw, grondwater en bodemdaling.</span></li><li><strong>Waarnemingen</strong><span>Een fotoverslag van gevels, binnenruimten en, voor zover toegankelijk, de kruipruimte.</span></li><li><strong>Inschatting</strong><span>Hoe de gegevens en waarnemingen samen worden gewogen, inclusief de beperkingen.</span></li><li><strong>Conclusie en advies</strong><span>Een heldere conclusie en een concrete vervolgstap.</span></li></ol><p>Je ontvangt het rapport binnen 5 werkdagen na de inspectie. Hoe het rapport als product eruitziet, staat op <a href=\"/funderingsrapport/\">funderingsrapport</a>; tips om het goed te lezen vind je in <a href=\"/kennisbank/funderingsrapport-lezen/\">funderingsrapport lezen</a>.</p>"
+      },
+      {
+        "id": "mogelijke-vervolgstappen",
+        "h2": "Welke vervolgstappen zijn mogelijk?",
+        "answer": "Een fase 0-rapport eindigt met één van vier uitkomsten: geen directe aanleiding voor vervolgonderzoek, monitoren, aanvullend onderzoek, of fase 1 met metingen.",
+        "body": "<div class=\"mini-outcomes\"><div class=\"mini-outcome mini-ok\"><strong>Geen directe aanleiding</strong><span>Het beeld geeft geen reden voor vervolgonderzoek op dit moment.</span></div><div class=\"mini-outcome mini-watch\"><strong>Monitoren</strong><span>Signalen in de gaten houden, bijvoorbeeld door scheuren periodiek vast te leggen.</span></div><div class=\"mini-outcome mini-extra\"><strong>Aanvullend onderzoek</strong><span>Gericht op één onderdeel, of bijvoorbeeld de kruipruimte toegankelijk maken.</span></div><div class=\"mini-outcome mini-next\"><strong>Fase 1 adviseren</strong><span>Metingen om de vervorming van de woning vast te leggen en te duiden.</span></div></div><p>Wat elke uitkomst in de praktijk betekent, lees je in <a href=\"/kennisbank/wat-na-een-quickscan/\">wat na een quickscan</a>. Meer over metingen staat op <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>.</p>"
+      },
+      {
+        "id": "inschatting-laten-maken",
+        "h2": "Hoe laat je een risico-inschatting maken?",
+        "answer": "Een risico-inschatting maak je niet los, maar als onderdeel van een fase 0 funderingsscan, waarin ook het archiefonderzoek en de visuele inspectie zitten.",
+        "body": "<p>Fase 0 kost vanaf circa €350; bij grotere of complexere woningen kan dat indicatief oplopen tot circa €550. De definitieve prijs is vooraf bekend. Je kunt direct <a href=\"/funderingsscan-aanvragen/\">een fase 0 funderingsscan aanvragen</a> of eerst <a href=\"/contact/\">je vraag stellen</a> als je niet zeker weet welke stap je nodig hebt.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is een risico-inschatting hetzelfde als een funderingsonderzoek?",
+        "a": "<p>Nee, de risico-inschatting is één onderdeel van funderingsonderzoek, namelijk de afsluiting van fase 0. Het hele traject lees je in <a href=\"/kennisbank/wat-is-funderingsonderzoek/\">wat is funderingsonderzoek</a>.</p>"
+      },
+      {
+        "q": "Kan een woning zonder zichtbare scheuren toch een verhoogd risico hebben?",
+        "a": "<p>Ja, dat kan. Bouwjaar, funderingstype, bodem en grondwater kunnen samen op een verhoogd risico wijzen, ook als signalen (nog) niet zichtbaar zijn of door afwerking worden verborgen.</p>"
+      },
+      {
+        "q": "Betekent een verhoogd risico dat de fundering moet worden hersteld?",
+        "a": "<p>Nee, een verhoogd risico betekent dat nader kijken verstandig is. Of herstel nodig is, blijkt pas uit vervolgonderzoek; zie ook <a href=\"/kennisbank/funderingsherstel/\">funderingsherstel</a>.</p>"
+      },
+      {
+        "q": "Vervangt de risico-inschatting de KCAF-risicoklasse in mijn taxatie?",
+        "a": "<p>Niet automatisch. Het zijn verschillende dingen; stem met je taxateur of geldverstrekker af welk onderzoek in jouw situatie nodig is.</p>"
+      },
+      {
+        "q": "Hoe zeker is een risico-inschatting?",
+        "a": "<p>Een risico-inschatting is zo zeker als de beschikbare informatie toelaat. Het rapport geeft daarom aan wat vaststaat, wat vermoed wordt en wat onbekend is.</p>"
+      },
+      {
+        "q": "Krijg ik bij de risico-inschatting ook een advies?",
+        "a": "<p>Ja, het rapport eindigt altijd met een conclusie en een advies over de vervolgstap, van geen directe aanleiding tot fase 1.</p>"
+      },
+      {
+        "q": "Geeft de risico-inschatting een indicatie van herstelkosten?",
+        "a": "<p>Nee. Funderingsherstel kan tienduizenden euro's kosten, afhankelijk van type en omvang, maar voor een bedrag heb je een offerte van een herstelspecialist nodig. Lees meer bij <a href=\"/kennisbank/kosten-funderingsherstel/\">kosten funderingsherstel</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/funderingsrisico/",
+        "label": "Wat is funderingsrisico?",
+        "text": "Het begrip risico, het verschil met schade en de KCAF-klassen."
+      },
+      {
+        "href": "/funderingsrapport/",
+        "label": "Het funderingsrapport",
+        "text": "Wat er in het rapport staat en hoe je het gebruikt."
+      },
+      {
+        "href": "/fase-0-funderingsonderzoek/",
+        "label": "Fase 0 funderingsonderzoek",
+        "text": "Het vooronderzoek waarin de risico-inschatting wordt gemaakt."
+      }
+    ],
+    "cta": [
+      "Vraag een fase 0 funderingsscan aan",
+      "Krijg een onderbouwde risico-inschatting voor jouw woning, met foto's, conclusie en advies."
+    ]
+  }
+]

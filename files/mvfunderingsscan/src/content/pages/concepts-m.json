@@ -1,0 +1,647 @@
+[
+  {
+    "path": "/kennisbank/zetting/",
+    "title": "Zetting van een woning: wat is het? | MV Funderingsscan",
+    "description": "Wat is zetting, waarom zakt elke woning een beetje en wanneer wordt het een probleem? Heldere uitleg over gelijkmatige en ongelijke zetting van woningen.",
+    "keyword": "zetting woning",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/zetting/",
+        "name": "Zetting"
+      }
+    ],
+    "eyebrow": "Kennisbank · Begrippen",
+    "article": true,
+    "h1": "Zetting van een woning: waarom elk huis een beetje zakt",
+    "lead": "Zetting is het <strong>samendrukken van de ondergrond</strong> onder het gewicht van een gebouw, waardoor de woning iets zakt. Elke woning zet in meer of mindere mate, vooral in de eerste jaren na de bouw. Gelijkmatige zetting is meestal onschuldig. Pas als delen van een woning verschillend zakken of de beweging blijft doorgaan, kan zetting wijzen op een probleem dat onderzoek ter plaatse vraagt.",
+    "defined_term": {
+      "name": "Zetting",
+      "description": "Zetting is het samendrukken van de ondergrond onder de belasting van een gebouw, waardoor de woning zakt; dit gebeurt vooral in de eerste jaren na de bouw en is in principe een normaal verschijnsel."
+    },
+    "hero_image": {
+      "name": "funderingsinspectie-woning-gevel",
+      "alt": "Specialist met waterpas bij de gevel van een woning"
+    },
+    "sections": [
+      {
+        "id": "wat-is-zetting",
+        "h2": "Wat is zetting precies?",
+        "answer": "Zetting is de zakking van een gebouw doordat de grond eronder onder belasting wordt samengedrukt. Het is een natuurkundig gevolg van bouwen op grond en in principe een normaal verschijnsel.",
+        "body": "<p>Grond bestaat uit vaste deeltjes met daartussen water en lucht. Zodra er een woning op komt te staan, drukt het gewicht op die deeltjes. Water en lucht worden uit de poriën geperst, de deeltjes schuiven dichter tegen elkaar en de grondlaag wordt iets dunner, waardoor de woning meezakt.</p><p>Hoeveel en hoe snel een woning zet, hangt af van onder meer de grondsoort, het gewicht van het gebouw, de fundering en de grondwaterstand.</p>"
+      },
+      {
+        "id": "waarom-zet-elke-woning",
+        "h2": "Waarom zet elke woning?",
+        "answer": "Elke woning voegt gewicht toe aan de ondergrond en geen enkele grondsoort is volkomen onsamendrukbaar. Daarom zet iedere woning, al is het soms zo weinig dat je er niets van merkt.",
+        "body": "<p>Bij een <a href=\"/kennisbank/fundering-op-staal/\">fundering op staal</a> rust de woning direct op de ondiepe ondergrond; die wordt samengedrukt. Bij een <a href=\"/kennisbank/paalfundering/\">paalfundering</a> wordt het gewicht via palen naar een diepere, stevigere laag gebracht, maar ook daar rust het gewicht uiteindelijk op grond. Zetting is dus niet te voorkomen, alleen te beperken en te spreiden.</p>"
+      },
+      {
+        "id": "primaire-en-langdurige-zetting",
+        "h2": "Wat is het verschil tussen primaire en langdurige zetting?",
+        "answer": "Primaire zetting ontstaat doordat water uit de grond wordt geperst en treedt vooral op tijdens en kort na de bouw. Langdurige zetting is een trage vervorming van de grond zelf die nog lang kan doorgaan, vooral in veen en klei.",
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Primaire zetting</h3><p>Direct na het aanbrengen van de belasting wordt water uit de poriën geperst. In doorlatende grond zoals zand gaat dat relatief snel, in klei en veen trager. Het grootste deel van deze zetting vindt plaats in de eerste jaren na de bouw.</p></div><div class=\"info-card\"><h3>Langdurige zetting</h3><p>Ook als het water grotendeels is weggeperst, kan de grondstructuur onder blijvende belasting langzaam verder vervormen. Dit wordt ook wel kruip of secundaire zetting genoemd en speelt vooral bij slappe, organische lagen.</p></div></div><p>In de praktijk lopen beide processen in elkaar over.</p>"
+      },
+      {
+        "id": "gelijkmatig-of-ongelijk",
+        "h2": "Wanneer is zetting een probleem?",
+        "answer": "Zetting wordt vooral een probleem als delen van een woning verschillend zakken. Gelijkmatige zetting veroorzaakt meestal weinig schade; ongelijke zetting kan de woning vervormen en leiden tot scheuren en scheefstand.",
+        "body": "<p>Zakt een woning overal ongeveer evenveel, dan beweegt het gebouw als geheel mee. Muren en vloeren behouden hun onderlinge verhouding en er ontstaan weinig spanningen.</p><p>Zakt het ene deel meer dan het andere, dan wordt de woning als het ware verwrongen. Metselwerk kan dat maar beperkt opvangen. Gevolgen kunnen scheuren, <a href=\"/kennisbank/scheefstand/\">scheefstand</a> en klemmende deuren of ramen zijn.</p><div class=\"term-box\"><strong>Wat betekent ongelijke zetting?</strong><p>Bij ongelijke zetting zakken verschillende delen van een woning niet evenveel. Daardoor ontstaan spanningen in de constructie, wat schadelijker is dan een gelijkmatige zakking.</p><a href=\"/kennisbank/ongelijke-zetting/\">Lees meer over ongelijke zetting</a></div>"
+      },
+      {
+        "id": "zetting-verzakking-funderingsprobleem",
+        "h2": "Wat is het verschil tussen zetting, verzakking en een funderingsprobleem?",
+        "answer": "Zetting is de normale zakking door samendrukken van de grond. Verzakking is een zichtbare of meetbare zakking die groter of ongelijker is dan je zou verwachten. Een funderingsprobleem betekent dat de fundering haar werk niet meer goed doet.",
+        "body": "<p>De begrippen worden vaak door elkaar gebruikt, maar betekenen niet hetzelfde.</p><div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Begrip</th><th>Wat het is</th><th>Wat het kan betekenen</th></tr></thead><tbody><tr><td>Zetting</td><td>Samendrukken van de grond onder het gewicht van de woning</td><td>Normaal verschijnsel, vooral in de eerste jaren na de bouw</td></tr><tr><td>Ongelijke zetting</td><td>Delen van de woning zetten verschillend</td><td>Kan vervorming, scheuren en scheefstand geven</td></tr><tr><td>Verzakking</td><td>Zakking die zichtbaar of meetbaar opvalt, vaak ongelijk</td><td>Kan wijzen op een probleem in de bodem of de fundering</td></tr><tr><td>Funderingsprobleem</td><td>De fundering draagt de woning niet meer zoals bedoeld</td><td>Vraagt onderzoek en mogelijk herstel door een specialist</td></tr></tbody></table></div><p>Signalen van verzakking lees je bij <a href=\"/kennisbank/verzakking-woning/\">verzakking van een woning</a>; mogelijke oorzaken bij <a href=\"/funderingsproblemen/\">funderingsproblemen</a>.</p>"
+      },
+      {
+        "id": "zetting-en-bodemsoort",
+        "h2": "Hoe hangt zetting samen met veen, klei en zand?",
+        "answer": "Hoe sterk een woning zet, hangt sterk af van de grondsoort. Veen en klei zijn slapper en zetten meer en langer; zand is meestal stabieler.",
+        "body": "<ul class=\"checklist\"><li><strong>Veen</strong> bevat veel water en organisch materiaal. Het klinkt onder belasting in en kan bij droogvallen oxideren. Meer daarover in het artikel over de <a href=\"/kennisbank/veenbodem/\">veenbodem</a>.</li><li><strong>Klei</strong> is samendrukbaar en reageert op vocht: het krimpt bij droogte en zwelt bij nat weer. Zie ook de <a href=\"/kennisbank/kleibodem/\">kleibodem</a>.</li><li><strong>Zand</strong> laat water makkelijker door en zet daardoor vaak sneller en minder. Toch kan ook op zand ongelijke zakking ontstaan, zie de <a href=\"/kennisbank/zandbodem/\">zandbodem</a>.</li></ul><p>Ook de grondwaterstand speelt mee; zie <a href=\"/kennisbank/grondwater-en-fundering/\">grondwater en fundering</a>.</p>"
+      },
+      {
+        "id": "zetting-meten",
+        "h2": "Hoe meet je of een woning nog zet?",
+        "answer": "Of een woning nog zet, blijkt pas uit herhaalde metingen over een langere periode. Eén meting laat alleen zien hoe de woning er op dat moment bij staat.",
+        "body": "<p>Met een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a> of <a href=\"/kennisbank/hoogtemeting/\">hoogtemeting</a> wordt vastgelegd hoe de woning nu ligt ten opzichte van een referentiepunt. Daaruit blijkt of delen lager liggen dan andere, maar niet of de beweging nog doorgaat. Daarvoor worden metingen na verloop van tijd herhaald en met elkaar vergeleken. Hoe dat in zijn werk gaat, lees je bij <a href=\"/kennisbank/zettingsmeting/\">zettingsmeting</a>.</p><div class=\"callout callout-note\"><strong>Momentopname versus monitoring</strong><p>Een hoogteverschil kan oud en stabiel zijn, of nog toenemen. Alleen metingen op verschillende momenten maken dat onderscheid.</p></div>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: een oudere woning met een scheve vensterbank",
+        "answer": "Een scheve vensterbank in een oudere woning kan het gevolg zijn van zetting die lang geleden heeft plaatsgevonden, maar ook van beweging die nog doorgaat. Zonder meting en onderzoek is dat niet te zeggen.",
+        "body": "<p>Stel: je woont in een vooroorlogse woning op een klei- en veenondergrond. Een vensterbank loopt merkbaar af en in de hoek van de woonkamer zit een oude, dichtgeschilderde scheur. Nieuwe klachten zijn er niet.</p><p>Dit kan passen bij zetting die lang geleden tot rust is gekomen, maar ook bij ongelijke zetting die langzaam doorgaat. Een vooronderzoek naar fundering, bodem en zichtbare signalen bepaalt of niets doen, monitoren of gericht meten het beste past.</p>"
+      },
+      {
+        "id": "wanneer-onderzoek",
+        "h2": "Wanneer is onderzoek verstandig?",
+        "answer": "Onderzoek is verstandig als je twijfelt of de zakking van je woning nog normaal is, bijvoorbeeld bij nieuwe of groeiende scheuren, scheefstand of klemmende deuren, of als je een oudere woning wilt kopen.",
+        "body": "<ul class=\"checklist\"><li>Er ontstaan nieuwe scheuren of bestaande scheuren lijken te groeien.</li><li>Deuren of ramen gaan klemmen zonder duidelijke andere oorzaak.</li><li>Je overweegt een oudere woning op slappe grond te kopen.</li></ul><p>Een <a href=\"/funderingsscan/\">funderingsscan</a> begint met fase 0: een niet-destructief vooronderzoek dat helpt bepalen of verder onderzoek nodig is. Twijfel je welke stap bij jouw situatie past? Neem dan <a href=\"/contact/\">contact</a> op.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek, visuele inspectie en een risico-inschatting. Vanaf circa €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft. Indicatief €750 – €1.500.</span></a></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is zetting van een woning normaal?",
+        "a": "<p>Ja, zetting is in principe normaal. Elke woning drukt de grond eronder samen en zakt daardoor iets, vooral in de eerste jaren na de bouw. Het wordt pas een aandachtspunt als de zakking ongelijk is of blijft doorgaan.</p>"
+      },
+      {
+        "q": "Hoe lang duurt zetting na de bouw?",
+        "a": "<p>Dat verschilt per woning en per ondergrond. Op zand verloopt zetting meestal sneller, op klei en veen trager en soms nog lang na de bouw. Of een woning nu nog zet, blijkt alleen uit herhaalde metingen.</p>"
+      },
+      {
+        "q": "Is zetting hetzelfde als verzakking?",
+        "a": "<p>Niet helemaal. Zetting is de normale zakking door het samendrukken van de grond. Van verzakking spreek je meestal als de zakking opvallend groot of ongelijk is. Lees meer in het artikel over <a href=\"/kennisbank/verzakking-woning/\">verzakking van een woning</a>.</p>"
+      },
+      {
+        "q": "Betekent zetting dat mijn fundering slecht is?",
+        "a": "<p>Nee, zetting zegt op zichzelf niets over de staat van de fundering. Ook een goede fundering zet. Pas als er tekenen van ongelijke zakking zijn, is het zinvol om de fundering nader te laten beoordelen.</p>"
+      },
+      {
+        "q": "Kan ik zelf zien of mijn woning zet?",
+        "a": "<p>Gelijkmatige zetting zie je meestal niet. Ongelijke zetting kan zich uiten in scheuren, scheefstand of klemmende deuren, maar die signalen kunnen ook andere oorzaken hebben. Foto's met datum en een liniaal helpen om veranderingen in de tijd vast te leggen; zie ook <a href=\"/kennisbank/monitoring-scheuren/\">scheuren monitoren</a>.</p>"
+      },
+      {
+        "q": "Hoe wordt zetting gemeten?",
+        "a": "<p>Zetting wordt gemeten door hoogtes op vaste punten van de woning te bepalen en die metingen na verloop van tijd te herhalen. Hoe dat werkt, lees je bij <a href=\"/kennisbank/zettingsmeting/\">zettingsmeting</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/ongelijke-zetting/",
+        "label": "Ongelijke zetting",
+        "text": "Waarom verschillen in zakking schadelijker zijn en hoe je ze vaststelt."
+      },
+      {
+        "href": "/kennisbank/zettingsmeting/",
+        "label": "Zettingsmeting",
+        "text": "Hoe herhaalde metingen laten zien of een woning nog beweegt."
+      },
+      {
+        "href": "/kennisbank/verzakking-woning/",
+        "label": "Verzakking van een woning",
+        "text": "Signalen van verzakking en wat je ermee kunt doen."
+      }
+    ],
+    "cta": [
+      "Twijfel je of de zakking van je woning normaal is?",
+      "Een funderingsscan geeft een onafhankelijk beeld van fundering, bodem en zichtbare signalen."
+    ]
+  },
+  {
+    "path": "/kennisbank/ongelijke-zetting/",
+    "title": "Ongelijke zetting: oorzaken en gevolgen | MV Funderingsscan",
+    "description": "Ongelijke zetting ontstaat als delen van een woning verschillend zakken. Lees welke oorzaken er zijn, welke schade het geeft en hoe je het laat vaststellen.",
+    "keyword": "ongelijke zetting",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/ongelijke-zetting/",
+        "name": "Ongelijke zetting"
+      }
+    ],
+    "eyebrow": "Kennisbank · Begrippen",
+    "article": true,
+    "h1": "Ongelijke zetting: als delen van je woning verschillend zakken",
+    "lead": "Ongelijke zetting betekent dat <strong>delen van een woning niet evenveel zakken</strong>. Daardoor ontstaan spanningen in muren en vloeren, wat kan leiden tot scheuren, scheefstand en klemmende deuren of ramen. Oorzaken zijn onder meer verschillen in de bodem, in belasting of in fundering. Of ongelijke zetting speelt en of die nog doorgaat, kan alleen onderzoek met metingen ter plaatse vaststellen.",
+    "defined_term": {
+      "name": "Ongelijke zetting",
+      "description": "Ongelijke zetting is een zakking waarbij verschillende delen van een gebouw niet evenveel zakken, waardoor spanningen in de constructie ontstaan die kunnen leiden tot scheuren, scheefstand en vervorming."
+    },
+    "hero_image": {
+      "name": "metselwerk-gevel-detail",
+      "alt": "Close-up van metselwerk en voegen in een bakstenen gevel"
+    },
+    "sections": [
+      {
+        "id": "wat-is-ongelijke-zetting",
+        "h2": "Wat is ongelijke zetting?",
+        "answer": "Ongelijke zetting is zakking die niet overal in een woning even groot is. Het ene deel zakt meer of sneller dan het andere, waardoor de woning vervormt.",
+        "body": "<p>Elke woning zet; dat is op zichzelf normaal, zoals uitgelegd in het artikel over <a href=\"/kennisbank/zetting/\">zetting</a>. Het verschil zit in de verdeling. Zakt een hoek, een gevel of een aanbouw meer dan de rest, dan moet de constructie dat verschil opvangen. Metselwerk is stijf en kan maar weinig vervorming verdragen voordat het scheurt.</p><p>Ongelijke zetting kan geleidelijk verlopen, zodat een gevel over de hele lengte iets afloopt, of plaatselijk optreden, met een duidelijke knik of scheur op één plek. Het patroon zegt vaak iets over de mogelijke oorzaak.</p>"
+      },
+      {
+        "id": "waarom-schadelijker",
+        "h2": "Waarom is ongelijke zetting schadelijker dan gelijkmatige zetting?",
+        "answer": "Bij gelijkmatige zetting beweegt de woning als één geheel. Bij ongelijke zetting worden onderdelen ten opzichte van elkaar verschoven, en juist die verschillen veroorzaken spanningen en schade.",
+        "body": "<p>Vergelijk het met een plank die op twee steunpunten ligt. Zakken beide steunpunten evenveel, dan blijft de plank recht. Zakt één steunpunt, dan gaat de plank scheef of buigt hij door. Een woning reageert op een vergelijkbare manier, maar dan met muren, vloeren, kozijnen en een dak die allemaal met elkaar verbonden zijn.</p><div class=\"term-box\"><strong>Wat betekent vervorming?</strong><p>Vervorming is een verandering van de oorspronkelijke vorm van een bouwdeel, bijvoorbeeld een gevel die doorbuigt of een vloer die gaat hellen. Bij ongelijke zetting is vervorming het gevolg van verschillen in zakking.</p></div>"
+      },
+      {
+        "id": "oorzaken",
+        "h2": "Wat zijn de oorzaken van ongelijke zetting?",
+        "answer": "Ongelijke zetting ontstaat meestal door verschillen onder of in de woning: verschillen in bodemopbouw, in belasting, in fundering of in grondwaterstand.",
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Bodemverschillen</h3><p>Onder één woning kan de ondergrond verschillen, bijvoorbeeld een dikkere veenlaag onder de achtergevel dan onder de voorgevel, of een overgang van zand naar klei. Zie ook <a href=\"/kennisbank/veenbodem/\">veenbodem</a> en <a href=\"/kennisbank/kleibodem/\">kleibodem</a>.</p></div><div class=\"info-card\"><h3>Belastingverschillen</h3><p>Een zware gevel of schoorsteen drukt meer op de grond dan een lichte binnenwand. Ook een latere verbouwing, een extra verdieping of een ophoging van de tuin kan de belasting plaatselijk veranderen.</p></div><div class=\"info-card\"><h3>Aanbouw met andere fundering</h3><p>Aanbouwen hebben vaak een eigen, ondiepere fundering dan het hoofdgebouw. Daardoor kunnen ze anders zakken, met een scheur op de aansluiting als gevolg. Lees meer bij <a href=\"/kennisbank/scheuren-bij-aanbouw/\">scheuren bij een aanbouw</a>.</p></div><div class=\"info-card\"><h3>Grondwater</h3><p>Daalt het grondwater plaatselijk, dan kunnen slappe lagen verder samendrukken. Bij <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a> kunnen paalkoppen droog komen te staan. Zie <a href=\"/kennisbank/grondwater-en-fundering/\">grondwater en fundering</a>.</p></div></div>"
+      },
+      {
+        "id": "gevolgen",
+        "h2": "Welke gevolgen kan ongelijke zetting hebben?",
+        "answer": "Ongelijke zetting kan leiden tot scheuren in metselwerk, scheefstand van gevels en vloeren en klemmende deuren of ramen. Welke gevolgen optreden, hangt af van de plek en de omvang van het verschil.",
+        "body": "<ul class=\"checklist\"><li><strong>Scheuren</strong>, vaak diagonaal of trapvormig door het metselwerk, rond kozijnen of op aansluitingen. Hoe je scheuren duidt, lees je bij <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>.</li><li><strong>Scheefstand</strong> van gevels, wanden of vloeren. Zie ook <a href=\"/kennisbank/scheefstand/\">scheefstand</a>.</li><li><strong>Klemmende deuren en ramen</strong> doordat kozijnen uit het haakse trekken. Meer bij <a href=\"/kennisbank/klemmende-deuren/\">klemmende deuren</a>.</li><li><strong>Hellende vloeren</strong> en drempels of vensterbanken die zichtbaar aflopen.</li></ul><div class=\"callout callout-warn\"><strong>Niet elk signaal betekent ongelijke zetting</strong><p>Scheuren en klemmende deuren kunnen ook ontstaan door krimp, temperatuurwisselingen, roestende lateien, houtwerking, vocht of slecht afgestelde deuren. Juist daarom is een beoordeling van het totaalbeeld nodig.</p></div>"
+      },
+      {
+        "id": "hoe-vastgesteld",
+        "h2": "Hoe wordt ongelijke zetting vastgesteld?",
+        "answer": "Ongelijke zetting wordt vastgesteld door hoogteverschillen in de woning te meten, bijvoorbeeld langs een lintvoeg of over de vloer, en die te combineren met scheurpatronen en gegevens over bodem en fundering.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Vooronderzoek</strong><span>Archief- en bodemonderzoek en een <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a> laten zien of er aanleiding is om te meten.</span></li><li><strong>Lintvoegwaterpassing</strong><span>Hoogtemeting langs een doorlopende horizontale voeg in de gevel. Zie <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a>.</span></li><li><strong>Vloerveldwaterpassing</strong><span>Een raster van hoogtemetingen over de begane grondvloer. Zie <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a>.</span></li><li><strong>Loodmeting en scheurpatronen</strong><span>De stand van gevels ten opzichte van de verticaal en het vastleggen van scheuren vullen het beeld aan.</span></li><li><strong>Monitoring</strong><span>Herhaalde metingen tonen of de beweging nog doorgaat.</span></li></ol><p>Het patroon in de metingen is belangrijker dan één afwijkend punt. Een lintvoeg is bij de bouw bovendien nooit volkomen waterpas gemetseld, wat bij de interpretatie wordt meegewogen.</p>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: een scheur tussen woning en aanbouw",
+        "answer": "Een scheur op de aansluiting van een aanbouw kan wijzen op ongelijke zetting tussen twee bouwdelen met een verschillende fundering. Dat hoeft niets te zeggen over de fundering van het hoofdgebouw.",
+        "body": "<p>Stel: aan een vooroorlogse woning is later een keukenuitbouw gebouwd. Op de plek waar beide delen samenkomen, loopt een verticale scheur die van boven naar beneden breder wordt. Binnen klemt de deur naar de uitbouw.</p><p>Een mogelijke verklaring is dat de uitbouw op een ondiepere fundering staat en anders zakt dan het hoofdgebouw. Of dat zo is en of de beweging nog doorgaat, blijkt uit onderzoek. Bij een vooronderzoek wordt gekeken naar het bouwjaar van beide delen, de beschikbare tekeningen en het scheurpatroon. Afhankelijk daarvan kan monitoren volstaan of zijn metingen zinvol.</p>"
+      },
+      {
+        "id": "wanneer-onderzoek",
+        "h2": "Wanneer is onderzoek verstandig?",
+        "answer": "Onderzoek is verstandig als je meerdere signalen tegelijk ziet, zoals scheuren in combinatie met scheefstand of klemmende deuren, of als bestaande scheuren groter worden.",
+        "body": "<p>Eén losse scheur is meestal geen reden voor uitgebreid onderzoek. Wel als signalen samenkomen, terugkeren na herstel of in de loop van maanden toenemen. Ook bij de aankoop van een oudere woning op slappe grond kan een vooronderzoek duidelijkheid geven.</p><p>Een <a href=\"/funderingsscan/\">funderingsscan</a> begint met <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>. Daaruit volgt een advies: geen directe aanleiding, monitoren, aanvullend onderzoek of fase 1 met metingen. Weet je niet welke stap past? Stel je vraag via <a href=\"/contact/\">contact</a>.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek, visuele inspectie en een risico-inschatting. Vanaf circa €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft. Indicatief €750 – €1.500.</span></a></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Wat is het verschil tussen zetting en ongelijke zetting?",
+        "a": "<p>Bij zetting zakt een woning door het samendrukken van de grond; bij ongelijke zetting zakken delen van de woning verschillend. Dat verschil veroorzaakt spanningen en is daardoor schadelijker.</p>"
+      },
+      {
+        "q": "Is ongelijke zetting altijd een funderingsprobleem?",
+        "a": "<p>Nee, niet altijd. Ongelijke zetting kan lang geleden zijn opgetreden en inmiddels stabiel zijn, of beperkt blijven tot een aanbouw met een eigen fundering. Of er sprake is van een funderingsprobleem, blijkt pas uit onderzoek.</p>"
+      },
+      {
+        "q": "Welke scheuren passen bij ongelijke zetting?",
+        "a": "<p>Vaak gaat het om diagonale of trapvormige scheuren die van breed naar smal verlopen, maar het patroon moet altijd in samenhang worden beoordeeld. Lees meer bij <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>.</p>"
+      },
+      {
+        "q": "Kan ongelijke zetting vanzelf stoppen?",
+        "a": "<p>Ja, dat kan. Zetting neemt na verloop van tijd vaak af. Veranderingen in grondwaterstand of belasting kunnen de beweging echter weer op gang brengen. Herhaalde metingen geven daarover uitsluitsel.</p>"
+      },
+      {
+        "q": "Hoe meet je ongelijke zetting?",
+        "a": "<p>Ongelijke zetting wordt meestal gemeten met een lintvoegwaterpassing en een vloerveldwaterpassing, aangevuld met loodmetingen en het vastleggen van scheuren. Deze metingen horen bij <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a>.</p>"
+      },
+      {
+        "q": "Kan een aanbouw ongelijke zetting veroorzaken?",
+        "a": "<p>Ja, een aanbouw met een andere of ondiepere fundering kan anders zakken dan het hoofdgebouw. Op de aansluiting ontstaat dan vaak een scheur. Dat zegt niet automatisch iets over de fundering van de rest van de woning.</p>"
+      },
+      {
+        "q": "Wat kost onderzoek naar ongelijke zetting?",
+        "a": "<p>Een vooronderzoek in fase 0 begint vanaf circa €350. Als metingen nodig zijn, valt dat onder fase 1, indicatief €750 – €1.500, afhankelijk van welke metingen nodig zijn. Zie ook <a href=\"/prijzen/\">prijzen</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/zetting/",
+        "label": "Wat is zetting?",
+        "text": "Waarom elke woning zakt en wanneer dat normaal is."
+      },
+      {
+        "href": "/kennisbank/lintvoegwaterpassing/",
+        "label": "Lintvoegwaterpassing",
+        "text": "Hoe hoogteverschillen in een gevel worden gemeten en geduid."
+      },
+      {
+        "href": "/scheefstand-woning/",
+        "label": "Scheefstand van een woning",
+        "text": "Wat scheefstand kan betekenen en hoe je ermee omgaat."
+      }
+    ],
+    "cta": [
+      "Zie je signalen van ongelijke zakking?",
+      "Laat met een funderingsscan onafhankelijk beoordelen of verder onderzoek nodig is."
+    ]
+  },
+  {
+    "path": "/kennisbank/paalfundering/",
+    "title": "Paalfundering: wat is het en welke soorten? | MV Funderingsscan",
+    "description": "Wat is een paalfundering, welke soorten palen zijn er en waarom wordt op palen gebouwd? Plus: zo achterhaal je welke fundering jouw woning heeft.",
+    "keyword": "paalfundering",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/paalfundering/",
+        "name": "Paalfundering"
+      }
+    ],
+    "eyebrow": "Kennisbank · Begrippen",
+    "article": true,
+    "h1": "Paalfundering: hoe een woning op palen rust",
+    "lead": "Een paalfundering is een fundering waarbij de woning op <strong>palen</strong> rust die door slappe bovenlagen heen tot in een stevigere, draagkrachtige laag reiken. Zo wordt het gewicht van de woning dieper in de grond afgedragen. Palen kunnen van hout, beton of staal zijn. Welk type jouw woning heeft, is vaak af te leiden uit het archief en het bouwjaar, maar niet altijd met zekerheid.",
+    "defined_term": {
+      "name": "Paalfundering",
+      "description": "Een paalfundering is een fundering waarbij een gebouw rust op palen die het gewicht via slappe bovenlagen afdragen naar een dieper gelegen, draagkrachtige grondlaag."
+    },
+    "hero_image": {
+      "name": "jaren-dertig-woningen-straat",
+      "alt": "Rij jaren-dertigwoningen in een groene straat"
+    },
+    "sections": [
+      {
+        "id": "wat-is-een-paalfundering",
+        "h2": "Wat is een paalfundering?",
+        "answer": "Een paalfundering bestaat uit palen in de grond met daarop een constructie waarop de muren staan. De palen brengen het gewicht van de woning naar een diepere laag die dat gewicht kan dragen.",
+        "body": "<p>Bij een paalfundering staan de muren niet direct op de grond. Ze rusten op een tussenconstructie, zoals een balk of plaat, die op de koppen van de palen ligt. De palen zelf steken door de bovenste grondlagen heen. Het gewicht wordt zo deels via de punt van de paal en deels via wrijving langs de paal aan de grond overgedragen.</p><div class=\"term-box\"><strong>Wat betekent draagkrachtige laag?</strong><p>Een draagkrachtige laag is een grondlaag die stevig genoeg is om het gewicht van een gebouw te dragen zonder veel te worden samengedrukt, in Noord-Nederland vaak een zandlaag onder klei of veen.</p></div>"
+      },
+      {
+        "id": "waarom-palen",
+        "h2": "Waarom wordt een woning op palen gebouwd?",
+        "answer": "Een woning wordt op palen gebouwd als de bovenste grondlagen te slap zijn om het gewicht goed te dragen. De palen omzeilen die slappe lagen en dragen het gewicht af aan een stevigere laag dieper in de grond.",
+        "body": "<p>In grote delen van Friesland en Groningen bestaat de bovengrond uit klei of veen. Die grondsoorten zijn samendrukbaar en kunnen flink <a href=\"/kennisbank/zetting/\">zetten</a>. Een fundering die direct op zo’n laag rust, loopt meer kans op <a href=\"/kennisbank/ongelijke-zetting/\">ongelijke zetting</a>. Door palen tot in een draagkrachtige laag te brengen, wordt de woning minder afhankelijk van wat er in de slappe bovenlagen gebeurt.</p><p>Op plekken waar de stevige laag dicht onder het maaiveld ligt, is een paalfundering vaak niet nodig. Dan volstaat een fundering op staal. De keuze hangt dus sterk af van de plaatselijke bodemopbouw.</p>"
+      },
+      {
+        "id": "soorten-paalfundering",
+        "h2": "Welke soorten paalfundering zijn er?",
+        "answer": "De belangrijkste soorten zijn paalfunderingen met houten palen, met betonnen palen en met stalen palen. Bij oudere woningen komen houten palen relatief vaak voor.",
+        "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Houten palen\"><h3>Houten palen</h3><p>Houten palen werden lange tijd veel toegepast, vooral bij woningen van vóór circa 1970. Ze blijven goed zolang ze permanent onder water staan. Meer over opbouw en aandachtspunten lees je bij <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a>.</p></section><section class=\"tab-panel\" data-tab=\"Betonnen palen\"><h3>Betonnen palen</h3><p>Betonnen palen zijn niet gevoelig voor droogstand van de paalkoppen zoals hout. Bij nieuwere woningen kom je dit type vaak tegen. Ook betonnen palen kunnen in uitvoering en kwaliteit verschillen.</p></section><section class=\"tab-panel\" data-tab=\"Stalen palen\"><h3>Stalen palen</h3><p>Stalen palen worden onder meer toegepast bij herstel of verbouw, omdat ze in sommige situaties met beperkte ruimte kunnen worden aangebracht. Ze komen bij oorspronkelijke woningfunderingen minder vaak voor.</p></section></div><p>Naast het paalmateriaal verschilt ook de constructie op de palen. Daarom zegt het type paal alleen niet alles over de staat van een fundering.</p>"
+      },
+      {
+        "id": "verschil-met-fundering-op-staal",
+        "h2": "Wat is het verschil tussen een paalfundering en een fundering op staal?",
+        "answer": "Bij een paalfundering rust de woning via palen op een diepere laag; bij een fundering op staal rust de woning direct op de ondiepe ondergrond, zonder palen.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Kenmerk</th><th>Paalfundering</th><th>Fundering op staal</th></tr></thead><tbody><tr><td>Draagt af op</td><td>Diepere, draagkrachtige laag via palen</td><td>Ondiepe ondergrond direct onder de woning</td></tr><tr><td>Opbouw</td><td>Palen met daarop een balk of plaat</td><td>Vaak een gemetselde of betonnen strook of voet</td></tr><tr><td>Gebruikelijk bij</td><td>Slappe bovenlagen zoals klei en veen</td><td>Stevige grond dicht onder het maaiveld</td></tr><tr><td>Aandachtspunt</td><td>Bij hout: grondwaterstand en paalkoppen</td><td>Zetting en bodembeweging in de ondiepe lagen</td></tr></tbody></table></div><p>Beide typen kunnen goed functioneren. Meer over de werking en aandachtspunten van een ondiepe fundering lees je bij <a href=\"/kennisbank/fundering-op-staal/\">fundering op staal</a>.</p>"
+      },
+      {
+        "id": "welk-type-heb-je",
+        "h2": "Hoe weet je welk type fundering je woning heeft?",
+        "answer": "Het funderingstype is vaak af te leiden uit het bouwarchief, het bouwjaar en de bodemopbouw. Zekerheid is er niet altijd: soms ontbreken tekeningen en blijkt het pas bij onderzoek ter plaatse.",
+        "body": "<ul class=\"checklist\"><li><strong>Bouwarchief</strong>: bouwvergunningen en tekeningen bij de gemeente kunnen het funderingstype vermelden. Zie <a href=\"/kennisbank/archiefonderzoek-fundering/\">archiefonderzoek fundering</a>.</li><li><strong>Bouwjaar en omgeving</strong>: woningen van vóór circa 1970 hebben vaker houten palen of een fundering op staal; soortgelijke woningen in dezelfde straat geven soms een aanwijzing.</li><li><strong>Kruipruimte</strong>: soms zijn funderingsdelen zichtbaar, al zijn de palen zelf dat meestal niet. Zie <a href=\"/kennisbank/kruipruimte-inspectie/\">kruipruimte-inspectie</a>.</li><li><strong>Eerdere rapporten</strong>: bij herstel of verbouw kunnen eerder gegevens zijn vastgelegd.</li></ul><div class=\"callout callout-tip\"><strong>Tip</strong><p>Bewaar alles wat je over je woning vindt, zoals oude tekeningen en verbouwingsstukken. Bij een vooronderzoek kunnen die het beeld aanzienlijk verduidelijken.</p></div>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: dezelfde straat, verschillende funderingen",
+        "answer": "Woningen in dezelfde straat kunnen verschillende funderingen hebben, bijvoorbeeld als ze in verschillende periodes zijn gebouwd of later zijn verbouwd.",
+        "body": "<p>Stel: in een straat staan oudere woningen uit de vooroorlogse periode naast enkele woningen die later zijn bijgebouwd. De oudere woningen staan mogelijk op houten palen, de nieuwere vermoedelijk op betonnen palen. Eén woning heeft een uitbouw met een eigen, ondiepe fundering.</p><p>Wie zo’n woning koopt, kan dus niet blind uitgaan van wat de buren hebben. Archiefonderzoek geeft vaak een eerste beeld, en waar gegevens ontbreken, wordt dat in een rapport als beperking benoemd.</p>"
+      },
+      {
+        "id": "wanneer-onderzoek",
+        "h2": "Wanneer is onderzoek verstandig?",
+        "answer": "Onderzoek is verstandig als je niet weet op welke fundering je woning staat en de woning ouder is of op slappe grond ligt, of als je signalen ziet zoals scheuren, scheefstand of klemmende deuren.",
+        "body": "<p>Een paalfundering betekent niet automatisch dat er problemen zijn, en ook houten palen kunnen nog prima functioneren. Toch helpt het om te weten wat je hebt, zeker bij aankoop of als je signalen ziet. Lees ook over <a href=\"/problemen-met-houten-palen/\">problemen met houten palen</a> en over <a href=\"/kennisbank/paalrot/\">paalrot</a>.</p><p>Met een <a href=\"/funderingsscan/\">funderingsscan</a> wordt in fase 0 onder meer het vermoedelijke funderingstype onderzocht. Vragen over je situatie? Neem <a href=\"/contact/\">contact</a> op.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek, visuele inspectie en een risico-inschatting. Vanaf circa €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft. Indicatief €750 – €1.500.</span></a></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Wat is een paalfundering in gewone woorden?",
+        "a": "<p>Een paalfundering is een fundering waarbij de woning op palen staat die diep in de grond reiken. Zo rust het gewicht op een stevige laag in plaats van op de slappe grond direct onder de woning.</p>"
+      },
+      {
+        "q": "Hoe weet ik of mijn huis op palen staat?",
+        "a": "<p>Vaak is dat te achterhalen via het bouwarchief van de gemeente en het bouwjaar van de woning. Lukt dat niet, dan kan een vooronderzoek een vermoedelijk funderingstype geven. Zie <a href=\"/kennisbank/archiefonderzoek-fundering/\">archiefonderzoek fundering</a>.</p>"
+      },
+      {
+        "q": "Is een paalfundering beter dan een fundering op staal?",
+        "a": "<p>Niet per definitie. Welke fundering passend is, hangt af van de bodem. Op slappe grond is een paalfundering vaak gebruikelijk, op stevige grond volstaat een fundering op staal.</p>"
+      },
+      {
+        "q": "Hebben alle oude woningen houten palen?",
+        "a": "<p>Nee. Woningen van vóór circa 1970 hebben vaker houten palen of een fundering op staal, maar dat verschilt per woning en per bodem. Lees meer bij <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a>.</p>"
+      },
+      {
+        "q": "Zijn houten palen altijd een probleem?",
+        "a": "<p>Nee, een woning met houten palen heeft niet automatisch problemen. Houten palen blijven goed zolang ze permanent onder water staan. Bij een lage grondwaterstand kan wel aantasting ontstaan; zie <a href=\"/kennisbank/paalrot/\">paalrot</a>.</p>"
+      },
+      {
+        "q": "Kan ik de palen zelf zien in de kruipruimte?",
+        "a": "<p>Meestal niet. De palen zitten onder de funderingsconstructie in de grond. In de kruipruimte zijn hooguit delen van de fundering zichtbaar. Palen worden pas zichtbaar als de fundering plaatselijk wordt vrijgegraven.</p>"
+      },
+      {
+        "q": "Onderzoekt een funderingsscan welk type fundering ik heb?",
+        "a": "<p>Ja, het vermoedelijke funderingstype is onderdeel van het archief- en bodemonderzoek in fase 0. Zekerheid over de staat van palen geeft een quickscan niet; daarvoor is nader onderzoek nodig.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/houten-paalfundering/",
+        "label": "Houten paalfundering",
+        "text": "Opbouw, werking en het belang van grondwater bij houten palen."
+      },
+      {
+        "href": "/kennisbank/fundering-op-staal/",
+        "label": "Fundering op staal",
+        "text": "Hoe een fundering zonder palen werkt en waar je op let."
+      },
+      {
+        "href": "/kennisbank/paalrot/",
+        "label": "Paalrot",
+        "text": "Wat paalrot is, hoe het ontstaat en hoe het wordt onderzocht."
+      }
+    ],
+    "cta": [
+      "Weet je niet op welke fundering je woning staat?",
+      "In fase 0 onderzoeken we onder meer het vermoedelijke funderingstype en de bodemopbouw."
+    ]
+  },
+  {
+    "path": "/kennisbank/paalrot/",
+    "title": "Paalrot: oorzaken, signalen en onderzoek | MV Funderingsscan",
+    "description": "Wat is paalrot, hoe ontstaat het en hoe wordt het onderzocht? Lees waarom houten palen niet automatisch problemen geven en wat een quickscan wel en niet zegt.",
+    "keyword": "paalrot",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/paalrot/",
+        "name": "Paalrot"
+      }
+    ],
+    "eyebrow": "Kennisbank · Begrippen",
+    "article": true,
+    "h1": "Paalrot: aantasting van houten funderingspalen",
+    "lead": "Paalrot is <strong>aantasting van houten funderingspalen</strong>, vooral van de paalkoppen. Het ontstaat meestal doordat schimmels het hout aantasten als de koppen bij een lage grondwaterstand droog komen te staan. Ook onder water kan langzaam bacteriële aantasting optreden. Een woning met houten palen heeft niet automatisch paalrot; of het speelt, blijkt alleen uit onderzoek aan de fundering zelf.",
+    "defined_term": {
+      "name": "Paalrot",
+      "description": "Paalrot is de aantasting van houten funderingspalen, vooral van de paalkoppen, door schimmels wanneer het hout droog komt te staan, of langzamer door bacteriën onder water."
+    },
+    "hero_image": {
+      "name": "vooroorlogse-woning-voordeur",
+      "alt": "Klassieke voordeur in een bakstenen gevel van een oudere woning"
+    },
+    "sections": [
+      {
+        "id": "wat-is-paalrot",
+        "h2": "Wat is paalrot?",
+        "answer": "Paalrot is het verlies van sterkte van houten funderingspalen door aantasting door schimmels of bacteriën. Daardoor kan de paal minder gewicht dragen.",
+        "body": "<p>Houten palen zijn een gangbare funderingsvorm bij oudere woningen. Zolang het hout permanent onder water staat, krijgen schimmels nauwelijks kans, omdat ze zuurstof nodig hebben. Komt het hout droog te staan, dan kan het wel worden aangetast. De term paalrot wordt in de praktijk gebruikt voor beide vormen van aantasting: door schimmels bij droogstand en door bacteriën onder water.</p><p>Hoe een houten paalfundering is opgebouwd, lees je bij <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a>. Dit artikel gaat over de aantasting zelf en over hoe je die laat onderzoeken.</p><div class=\"term-box\"><strong>Wat betekent droogstand?</strong><p>Van droogstand spreek je als de bovenkant van houten palen boven de grondwaterspiegel komt te liggen. Het hout komt dan in contact met zuurstof, waardoor schimmels het kunnen aantasten.</p></div>"
+      },
+      {
+        "id": "hoe-ontstaat-paalrot",
+        "h2": "Hoe ontstaat paalrot?",
+        "answer": "Paalrot ontstaat vooral als paalkoppen bij een lage grondwaterstand droog komen te staan en schimmels het hout aantasten. Bacteriën kunnen hout ook onder water aantasten, maar dat gaat langzamer.",
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Schimmels bij droogstand</h3><p>Daalt het grondwater onder het niveau van de paalkoppen, dan kan zuurstof bij het hout komen. Schimmels kunnen het hout dan aantasten, vaak van buiten naar binnen.</p></div><div class=\"info-card\"><h3>Bacteriën onder water</h3><p>Ook in hout dat onder water blijft, kunnen bacteriën langzaam actief zijn. Dit proces verloopt doorgaans veel trager dan aantasting door schimmels.</p></div></div><p>Het grondwater speelt dus een centrale rol. Waarom dat zo is, lees je in het artikel over <a href=\"/kennisbank/grondwater-en-fundering/\">grondwater en fundering</a>.</p>"
+      },
+      {
+        "id": "oorzaken",
+        "h2": "Welke omstandigheden vergroten het risico op paalrot?",
+        "answer": "Het risico op paalrot is groter als de grondwaterstand rond de woning laag is of sterk wisselt, bijvoorbeeld door droge periodes of door veranderingen in het peil.",
+        "body": "<ul class=\"checklist\"><li>Een grondwaterstand die tijdelijk of langdurig onder de paalkoppen zakt, bijvoorbeeld in droge zomers.</li><li>Veranderingen in het waterpeil in de omgeving. Lees meer bij <a href=\"/kennisbank/peilverschillen/\">peilverschillen</a>.</li><li>Bodemdaling, waardoor de verhouding tussen paalkoppen en grondwater kan veranderen. Zie <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>.</li><li>De ouderdom van de fundering: hoe langer het hout in de grond zit, hoe langer eventuele aantasting kan hebben doorgewerkt.</li></ul><p>Grondwaterstanden worden gemeten in peilbuizen. Gemeenten, waterschappen en provincies beheren vaak meetnetten. Hoe zulke gegevens worden gebruikt, lees je bij <a href=\"/kennisbank/grondwatermeting/\">grondwatermeting</a>.</p>"
+      },
+      {
+        "id": "signalen",
+        "h2": "Welke signalen kunnen wijzen op paalrot?",
+        "answer": "Paalrot zelf is van buitenaf niet te zien. Er zijn alleen indirecte signalen, zoals scheuren, scheefstand of ongelijke zakking, en die kunnen ook andere oorzaken hebben.",
+        "body": "<p>Als palen minder kunnen dragen, kan de woning plaatselijk meer gaan zakken. Dat kan zich uiten in:</p><ul class=\"checklist\"><li>Scheuren in metselwerk, vaak diagonaal of trapvormig.</li><li><a href=\"/kennisbank/scheefstand/\">Scheefstand</a> van gevels of vloeren.</li><li>Deuren en ramen die gaan klemmen.</li><li>Een duidelijk verschil in zakking ten opzichte van naastgelegen woningen.</li></ul><div class=\"callout callout-warn\"><strong>Geen diagnose op afstand</strong><p>Deze signalen bewijzen geen paalrot. Ze kunnen ook ontstaan door <a href=\"/kennisbank/ongelijke-zetting/\">ongelijke zetting</a>, krimp, temperatuurwisselingen, roestende lateien of vocht. Alleen onderzoek ter plaatse geeft duidelijkheid.</p></div>"
+      },
+      {
+        "id": "wat-kan-fase-0",
+        "h2": "Wat kan een quickscan wel en niet zeggen over paalrot?",
+        "answer": "Een quickscan in fase 0 kan inschatten of er een verhoogd risico is, op basis van archief, bodem, grondwater en zichtbare signalen. Of palen daadwerkelijk zijn aangetast, kan een quickscan niet vaststellen.",
+        "body": "<div class=\"two-col-list\"><div><h3>Wat fase 0 wel doet</h3><ul class=\"checklist\"><li>Het vermoedelijke funderingstype achterhalen via archief en bouwjaar.</li><li>Bodemopbouw, grondwater en bodemdaling in beeld brengen.</li><li>Gevels, scheuren, kozijnen en vloeren visueel beoordelen.</li><li>Een <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a> en advies geven.</li></ul></div><div><h3>Wat fase 0 niet doet</h3><ul class=\"checklist\"><li>De fundering vrijleggen of palen bekijken.</li><li>Houtonderzoek uitvoeren.</li><li>Een constructieve berekening maken.</li><li>Een herstelplan of garantie geven.</li></ul></div></div><p>Ook <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a>, met metingen zoals een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a>, is niet-destructief. Metingen tonen hoe de woning vervormd is, maar niet de staat van het hout.</p>"
+      },
+      {
+        "id": "inspectieput-en-houtonderzoek",
+        "h2": "Hoe wordt paalrot vastgesteld?",
+        "answer": "Paalrot wordt vastgesteld met een inspectieput, waarbij de fundering plaatselijk wordt vrijgegraven, eventueel aangevuld met houtonderzoek. Dit valt buiten fase 0 en fase 1.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Vooronderzoek</strong><span>Fase 0 bepaalt of er aanleiding is voor vervolgonderzoek.</span></li><li><strong>Metingen</strong><span>Fase 1 brengt vervorming en zakking van de woning in kaart, als fase 0 daar aanleiding voor geeft.</span></li><li><strong>Inspectieput</strong><span>De fundering wordt op een of meer plekken vrijgegraven, zodat de constructie en paalkoppen zichtbaar worden.</span></li><li><strong>Houtonderzoek</strong><span>Bij houten palen kan het hout worden onderzocht op aantasting.</span></li></ol><p>Een inspectieput en houtonderzoek worden uitgevoerd door een gespecialiseerde partij. MV Funderingsscan voert zelf geen funderingsherstel uit en adviseert onafhankelijk over de vervolgstap. Lees meer over vervolgstappen bij <a href=\"/problemen-met-houten-palen/\">problemen met houten palen</a>.</p>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: houten palen en een droge zomer",
+        "answer": "Na een droge periode kunnen eigenaren van woningen op houten palen zich zorgen maken. Een laag grondwater betekent niet automatisch dat er paalrot is, maar het is wel een reden om gegevens en signalen te bekijken.",
+        "body": "<p>Stel: je woont in een woning uit de jaren twintig die volgens het archief op houten palen staat. Na een droge zomer zie je een nieuwe scheur boven de achterdeur. De vraag is of de palen droog hebben gestaan.</p><p>In fase 0 worden onder meer openbare gegevens over grondwater en bodemdaling bekeken en wordt de scheur in samenhang met andere signalen beoordeeld. Het advies kan zijn dat er geen directe aanleiding is, dat monitoren verstandig is, of dat metingen in fase 1 zinvol zijn. Pas als ook die daar aanleiding voor geven, komt een inspectieput in beeld.</p>"
+      },
+      {
+        "id": "wanneer-onderzoek",
+        "h2": "Wanneer is onderzoek verstandig?",
+        "answer": "Onderzoek is verstandig als je woning vermoedelijk op houten palen staat en je signalen ziet zoals scheuren of scheefstand, of als je zo’n woning wilt kopen en meer zekerheid wilt over het risico.",
+        "body": "<p>Begin met een <a href=\"/funderingsscan/\">funderingsscan</a>: een niet-destructief vooronderzoek dat laat zien of verder onderzoek nodig is. Twijfel je of dat bij jouw situatie past? Stel je vraag via <a href=\"/contact/\">contact</a>.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek, visuele inspectie en een risico-inschatting. Vanaf circa €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft. Indicatief €750 – €1.500.</span></a></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Heeft elke woning met houten palen paalrot?",
+        "a": "<p>Nee. Houten palen blijven goed zolang ze permanent onder water staan. Een woning met houten palen heeft dus niet automatisch paalrot; of er aantasting is, blijkt alleen uit onderzoek aan de fundering.</p>"
+      },
+      {
+        "q": "Kun je paalrot zien aan de buitenkant van een huis?",
+        "a": "<p>Nee, paalrot zelf is van buitenaf niet te zien. Scheuren, scheefstand of klemmende deuren kunnen indirecte signalen zijn, maar hebben ook vaak andere oorzaken.</p>"
+      },
+      {
+        "q": "Wat is het verschil tussen schimmel- en bacterieaantasting?",
+        "a": "<p>Schimmels tasten hout aan als het droog komt te staan en zuurstof krijgt. Bacteriën kunnen ook onder water actief zijn, maar dat proces verloopt doorgaans langzamer.</p>"
+      },
+      {
+        "q": "Stelt een quickscan paalrot vast?",
+        "a": "<p>Nee, een quickscan legt de fundering niet vrij en omvat geen houtonderzoek. Wel geeft fase 0 een risico-inschatting en advies over eventueel vervolgonderzoek. Zie <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>.</p>"
+      },
+      {
+        "q": "Wat is een inspectieput?",
+        "a": "<p>Een inspectieput is een plek waar de fundering wordt vrijgegraven om de constructie en eventueel de paalkoppen te bekijken. Bij houten palen kan daarbij houtonderzoek worden gedaan. Dit valt buiten fase 0 en fase 1.</p>"
+      },
+      {
+        "q": "Speelt grondwater een rol bij paalrot?",
+        "a": "<p>Ja, grondwater speelt een centrale rol. Zakt het grondwater onder de paalkoppen, dan kunnen schimmels het hout aantasten. Lees meer bij <a href=\"/kennisbank/grondwatermeting/\">grondwatermeting</a>.</p>"
+      },
+      {
+        "q": "Wat kost herstel als er paalrot wordt gevonden?",
+        "a": "<p>Funderingsherstel kan tienduizenden euro’s kosten, afhankelijk van type en omvang. Voor een concreet bedrag heb je een offerte van een herstelspecialist nodig. Zie <a href=\"/kennisbank/kosten-funderingsherstel/\">kosten funderingsherstel</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/problemen-met-houten-palen/",
+        "label": "Problemen met houten palen",
+        "text": "Mogelijke problemen bij houten paalfunderingen en vervolgstappen."
+      },
+      {
+        "href": "/kennisbank/grondwater-en-fundering/",
+        "label": "Grondwater en fundering",
+        "text": "Waarom de grondwaterstand zo belangrijk is voor je fundering."
+      },
+      {
+        "href": "/kennisbank/paalfundering/",
+        "label": "Paalfundering",
+        "text": "Wat een paalfundering is en welke soorten palen er zijn."
+      }
+    ],
+    "cta": [
+      "Staat je woning op houten palen?",
+      "Een funderingsscan brengt het risico in kaart en adviseert onafhankelijk over een eventuele vervolgstap."
+    ]
+  },
+  {
+    "path": "/kennisbank/zandbodem/",
+    "title": "Zandbodem en fundering: wat moet je weten? | MV Funderingsscan",
+    "description": "Is een zandbodem stabiel voor je woning? Lees hoe zand verschilt van veen en klei, waarom ook op zand zakking mogelijk is en wat de Hondsrug betekent.",
+    "keyword": "zandbodem fundering",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/zandbodem/",
+        "name": "Zandbodem"
+      }
+    ],
+    "eyebrow": "Kennisbank · Begrippen",
+    "article": true,
+    "h1": "Zandbodem en fundering: stabiel, maar niet zonder aandachtspunten",
+    "lead": "Een zandbodem is voor de fundering van een woning <strong>meestal stabieler</strong> dan veen of klei: zand is minder samendrukbaar en zet vaak sneller en minder. Toch kan ook een woning op zand zakken, bijvoorbeeld door ongelijke belasting of een overgang naar een andere grondsoort onder de woning. In Groningen ligt bijvoorbeeld een deel van de stad op de zandrug van de Hondsrug.",
+    "hero_image": {
+      "name": "jaren-dertig-woningen-straat",
+      "alt": "Rij jaren-dertigwoningen in een groene straat met bomen"
+    },
+    "sections": [
+      {
+        "id": "wat-is-een-zandbodem",
+        "h2": "Wat is een zandbodem?",
+        "answer": "Een zandbodem bestaat uit relatief grove, losse korrels met ruimte ertussen. Water loopt er makkelijk doorheen en de grond is minder samendrukbaar dan veen of klei.",
+        "body": "<p>Zandkorrels zijn groter dan kleideeltjes en bevatten, anders dan veen, weinig organisch materiaal. Daardoor gedraagt zand zich anders onder belasting. Water kan snel uit de poriën wegstromen, waardoor <a href=\"/kennisbank/zetting/\">zetting</a> vooral snel na de bouw optreedt en daarna meestal beperkt blijft.</p><div class=\"term-box\"><strong>Wat betekent samendrukbaar?</strong><p>Samendrukbaar wil zeggen dat een grondlaag onder gewicht dunner wordt. Hoe samendrukbaarder de grond, hoe meer een woning erop kan zakken.</p></div>"
+      },
+      {
+        "id": "zand-veen-klei",
+        "h2": "Hoe verschilt zand van veen en klei?",
+        "answer": "Zand is meestal stabieler dan veen en klei: het klinkt nauwelijks in, krimpt en zwelt niet zoals klei en oxideert niet zoals veen.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Grondsoort</th><th>Gedrag onder belasting</th><th>Gevoelig voor</th></tr></thead><tbody><tr><td>Zand</td><td>Zet meestal snel en beperkt</td><td>Ongelijke belasting, overgangen naar andere grond</td></tr><tr><td>Klei</td><td>Zet trager en kan lang doorgaan</td><td>Krimp bij droogte, zwellen bij nat weer</td></tr><tr><td>Veen</td><td>Zeer samendrukbaar, klinkt in</td><td>Oxidatie bij droogvallen, <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a></td></tr></tbody></table></div><p>Meer over de andere grondsoorten lees je bij <a href=\"/kennisbank/veenbodem/\">veenbodem</a> en <a href=\"/kennisbank/kleibodem/\">kleibodem</a>.</p>"
+      },
+      {
+        "id": "ook-op-zand-zetting",
+        "h2": "Kan een woning op zand ook zakken?",
+        "answer": "Ja, ook op zand kan een woning zakken. Dat gebeurt bijvoorbeeld bij ongelijke belasting, bij een overgang naar klei of veen onder de woning, of bij een aanbouw met een andere fundering.",
+        "body": "<ul class=\"checklist\"><li><strong>Ongelijke belasting</strong>: een zware gevel of latere verbouwing drukt plaatselijk meer op de grond dan de rest van de woning.</li><li><strong>Overgang naar een andere grondsoort</strong>: ligt een deel van de woning op zand en een ander deel op klei of veen, dan zakken die delen verschillend.</li><li><strong>Aanbouw</strong>: een aanbouw met een eigen, ondiepere fundering kan anders zakken. Zie <a href=\"/kennisbank/scheuren-bij-aanbouw/\">scheuren bij een aanbouw</a>.</li><li><strong>Slappe laag onder het zand</strong>: een zandige bovenlaag kan op een dieper gelegen slappere laag rusten.</li></ul><p>In al die gevallen gaat het vooral om <a href=\"/kennisbank/ongelijke-zetting/\">ongelijke zetting</a>: niet de zakking zelf, maar de verschillen zijn schadelijk.</p>"
+      },
+      {
+        "id": "hondsrug",
+        "h2": "Wat betekent de Hondsrug voor woningen in Groningen?",
+        "answer": "De Hondsrug is een zandrug in het zuiden van de provincie Groningen. De stad Groningen ligt aan de noordpunt ervan: delen liggen op zand, lagere delen op klei of veen, waardoor het risico per wijk kan verschillen.",
+        "body": "<p>Voor woningen in en rond de stad betekent dit dat de bodem binnen korte afstand kan wisselen. Een woning op het hogere, zandige deel heeft een andere uitgangssituatie dan een woning in een lager gelegen wijk. Ook Haren ligt op de Hondsrug, met in de omgeving ook lager gelegen gebieden. Lees meer bij <a href=\"/funderingsonderzoek-groningen-stad/\">funderingsonderzoek in Groningen stad</a> en <a href=\"/funderingsonderzoek-haren/\">funderingsonderzoek in Haren</a>.</p><p>In Friesland komen rond Drachten veen- en zandgronden voor. Ook daar is de bodem dus niet overal gelijk.</p>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: een woning op de overgang van zand naar klei",
+        "answer": "Een woning die deels op zand en deels op klei staat, kan aan één kant meer zakken dan aan de andere. Dat kan scheuren geven, ook al ligt de woning in een overwegend zandig gebied.",
+        "body": "<p>Stel: een woning staat aan de rand van een zandrug. De voorgevel rust op zand, de achterkant op een laag met klei. Na verloop van tijd ontstaat een diagonale scheur in een zijgevel en loopt een vloer licht af richting de tuin.</p><p>Bij een vooronderzoek worden bodemkaarten en archiefgegevens bekeken en worden de signalen ter plaatse beoordeeld. Afhankelijk van de bevindingen kan het advies zijn om te monitoren of om met metingen te bepalen hoe groot het verschil in zakking is.</p>"
+      },
+      {
+        "id": "wanneer-onderzoek",
+        "h2": "Wanneer is onderzoek verstandig?",
+        "answer": "Ook op zand is onderzoek verstandig als je scheuren, scheefstand of klemmende deuren ziet, of als je een oudere woning koopt in een gebied waar de bodem wisselt.",
+        "body": "<p>Een <a href=\"/funderingsscan/\">funderingsscan</a> begint met <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>, waarin onder meer de bodemopbouw rond je woning wordt bekeken. Weet je niet of onderzoek zinvol is? Neem <a href=\"/contact/\">contact</a> op.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is een zandbodem goed voor een fundering?",
+        "a": "<p>Meestal wel. Zand is minder samendrukbaar dan veen en klei en zet vaak sneller en minder. Toch kan ook op zand ongelijke zakking ontstaan, bijvoorbeeld bij een overgang naar een andere grondsoort.</p>"
+      },
+      {
+        "q": "Heb je op zand een paalfundering nodig?",
+        "a": "<p>Niet altijd. Ligt een stevige zandlaag dicht onder het maaiveld, dan volstaat vaak een fundering op staal. Lees meer bij <a href=\"/kennisbank/paalfundering/\">paalfundering</a>.</p>"
+      },
+      {
+        "q": "Kan een huis op zand verzakken?",
+        "a": "<p>Ja, dat kan, al is het minder gebruikelijk dan op veen of klei. Oorzaken zijn onder meer ongelijke belasting, een aanbouw met een andere fundering of een slappere laag onder het zand.</p>"
+      },
+      {
+        "q": "Hoe weet ik of mijn woning op zand staat?",
+        "a": "<p>Bodemkaarten en openbare gegevens geven een eerste beeld van de bodemopbouw. Bij een vooronderzoek wordt dit voor jouw adres bekeken, samen met het vermoedelijke funderingstype.</p>"
+      },
+      {
+        "q": "Ligt heel Groningen stad op zand?",
+        "a": "<p>Nee. De stad ligt aan de noordpunt van de Hondsrug: delen liggen op zand, lagere delen op klei of veen. Daardoor kan het funderingsrisico per wijk verschillen.</p>"
+      },
+      {
+        "q": "Speelt grondwater ook een rol bij een zandbodem?",
+        "a": "<p>Ja, vooral als de woning op houten palen staat of als er onder het zand slappere lagen liggen. Lees meer bij <a href=\"/kennisbank/grondwater-en-fundering/\">grondwater en fundering</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/veenbodem/",
+        "label": "Veenbodem",
+        "text": "Waarom veen inklinkt en wat dat betekent voor je woning."
+      },
+      {
+        "href": "/kennisbank/kleibodem/",
+        "label": "Kleibodem",
+        "text": "Hoe krimp en zwel van klei je fundering kunnen beïnvloeden."
+      },
+      {
+        "href": "/funderingsonderzoek-groningen-stad/",
+        "label": "Funderingsonderzoek Groningen stad",
+        "text": "Bodem en funderingsrisico in de stad Groningen per wijk."
+      }
+    ],
+    "cta": [
+      "Wil je weten op welke bodem je woning staat?",
+      "In fase 0 brengen we bodemopbouw, funderingstype en zichtbare signalen onafhankelijk in kaart."
+    ]
+  }
+]

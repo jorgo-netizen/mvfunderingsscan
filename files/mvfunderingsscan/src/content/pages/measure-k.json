@@ -1,0 +1,951 @@
+[
+  {
+    "path": "/kennisbank/scheefstandsmeting/",
+    "keyword": "scheefstand gevel meten",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/scheefstandsmeting/",
+        "name": "Scheefstandsmeting"
+      }
+    ],
+    "eyebrow": "Kennisbank · Metingen",
+    "title": "Scheefstand van een gevel meten: zo werkt het | MV Funderingsscan",
+    "description": "Hoe meet je scheefstand van een gevel? Overzicht van observatie, loodmeting en afleiden uit hoogteverschillen, en wanneer welke methode zinvol is.",
+    "h1": "Hoe meet je scheefstand van een gevel?",
+    "lead": "Scheefstand van een gevel stel je vast door de gevel te vergelijken met een zuivere verticaal. Dat kan globaal door goed te kijken, nauwkeuriger met een <a href=\"/kennisbank/loodmeting/\">loodmeting</a> op meerdere hoogtes, of indirect door hoogteverschillen in een lintvoeg of vloer te meten. <strong>Welke aanpak past, hangt af van de vraag</strong>: wil je weten óf een gevel scheef staat, of ook hoeveel, in welke richting en waarom?",
+    "hero_image": {
+      "name": "funderingsinspectie-woning-gevel",
+      "alt": "Specialist met een waterpas bij de gevel van een woning"
+    },
+    "facts": [
+      {
+        "label": "Methoden",
+        "value": "observatie, loodmeting, afleiden uit hoogteverschillen"
+      },
+      {
+        "label": "Onderdeel van",
+        "value": "fase 1 funderingsonderzoek"
+      },
+      {
+        "label": "Kosten",
+        "value": "geen losse prijs; onderdeel van fase 1 (indicatief €750 – €1.500)"
+      }
+    ],
+    "article": true,
+    "sections": [
+      {
+        "id": "wat-is-een-scheefstandsmeting",
+        "h2": "Wat is een scheefstandsmeting?",
+        "answer": "Een scheefstandsmeting legt vast hoe ver en in welke richting een gevel, wand of kozijnstijl afwijkt van de verticaal. Het is een verzamelnaam: er zijn meerdere manieren om tot dat antwoord te komen.",
+        "body": "<p>Een scheefstandsmeting maakt van het gevoel dat een huis \"scheef staat\" een vastgelegd gegeven: welke gevel wijkt af, op welke hoogte, hoeveel en naar welke kant. Zo kun je delen van de woning vergelijken en later opnieuw meten.</p><p>Op deze pagina krijg je een overzicht van de mogelijkheden. De techniek van het meten met een lood of laser zelf staat uitgebreid beschreven op de pagina over <a href=\"/kennisbank/loodmeting/\">loodmeting</a>. Wil je eerst weten wat scheefstand als verschijnsel betekent en welke oorzaken het kan hebben, lees dan het artikel over <a href=\"/kennisbank/scheefstand/\">scheefstand</a>.</p><div class=\"term-box\"><strong>Wat betekent \"te lood\"?</strong><p>Een gevel of wand staat te lood als hij zuiver verticaal staat. Een afwijking van het lood heet scheefstand; de richting wordt bijvoorbeeld omschreven als voorover, achterover of naar links of rechts.</p><a href=\"/kennisbank/begrippenlijst/\">Bekijk meer begrippen in de begrippenlijst</a></div>"
+      },
+      {
+        "id": "welke-manieren-zijn-er",
+        "h2": "Welke manieren zijn er om scheefstand vast te stellen?",
+        "answer": "Grofweg zijn er drie routes: gerichte observatie, een directe loodmeting en het afleiden van kanteling uit gemeten hoogteverschillen. Ze vullen elkaar aan.",
+        "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Observatie\"><h3>Observatie</h3><p>Een ervaren inspecteur kijkt langs gevellijnen, goten, kozijnen en voegen en vergelijkt de woning met de buren. Observatie is snel en geeft richting, maar levert geen vastgelegde maat op.</p></section><section class=\"tab-panel\" data-tab=\"Loodmeting\"><h3>Loodmeting</h3><p>Bij een loodmeting wordt de afwijking ten opzichte van de verticaal direct gemeten, op meerdere hoogtes en plekken. Vroeger gebeurde dat met een schietlood, tegenwoordig vaak met een (laser)meetinstrument. Het resultaat is een vastgelegde afwijking met richting per meetpunt.</p></section><section class=\"tab-panel\" data-tab=\"Hoogteverschillen\"><h3>Afleiden uit hoogteverschillen</h3><p>Als een lintvoeg of vloer aan één kant lager ligt dan aan de andere, kan dat erop wijzen dat een deel van de woning gekanteld is. Door hoogtes te meten met een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a> of <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a> ontstaat een beeld dat de loodmeting ondersteunt of juist nuanceert.</p></section></div>"
+      },
+      {
+        "id": "wat-wordt-vastgelegd",
+        "h2": "Wat wordt er bij een scheefstandsmeting vastgelegd?",
+        "answer": "Per meetpunt worden de plek, de hoogte, de grootte van de afwijking en de richting genoteerd, zodat een samenhangend beeld van de gevel ontstaat.",
+        "body": "<dl class=\"def-list\"><div><dt>Locatie</dt><dd>Welke gevel of wand, en waar precies: bij een hoek, naast een kozijn of midden in het vlak.</dd></div><div><dt>Hoogte</dt><dd>Op welke hoogte gemeten is; door op meerdere hoogtes te meten zie je of de afwijking gelijkmatig verloopt of ergens een knik heeft.</dd></div><div><dt>Afwijking</dt><dd>Hoeveel de gevel op dat punt van de verticaal afwijkt.</dd></div><div><dt>Richting</dt><dd>Voorover, achterover of zijwaarts; de richting zegt vaak meer dan de grootte alleen.</dd></div></dl><p>Juist de combinatie van punten is waardevol. Een gevel die onderaan recht staat en bovenin uitbuigt, vraagt om een andere verklaring dan een gevel die over de volle hoogte gelijkmatig helt.</p>"
+      },
+      {
+        "id": "hoe-wordt-het-uitgevoerd",
+        "h2": "Hoe wordt scheefstand in de praktijk gemeten?",
+        "answer": "Een meting begint met kijken, gaat via het kiezen van representatieve meetpunten naar het meten zelf en eindigt met vastleggen en duiden in samenhang met andere waarnemingen.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Verkennen</strong><span>De gevels worden eerst visueel beoordeeld om te zien waar afwijkingen zichtbaar of te verwachten zijn.</span></li><li><strong>Meetpunten kiezen</strong><span>Er worden punten gekozen op hoeken, langs kozijnstijlen en in het gevelvlak, op meerdere hoogtes waar dat bereikbaar is.</span></li><li><strong>Meten</strong><span>Met een lood of (laser)meetinstrument wordt per punt de afwijking ten opzichte van de verticaal bepaald.</span></li><li><strong>Vastleggen</strong><span>Afwijking en richting worden genoteerd op een schets of tekening van de gevel, met foto's van de meetlocaties.</span></li><li><strong>Duiden</strong><span>De uitkomsten worden vergeleken met hoogtemetingen, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a> en de bouwgeschiedenis van de woning.</span></li></ol>"
+      },
+      {
+        "id": "wanneer-welke-methode",
+        "h2": "Wanneer kies je welke methode?",
+        "answer": "Observatie volstaat om te bepalen of nader onderzoek zinvol is; een loodmeting is nodig als je de scheefstand wilt vastleggen; hoogtemetingen helpen om te begrijpen waar de kanteling vandaan komt.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Vraag</th><th>Passende aanpak</th></tr></thead><tbody><tr><td>Staat de gevel zichtbaar scheef?</td><td>Gerichte observatie tijdens een <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a></td></tr><tr><td>Hoeveel en in welke richting wijkt de gevel af?</td><td>Loodmeting op meerdere hoogtes en plekken</td></tr><tr><td>Is de gevel gekanteld doordat een deel lager ligt?</td><td>Lintvoeg- of vloerveldwaterpassing, in combinatie met de loodmeting</td></tr><tr><td>Gaat de scheefstand nog verder?</td><td>Herhaalmeting over een langere periode (<a href=\"/kennisbank/zettingsmeting/\">zettingsmeting en monitoring</a>)</td></tr></tbody></table></div><p>In de praktijk worden deze routes gecombineerd: een loodmeting zonder hoogtemeting laat open of de gevel kantelt door ongelijke zakking of doordat het metselwerk uitbuigt.</p>"
+      },
+      {
+        "id": "wat-kan-het-aantonen",
+        "h2": "Wat kan een scheefstandsmeting wel en niet aantonen?",
+        "answer": "Een scheefstandsmeting toont hoe de gevel er nu bij staat, maar niet waarom en niet of de beweging nog doorgaat.",
+        "body": "<div class=\"two-col-list\"><div><h3>Wel</h3><ul class=\"checklist\"><li>Welke gevels of wanden uit het lood staan</li><li>De richting van de afwijking per meetpunt</li><li>Of de afwijking gelijkmatig is of een knik vertoont</li><li>Een vastgelegde uitgangssituatie voor latere herhaling</li></ul></div><div><h3>Niet</h3><ul class=\"checklist\"><li>De oorzaak van de scheefstand</li><li>Of de woning nog beweegt (één meting is een momentopname)</li><li>De staat van palen, hout of fundering onder de grond</li><li>Of de gevel destijds wel te lood is gebouwd</li></ul></div></div><div class=\"callout callout-warn\"><strong>Let op bij oudere woningen</strong><p>Gevels zijn niet altijd perfect te lood gemetseld en uitbuiging kan andere oorzaken hebben dan de fundering.</p></div>"
+      },
+      {
+        "id": "fase-0-en-fase-1",
+        "h2": "Hoe past scheefstandsmeting binnen fase 0 en fase 1?",
+        "answer": "In fase 0 wordt scheefstand visueel beoordeeld; een gemeten scheefstand met lood of laser hoort bij fase 1.",
+        "body": "<p>Tijdens een <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a> kijkt de inspecteur onder meer naar scheefstand van gevels, kozijnen en deuren. Geeft dat aanleiding, dan kan het advies zijn om in fase 1 te meten. De loodmeting is daar één van de <a href=\"/funderingsmetingen/\">funderingsmetingen</a>, naast lintvoegwaterpassing, vloerveldwaterpassing en het vastleggen van scheurpatronen.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Visuele beoordeling van scheefstand, met archief- en bodemonderzoek.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Gemeten scheefstand, aangevuld met hoogtemetingen en scheurpatronen.</span></a></div><p>Een losse scheefstandsmeting heeft geen eigen prijs; de kosten van fase 1 hangen af van welke metingen nodig zijn en worden vooraf afgestemd. Zie ook <a href=\"/prijzen/\">prijzen</a>.</p>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: een voorgevel die naar voren lijkt te hellen",
+        "answer": "Een vermoeden van scheefstand wordt pas betekenisvol als het gemeten en naast andere gegevens gelegd wordt.",
+        "body": "<p>Stel: de bewoners van een vooroorlogse rijwoning zien dat hun voorgevel ten opzichte van de buren iets naar voren lijkt te staan. De quickscan bevestigt dat als aandachtspunt, samen met diagonale scheuren boven de voordeur. In fase 1 laat een loodmeting zien dat de voorgevel over de volle hoogte voorover helt, terwijl de achtergevel nagenoeg recht staat. Een lintvoegwaterpassing langs dezelfde gevel laat zien of de hoeken op gelijke hoogte liggen. Pas die combinatie maakt duidelijk of het om de gevel zelf gaat of om een woning die aan de voorzijde anders zakt. Meer over de symptomen lees je op de pagina <a href=\"/scheefstand-woning/\">scheefstand van een woning</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Kan ik zelf meten of mijn gevel scheef staat?",
+        "a": "<p>Je kunt zelf een eerste indruk krijgen, maar geen betrouwbare meting doen. Kijk bijvoorbeeld langs de gevel naar de buren, let op schuine kozijnen en noteer wat je ziet. Een vastgelegde meting op meerdere hoogtes vraagt om meetinstrumenten en ervaring met de interpretatie.</p>"
+      },
+      {
+        "q": "Wat is het verschil tussen scheefstandsmeting en loodmeting?",
+        "a": "<p>Scheefstandsmeting is de verzamelnaam; loodmeting is de meest directe methode daarbinnen. Daarnaast kan scheefstand worden afgeleid uit observatie en uit hoogteverschillen in een lintvoeg of vloer. Lees meer op de pagina over <a href=\"/kennisbank/loodmeting/\">loodmeting</a>.</p>"
+      },
+      {
+        "q": "Betekent een scheve gevel dat de fundering slecht is?",
+        "a": "<p>Nee, niet automatisch. Gevels zijn niet altijd te lood gebouwd en uitbuiging van metselwerk kan ook andere oorzaken hebben. Scheefstand is een signaal dat in samenhang met scheuren, hoogtemetingen en de bodem wordt beoordeeld.</p>"
+      },
+      {
+        "q": "Kun je met één meting zien of de scheefstand toeneemt?",
+        "a": "<p>Nee, één meting is een momentopname. Of een gevel verder kantelt, blijkt pas als dezelfde punten na verloop van tijd opnieuw worden gemeten en de uitkomsten vergeleken worden.</p>"
+      },
+      {
+        "q": "Wordt scheefstand ook gemeten tijdens een quickscan?",
+        "a": "<p>In een quickscan (fase 0) wordt scheefstand visueel beoordeeld en vastgelegd met foto's. Een meting met lood of laser hoort bij <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a>, als fase 0 daar aanleiding voor geeft.</p>"
+      },
+      {
+        "q": "Wat kost een scheefstandsmeting?",
+        "a": "<p>Een scheefstandsmeting heeft geen losse prijs. Ze maakt deel uit van fase 1, dat indicatief €750 – €1.500 kost, afhankelijk van welke metingen bij jouw woning nodig zijn. De prijs wordt vooraf afgestemd.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/loodmeting/",
+        "label": "Loodmeting uitgelegd",
+        "text": "Hoe de afwijking ten opzichte van de verticaal precies wordt gemeten."
+      },
+      {
+        "href": "/scheefstand-woning/",
+        "label": "Scheefstand van een woning",
+        "text": "Symptomen, mogelijke oorzaken en wanneer onderzoek verstandig is."
+      },
+      {
+        "href": "/funderingsmetingen/",
+        "label": "Alle funderingsmetingen",
+        "text": "Overzicht van de metingen die in fase 1 kunnen worden uitgevoerd."
+      }
+    ]
+  },
+  {
+    "path": "/kennisbank/hoogtemeting/",
+    "keyword": "hoogtemeting woning",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/hoogtemeting/",
+        "name": "Hoogtemeting"
+      }
+    ],
+    "eyebrow": "Kennisbank · Metingen",
+    "title": "Hoogtemeting bij een woning: waterpassen | MV Funderingsscan",
+    "description": "Hoogtemeting bij een woning: wat waterpassen is, het verschil tussen relatief en NAP, het referentiepunt en de toepassing op lintvoeg, vloer en maaiveld.",
+    "h1": "Hoogtemeting bij een woning: het principe achter waterpassen",
+    "lead": "Een hoogtemeting bij een woning bepaalt hoe hoog meetpunten liggen ten opzichte van één vast referentiepunt of ten opzichte van NAP. In funderingsonderzoek wordt zo gekeken of lintvoegen, vloeren of het terrein rond de woning ongelijk liggen. <strong>Het gaat daarbij om verschillen en patronen</strong>, niet om de absolute hoogte van één punt.",
+    "hero_image": {
+      "name": "funderingsinspectie-woning-gevel",
+      "alt": "Specialist met een waterpas bij de gevel van een woning"
+    },
+    "facts": [
+      {
+        "label": "Toepassingen",
+        "value": "lintvoeg, vloerveld, maaiveld"
+      },
+      {
+        "label": "Uitgangspunt",
+        "value": "relatief of ten opzichte van NAP"
+      },
+      {
+        "label": "Kosten",
+        "value": "geen losse prijs; onderdeel van fase 1 (indicatief €750 – €1.500)"
+      }
+    ],
+    "article": true,
+    "sections": [
+      {
+        "id": "wat-is-hoogtemeting",
+        "h2": "Wat is een hoogtemeting in funderingsonderzoek?",
+        "answer": "Een hoogtemeting, ook wel waterpassing genoemd, bepaalt het hoogteverschil tussen meetpunten. In funderingsonderzoek is het de basis onder meerdere metingen.",
+        "body": "<p>Een fundering zelf zie je meestal niet. Wat je wel kunt meten, is hoe de bovenbouw erop reageert. Als een deel van een woning meer zakt dan een ander deel, liggen lijnen die ooit horizontaal waren niet meer op één hoogte. Een hoogtemeting maakt dat zichtbaar door op een reeks punten de hoogte te bepalen en die met elkaar te vergelijken.</p><p>Deze pagina legt het principe uit dat onder verschillende metingen ligt. Hoe het in de praktijk gaat bij een gevel of vloer, lees je in de uitgebreide artikelen over <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a> en <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a>.</p>"
+      },
+      {
+        "id": "relatief-of-nap",
+        "h2": "Wat is het verschil tussen een relatieve meting en een meting ten opzichte van NAP?",
+        "answer": "Bij een relatieve meting worden punten onderling vergeleken ten opzichte van een zelfgekozen referentiepunt; bij een meting ten opzichte van NAP worden hoogtes gekoppeld aan het landelijke referentievlak.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th></th><th>Relatief</th><th>Ten opzichte van NAP</th></tr></thead><tbody><tr><td>Referentie</td><td>Eén vast punt aan of bij de woning</td><td>Normaal Amsterdams Peil, het landelijke referentievlak</td></tr><tr><td>Geschikt voor</td><td>Vervorming van één gevel of vloer in beeld brengen</td><td>Hoogtes vergelijken met kaarten, omgeving of eerdere metingen elders</td></tr><tr><td>Aandachtspunt</td><td>Het referentiepunt moet bij herhaling terug te vinden zijn</td><td>Vraagt om aansluiting op een bekend hoogtemerk</td></tr></tbody></table></div><p>Voor het beoordelen van vervorming van een woning is een relatieve meting vaak voldoende: het gaat erom of de ene hoek lager ligt dan de andere. Een koppeling aan NAP is vooral nuttig als je de woning wilt vergelijken met de omgeving, zoals bij het <a href=\"/kennisbank/maaiveldhoogte/\">maaiveld</a> of bij gegevens over bodemdaling.</p><div class=\"term-box\"><strong>Wat betekent NAP?</strong><p>NAP staat voor Normaal Amsterdams Peil: het referentievlak waarmee hoogtes in Nederland onderling vergelijkbaar worden gemaakt. Kaarten van terreinhoogte en waterpeilen gaan hier meestal van uit.</p><a href=\"/kennisbank/bodemdaling/\">Lees meer over bodemdaling</a></div>"
+      },
+      {
+        "id": "referentiepunt",
+        "h2": "Waarom is het referentiepunt zo belangrijk?",
+        "answer": "Alle gemeten hoogtes zijn alleen vergelijkbaar als ze naar hetzelfde vaste punt verwijzen. Wie later opnieuw meet, moet datzelfde punt terug kunnen vinden.",
+        "body": "<p>Een referentiepunt is het nulpunt van de meting. Bij een gevel kan dat een herkenbaar punt in het metselwerk zijn, bij een vloer bijvoorbeeld een drempel of een vast punt bij de voordeur. De keuze wordt vastgelegd op de tekening of in het rapport. Voor een eenmalige meting is dat handig; voor een herhaalmeting is het essentieel. Ligt het referentiepunt zelf op een deel van de woning dat beweegt, dan beweegt het hele meetbeeld mee. Dat is een van de redenen waarom de interpretatie van hoogtemetingen vakwerk is.</p>"
+      },
+      {
+        "id": "instrumenten",
+        "h2": "Met welke instrumenten wordt gemeten?",
+        "answer": "Hoogtes worden gemeten met een waterpasinstrument of een vergelijkbaar digitaal of laserinstrument, eventueel aangevuld met een meetlat.",
+        "body": "<p>Het principe is al eeuwen hetzelfde: vanaf één horizontale zichtlijn wordt op elk meetpunt afgelezen hoe ver dat punt erboven of eronder ligt. Moderne digitale en laserinstrumenten maken het aflezen en vastleggen eenvoudiger, maar de kwaliteit van de meting hangt nog steeds af van een goede opstelling, zorgvuldige keuze van meetpunten en het controleren van de uitkomsten.</p><div class=\"callout callout-note\"><strong>Geen apparaat, wel een werkwijze</strong><p>Het instrument bepaalt niet de waarde van de meting. Belangrijker is dat de meetpunten representatief zijn en dat het resultaat in samenhang met de woning wordt geïnterpreteerd.</p></div>"
+      },
+      {
+        "id": "toepassingen",
+        "h2": "Waar wordt hoogtemeting voor gebruikt?",
+        "answer": "In funderingsonderzoek wordt het principe vooral toegepast op de lintvoeg van gevels, op de begane grondvloer en op het maaiveld rondom de woning.",
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Lintvoeg</h3><p>Een doorlopende horizontale metselvoeg is destijds vrijwel waterpas gemetseld. Hoogteverschillen langs die voeg laten ongelijke zakking van de gevel zien. Zie <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a>.</p></div><div class=\"info-card\"><h3>Vloerveld</h3><p>Een raster van meetpunten over de begane grondvloer geeft een hoogtekaart per vertrek. Zie <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a>.</p></div><div class=\"info-card\"><h3>Maaiveld</h3><p>De hoogte van het terrein rond de woning kan iets zeggen over bodemdaling of inklinking in de omgeving. Zie <a href=\"/kennisbank/maaiveldhoogte/\">maaiveldhoogte</a>.</p></div></div>"
+      },
+      {
+        "id": "hoe-uitgevoerd",
+        "h2": "Hoe verloopt een hoogtemeting?",
+        "answer": "Een hoogtemeting volgt een vaste volgorde: referentiepunt kiezen, meetpunten bepalen, meten, controleren en verwerken tot een profiel of kaart.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Referentiepunt vastleggen</strong><span>Een vast, herkenbaar punt wordt gekozen en beschreven.</span></li><li><strong>Meetpunten bepalen</strong><span>Langs de gevel, over de vloer of rond de woning, met extra punten bij hoeken, kozijnen en aansluitingen.</span></li><li><strong>Meten</strong><span>Per punt wordt het hoogteverschil ten opzichte van het referentiepunt bepaald.</span></li><li><strong>Controleren</strong><span>Opvallende waarden worden nagekeken op meetfouten of lokale verstoringen, zoals hermetseld werk.</span></li><li><strong>Verwerken</strong><span>De uitkomsten worden een hoogteprofiel, grafiek of hoogtekaart die in het rapport wordt toegelicht.</span></li></ol>"
+      },
+      {
+        "id": "wat-kan-het-aantonen",
+        "h2": "Wat kan een hoogtemeting wel en niet aantonen?",
+        "answer": "Een hoogtemeting toont vervorming op het moment van meten. De oorzaak, de staat van de fundering en het tempo van eventuele beweging blijven daarmee nog open.",
+        "body": "<div class=\"two-col-list\"><div><h3>Wel</h3><ul class=\"checklist\"><li>Welke delen hoger of lager liggen</li><li>Het patroon: geleidelijk aflopend, een lagere hoek of een knik</li><li>Een vastgelegde uitgangssituatie voor herhaling</li></ul></div><div><h3>Niet</h3><ul class=\"checklist\"><li>Of de beweging nog doorgaat</li><li>Wat de oorzaak is</li><li>Hoe de palen of het hout eraan toe zijn</li></ul></div></div><p>Houd er ook rekening mee dat lintvoegen en vloeren bij de bouw nooit volmaakt vlak zijn uitgevoerd. Een verschil is daarom niet automatisch een zakking. Of de beweging doorgaat, laat een <a href=\"/kennisbank/zettingsmeting/\">zettingsmeting met herhaalmetingen</a> zien.</p>"
+      },
+      {
+        "id": "fase-0-en-fase-1",
+        "h2": "Hoe past hoogtemeting binnen fase 0 en fase 1?",
+        "answer": "Hoogtemetingen zijn onderdeel van fase 1. In fase 0 wordt eerst beoordeeld of meten zinvol is.",
+        "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie; bepaalt of meten nodig is.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Lintvoeg- en vloerveldwaterpassing als onderdeel van de funderingsmetingen.</span></a></div><p>In een <a href=\"/fase-0-funderingsonderzoek/\">quickscan</a> wordt nog niet gemeten, maar wordt wel gekeken naar signalen die op ongelijke zakking kunnen wijzen. Is daar aanleiding voor, dan volgen in <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a> de hoogtemetingen. Een overzicht van alle metingen vind je op <a href=\"/funderingsmetingen/\">funderingsmetingen</a>.</p>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: hoogteverschil in gevel én vloer",
+        "answer": "Twee hoogtemetingen die hetzelfde beeld geven, versterken elkaar; tegenstrijdige uitkomsten vragen om een nadere verklaring.",
+        "body": "<p>Bij een jaren-dertigwoning laat de lintvoegwaterpassing zien dat de achterste hoek van de zijgevel lager ligt dan de voorkant. De vloerveldwaterpassing in de achterkamer toont een helling naar dezelfde hoek. Dat samenvallende beeld maakt ongelijke zakking aan die kant aannemelijker dan wanneer alleen de vloer scheef had gelegen; een houten vloer kan immers ook door de balklaag zelf doorbuigen.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is hoogtemeting hetzelfde als waterpassen?",
+        "a": "<p>In funderingsonderzoek worden beide termen vaak door elkaar gebruikt. Waterpassen is de techniek om hoogteverschillen te bepalen vanaf een horizontale zichtlijn; hoogtemeting is het bredere begrip.</p>"
+      },
+      {
+        "q": "Moet een hoogtemeting altijd ten opzichte van NAP?",
+        "a": "<p>Nee, voor het beoordelen van vervorming van een woning volstaat vaak een relatieve meting. NAP is vooral nuttig als je hoogtes wilt vergelijken met de omgeving of met openbare gegevens.</p>"
+      },
+      {
+        "q": "Kan ik zelf met een waterpas meten of mijn vloer scheef is?",
+        "a": "<p>Met een gewone waterpas kun je een helling over korte afstand opmerken, maar geen samenhangend beeld van een hele vloer of gevel maken. Lees ook de pagina over een <a href=\"/kennisbank/helling-in-vloer/\">helling in de vloer</a>.</p>"
+      },
+      {
+        "q": "Wat is een hoogteprofiel?",
+        "a": "<p>Een hoogteprofiel is een grafiek of tekening die laat zien hoe hoog opeenvolgende meetpunten liggen ten opzichte van het referentiepunt. Daarin is een aflopende lijn of een knik goed te herkennen.</p>"
+      },
+      {
+        "q": "Zegt een hoogteverschil iets over houten palen?",
+        "a": "<p>Niet direct. Een hoogteverschil laat zien dat een deel van de woning anders ligt, maar niet waarom. De staat van palen kan alleen worden beoordeeld met nader onderzoek, zoals een inspectieput.</p>"
+      },
+      {
+        "q": "Waarom worden meerdere hoogtemetingen gecombineerd?",
+        "a": "<p>Omdat elke meting eigen beperkingen heeft. Als gevel en vloer hetzelfde beeld geven, is de conclusie sterker dan op basis van één meting.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/lintvoegwaterpassing/",
+        "label": "Lintvoegwaterpassing",
+        "text": "Hoogtemeting langs een doorlopende metselvoeg van de gevel."
+      },
+      {
+        "href": "/kennisbank/vloerveldwaterpassing/",
+        "label": "Vloerveldwaterpassing",
+        "text": "Een raster van hoogtemetingen over de begane grondvloer."
+      },
+      {
+        "href": "/funderingsmetingen/",
+        "label": "Funderingsmetingen",
+        "text": "Welke metingen in fase 1 mogelijk zijn en wat ze opleveren."
+      }
+    ]
+  },
+  {
+    "path": "/kennisbank/zettingsmeting/",
+    "keyword": "zettingsmeting",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/zettingsmeting/",
+        "name": "Zettingsmeting"
+      }
+    ],
+    "eyebrow": "Kennisbank · Metingen",
+    "title": "Zettingsmeting: zakking van je woning volgen | MV Funderingsscan",
+    "description": "Wat is een zettingsmeting? Waarom één meting een momentopname is en je pas met herhaalmetingen ziet of een woning nog zakt. Uitleg, aanpak en beperkingen.",
+    "h1": "Zettingsmeting: zien of een woning nog beweegt",
+    "lead": "Een zettingsmeting legt vast hoe hoog vaste punten van een woning liggen en herhaalt dat na verloop van tijd. <strong>Pas door metingen te vergelijken zie je of zakking nog doorgaat</strong> of tot rust is gekomen. Eén meting laat alleen zien hoe de woning er nu bij staat; de vraag of er nog beweging is, beantwoordt die niet.",
+    "hero_image": {
+      "name": "jaren-dertig-woningen-straat",
+      "alt": "Rij jaren-dertigwoningen in een groene straat"
+    },
+    "facts": [
+      {
+        "label": "Kern",
+        "value": "herhaalde metingen over een langere periode"
+      },
+      {
+        "label": "Gemeten",
+        "value": "hoogte van vaste punten, eventueel scheuren"
+      },
+      {
+        "label": "Mogelijk advies",
+        "value": "na fase 0 of fase 1: monitoren"
+      }
+    ],
+    "article": true,
+    "sections": [
+      {
+        "id": "wat-is-een-zettingsmeting",
+        "h2": "Wat is een zettingsmeting?",
+        "answer": "Een zettingsmeting volgt de hoogte van vaste punten aan een woning in de tijd, om te bepalen of de woning nog zakt en of dat gelijkmatig gebeurt.",
+        "body": "<p>Elke woning drukt de grond eronder iets samen. Die <a href=\"/kennisbank/zetting/\">zetting</a> is normaal en vindt vooral plaats in de eerste jaren na de bouw. Bij oudere woningen is de vraag meestal niet óf er ooit zetting is geweest, maar of er nu nog beweging is. Daarvoor is een momentopname niet genoeg: je hebt een reeks metingen nodig die je met elkaar vergelijkt.</p><div class=\"term-box\"><strong>Wat betekent ongelijke zetting?</strong><p>Bij ongelijke zetting zakken verschillende delen van een woning niet even veel. Daardoor kan de woning vervormen en kunnen scheuren ontstaan; dat is in de regel schadelijker dan gelijkmatige zakking.</p><a href=\"/kennisbank/ongelijke-zetting/\">Lees meer over ongelijke zetting</a></div>"
+      },
+      {
+        "id": "momentopname-of-herhaalmeting",
+        "h2": "Wat is het verschil tussen een momentopname en een herhaalmeting?",
+        "answer": "Een momentopname toont vervorming die in de loop van de tijd is ontstaan; een herhaalmeting toont of er sinds de vorige meting iets is veranderd.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th></th><th>Momentopname</th><th>Herhaalmeting / monitoring</th></tr></thead><tbody><tr><td>Vraag</td><td>Hoe staat de woning er nu bij?</td><td>Beweegt de woning nog?</td></tr><tr><td>Voorbeeld</td><td>Eén <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a> in fase 1</td><td>Dezelfde punten na verloop van tijd opnieuw gemeten</td></tr><tr><td>Sterk in</td><td>Patronen en verschillen in beeld brengen</td><td>Tempo en voortgang van beweging zichtbaar maken</td></tr><tr><td>Beperking</td><td>Zegt niets over het verloop in de tijd</td><td>Vraagt geduld en hetzelfde referentiepunt</td></tr></tbody></table></div><p>Een gevel kan een flink hoogteverschil laten zien dat tientallen jaren geleden is ontstaan en al lang stabiel is. Een andere woning toont misschien een kleiner verschil dat nog steeds toeneemt. Zonder herhaling zijn die twee situaties niet van elkaar te onderscheiden.</p>"
+      },
+      {
+        "id": "waarom-tijd-belangrijk",
+        "h2": "Waarom is tijd zo belangrijk bij zetting?",
+        "answer": "Omdat dezelfde vervorming iets heel anders betekent als ze stabiel is dan wanneer ze nog toeneemt. Pas het verloop in de tijd onderscheidt oude, afgeronde zakking van een actief proces.",
+        "body": "<p>Zetting verloopt in de regel steeds trager naarmate de jaren verstrijken. Bij een woning die nu nog zakt, kan er iets veranderd zijn in de omstandigheden: een lagere grondwaterstand, inklinking van veen, een aanbouw die extra belasting geeft of aantasting van <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a>. Dat zijn situaties waarin herstel of nader onderzoek aan de orde kan komen. Is de beweging tot rust gekomen, dan kan het advies juist zijn dat ingrijpen niet nodig is. Die afweging maak je niet op basis van één meting.</p><div class=\"callout callout-tip\"><strong>Combineer met scheuren</strong><p>Naast hoogtes kun je ook scheuren in de tijd volgen. Groeit een scheur mee met een gemeten zakking, dan versterken die signalen elkaar. Zie <a href=\"/kennisbank/monitoring-scheuren/\">scheuren monitoren</a>.</p></div>"
+      },
+      {
+        "id": "wat-wordt-gemeten",
+        "h2": "Wat wordt er bij een zettingsmeting gemeten?",
+        "answer": "Meestal de hoogte van vaste, goed terug te vinden punten aan de gevels, steeds ten opzichte van hetzelfde referentiepunt.",
+        "body": "<ul class=\"checklist\"><li>Hoogte van vaste meetpunten aan de gevels, bijvoorbeeld langs de lintvoeg</li><li>Een referentiepunt dat bij elke meting hetzelfde is en bij voorkeur zelf niet meebeweegt</li><li>Eventueel scheurbreedtes op vaste plekken, om beweging in het metselwerk te volgen</li><li>Datum en omstandigheden van elke meting, zodat seizoensinvloeden herkenbaar zijn</li></ul><p>Het principe van de hoogtemeting zelf is beschreven op de pagina over <a href=\"/kennisbank/hoogtemeting/\">hoogtemeting</a>.</p>"
+      },
+      {
+        "id": "hoe-uitgevoerd",
+        "h2": "Hoe wordt een zettingsmeting uitgevoerd?",
+        "answer": "Een zettingsmeting bestaat uit een nulmeting, één of meer herhaalmetingen op dezelfde punten en een vergelijking van de uitkomsten.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Nulmeting</strong><span>De uitgangssituatie wordt vastgelegd: meetpunten, referentiepunt en hoogtes.</span></li><li><strong>Punten markeren</strong><span>De meetpunten worden zo beschreven of gemarkeerd dat ze bij een volgende meting exact terug te vinden zijn.</span></li><li><strong>Herhalen</strong><span>Na een afgesproken periode worden dezelfde punten opnieuw gemeten, vanaf hetzelfde referentiepunt.</span></li><li><strong>Vergelijken</strong><span>De verschillen tussen de metingen laten zien of, waar en hoe snel er beweging is.</span></li><li><strong>Beoordelen</strong><span>De uitkomst wordt bekeken in samenhang met scheuren, bodem en grondwater, en leidt tot een advies.</span></li></ol>"
+      },
+      {
+        "id": "wat-kan-het-aantonen",
+        "h2": "Wat kan een zettingsmeting wel en niet aantonen?",
+        "answer": "Een reeks metingen laat zien of de woning nog beweegt, maar niet direct waardoor. De oorzaak vraagt om duiding of nader onderzoek.",
+        "body": "<div class=\"mini-outcomes\"><div class=\"mini-outcome mini-ok\"><strong>Geen meetbare beweging</strong><span>De vervorming lijkt tot rust gekomen; vaak geen directe aanleiding voor vervolgstappen.</span></div><div class=\"mini-outcome mini-watch\"><strong>Twijfelachtig verloop</strong><span>Kleine of wisselende verschillen; langer volgen kan duidelijkheid geven.</span></div><div class=\"mini-outcome mini-extra\"><strong>Beweging op één plek</strong><span>Gericht nader onderzoek naar dat deel van de woning kan zinvol zijn.</span></div><div class=\"mini-outcome mini-next\"><strong>Doorgaande zakking</strong><span>Advies over nader onderzoek, zoals een inspectieput, of een herstelplan door een specialist.</span></div></div><p>Een zettingsmeting zegt niets over de staat van houten palen of de opbouw van de fundering. Wel helpt ze om te bepalen of verder onderzoek in de grond nodig is.</p>"
+      },
+      {
+        "id": "fase-0-en-fase-1",
+        "h2": "Hoe past een zettingsmeting binnen fase 0 en fase 1?",
+        "answer": "Zowel fase 0 als fase 1 kan uitkomen op het advies om te monitoren. De metingen uit fase 1 vormen dan een bruikbare nulmeting.",
+        "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Kan uitkomen op het advies om scheuren of zakking te volgen.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Hoogtemetingen leggen de uitgangssituatie vast voor latere herhaling.</span></a></div><p>Monitoren is een van de mogelijke uitkomsten van een <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>. Na <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a> kan het advies zijn om de metingen na verloop van tijd te herhalen. Welke <a href=\"/funderingsmetingen/\">funderingsmetingen</a> daarvoor geschikt zijn, hangt af van de woning.</p>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: een oude zakking of een actief probleem?",
+        "answer": "Herhaalmetingen kunnen een zorgelijk ogend beeld nuanceren, of juist bevestigen dat er actie nodig is.",
+        "body": "<p>Bij een woning op veengrond laat fase 1 een duidelijk aflopende lintvoeg zien. De vraag is of dat een oude zakking is of iets dat nu speelt. Het advies luidt: de punten na verloop van tijd opnieuw meten en ondertussen de scheuren volgen. Blijken de hoogtes en scheurbreedtes gelijk te blijven, dan is de vervorming waarschijnlijk oud. Zakt de lage hoek verder, dan ligt nader onderzoek naar de fundering op die plek voor de hand. Meer over de rol van veen lees je bij <a href=\"/kennisbank/veenbodem/\">veenbodem</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Hoe lang duurt een zettingsmeting?",
+        "a": "<p>Dat hangt af van de situatie en wordt per woning afgesproken. Het gaat om een reeks metingen over een langere periode, omdat beweging pas zichtbaar wordt als er tijd tussen de metingen zit.</p>"
+      },
+      {
+        "q": "Is zetting altijd een probleem?",
+        "a": "<p>Nee, zetting is een normaal verschijnsel bij elke woning, vooral in de eerste jaren na de bouw. Zorgwekkender is ongelijke zetting, of zakking die na lange tijd nog doorgaat. Lees meer over <a href=\"/kennisbank/zetting/\">zetting</a>.</p>"
+      },
+      {
+        "q": "Kan ik zakking zelf meten?",
+        "a": "<p>Hoogtes betrouwbaar meten vraagt om instrumenten en een vast referentiepunt. Wat je zelf wel kunt doen, is scheuren vastleggen en volgen met foto's en een liniaal; zie <a href=\"/kennisbank/monitoring-scheuren/\">scheuren monitoren</a>.</p>"
+      },
+      {
+        "q": "Wat is een nulmeting?",
+        "a": "<p>Een nulmeting is de eerste meting die als vertrekpunt dient. Alle latere metingen worden daarmee vergeleken, dus de meetpunten en het referentiepunt moeten goed zijn vastgelegd.</p>"
+      },
+      {
+        "q": "Waarom niet meteen funderingsherstel als er een hoogteverschil is?",
+        "a": "<p>Omdat een hoogteverschil ook een oude, afgeronde zakking kan zijn. Herstel is ingrijpend en kan tienduizenden euro's kosten; daarom is het verstandig eerst te weten of de woning nog beweegt.</p>"
+      },
+      {
+        "q": "Hebben seizoenen invloed op de metingen?",
+        "a": "<p>Ja, dat kan. Vooral kleigrond krimpt bij droogte en zwelt bij nat weer, en ook scheuren kunnen met temperatuur meebewegen. Daarom wordt de datum van elke meting vastgelegd en bij de beoordeling meegewogen.</p>"
+      },
+      {
+        "q": "Wie bepaalt of monitoring nodig is?",
+        "a": "<p>Dat volgt uit het advies na fase 0 of fase 1. Twijfel je zelf, neem dan <a href=\"/contact/\">contact</a> op om te bespreken wat in jouw situatie zinvol is.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/ongelijke-zetting/",
+        "label": "Ongelijke zetting",
+        "text": "Waarom verschillen in zakking schadelijker zijn dan gelijkmatige zakking."
+      },
+      {
+        "href": "/kennisbank/monitoring-scheuren/",
+        "label": "Scheuren monitoren",
+        "text": "Zo volg je scheuren in de tijd, zelf of professioneel."
+      },
+      {
+        "href": "/fase-1-funderingsonderzoek/",
+        "label": "Fase 1 funderingsonderzoek",
+        "text": "Metingen die de uitgangssituatie van je woning vastleggen."
+      }
+    ]
+  },
+  {
+    "path": "/kennisbank/scheurmeting/",
+    "keyword": "scheurmeting",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/scheurmeting/",
+        "name": "Scheurmeting"
+      }
+    ],
+    "eyebrow": "Kennisbank · Metingen",
+    "title": "Scheurmeting: een scheur goed vastleggen | MV Funderingsscan",
+    "description": "Wat is een scheurmeting? Zo leg je locatie, richting, lengte, breedte en verloop van een scheur vast, met welke hulpmiddelen, en wat dat wel en niet zegt.",
+    "h1": "Scheurmeting: een scheur op één moment nauwkeurig vastleggen",
+    "lead": "Een scheurmeting legt een scheur op één moment vast: <strong>waar hij zit, welke richting hij heeft, hoe lang en hoe breed hij is en hoe de breedte verloopt</strong>. Dat gebeurt met foto's met een maatstok, notities en een schets. Zo ontstaat een betrouwbaar vertrekpunt om de scheur te duiden en later te vergelijken.",
+    "hero_image": {
+      "name": "metselwerk-gevel-detail",
+      "alt": "Close-up van metselwerk en voegen in een bakstenen gevel"
+    },
+    "facts": [
+      {
+        "label": "Vastgelegd",
+        "value": "locatie, richting, lengte, breedte, verloop"
+      },
+      {
+        "label": "Hulpmiddelen",
+        "value": "maatstok, scheurmeter, foto, schets"
+      },
+      {
+        "label": "Onderdeel van",
+        "value": "fase 0 (visueel) en fase 1 (uitgebreid)"
+      }
+    ],
+    "article": true,
+    "sections": [
+      {
+        "id": "wat-is-een-scheurmeting",
+        "h2": "Wat is een scheurmeting?",
+        "answer": "Een scheurmeting is het zorgvuldig vastleggen van de kenmerken van een scheur op één moment, zodat die scheur later te duiden en te vergelijken is.",
+        "body": "<p>Een foto van een scheur zonder maatstok, datum of plaatsaanduiding zegt achteraf weinig. Een scheurmeting maakt van een losse waarneming een bruikbaar gegeven. Het gaat niet om één getal, maar om een set kenmerken die samen iets vertellen over hoe de scheur is ontstaan.</p><p>Deze pagina gaat over het vastleggen van één scheur op één moment. Hoe je scheuren in samenhang leest, staat op de pagina over <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>. Hoe je scheuren over langere tijd volgt, lees je bij <a href=\"/kennisbank/monitoring-scheuren/\">scheuren monitoren</a>.</p>"
+      },
+      {
+        "id": "wat-wordt-vastgelegd",
+        "h2": "Wat wordt er bij een scheurmeting vastgelegd?",
+        "answer": "Locatie, richting, lengte, breedte, het verloop van de breedte en de omgeving van de scheur, aangevuld met foto's met maatstok en een schets.",
+        "body": "<dl class=\"def-list\"><div><dt>Locatie</dt><dd>Welke gevel of wand, op welke hoogte en ten opzichte van welk herkenningspunt, zoals een kozijnhoek of een aansluiting.</dd></div><div><dt>Richting</dt><dd>Verticaal, horizontaal, diagonaal of trapvormig door de voegen.</dd></div><div><dt>Lengte</dt><dd>Van begin- tot eindpunt; vaak worden de uiteinden gemarkeerd.</dd></div><div><dt>Breedte</dt><dd>Op een of meer vaste plekken langs de scheur.</dd></div><div><dt>Verloop</dt><dd>Loopt de scheur van breed naar smal, en aan welke kant is hij het breedst?</dd></div><div><dt>Door steen of voeg</dt><dd>Loopt de scheur door de stenen heen of volgt hij de voegen?</dd></div><div><dt>Omgeving</dt><dd>Is de scheur eerder gerepareerd, zit er vocht, roest of een aanbouw in de buurt?</dd></div></dl><div class=\"term-box\"><strong>Wat betekent het verloop van een scheur?</strong><p>Het verloop is de manier waarop de breedte verandert over de lengte. Een scheur die naar één kant breder wordt, geeft een aanwijzing over de richting waarin delen van de muur ten opzichte van elkaar bewogen hebben.</p><a href=\"/kennisbank/scheurpatronen/\">Lees meer over scheurpatronen</a></div>"
+      },
+      {
+        "id": "hulpmiddelen",
+        "h2": "Welke hulpmiddelen worden gebruikt?",
+        "answer": "Een maatstok of liniaal op de foto, een scheurmeter voor de breedte, en schetsen of plattegronden om de positie vast te leggen.",
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Foto met maatstok</h3><p>Een liniaal of meetlint naast de scheur maakt de foto achteraf meetbaar en vergelijkbaar.</p></div><div class=\"info-card\"><h3>Scheurmeter</h3><p>Een eenvoudig hulpmiddel om de breedte van een scheur af te lezen, ook geschikt om dezelfde plek later opnieuw te meten.</p></div><div class=\"info-card\"><h3>Schets of plattegrond</h3><p>Een tekening van de gevel of het vertrek met alle scheuren erop geeft overzicht dat losse foto's missen.</p></div></div>"
+      },
+      {
+        "id": "hoe-uitgevoerd",
+        "h2": "Hoe verloopt een scheurmeting stap voor stap?",
+        "answer": "Overzicht, detail, meten, markeren en vastleggen: in die volgorde ontstaat een volledige registratie.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Overzichtsfoto</strong><span>Eerst de hele gevel of wand, zodat de positie van de scheur duidelijk is.</span></li><li><strong>Detailfoto met maatstok</strong><span>Recht van voren, met liniaal of meetlint zichtbaar naast de scheur.</span></li><li><strong>Breedte meten</strong><span>Op vaste, herkenbare plekken, bijvoorbeeld het breedste punt en een punt halverwege.</span></li><li><strong>Uiteinden markeren</strong><span>Begin en eind van de scheur aangeven, zodat later te zien is of hij langer wordt.</span></li><li><strong>Noteren en tekenen</strong><span>Datum, richting, verloop en bijzonderheden op een schets of plattegrond zetten.</span></li></ol><div class=\"callout callout-tip\"><strong>Dezelfde hoek, hetzelfde licht</strong><p>Wie later opnieuw fotografeert, kan het beste vanaf dezelfde plek en bij vergelijkbaar licht werken. Dan zijn verschillen eerlijker te beoordelen.</p></div>"
+      },
+      {
+        "id": "wat-kan-het-aantonen",
+        "h2": "Wat kan een scheurmeting wel en niet aantonen?",
+        "answer": "Een scheurmeting legt de huidige toestand objectief vast, maar bewijst op zichzelf geen funderingsprobleem en zegt niets over groei.",
+        "body": "<div class=\"two-col-list\"><div><h3>Wel</h3><ul class=\"checklist\"><li>Een vastgelegde uitgangssituatie</li><li>Kenmerken die helpen bij het duiden van de oorzaak</li><li>Een basis om later te vergelijken</li></ul></div><div><h3>Niet</h3><ul class=\"checklist\"><li>Of de scheur groeit (daarvoor is herhaling nodig)</li><li>Of de oorzaak in de fundering ligt</li><li>Hoe ernstig de situatie is, los van andere signalen</li></ul></div></div><p>Veel scheuren hebben een andere oorzaak dan de fundering: krimp van materialen, temperatuurwerking, roestende lateien boven kozijnen of een aanbouw met een eigen fundering. Zie bijvoorbeeld <a href=\"/kennisbank/scheuren-boven-kozijnen/\">scheuren boven kozijnen</a> en <a href=\"/kennisbank/scheuren-bij-aanbouw/\">scheuren bij een aanbouw</a>.</p>"
+      },
+      {
+        "id": "verschil-met-scheurpatronen",
+        "h2": "Wat is het verschil tussen scheurmeting, scheurpatronen en monitoring?",
+        "answer": "Een scheurmeting kijkt naar één scheur op één moment; scheurpatronen kijken naar alle scheuren samen; monitoring kijkt naar veranderingen in de tijd.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Aanpak</th><th>Kernvraag</th></tr></thead><tbody><tr><td>Scheurmeting</td><td>Hoe ziet deze scheur er nu precies uit?</td></tr><tr><td><a href=\"/kennisbank/scheurpatronen/\">Scheurpatronen</a></td><td>Wat vertellen alle scheuren samen over de beweging van de woning?</td></tr><tr><td><a href=\"/kennisbank/monitoring-scheuren/\">Monitoring</a></td><td>Verandert de scheur na verloop van tijd?</td></tr></tbody></table></div>"
+      },
+      {
+        "id": "fase-0-en-fase-1",
+        "h2": "Hoe past een scheurmeting binnen fase 0 en fase 1?",
+        "answer": "In fase 0 worden scheuren en scheurpatronen visueel vastgelegd met foto's; in fase 1 worden ze uitgebreider vastgelegd en geduid in samenhang met de metingen.",
+        "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Scheuren worden gefotografeerd en beoordeeld in het rapport.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Scheurpatronen worden vastgelegd en geduid naast de hoogte- en loodmetingen.</span></a></div><p>Een <a href=\"/fase-0-funderingsonderzoek/\">quickscan</a> bevat al een visuele beoordeling van scheuren. In <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a> hoort het vastleggen en duiden van scheurpatronen bij de <a href=\"/funderingsmetingen/\">funderingsmetingen</a>.</p>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: twee scheuren, twee verhalen",
+        "answer": "Twee scheuren die op een foto op elkaar lijken, kunnen na een zorgvuldige meting een heel andere betekenis krijgen.",
+        "body": "<p>In een gevel zitten twee scheuren. De eerste loopt verticaal door de stenen midden in een lange gevel en is over de hele lengte ongeveer even breed; dat past bij bijvoorbeeld krimp of temperatuurwerking. De tweede loopt trapvormig door de voegen vanaf een kozijnhoek en wordt naar boven toe breder. Die tweede scheur krijgt meer aandacht, zeker als er in dezelfde hoek ook klemmende ramen of een helling in de vloer zijn. Pas samen met andere waarnemingen ontstaat een oordeel.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Kan ik zelf een scheurmeting doen?",
+        "a": "<p>Ja, een eenvoudige scheurmeting kun je zelf doen. Maak een overzichtsfoto en een detailfoto met liniaal, noteer de datum en markeer de uiteinden. Voor de duiding is een deskundige nodig.</p>"
+      },
+      {
+        "q": "Hoe meet je de breedte van een scheur?",
+        "a": "<p>Met een liniaal op de foto of met een scheurmeter op een vaste plek. Meet altijd op dezelfde plekken, zodat latere metingen vergelijkbaar zijn.</p>"
+      },
+      {
+        "q": "Welke scheurbreedte is gevaarlijk?",
+        "a": "<p>Daar is geen eenvoudige grens voor te geven. De betekenis van een scheur hangt af van patroon, richting, verloop, ontwikkeling in de tijd en andere signalen in de woning. Laat een scheur waar je je zorgen over maakt daarom beoordelen.</p>"
+      },
+      {
+        "q": "Waarom is het verloop van een scheur belangrijk?",
+        "a": "<p>Omdat het iets zegt over de beweging. Een scheur die naar één kant breder wordt, geeft een aanwijzing welk deel van de muur ten opzichte van het andere is verschoven.</p>"
+      },
+      {
+        "q": "Moet ik een scheur eerst laten repareren of eerst laten meten?",
+        "a": "<p>Leg een scheur eerst vast voordat je hem laat dichtzetten. Na reparatie is de oorspronkelijke vorm niet meer te zien, en een scheur die terugkomt is juist een belangrijk signaal.</p>"
+      },
+      {
+        "q": "Is een scheurmeting een schademelding?",
+        "a": "<p>Nee, een scheurmeting is een registratie, geen melding. Vermoed je schade door gaswinning in Groningen, dan meld je dat bij het <a href=\"https://www.schadedoormijnbouw.nl/\" rel=\"noopener\" target=\"_blank\">Instituut Mijnbouwschade Groningen</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/scheurpatronen/",
+        "label": "Scheurpatronen lezen",
+        "text": "Hoe alle scheuren samen iets zeggen over de beweging van de woning."
+      },
+      {
+        "href": "/kennisbank/monitoring-scheuren/",
+        "label": "Scheuren monitoren",
+        "text": "Een vastgelegde scheur in de tijd volgen met foto's en meetmerkjes."
+      },
+      {
+        "href": "/scheuren-in-gevel/",
+        "label": "Scheuren in de gevel",
+        "text": "Mogelijke oorzaken en wanneer onderzoek verstandig is."
+      }
+    ]
+  },
+  {
+    "path": "/kennisbank/monitoring-scheuren/",
+    "keyword": "scheuren monitoren",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/monitoring-scheuren/",
+        "name": "Scheuren monitoren"
+      }
+    ],
+    "eyebrow": "Kennisbank · Metingen",
+    "title": "Scheuren monitoren: zo volg je een scheur | MV Funderingsscan",
+    "description": "Scheuren monitoren? Met een stappenlijst, foto-logboek en meetmerkjes volg je zelf of een scheur groeit. Plus: wanneer je een specialist inschakelt.",
+    "h1": "Scheuren monitoren: een scheur in de tijd volgen",
+    "lead": "Scheuren monitoren betekent dat je dezelfde scheur op vaste momenten opnieuw vastlegt en vergelijkt. <strong>Zo zie je of een scheur groeit, gelijk blijft of met de seizoenen meebeweegt.</strong> Je kunt daar zelf mee beginnen met foto's met een liniaal, een datum en eventueel meetmerkjes; bij groei of twijfel is een beoordeling door een specialist verstandig.",
+    "hero_image": {
+      "name": "metselwerk-gevel-detail",
+      "alt": "Close-up van metselwerk en voegen in een bakstenen gevel"
+    },
+    "facts": [
+      {
+        "label": "Zelf te doen",
+        "value": "foto met liniaal, datum, herhalen na enkele maanden"
+      },
+      {
+        "label": "Hulpmiddelen",
+        "value": "scheurmeter, meetmerkjes, foto-logboek"
+      },
+      {
+        "label": "Mogelijk advies",
+        "value": "monitoren na fase 0 of fase 1"
+      }
+    ],
+    "article": true,
+    "sections": [
+      {
+        "id": "wat-is-monitoren",
+        "h2": "Wat betekent het om scheuren te monitoren?",
+        "answer": "Monitoren is het herhaald vastleggen van dezelfde scheuren op dezelfde manier, zodat veranderingen zichtbaar worden. Het verschil met een scheurmeting is de factor tijd.",
+        "body": "<p>Bij een <a href=\"/kennisbank/scheurmeting/\">scheurmeting</a> leg je een scheur één keer vast. Monitoring bouwt daarop voort: je herhaalt dezelfde meting na verloop van tijd en vergelijkt. Dat beantwoordt de vraag die voor veel bewoners het belangrijkst is: wordt het erger?</p><div class=\"term-box\"><strong>Wat betekent monitoring?</strong><p>Monitoring is het gedurende langere tijd volgen van een situatie met herhaalde, vergelijkbare metingen. In funderingsonderzoek gaat het om scheuren, hoogtes of scheefstand.</p><a href=\"/kennisbank/zettingsmeting/\">Lees ook over zettingsmeting</a></div>"
+      },
+      {
+        "id": "zelf-monitoren",
+        "h2": "Hoe monitor je zelf een scheur?",
+        "answer": "Leg de scheur vast met een overzichtsfoto en een detailfoto met liniaal, noteer de datum, markeer de uiteinden en herhaal dat na enkele maanden op precies dezelfde manier.",
+        "body": "<p>Gebruik deze lijst als werkwijze. Je kunt de stappen afvinken terwijl je bezig bent.</p><ul class=\"check-interactive\"><li>Geef elke scheur een eigen nummer en noteer waar hij zit</li><li>Maak een overzichtsfoto van de hele gevel of wand</li><li>Maak een detailfoto recht van voren met een liniaal of meetlint naast de scheur</li><li>Noteer de datum, en eventueel het weer en de temperatuur</li><li>Markeer met potlood de uiteinden van de scheur en zet de datum erbij</li><li>Kies vaste plekken waar je de breedte steeds opnieuw meet</li><li>Zet een herinnering om de meting na enkele maanden te herhalen</li><li>Fotografeer opnieuw vanaf dezelfde plek en vergelijk met de eerste foto</li></ul><div class=\"callout callout-tip\"><strong>Niet dichtsmeren tijdens het monitoren</strong><p>Een scheur die je dichtzet, kun je niet meer volgen. Wacht met herstel totdat duidelijk is of de scheur nog beweegt, tenzij er direct gevaar of lekkage is.</p></div>"
+      },
+      {
+        "id": "scheurmeter-en-meetmerkjes",
+        "h2": "Hoe werken een scheurmeter en meetmerkjes?",
+        "answer": "Een scheurmeter of een paar meetmerkjes aan weerszijden van de scheur maken het mogelijk om op exact dezelfde plek te zien of de scheur verandert.",
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Scheurmeter</h3><p>Een hulpmiddel dat over de scheur wordt bevestigd of ertegen wordt gehouden. Door de stand bij elke controle af te lezen, wordt verschuiving of verbreding zichtbaar.</p></div><div class=\"info-card\"><h3>Meetmerkjes</h3><p>Twee vaste punten aan weerszijden van de scheur. Door steeds de afstand tussen de merkjes te meten, vergelijk je altijd op dezelfde plek.</p></div><div class=\"info-card\"><h3>Potloodmarkering</h3><p>Een streep met datum bij de uiteinden laat eenvoudig zien of de scheur langer wordt.</p></div></div>"
+      },
+      {
+        "id": "foto-logboek",
+        "h2": "Hoe houd je een foto-logboek bij?",
+        "answer": "Een eenvoudig logboek per scheur, met datum, foto en een korte beschrijving, maakt veranderingen achteraf goed te vergelijken.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Kolom</th><th>Wat noteer je?</th></tr></thead><tbody><tr><td>Scheurnummer en plek</td><td>Bijvoorbeeld \"scheur 2, achtergevel, linksboven keukenraam\"</td></tr><tr><td>Datum</td><td>De dag van de foto en meting</td></tr><tr><td>Foto's</td><td>Bestandsnaam van overzichts- en detailfoto</td></tr><tr><td>Breedte en lengte</td><td>Afgelezen op de vaste plekken en tot aan de markering</td></tr><tr><td>Bijzonderheden</td><td>Nieuwe scheurtjes, klemmende deuren, vocht, weersomstandigheden</td></tr></tbody></table></div><p>Bewaar het logboek samen met de foto's in één map. Als je later een specialist inschakelt, is dit waardevolle informatie bij een <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>.</p>"
+      },
+      {
+        "id": "hoe-interpreteren",
+        "h2": "Hoe lees je de uitkomst van je eigen monitoring?",
+        "answer": "Blijft een scheur gelijk, dan is dat geruststellend; groeit hij, of verschijnen er nieuwe scheuren, dan is een deskundige beoordeling verstandig.",
+        "body": "<div class=\"mini-outcomes\"><div class=\"mini-outcome mini-ok\"><strong>Geen verandering</strong><span>De scheur blijft gelijk; blijf af en toe controleren.</span></div><div class=\"mini-outcome mini-watch\"><strong>Seizoensbeweging</strong><span>De scheur gaat open en dicht met de seizoenen; dat past vaak bij temperatuur of krimp en zwel van klei.</span></div><div class=\"mini-outcome mini-extra\"><strong>Nieuwe scheuren</strong><span>Er komen scheuren bij in dezelfde hoek of gevel; laat het patroon beoordelen.</span></div><div class=\"mini-outcome mini-next\"><strong>Groeiende scheur</strong><span>Langer of breder bij elke controle; schakel een specialist in.</span></div></div><p>Wees voorzichtig met conclusies. Kleine verschillen kunnen ook ontstaan door een andere fotohoek of ander licht. Lees bij <a href=\"/scheuren-in-gevel/\">scheuren in de gevel</a> welke oorzaken er naast de fundering kunnen spelen.</p>"
+      },
+      {
+        "id": "wanneer-professioneel",
+        "h2": "Wanneer schakel je een specialist in?",
+        "answer": "Als een scheur groeit, als er nieuwe scheuren bijkomen, als scheuren samengaan met klemmende deuren of scheefstand, of als je de woning wilt kopen of verkopen.",
+        "body": "<ul class=\"checklist\"><li>De scheur wordt bij herhaling langer of breder</li><li>Een gerepareerde scheur komt terug</li><li>Er zijn ook klemmende deuren of ramen, of een helling in de vloer</li><li>De scheur loopt diagonaal of trapvormig vanaf een kozijnhoek</li><li>Je staat op het punt een woning te kopen of te verkopen</li></ul><p>Twijfel je of jouw situatie reden is voor onderzoek? Doe de <a href=\"/funderingsscan-check/\">online funderingscheck</a> of neem <a href=\"/contact/\">contact</a> op.</p>"
+      },
+      {
+        "id": "fase-0-en-fase-1",
+        "h2": "Hoe past monitoring binnen fase 0 en fase 1?",
+        "answer": "Monitoren is een van de mogelijke adviezen na fase 0, en ook na fase 1 kan het advies zijn om de situatie te volgen.",
+        "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Uitkomst kan zijn: monitoren, met advies over wat je volgt.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Metingen en vastgelegde scheurpatronen dienen als vertrekpunt voor monitoring.</span></a></div><p>Professionele monitoring kan naast scheuren ook hoogtes omvatten, zoals beschreven bij <a href=\"/kennisbank/zettingsmeting/\">zettingsmeting</a>. In <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a> worden de <a href=\"/funderingsmetingen/\">funderingsmetingen</a> uitgevoerd die als nulmeting kunnen dienen.</p>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: een scheur in de achtergevel volgen",
+        "answer": "Een paar keer zorgvuldig vastleggen kan het verschil maken tussen onnodige zorgen en tijdig ingrijpen.",
+        "body": "<p>Een bewoner ziet in het voorjaar een diagonale scheur boven het keukenraam. Ze maakt een detailfoto met liniaal, zet potloodstreepjes bij de uiteinden en noteert de datum. Na enkele maanden blijkt de scheur in de zomer iets wijder en in de winter weer iets smaller, zonder langer te worden. Dat wijst eerder op werking van materialen dan op doorgaande zakking. Toch laat ze de scheur bij een quickscan beoordelen, omdat er ook een roestende latei boven het raam zichtbaar is. Haar logboek helpt de inspecteur om sneller een goed beeld te krijgen.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Hoe vaak moet ik een scheur controleren?",
+        "a": "<p>Een goede start is om de meting na enkele maanden te herhalen. Door ook in verschillende seizoenen te meten, zie je of de scheur alleen meebeweegt met temperatuur en vocht of echt groeit.</p>"
+      },
+      {
+        "q": "Wat is een scheurmeter?",
+        "a": "<p>Een scheurmeter is een eenvoudig hulpmiddel om de breedte of verschuiving van een scheur af te lezen. Omdat je steeds op dezelfde plek meet, zie je kleine veranderingen beter dan op een foto alleen.</p>"
+      },
+      {
+        "q": "Kan ik meetmerkjes zelf aanbrengen?",
+        "a": "<p>Ja, eenvoudige meetmerkjes of potloodmarkeringen kun je zelf aanbrengen. Zet ze aan weerszijden van de scheur op een plek die je steeds terugvindt, en noteer de datum.</p>"
+      },
+      {
+        "q": "Is een scheur die met de seizoenen meebeweegt een funderingsprobleem?",
+        "a": "<p>Niet per se. Scheuren die in de zomer en winter iets openen en sluiten, passen vaak bij temperatuurwerking of krimp en zwel van kleigrond. Laat het beoordelen als de scheur over het geheel genomen groter wordt.</p>"
+      },
+      {
+        "q": "Moet ik de scheur dichtmaken tijdens het monitoren?",
+        "a": "<p>Liever niet, want dan kun je niet meer zien of hij beweegt. Alleen als er lekkage of direct gevaar is, is snel herstel verstandig; leg de scheur dan eerst goed vast.</p>"
+      },
+      {
+        "q": "Wordt mijn eigen logboek gebruikt bij een funderingsonderzoek?",
+        "a": "<p>Ja, dat is vaak nuttige informatie. Een reeks gedateerde foto's helpt de inspecteur om de ontwikkeling van scheuren in te schatten. Neem het mee als je een <a href=\"/funderingsscan-aanvragen/\">funderingsscan aanvraagt</a>.</p>"
+      },
+      {
+        "q": "Wat als ik nieuwe scheuren ontdek tijdens het monitoren?",
+        "a": "<p>Geef ze een eigen nummer en leg ze op dezelfde manier vast. Nieuwe scheuren in dezelfde hoek of gevel zijn een reden om het patroon te laten beoordelen.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/scheurmeting/",
+        "label": "Scheurmeting",
+        "text": "Hoe je één scheur op één moment volledig vastlegt."
+      },
+      {
+        "href": "/scheuren-in-gevel/",
+        "label": "Scheuren in de gevel",
+        "text": "Oorzaken van gevelscheuren en wanneer onderzoek zinvol is."
+      },
+      {
+        "href": "/funderingsscan-check/",
+        "label": "Online funderingscheck",
+        "text": "Ontdek in een paar vragen of onderzoek verstandig is."
+      }
+    ]
+  },
+  {
+    "path": "/kennisbank/maaiveldhoogte/",
+    "keyword": "maaiveldhoogte",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/maaiveldhoogte/",
+        "name": "Maaiveldhoogte"
+      }
+    ],
+    "eyebrow": "Kennisbank · Metingen",
+    "title": "Maaiveldhoogte rond je woning: wat zegt het? | MV Funderingsscan",
+    "description": "Wat is maaiveldhoogte en wat betekent een verzakt maaiveld rond je woning? Over bodemdaling, inklinking en wat het wel en niet zegt over je fundering.",
+    "h1": "Maaiveldhoogte: wat een verzakt terrein rond je woning wel en niet zegt",
+    "lead": "De maaiveldhoogte is de hoogte van het terrein rondom je woning. <strong>Een verzakt maaiveld kan wijzen op bodemdaling of inklinking</strong> van de ondergrond, bijvoorbeeld in veengebieden. Het zegt echter niet automatisch iets over je fundering: een woning op palen kan stabiel staan terwijl de tuin eromheen zakt. Daarom wordt het maaiveld altijd in samenhang met andere signalen beoordeeld.",
+    "hero_image": {
+      "name": "jaren-dertig-woningen-straat",
+      "alt": "Rij jaren-dertigwoningen in een groene straat"
+    },
+    "facts": [
+      {
+        "label": "Maaiveld",
+        "value": "hoogte van het terrein rond de woning"
+      },
+      {
+        "label": "Gemeten",
+        "value": "relatief of ten opzichte van NAP"
+      },
+      {
+        "label": "Relevant bij",
+        "value": "veen, klei, bodemdaling"
+      }
+    ],
+    "article": true,
+    "sections": [
+      {
+        "id": "wat-is-maaiveld",
+        "h2": "Wat is het maaiveld?",
+        "answer": "Het maaiveld is het oppervlak van het terrein: de bovenkant van de grond rond je woning, zoals tuin, stoep en straat.",
+        "body": "<p>In bouw en funderingsonderzoek wordt het maaiveld gebruikt als verwijzing: hoe hoog ligt de vloer boven het terrein, hoe diep zit de fundering onder het maaiveld, en ligt de straat nog op dezelfde hoogte als de drempel? De maaiveldhoogte kan relatief ten opzichte van de woning worden bepaald, of ten opzichte van NAP. Hoe dat meten in zijn werk gaat, lees je bij <a href=\"/kennisbank/hoogtemeting/\">hoogtemeting</a>.</p><div class=\"term-box\"><strong>Wat betekent inklinking?</strong><p>Inklinking is het in elkaar zakken van slappe grond, zoals veen of klei, onder zijn eigen gewicht of door belasting en ontwatering. Het maaiveld komt daardoor lager te liggen.</p><a href=\"/kennisbank/bodemdaling/\">Lees meer over bodemdaling</a></div>"
+      },
+      {
+        "id": "verzakt-maaiveld-herkennen",
+        "h2": "Hoe herken je een verzakt maaiveld?",
+        "answer": "Signalen zijn onder meer een spleet tussen gevel en bestrating, een drempel die steeds hoger boven de stoep uitsteekt en verzakte tegels langs de woning.",
+        "body": "<ul class=\"checklist\"><li>Een kier of spleet tussen de gevel en de bestrating</li><li>Een voordeurdrempel of stoep die steeds hoger boven het terrein ligt</li><li>Tegels of klinkers die langs de woning wegzakken of scheef liggen</li><li>Leidingen of regenpijpen die bij de aansluiting op de grond lijken te worden opgerekt</li><li>Een tuin die vaker of langer onder water staat dan vroeger</li></ul><p>Opvallend is dat bij woningen op palen juist de omgeving zakt, terwijl de woning zelf op hoogte blijft. Dan lijkt het alsof het huis \"omhoog komt\", terwijl in werkelijkheid het terrein daalt.</p>"
+      },
+      {
+        "id": "relatie-bodemdaling",
+        "h2": "Wat is de relatie tussen maaiveld, bodemdaling en inklinking?",
+        "answer": "Een dalend maaiveld is vaak het zichtbare gevolg van bodemdaling. In veengebieden speelt daarbij inklinking en oxidatie van veen een rol, in kleigebieden krimp bij droogte.",
+        "body": "<p>Veen klinkt in en oxideert als het droogvalt; daardoor daalt de bodem geleidelijk. Klei krimpt bij droogte en zwelt bij nat weer. Zand is meestal stabieler. In Friesland liggen grote veengebieden in het midden en zuidoosten, en ook in Groningen is in de Veenkoloniën de ondergrond van oorsprong veen. Meer achtergrond vind je bij <a href=\"/kennisbank/veenbodem/\">veenbodem</a> en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>.</p><div class=\"callout callout-note\"><strong>Bodemdaling is een gebiedsverschijnsel</strong><p>Bodemdaling speelt meestal in een hele buurt of polder, niet bij één huis. Gegevens over de omgeving zijn daarom een vast onderdeel van het archief- en bodemonderzoek in fase 0.</p></div>"
+      },
+      {
+        "id": "wat-zegt-het-over-fundering",
+        "h2": "Wat zegt een verzakt maaiveld wel en niet over je fundering?",
+        "answer": "Een verzakt maaiveld vertelt iets over de bodem rond de woning, maar niet direct over de staat van de fundering zelf.",
+        "body": "<div class=\"two-col-list\"><div><h3>Het kan wijzen op</h3><ul class=\"checklist\"><li>Bodemdaling of inklinking in de omgeving</li><li>Veranderende omstandigheden in de ondergrond</li><li>Een reden om grondwater en funderingstype nader te bekijken</li></ul></div><div><h3>Het zegt niet</h3><ul class=\"checklist\"><li>Dat de fundering beschadigd is</li><li>Hoe het met eventuele <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a> gaat</li><li>Of de woning zelf zakt</li></ul></div></div><p>Bij een <a href=\"/kennisbank/fundering-op-staal/\">fundering op staal</a>, die direct op de ondergrond rust, kan een dalende bodem wel gevolgen hebben voor de woning zelf. Bij een woning op houten palen is vooral de vraag of de grondwaterstand meedaalt, omdat paalkoppen dan droog kunnen komen te staan. Lees meer over <a href=\"/kennisbank/grondwatermeting/\">grondwatermeting</a>.</p>"
+      },
+      {
+        "id": "hoe-wordt-het-beoordeeld",
+        "h2": "Hoe wordt het maaiveld beoordeeld in funderingsonderzoek?",
+        "answer": "In fase 0 wordt het maaiveld visueel bekeken en gecombineerd met gegevens over bodem en bodemdaling; in fase 1 kan de hoogte worden meegenomen in de metingen.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Kijken</strong><span>Aansluiting tussen gevel en terrein, drempels, bestrating en hemelwaterafvoer.</span></li><li><strong>Bronnen raadplegen</strong><span>Bodemkaarten en openbare gegevens over bodemdaling in de omgeving.</span></li><li><strong>Vergelijken</strong><span>Het terrein afzetten tegen de woning: zakken ze samen, of zakt alleen de omgeving?</span></li><li><strong>Duiden</strong><span>De bevindingen worden bekeken in samenhang met funderingstype, grondwater en scheuren.</span></li></ol>"
+      },
+      {
+        "id": "fase-0-en-fase-1",
+        "h2": "Hoe past maaiveldhoogte binnen fase 0 en fase 1?",
+        "answer": "Maaiveld en bodemdaling horen bij het bodemonderzoek en de visuele inspectie van fase 0; waar nodig wordt het in fase 1 meegenomen in de metingen.",
+        "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Bodem, bodemdaling en de aansluiting van het terrein worden beoordeeld.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Hoogtemetingen aan de woning, waar zinvol in relatie tot het terrein.</span></a></div><p>Wil je weten hoe de bodem onder en rond je woning ervoor staat? Dat is een vast onderdeel van een <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>. Het overzicht van metingen staat bij <a href=\"/funderingsmetingen/\">funderingsmetingen</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Wat is het verschil tussen maaiveld en vloerpeil?",
+        "a": "<p>Het maaiveld is de hoogte van het terrein; het vloerpeil is de hoogte van de begane grondvloer. Het verschil daartussen verandert als het terrein zakt en de woning niet, of andersom.</p>"
+      },
+      {
+        "q": "Mijn tuin zakt, maar mijn huis niet. Is dat erg?",
+        "a": "<p>Dat is vaak een teken van bodemdaling rond een woning die op palen staat. Het hoeft geen probleem voor de woning te zijn, maar het is wel een reden om te letten op de grondwaterstand en eventuele andere signalen.</p>"
+      },
+      {
+        "q": "Kan ik zelf zien of het maaiveld zakt?",
+        "a": "<p>Ja, aan signalen zoals een kier tussen gevel en bestrating of een steeds hogere drempel. Foto's met datum helpen om de ontwikkeling te volgen.</p>"
+      },
+      {
+        "q": "Is ophogen van de tuin een oplossing?",
+        "a": "<p>Ophogen herstelt het terrein, maar verandert niets aan de oorzaak in de ondergrond. Extra grondgewicht kan bij slappe grond bovendien leiden tot verdere inklinking; overleg daarom eerst.</p>"
+      },
+      {
+        "q": "Wat is NAP en waarom wordt het gebruikt?",
+        "a": "<p>NAP is het landelijke referentievlak voor hoogtes. Door de maaiveldhoogte aan NAP te koppelen, kun je haar vergelijken met kaarten en eerdere gegevens over de omgeving.</p>"
+      },
+      {
+        "q": "Speelt maaivelddaling ook in Groningen?",
+        "a": "<p>Ja, bodembeweging speelt in delen van Groningen, onder meer door gaswinning en in de veengebieden. Schade door gaswinning meld je bij het IMG; een funderingsscan is geen schademelding.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/bodemdaling/",
+        "label": "Bodemdaling",
+        "text": "Waarom de bodem in delen van Friesland en Groningen daalt."
+      },
+      {
+        "href": "/kennisbank/veenbodem/",
+        "label": "Veenbodem",
+        "text": "Hoe veen inklinkt en wat dat betekent voor woningen."
+      },
+      {
+        "href": "/kennisbank/grondwatermeting/",
+        "label": "Grondwatermeting",
+        "text": "Hoe grondwaterstanden worden gemeten en waarom dat ertoe doet."
+      }
+    ]
+  },
+  {
+    "path": "/kennisbank/grondwatermeting/",
+    "keyword": "grondwatermeting",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/grondwatermeting/",
+        "name": "Grondwatermeting"
+      }
+    ],
+    "eyebrow": "Kennisbank · Metingen",
+    "title": "Grondwatermeting en je fundering: peilbuizen | MV Funderingsscan",
+    "description": "Hoe wordt de grondwaterstand gemeten? Over peilbuizen, meetnetten van overheden en waterschap, en waarom grondwater ertoe doet voor houten palen en zetting.",
+    "h1": "Grondwatermeting: hoe de grondwaterstand wordt gemeten en waarom dat telt",
+    "lead": "Bij een grondwatermeting wordt de stand van het grondwater bepaald, meestal in een peilbuis. Gemeenten, waterschappen en provincies houden vaak meetnetten bij. <strong>Voor funderingsonderzoek is dat relevant</strong> omdat houten palen permanent onder water moeten staan en omdat een dalende grondwaterstand zetting van veen en klei kan versnellen.",
+    "hero_image": {
+      "name": "vooroorlogse-woning-voordeur",
+      "alt": "Klassieke voordeur in een bakstenen gevel van een vooroorlogse woning"
+    },
+    "facts": [
+      {
+        "label": "Meetmiddel",
+        "value": "peilbuis"
+      },
+      {
+        "label": "Bronnen",
+        "value": "meetnetten van gemeente, waterschap, provincie"
+      },
+      {
+        "label": "Rol",
+        "value": "onderdeel van archief- en bodemonderzoek in fase 0"
+      }
+    ],
+    "article": true,
+    "sections": [
+      {
+        "id": "wat-is-grondwaterstand",
+        "h2": "Wat is de grondwaterstand?",
+        "answer": "De grondwaterstand is het niveau tot waar de grond met water verzadigd is. Die stand is niet vast, maar beweegt met seizoenen, neerslag en peilbeheer.",
+        "body": "<p>Onder vrijwel elke woning in Friesland en Groningen zit op enige diepte grondwater. In natte perioden stijgt de stand, in droge perioden daalt die. Daarnaast speelt het peilbeheer van het waterschap een rol: in polders wordt het oppervlaktewater op een bepaald peil gehouden, wat invloed heeft op het grondwater in de omgeving. Meer over de samenhang lees je bij <a href=\"/kennisbank/grondwater-en-fundering/\">grondwater en fundering</a> en <a href=\"/kennisbank/peilverschillen/\">peilverschillen</a>.</p><div class=\"term-box\"><strong>Wat betekent een peilbuis?</strong><p>Een peilbuis is een buis in de grond met een geperforeerd deel onderaan, waarin het grondwater kan instromen. Door de waterstand in de buis te meten, weet je hoe hoog het grondwater op die plek staat.</p></div>"
+      },
+      {
+        "id": "hoe-wordt-gemeten",
+        "h2": "Hoe wordt grondwater gemeten?",
+        "answer": "Grondwaterstanden worden gemeten in peilbuizen, met de hand of met een automatische meter die regelmatig de stand registreert.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Peilbuis plaatsen</strong><span>Een buis wordt tot onder de grondwaterstand in de grond gebracht.</span></li><li><strong>Stand meten</strong><span>De waterstand in de buis wordt gemeten, met de hand of automatisch.</span></li><li><strong>Vastleggen</strong><span>De meting wordt vastgelegd, vaak ten opzichte van NAP of het maaiveld.</span></li><li><strong>Reeks opbouwen</strong><span>Door steeds opnieuw te meten ontstaat een beeld van hoge en lage standen door het jaar heen.</span></li></ol><p>Eén meting is ook hier een momentopname. Pas een reeks laat zien hoe laag het grondwater in droge perioden kan komen, en dat is voor funderingen vaak de belangrijkste vraag.</p>"
+      },
+      {
+        "id": "meetnetten",
+        "h2": "Wie meet de grondwaterstand?",
+        "answer": "Gemeenten, waterschappen en provincies beheren vaak meetnetten met peilbuizen. Die gegevens zijn in veel gevallen openbaar te raadplegen.",
+        "body": "<p>In Friesland voert het waterschap (Wetterskip Fryslân) het peilbeheer uit. Daarnaast hebben gemeenten en provincies vaak eigen meetpunten, bijvoorbeeld in stadskernen met veel oudere bebouwing. Het aantal peilbuizen verschilt per gebied: in de ene wijk staat er een vlakbij, in een andere is de dichtstbijzijnde meting verder weg. Dat bepaalt hoe goed openbare gegevens iets zeggen over de situatie bij een specifieke woning.</p><div class=\"callout callout-warn\"><strong>Openbare gegevens zijn een indicatie</strong><p>Een peilbuis in de buurt zegt iets over het gebied, niet precies over de grond onder jouw woning. Lokale verschillen in bodem, drainage of riolering kunnen invloed hebben.</p></div>"
+      },
+      {
+        "id": "belang-voor-houten-palen",
+        "h2": "Waarom is grondwater belangrijk voor houten palen?",
+        "answer": "Houten palen blijven goed zolang ze permanent onder water staan. Bij een lage grondwaterstand kunnen paalkoppen droog komen te staan, waardoor schimmels het hout kunnen aantasten.",
+        "body": "<p>Woningen van vóór circa 1970 staan vaker op <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a>. Onder water is hout lange tijd goed bestand tegen aantasting, hoewel ook daar bacteriële aantasting langzaam kan optreden. Komt de bovenkant van de palen droog te staan, dan krijgen schimmels de kans; dat heet <a href=\"/kennisbank/paalrot/\">paalrot</a>. Een woning met houten palen heeft niet automatisch problemen, maar de grondwaterstand is wel een van de belangrijkste factoren in de <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a>.</p>"
+      },
+      {
+        "id": "belang-voor-zetting",
+        "h2": "Wat is de invloed van grondwater op zetting?",
+        "answer": "Daalt het grondwater, dan kan veen gaan oxideren en inklinken en kan klei krimpen. Dat kan zetting versnellen, vooral bij woningen die op staal gefundeerd zijn.",
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Veen</h3><p>Valt veen droog, dan oxideert en klinkt het in. De bodem daalt en woningen op staal kunnen mee zakken.</p></div><div class=\"info-card\"><h3>Klei</h3><p>Klei krimpt bij droogte en zwelt bij nat weer. Wisselende grondwaterstanden kunnen zo beweging veroorzaken.</p></div><div class=\"info-card\"><h3>Zand</h3><p>Zand is meestal stabieler en reageert minder sterk op wisselingen in de grondwaterstand.</p></div></div>"
+      },
+      {
+        "id": "rol-in-archiefonderzoek",
+        "h2": "Welke rol speelt grondwater in archiefonderzoek?",
+        "answer": "In fase 0 worden openbare gegevens over grondwater samen met bouwjaar, funderingstype en bodemopbouw gebruikt om het risico in te schatten.",
+        "body": "<p>Een funderingsscan bevat geen eigen grondwatermeting met een nieuwe peilbuis. Wel wordt in het <a href=\"/kennisbank/archiefonderzoek-fundering/\">archiefonderzoek</a> gekeken naar beschikbare gegevens over grondwater en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a> in de omgeving. In combinatie met het vermoedelijke funderingstype levert dat een belangrijke bouwsteen voor de risico-inschatting. Ontbreken bruikbare gegevens, dan wordt dat als beperking in het rapport genoemd.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek met openbare grondwatergegevens.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Metingen aan de woning, als fase 0 daar aanleiding voor geeft.</span></a></div><p>Een overzicht van de metingen in fase 1 vind je bij <a href=\"/funderingsmetingen/\">funderingsmetingen</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Kan ik de grondwaterstand bij mijn woning zelf opzoeken?",
+        "a": "<p>Vaak wel, via openbare gegevens van gemeente, waterschap of provincie. Houd er rekening mee dat een meetpunt in de buurt een indicatie geeft en niet precies de situatie onder jouw woning.</p>"
+      },
+      {
+        "q": "Meet een funderingsscan de grondwaterstand?",
+        "a": "<p>Nee, er wordt geen eigen peilbuis geplaatst. In fase 0 worden wel beschikbare gegevens over grondwater meegenomen in het archief- en bodemonderzoek.</p>"
+      },
+      {
+        "q": "Is een lage grondwaterstand altijd slecht voor houten palen?",
+        "a": "<p>Niet altijd. Het risico ontstaat vooral als de paalkoppen langere tijd droog staan. Hoe diep de palen zitten, is per woning verschillend en vaak alleen met nader onderzoek vast te stellen.</p>"
+      },
+      {
+        "q": "Wie bepaalt het waterpeil in mijn omgeving?",
+        "a": "<p>In polders regelt het waterschap het peil van het oppervlaktewater. In Friesland is dat Wetterskip Fryslân. Dat peil heeft invloed op het grondwater in de omgeving.</p>"
+      },
+      {
+        "q": "Waarom is een reeks metingen belangrijker dan één meting?",
+        "a": "<p>Omdat de grondwaterstand door het jaar heen schommelt. Voor houten palen is vooral van belang hoe laag het grondwater in droge perioden komt.</p>"
+      },
+      {
+        "q": "Wat als ik vocht in mijn kruipruimte heb?",
+        "a": "<p>Vocht of water in de kruipruimte kan veel oorzaken hebben en zegt niet direct iets over de grondwaterstand bij de palen. Tijdens een quickscan wordt de kruipruimte bekeken voor zover die toegankelijk is.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/grondwater-en-fundering/",
+        "label": "Grondwater en fundering",
+        "text": "Hoe grondwater de stabiliteit van een fundering beïnvloedt."
+      },
+      {
+        "href": "/kennisbank/paalrot/",
+        "label": "Paalrot",
+        "text": "Wat paalrot is en wanneer houten palen risico lopen."
+      },
+      {
+        "href": "/kennisbank/archiefonderzoek-fundering/",
+        "label": "Archiefonderzoek",
+        "text": "Welke bronnen worden geraadpleegd bij fase 0."
+      }
+    ]
+  }
+]

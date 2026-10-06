@@ -1,0 +1,607 @@
+[
+  {
+    "path": "/kennisbank/peilverschillen/",
+    "title": "Peilverschillen en grondwaterpeil | MV Funderingsscan",
+    "description": "Hoe grondwaterpeil, polderpeil en peilbeheer door het waterschap je fundering kunnen raken, wat dalende peilen doen en wat je als eigenaar zelf kunt doen.",
+    "keyword": "grondwaterpeil fundering",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/peilverschillen/",
+        "name": "Peilverschillen"
+      }
+    ],
+    "eyebrow": "Kennisbank · Water en bodem",
+    "h1": "Peilverschillen: wat het grondwaterpeil met je fundering doet",
+    "lead": "Peilverschillen zijn veranderingen in de hoogte van het water onder en rond je woning: het <strong>grondwaterpeil</strong> in de bodem en het <strong>polderpeil</strong> in sloten en vaarten, dat het waterschap beheert. Voor de fundering telt vooral of het peil stabiel blijft. Dalende of sterk wisselende peilen kunnen houten palen droog zetten en veen en klei laten bewegen, maar zeggen op zichzelf nog niets over jouw woning.",
+    "hero_image": {
+      "name": "jaren-dertig-woningen-straat",
+      "alt": "Rij jaren-dertigwoningen in een groene straat"
+    },
+    "article": true,
+    "sections": [
+      {
+        "id": "wat-zijn-peilverschillen",
+        "h2": "Wat zijn peilverschillen?",
+        "answer": "Met peilverschillen bedoelen we hoogteverschillen in het water: tussen seizoenen, tussen het oppervlaktewater en het grondwater, of tussen het peil van vroeger en dat van nu.",
+        "body": "<p>Er spelen twee soorten water een rol. Het <strong>oppervlaktewater</strong> staat in sloten, vaarten en grachten. Het <strong>grondwater</strong> zit in de bodem, ook onder je woning. Beide hangen samen, maar niet één op één: verharding, drainage of lekkende riolering kunnen het grondwater plaatselijk lager houden dan het slootpeil.</p>\n<div class=\"term-box\"><strong>Wat betekent polderpeil?</strong><p>Het polderpeil is de waterstand die het waterschap in een gebied nastreeft in het oppervlaktewater. Het is een streefwaarde, geen vaste waterstand: in de praktijk schommelt het water rond dat peil.</p></div>\n<p>Een bredere uitleg over water onder je huis lees je bij <a href=\"/kennisbank/grondwater-en-fundering/\">grondwater en fundering</a>.</p>"
+      },
+      {
+        "id": "wie-beheert-het-peil",
+        "h2": "Wie bepaalt het waterpeil in jouw buurt?",
+        "answer": "Het peil van het oppervlaktewater in polders wordt beheerd door het waterschap; het grondwater onder je woning volgt dat peil deels, maar wordt ook beïnvloed door neerslag, verdamping, bebouwing en drainage.",
+        "body": "<p>In Friesland is dat Wetterskip Fryslân. Het waterschap stelt per gebied vast welk peil het wil aanhouden en regelt dat met gemalen, stuwen en sluizen. Daarbij weegt het verschillende belangen af, zoals landbouw, natuur en bebouwing.</p>\n<p>Het grondwater onder je woning is lastiger te sturen. Gemeenten, waterschappen en provincies houden daarom vaak <strong>meetnetten met peilbuizen</strong> bij. Hoe dat werkt, lees je bij <a href=\"/kennisbank/grondwatermeting/\">grondwatermeting</a>.</p>"
+      },
+      {
+        "id": "wisselende-en-dalende-peilen",
+        "h2": "Waarom wisselen en dalen peilen?",
+        "answer": "Peilen schommelen met de seizoenen en kunnen in droge perioden extra zakken; in veenweidegebieden kan het peil daarnaast langzaam meebewegen met de dalende bodem.",
+        "body": "<p>In de zomer zakt het grondwater door verdamping en minder regen; in de winter vult het zich weer aan. Zo'n seizoensritme is normaal. Belangrijker voor een fundering is of het water <strong>lager uitzakt dan vroeger</strong>, of het vaker en langer laag staat, en of er plaatselijke ingrepen zijn geweest, zoals nieuwe drainage.</p>\n<p>In veenweidegebieden, zoals in het midden en zuidoosten van Friesland, speelt nog iets. Veen dat droogvalt, klinkt in en oxideert. Daardoor daalt het maaiveld. Wordt het peil daarna aangepast aan de lagere bodem, dan kan het veen opnieuw droogvallen. Meer over dit proces lees je bij <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>.</p>"
+      },
+      {
+        "id": "gevolgen-voor-houten-palen",
+        "h2": "Wat betekent een lager peil voor houten palen?",
+        "answer": "Houten palen blijven goed zolang ze permanent onder water staan; zakt het grondwater tot onder de paalkoppen, dan kunnen schimmels het hout aantasten.",
+        "body": "<p>Zolang het hout onder water staat, krijgen schimmels weinig kans. Komen de paalkoppen geregeld droog te staan, dan kan <a href=\"/kennisbank/paalrot/\">paalrot</a> ontstaan. Ook onder water kan bacteriële aantasting optreden, maar dat gaat meestal langzaam.</p>\n<p>Een woning met houten palen heeft niet automatisch problemen. De staat van het hout stel je alleen vast met een inspectieput en houtonderzoek, en dat valt buiten een quickscan. Achtergrond over dit funderingstype vind je bij <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a>.</p>"
+      },
+      {
+        "id": "gevolgen-voor-veen-en-klei",
+        "h2": "En wat doen peilverschillen met veen en klei?",
+        "answer": "Veen klinkt in en oxideert als het droogvalt, klei krimpt bij droogte en zwelt weer bij nat weer; bij een fundering op staal kan die beweging rechtstreeks doorwerken in de woning.",
+        "body": "<p>Woningen die direct op de ondergrond rusten, een <a href=\"/kennisbank/fundering-op-staal/\">fundering op staal</a>, volgen de bodem. Lastig wordt het als de ene kant meer beweegt dan de andere, bijvoorbeeld omdat er onder een deel van het huis meer veen zit. Dan ontstaat <a href=\"/kennisbank/ongelijke-zetting/\">ongelijke zetting</a>, en die is schadelijker dan gelijkmatige daling.</p>\n<p>Veenbeweging is vaak blijvend, kleibeweging deels seizoensgebonden. Op zand speelt dit meestal minder. Zie ook <a href=\"/kennisbank/veenbodem/\">veenbodem</a> en <a href=\"/kennisbank/kleibodem/\">kleibodem</a>.</p>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: een woning in een veenweidegebied",
+        "answer": "Een denkbeeldig voorbeeld laat zien dat een dalend peil een aanleiding kan zijn om te kijken, maar geen conclusie.",
+        "body": "<p>Stel: je woont in een vooroorlogse rijwoning aan de rand van een Fries veenweidegebied. De sloot achter de tuin staat in de zomer lager dan vroeger en het tuinpad is wat weggezakt. In huis zie je geen nieuwe scheuren.</p>\n<p>Een verzakt maaiveld kan wijzen op inklinking, maar zegt niet automatisch iets over de fundering. Logische stappen zijn uitzoeken hoe de woning gefundeerd is, welke grondwatergegevens er zijn en of de gevel vervorming toont. Dat combineert een <a href=\"/quickscan-fundering/\">quickscan fundering</a>.</p>"
+      },
+      {
+        "id": "wat-kun-je-zelf-doen",
+        "h2": "Wat kun je als eigenaar zelf doen?",
+        "answer": "Verzamel informatie over het peil en je woning, let op signalen in en om het huis, en laat bij twijfel een vooronderzoek doen.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Informeer bij het waterschap en de gemeente</strong><span>Vraag naar het peilbeheer en naar grondwatermetingen in de buurt.</span></li><li><strong>Zoek uit hoe je woning gefundeerd is</strong><span>Het gemeentelijke bouwarchief kan tekeningen bevatten. Zie <a href=\"/kennisbank/archiefonderzoek-fundering/\">archiefonderzoek fundering</a>.</span></li><li><strong>Kijk rond en leg vast</strong><span>Maak foto's van scheuren en het maaiveld, met datum erbij.</span></li><li><strong>Laat een vooronderzoek doen</strong><span>Een fase 0 brengt funderingstype, bodem, grondwater en zichtbare signalen samen in één <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a>.</span></li></ol>\n<div class=\"callout callout-warn\"><strong>Geen eigen ingrepen</strong><p>Pompen of draineren rond de fundering zonder deskundig advies kan de situatie verergeren.</p></div>"
+      },
+      {
+        "id": "wanneer-onderzoek",
+        "h2": "Wanneer is onderzoek verstandig?",
+        "answer": "Onderzoek is verstandig als je woning van vóór circa 1970 is en in een gebied met veen, klei of wisselende waterstanden staat, zeker als er ook scheuren, scheefstand of klemmende deuren zijn.",
+        "body": "<p>Een quickscan is niet-destructief, kost <strong>vanaf circa €350</strong> en je ontvangt het rapport binnen 5 werkdagen na de inspectie. Geeft fase 0 daar aanleiding toe, dan volgt eventueel een vervolgonderzoek met metingen.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Twijfel je? <a href=\"/contact/\">Neem contact op</a> en vertel kort wat je ziet.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Wat is het verschil tussen grondwaterpeil en polderpeil?",
+        "a": "<p>Het polderpeil is de waterstand die het waterschap nastreeft in sloten en vaarten; het grondwaterpeil is de stand van het water in de bodem. Ze hangen samen, maar kunnen plaatselijk van elkaar afwijken.</p>"
+      },
+      {
+        "q": "Kan een lager grondwaterpeil mijn fundering beschadigen?",
+        "a": "<p>Dat kan, maar het hoeft niet. Bij houten palen kan droogstand tot aantasting van het hout leiden en bij veen en klei kan de bodem gaan bewegen. Of dat bij jouw woning speelt, hangt af van het funderingstype en de situatie ter plaatse.</p>"
+      },
+      {
+        "q": "Waar vind ik informatie over het peil in mijn buurt?",
+        "a": "<p>Begin bij het waterschap en de gemeente. Zij kunnen vertellen hoe het peil in je gebied wordt beheerd en of er peilbuizen in de buurt worden gemeten. Lees ook onze uitleg over <a href=\"/kennisbank/grondwatermeting/\">grondwatermeting</a>.</p>"
+      },
+      {
+        "q": "Mijn tuin zakt, is mijn fundering dan slecht?",
+        "a": "<p>Niet per se. Een verzakt maaiveld kan wijzen op inklinking, maar de woning kan op palen staan die dieper reiken. Let vooral op signalen aan de woning zelf.</p>"
+      },
+      {
+        "q": "Kan ik zelf het grondwater onder mijn huis meten?",
+        "a": "<p>Een betrouwbare meting vraagt om een peilbuis die over langere tijd wordt afgelezen. Openbare meetgegevens uit de buurt geven vaak meer houvast dan een losse waarneming.</p>"
+      },
+      {
+        "q": "Onderzoekt een quickscan ook het grondwater?",
+        "a": "<p>Een quickscan gebruikt beschikbare gegevens over grondwater en bodemdaling; er wordt geen eigen peilbuis geplaatst. Lees meer op de pagina <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/grondwater-en-fundering/",
+        "label": "Grondwater en fundering",
+        "text": "De rol van water onder je woning, breed uitgelegd."
+      },
+      {
+        "href": "/kennisbank/paalrot/",
+        "label": "Wat is paalrot?",
+        "text": "Hoe houten palen worden aangetast en hoe je dat onderzoekt."
+      },
+      {
+        "href": "/funderingsproblemen-veen/",
+        "label": "Funderingsproblemen op veen",
+        "text": "Waarom woningen op veen extra aandacht vragen."
+      }
+    ],
+    "cta": [
+      "Benieuwd hoe jouw woning ervoor staat?",
+      "Een quickscan brengt funderingstype, bodem, grondwater en zichtbare signalen samen in één helder rapport."
+    ]
+  },
+  {
+    "path": "/kennisbank/scheuren-boven-kozijnen/",
+    "title": "Scheuren boven kozijnen: oorzaken | MV Funderingsscan",
+    "description": "Een scheur boven een raam of deur? Lees waarom kozijnen een zwakke plek zijn, hoe een roestende latei verschilt van zetting en wanneer onderzoek zinvol is.",
+    "keyword": "scheuren boven kozijnen",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/scheuren-boven-kozijnen/",
+        "name": "Scheuren boven kozijnen"
+      }
+    ],
+    "eyebrow": "Kennisbank · Scheuren",
+    "h1": "Scheuren boven kozijnen: waarom juist daar, en wat zegt het?",
+    "lead": "Scheuren boven kozijnen ontstaan vaak doordat een raam- of deuropening <strong>de zwakste plek in het metselwerk</strong> is. Veel voorkomende oorzaken zijn een roestende stalen latei, een doorbuigende rollaag of latei en temperatuurbeweging. Ongelijke zetting van de fundering is een mogelijke, maar niet de enige verklaring. Het patroon van de scheur en de combinatie met andere signalen maken het verschil.",
+    "hero_image": {
+      "name": "metselwerk-gevel-detail",
+      "alt": "Close-up van metselwerk en voegen in een bakstenen gevel"
+    },
+    "article": true,
+    "sections": [
+      {
+        "id": "waarom-boven-kozijnen",
+        "h2": "Waarom ontstaan scheuren juist boven kozijnen?",
+        "answer": "Een opening onderbreekt het metselwerk, waardoor spanningen zich rond de hoeken van het kozijn concentreren; daar scheurt de gevel het eerst.",
+        "body": "<p>Een gesloten muur verdeelt zijn gewicht gelijkmatig naar beneden. Zodra er een raam of deur in zit, moet het metselwerk boven de opening ergens op rusten. Dat gebeurt met een <strong>latei</strong> of een <strong>rollaag</strong>, die de last naar de zijkanten van het kozijn afvoert. Rond die opleggingen en in de hoeken van de opening komt dus meer spanning samen dan elders in de gevel.</p>\n<div class=\"term-box\"><strong>Wat is een latei?</strong><p>Een latei is een balk boven een raam- of deuropening die het metselwerk erboven draagt. In oudere woningen is dat vaak staal, beton of een gemetselde rollaag: stenen die op hun kant staan en samen een draagbare boog of strook vormen.</p></div>\n<p>Beweegt de woning, door temperatuur, vocht of <a href=\"/kennisbank/zetting/\">zetting</a>, dan zoekt die beweging de zwakste plek. Dat is vaak de hoek van een kozijn. Een scheur boven een raam is dus eerst een aanwijzing <em>waar</em> spanning zit, nog niet <em>waarom</em>. Een algemeen overzicht van scheuren in stenen muren vind je bij <a href=\"/kennisbank/scheuren-in-metselwerk/\">scheuren in metselwerk</a>.</p>"
+      },
+      {
+        "id": "roestende-stalen-latei",
+        "h2": "Hoe herken je een roestende stalen latei?",
+        "answer": "Roestend staal zet uit en duwt het metselwerk erboven omhoog of naar buiten; je ziet dan vaak een horizontale scheur ter hoogte van de latei, soms met roestsporen of verschoven stenen.",
+        "body": "<p>In veel woningen uit de vorige eeuw zit boven ramen een stalen latei die door de jaren heen vocht heeft opgenomen. Roest neemt meer ruimte in dan het oorspronkelijke staal. Daardoor ontstaan typische kenmerken:</p>\n<ul class=\"checklist\"><li>een horizontale scheur in de voeg net boven het kozijn</li><li>roestbruine verkleuring of afschilferend metselwerk bij de latei</li><li>stenen die iets naar buiten lijken te staan</li><li>scheuren die bij de hoeken van het kozijn wat doorlopen</li></ul>\n<p>Dit is een bouwkundig probleem van de latei zelf en heeft meestal niets met de fundering te maken. Het vraagt wel aandacht van een vakman, omdat de latei op den duur minder draagkracht kan hebben.</p>"
+      },
+      {
+        "id": "andere-oorzaken",
+        "h2": "Welke andere oorzaken zijn er?",
+        "answer": "Naast roest spelen doorbuiging van latei of rollaag, temperatuur- en krimpbeweging, en ongelijke zetting van de fundering een rol.",
+        "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Doorbuiging\"><h3>Doorbuiging</h3><p>Een latei of rollaag die te licht is of aangetast raakt, kan in het midden iets doorzakken. Je ziet dan vaak een scheur midden boven de opening, soms met een licht verzakte rij stenen.</p></section><section class=\"tab-panel\" data-tab=\"Temperatuur\"><h3>Temperatuur en krimp</h3><p>Metselwerk zet uit bij warmte en krimpt bij kou. In lange gevels zonder dilatatie kan die beweging zich uiten bij openingen. Zulke scheuren zijn vaak fijn, verticaal en kunnen per seizoen iets open- en dichtgaan.</p></section><section class=\"tab-panel\" data-tab=\"Ongelijke zetting\"><h3>Ongelijke zetting</h3><p>Zakt het ene deel van de woning meer dan het andere, dan vervormt de gevel. Scheuren lopen dan vaak diagonaal of trapvormig vanaf de hoek van het kozijn, soms over meerdere verdiepingen.</p></section></div>\n<p>Meer over het mechanisme achter de laatste oorzaak lees je bij <a href=\"/kennisbank/ongelijke-zetting/\">ongelijke zetting</a>.</p>"
+      },
+      {
+        "id": "patroon-herkennen",
+        "h2": "Hoe onderscheid je de oorzaken van elkaar?",
+        "answer": "Kijk naar de richting en het verloop van de scheur, en vooral naar de combinatie met andere signalen elders in de woning.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Wat je ziet</th><th>Kan wijzen op</th><th>Let ook op</th></tr></thead><tbody><tr><td>Horizontale scheur net boven het kozijn</td><td>Roestende stalen latei</td><td>Roestsporen, naar buiten gedrukte stenen</td></tr><tr><td>Scheur midden boven de opening</td><td>Doorbuiging van latei of rollaag</td><td>Verzakte stenen in de rollaag</td></tr><tr><td>Fijne verticale scheur, wisselt per seizoen</td><td>Temperatuur en krimp</td><td>Lengte van de gevel, scheuren op vergelijkbare plekken</td></tr><tr><td>Diagonale of trapvormige scheur vanaf de kozijnhoek</td><td>Ongelijke zetting</td><td>Klemmende ramen, scheve dorpels, meerdere scheuren in dezelfde richting</td></tr></tbody></table></div>\n<p>Zo'n tabel helpt bij het denken, maar is geen diagnose. Scheuren kunnen meerdere oorzaken tegelijk hebben, en een roestende latei kan best in een woning zitten die ook zakt. Hoe vakmensen scheuren lezen, staat uitgebreid bij <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>.</p>\n<div class=\"callout callout-tip\"><strong>Leg het zelf vast</strong><p>Fotografeer de scheur met een liniaal of meetlint ernaast, noteer de datum en herhaal dat na enkele maanden. Zie ook <a href=\"/kennisbank/monitoring-scheuren/\">scheuren monitoren</a>.</p></div>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: twee scheuren, twee verhalen",
+        "answer": "Twee scheuren boven vergelijkbare ramen kunnen een heel andere achtergrond hebben; de omgeving van de scheur geeft de doorslag.",
+        "body": "<p>Neem een denkbeeldige jaren-dertigwoning. Boven het voorraam loopt een horizontale scheur, met een bruine verkleuring in de voeg. Verder is de gevel recht, de ramen sluiten goed en binnen is er niets bijzonders. Dat past eerder bij een roestende latei dan bij een funderingsprobleem.</p>\n<p>Bij de buurwoning loopt een trapvormige scheur schuin omhoog vanaf de hoek van het slaapkamerraam. Dat raam klemt sinds kort en de vensterbank binnen staat zichtbaar scheef. Hier is de combinatie reden om verder te kijken. Een onderzoek ter plaatse kan uitwijzen of zetting een rol speelt of dat er iets anders aan de hand is.</p>"
+      },
+      {
+        "id": "wanneer-onderzoek",
+        "h2": "Wanneer is onderzoek verstandig?",
+        "answer": "Laat onderzoek doen als scheuren boven kozijnen diagonaal of trapvormig lopen, groter worden, op meerdere plekken in dezelfde richting voorkomen of samengaan met klemmende ramen en scheve vloeren.",
+        "body": "<p>Gaat het om één horizontale scheur met duidelijke roestsporen, dan ligt een bouwkundige blik op de latei meer voor de hand. Twijfel je, of zie je meerdere signalen, dan geeft een quickscan overzicht. Daarbij worden onder meer gevels, metselwerk, scheurpatronen, kozijnen en scheefstand bekeken, gecombineerd met archief- en bodemonderzoek.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Kijk voor de inhoud van het vooronderzoek bij <a href=\"/quickscan-fundering/\">quickscan fundering</a>, of <a href=\"/contact/\">stel je vraag</a> als je niet zeker weet welke stap past.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is een scheur boven een raam altijd een funderingsprobleem?",
+        "a": "<p>Nee. Vaak zit de oorzaak in de latei of rollaag, of in temperatuurbeweging van het metselwerk. Pas als het patroon en andere signalen op vervorming van de woning wijzen, kan de fundering meespelen.</p>"
+      },
+      {
+        "q": "Hoe weet ik of mijn latei roest?",
+        "a": "<p>Typisch is een horizontale scheur net boven het kozijn, soms met roestbruine verkleuring of stenen die iets naar buiten staan. Een vakman kan bevestigen of de latei de oorzaak is.</p>"
+      },
+      {
+        "q": "Kan ik de scheur gewoon dichtkitten?",
+        "a": "<p>Dichtkitten verhelpt de oorzaak niet en maakt het lastiger om te zien of de scheur groeit. Leg de scheur eerst een tijd vast met foto's en datum, en laat de oorzaak beoordelen voordat je herstelt.</p>"
+      },
+      {
+        "q": "Waarom scheurt de gevel eerder boven het raam dan ernaast?",
+        "a": "<p>Omdat een opening het metselwerk onderbreekt. De last moet rond het kozijn worden afgevoerd, waardoor spanning zich in de hoeken en boven de opening concentreert.</p>"
+      },
+      {
+        "q": "Wat betekent een trapvormige scheur vanaf de hoek van een kozijn?",
+        "a": "<p>Een trapvormige scheur langs de voegen kan wijzen op ongelijke zetting, maar ook andere oorzaken zijn mogelijk. Kijk of er tegelijk ramen klemmen of dorpels scheef staan, en lees meer over <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>.</p>"
+      },
+      {
+        "q": "Worden scheuren boven kozijnen bekeken bij een quickscan?",
+        "a": "<p>Ja, de visuele inspectie omvat gevels, metselwerk, scheuren en scheurpatronen, kozijnen, deuren en ramen. In het rapport staan foto's, een conclusie en een advies.</p>"
+      },
+      {
+        "q": "Wat kost een vooronderzoek naar zulke scheuren?",
+        "a": "<p>Een quickscan (fase 0) kost vanaf circa €350; bij grotere of complexere woningen kan het oplopen tot indicatief circa €550. De definitieve prijs hoor je vooraf. Zie ook de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/scheurpatronen/",
+        "label": "Scheurpatronen lezen",
+        "text": "Hoe richting, breedte en verloop iets zeggen over de oorzaak."
+      },
+      {
+        "href": "/scheuren-in-gevel/",
+        "label": "Scheuren in de gevel",
+        "text": "Uitgebreide gids over gevelscheuren en wat je eraan doet."
+      },
+      {
+        "href": "/kennisbank/klemmende-ramen/",
+        "label": "Klemmende ramen",
+        "text": "Wanneer een klemmend raam samenhangt met vervorming."
+      }
+    ],
+    "cta": [
+      "Scheur boven een kozijn en geen idee waar die vandaan komt?",
+      "Een quickscan zet de signalen naast elkaar en geeft je een onderbouwd advies."
+    ]
+  },
+  {
+    "path": "/kennisbank/scheuren-bij-aanbouw/",
+    "title": "Scheur bij aanbouw of uitbouw | MV Funderingsscan",
+    "description": "Scheur tussen huis en aanbouw? Vaak komt dat door een eigen, ondiepere fundering. Lees wanneer het normaal is en wanneer onderzoek verstandig is.",
+    "keyword": "scheur aanbouw",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/scheuren-bij-aanbouw/",
+        "name": "Scheuren bij aanbouw"
+      }
+    ],
+    "eyebrow": "Kennisbank · Scheuren",
+    "h1": "Scheur bij een aanbouw: normaal of reden tot zorg?",
+    "lead": "Een scheur op de aansluiting tussen woning en aanbouw is <strong>vaak het gevolg van verschil in fundering</strong>: de aanbouw heeft meestal een eigen, ondiepere fundering en beweegt daardoor anders dan het oorspronkelijke huis. Een stabiele, rechte scheur op die naad is lang niet altijd zorgwekkend. Groeit de scheur, kantelt de aanbouw of zie je ook schade in het hoofdgebouw, dan is onderzoek verstandig.",
+    "hero_image": {
+      "name": "funderingsinspectie-woning-gevel",
+      "alt": "Specialist met waterpas bij de gevel van een woning"
+    },
+    "article": true,
+    "sections": [
+      {
+        "id": "waarom-scheurt-de-aansluiting",
+        "h2": "Waarom ontstaat er een scheur bij de aanbouw?",
+        "answer": "Een aanbouw of uitbouw staat meestal op een eigen fundering, vaak ondieper dan die van het huis; daardoor zetten oud en nieuw verschillend en trekt de aansluiting open.",
+        "body": "<p>Een aanbouw wordt vaak jaren of decennia na het hoofdgebouw neergezet. Het oorspronkelijke huis heeft zich in die tijd al grotendeels gezet. De nieuwe aanbouw begint daar pas mee. Bovendien rust een aanbouw vaak op een <a href=\"/kennisbank/fundering-op-staal/\">fundering op staal</a> of een ondiepere constructie, terwijl het huis zelf bijvoorbeeld op palen kan staan.</p>\n<div class=\"term-box\"><strong>Wat is zetting?</strong><p>Zetting is het normale samendrukken van de grond onder het gewicht van een gebouw, vooral in de eerste jaren na de bouw. Zakken twee delen verschillend, dan spreken we van ongelijke zetting.</p><a href=\"/kennisbank/zetting/\">Lees meer over zetting</a></div>\n<p>Op de plek waar die twee delen elkaar raken, ontstaat dan spanning. Is de aanbouw stijf aan het huis vastgemetseld, dan scheurt die naad. Bij een goed uitgevoerde dilatatievoeg kan de beweging juist zonder schade worden opgevangen.</p>"
+      },
+      {
+        "id": "verschil-in-zetting",
+        "h2": "Hoe verschilt de zetting van oud en nieuw?",
+        "answer": "Het hoofdgebouw is meestal uitgezet en beweegt weinig meer, terwijl een nieuwe aanbouw in de eerste jaren nog zakt; op slappe grond kan dat verschil groter zijn.",
+        "body": "<div class=\"two-col-list\"><div><h3>Hoofdgebouw</h3><ul class=\"checklist\"><li>Vaak dieper gefundeerd, bij oudere woningen soms op <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a></li><li>Zetting grotendeels achter de rug</li><li>Kan wel meebewegen met <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a> of grondwater</li></ul></div><div><h3>Aanbouw</h3><ul class=\"checklist\"><li>Vaak eigen, ondiepere fundering</li><li>Zet vooral in de eerste jaren</li><li>Gevoeliger voor krimp en zwel van klei of inklinking van veen</li></ul></div></div>\n<p>Op een stevige zandbodem blijft het verschil meestal klein. Op veen of klei, zoals in grote delen van Friesland en Groningen, kan een ondiepe aanbouw duidelijk anders bewegen dan het huis. Het onderliggende mechanisme staat uitgelegd bij <a href=\"/kennisbank/ongelijke-zetting/\">ongelijke zetting</a>.</p>"
+      },
+      {
+        "id": "wanneer-normaal",
+        "h2": "Wanneer is een scheur bij een aanbouw normaal?",
+        "answer": "Een scheur die precies op de naad tussen huis en aanbouw zit, ongeveer even breed blijft en niet groeit, is vaak het gevolg van verwachte zetting en niet direct reden tot zorg.",
+        "body": "<div class=\"mini-outcomes\"><div class=\"mini-outcome mini-ok\"><strong>Meestal geen zorg</strong><span>Rechte scheur op de aansluiting, stabiel in de tijd, geen andere signalen.</span></div><div class=\"mini-outcome mini-watch\"><strong>Monitoren</strong><span>Scheur op de naad die langzaam lijkt te groeien, of een nieuwe aanbouw die nog zet.</span></div><div class=\"mini-outcome mini-extra\"><strong>Laten beoordelen</strong><span>Scheur die van breed naar smal verloopt, of aanbouw die zichtbaar wegkantelt.</span></div><div class=\"mini-outcome mini-next\"><strong>Onderzoek</strong><span>Ook scheuren, scheefstand of klemmende deuren in het hoofdgebouw zelf.</span></div></div>\n<p>Ook andere oorzaken kunnen spelen: krimp van nieuw metselwerk of pleisterwerk, temperatuurbeweging van een plat dak of een kozijn in de aansluiting, of vocht in een slecht afgewerkte naad. Lees voor algemene uitleg ook <a href=\"/kennisbank/scheuren-in-woning/\">scheuren in woning</a>.</p>"
+      },
+      {
+        "id": "waarschuwingssignalen",
+        "h2": "Welke signalen vragen om meer aandacht?",
+        "answer": "Let op scheuren die groeien, schuin weglopen in het hoofdgebouw, een aanbouw die kantelt, een dak dat loskomt van de gevel of vloeren die bij de overgang scheef aflopen.",
+        "body": "<ul class=\"check-interactive\"><li>De scheur wordt in de loop van maanden zichtbaar breder.</li><li>De scheur is onderaan breder dan bovenaan, of andersom.</li><li>Er lopen ook schuine scheuren in het metselwerk van het huis zelf.</li><li>De aansluiting van het dak trekt open of lekt.</li><li>De vloer loopt bij de overgang naar de aanbouw merkbaar af.</li><li>Deuren of schuifpuien in de aanbouw gaan klemmen.</li></ul>\n<p>Herken je meerdere punten, dan is het verstandig om de situatie te laten bekijken. Een hellende vloer bij de overgang kan meerdere oorzaken hebben; zie <a href=\"/kennisbank/helling-in-vloer/\">helling in de vloer</a>.</p>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: uitbouw aan een vooroorlogse woning",
+        "answer": "Een denkbeeldig voorbeeld laat zien hoe je onderscheid maakt tussen een verklaarbare naadscheur en schade die verder reikt.",
+        "body": "<p>Een vooroorlogse woning in een kleigebied heeft enkele jaren geleden een uitbouw aan de achterkant gekregen. Na een droge zomer verschijnt er een rechte, verticale scheur precies op de aansluiting. In de winter lijkt hij iets smaller. Verder geen schade.</p>\n<p>Dat past bij een uitbouw die met de klei meebeweegt. De eigenaar fotografeert de scheur met een liniaal en datum, en herhaalt dat na enkele maanden. Zou de scheur blijven groeien, of zouden er ook schuine scheuren in de oude gevel verschijnen, dan is een <a href=\"/quickscan-fundering/\">quickscan fundering</a> een logische volgende stap.</p>"
+      },
+      {
+        "id": "wanneer-onderzoek",
+        "h2": "Wanneer is onderzoek verstandig?",
+        "answer": "Onderzoek is verstandig als de scheur blijft groeien, als het hoofdgebouw zelf ook signalen toont, of als je een woning met aanbouw wilt kopen en twijfelt over de fundering.",
+        "body": "<p>Bij een quickscan wordt onder meer nagegaan wanneer de aanbouw is gebouwd en of er tekeningen in het bouwarchief zijn. Daarnaast worden gevels, aansluitingen, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a> en vloeren bekeken. Zo wordt duidelijker of de scheur bij de aanbouw blijft of dat er meer speelt.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Ga je een woning met aanbouw kopen? Lees dan ook <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>. Twijfel je over de juiste stap, <a href=\"/contact/\">neem dan contact op</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is een scheur tussen huis en aanbouw normaal?",
+        "a": "<p>Vaak wel. Een aanbouw heeft meestal een eigen, ondiepere fundering en beweegt daardoor anders dan het huis. Een rechte, stabiele scheur op de naad is daarom lang niet altijd zorgwekkend.</p>"
+      },
+      {
+        "q": "Hoe lang blijft een nieuwe aanbouw zetten?",
+        "a": "<p>De meeste zetting vindt plaats in de eerste jaren na de bouw. Hoe lang precies hangt af van de bodem en de fundering. Of de beweging nog doorgaat, blijkt pas uit herhaalde waarnemingen.</p>"
+      },
+      {
+        "q": "Kan ik de scheur bij de aanbouw gewoon dichtmaken?",
+        "a": "<p>Een starre vulling scheurt vaak opnieuw als de delen blijven bewegen. Een flexibele afdichting of een goede dilatatievoeg past daar beter bij. Leg de scheur eerst een tijd vast, zodat je weet of hij nog beweegt.</p>"
+      },
+      {
+        "q": "Kan een aanbouw het hoofdgebouw beschadigen?",
+        "a": "<p>Dat kan, als de aanbouw stijf aan het huis vastzit en sterk anders zakt. Meestal blijft de schade beperkt tot de aansluiting. Zie je ook schuine scheuren in het huis zelf, laat het dan beoordelen.</p>"
+      },
+      {
+        "q": "Hoe weet ik hoe mijn aanbouw gefundeerd is?",
+        "a": "<p>Kijk in het bouwarchief van je gemeente naar vergunning en tekeningen van de aanbouw. Niet bij elke woning is dat beschikbaar. Archiefonderzoek is een vast onderdeel van <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>.</p>"
+      },
+      {
+        "q": "Moet ik bij aankoop letten op scheuren bij de aanbouw?",
+        "a": "<p>Ja, het is een van de dingen om op te letten. Een stabiele naadscheur hoeft geen probleem te zijn, maar geeft wel aanleiding om te vragen wanneer de aanbouw is gebouwd en of er eerder onderzoek is gedaan.</p>"
+      },
+      {
+        "q": "Wordt de aanbouw meegenomen in een quickscan?",
+        "a": "<p>Ja, de visuele inspectie kijkt naar de hele woning voor zover zichtbaar en toegankelijk, inclusief aansluitingen van aanbouwen. Het rapport bevat foto's, een conclusie en een advies.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/ongelijke-zetting/",
+        "label": "Ongelijke zetting",
+        "text": "Waarom verschillend zakken schadelijker is dan gelijkmatig zakken."
+      },
+      {
+        "href": "/kennisbank/scheuren-in-metselwerk/",
+        "label": "Scheuren in metselwerk",
+        "text": "Overzicht van scheurtypen in stenen muren."
+      },
+      {
+        "href": "/verzakking-woning/",
+        "label": "Verzakking van je woning",
+        "text": "Signalen van verzakking en wat je kunt doen."
+      }
+    ],
+    "cta": [
+      "Scheur bij je aanbouw en wil je zekerheid?",
+      "Een quickscan laat zien of de scheur bij de aanbouw blijft of dat er meer speelt."
+    ]
+  },
+  {
+    "path": "/kennisbank/klemmende-ramen/",
+    "title": "Klemmende ramen: oorzaken en signalen | MV Funderingsscan",
+    "description": "Klemt je raam? Meestal komt het door vocht, verf of hang- en sluitwerk. Lees wanneer klemmende ramen een signaal van vervorming zijn en wat je dan doet.",
+    "keyword": "klemmende ramen",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/klemmende-ramen/",
+        "name": "Klemmende ramen"
+      }
+    ],
+    "eyebrow": "Kennisbank · Signalen in huis",
+    "h1": "Klemmende ramen: houtwerking, hang- en sluitwerk of vervorming?",
+    "lead": "Een klemmend raam heeft <strong>meestal een eenvoudige oorzaak</strong>: houten ramen die uitzetten door vocht, te dikke verflagen of versleten hang- en sluitwerk. Alleen als meerdere ramen tegelijk gaan klemmen, het kozijn zichtbaar uit het haakse trekt of er ook scheuren en scheve dorpels zijn, kan vervorming van de woning meespelen. Dan is het verstandig om verder te kijken.",
+    "hero_image": {
+      "name": "vooroorlogse-woning-voordeur",
+      "alt": "Klassieke voordeur in een bakstenen gevel"
+    },
+    "article": true,
+    "sections": [
+      {
+        "id": "soorten-ramen",
+        "h2": "Klemt elk type raam op dezelfde manier?",
+        "answer": "Nee: draairamen, schuiframen en klapramen bewegen elk anders en laten klemmen dus ook op een andere manier zien.",
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Draai- en draaikiepramen</h3><p>Schuren vaak aan de bovenkant of aan de slotzijde. Uitgezakte scharnieren of een verschoven sluitpunt zijn een veelvoorkomende oorzaak.</p></div><div class=\"info-card\"><h3>Schuiframen</h3><p>Lopen stroef in de geleiding of blijven halverwege hangen. Vuil, verf of een kozijn dat iets uit het lood staat kan meespelen.</p></div><div class=\"info-card\"><h3>Klap- en valramen</h3><p>Sluiten slecht aan of haken bij het dichtdoen. Vaak door scharnieren of verf, soms door een vervormd kozijn.</p></div></div>\n<p>Op deze pagina ligt de nadruk op ramen. Voor deuren is er een aparte uitleg bij <a href=\"/kennisbank/klemmende-deuren/\">klemmende deuren</a>, en de uitgebreide gids over beide vind je bij <a href=\"/klemmende-deuren-en-ramen/\">klemmende deuren en ramen</a>.</p>"
+      },
+      {
+        "id": "alledaagse-oorzaken",
+        "h2": "Wat zijn de meest voorkomende oorzaken?",
+        "answer": "Vocht en houtwerking, verflagen, versleten of verschoven hang- en sluitwerk en kleine vervormingen van het raamhout zelf verklaren de meeste klemmende ramen.",
+        "body": "<ul class=\"checklist\"><li><strong>Vocht en houtwerking:</strong> hout zet uit bij vochtig weer en krimpt bij droogte. Een raam dat in de herfst klemt en in de zomer niet, wijst daarop.</li><li><strong>Verflagen:</strong> na een schilderbeurt kan een raam te dik in de verf zitten, vooral aan de sponningen.</li><li><strong>Hang- en sluitwerk:</strong> scharnieren slijten of zakken uit, schroeven raken los, sluitpunten verschuiven.</li><li><strong>Vervorming van het raamhout:</strong> een raam kan op zichzelf iets kromtrekken, los van wat het kozijn of de woning doet.</li></ul>\n<div class=\"callout callout-tip\"><strong>Eerst afstellen</strong><p>Laat het hang- en sluitwerk nakijken voordat je gaat schaven. Schaaf je een raam passend terwijl de woning nog beweegt, dan verdwijnt een nuttig signaal.</p></div>"
+      },
+      {
+        "id": "vervorming-van-het-kozijn",
+        "h2": "Wanneer wijst een klemmend raam op vervorming?",
+        "answer": "Een klemmend raam kan wijzen op vervorming als meerdere ramen in hetzelfde deel van de woning klemmen, het kozijn scheef staat en er tegelijk scheuren of scheve dorpels zijn.",
+        "body": "<p>Bij <a href=\"/kennisbank/ongelijke-zetting/\">ongelijke zetting</a> of scheefstand verandert de vorm van de gevel. Een rechthoekig kozijn wordt dan een heel klein beetje scheef. Dat zie je niet altijd, maar een raam dat strak in het kozijn past, merkt het wel. Juist daarom kunnen ramen een vroeg signaal zijn.</p>\n<div class=\"term-box\"><strong>Wat betekent 'uit het haakse'?</strong><p>Een kozijn is haaks als de hoeken recht zijn. Trekt het uit het haakse, dan worden de diagonalen ongelijk en past het raam niet meer goed in de opening. Dat kan door de woning komen, maar ook door het kozijn zelf.</p></div>\n<ul class=\"checklist\"><li>Meerdere ramen aan dezelfde gevel of op dezelfde hoek klemmen</li><li>De kier rond het raam loopt van breed naar smal</li><li>Dorpels of vensterbanken staan zichtbaar scheef</li><li>Er lopen scheuren schuin vanaf de hoeken van het kozijn, zie <a href=\"/kennisbank/scheuren-boven-kozijnen/\">scheuren boven kozijnen</a></li><li>Het klemmen komt terug, ook na afstellen</li></ul>"
+      },
+      {
+        "id": "zelf-controleren",
+        "h2": "Hoe kun je zelf controleren wat er speelt?",
+        "answer": "Bekijk de kier rond het raam, vergelijk ramen onderling en noteer wanneer het klemmen optreedt; een patroon zegt meer dan één raam.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Bekijk de kier</strong><span>Is de ruimte tussen raam en kozijn overal even groot, of loopt die schuin af?</span></li><li><strong>Vergelijk met andere ramen</strong><span>Klemt alleen dit raam, of ook ramen ernaast of op de verdieping erboven?</span></li><li><strong>Let op het seizoen</strong><span>Klemt het vooral bij nat weer, dan ligt houtwerking meer voor de hand.</span></li><li><strong>Kijk rond het kozijn</strong><span>Zijn er scheuren in het metselwerk of pleisterwerk, en staat de vensterbank scheef?</span></li></ol>\n<p>Maak foto's en noteer de datum, zodat je later kunt vergelijken. Twijfel je of ook de vloer afloopt, lees dan <a href=\"/kennisbank/helling-in-vloer/\">helling in de vloer</a>.</p>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: drie ramen aan de achtergevel",
+        "answer": "Een denkbeeldig voorbeeld laat zien hoe een combinatie van signalen meer zegt dan één klemmend raam.",
+        "body": "<p>In een oudere tussenwoning klemt al jaren het badkamerraam, vooral in de winter. Afstellen helpt telkens even. Dat past bij vocht en houtwerking. Een paar jaar later beginnen ook de twee slaapkamerramen aan dezelfde achtergevel te klemmen, de kieren lopen schuin af en onder één raam ontstaat een schuine scheur.</p>\n<p>Dat is een ander verhaal: meerdere ramen, één gevel, en scheuren erbij. Het kan wijzen op vervorming van die gevel, al blijven ook andere verklaringen mogelijk. Een vooronderzoek ter plaatse helpt om dat uit te zoeken.</p>"
+      },
+      {
+        "id": "wanneer-onderzoek",
+        "h2": "Wanneer is onderzoek verstandig?",
+        "answer": "Laat onderzoek doen als het klemmen terugkomt na afstellen, als meerdere ramen of deuren in hetzelfde deel van de woning klemmen, of als er ook scheuren, scheve dorpels of hellende vloeren zijn.",
+        "body": "<p>Bij een quickscan worden kozijnen, deuren en ramen bekeken samen met gevels, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, vloeren en scheefstand. Het archief- en bodemonderzoek geeft daarbij context: hoe oud is de woning, hoe is ze vermoedelijk gefundeerd en hoe ziet de bodem eruit.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Meer over de opbouw van het vooronderzoek lees je bij <a href=\"/quickscan-fundering/\">quickscan fundering</a>. Heb je een vraag over je situatie, <a href=\"/contact/\">neem dan contact op</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Waarom klemt mijn raam alleen in de winter?",
+        "a": "<p>Dat wijst meestal op vocht en houtwerking. Hout neemt in natte perioden vocht op en zet uit. Klemt het raam in de zomer niet, dan is de fundering een minder waarschijnlijke oorzaak.</p>"
+      },
+      {
+        "q": "Kunnen klemmende ramen door de fundering komen?",
+        "a": "<p>Dat kan, maar het is zelden de eerste verklaring. Pas als meerdere ramen klemmen, het kozijn scheef staat en er ook scheuren zijn, wordt vervorming van de woning aannemelijker.</p>"
+      },
+      {
+        "q": "Moet ik een klemmend raam schaven?",
+        "a": "<p>Stel eerst het hang- en sluitwerk af. Schaven lost het symptoom op, maar haalt ook een signaal weg dat je later had kunnen gebruiken om te zien of de woning beweegt.</p>"
+      },
+      {
+        "q": "Klemmen kunststof ramen ook?",
+        "a": "<p>Ja, al speelt houtwerking daar niet. Bij kunststof ramen liggen hang- en sluitwerk of een vervormd kozijn meer voor de hand. Klemmen meerdere kunststof ramen tegelijk, dan is het zinvol om verder te kijken.</p>"
+      },
+      {
+        "q": "Mijn schuifraam loopt stroef, is dat een slecht teken?",
+        "a": "<p>Meestal niet. Vuil, verf of slijtage van de geleiding zijn veelvoorkomende oorzaken. Let wel op of het raam scheef in het kozijn hangt en of er scheuren rond de opening zitten.</p>"
+      },
+      {
+        "q": "Wat kost een vooronderzoek bij klemmende ramen en scheuren?",
+        "a": "<p>Een quickscan kost vanaf circa €350, bij grotere of complexere woningen tot indicatief circa €550. Je weet de prijs vooraf. Zie ook <a href=\"/prijzen/\">prijzen</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/klemmende-deuren-en-ramen/",
+        "label": "Gids: klemmende deuren en ramen",
+        "text": "De uitgebreide uitleg over vervormde kozijnen en de fundering."
+      },
+      {
+        "href": "/kennisbank/klemmende-deuren/",
+        "label": "Klemmende deuren",
+        "text": "Wanneer een klemmende deur iets zegt over de woning."
+      },
+      {
+        "href": "/kennisbank/scheefstand/",
+        "label": "Scheefstand",
+        "text": "Wat scheefstand is en hoe het zich in de woning laat zien."
+      }
+    ],
+    "cta": [
+      "Klemmen er meerdere ramen en zie je ook scheuren?",
+      "Een quickscan zet de signalen op een rij en geeft je een onderbouwd advies."
+    ]
+  },
+  {
+    "path": "/kennisbank/helling-in-vloer/",
+    "title": "Scheve of hellende vloer: oorzaken | MV Funderingsscan",
+    "description": "Loopt je vloer af? Lees welke oorzaken een scheve vloer kan hebben, van balklaag tot fundering, hoe je het zelf bekijkt en hoe het wordt gemeten.",
+    "keyword": "scheve vloer",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/helling-in-vloer/",
+        "name": "Helling in de vloer"
+      }
+    ],
+    "eyebrow": "Kennisbank · Signalen in huis",
+    "h1": "Scheve vloer: waar komt een helling in de vloer vandaan?",
+    "lead": "Een scheve of hellende vloer kan <strong>veel oorzaken</strong> hebben. Vaak zit het in de vloer zelf: een houten balklaag die doorbuigt, een ondersteuning in de kruipruimte die is weggezakt of afwerklagen die ongelijk zijn aangebracht. Soms speelt zetting van de fundering mee. Zelf kun je het verloop observeren; een vloerveldwaterpassing laat precies zien hoe de vloer loopt.",
+    "hero_image": {
+      "name": "funderingsinspectie-woning-gevel",
+      "alt": "Specialist met waterpas bij de gevel van een woning"
+    },
+    "article": true,
+    "sections": [
+      {
+        "id": "wat-is-een-scheve-vloer",
+        "h2": "Wanneer noem je een vloer scheef?",
+        "answer": "Een vloer is scheef als hij merkbaar afloopt naar één kant, of als er een bolling of kuil in zit; dat kun je zien, voelen of merken aan meubels en deuren.",
+        "body": "<p>Geen enkele vloer is volkomen vlak. Bij de bouw zijn er altijd kleine afwijkingen, zeker in oudere woningen. Het gaat erom of je een duidelijke lijn of vorm ziet: de vloer loopt geleidelijk af naar een gevel, zakt in het midden van een kamer door, of maakt een knik bij de overgang naar een ander deel van het huis.</p>\n<div class=\"term-box\"><strong>Wat is een vloerveld?</strong><p>Een vloerveld is het vloeroppervlak van een vertrek of een deel van de vloer tussen dragende muren. Bij metingen wordt elk vloerveld apart bekeken.</p><a href=\"/kennisbank/vloerveldwaterpassing/\">Lees meer over vloerveldwaterpassing</a></div>"
+      },
+      {
+        "id": "oorzaken",
+        "h2": "Wat zijn de mogelijke oorzaken?",
+        "answer": "De belangrijkste oorzaken zijn doorbuiging van een houten balklaag, een weggezakte of aangetaste ondersteuning, ongelijke afwerklagen en zetting van de fundering.",
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Doorbuiging van de balklaag</h3><p>Houten balken kunnen door ouderdom, belasting of vocht in het midden doorbuigen. De vloer zakt dan vaak in het midden van een kamer, terwijl de randen bij de muren op hoogte blijven.</p></div><div class=\"info-card\"><h3>Ondersteuning</h3><p>In de kruipruimte rusten balken soms op poeren, stiepen of een tussenmuurtje. Zakt zo'n steunpunt weg of raakt het hout erop aangetast, dan zakt de vloer plaatselijk.</p></div><div class=\"info-card\"><h3>Afwerklagen</h3><p>Een dekvloer, egalisatielaag of nieuwe vloerbedekking kan ongelijk dik zijn aangebracht. De vloer lijkt dan scheef, terwijl de constructie eronder recht ligt.</p></div><div class=\"info-card\"><h3>Zetting van de fundering</h3><p>Zakt een deel van de woning meer dan een ander deel, dan loopt de vloer mee af, vaak richting één gevel of hoek. Zie <a href=\"/kennisbank/zetting/\">zetting</a>.</p></div></div>\n<p>Vocht en houtaantasting in de kruipruimte verdienen extra aandacht, omdat ze de balklaag en de ondersteuning kunnen verzwakken. Meer daarover lees je bij <a href=\"/kennisbank/kruipruimte-inspectie/\">kruipruimte-inspectie</a>.</p>"
+      },
+      {
+        "id": "vloer-of-fundering",
+        "h2": "Hoe zie je of het aan de vloer of aan de fundering ligt?",
+        "answer": "Een vloer die alleen in het midden doorzakt wijst eerder op de balklaag; een vloer die over meerdere kamers dezelfde kant op afloopt, samen met scheuren en klemmende deuren, kan eerder op zetting wijzen.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Wat je ziet</th><th>Eerder de vloer</th><th>Eerder de woning</th></tr></thead><tbody><tr><td>Vorm</td><td>Kuil of doorbuiging midden in een kamer</td><td>Geleidelijke helling naar één gevel of hoek</td></tr><tr><td>Omvang</td><td>Eén vertrek of één vloerveld</td><td>Meerdere kamers dezelfde richting op</td></tr><tr><td>Plinten</td><td>Kier onder de plint midden langs een wand</td><td>Kier die naar één hoek toe groter wordt</td></tr><tr><td>Andere signalen</td><td>Verende of krakende vloer</td><td>Scheuren in gevels, klemmende deuren en ramen, scheefstand</td></tr></tbody></table></div>\n<p>Dit is een hulpmiddel om waarnemingen te ordenen, geen diagnose. Ook een balklaag kan in meerdere kamers doorbuigen, en een woning kan tegelijk zakken én een slappe vloer hebben. Het verband met de rest van de woning lees je bij <a href=\"/kennisbank/verzakking-woning/\">verzakking woning</a> en <a href=\"/kennisbank/scheefstand/\">scheefstand</a>.</p>"
+      },
+      {
+        "id": "zelf-observeren",
+        "h2": "Hoe kun je een scheve vloer zelf observeren?",
+        "answer": "Met een knikker, een waterpas en goed kijken naar plinten en deuren krijg je een eerste beeld van de richting waarin de vloer afloopt.",
+        "body": "<ul class=\"check-interactive\"><li>Leg een knikker op een paar plekken neer en kijk welke kant hij op rolt.</li><li>Leg een lange waterpas of rechte lat in verschillende richtingen op de vloer.</li><li>Bekijk de kieren onder plinten en onder binnendeuren.</li><li>Kijk of kasten en tafels wiebelen of moeten worden opgevuld.</li><li>Noteer per kamer de richting en maak foto's met datum.</li></ul>\n<div class=\"callout callout-warn\"><strong>Beperkingen van zelf meten</strong><p>Een knikker reageert op elke oneffenheid, ook op een naad of een kromme plank. Zelf observeren geeft een richting, maar geen betrouwbaar hoogteverschil. Trek er dus geen harde conclusies uit.</p></div>"
+      },
+      {
+        "id": "professioneel-meten",
+        "h2": "Hoe wordt een helling professioneel gemeten?",
+        "answer": "Met een vloerveldwaterpassing: een raster van hoogtemetingen per vertrek, gemeten ten opzichte van één referentiepunt en vaak weergegeven als hoogtekaart.",
+        "body": "<p>Bij een <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a> worden hoogtes op meerdere punten verdeeld over de vloer gemeten. Zo ontstaat een beeld van het verloop: waar de vloer het hoogst en het laagst ligt, en of er een geleidelijke helling, een kuil of een knik is. Die meting maakt deel uit van <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>, samen met bijvoorbeeld een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a> van de gevels.</p>\n<p>Ook deze meting heeft beperkingen. Vloeren zijn niet altijd vlak gelegd, afwerklagen kunnen verschillen en meubels of vloerbedekking beperken waar gemeten kan worden. En één meting is een momentopname: of er nog beweging is, blijkt pas uit herhaling over langere tijd.</p>"
+      },
+      {
+        "id": "voorbeeld",
+        "h2": "Voorbeeld: de knikker rolt naar de voorgevel",
+        "answer": "Een denkbeeldig voorbeeld laat zien hoe je een eigen waarneming koppelt aan andere signalen voordat je conclusies trekt.",
+        "body": "<p>In een jaren-dertigwoning rolt een knikker in de woonkamer en in de voorkamer steeds richting de voorgevel. De kier onder de plint wordt naar de voorgevel toe groter, en de voordeur klemt sinds een tijdje. In de kruipruimte ziet de eigenaar geen duidelijke schade aan de balken.</p>\n<p>De richting is in meerdere kamers dezelfde en er zijn ook andere signalen. Dat maakt het zinvol om de woning als geheel te laten bekijken. Tegelijk kan het nog steeds aan de vloer zelf liggen. Een vooronderzoek helpt om te bepalen of meten nodig is.</p>"
+      },
+      {
+        "id": "wanneer-onderzoek",
+        "h2": "Wanneer is onderzoek verstandig?",
+        "answer": "Onderzoek is verstandig als de vloer in meerdere kamers dezelfde kant op afloopt, als de helling toeneemt, of als er ook scheuren, scheefstand of klemmende deuren en ramen zijn.",
+        "body": "<p>Een quickscan bekijkt onder meer vloeren, scheefstand, gevels en, voor zover toegankelijk, de kruipruimte. Samen met archief- en bodemonderzoek geeft dat een <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a> en advies: geen aanleiding voor vervolg, monitoren, gericht aanvullend onderzoek of fase 1 met metingen zoals een vloerveldwaterpassing.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Lees meer over de <a href=\"/quickscan-fundering/\">quickscan fundering</a> of <a href=\"/contact/\">neem contact op</a> als je wilt overleggen welke stap bij jouw situatie past.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is een scheve vloer een teken van funderingsproblemen?",
+        "a": "<p>Niet altijd. Vaak zit de oorzaak in de vloer zelf, zoals een doorbuigende balklaag of ongelijke afwerklagen. Als de vloer in meerdere kamers dezelfde kant op afloopt en er ook scheuren zijn, kan de fundering meespelen.</p>"
+      },
+      {
+        "q": "Hoe meet ik zelf of mijn vloer scheef is?",
+        "a": "<p>Met een knikker of waterpas zie je in welke richting de vloer afloopt. Dat geeft een indruk, maar geen betrouwbaar hoogteverschil. Voor een nauwkeurig beeld is een <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a> nodig.</p>"
+      },
+      {
+        "q": "Waarom zakt mijn houten vloer in het midden?",
+        "a": "<p>Dat wijst vaak op doorbuiging van de balklaag of op een weggezakte ondersteuning in de kruipruimte. Vocht en houtaantasting kunnen daarbij een rol spelen. Laat de kruipruimte bekijken als die toegankelijk is.</p>"
+      },
+      {
+        "q": "Kan een betonvloer ook scheef gaan liggen?",
+        "a": "<p>Ja. Een betonvloer kan meebewegen met de woning als de fundering ongelijk zakt, of kan door een ongelijke afwerklaag scheef lijken. Het onderscheid vraagt om kijken naar de rest van de woning.</p>"
+      },
+      {
+        "q": "Wat is het verschil tussen een scheve vloer en een scheve woning?",
+        "a": "<p>Een scheve vloer gaat over het vloeroppervlak binnen; scheefstand gaat over gevels en wanden die uit het lood staan. Ze kunnen samenhangen, maar ook los van elkaar voorkomen. Lees meer bij <a href=\"/kennisbank/scheefstand/\">scheefstand</a>.</p>"
+      },
+      {
+        "q": "Wordt de vloer bekeken bij een quickscan?",
+        "a": "<p>Ja, vloeren horen bij de visuele inspectie, net als gevels, kozijnen, deuren, scheefstand en de kruipruimte voor zover toegankelijk. Metingen zoals een vloerveldwaterpassing horen bij fase 1.</p>"
+      },
+      {
+        "q": "Wat kost het om een scheve vloer te laten meten?",
+        "a": "<p>Een vloerveldwaterpassing heeft geen losse prijs; ze maakt deel uit van fase 1, indicatief €750 – €1.500 afhankelijk van welke metingen nodig zijn. Fase 1 volgt alleen als de quickscan daar aanleiding voor geeft.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/vloerveldwaterpassing/",
+        "label": "Vloerveldwaterpassing",
+        "text": "Hoe een helling in de vloer nauwkeurig in kaart wordt gebracht."
+      },
+      {
+        "href": "/kennisbank/kruipruimte-inspectie/",
+        "label": "Kruipruimte-inspectie",
+        "text": "Wat je in de kruipruimte kunt zien over vloer en fundering."
+      },
+      {
+        "href": "/verzakking-woning/",
+        "label": "Verzakking van je woning",
+        "text": "Hoe verzakking zich in en om de woning laat zien."
+      }
+    ],
+    "cta": [
+      "Loopt je vloer af en wil je weten waarom?",
+      "Een quickscan kijkt naar vloer, gevels en kruipruimte samen en adviseert over de volgende stap."
+    ]
+  }
+]

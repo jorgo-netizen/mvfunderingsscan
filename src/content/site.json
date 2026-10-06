@@ -1,0 +1,139 @@
+{
+  "domain": "https://mvfunderingsscan.nl",
+  "today": "2026-10-05",
+  "nap": {
+    "name": "MV Funderingsscan",
+    "street": "Mr. P. J. Troelstraweg 149",
+    "postal": "8919 AA",
+    "city": "Leeuwarden",
+    "region": "Friesland",
+    "country": "NL",
+    "phone_display": "058 - 203 71 72",
+    "phone_href": "tel:+31582037172",
+    "phone_intl": "+31 58 203 7172",
+    "email": "info@mvadviseurs.nl",
+    "hours_display": "Ma – vr 09:00 – 17:00"
+  },
+  "images": {
+    "funderingsinspectie-woning-gevel": {
+      "widths": [
+        640,
+        1024,
+        1600,
+        2000
+      ],
+      "width": 2000,
+      "height": 1333
+    },
+    "jaren-dertig-woningen-straat": {
+      "widths": [
+        640,
+        1024,
+        1600
+      ],
+      "width": 1600,
+      "height": 1066
+    },
+    "vooroorlogse-woning-voordeur": {
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "width": 1200,
+      "height": 1800
+    },
+    "metselwerk-gevel-detail": {
+      "widths": [
+        640,
+        1024,
+        1600
+      ],
+      "width": 1600,
+      "height": 1067
+    }
+  },
+  "nav": [
+    {
+      "href": "/",
+      "label": "Home"
+    },
+    {
+      "href": "/funderingsscan/",
+      "label": "Funderingsscan"
+    },
+    {
+      "href": "/fase-0/",
+      "label": "Fase 0"
+    },
+    {
+      "href": "/fase-1/",
+      "label": "Fase 1"
+    },
+    {
+      "href": "/#werkwijze",
+      "label": "Werkwijze"
+    },
+    {
+      "href": "/kennisbank/",
+      "label": "Kennisbank"
+    },
+    {
+      "href": "/#faq",
+      "label": "Veelgestelde vragen"
+    }
+  ],
+  "services": {
+    "funderingsscan": {
+      "name": "Funderingsscan",
+      "serviceType": "Funderingsonderzoek",
+      "url": "https://mvfunderingsscan.nl/funderingsscan/",
+      "description": "Onafhankelijk onderzoek naar de staat en de risico's van de fundering van een woning, beginnend met een Quick Scan en waar nodig gevolgd door metingen."
+    },
+    "fase0": {
+      "name": "Fase 0 funderingsonderzoek (Quick Scan)",
+      "serviceType": "Quick Scan fundering",
+      "url": "https://mvfunderingsscan.nl/fase-0/",
+      "description": "Niet-destructief vooronderzoek: archief- en bodemonderzoek, visuele inspectie van woning en kruipruimte, risico-inschatting en rapport met vervolgadvies.",
+      "offers": {
+        "minPrice": 350
+      }
+    },
+    "fase1": {
+      "name": "Fase 1 funderingsonderzoek",
+      "serviceType": "Funderingsonderzoek met metingen",
+      "url": "https://mvfunderingsscan.nl/fase-1/",
+      "description": "Vervolgonderzoek met lintvoegwaterpassing, loodmetingen, vloerveldwaterpassing en het vastleggen van scheurpatronen om vast te stellen of een woning stabiel staat.",
+      "offers": {
+        "minPrice": 750,
+        "maxPrice": 1500
+      }
+    }
+  },
+  "defaultSide": [
+    {
+      "href": "/funderingsscan/",
+      "label": "Funderingsscan: hoe werkt het?"
+    },
+    {
+      "href": "/fase-0/",
+      "label": "Fase 0 · Quick Scan"
+    },
+    {
+      "href": "/fase-1/",
+      "label": "Fase 1 · onderzoek met metingen"
+    },
+    {
+      "href": "/funderingsonderzoek-friesland/",
+      "label": "Funderingsonderzoek in Friesland"
+    },
+    {
+      "href": "/funderingsonderzoek-groningen/",
+      "label": "Funderingsonderzoek in Groningen"
+    },
+    {
+      "href": "/kennisbank/",
+      "label": "Kennisbank funderingen"
+    }
+  ]
+}

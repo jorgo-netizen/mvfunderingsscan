@@ -1,0 +1,822 @@
+{
+  "domain": "https://mvfunderingsscan.nl",
+  "today": "2026-10-05",
+  "nap": {
+    "name": "MV Funderingsscan",
+    "street": "Mr. P. J. Troelstraweg 149",
+    "postal": "8919 AA",
+    "city": "Leeuwarden",
+    "region": "Friesland",
+    "country": "NL",
+    "phone_display": "058 - 203 71 72",
+    "phone_href": "tel:+31582037172",
+    "phone_intl": "+31 58 203 7172",
+    "email": "info@mvadviseurs.nl",
+    "hours_display": "Ma – vr 09:00 – 17:00"
+  },
+  "images": {
+    "funderingsinspectie-woning-gevel": {
+      "widths": [
+        640,
+        1024,
+        1600,
+        2000
+      ],
+      "width": 2000,
+      "height": 1333
+    },
+    "jaren-dertig-woningen-straat": {
+      "widths": [
+        640,
+        1024,
+        1600
+      ],
+      "width": 1600,
+      "height": 1066
+    },
+    "vooroorlogse-woning-voordeur": {
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "width": 1200,
+      "height": 1800
+    },
+    "metselwerk-gevel-detail": {
+      "widths": [
+        640,
+        1024,
+        1600
+      ],
+      "width": 1600,
+      "height": 1067
+    }
+  },
+  "nav": [
+    {
+      "href": "/funderingsscan/",
+      "label": "Funderingsscan",
+      "children": [
+        {
+          "href": "/funderingsscan/",
+          "label": "Funderingsscan: overzicht"
+        },
+        {
+          "href": "/quickscan-fundering/",
+          "label": "Quickscan fundering"
+        },
+        {
+          "href": "/fase-0-funderingsonderzoek/",
+          "label": "Fase 0 funderingsonderzoek"
+        },
+        {
+          "href": "/fase-1-funderingsonderzoek/",
+          "label": "Fase 1 funderingsonderzoek"
+        },
+        {
+          "href": "/funderingsinspectie/",
+          "label": "Funderingsinspectie"
+        },
+        {
+          "href": "/funderingsmetingen/",
+          "label": "Funderingsmetingen"
+        },
+        {
+          "href": "/funderingsrapport/",
+          "label": "Funderingsrapport"
+        },
+        {
+          "href": "/prijzen/",
+          "label": "Prijzen"
+        }
+      ]
+    },
+    {
+      "href": "/funderingsonderzoek-woning/",
+      "label": "Kopen & verkopen",
+      "children": [
+        {
+          "href": "/funderingsonderzoek-woning/",
+          "label": "Funderingsonderzoek woning"
+        },
+        {
+          "href": "/funderingsonderzoek-bij-aankoop/",
+          "label": "Bij aankoop"
+        },
+        {
+          "href": "/funderingsonderzoek-bij-verkoop/",
+          "label": "Bij verkoop"
+        },
+        {
+          "href": "/funderingsonderzoek-taxatie/",
+          "label": "Taxatie"
+        }
+      ]
+    },
+    {
+      "href": "/funderingsproblemen/",
+      "label": "Problemen",
+      "children": [
+        {
+          "href": "/funderingsproblemen/",
+          "label": "Funderingsproblemen: overzicht"
+        },
+        {
+          "href": "/scheuren-in-gevel/",
+          "label": "Scheuren in de gevel"
+        },
+        {
+          "href": "/verzakking-woning/",
+          "label": "Verzakking"
+        },
+        {
+          "href": "/scheefstand-woning/",
+          "label": "Scheefstand"
+        },
+        {
+          "href": "/klemmende-deuren-en-ramen/",
+          "label": "Klemmende deuren en ramen"
+        },
+        {
+          "href": "/problemen-met-houten-palen/",
+          "label": "Houten palen"
+        },
+        {
+          "href": "/fundering-op-staal/",
+          "label": "Fundering op staal"
+        },
+        {
+          "href": "/funderingsproblemen-veen/",
+          "label": "Veen"
+        },
+        {
+          "href": "/funderingsproblemen-klei/",
+          "label": "Klei"
+        }
+      ]
+    },
+    {
+      "href": "/werkgebied/",
+      "label": "Werkgebied",
+      "children": [
+        {
+          "href": "/werkgebied/",
+          "label": "Heel het werkgebied"
+        },
+        {
+          "href": "/funderingsonderzoek-friesland/",
+          "label": "Friesland"
+        },
+        {
+          "href": "/funderingsonderzoek-groningen/",
+          "label": "Groningen"
+        },
+        {
+          "href": "/funderingsonderzoek-leeuwarden/",
+          "label": "Leeuwarden"
+        },
+        {
+          "href": "/funderingsonderzoek-sneek/",
+          "label": "Sneek"
+        },
+        {
+          "href": "/funderingsonderzoek-harlingen/",
+          "label": "Harlingen"
+        },
+        {
+          "href": "/funderingsonderzoek-drachten/",
+          "label": "Drachten"
+        },
+        {
+          "href": "/funderingsonderzoek-heerenveen/",
+          "label": "Heerenveen"
+        },
+        {
+          "href": "/funderingsonderzoek-groningen-stad/",
+          "label": "Groningen stad"
+        },
+        {
+          "href": "/funderingsonderzoek-appingedam/",
+          "label": "Appingedam"
+        },
+        {
+          "href": "/funderingsonderzoek-delfzijl/",
+          "label": "Delfzijl"
+        },
+        {
+          "href": "/funderingsonderzoek-franeker/",
+          "label": "Franeker"
+        },
+        {
+          "href": "/funderingsscan-leeuwarden/",
+          "label": "Funderingsscan Leeuwarden"
+        },
+        {
+          "href": "/funderingsonderzoek-haren/",
+          "label": "Haren"
+        },
+        {
+          "href": "/funderingsonderzoek-veendam/",
+          "label": "Veendam"
+        },
+        {
+          "href": "/funderingsonderzoek-winschoten/",
+          "label": "Winschoten"
+        }
+      ]
+    },
+    {
+      "href": "/kennisbank/",
+      "label": "Kennisbank",
+      "children": [
+        {
+          "href": "/kennisbank/",
+          "label": "Kennisbank: overzicht"
+        },
+        {
+          "href": "/kennisbank/begrippenlijst/",
+          "label": "Begrippenlijst"
+        },
+        {
+          "href": "/kennisbank/wat-is-funderingsonderzoek/",
+          "label": "Wat is funderingsonderzoek?"
+        },
+        {
+          "href": "/kennisbank/lintvoegwaterpassing/",
+          "label": "Lintvoegwaterpassing"
+        },
+        {
+          "href": "/kennisbank/loodmeting/",
+          "label": "Loodmeting"
+        },
+        {
+          "href": "/kennisbank/vloerveldwaterpassing/",
+          "label": "Vloerveldwaterpassing"
+        },
+        {
+          "href": "/kennisbank/scheurpatronen/",
+          "label": "Scheurpatronen"
+        },
+        {
+          "href": "/kennisbank/zetting/",
+          "label": "Zetting"
+        },
+        {
+          "href": "/funderingsscan-check/",
+          "label": "Online funderingscheck"
+        }
+      ]
+    },
+    {
+      "href": "/werkwijze/",
+      "label": "Werkwijze"
+    },
+    {
+      "href": "/contact/",
+      "label": "Contact"
+    }
+  ],
+  "services": {
+    "funderingsscan": {
+      "name": "Funderingsscan",
+      "serviceType": "Funderingsonderzoek",
+      "url": "https://mvfunderingsscan.nl/funderingsscan/",
+      "description": "Onafhankelijk onderzoek naar de staat en de risico's van de fundering van een woning, beginnend met een Quick Scan en waar nodig gevolgd door metingen."
+    },
+    "fase0": {
+      "name": "Fase 0 funderingsonderzoek (Quick Scan)",
+      "serviceType": "Quick Scan fundering",
+      "url": "https://mvfunderingsscan.nl/fase-0-funderingsonderzoek/",
+      "description": "Niet-destructief vooronderzoek: archief- en bodemonderzoek, visuele inspectie van woning en kruipruimte, risico-inschatting en rapport met vervolgadvies.",
+      "offers": {
+        "minPrice": 350
+      },
+      "alternateName": [
+        "Quickscan fundering",
+        "Funderingscheck"
+      ]
+    },
+    "fase1": {
+      "name": "Fase 1 funderingsonderzoek",
+      "serviceType": "Funderingsonderzoek met metingen",
+      "url": "https://mvfunderingsscan.nl/fase-1-funderingsonderzoek/",
+      "description": "Vervolgonderzoek met lintvoegwaterpassing, loodmetingen, vloerveldwaterpassing en het vastleggen van scheurpatronen om vast te stellen of een woning stabiel staat.",
+      "offers": {
+        "minPrice": 750,
+        "maxPrice": 1500
+      }
+    }
+  },
+  "defaultSide": [
+    {
+      "href": "/funderingsscan/",
+      "label": "Funderingsscan"
+    },
+    {
+      "href": "/quickscan-fundering/",
+      "label": "Quickscan fundering"
+    },
+    {
+      "href": "/fase-0-funderingsonderzoek/",
+      "label": "Fase 0 funderingsonderzoek"
+    },
+    {
+      "href": "/fase-1-funderingsonderzoek/",
+      "label": "Fase 1 funderingsonderzoek"
+    },
+    {
+      "href": "/prijzen/",
+      "label": "Prijzen"
+    },
+    {
+      "href": "/funderingsscan-check/",
+      "label": "Online funderingscheck"
+    }
+  ],
+  "kbGroups": [
+    [
+      "Funderingsonderzoek",
+      [
+        "wat-is-funderingsonderzoek",
+        "wat-is-een-funderingsscan",
+        "wat-is-een-quickscan-fundering",
+        "wat-is-fase-0",
+        "wat-is-fase-1",
+        "verschil-fase-0-en-fase-1",
+        "wanneer-funderingsonderzoek",
+        "heb-ik-een-funderingsscan-nodig",
+        "wanneer-fase-1",
+        "hoe-lang-duurt-funderingsonderzoek",
+        "wat-wordt-onderzocht"
+      ]
+    ],
+    [
+      "Het fase 0-onderzoek stap voor stap",
+      [
+        "archiefonderzoek-fundering",
+        "visuele-funderingsinspectie",
+        "kruipruimte-inspectie",
+        "funderingsrisico-inschatting",
+        "funderingsrapport-lezen",
+        "wat-na-een-quickscan"
+      ]
+    ],
+    [
+      "Metingen",
+      [
+        "lintvoegwaterpassing",
+        "loodmeting",
+        "vloerveldwaterpassing",
+        "scheurpatronen",
+        "scheurmeting",
+        "monitoring-scheuren",
+        "scheefstandsmeting",
+        "hoogtemeting",
+        "zettingsmeting",
+        "maaiveldhoogte",
+        "grondwatermeting"
+      ]
+    ],
+    [
+      "Funderingsproblemen en signalen",
+      [
+        "scheuren-in-woning",
+        "scheuren-in-gevel",
+        "scheuren-in-metselwerk",
+        "scheuren-boven-kozijnen",
+        "scheuren-bij-aanbouw",
+        "verzakking-woning",
+        "scheefstand",
+        "klemmende-deuren",
+        "klemmende-ramen",
+        "helling-in-vloer",
+        "ongelijke-zetting",
+        "funderingsrisico"
+      ]
+    ],
+    [
+      "Funderingstypen",
+      [
+        "paalfundering",
+        "houten-paalfundering",
+        "paalrot",
+        "fundering-op-staal"
+      ]
+    ],
+    [
+      "Bodem en grondwater",
+      [
+        "zetting",
+        "veenbodem",
+        "kleibodem",
+        "zandbodem",
+        "bodemdaling",
+        "grondwater-en-fundering",
+        "peilverschillen"
+      ]
+    ],
+    [
+      "Aankoop",
+      [
+        "funderingsscan-bij-aankoop",
+        "funderingsonderzoek-voor-bod",
+        "funderingsrisico-bij-aankoop",
+        "funderingsscan-en-hypotheek",
+        "funderingsscan-en-taxatie"
+      ]
+    ],
+    [
+      "Verkoop",
+      [
+        "funderingsscan-bij-verkoop",
+        "funderingsrapport-voor-verkoper"
+      ]
+    ],
+    [
+      "Kosten",
+      [
+        "wat-kost-een-funderingsscan",
+        "wat-kost-fase-0",
+        "kosten-fase-1",
+        "kosten-funderingsherstel",
+        "funderingsherstel"
+      ]
+    ],
+    [
+      "Regio",
+      [
+        "funderingsproblemen-friesland",
+        "funderingsproblemen-groningen"
+      ]
+    ]
+  ],
+  "glossaryExtra": [
+    {
+      "name": "Lintvoeg",
+      "description": "Een doorlopende horizontale metselvoeg in een gevel die bij de bouw vrijwel waterpas is gemetseld en daardoor bruikbaar is als referentie voor hoogtemetingen.",
+      "href": "/kennisbank/lintvoegwaterpassing/"
+    },
+    {
+      "name": "Vloerveld",
+      "description": "Het vloeroppervlak van een vertrek of een deel van de vloer tussen dragende muren, waarop bij een vloerveldwaterpassing een raster van meetpunten wordt gemeten.",
+      "href": "/kennisbank/vloerveldwaterpassing/"
+    },
+    {
+      "name": "Maaiveld",
+      "description": "De hoogte van het terrein rondom een woning. Een dalend maaiveld kan wijzen op bodemdaling of inklinking van de ondergrond.",
+      "href": "/kennisbank/maaiveldhoogte/"
+    },
+    {
+      "name": "NAP (Normaal Amsterdams Peil)",
+      "description": "Het landelijke referentievlak voor hoogtes in Nederland. Hoogtemetingen kunnen ten opzichte van NAP of ten opzichte van een eigen referentiepunt worden bepaald.",
+      "href": "/kennisbank/hoogtemeting/"
+    },
+    {
+      "name": "KCAF-risicoklasse",
+      "description": "Indeling van het funderingsrisico van een woning in klasse A (laag) tot en met E (hoog) in het funderingsrisicorapport van het Kenniscentrum Aanpak Funderingsproblematiek.",
+      "href": "/funderingsonderzoek-taxatie/"
+    },
+    {
+      "name": "Funderingsparagraaf",
+      "description": "Het vaste onderdeel over funderingsrisico in het model Taxatierapport Woonruimte dat sinds 1 april 2026 wordt gebruikt.",
+      "href": "/kennisbank/funderingsscan-en-taxatie/"
+    },
+    {
+      "name": "Inspectieput",
+      "description": "Een plaatselijke uitgraving naast de woning om de fundering direct te bekijken, eventueel met houtonderzoek bij houten palen. Valt buiten fase 0 en fase 1.",
+      "href": "/kennisbank/wat-na-een-quickscan/"
+    },
+    {
+      "name": "Peilbuis",
+      "description": "Een buis in de grond waarmee de grondwaterstand op een vaste plek wordt gemeten, vaak als onderdeel van een meetnet van overheid of waterschap.",
+      "href": "/kennisbank/grondwatermeting/"
+    },
+    {
+      "name": "Monitoring",
+      "description": "Het herhaald meten of vastleggen van scheuren, hoogtes of scheefstand over een langere periode, om te zien of beweging nog doorgaat.",
+      "href": "/kennisbank/monitoring-scheuren/"
+    },
+    {
+      "name": "Latei",
+      "description": "Een balk of constructie boven een raam- of deuropening die het metselwerk erboven draagt. Een roestende stalen latei kan scheuren boven kozijnen veroorzaken.",
+      "href": "/kennisbank/scheuren-boven-kozijnen/"
+    }
+  ],
+  "gemeenten": [
+    {
+      "naam": "Leeuwarden",
+      "provincie": "Friesland",
+      "href": "/funderingsonderzoek-leeuwarden/",
+      "kernen": [
+        "Leeuwarden",
+        "Grou",
+        "Stiens",
+        "Wirdum",
+        "Goutum",
+        "Jirnsum",
+        "Wergea",
+        "Reduzum"
+      ]
+    },
+    {
+      "naam": "Súdwest-Fryslân",
+      "provincie": "Friesland",
+      "href": "/funderingsonderzoek-sneek/",
+      "kernen": [
+        "Sneek",
+        "Bolsward",
+        "Workum",
+        "Makkum",
+        "Hindeloopen",
+        "IJlst",
+        "Wommels",
+        "Koudum",
+        "Stavoren"
+      ]
+    },
+    {
+      "naam": "Harlingen",
+      "provincie": "Friesland",
+      "href": "/funderingsonderzoek-harlingen/",
+      "kernen": [
+        "Harlingen",
+        "Midlum",
+        "Wijnaldum"
+      ]
+    },
+    {
+      "naam": "Smallingerland",
+      "provincie": "Friesland",
+      "href": "/funderingsonderzoek-drachten/",
+      "kernen": [
+        "Drachten",
+        "Opeinde",
+        "Rottevalle",
+        "Boornbergum",
+        "Nijega"
+      ]
+    },
+    {
+      "naam": "Heerenveen",
+      "provincie": "Friesland",
+      "href": "/funderingsonderzoek-heerenveen/",
+      "kernen": [
+        "Heerenveen",
+        "Akkrum",
+        "Jubbega",
+        "Oranjewoud",
+        "Tjalleberd"
+      ]
+    },
+    {
+      "naam": "Waadhoeke",
+      "provincie": "Friesland",
+      "href": "/funderingsonderzoek-franeker/",
+      "kernen": [
+        "Franeker",
+        "Sint Annaparochie",
+        "Sint Jacobiparochie",
+        "Dronrijp",
+        "Menaldum",
+        "Tzummarum"
+      ]
+    },
+    {
+      "naam": "Achtkarspelen",
+      "provincie": "Friesland",
+      "href": "/funderingsonderzoek-achtkarspelen/",
+      "kernen": [
+        "Buitenpost",
+        "Surhuisterveen",
+        "Harkema",
+        "Augustinusga",
+        "Drogeham",
+        "Twijzel",
+        "Kootstertille",
+        "Gerkesklooster"
+      ]
+    },
+    {
+      "naam": "Dantumadiel",
+      "provincie": "Friesland",
+      "href": "/funderingsonderzoek-dantumadiel/",
+      "kernen": [
+        "Damwâld",
+        "Feanwâlden",
+        "Rinsumageast",
+        "Broeksterwâld",
+        "Wâlterswâld",
+        "Driezum"
+      ]
+    },
+    {
+      "naam": "De Fryske Marren",
+      "provincie": "Friesland",
+      "href": "/funderingsonderzoek-de-fryske-marren/",
+      "kernen": [
+        "Joure",
+        "Lemmer",
+        "Balk",
+        "Sint Nicolaasga",
+        "Sloten",
+        "Woudsend",
+        "Langweer"
+      ]
+    },
+    {
+      "naam": "Noardeast-Fryslân",
+      "provincie": "Friesland",
+      "href": "/funderingsonderzoek-noardeast-fryslan/",
+      "kernen": [
+        "Dokkum",
+        "Kollum",
+        "Holwerd",
+        "Ternaard",
+        "Metslawier",
+        "Anjum",
+        "Ee"
+      ]
+    },
+    {
+      "naam": "Ooststellingwerf",
+      "provincie": "Friesland",
+      "href": "/funderingsonderzoek-ooststellingwerf/",
+      "kernen": [
+        "Oosterwolde",
+        "Appelscha",
+        "Makkinga",
+        "Haulerwijk",
+        "Donkerbroek"
+      ]
+    },
+    {
+      "naam": "Opsterland",
+      "provincie": "Friesland",
+      "href": "/funderingsonderzoek-opsterland/",
+      "kernen": [
+        "Gorredijk",
+        "Beetsterzwaag",
+        "Ureterp",
+        "Bakkeveen",
+        "Lippenhuizen"
+      ]
+    },
+    {
+      "naam": "Tytsjerksteradiel",
+      "provincie": "Friesland",
+      "href": "/funderingsonderzoek-tytsjerksteradiel/",
+      "kernen": [
+        "Burgum",
+        "Hurdegaryp",
+        "Gytsjerk",
+        "Suameer",
+        "Garyp",
+        "Tytsjerk",
+        "Oentsjerk"
+      ]
+    },
+    {
+      "naam": "Weststellingwerf",
+      "provincie": "Friesland",
+      "href": "/funderingsonderzoek-weststellingwerf/",
+      "kernen": [
+        "Wolvega",
+        "Noordwolde",
+        "Oldeberkoop",
+        "Steggerda",
+        "De Blesse"
+      ]
+    },
+    {
+      "naam": "Groningen",
+      "provincie": "Groningen",
+      "href": "/funderingsonderzoek-groningen-stad/",
+      "kernen": [
+        "Groningen",
+        "Haren",
+        "Ten Boer",
+        "Glimmen",
+        "Noordlaren",
+        "Onnen",
+        "Garmerwolde"
+      ]
+    },
+    {
+      "naam": "Eemsdelta",
+      "provincie": "Groningen",
+      "href": "/funderingsonderzoek-eemsdelta/",
+      "kernen": [
+        "Appingedam",
+        "Delfzijl",
+        "Loppersum",
+        "Farmsum",
+        "Termunten",
+        "'t Zandt",
+        "Wirdum (Gn)"
+      ]
+    },
+    {
+      "naam": "Oldambt",
+      "provincie": "Groningen",
+      "href": "/funderingsonderzoek-winschoten/",
+      "kernen": [
+        "Winschoten",
+        "Scheemda",
+        "Midwolda",
+        "Finsterwolde",
+        "Nieuweschans",
+        "Heiligerlee",
+        "Oostwold"
+      ]
+    },
+    {
+      "naam": "Veendam",
+      "provincie": "Groningen",
+      "href": "/funderingsonderzoek-veendam/",
+      "kernen": [
+        "Veendam",
+        "Wildervank",
+        "Ommelanderwijk"
+      ]
+    },
+    {
+      "naam": "Het Hogeland",
+      "provincie": "Groningen",
+      "href": "/funderingsonderzoek-het-hogeland/",
+      "kernen": [
+        "Winsum",
+        "Uithuizen",
+        "Bedum",
+        "Warffum",
+        "Baflo",
+        "Usquert",
+        "Leens",
+        "Ulrum",
+        "Uithuizermeeden"
+      ]
+    },
+    {
+      "naam": "Midden-Groningen",
+      "provincie": "Groningen",
+      "href": "/funderingsonderzoek-midden-groningen/",
+      "kernen": [
+        "Hoogezand",
+        "Sappemeer",
+        "Slochteren",
+        "Siddeburen",
+        "Muntendam",
+        "Zuidbroek",
+        "Harkstede",
+        "Kolham"
+      ]
+    },
+    {
+      "naam": "Pekela",
+      "provincie": "Groningen",
+      "href": "/funderingsonderzoek-pekela/",
+      "kernen": [
+        "Oude Pekela",
+        "Nieuwe Pekela"
+      ]
+    },
+    {
+      "naam": "Stadskanaal",
+      "provincie": "Groningen",
+      "href": "/funderingsonderzoek-stadskanaal/",
+      "kernen": [
+        "Stadskanaal",
+        "Musselkanaal",
+        "Mussel",
+        "Onstwedde",
+        "Alteveer"
+      ]
+    },
+    {
+      "naam": "Westerkwartier",
+      "provincie": "Groningen",
+      "href": "/funderingsonderzoek-westerkwartier/",
+      "kernen": [
+        "Zuidhorn",
+        "Leek",
+        "Grootegast",
+        "Marum",
+        "Aduard",
+        "Grijpskerk",
+        "Tolbert"
+      ]
+    },
+    {
+      "naam": "Westerwolde",
+      "provincie": "Groningen",
+      "href": "/funderingsonderzoek-westerwolde/",
+      "kernen": [
+        "Ter Apel",
+        "Vlagtwedde",
+        "Bellingwolde",
+        "Sellingen",
+        "Bourtange"
+      ]
+    }
+  ]
+}

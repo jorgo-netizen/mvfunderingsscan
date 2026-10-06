@@ -1,0 +1,78 @@
+{
+  "slug": "jaren-dertigwoning-sneek-geen-directe-actie",
+  "plaats": "Sneek",
+  "title": "Funderingsscan jaren-dertigwoning in Sneek | MV Funderingsscan",
+  "description": "Praktijkvoorbeeld: een koper liet vóór de aankoop van een jaren-dertigwoning in Sneek een Quick Scan uitvoeren. Lees wat we zagen en wat het advies was.",
+  "h1": "Jaren-dertigwoning in Sneek: Quick Scan vóór aankoop",
+  "lead": "VUL IN: 2–3 zinnen met de situatie en de uitkomst (zonder adres of namen).",
+  "hero_image": {
+    "name": "jaren-dertig-woningen-straat",
+    "alt": "Rij jaren-dertigwoningen"
+  },
+  "facts": [
+    {
+      "label": "Plaats",
+      "value": "Sneek"
+    },
+    {
+      "label": "Onderzoek",
+      "value": "Fase 0 · Quick Scan"
+    },
+    {
+      "label": "Uitkomst",
+      "value": "Geen directe actie"
+    }
+  ],
+  "services": [
+    "fase0"
+  ],
+  "sections": [
+    {
+      "id": "situatie",
+      "h2": "De situatie",
+      "answer": "VUL IN",
+      "body": "<p>VUL IN: type woning, bouwjaar (globaal), aanleiding.</p>"
+    },
+    {
+      "id": "onderzoek",
+      "h2": "Wat we hebben onderzocht",
+      "answer": "VUL IN",
+      "body": "<p>VUL IN: archief, inspectie, eventuele metingen.</p>"
+    },
+    {
+      "id": "bevindingen",
+      "h2": "Bevindingen",
+      "answer": "VUL IN",
+      "body": "<p>VUL IN</p>"
+    },
+    {
+      "id": "advies",
+      "h2": "Advies en vervolg",
+      "answer": "VUL IN",
+      "body": "<p>VUL IN. Lees meer over <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "VUL IN: vraag die de klant had?",
+      "a": "<p>VUL IN</p>"
+    }
+  ],
+  "related": [
+    {
+      "href": "/fase-0-funderingsonderzoek/",
+      "label": "Fase 0 funderingsonderzoek",
+      "text": "Zo werkt de Quick Scan."
+    },
+    {
+      "href": "/funderingsonderzoek-sneek/",
+      "label": "Funderingsonderzoek Sneek",
+      "text": "Lokale achtergrond."
+    },
+    {
+      "href": "/funderingsonderzoek-bij-aankoop/",
+      "label": "Onderzoek bij aankoop",
+      "text": "Waarom vóór de koop?"
+    }
+  ]
+}

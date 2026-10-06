@@ -1,0 +1,367 @@
+[
+  {
+    "path": "/funderingsscan/",
+    "nav_active": "/funderingsscan/",
+    "title": "Funderingsscan | Eerste onderzoek naar je fundering | MV Funderingsscan",
+    "description": "Wat is een funderingsscan, wat wordt onderzocht en wat kost het? MV Funderingsscan onderzoekt funderingen in Friesland en Groningen. Vaste prijs vooraf.",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/funderingsscan/",
+        "name": "Funderingsscan"
+      }
+    ],
+    "eyebrow": "Dienst · Funderingsscan",
+    "h1": "Funderingsscan voor je woning",
+    "lead": "Een funderingsscan is een onafhankelijke, niet-destructieve beoordeling van de staat en de mogelijke risico's van de fundering van een woning. MV Funderingsscan voert deze scan uit in heel Friesland en Groningen.",
+    "hero_image": {
+      "name": "funderingsinspectie-woning-gevel",
+      "alt": "Funderingsspecialist meet met een waterpas langs de gevel van een woning"
+    },
+    "facts": [
+      {
+        "label": "Start",
+        "value": "Fase 0 · Quick Scan"
+      },
+      {
+        "label": "Prijs",
+        "value": "vanaf ca. €350"
+      },
+      {
+        "label": "Rapport",
+        "value": "binnen 5 werkdagen na inspectie"
+      },
+      {
+        "label": "Werkgebied",
+        "value": "Friesland &amp; Groningen"
+      }
+    ],
+    "services": [
+      "funderingsscan",
+      "fase0",
+      "fase1"
+    ],
+    "sections": [
+      {
+        "id": "wat-is-een-funderingsscan",
+        "h2": "Wat is een funderingsscan?",
+        "answer": "Een funderingsscan is een eerste onderzoek naar de fundering van een woning, zonder graafwerk of schade aan het pand. Het doel is vaststellen of er signalen of omstandigheden zijn die wijzen op een funderingsrisico.",
+        "body": "<p>De fundering zelf zit onder de grond en is dus niet te zien. Toch laat een woning vaak merken hoe het met de fundering gaat: aan scheuren in het metselwerk, aan scheefstand, aan deuren die klemmen of aan de toestand van de kruipruimte. Bij een funderingsscan combineren we die zichtbare signalen met gegevens uit archieven en bodemkaarten. Zo ontstaat een onderbouwd beeld, zonder dat er ook maar één tegel hoeft te worden gelicht.</p>\n<p>MV Funderingsscan werkt in twee stappen. De scan begint altijd met <a href=\"/fase-0/\">fase 0, de Quick Scan</a>. Alleen als die daar aanleiding voor geeft, volgt <a href=\"/fase-1/\">fase 1: onderzoek met metingen</a>.</p>"
+      },
+      {
+        "id": "wat-wordt-onderzocht",
+        "h2": "Wat wordt er onderzocht bij een funderingsscan?",
+        "answer": "Bij een funderingsscan onderzoeken we het bouwjaar, het funderingstype, de bodem en het grondwater, en inspecteren we de woning op scheuren, scheefstand, klemmende deuren en ramen en de staat van de kruipruimte.",
+        "body": "<div class=\"two-col-list\">\n<div><h3>Vooronderzoek</h3><ul class=\"checklist\"><li>Bouwjaar en bouwhistorie</li><li>Funderingstype: houten palen of fundering op staal</li><li>Bodemopbouw: veen, klei of zand</li><li>Grondwaterstanden en bodemdaling</li></ul></div>\n<div><h3>Inspectie op locatie</h3><ul class=\"checklist\"><li>Scheuren in gevels en binnenmuren</li><li>Scheefstand van gevels, vloeren en kozijnen</li><li>Klemmende deuren en ramen</li><li>Kruipruimte, voor zover bereikbaar</li></ul></div>\n</div>"
+      },
+      {
+        "id": "uitkomst",
+        "h2": "Wat levert een funderingsscan op?",
+        "answer": "Je ontvangt een rapport met een risico-inschatting, een fotoverslag van de bevindingen en een duidelijke conclusie: geen directe actie nodig, monitoren of verder onderzoek.",
+        "body": "<div class=\"mini-outcomes\">\n<div class=\"mini-outcome mini-ok\"><strong>Geen directe actie</strong><span>Geen signalen die op een funderingsprobleem wijzen.</span></div>\n<div class=\"mini-outcome mini-watch\"><strong>Monitoren</strong><span>Er is iets zichtbaar, maar ingrijpen is nu niet nodig.</span></div>\n<div class=\"mini-outcome mini-next\"><strong>Verder onderzoek</strong><span>Meer duidelijkheid nodig via fase 1.</span></div>\n</div>\n<p>Het rapport is geschreven in begrijpelijke taal. Je kunt het gebruiken bij een aankoopbeslissing, in gesprek met een verkoper, voor de taxatie of gewoon voor je eigen gemoedsrust.</p>"
+      },
+      {
+        "id": "kosten",
+        "h2": "Wat kost een funderingsscan?",
+        "answer": "Een fase 0 funderingsscan begint indicatief vanaf ongeveer €350. De uiteindelijke prijs hangt af van de woning en de benodigde werkzaamheden; je hoort die vooraf.",
+        "body": "<p>Is na de Quick Scan vervolgonderzoek nodig, dan ligt een fase 1 onderzoek indicatief tussen €750 en €1.500. Ook dan krijg je eerst een vaste prijs voordat je beslist. Meer uitleg over de opbouw van de kosten lees je in <a href=\"/kennisbank/wat-kost-een-funderingsonderzoek/\">wat kost een funderingsonderzoek?</a></p>"
+      },
+      {
+        "id": "wanneer",
+        "h2": "Wanneer is een funderingsscan verstandig?",
+        "answer": "Een funderingsscan is vooral verstandig bij de aankoop of verkoop van een woning van vóór circa 1970, bij zichtbare scheuren of scheefstand, en wanneer een taxateur om aanvullend funderingsonderzoek vraagt.",
+        "body": "<p>Ook voor een verbouwing kan het slim zijn om eerst te weten waar de woning op staat: een uitbouw of zwaardere constructie legt extra belasting op de fundering. In <a href=\"/kennisbank/wanneer-funderingsonderzoek/\">wanneer heb je funderingsonderzoek nodig?</a> zetten we alle situaties op een rij.</p>"
+      },
+      {
+        "id": "werkgebied",
+        "h2": "Waar voert MV Funderingsscan funderingsscans uit?",
+        "answer": "MV Funderingsscan werkt in de provincies Friesland en Groningen, vanuit Leeuwarden.",
+        "body": "<p>Lees meer over <a href=\"/funderingsonderzoek-friesland/\">funderingsonderzoek in Friesland</a> en <a href=\"/funderingsonderzoek-groningen/\">funderingsonderzoek in Groningen</a>, of bekijk de pagina's voor <a href=\"/funderingsonderzoek-leeuwarden/\">Leeuwarden</a>, <a href=\"/funderingsonderzoek-sneek/\">Sneek</a> en <a href=\"/funderingsonderzoek-groningen-stad/\">de stad Groningen</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is een funderingsscan hetzelfde als een bouwkundige keuring?",
+        "a": "<p>Nee. Een bouwkundige keuring beoordeelt de hele woning in de breedte, van dak tot installaties, en gaat maar beperkt in op de fundering. Een funderingsscan richt zich volledig op de fundering en de ondergrond en gaat daar veel dieper op in.</p>"
+      },
+      {
+        "q": "Wordt er bij een funderingsscan gegraven?",
+        "a": "<p>Nee. Zowel fase 0 als fase 1 zijn niet-destructief: we graven de fundering niet open en beschadigen niets aan de woning. Een inspectieput is pas aan de orde in een later stadium en valt buiten de scan.</p>"
+      },
+      {
+        "q": "Moet ik eerst fase 0 laten doen voordat fase 1 mogelijk is?",
+        "a": "<p>In de regel wel. De Quick Scan laat zien of metingen zinvol zijn en waar we ons bij fase 1 op moeten richten. Zo betaal je alleen voor onderzoek dat echt iets toevoegt.</p>"
+      },
+      {
+        "q": "Voert MV Funderingsscan ook funderingsherstel uit?",
+        "a": "<p>Nee. We onderzoeken alleen en voeren geen herstelwerk uit. Daardoor hebben we geen belang bij de uitkomst en is ons advies onafhankelijk.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/fase-0/",
+        "label": "Fase 0 · Quick Scan",
+        "text": "Het eerste onderzoek: archief, inspectie en risico-inschatting."
+      },
+      {
+        "href": "/fase-1/",
+        "label": "Fase 1 · metingen",
+        "text": "Lintvoegwaterpassing, loodmeting en vloerveldwaterpassing."
+      },
+      {
+        "href": "/kennisbank/wat-is-een-funderingsscan/",
+        "label": "Wat is een funderingsscan?",
+        "text": "Uitgebreide uitleg in onze kennisbank."
+      }
+    ]
+  },
+  {
+    "path": "/fase-0/",
+    "nav_active": "/fase-0/",
+    "title": "Fase 0 funderingsonderzoek | Quick Scan | MV Funderingsscan",
+    "description": "Fase 0 is de Quick Scan van je fundering: archief- en bodemonderzoek, inspectie van woning en kruipruimte en een risico-inschatting. Vanaf ca. €350.",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/funderingsscan/",
+        "name": "Funderingsscan"
+      },
+      {
+        "href": "/fase-0/",
+        "name": "Fase 0 · Quick Scan"
+      }
+    ],
+    "eyebrow": "Dienst · Fase 0",
+    "h1": "Fase 0 funderingsonderzoek: de Quick Scan",
+    "lead": "Fase 0 is een eerste, niet-destructief onderzoek naar de fundering van een woning. Op basis van archiefgegevens en een visuele inspectie geven we een onderbouwde risico-inschatting en een advies over de vervolgstap.",
+    "hero_image": {
+      "name": "metselwerk-gevel-detail",
+      "alt": "Close-up van metselwerk en voegen in een bakstenen gevel"
+    },
+    "facts": [
+      {
+        "label": "Prijs",
+        "value": "vanaf ca. €350"
+      },
+      {
+        "label": "Inspectie",
+        "value": "meestal binnen enkele werkdagen"
+      },
+      {
+        "label": "Rapport",
+        "value": "binnen 5 werkdagen na inspectie"
+      },
+      {
+        "label": "Methode",
+        "value": "niet-destructief, geen graafwerk"
+      }
+    ],
+    "services": [
+      "fase0"
+    ],
+    "sections": [
+      {
+        "id": "wat-is-fase-0",
+        "h2": "Wat is fase 0?",
+        "answer": "Fase 0 – ook wel Quick Scan of funderingscheck genoemd – is de eerste stap van funderingsonderzoek. We stellen vast of er signalen of omstandigheden zijn die wijzen op een risico voor de fundering.",
+        "body": "<p>Bij fase 0 meten we nog niet; we verzamelen, kijken en beoordelen. Dat maakt de Quick Scan snel en betaalbaar, terwijl hij toch antwoord geeft op de vraag die bij de meeste woningen het belangrijkst is: <strong>is er reden tot zorg, of niet?</strong></p>"
+      },
+      {
+        "id": "onderdelen",
+        "h2": "Wat wordt er bij fase 0 onderzocht?",
+        "answer": "Fase 0 bestaat uit drie onderdelen: archief- en bodemonderzoek, een visuele inspectie van de woning en de kruipruimte, en een risico-inschatting met rapport.",
+        "body": "<h3>1. Archief- en bodemonderzoek</h3>\n<p>Voordat we langskomen, zoeken we uit wat er over het pand en de ondergrond bekend is: het bouwjaar, het waarschijnlijke funderingstype (houten palen of fundering op staal), de opbouw van de bodem en gegevens over grondwater en bodemdaling.</p>\n<h3>2. Visuele inspectie</h3>\n<p>Op locatie lopen we de woning systematisch na. Buiten bekijken we de gevels op scheuren en scheefstand. Binnen letten we op scheuren in muren, klemmende deuren en ramen en hellende vloeren. Is de kruipruimte bereikbaar, dan beoordelen we ook die.</p>\n<h3>3. Risico-inschatting en rapport</h3>\n<p>We leggen alle bevindingen naast elkaar en vertalen ze naar een eerste inschatting van het funderingsrisico, onderbouwd met foto's en een duidelijke conclusie.</p>"
+      },
+      {
+        "id": "uitkomsten",
+        "h2": "Wat zijn de mogelijke uitkomsten van fase 0?",
+        "answer": "Fase 0 eindigt met één van drie adviezen: geen directe actie nodig, de situatie monitoren, of verder onderzoek in fase 1.",
+        "body": "<ul class=\"checklist\"><li><strong>Geen directe actie</strong> – er zijn geen signalen die op een funderingsprobleem wijzen.</li><li><strong>Monitoren</strong> – er is iets zichtbaar, maar niets dat nu ingrijpen vraagt; periodiek volgen geeft zekerheid.</li><li><strong>Verder onderzoek</strong> – de signalen vragen om meer duidelijkheid via <a href=\"/fase-1/\">fase 1 funderingsonderzoek</a>.</li></ul>"
+      },
+      {
+        "id": "kosten-fase-0",
+        "h2": "Wat kost fase 0?",
+        "answer": "Fase 0 kost indicatief vanaf ongeveer €350. De definitieve prijs hangt onder meer af van het type en de omvang van de woning en is vooraf bekend.",
+        "body": "<p>Inbegrepen zijn het archief- en bodemonderzoek, de inspectie op locatie, de risico-inschatting, het rapport met fotoverslag en het advies over de vervolgstap.</p>"
+      },
+      {
+        "id": "doorlooptijd",
+        "h2": "Hoe lang duurt fase 0?",
+        "answer": "De inspectie plannen we meestal binnen enkele werkdagen in. Het rapport ontvang je binnen vijf werkdagen na de inspectie.",
+        "body": "<p>Heb je haast, bijvoorbeeld omdat er een ontbindende voorwaarde of financieringsvoorbehoud loopt? Geef dat bij je aanvraag aan, dan houden we daar bij de planning rekening mee.</p>"
+      },
+      {
+        "id": "voor-wie",
+        "h2": "Voor wie is fase 0 bedoeld?",
+        "answer": "Fase 0 is bedoeld voor woningkopers, verkopers, woningeigenaren, makelaars en taxateurs die snel en onafhankelijk willen weten of de fundering aandacht nodig heeft.",
+        "body": "<p>Vooral bij woningen van vóór circa 1970 is de Quick Scan een logische stap. Lees ook <a href=\"/kennisbank/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a> en <a href=\"/kennisbank/wat-is-fase-0-funderingsonderzoek/\">alles over fase 0 in onze kennisbank</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Wat is het verschil tussen fase 0 en fase 1?",
+        "a": "<p>Fase 0 is een eerste risico-inschatting van de fundering; fase 1 gaat verder met aanvullende metingen wanneer daar aanleiding voor is. Bij fase 0 kijken en beoordelen we, bij fase 1 meten we het pand nauwkeurig door.</p>"
+      },
+      {
+        "q": "Is fase 0 voldoende bij een taxatie?",
+        "a": "<p>Dat hangt af van de situatie en de eisen van de taxateur of geldverstrekker. Bij een woning in risicoklasse D of E is aanvullend funderingsonderzoek nodig; een Quick Scan is dan vaak de eerste stap. Stem de precieze eisen altijd af met je taxateur.</p>"
+      },
+      {
+        "q": "Moet ik thuis zijn bij de inspectie?",
+        "a": "<p>Het is prettig als jij of de verkoper aanwezig bent, zodat we binnen en in de kruipruimte kunnen kijken. Bij een woning die je wilt kopen stemmen we de afspraak af met de verkopende makelaar.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/fase-1/",
+        "label": "Fase 1 funderingsonderzoek",
+        "text": "Wanneer metingen nodig zijn en wat ze opleveren."
+      },
+      {
+        "href": "/kennisbank/scheuren-in-de-gevel-en-fundering/",
+        "label": "Scheuren in de gevel",
+        "text": "Welke scheuren wijzen op een funderingsprobleem?"
+      },
+      {
+        "href": "/kennisbank/wat-kost-een-funderingsonderzoek/",
+        "label": "Kosten funderingsonderzoek",
+        "text": "Prijzen van fase 0 en fase 1 uitgelegd."
+      }
+    ]
+  },
+  {
+    "path": "/fase-1/",
+    "nav_active": "/fase-1/",
+    "title": "Fase 1 funderingsonderzoek | Uitgebreide funderingsmeting | MV Funderingsscan",
+    "description": "Fase 1 funderingsonderzoek met lintvoegwaterpassing, loodmeting en vloerveldwaterpassing: staat je woning stabiel? Indicatief €750 – €1.500.",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/funderingsscan/",
+        "name": "Funderingsscan"
+      },
+      {
+        "href": "/fase-1/",
+        "name": "Fase 1 · metingen"
+      }
+    ],
+    "eyebrow": "Dienst · Fase 1",
+    "h1": "Fase 1 funderingsonderzoek met metingen",
+    "lead": "Fase 1 is een uitgebreider vervolgonderzoek op fase 0. Met nauwkeurige metingen aan gevels en vloeren stellen we vast of een woning stabiel staat of nog in beweging is – en wat de verstandige volgende stap is.",
+    "hero_image": {
+      "name": "jaren-dertig-woningen-straat",
+      "alt": "Rij bakstenen jaren-dertigwoningen in een groene straat"
+    },
+    "facts": [
+      {
+        "label": "Prijs",
+        "value": "indicatief €750 – €1.500"
+      },
+      {
+        "label": "Wanneer",
+        "value": "na fase 0, bij verhoogd risico"
+      },
+      {
+        "label": "Methode",
+        "value": "metingen, geen graafwerk"
+      },
+      {
+        "label": "Resultaat",
+        "value": "onderbouwd vervolgadvies"
+      }
+    ],
+    "services": [
+      "fase1"
+    ],
+    "sections": [
+      {
+        "id": "wat-is-fase-1",
+        "h2": "Wat is fase 1?",
+        "answer": "Fase 1 is funderingsonderzoek waarbij we het pand doormeten. Waar fase 0 signaleert, legt fase 1 vast hoeveel en in welke richting de woning in de loop der tijd is vervormd.",
+        "body": "<p>Ook fase 1 is niet-destructief: we graven de fundering niet open. De metingen geven wel een veel scherper beeld dan een visuele inspectie alleen, zodat je een beslissing kunt nemen op basis van cijfers.</p>"
+      },
+      {
+        "id": "wanneer-fase-1",
+        "h2": "Wanneer is fase 1 nodig?",
+        "answer": "Fase 1 is nodig wanneer de Quick Scan wijst op een verhoogd funderingsrisico, bijvoorbeeld bij duidelijke scheurpatronen, merkbare scheefstand of een combinatie van risicovolle bouw- en bodemkenmerken.",
+        "body": "<p><strong>Fase 1 is niet automatisch nodig.</strong> Bij veel woningen geeft <a href=\"/fase-0/\">de Quick Scan (fase 0)</a> al voldoende zekerheid. We adviseren fase 1 alleen als de bevindingen daar echt om vragen, en je hoort vooraf wat het kost.</p>"
+      },
+      {
+        "id": "meetmethoden",
+        "h2": "Welke metingen horen bij fase 1?",
+        "answer": "Bij fase 1 gebruiken we lintvoegwaterpassing, loodmeting en vloerveldwaterpassing, en leggen we scheurpatronen vast. Welke metingen nodig zijn, hangt af van de woning.",
+        "body": "<h3>Lintvoegwaterpassing</h3>\n<p>Een doorlopende metselvoeg is bij de bouw vrijwel horizontaal aangelegd. Door de hoogte van zo'n voeg op meerdere punten langs de gevel te meten, zien we of en waar de gevel ongelijkmatig is gezakt.</p>\n<h3>Loodmeting (scheefstand)</h3>\n<p>We meten hoeveel gevels en wanden afwijken van het lood. Scheefstand vertelt veel over de richting waarin een fundering beweegt.</p>\n<h3>Vloerveldwaterpassing</h3>\n<p>Met een raster van hoogtemetingen op de begane grondvloer brengen we hellingen en hoogteverschillen in kaart. Dat is een betrouwbare aanwijzing voor zetting.</p>\n<h3>Scheurpatronen</h3>\n<p>We leggen scheuren vast naar plaats, richting en breedte. Het patroon zegt vaak meer dan één losse scheur, omdat het laat zien waar de belasting zit.</p>"
+      },
+      {
+        "id": "resultaat",
+        "h2": "Wat levert fase 1 op?",
+        "answer": "Fase 1 levert een onderbouwd oordeel op of de woning stabiel staat of dat er sprake is van voortgaande zetting, met een concreet vervolgadvies.",
+        "body": "<ul class=\"checklist\"><li>Meetresultaten van gevels en vloeren, overzichtelijk vastgelegd</li><li>Duiding van scheurpatronen en scheefstand</li><li>Conclusie over stabiliteit en eventuele voortgaande zetting</li><li>Vervolgadvies: monitoren, nader onderzoek of een herstelplan laten uitwerken door een gespecialiseerde partij</li></ul>"
+      },
+      {
+        "id": "kosten-fase-1",
+        "h2": "Wat kost fase 1?",
+        "answer": "Fase 1 kost indicatief tussen €750 en €1.500, afhankelijk van de omvang van de woning en de benodigde metingen. Je ontvangt vooraf een vaste prijs.",
+        "body": "<p>Lees meer in <a href=\"/kennisbank/wat-is-fase-1-funderingsonderzoek/\">wat is fase 1 funderingsonderzoek?</a> en <a href=\"/kennisbank/wat-kost-een-funderingsonderzoek/\">wat kost een funderingsonderzoek?</a></p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Wat gebeurt er als de fundering risico's vertoont?",
+        "a": "<p>Dan adviseren we over de volgende stap. Dat kan monitoren zijn, nader onderzoek zoals een inspectieput, of het laten uitwerken van een herstelplan door een gespecialiseerde partij. MV Funderingsscan voert zelf geen herstel uit, zodat het advies onafhankelijk blijft.</p>"
+      },
+      {
+        "q": "Hoe lang duurt een fase 1 onderzoek?",
+        "a": "<p>Dat hangt af van de omvang van de woning en het aantal metingen. Bij de offerte hoor je wat je kunt verwachten qua planning en wanneer je het rapport ontvangt.</p>"
+      },
+      {
+        "q": "Kan ik direct fase 1 laten uitvoeren?",
+        "a": "<p>Meestal is het verstandig om met fase 0 te beginnen, omdat de Quick Scan laat zien welke metingen zinvol zijn. Heb je al een recent funderingsrapport? Neem contact op, dan kijken we samen wat nodig is.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/fase-0/",
+        "label": "Fase 0 · Quick Scan",
+        "text": "Begin bij het eerste onderzoek."
+      },
+      {
+        "href": "/kennisbank/scheuren-in-de-gevel-en-fundering/",
+        "label": "Scheuren in de gevel",
+        "text": "Wat scheuren zeggen over de fundering."
+      },
+      {
+        "href": "/funderingsscan/",
+        "label": "Funderingsscan",
+        "text": "Het complete onderzoek in twee stappen."
+      }
+    ]
+  },
+  {
+    "path": "/contact/",
+    "nav_active": "",
+    "title": "Contact & aanvraag funderingsscan | MV Funderingsscan Leeuwarden",
+    "description": "Vraag een funderingsscan aan of stel je vraag. MV Funderingsscan, Mr. P. J. Troelstraweg 149, Leeuwarden. Bel 058 - 203 71 72, ma – vr 09:00 – 17:00.",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/contact/",
+        "name": "Contact"
+      }
+    ],
+    "webpage_type": "ContactPage",
+    "special": "contact"
+  }
+]

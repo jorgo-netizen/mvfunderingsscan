@@ -1,0 +1,22 @@
+WAT DIT IS: lokale SEO + conversie voor MV Funderingsscan:
+15 nieuwe gemeentepagina's (24 gemeenten, 146 kernen), automatische blokken
+"Kernen in de gemeente", plaatsenindex op /werkgebied/, areaServed per gemeente,
+werkgebied in llms.txt, werkende formulieren via api/aanvraag.js (Resend),
+praktijkvoorbeelden-structuur, docs voor Google Bedrijfsprofiel, reviews en livegang.
+
+STAP 1 - install.bat uitvoeren.
+STAP 2 - testen:
+cd C:\Users\Gebruiker\Desktop\midea-app\mvfunderingsscan
+npm install
+npm run dev
+
+STAP 3 - pushen (vanuit de hoofdmap):
+cd C:\Users\Gebruiker\Desktop\midea-app
+git add -A mvfunderingsscan
+git add eslint.config.mjs
+git status
+git commit -m "MV Funderingsscan: gemeentepagina's, plaatsenindex, werkende formulieren en livegang-docs" -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+git push
+
+STAP 4 - na deploy: docs/livegang-checklist.md (Resend-sleutel in Vercel zetten!).
+Geen SQL nodig.
