@@ -1,6 +1,6 @@
 # SEO/GEO-audit mvfunderingsscan.nl
 
-Gegenereerd door `npm run audit` op 2026-10-06 – 128 indexeerbare pagina's, 192.966 woorden in totaal.
+Gegenereerd door `npm run audit` op 2026-10-07 – 128 indexeerbare pagina's, 193.235 woorden in totaal.
 
 | URL | Title | H1 | Primair zoekwoord | Zoekintentie | Interne links | Schema | Indexeerbaar | Woorden |
 |---|---|---|---|---|---|---|---|---|
@@ -11,7 +11,7 @@ Gegenereerd door `npm run audit` op 2026-10-06 – 128 indexeerbare pagina's, 19
 | /fase-1-funderingsonderzoek/ | Fase 1 funderingsonderzoek met metingen \| MV Funderingsscan | Fase 1 funderingsonderzoek: meten wat je in fase 0 zag | fase 1 funderingsonderzoek | commercieel | 60 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 2827 |
 | /fundering-op-staal/ | Fundering op staal: werking en risico’s \| MV Funderingsscan | Fundering op staal: hoe hij werkt en wanneer inspectie verstandig is | fundering op staal | informatief | 57 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 1780 |
 | /funderingsinspectie/ | Funderingsinspectie ter plaatse \| MV Funderingsscan | Funderingsinspectie: zo verloopt het bezoek aan je woning | funderingsinspectie | commercieel | 53 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1629 |
-| /funderingsmetingen/ | Funderingsmetingen uitgelegd: zie hoe funderingsonderzoek werkt | Funderingsmetingen uitgelegd: zie hoe funderingsonderzoek werkt | funderingsmetingen | commercieel | 61 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 6377 |
+| /funderingsmetingen/ | Funderingsmetingen uitgelegd: zie hoe funderingsonderzoek werkt | Funderingsmetingen uitgelegd: zie hoe funderingsonderzoek werkt | funderingsmetingen | commercieel | 61 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 6509 |
 | /funderingsonderzoek-achtkarspelen/ | Funderingsonderzoek Buitenpost en Surhuisterveen \| MV Funderingsscan | Funderingsonderzoek in Achtkarspelen | funderingsonderzoek buitenpost | lokaal-commercieel | 57 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1298 |
 | /funderingsonderzoek-appingedam/ | Funderingsonderzoek in Appingedam \| MV Funderingsscan | Funderingsonderzoek in Appingedam | funderingsonderzoek appingedam | lokaal-commercieel | 52 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1274 |
 | /funderingsonderzoek-bij-aankoop/ | Funderingsonderzoek bij aankoop woning \| MV Funderingsscan | Funderingsonderzoek bij aankoop van een woning | funderingsonderzoek bij aankoop | commercieel | 61 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 3388 |
@@ -87,7 +87,7 @@ Gegenereerd door `npm run audit` op 2026-10-06 – 128 indexeerbare pagina's, 19
 | /kennisbank/kosten-funderingsherstel/ | Kosten funderingsherstel: wat bepaalt de prijs? \| MV Funderingsscan | Kosten funderingsherstel: wat bepaalt de prijs? | kosten funderingsherstel | informatief | 53 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, FAQPage | ja | 1013 |
 | /kennisbank/kruipruimte-inspectie/ | Kruipruimte-inspectie: wat wordt er bekeken? \| MV Funderingsscan | Kruipruimte-inspectie: wat wordt er bekeken en hoe bereid je je voor? | kruipruimte-inspectie | informatief | 55 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, DefinedTerm, FAQPage | ja | 1030 |
 | /kennisbank/lintvoegwaterpassing/ | Wat is een lintvoegwaterpassing? Uitleg \| MV Funderingsscan | Wat is een lintvoegwaterpassing? | lintvoegwaterpassing | informatief | 57 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, DefinedTerm, FAQPage | ja | 3053 |
-| /kennisbank/loodmeting/ | Wat is een loodmeting? Scheefstand gevel meten \| MV Funderingsscan | Wat is een loodmeting? | loodmeting | informatief | 56 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, DefinedTerm, FAQPage | ja | 3067 |
+| /kennisbank/loodmeting/ | Wat is een loodmeting? Scheefstand gevel meten \| MV Funderingsscan | Wat is een loodmeting? | loodmeting | informatief | 56 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, DefinedTerm, FAQPage | ja | 3204 |
 | /kennisbank/maaiveldhoogte/ | Maaiveldhoogte rond je woning: wat zegt het? \| MV Funderingsscan | Maaiveldhoogte: wat een verzakt terrein rond je woning wel en niet zegt | maaiveldhoogte | informatief | 57 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, FAQPage | ja | 1142 |
 | /kennisbank/monitoring-scheuren/ | Scheuren monitoren: zo volg je een scheur \| MV Funderingsscan | Scheuren monitoren: een scheur in de tijd volgen | scheuren monitoren | informatief | 53 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, FAQPage | ja | 1386 |
 | /kennisbank/ongelijke-zetting/ | Ongelijke zetting: oorzaken en gevolgen \| MV Funderingsscan | Ongelijke zetting: als delen van je woning verschillend zakken | ongelijke zetting | informatief | 59 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, DefinedTerm, FAQPage | ja | 1413 |

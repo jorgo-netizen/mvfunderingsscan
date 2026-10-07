@@ -152,53 +152,85 @@ function loodWidget() {
 </figure>`;
 }
 
-// ================================================================ 2b. Oldehove (scheefstand in graden)
+// ================================================================ 2b. Oldehove (loodmeting op een scheve toren)
+// Gepubliceerde scheefstand van de Oldehove: circa 4,2° uit het lood; hoogte circa 39 meter.
+const OL_DEG = 4.2;
+const OL_HEIGHT_M = 39;
+const OL_PX_PER_M = 7.9; // 39 m → 308 px: van de voet tot de bovenkant van de rechtergevel
+// Het silhouet helt zelf al: de rechtergevel staat in de afbeelding 1,87° scheef. Die gevel is het meetvlak.
+const OL_IMG_LEAN = 1.87;
+const OL_PIVOT_X = 255; // voet van de rechtergevel in de tekening
+const OL_HEIGHTS = [10, 20, 30, 39];
+const olOffset = (h) => h * Math.tan(OL_DEG * Math.PI / 180); // horizontale afwijking in meters
+
 function oldehoveWidget() {
   // Silhouet van de Oldehove (aangeleverd door MV Funderingsscan), transparante PNG in public/assets/img.
-  // 214 x 455 px → in de tekening 360 hoog, onderkant gecentreerd op x=210, y=440.
+  // 214 x 455 px → in de tekening 360 hoog; voet van de rechtergevel ligt 157,7 px rechts van de linkerrand van de afbeelding.
   const OL_H = 360;
   const OL_W = Math.round(OL_H * 214 / 455 * 10) / 10;
+  const img = (cls) => `<image class="${cls}" href="/assets/img/oldehove-silhouet.png" x="${(OL_PIVOT_X - 157.7).toFixed(1)}" y="${440 - OL_H}" width="${OL_W}" height="${OL_H}" preserveAspectRatio="xMidYMax meet"/>`;
+  // Beginstand (ook zonder JavaScript): meting op 39 m, ware hoek.
+  const h0 = OL_HEIGHT_M;
+  const y0 = 440 - h0 * OL_PX_PER_M;
+  const x0 = OL_PIVOT_X + h0 * OL_PX_PER_M * Math.tan(OL_DEG * Math.PI / 180);
+  const rows = OL_HEIGHTS.map((h) => `<tr><th scope="row">${h} m</th><td>${nl(olOffset(h), 2)} m</td><td>${nl(OL_DEG)}°</td></tr>`).join('');
   return `
-<figure class="sim sim-oldehove" data-sim="oldehove" aria-labelledby="sim-ol-title">
+<figure class="sim sim-oldehove" data-sim="oldehove" data-deg="${OL_DEG}" data-px="${OL_PX_PER_M}" data-lean="${OL_IMG_LEAN}" data-pivot="${OL_PIVOT_X}" aria-labelledby="sim-ol-title">
   <div class="sim-head">
     <span class="sim-badge">Interactieve demonstratie · Leeuwarden</span>
-    <h3 id="sim-ol-title">Scheefstand zichtbaar gemaakt met de Oldehove als voorbeeld</h3>
-    <p class="sim-instruction">De Oldehove in Leeuwarden is een bekend voorbeeld van een scheve toren. Verschuif de regelaar en zie hoe een toren steeds verder van de loodlijn afwijkt – precies het principe dat een loodmeting vastlegt.</p>
+    <h3 id="sim-ol-title">Meet zelf: loodmeting op de Oldehove (4,2° uit het lood)</h3>
+    <p class="sim-instruction">De Oldehove staat circa 4,2 graden uit het lood. Kies een meethoogte en zie hoe ver de rechtergevel van de toren daar van de zuiver verticale loodlijn af staat. Uit die afwijking en de hoogte bereken je de scheefstand – precies zoals bij een loodmeting.</p>
   </div>
   <div class="sim-lood-grid">
     <div class="sim-stage sim-stage-lood">
-      <svg class="sim-drawing" viewBox="0 0 420 480" role="img" aria-label="Vereenvoudigde illustratie van de Oldehove met een verticale loodlijn; de toren kantelt naar rechts naarmate de ingestelde scheefstand groter wordt">
+      <svg class="sim-drawing" viewBox="0 0 420 480" role="img" aria-label="Silhouet van de Oldehove; de rechtergevel staat 4,2 graden uit het lood. Een verticale loodlijn loopt vanaf de voet van die gevel omhoog, met een meetlijn op de gekozen hoogte">
         <rect x="0" y="440" width="420" height="40" fill="#cfd8df"/>
-        <g data-ol-tower>
-          <image href="/assets/img/oldehove-silhouet.png" x="${(210 - OL_W / 2).toFixed(1)}" y="${440 - OL_H}" width="${OL_W}" height="${OL_H}" preserveAspectRatio="xMidYMax meet"/>
+        <g class="ol-ghost" data-ol-ghost transform="rotate(${-OL_IMG_LEAN} ${OL_PIVOT_X} 440)">${img('ol-img-ghost')}</g>
+        <g data-ol-tower transform="rotate(${(OL_DEG - OL_IMG_LEAN).toFixed(2)} ${OL_PIVOT_X} 440)">${img('ol-img')}</g>
+        <line class="sim-plumb" x1="${OL_PIVOT_X}" y1="96" x2="${OL_PIVOT_X}" y2="440"/>
+        <circle cx="${OL_PIVOT_X}" cy="96" r="5" class="sim-plumb-top"/>
+        <text x="${OL_PIVOT_X - 6}" y="88" class="sim-ref-label" text-anchor="end">loodlijn</text>
+        <g class="ol-height" data-ol-hdim>
+          <line class="ol-dim" data-ol-hline x1="60" y1="440" x2="60" y2="${y0.toFixed(1)}"/>
+          <line class="ol-dim" data-ol-htick x1="52" y1="${y0.toFixed(1)}" x2="68" y2="${y0.toFixed(1)}"/>
+          <line class="ol-dim" x1="52" y1="440" x2="68" y2="440"/>
+          <text class="ol-dim-label" data-ol-hlabel x="50" y="${((440 + y0) / 2).toFixed(1)}" text-anchor="end">${h0} m</text>
+          <line class="ol-guide" data-ol-guide x1="68" y1="${y0.toFixed(1)}" x2="${OL_PIVOT_X}" y2="${y0.toFixed(1)}"/>
         </g>
-        <line class="sim-plumb" x1="210" y1="60" x2="210" y2="432"/>
-        <path class="sim-bob" d="M203 418 L217 418 L210 436 Z"/>
-        <circle cx="210" cy="60" r="5" class="sim-plumb-top"/>
-        <text x="218" y="54" class="sim-ref-label">loodlijn</text>
-        <line class="sim-offset" data-ol-offset x1="210" y1="100" x2="210" y2="100"/>
-        <text class="sim-offset-label" data-ol-label x="214" y="92"></text>
-        <text x="12" y="468" class="sim-small-label">Vereenvoudigde illustratie van de Oldehove (Leeuwarden)</text>
+        <line class="sim-offset" data-ol-offset x1="${OL_PIVOT_X}" y1="${y0.toFixed(1)}" x2="${x0.toFixed(1)}" y2="${y0.toFixed(1)}"/>
+        <circle class="ol-hit" data-ol-dot cx="${x0.toFixed(1)}" cy="${y0.toFixed(1)}" r="5"/>
+        <text class="sim-offset-label" data-ol-label x="${(x0 + 10).toFixed(1)}" y="${(y0 + 5).toFixed(1)}">${nl(olOffset(h0), 2)} m</text>
+        <text x="12" y="468" class="sim-small-label">Silhouet van de Oldehove (Leeuwarden)</text>
       </svg>
     </div>
     <div class="sim-panel">
-      <div class="sim-readout" aria-live="polite">
-        <p class="sim-big"><span>Ingestelde scheefstand</span><strong data-ol-value>0°</strong></p>
-        <p class="sim-level" data-ol-text>De toren staat in deze illustratie loodrecht.</p>
+      <div class="sim-readout ol-readout" aria-live="polite">
+        <div><span>Meethoogte</span><strong data-ol-h>${h0} m</strong></div>
+        <div><span>Afwijking t.o.v. loodlijn</span><strong data-ol-d>${nl(olOffset(h0), 2)} m</strong></div>
+        <div class="ol-result"><span>Berekende scheefstand</span><strong data-ol-angle>${nl(OL_DEG)}°</strong></div>
       </div>
-      <label class="sim-slider-label" for="sim-ol-range">Scheefstand in graden (voorbeeldwaarde)</label>
-      <input id="sim-ol-range" class="sim-range" type="range" min="0" max="4" step="0.5" value="0" data-ol-range aria-describedby="sim-ol-scale">
-      <div class="sim-scale" id="sim-ol-scale"><span>0°</span><span>1°</span><span>2°</span><span>3°</span><span>4°</span></div>
-      <div class="sim-presets" role="group" aria-label="Voorbeeldwaarden scheefstand">
-        <button type="button" class="sim-chip" data-ol-set="0">0°</button>
-        <button type="button" class="sim-chip" data-ol-set="1">1°</button>
-        <button type="button" class="sim-chip" data-ol-set="2.5">2,5°</button>
-        <button type="button" class="sim-chip" data-ol-set="4">4°</button>
+      <p class="ol-formula" data-ol-formula>Scheefstand = arctan(afwijking ÷ hoogte) = arctan(${nl(olOffset(h0), 2)} ÷ ${h0}) ≈ ${nl(OL_DEG)}°</p>
+      <label class="sim-slider-label" for="sim-ol-range">Meethoogte boven de voet van de toren</label>
+      <input id="sim-ol-range" class="sim-range sim-range-neutral" type="range" min="1" max="${OL_HEIGHT_M}" step="1" value="${h0}" data-ol-range aria-describedby="sim-ol-scale">
+      <div class="sim-scale" id="sim-ol-scale"><span>1 m</span><span>${OL_HEIGHT_M} m (top)</span></div>
+      <div class="sim-presets" role="group" aria-label="Meethoogtes">
+        ${OL_HEIGHTS.map((h) => `<button type="button" class="sim-chip" data-ol-set="${h}" aria-pressed="${h === h0}">${h} m</button>`).join('\n        ')}
       </div>
-      <div class="sim-explain-item"><strong>Wat zie je?</strong><p>De loodlijn hangt altijd recht naar beneden. Hoe verder de bovenkant van de toren van die lijn af ligt, hoe groter de scheefstand. Een loodmeting legt precies die afwijking vast – bij een woning meestal in millimeters over de hoogte van een gevel.</p></div>
+      <div class="sim-actions">
+        <button type="button" class="btn btn-gold" data-ol-log>Leg meetpunt vast</button>
+        <button type="button" class="btn btn-ghost-dark" data-ol-reset>Opnieuw</button>
+      </div>
+      <label class="ol-toggle"><input type="checkbox" data-ol-exag> Overdrijf de kanteling ×3 in de tekening (de meetwaarden blijven gelijk)</label>
+      <label class="ol-toggle"><input type="checkbox" data-ol-ghost-toggle checked> Toon de toren rechtop ter vergelijking</label>
+      <ol class="ol-log" data-ol-loglist aria-label="Vastgelegde meetpunten"></ol>
+      <div class="sim-explain-item"><strong>Wat zie je?</strong><p data-ol-explain>Hoe hoger je meet, hoe groter de afwijking ten opzichte van de loodlijn. De berekende hoek blijft steeds circa 4,2°: de toren staat als geheel scheef. Bij een gevel die bol staat of een knik heeft, zou de hoek per meethoogte juist verschillen.</p></div>
     </div>
   </div>
-  <figcaption class="sim-caption">Educatieve visualisatie: de Oldehove dient alleen als herkenbaar voorbeeld. De regelaar laat het principe van scheefstand zien en meet <strong>niet</strong> de werkelijke scheefstand van de Oldehove; de getoonde graden en de richting zijn voorbeeldwaarden. ${SIM_NOTE}</figcaption>
+  <details class="sim-data">
+    <summary>Bekijk de meetwaarden per hoogte</summary>
+    <table class="data-table"><thead><tr><th>Meethoogte</th><th>Afwijking t.o.v. loodlijn</th><th>Berekende scheefstand</th></tr></thead><tbody>${rows}</tbody></table>
+  </details>
+  <figcaption class="sim-caption">De simulatie gaat uit van de gepubliceerde scheefstand van circa 4,2° en een hoogte van circa 39 meter; de afwijkingen zijn daaruit berekend en zijn geen eigen meting van MV Funderingsscan. Bij een woning werkt een loodmeting hetzelfde, maar gaat het om millimeters over de hoogte van een gevel. ${SIM_NOTE}</figcaption>
 </figure>`;
 }
 

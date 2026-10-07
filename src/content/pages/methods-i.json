@@ -276,11 +276,11 @@
       },
       {
         "id": "scheefstand-oldehove",
-        "h2": "Scheefstand zichtbaar gemaakt: de Oldehove in Leeuwarden",
-        "answer": "De Oldehove in Leeuwarden is een bekend voorbeeld van scheefstand: de toren begon al tijdens de bouw in de zestiende eeuw scheef te zakken en is nooit afgebouwd. Met de schuifregelaar hieronder zie je hoe een toren steeds verder van de loodlijn afwijkt – precies wat een loodmeting vastlegt.",
+        "h2": "Loodmeting op de Oldehove: 4,2 graden uit het lood",
+        "answer": "De Oldehove in Leeuwarden staat circa 4,2 graden uit het lood. Hieronder doe je zelf een loodmeting op de toren: kies een meethoogte, lees de afwijking ten opzichte van de loodlijn af en bereken de scheefstand met arctan(afwijking ÷ hoogte).",
         "widget": "oldehove",
         "widget_position": "after",
-        "body": "<p>De simulatie gebruikt een silhouet van de Oldehove en meet <strong>niet</strong> de werkelijke scheefstand van de toren; de graden en de richting zijn voorbeeldwaarden. Alle meetmethoden naast elkaar zie je op de pagina <a href=\"/funderingsmetingen/\">funderingsmetingen uitgelegd</a>.</p>"
+        "body": "<p>De Oldehove staat circa <strong>4,2 graden uit het lood</strong>, over een hoogte van circa 39 meter. In de demonstratie hieronder doe je zelf een loodmeting op de toren: je kiest een meethoogte, ziet hoe ver de toren daar van de verticale loodlijn af staat en berekent daaruit de scheefstand. Op 39 meter hoogte is dat een afwijking van ongeveer 2,86 meter. De waarden zijn berekend uit de gepubliceerde scheefstand; het is geen eigen meting van MV Funderingsscan. Alle meetmethoden naast elkaar zie je op de pagina <a href=\"/funderingsmetingen/\">funderingsmetingen uitgelegd</a>.</p>"
       },
       {
         "id": "welke-richting",

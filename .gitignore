@@ -5,3 +5,8 @@ tmp/
 *.log
 .DS_Store
 Thumbs.db
+
+# Uitgepakte leveringen (zip met install.bat) niet committen
+bestanden/
+install.bat
+push-commands.txt

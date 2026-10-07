@@ -620,54 +620,97 @@
     render(0);
   });
 
-  // Oldehove: schuifregelaar in graden → toren helt naar rechts, loodlijn blijft recht
+  // Oldehove: loodmeting op een toren van 4,2° – meethoogte kiezen, afwijking meten, hoek berekenen
   $$('[data-sim="oldehove"]').forEach((sim) => {
+    const DEG = parseFloat(sim.dataset.deg);
+    const PX = parseFloat(sim.dataset.px);
+    const TAN = Math.tan(DEG * Math.PI / 180);
+    const LEAN = parseFloat(sim.dataset.lean); // scheefstand die al in het silhouet zit
+    const PX0 = parseFloat(sim.dataset.pivot); // voet van de gemeten gevel
     const range = $('[data-ol-range]', sim);
     const tower = $('[data-ol-tower]', sim);
-    const offset = $('[data-ol-offset]', sim);
-    const label = $('[data-ol-label]', sim);
-    const value = $('[data-ol-value]', sim);
-    const text = $('[data-ol-text]', sim);
+    const ghost = $('[data-ol-ghost]', sim);
     const chips = $$('[data-ol-set]', sim);
-    const CX = 210; const BASE = 440; const H = 360; // silhouet van y=80 (spits) tot y=440
-    const VISUAL = 2.2; // visuele overdrijving zodat kleine hoeken zichtbaar worden
-    let current = 0; let anim = null;
-    const render = (deg) => {
-      const vis = deg * VISUAL;
-      tower.setAttribute('transform', `rotate(${vis.toFixed(2)} ${CX} ${BASE})`);
-      const rad = vis * Math.PI / 180;
-      const topX = CX + H * Math.sin(rad);
-      const topY = BASE - H * Math.cos(rad);
-      offset.setAttribute('y1', topY.toFixed(1));
-      offset.setAttribute('y2', topY.toFixed(1));
-      offset.setAttribute('x2', topX.toFixed(1));
-      const shown = Math.round(deg * 2) / 2;
-      const txt = `${fmt(shown, shown % 1 ? 1 : 0)}°`;
-      label.textContent = shown > 0 ? txt : '';
-      label.setAttribute('x', (topX + 8).toFixed(1));
-      label.setAttribute('y', (topY - 8).toFixed(1));
-      value.textContent = txt;
-      text.textContent = shown === 0 ? 'De toren staat in deze illustratie loodrecht.'
-        : shown < 1.5 ? 'De toren helt visueel naar rechts.'
-        : 'De toren helt visueel naar rechts. De scheefstand neemt toe.';
-      range.setAttribute('aria-valuetext', `${txt} scheefstand naar rechts`);
-      chips.forEach((c) => c.setAttribute('aria-pressed', String(Number(c.dataset.olSet) === shown)));
+    const exag = $('[data-ol-exag]', sim);
+    const ghostToggle = $('[data-ol-ghost-toggle]', sim);
+    const log = $('[data-ol-loglist]', sim);
+    const explain = $('[data-ol-explain]', sim);
+    const el = (k) => $(`[data-ol-${k}]`, sim);
+    const logged = new Map();
+    let h = Number(range.value);
+    let tilt = DEG; // getekende hoek (kan animeren)
+    let anim = null;
+
+    const draw = () => {
+      const factor = exag.checked ? 3 : 1;
+      const vis = tilt * factor;
+      tower.setAttribute('transform', `rotate(${(vis - LEAN).toFixed(2)} ${PX0} 440)`);
+      const y = 440 - h * PX;
+      const x = PX0 + h * PX * Math.tan(vis * Math.PI / 180);
+      const d = h * TAN; // echte afwijking in meters
+      el('offset').setAttribute('y1', y.toFixed(1));
+      el('offset').setAttribute('y2', y.toFixed(1));
+      el('offset').setAttribute('x2', x.toFixed(1));
+      el('dot').setAttribute('cx', x.toFixed(1));
+      el('dot').setAttribute('cy', y.toFixed(1));
+      el('label').setAttribute('x', (x + 10).toFixed(1));
+      el('label').setAttribute('y', (y + 5).toFixed(1));
+      el('label').textContent = `${fmt(d, 2)} m`;
+      el('hline').setAttribute('y2', y.toFixed(1));
+      el('htick').setAttribute('y1', y.toFixed(1));
+      el('htick').setAttribute('y2', y.toFixed(1));
+      el('guide').setAttribute('y1', y.toFixed(1));
+      el('guide').setAttribute('y2', y.toFixed(1));
+      el('hlabel').setAttribute('y', ((440 + y) / 2 + 4).toFixed(1));
+      el('hlabel').textContent = `${h} m`;
+      el('h').textContent = `${h} m`;
+      el('d').textContent = `${fmt(d, 2)} m`;
+      el('angle').textContent = `${fmt(DEG)}°`;
+      el('formula').textContent = `Scheefstand = arctan(afwijking ÷ hoogte) = arctan(${fmt(d, 2)} ÷ ${h}) ≈ ${fmt(Math.atan(d / h) * 180 / Math.PI)}°`;
+      range.setAttribute('aria-valuetext', `${h} meter, afwijking ${fmt(d, 2)} meter`);
+      chips.forEach((c) => c.setAttribute('aria-pressed', String(Number(c.dataset.olSet) === h)));
     };
-    const animateTo = (target) => {
+
+    const renderLog = () => {
+      const items = [...logged.keys()].sort((a, b) => a - b);
+      log.innerHTML = items.map((k) => `<li><span>${k} m</span><strong>${fmt(k * TAN, 2)} m</strong><em>${fmt(DEG)}°</em></li>`).join('');
+      if (items.length >= 2) {
+        explain.textContent = `Je hebt ${items.length} meetpunten vastgelegd. De afwijking groeit van ${fmt(items[0] * TAN, 2)} m naar ${fmt(items.at(-1) * TAN, 2)} m, maar de berekende hoek blijft ${fmt(DEG)}°: de toren staat als één geheel scheef. Bij een gevel die bol staat of een knik heeft, zou de hoek per meethoogte juist verschillen.`;
+      }
+    };
+
+    // Intro: toren kantelt van rechtop naar 4,2° zodra de module in beeld komt.
+    const tiltIn = () => {
+      if (reduceMotion) { tilt = DEG; draw(); return; }
       cancelAnimationFrame(anim);
-      if (reduceMotion) { current = target; render(current); return; }
-      const from = current; const t0 = performance.now();
+      const t0 = performance.now();
       const step = (now) => {
-        const p = Math.max(0, Math.min((now - t0) / 500, 1));
-        current = from + (target - from) * (1 - Math.pow(1 - p, 3));
-        render(current);
+        const p = Math.max(0, Math.min((now - t0) / 1400, 1));
+        tilt = DEG * (1 - Math.pow(1 - p, 3));
+        draw();
         if (p < 1) anim = requestAnimationFrame(step);
       };
+      tilt = 0; draw();
       anim = requestAnimationFrame(step);
     };
-    range.addEventListener('input', () => { cancelAnimationFrame(anim); current = Number(range.value); render(current); });
-    chips.forEach((c) => c.addEventListener('click', () => { range.value = c.dataset.olSet; animateTo(Number(c.dataset.olSet)); }));
-    render(0);
+
+    range.addEventListener('input', () => { h = Number(range.value); draw(); });
+    chips.forEach((c) => c.addEventListener('click', () => { h = Number(c.dataset.olSet); range.value = h; draw(); }));
+    exag.addEventListener('change', draw);
+    ghostToggle.addEventListener('change', () => { ghost.style.display = ghostToggle.checked ? '' : 'none'; });
+    el('log').addEventListener('click', () => { logged.set(h, true); renderLog(); });
+    el('reset').addEventListener('click', () => {
+      logged.clear(); log.innerHTML = ''; h = Number(range.max); range.value = h;
+      explain.textContent = explain.dataset.default; tiltIn();
+    });
+    explain.dataset.default = explain.textContent;
+    draw();
+    if ('IntersectionObserver' in window && !reduceMotion) {
+      const io = new IntersectionObserver((entries) => {
+        if (entries.some((e) => e.isIntersecting)) { io.disconnect(); tiltIn(); }
+      }, { threshold: 0.35 });
+      io.observe(sim);
+    }
   });
 
   // Scheuren: klikbare scheuren in de gevel → infopaneel
