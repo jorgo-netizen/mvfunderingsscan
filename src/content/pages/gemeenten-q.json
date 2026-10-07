@@ -29,7 +29,7 @@
     "lead": "MV Funderingsscan voert funderingsonderzoek uit in de hele gemeente Achtkarspelen, waaronder <strong>Buitenpost, Surhuisterveen, Harkema, Augustinusga en Drogeham</strong>. Je start met een onafhankelijke <a href=\"/funderingsscan/\">funderingsscan</a>: archief- en bodemonderzoek, een visuele inspectie bij je woning en een rapport met een duidelijk advies over de vervolgstap.",
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
-      "alt": "Specialist houdt een waterpas tegen de bakstenen gevel van een woning"
+      "alt": "Persoon houdt een waterpas tegen de bakstenen gevel van een woning"
     },
     "facts": [
       {
@@ -46,7 +46,7 @@
       },
       {
         "label": "Rapport",
-        "value": "binnen 5 werkdagen na inspectie"
+        "value": "meestal binnen 5 werkdagen na inspectie"
       }
     ],
     "services": [
@@ -76,13 +76,13 @@
         "id": "wanneer-scan-achtkarspelen",
         "h2": "Wanneer is een funderingsscan in Achtkarspelen zinvol?",
         "answer": "Een scan is zinvol als je twijfelt over de fundering: bij de aankoop van een oudere woning, bij scheuren of klemmende deuren, of als de taxateur om aanvullend onderzoek vraagt.",
-        "body": "<ul class=\"checklist\"><li>Je overweegt een bod op een oudere woning in een van de dorpen en wilt vooraf weten waar je aan begint. Zie ook <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>.</li><li>Je ziet scheuren in het metselwerk die groter lijken te worden.</li><li>Deuren of ramen gaan steeds stroever, of een vloer loopt merkbaar af.</li><li>Er zit een scheur op de aansluiting tussen het huis en een aanbouw.</li><li>Het funderingsrisicorapport valt bij de taxatie in klasse D of E; dan is volgens de huidige richtlijnen aanvullend onderzoek nodig. Lees meer over <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek en taxatie</a>.</li></ul><div class=\"callout callout-warn\"><strong>Niet elke scheur is funderingsschade</strong><p>Krimp van metselwerk, temperatuurwerking, een roestende latei of vocht kunnen ook scheuren geven. Een scan helpt om die oorzaken van elkaar te onderscheiden.</p></div>"
+        "body": "<ul class=\"checklist\"><li>Je overweegt een bod op een oudere woning in een van de dorpen en wilt vooraf weten waar je aan begint. Zie ook <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>.</li><li>Je ziet scheuren in het metselwerk die groter lijken te worden.</li><li>Deuren of ramen gaan steeds stroever, of een vloer loopt merkbaar af.</li><li>Er zit een scheur op de aansluiting tussen het huis en een aanbouw.</li><li>Het funderingsrisicorapport valt bij de taxatie in klasse D of E; dan is volgens het NRVT in principe eerst aanvullend (beperkt) funderingsonderzoek nodig. Lees meer over <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek en taxatie</a>.</li></ul><div class=\"callout callout-warn\"><strong>Niet elke scheur is funderingsschade</strong><p>Krimp van metselwerk, temperatuurwerking, een roestende latei of vocht kunnen ook scheuren geven. Een scan helpt om die oorzaken van elkaar te onderscheiden.</p></div>"
       },
       {
         "id": "aanpak-achtkarspelen",
         "h2": "Hoe verloopt het onderzoek bij een woning in Achtkarspelen?",
-        "answer": "Je begint met fase 0, de Quick Scan. Alleen als die daar aanleiding voor geeft, volgt fase 1 met metingen.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Je geeft het adres en je vraag door en hoort vooraf de prijs.</span></li><li><strong>Archief en bodem</strong><span>We zoeken bouwjaar, tekeningen, vermoedelijk funderingstype, bodemopbouw en grondwater.</span></li><li><strong>Inspectie ter plaatse</strong><span>Meestal binnen enkele werkdagen: gevels, scheuren, kozijnen, vloeren en de kruipruimte voor zover toegankelijk.</span></li><li><strong>Rapport</strong><span>Binnen 5 werkdagen na de inspectie, met foto's, conclusie en advies.</span></li></ol><p>De volledige aanpak staat op de pagina <a href=\"/werkwijze/\">werkwijze</a>. Wil je weten wat er precies in de eerste stap zit, lees dan over <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>; het vervolg met lintvoeg-, lood- en vloermetingen staat bij <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a>.</p>"
+        "answer": "Je begint met fase 0, de Quick Scan. Geeft fase 0 daar aanleiding voor, dan kan fase 1 met metingen volgen.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Je geeft het adres en je vraag door en hoort vooraf de prijs.</span></li><li><strong>Archief en bodem</strong><span>We zoeken bouwjaar, tekeningen, vermoedelijk funderingstype, bodemopbouw en grondwater.</span></li><li><strong>Inspectie ter plaatse</strong><span>Meestal binnen enkele werkdagen: gevels, scheuren, kozijnen, vloeren en de kruipruimte voor zover toegankelijk.</span></li><li><strong>Rapport</strong><span>Normaal gesproken binnen 5 werkdagen na de inspectie, met foto's, conclusie en advies.</span></li></ol><p>De volledige aanpak staat op de pagina <a href=\"/werkwijze/\">werkwijze</a>. Wil je weten wat er precies in de eerste stap zit, lees dan over <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>; het vervolg met lintvoeg-, lood- en vloermetingen staat bij <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a>.</p>"
       },
       {
         "id": "buitenpost-surhuisterveen",
@@ -94,7 +94,7 @@
     "faqs": [
       {
         "q": "Waar kan ik funderingsonderzoek laten uitvoeren in Buitenpost?",
-        "a": "<p>Bij MV Funderingsscan: we voeren funderingsonderzoek uit in Buitenpost en de rest van Achtkarspelen. De inspectie wordt meestal binnen enkele werkdagen ingepland en het rapport volgt binnen 5 werkdagen daarna.</p>"
+        "a": "<p>Bij MV Funderingsscan: we voeren funderingsonderzoek uit in Buitenpost en de rest van Achtkarspelen. De inspectie wordt meestal binnen enkele werkdagen ingepland en het rapport volgt normaal gesproken binnen 5 werkdagen daarna.</p>"
       },
       {
         "q": "Komen jullie ook naar Harkema of Kootstertille?",
@@ -102,7 +102,7 @@
       },
       {
         "q": "Staat een woning op zandgrond altijd goed?",
-        "a": "<p>Niet per definitie, al is zand meestal stabieler dan veen of klei. Ook op zand kunnen een ondiepe fundering, een aanbouw of een plaatselijke veenlaag een rol spelen. Alleen onderzoek ter plaatse geeft daar duidelijkheid over.</p>"
+        "a": "<p>Niet per definitie, al is zand meestal stabieler dan veen of klei. Ook op zand kunnen een ondiepe fundering, een aanbouw of een plaatselijke veenlaag een rol spelen. Onderzoek ter plaatse geeft daar meer duidelijkheid over.</p>"
       },
       {
         "q": "Wat kost een Quick Scan in Achtkarspelen?",
@@ -182,7 +182,7 @@
       },
       {
         "label": "Rapport",
-        "value": "binnen 5 werkdagen na inspectie"
+        "value": "meestal binnen 5 werkdagen na inspectie"
       }
     ],
     "services": [
@@ -194,13 +194,13 @@
         "id": "wanneer-onderzoek-dantumadiel",
         "h2": "Wanneer laat je in Dantumadiel de fundering onderzoeken?",
         "answer": "De meeste mensen laten de fundering onderzoeken als ze een oudere woning willen kopen of als ze veranderingen zien, zoals nieuwe scheuren, scheefstand of deuren die gaan klemmen.",
-        "body": "<p>Een funderingsscan is geen verplichte keuring, maar een manier om een concrete twijfel uit te zoeken. Dat kan op verschillende momenten zijn:</p><div class=\"two-col-list\"><div><h3>Bij kopen of verkopen</h3><ul class=\"checklist\"><li>Je wilt vóór je bod weten hoe de fundering ervoor staat</li><li>Je verkoopt en wilt kopers vooraf duidelijkheid geven</li><li>De taxatie vraagt om aanvullend onderzoek bij risicoklasse D of E</li></ul></div><div><h3>Bij signalen in huis</h3><ul class=\"checklist\"><li>Scheuren in de gevel of binnenmuren die lijken te groeien</li><li>Een vloer die schuin aanvoelt</li><li>Ramen en deuren die steeds slechter sluiten</li></ul></div></div><p>Lees bij twijfel over een aankoop ook de pagina over <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>. Niet elk signaal wijst op de fundering: een slecht afgestelde deur of houtwerking kan dezelfde klacht geven.</p>"
+        "body": "<p>Een funderingsscan is geen verplichte keuring, maar een manier om een concrete twijfel uit te zoeken. Dat kan op verschillende momenten zijn:</p><div class=\"two-col-list\"><div><h3>Bij kopen of verkopen</h3><ul class=\"checklist\"><li>Je wilt vóór je bod weten of er aanwijzingen zijn voor funderingsproblemen</li><li>Je verkoopt en wilt kopers vooraf duidelijkheid geven</li><li>De taxatie vraagt om aanvullend onderzoek bij risicoklasse D of E</li></ul></div><div><h3>Bij signalen in huis</h3><ul class=\"checklist\"><li>Scheuren in de gevel of binnenmuren die lijken te groeien</li><li>Een vloer die schuin aanvoelt</li><li>Ramen en deuren die steeds slechter sluiten</li></ul></div></div><p>Lees bij twijfel over een aankoop ook de pagina over <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>. Niet elk signaal wijst op de fundering: een slecht afgestelde deur of houtwerking kan dezelfde klacht geven.</p>"
       },
       {
         "id": "bodem-dantumadiel",
         "h2": "Wat betekent de bodem in Dantumadiel voor je fundering?",
         "answer": "Dantumadiel ligt in de Friese Wouden, waar de ondergrond vooral uit zand en veen bestaat en richting het noorden ook klei voorkomt. Die mix maakt dat het funderingsrisico per kern kan verschillen.",
-        "body": "<p>Het is verleidelijk om een vaste regel te zoeken, maar de bodem laat zich niet samenvatten in één woord. Wel helpt het om te weten hoe de drie grondsoorten zich in het algemeen gedragen.</p><dl class=\"def-list\"><div><dt>Zand</dt><dd>Meestal stabiel en goed draagkrachtig; zakking verloopt vaak gelijkmatig.</dd></div><div><dt>Veen</dt><dd>Kan inklinken en oxideren als het droogvalt, wat tot <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a> leidt. Zie het artikel over de <a href=\"/kennisbank/veenbodem/\">veenbodem</a>.</dd></div><div><dt>Klei</dt><dd>Krimpt bij droogte en zwelt bij nat weer. Meer daarover bij de <a href=\"/kennisbank/kleibodem/\">kleibodem</a>.</dd></div></dl><p>Voor een woning op <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a> speelt daarnaast de grondwaterstand mee. Zolang de palen permanent onder water staan, blijft het hout meestal goed. Komen de paalkoppen droog te staan, dan kunnen schimmels en bacteriën het hout aantasten. Een woning met houten palen heeft overigens niet automatisch problemen.</p>"
+        "body": "<p>Het is verleidelijk om een vaste regel te zoeken, maar de bodem laat zich niet samenvatten in één woord. Wel helpt het om te weten hoe de drie grondsoorten zich in het algemeen gedragen.</p><dl class=\"def-list\"><div><dt>Zand</dt><dd>Meestal stabiel en goed draagkrachtig; zakking verloopt vaak gelijkmatig.</dd></div><div><dt>Veen</dt><dd>Kan inklinken en oxideren als het droogvalt, wat tot <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a> leidt. Zie het artikel over de <a href=\"/kennisbank/veenbodem/\">veenbodem</a>.</dd></div><div><dt>Klei</dt><dd>Krimpt bij droogte en zwelt bij nat weer. Meer daarover bij de <a href=\"/kennisbank/kleibodem/\">kleibodem</a>.</dd></div></dl><p>Voor een woning op <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a> speelt daarnaast de grondwaterstand mee. Zolang de palen onder water staan, is het risico op paalrot door schimmels klein, al kan bacteriële aantasting onder water wel optreden. Komen de paalkoppen droog te staan, dan kunnen schimmels het hout aantasten. Een woning met houten palen heeft overigens niet automatisch problemen.</p>"
       },
       {
         "id": "damwald-feanwalden",
@@ -217,7 +217,7 @@
       {
         "id": "werkwijze-dantumadiel",
         "h2": "Hoe ziet het onderzoek er in de praktijk uit?",
-        "answer": "Het onderzoek begint altijd met fase 0: archief- en bodemonderzoek, een visuele inspectie en een rapport. Fase 1, met metingen, volgt alleen als daar aanleiding voor is.",
+        "answer": "In de meeste situaties begint het onderzoek met fase 0: archief- en bodemonderzoek, een visuele inspectie en een rapport. Fase 1, met metingen, volgt alleen als daar aanleiding voor is.",
         "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Vooronderzoek met inspectie, risico-inschatting en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Lintvoeg, scheefstand en vloeren meten, zonder graafwerk.</span></a></div><p>Na fase 0 zijn er vier mogelijke uitkomsten: er is geen directe aanleiding voor vervolgonderzoek, we adviseren te monitoren, we raden aanvullend onderzoek aan of we adviseren fase 1. Het complete verloop, van aanvraag tot rapport, staat beschreven op de pagina <a href=\"/werkwijze/\">werkwijze</a>. MV Funderingsscan voert zelf geen herstel uit, zodat het advies onafhankelijk blijft.</p><p>Wil je meteen een afspraak? <a href=\"/funderingsscan-aanvragen/\">Vraag de funderingsscan aan</a> of lees eerst meer over de <a href=\"/funderingsscan/\">funderingsscan</a>.</p>"
       }
     ],
@@ -232,7 +232,7 @@
       },
       {
         "q": "Is een funderingsscan in Dantumadiel nodig voor mijn hypotheek?",
-        "a": "<p>Alleen als de taxatie daar om vraagt. Valt het funderingsrisicorapport van het KCAF in klasse D of E, dan is volgens de huidige richtlijnen aanvullend onderzoek nodig. Stem dit altijd af met je taxateur of geldverstrekker; zie ook <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek en taxatie</a>.</p>"
+        "a": "<p>Niet standaard; wel als de taxatie daar aanleiding toe geeft. Valt het funderingsrisicorapport van het KCAF in klasse D of E, dan vraagt het NRVT in principe eerst om een aanvullend (beperkt) funderingsonderzoek voordat de taxatie wordt afgerond. Stem dit altijd af met je taxateur of geldverstrekker; zie ook <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek en taxatie</a>.</p>"
       },
       {
         "q": "Wat gebeurt er als de Quick Scan zorgen oplevert?",
@@ -262,7 +262,7 @@
     ],
     "cta": [
       "Fundering in Dantumadiel laten controleren?",
-      "Start met een Quick Scan en ontvang binnen 5 werkdagen na de inspectie je rapport."
+      "Start met een Quick Scan en ontvang normaal gesproken binnen 5 werkdagen na de inspectie je rapport."
     ]
   },
   {
@@ -312,7 +312,7 @@
       },
       {
         "label": "Rapport",
-        "value": "binnen 5 werkdagen na inspectie"
+        "value": "meestal binnen 5 werkdagen na inspectie"
       }
     ],
     "services": [
@@ -324,13 +324,13 @@
         "id": "merengebied",
         "h2": "Wat maakt De Fryske Marren bijzonder voor funderingen?",
         "answer": "De Fryske Marren is een merengebied in zuidwest-Friesland met veen en klei in de ondergrond. Water en zachte grond liggen hier dicht bij elkaar, en dat vraagt bij oudere woningen om een zorgvuldige blik op de fundering.",
-        "body": "<p>De naam zegt het al: meren bepalen hier het beeld. Lemmer ligt aan het IJsselmeer en Sloten is een van de historische stadjes in de gemeente. Daarnaast liggen er grotere woonkernen als Joure en Balk en dorpen als Woudsend en Langweer. Het landschap en de bebouwing zijn sterk verbonden met water.</p><p>Voor een fundering is water een dubbele factor. Het grondwater houdt <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a> gezond zolang ze permanent onder water staan, maar wisselende standen en de samendrukbaarheid van veen en klei kunnen ook voor beweging zorgen. Het peilbeheer in Friesland ligt bij het waterschap, Wetterskip Fryslân.</p>"
+        "body": "<p>De naam zegt het al: meren bepalen hier het beeld. Lemmer ligt aan het IJsselmeer en Sloten is een van de historische stadjes in de gemeente. Daarnaast liggen er grotere woonkernen als Joure en Balk en dorpen als Woudsend en Langweer. Het landschap en de bebouwing zijn sterk verbonden met water.</p><p>Voor een fundering is water een dubbele factor. Zolang <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a> onder water staan, beschermt het grondwater ze tegen schimmelaantasting, maar wisselende standen en de samendrukbaarheid van veen en klei kunnen ook voor beweging zorgen. Het peilbeheer in Friesland ligt bij het waterschap, Wetterskip Fryslân.</p>"
       },
       {
         "id": "veen-en-klei-fryske-marren",
         "h2": "Hoe gedragen veen en klei zich onder een woning?",
         "answer": "Veen kan inklinken en oxideren als het droogvalt, wat tot bodemdaling leidt; klei krimpt bij droogte en zwelt bij nat weer. Of dat bij jouw woning speelt, hangt af van de opbouw ter plaatse.",
-        "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Veen\"><h3>Veen</h3><p>Veen bestaat uit plantenresten en bevat veel water. Zakt de grondwaterstand, dan kan het veen inklinken en oxideren. Het maaiveld daalt dan langzaam. Lees meer in het artikel over de <a href=\"/kennisbank/veenbodem/\">veenbodem</a> en over <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>.</p></section><section class=\"tab-panel\" data-tab=\"Klei\"><h3>Klei</h3><p>Klei reageert op het weer: in droge perioden krimpt de grond, bij regen zwelt hij weer op. Een ondiepe fundering kan die beweging voelen, wat zich soms uit in scheuren die per seizoen veranderen. Zie ook de <a href=\"/kennisbank/kleibodem/\">kleibodem</a>.</p></section><section class=\"tab-panel\" data-tab=\"Grondwater\"><h3>Grondwater</h3><p>Bij houten palen is de grondwaterstand belangrijk. Komen paalkoppen droog te staan, dan kunnen schimmels en bacteriën het hout aantasten. Ook onder water kan bacteriële aantasting langzaam optreden.</p></section></div><p>Dit zijn algemene eigenschappen. De ondergrond kan per kern verschillen, en zelfs binnen één dorp. Daarom begint ons onderzoek altijd met archief- en bodemgegevens van het specifieke adres.</p>"
+        "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Veen\"><h3>Veen</h3><p>Veen bestaat uit plantenresten en bevat veel water. Zakt de grondwaterstand, dan kan het veen inklinken en oxideren. Het maaiveld daalt dan langzaam. Lees meer in het artikel over de <a href=\"/kennisbank/veenbodem/\">veenbodem</a> en over <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>.</p></section><section class=\"tab-panel\" data-tab=\"Klei\"><h3>Klei</h3><p>Klei reageert op het weer: in droge perioden krimpt de grond, bij regen zwelt hij weer op. Een ondiepe fundering kan die beweging voelen, wat zich soms uit in scheuren die per seizoen veranderen. Zie ook de <a href=\"/kennisbank/kleibodem/\">kleibodem</a>.</p></section><section class=\"tab-panel\" data-tab=\"Grondwater\"><h3>Grondwater</h3><p>Bij houten palen is de grondwaterstand belangrijk. Komen paalkoppen droog te staan, dan kunnen schimmels het hout aantasten (paalrot). Onder water kunnen bacteriën het hout aantasten, over de hele lengte van de paal; grenen palen zijn daar gevoeliger voor dan vurenhouten palen.</p></section></div><p>Dit zijn algemene eigenschappen. De ondergrond kan per kern verschillen, en zelfs binnen één dorp. Daarom begint ons onderzoek met archief- en bodemgegevens van het specifieke adres.</p>"
       },
       {
         "id": "joure-lemmer-balk",
@@ -348,7 +348,7 @@
         "id": "stappen-fryske-marren",
         "h2": "Hoe verloopt funderingsonderzoek in De Fryske Marren?",
         "answer": "Je start met fase 0, de Quick Scan. Afhankelijk van de uitkomst adviseren we niets te doen, te monitoren, aanvullend onderzoek of fase 1 met metingen.",
-        "body": "<div class=\"mini-outcomes\"><div class=\"mini-outcome mini-ok\"><strong>Geen aanleiding</strong><span>Er zijn geen signalen die om vervolgonderzoek vragen.</span></div><div class=\"mini-outcome mini-watch\"><strong>Monitoren</strong><span>Signalen in de gaten houden en na enige tijd opnieuw kijken.</span></div><div class=\"mini-outcome mini-extra\"><strong>Aanvullend onderzoek</strong><span>Gericht naar één onderdeel, of de kruipruimte toegankelijk maken.</span></div><div class=\"mini-outcome mini-next\"><strong>Fase 1</strong><span>Metingen van lintvoeg, scheefstand en vloeren.</span></div></div><p>Fase 0 bestaat uit archief- en bodemonderzoek, een <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a> en een rapport binnen 5 werkdagen na de inspectie. Meer daarover lees je bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>. Fase 1 is niet-destructief en kost indicatief €750 – €1.500; zie <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>. Het hele proces staat op de pagina <a href=\"/werkwijze/\">werkwijze</a>.</p>"
+        "body": "<div class=\"mini-outcomes\"><div class=\"mini-outcome mini-ok\"><strong>Geen aanleiding</strong><span>Er zijn geen signalen die om vervolgonderzoek vragen.</span></div><div class=\"mini-outcome mini-watch\"><strong>Monitoren</strong><span>Signalen in de gaten houden en na enige tijd opnieuw kijken.</span></div><div class=\"mini-outcome mini-extra\"><strong>Aanvullend onderzoek</strong><span>Gericht naar één onderdeel, of de kruipruimte toegankelijk maken.</span></div><div class=\"mini-outcome mini-next\"><strong>Fase 1</strong><span>Metingen van lintvoeg, scheefstand en vloeren.</span></div></div><p>Fase 0 bestaat uit archief- en bodemonderzoek, een <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a> en een rapport normaal gesproken binnen 5 werkdagen na de inspectie. Meer daarover lees je bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>. Fase 1 is niet-destructief en kost indicatief €750 – €1.500; zie <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>. Het hele proces staat op de pagina <a href=\"/werkwijze/\">werkwijze</a>.</p>"
       },
       {
         "id": "aanvragen-fryske-marren",
@@ -360,7 +360,7 @@
     "faqs": [
       {
         "q": "Waar kan ik funderingsonderzoek laten uitvoeren in Joure?",
-        "a": "<p>Bij MV Funderingsscan: we voeren funderingsonderzoek uit in Joure en in de andere kernen van De Fryske Marren. Je begint met een Quick Scan en ontvangt het rapport binnen 5 werkdagen na de inspectie.</p>"
+        "a": "<p>Bij MV Funderingsscan: we voeren funderingsonderzoek uit in Joure en in de andere kernen van De Fryske Marren. Je begint met een Quick Scan en ontvangt het rapport normaal gesproken binnen 5 werkdagen na de inspectie.</p>"
       },
       {
         "q": "Doen jullie ook onderzoek aan oude panden in Sloten?",
@@ -444,7 +444,7 @@
       },
       {
         "label": "Rapport",
-        "value": "binnen 5 werkdagen na inspectie"
+        "value": "meestal binnen 5 werkdagen na inspectie"
       }
     ],
     "services": [
@@ -473,14 +473,14 @@
       {
         "id": "signalen-noardeast",
         "h2": "Bij welke signalen is een scan verstandig?",
-        "answer": "Een scan is verstandig als scheuren groeien, deuren en ramen gaan klemmen, vloeren scheef lopen of als je een oudere woning wilt kopen en vooraf zekerheid zoekt over de fundering.",
-        "body": "<ul class=\"check-interactive\"><li>Trapvormige of diagonale scheuren in het metselwerk</li><li>Scheuren die na een droge zomer breder lijken</li><li>Deuren of ramen die steeds slechter sluiten</li><li>Een vloer die merkbaar naar één kant afloopt</li><li>Een gevel die uit het lood lijkt te staan</li><li>Je overweegt een bod op een oudere woning</li></ul><p>Herken je meerdere punten? Dan geeft een <a href=\"/quickscan-fundering/\">quickscan fundering</a> duidelijkheid. Zelf kun je scheuren alvast volgen: maak een foto met een liniaal ernaast, noteer de datum en herhaal dat na enkele maanden. Lees ook wat er bij <a href=\"/scheuren-in-gevel/\">scheuren in de gevel</a> allemaal mogelijk is, want lang niet elke scheur heeft met de fundering te maken.</p>"
+        "answer": "Een scan is verstandig als scheuren groeien, deuren en ramen gaan klemmen, vloeren scheef lopen of als je een oudere woning wilt kopen en vooraf meer inzicht wilt in de fundering.",
+        "body": "<ul class=\"check-interactive\"><li>Trapvormige of diagonale scheuren in het metselwerk</li><li>Scheuren die na een droge zomer breder lijken</li><li>Deuren of ramen die steeds slechter sluiten</li><li>Een vloer die merkbaar naar één kant afloopt</li><li>Een gevel die uit het lood lijkt te staan</li><li>Je overweegt een bod op een oudere woning</li></ul><p>Herken je meerdere punten? Dan geeft een <a href=\"/quickscan-fundering/\">quickscan fundering</a> meer duidelijkheid. Zelf kun je scheuren alvast volgen: maak een foto met een liniaal ernaast, noteer de datum en herhaal dat na enkele maanden. Lees ook wat er bij <a href=\"/scheuren-in-gevel/\">scheuren in de gevel</a> allemaal mogelijk is, want lang niet elke scheur heeft met de fundering te maken.</p>"
       },
       {
         "id": "aanpak-noardeast",
         "h2": "Hoe pakken we funderingsonderzoek in Noardeast-Fryslân aan?",
         "answer": "We beginnen met fase 0: archief- en bodemonderzoek, een visuele inspectie ter plaatse en een rapport met risico-inschatting en advies. Fase 1 met metingen volgt alleen als dat nodig is.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Voorbereiding</strong><span>We verzamelen gegevens over bouwjaar, tekeningen, vermoedelijk funderingstype, bodemopbouw en grondwater.</span></li><li><strong>Inspectie</strong><span>We bekijken gevels, metselwerk, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, kozijnen, vloeren, scheefstand en de kruipruimte voor zover toegankelijk.</span></li><li><strong>Rapport en advies</strong><span>Binnen 5 werkdagen na de inspectie, met foto's, conclusie en een advies over de vervolgstap.</span></li></ol><p>Lees meer over <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a> en over de metingen in <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a>, of bekijk de complete <a href=\"/werkwijze/\">werkwijze</a>. Klaar om te beginnen? <a href=\"/funderingsscan-aanvragen/\">Vraag de funderingsscan aan</a>.</p>"
+        "body": "<ol class=\"mini-steps\"><li><strong>Voorbereiding</strong><span>We verzamelen gegevens over bouwjaar, tekeningen, vermoedelijk funderingstype, bodemopbouw en grondwater.</span></li><li><strong>Inspectie</strong><span>We bekijken gevels, metselwerk, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, kozijnen, vloeren, scheefstand en de kruipruimte voor zover toegankelijk.</span></li><li><strong>Rapport en advies</strong><span>Normaal gesproken binnen 5 werkdagen na de inspectie, met foto's, conclusie en een advies over de vervolgstap.</span></li></ol><p>Lees meer over <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a> en over de metingen in <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a>, of bekijk de complete <a href=\"/werkwijze/\">werkwijze</a>. Klaar om te beginnen? <a href=\"/funderingsscan-aanvragen/\">Vraag de funderingsscan aan</a>.</p>"
       }
     ],
     "faqs": [
@@ -502,7 +502,7 @@
       },
       {
         "q": "Hoe lang duurt het voordat ik het rapport heb?",
-        "a": "<p>Het rapport ontvang je binnen 5 werkdagen na de inspectie. De inspectie zelf plannen we meestal binnen enkele werkdagen na je aanvraag.</p>"
+        "a": "<p>Het rapport ontvang je normaal gesproken binnen 5 werkdagen na de inspectie. De inspectie zelf plannen we meestal binnen enkele werkdagen na je aanvraag.</p>"
       }
     ],
     "related": [
@@ -557,7 +557,7 @@
     "lead": "MV Funderingsscan voert funderingsonderzoek uit in de gemeente Ooststellingwerf, waaronder <strong>Oosterwolde, Appelscha, Haulerwijk, Makkinga en Donkerbroek</strong>. Op de overwegend zandgronden van de Stellingwerven begin je met een <a href=\"/funderingsscan/\">funderingsscan</a>: een onafhankelijk vooronderzoek met inspectie, rapport en advies.",
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
-      "alt": "Specialist met een waterpas bij de gevel van een woning"
+      "alt": "Persoon met een waterpas bij de gevel van een woning"
     },
     "facts": [
       {
@@ -574,7 +574,7 @@
       },
       {
         "label": "Rapport",
-        "value": "binnen 5 werkdagen na inspectie"
+        "value": "meestal binnen 5 werkdagen na inspectie"
       }
     ],
     "services": [
@@ -604,19 +604,19 @@
         "id": "momenten-ooststellingwerf",
         "h2": "Wanneer kies je in Ooststellingwerf voor een funderingsscan?",
         "answer": "Kies voor een scan als je een oudere woning koopt of verkoopt, als de taxateur om aanvullend onderzoek vraagt, of als je scheuren, scheefstand of klemmende deuren ziet die je niet kunt verklaren.",
-        "body": "<p>Bij een aankoop wil je vóór het bod weten wat je koopt; lees daarover meer bij <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>. Sinds 1 april 2026 bevat het taxatierapport een vaste funderingsparagraaf op basis van het KCAF-risicorapport. Valt een woning in klasse D of E, dan is volgens de huidige richtlijnen aanvullend onderzoek nodig voordat de taxatie wordt afgerond.</p><div class=\"callout callout-warn\"><strong>Andere oorzaken eerst uitsluiten</strong><p>Een klemmende deur kan ook komen door houtwerking of een slecht afgestelde scharnier, en scheuren boven ramen soms door een roestende latei. Een scan maakt dat onderscheid.</p></div>"
+        "body": "<p>Bij een aankoop wil je vóór het bod weten wat je koopt; lees daarover meer bij <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>. Sinds 1 april 2026 is de funderingsparagraaf in het taxatierapport gebaseerd op de KCAF-risicoklasse A t/m E. Valt een woning in klasse D of E, dan moet er volgens het NRVT in principe eerst een beperkt aanvullend funderingsonderzoek plaatsvinden voordat de taxatie wordt afgerond.</p><div class=\"callout callout-warn\"><strong>Andere oorzaken eerst uitsluiten</strong><p>Een klemmende deur kan ook komen door houtwerking of een slecht afgestelde scharnier, en scheuren boven ramen soms door een roestende latei. Een scan maakt dat onderscheid.</p></div>"
       },
       {
         "id": "onderzoek-ooststellingwerf",
         "h2": "Hoe gaat het onderzoek in zijn werk?",
-        "answer": "Het onderzoek start met fase 0, de Quick Scan, en eindigt met een rapport binnen 5 werkdagen na de inspectie. Geeft de scan daar aanleiding toe, dan volgt fase 1 met metingen.",
+        "answer": "Het onderzoek start met fase 0, de Quick Scan, en eindigt met een rapport normaal gesproken binnen 5 werkdagen na de inspectie. Geeft de scan daar aanleiding toe, dan volgt fase 1 met metingen.",
         "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief, bodem, visuele inspectie en advies; vanaf ca. €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek</strong><span>Lintvoegwaterpassing, loodmeting en vloerveldwaterpassing; indicatief €750 – €1.500.</span></a></div><p>Bij de <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a> bekijken we gevels, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, kozijnen, deuren, vloeren, scheefstand en de kruipruimte voor zover die toegankelijk is. Het complete verloop lees je op de pagina <a href=\"/werkwijze/\">werkwijze</a>. Weet je niet goed welke stap bij jouw situatie past, neem dan <a href=\"/contact/\">contact</a> op. Wil je meteen starten, <a href=\"/funderingsscan-aanvragen/\">vraag de funderingsscan aan</a>. Alle regio's vind je in ons <a href=\"/werkgebied/\">werkgebied</a>.</p>"
       },
       {
         "id": "kosten-ooststellingwerf",
         "h2": "Wat kost funderingsonderzoek in Ooststellingwerf?",
         "answer": "De Quick Scan kost vanaf circa €350 en bij grotere of complexere woningen indicatief tot circa €550. Fase 1 kost indicatief €750 – €1.500, afhankelijk van welke metingen nodig zijn.",
-        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Onderdeel</th><th>Indicatieve prijs</th><th>Doorlooptijd</th></tr></thead><tbody><tr><td>Fase 0 – Quick Scan</td><td>vanaf ca. €350 (tot ca. €550)</td><td>Rapport binnen 5 werkdagen na de inspectie</td></tr><tr><td>Fase 1 – metingen</td><td>€750 – €1.500</td><td>Afgestemd bij de offerte</td></tr></tbody></table></div><p>De prijs hangt niet af van het dorp waar je woont, maar van de woning en de vraag. Je weet de definitieve prijs vooraf. Een volledig overzicht staat op de pagina <a href=\"/prijzen/\">prijzen</a>. Houd er rekening mee dat een funderingsscan geen herstelofferte is: als herstel nodig blijkt, heb je daarvoor een offerte van een herstelspecialist nodig.</p>"
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Onderdeel</th><th>Indicatieve prijs</th><th>Doorlooptijd</th></tr></thead><tbody><tr><td>Fase 0 – Quick Scan</td><td>vanaf ca. €350 (tot ca. €550)</td><td>Rapport normaal gesproken binnen 5 werkdagen na de inspectie</td></tr><tr><td>Fase 1 – metingen</td><td>€750 – €1.500</td><td>Afgestemd bij de offerte</td></tr></tbody></table></div><p>De prijs hangt niet af van het dorp waar je woont, maar van de woning en de vraag. Je weet de definitieve prijs vooraf. Een volledig overzicht staat op de pagina <a href=\"/prijzen/\">prijzen</a>. Houd er rekening mee dat een funderingsscan geen herstelofferte is: als herstel nodig blijkt, heb je daarvoor een offerte van een herstelspecialist nodig.</p>"
       }
     ],
     "faqs": [
@@ -638,7 +638,7 @@
       },
       {
         "q": "Kunnen jullie ook een boerderij in Makkinga of Donkerbroek onderzoeken?",
-        "a": "<p>Ja, ook boerderijen in Makkinga, Donkerbroek en de andere dorpen onderzoeken we. Bij een groter of complexer gebouw kan de prijs van de Quick Scan indicatief oplopen tot circa €550. Je hoort de definitieve prijs altijd vooraf.</p>"
+        "a": "<p>Ja, ook boerderijen in Makkinga, Donkerbroek en de andere dorpen onderzoeken we. Bij een groter of complexer gebouw kan de prijs van de Quick Scan indicatief oplopen tot circa €550. De definitieve prijs hoor je vooraf.</p>"
       }
     ],
     "related": [

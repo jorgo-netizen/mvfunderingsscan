@@ -402,7 +402,7 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
   background: var(--light); border: 1px solid var(--line);
 }
 .outcomes h3 { font-size: 22px; color: var(--navy); margin-bottom: 24px; }
-.outcome-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; position: relative; }
+.outcome-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; position: relative; }
 .outcome {
   background: #fff; border-radius: 14px; padding: 24px; border: 1px solid var(--line);
   transition: transform .3s var(--ease), box-shadow .3s ease;
@@ -1703,3 +1703,22 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+/* E-E-A-T: deskundige, reviews, byline, placeholders (alleen dev) */
+.byline { font-size: 13.5px; color: var(--muted); margin: 0 0 22px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.prose .byline a { font-weight: 700; }
+.expert-card { display: flex; gap: 20px; align-items: flex-start; padding: 22px; border-radius: 16px; background: var(--light); border: 1px solid var(--line); }
+.expert-photo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex: none; }
+.prose .expert-name { margin: 0 0 8px; }
+.expert-name span { color: var(--muted); }
+.reviews { display: grid; gap: 14px; }
+.review { margin: 0; padding: 18px 20px; border-radius: 14px; background: #fff; border: 1px solid var(--line); }
+.review blockquote { margin: 0 0 8px; }
+.review figcaption { font-size: 13.5px; color: var(--muted); }
+.placeholder-box { padding: 16px 18px; border: 2px dashed #d9a400; border-radius: 12px; background: #fff8dc; color: #5a4500; }
+.prose .placeholder-box p, .placeholder-box li { font-size: 14px; color: #5a4500; }
+.placeholder-box code { font-size: 12.5px; }
+.placeholder-inline { background: #fff8dc; border: 1px dashed #d9a400; padding: 0 4px; color: #5a4500; }
+@media (max-width: 760px) { .expert-card { flex-direction: column; } }
+
+@media (max-width: 1100px) and (min-width: 901px) { .outcome-grid { grid-template-columns: 1fr 1fr; } }

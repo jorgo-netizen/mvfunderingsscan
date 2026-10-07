@@ -2,7 +2,7 @@
   "faqs": [
     {
       "q": "Wat is een funderingsscan?",
-      "a": "<p>Een funderingsscan is een eerste, niet-destructieve beoordeling van de staat en de mogelijke risico's van de fundering van een woning. MV Funderingsscan combineert daarvoor archief- en bodemgegevens met een inspectie van de woning, zonder graafwerk. Lees meer op de pagina <a href=\"/funderingsscan/\">funderingsscan</a>.</p>"
+      "a": "<p>Een funderingsscan is een eerste, niet-destructieve inschatting van het funderingsrisico van een woning. MV Funderingsscan combineert daarvoor archief- en bodemgegevens met een inspectie van de woning, zonder graafwerk. Lees meer op de pagina <a href=\"/funderingsscan/\">funderingsscan</a>.</p>"
     },
     {
       "q": "Wat is het verschil tussen fase 0 en fase 1?",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Wat is fase 1?",
-      "a": "<p>Fase 1 is een uitgebreider vervolgonderzoek waarin we de woning doormeten om vast te stellen of die stabiel staat of nog zakt. Fase 1 is alleen nodig als de Quick Scan wijst op een verhoogd risico, en gebeurt ook zonder de fundering open te graven. Zie <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>.</p>"
+      "a": "<p>Fase 1 is een uitgebreider vervolgonderzoek waarin we de woning doormeten: scheefstand, hoogteverschillen en scheurpatronen. Of een woning nog beweegt, blijkt pas uit herhaalde metingen. Fase 1 is in de regel alleen nodig als de Quick Scan wijst op een verhoogd risico, en gebeurt ook zonder de fundering open te graven. Zie <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>.</p>"
     },
     {
       "q": "Wanneer heb ik een funderingsonderzoek nodig?",
@@ -22,23 +22,31 @@
     },
     {
       "q": "Wat kost een funderingsscan?",
-      "a": "<p>Een fase 0 funderingsscan begint indicatief vanaf ongeveer €350. Een fase 1 onderzoek kost indicatief €750 tot €1.500, afhankelijk van de woning en de benodigde metingen. Je krijgt altijd vooraf een vaste prijs. Bekijk alle <a href=\"/prijzen/\">prijzen</a>.</p>"
+      "a": "<p>Een fase 0 funderingsscan begint indicatief vanaf ongeveer €350. Een fase 1 onderzoek kost indicatief €750 tot €1.500, afhankelijk van de woning en de benodigde metingen. Je hoort vooraf wat het onderzoek kost. Bekijk alle <a href=\"/prijzen/\">prijzen</a>.</p>"
     },
     {
       "q": "Hoe lang duurt een funderingsonderzoek?",
-      "a": "<p>De inspectie van een Quick Scan plannen we meestal binnen enkele werkdagen in. Het rapport ontvang je binnen vijf werkdagen na de inspectie. Is er haast, bijvoorbeeld door een lopend voorbehoud, geef dat dan bij je aanvraag aan.</p>"
+      "a": "<p>De inspectie van een Quick Scan plannen we meestal binnen enkele werkdagen in. Het rapport ontvang je normaal gesproken binnen vijf werkdagen na de inspectie. Is er haast, bijvoorbeeld door een lopend voorbehoud, geef dat dan bij je aanvraag aan.</p>"
     },
     {
       "q": "Wat wordt onderzocht bij een funderingsscan?",
-      "a": "<p>Het bouwjaar, het funderingstype, de bodem en het grondwater, en zichtbare signalen: scheuren in gevels en muren, scheefstand, klemmende deuren en ramen, hellende vloeren en de staat van de kruipruimte.</p>"
+      "a": "<p>Het bouwjaar, het vermoedelijke funderingstype, de bodem en het grondwater, en zichtbare signalen: scheuren in gevels en muren, scheefstand, klemmende deuren en ramen, hellende vloeren en de kruipruimte, voor zover toegankelijk. De fundering zelf wordt niet vrijgegraven.</p>"
     },
     {
       "q": "Kan ik een funderingsscan laten uitvoeren voordat ik een woning koop?",
-      "a": "<p>Ja. Een Quick Scan vóór de aankoop laat zien of er funderingsrisico's spelen voordat je definitief tekent. Plan de scan bij voorkeur binnen een ontbindende voorwaarde; we stemmen de afspraak af met de verkopende makelaar. Lees meer over <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>.</p>"
+      "a": "<p>Ja. Een Quick Scan vóór de aankoop brengt in beeld of er aanwijzingen zijn voor funderingsrisico's voordat je definitief tekent. Plan de scan bij voorkeur binnen een ontbindende voorwaarde; we stemmen de afspraak af met de verkopende makelaar. Lees meer over <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>.</p>"
     },
     {
       "q": "Wat gebeurt er als de fundering risico's vertoont?",
       "a": "<p>Dan adviseren we over de volgende stap: monitoren, fase 1 met metingen, of na fase 1 eventueel nader onderzoek of een herstelplan door een gespecialiseerde partij. Je beslist zelf of je verdergaat, en je hoort vooraf wat het kost.</p>"
+    },
+    {
+      "q": "Wat betekent funderingsrisicoklasse D of E in een taxatie?",
+      "a": "<p>Het KCAF deelt het funderingsrisico in van A (geen risico) tot en met E (vastgesteld funderingsprobleem); D staat voor hoog risico. Sinds 1 april 2026 moet bij klasse D of E volgens het NRVT in principe eerst een aanvullend (beperkt) funderingsonderzoek plaatsvinden voordat de taxatie wordt afgerond. Lees meer bij <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek en taxatie</a> en op <a href=\"/bronnen-en-richtlijnen/\">bronnen en richtlijnen</a>.</p>"
+    },
+    {
+      "q": "Is funderingsonderzoek verplicht bij de koop van een huis?",
+      "a": "<p>Nee, er is geen algemene wettelijke plicht. De verkoper moet wel bekende gebreken melden en de koper heeft een onderzoeksplicht. Daarnaast kan de taxatie bij risicoklasse D of E aanvullend onderzoek vragen, en NHG heeft aangekondigd dat vanaf 2027 bij D of E een verkennend funderingsonderzoek verplicht wordt voor een lening met NHG.</p>"
     },
     {
       "q": "Is een funderingsscan hetzelfde als een bouwkundige keuring?",

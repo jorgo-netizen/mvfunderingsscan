@@ -50,8 +50,8 @@
       {
         "id": "gevolgen-voor-houten-palen",
         "h2": "Wat betekent een lager peil voor houten palen?",
-        "answer": "Houten palen blijven goed zolang ze permanent onder water staan; zakt het grondwater tot onder de paalkoppen, dan kunnen schimmels het hout aantasten.",
-        "body": "<p>Zolang het hout onder water staat, krijgen schimmels weinig kans. Komen de paalkoppen geregeld droog te staan, dan kan <a href=\"/kennisbank/paalrot/\">paalrot</a> ontstaan. Ook onder water kan bacteriële aantasting optreden, maar dat gaat meestal langzaam.</p>\n<p>Een woning met houten palen heeft niet automatisch problemen. De staat van het hout stel je alleen vast met een inspectieput en houtonderzoek, en dat valt buiten een quickscan. Achtergrond over dit funderingstype vind je bij <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a>.</p>"
+        "answer": "Zolang houten palen onder water staan, is het risico op schimmelaantasting (paalrot) klein; zakt het grondwater tot onder de paalkoppen, dan kunnen schimmels het hout aantasten. Bacteriële aantasting kan onder water wel optreden.",
+        "body": "<p>Zolang het hout onder water staat, krijgen schimmels weinig kans. Komen de paalkoppen geregeld droog te staan, dan kan <a href=\"/kennisbank/paalrot/\">paalrot</a> ontstaan. Daarnaast kan bacteriële aantasting optreden, juist onder water en over de hele lengte van de paal; grenen is daar gevoeliger voor dan vuren.</p>\n<p>Een woning met houten palen heeft niet automatisch problemen. De staat van het hout stel je alleen vast met een inspectieput en houtonderzoek, en dat valt buiten een quickscan. Achtergrond over dit funderingstype vind je bij <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a>.</p>"
       },
       {
         "id": "gevolgen-voor-veen-en-klei",
@@ -63,7 +63,7 @@
         "id": "voorbeeld",
         "h2": "Voorbeeld: een woning in een veenweidegebied",
         "answer": "Een denkbeeldig voorbeeld laat zien dat een dalend peil een aanleiding kan zijn om te kijken, maar geen conclusie.",
-        "body": "<p>Stel: je woont in een vooroorlogse rijwoning aan de rand van een Fries veenweidegebied. De sloot achter de tuin staat in de zomer lager dan vroeger en het tuinpad is wat weggezakt. In huis zie je geen nieuwe scheuren.</p>\n<p>Een verzakt maaiveld kan wijzen op inklinking, maar zegt niet automatisch iets over de fundering. Logische stappen zijn uitzoeken hoe de woning gefundeerd is, welke grondwatergegevens er zijn en of de gevel vervorming toont. Dat combineert een <a href=\"/quickscan-fundering/\">quickscan fundering</a>.</p>"
+        "body": "<p>Stel: je woont in een vooroorlogse rijwoning aan de rand van een Fries veenweidegebied. De sloot achter de tuin staat in de zomer lager dan vroeger en het tuinpad is wat weggezakt. In huis zie je geen nieuwe scheuren.</p>\n<p>Een verzakt maaiveld kan wijzen op inklinking, maar zegt niet automatisch iets over de fundering. Logische stappen kunnen dan zijn: uitzoeken hoe de woning gefundeerd is, welke grondwatergegevens er zijn en of de gevel vervorming toont. Dat combineert een <a href=\"/quickscan-fundering/\">quickscan fundering</a>.</p>"
       },
       {
         "id": "wat-kun-je-zelf-doen",
@@ -75,7 +75,7 @@
         "id": "wanneer-onderzoek",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Onderzoek is verstandig als je woning van vóór circa 1970 is en in een gebied met veen, klei of wisselende waterstanden staat, zeker als er ook scheuren, scheefstand of klemmende deuren zijn.",
-        "body": "<p>Een quickscan is niet-destructief, kost <strong>vanaf circa €350</strong> en je ontvangt het rapport binnen 5 werkdagen na de inspectie. Geeft fase 0 daar aanleiding toe, dan volgt eventueel een vervolgonderzoek met metingen.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Twijfel je? <a href=\"/contact/\">Neem contact op</a> en vertel kort wat je ziet.</p>"
+        "body": "<p>Een quickscan is niet-destructief, kost <strong>vanaf circa €350</strong> en je ontvangt het rapport normaal gesproken binnen 5 werkdagen na de inspectie. Geeft fase 0 daar aanleiding toe, dan volgt eventueel een vervolgonderzoek met metingen.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>In de regel als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Twijfel je? <a href=\"/contact/\">Neem contact op</a> en vertel kort wat je ziet.</p>"
       }
     ],
     "faqs": [
@@ -122,7 +122,7 @@
       }
     ],
     "cta": [
-      "Benieuwd hoe jouw woning ervoor staat?",
+      "Benieuwd naar het funderingsrisico van jouw woning?",
       "Een quickscan brengt funderingstype, bodem, grondwater en zichtbare signalen samen in één helder rapport."
     ]
   },
@@ -190,7 +190,7 @@
         "id": "wanneer-onderzoek",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Laat onderzoek doen als scheuren boven kozijnen diagonaal of trapvormig lopen, groter worden, op meerdere plekken in dezelfde richting voorkomen of samengaan met klemmende ramen en scheve vloeren.",
-        "body": "<p>Gaat het om één horizontale scheur met duidelijke roestsporen, dan ligt een bouwkundige blik op de latei meer voor de hand. Twijfel je, of zie je meerdere signalen, dan geeft een quickscan overzicht. Daarbij worden onder meer gevels, metselwerk, scheurpatronen, kozijnen en scheefstand bekeken, gecombineerd met archief- en bodemonderzoek.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Kijk voor de inhoud van het vooronderzoek bij <a href=\"/quickscan-fundering/\">quickscan fundering</a>, of <a href=\"/contact/\">stel je vraag</a> als je niet zeker weet welke stap past.</p>"
+        "body": "<p>Gaat het om één horizontale scheur met duidelijke roestsporen, dan ligt een bouwkundige blik op de latei meer voor de hand. Twijfel je, of zie je meerdere signalen, dan geeft een quickscan overzicht. Daarbij worden onder meer gevels, metselwerk, scheurpatronen, kozijnen en scheefstand bekeken, gecombineerd met archief- en bodemonderzoek.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>In de regel als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Kijk voor de inhoud van het vooronderzoek bij <a href=\"/quickscan-fundering/\">quickscan fundering</a>, of <a href=\"/contact/\">stel je vraag</a> als je niet zeker weet welke stap past.</p>"
       }
     ],
     "faqs": [
@@ -271,7 +271,7 @@
     "lead": "Een scheur op de aansluiting tussen woning en aanbouw is <strong>vaak het gevolg van verschil in fundering</strong>: de aanbouw heeft meestal een eigen, ondiepere fundering en beweegt daardoor anders dan het oorspronkelijke huis. Een stabiele, rechte scheur op die naad is lang niet altijd zorgwekkend. Groeit de scheur, kantelt de aanbouw of zie je ook schade in het hoofdgebouw, dan is onderzoek verstandig.",
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
-      "alt": "Specialist met waterpas bij de gevel van een woning"
+      "alt": "Persoon met een waterpas bij de gevel van een woning"
     },
     "article": true,
     "sections": [
@@ -303,13 +303,13 @@
         "id": "voorbeeld",
         "h2": "Voorbeeld: uitbouw aan een vooroorlogse woning",
         "answer": "Een denkbeeldig voorbeeld laat zien hoe je onderscheid maakt tussen een verklaarbare naadscheur en schade die verder reikt.",
-        "body": "<p>Een vooroorlogse woning in een kleigebied heeft enkele jaren geleden een uitbouw aan de achterkant gekregen. Na een droge zomer verschijnt er een rechte, verticale scheur precies op de aansluiting. In de winter lijkt hij iets smaller. Verder geen schade.</p>\n<p>Dat past bij een uitbouw die met de klei meebeweegt. De eigenaar fotografeert de scheur met een liniaal en datum, en herhaalt dat na enkele maanden. Zou de scheur blijven groeien, of zouden er ook schuine scheuren in de oude gevel verschijnen, dan is een <a href=\"/quickscan-fundering/\">quickscan fundering</a> een logische volgende stap.</p>"
+        "body": "<p>Een vooroorlogse woning in een kleigebied heeft enkele jaren geleden een uitbouw aan de achterkant gekregen. Na een droge zomer verschijnt er een rechte, verticale scheur precies op de aansluiting. In de winter lijkt hij iets smaller. Verder geen schade.</p>\n<p>Dat past bij een uitbouw die met de klei meebeweegt. De eigenaar fotografeert de scheur met een liniaal en datum, en herhaalt dat na enkele maanden. Zou de scheur blijven groeien, of zouden er ook schuine scheuren in de oude gevel verschijnen, dan kan een <a href=\"/quickscan-fundering/\">quickscan fundering</a> een logische volgende stap zijn.</p>"
       },
       {
         "id": "wanneer-onderzoek",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Onderzoek is verstandig als de scheur blijft groeien, als het hoofdgebouw zelf ook signalen toont, of als je een woning met aanbouw wilt kopen en twijfelt over de fundering.",
-        "body": "<p>Bij een quickscan wordt onder meer nagegaan wanneer de aanbouw is gebouwd en of er tekeningen in het bouwarchief zijn. Daarnaast worden gevels, aansluitingen, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a> en vloeren bekeken. Zo wordt duidelijker of de scheur bij de aanbouw blijft of dat er meer speelt.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Ga je een woning met aanbouw kopen? Lees dan ook <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>. Twijfel je over de juiste stap, <a href=\"/contact/\">neem dan contact op</a>.</p>"
+        "body": "<p>Bij een quickscan wordt onder meer nagegaan wanneer de aanbouw is gebouwd en of er tekeningen in het bouwarchief zijn. Daarnaast worden gevels, aansluitingen, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a> en vloeren bekeken. Zo wordt duidelijker of de scheur bij de aanbouw blijft of dat er meer speelt.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>In de regel als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Ga je een woning met aanbouw kopen? Lees dan ook <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>. Twijfel je over de juiste stap, <a href=\"/contact/\">neem dan contact op</a>.</p>"
       }
     ],
     "faqs": [
@@ -360,8 +360,8 @@
       }
     ],
     "cta": [
-      "Scheur bij je aanbouw en wil je zekerheid?",
-      "Een quickscan laat zien of de scheur bij de aanbouw blijft of dat er meer speelt."
+      "Scheur bij je aanbouw en wil je meer inzicht?",
+      "Een quickscan helpt inschatten of de scheur bij de aanbouw blijft of dat er meer speelt."
     ]
   },
   {
@@ -428,7 +428,7 @@
         "id": "wanneer-onderzoek",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Laat onderzoek doen als het klemmen terugkomt na afstellen, als meerdere ramen of deuren in hetzelfde deel van de woning klemmen, of als er ook scheuren, scheve dorpels of hellende vloeren zijn.",
-        "body": "<p>Bij een quickscan worden kozijnen, deuren en ramen bekeken samen met gevels, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, vloeren en scheefstand. Het archief- en bodemonderzoek geeft daarbij context: hoe oud is de woning, hoe is ze vermoedelijk gefundeerd en hoe ziet de bodem eruit.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Meer over de opbouw van het vooronderzoek lees je bij <a href=\"/quickscan-fundering/\">quickscan fundering</a>. Heb je een vraag over je situatie, <a href=\"/contact/\">neem dan contact op</a>.</p>"
+        "body": "<p>Bij een quickscan worden kozijnen, deuren en ramen bekeken samen met gevels, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, vloeren en scheefstand. Het archief- en bodemonderzoek geeft daarbij context: hoe oud is de woning, hoe is ze vermoedelijk gefundeerd en hoe ziet de bodem eruit.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>In de regel als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Meer over de opbouw van het vooronderzoek lees je bij <a href=\"/quickscan-fundering/\">quickscan fundering</a>. Heb je een vraag over je situatie, <a href=\"/contact/\">neem dan contact op</a>.</p>"
       }
     ],
     "faqs": [
@@ -505,7 +505,7 @@
     "lead": "Een scheve of hellende vloer kan <strong>veel oorzaken</strong> hebben. Vaak zit het in de vloer zelf: een houten balklaag die doorbuigt, een ondersteuning in de kruipruimte die is weggezakt of afwerklagen die ongelijk zijn aangebracht. Soms speelt zetting van de fundering mee. Zelf kun je het verloop observeren; een vloerveldwaterpassing laat precies zien hoe de vloer loopt.",
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
-      "alt": "Specialist met waterpas bij de gevel van een woning"
+      "alt": "Persoon met een waterpas bij de gevel van een woning"
     },
     "article": true,
     "sections": [
@@ -549,7 +549,7 @@
         "id": "wanneer-onderzoek",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Onderzoek is verstandig als de vloer in meerdere kamers dezelfde kant op afloopt, als de helling toeneemt, of als er ook scheuren, scheefstand of klemmende deuren en ramen zijn.",
-        "body": "<p>Een quickscan bekijkt onder meer vloeren, scheefstand, gevels en, voor zover toegankelijk, de kruipruimte. Samen met archief- en bodemonderzoek geeft dat een <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a> en advies: geen aanleiding voor vervolg, monitoren, gericht aanvullend onderzoek of fase 1 met metingen zoals een vloerveldwaterpassing.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Lees meer over de <a href=\"/quickscan-fundering/\">quickscan fundering</a> of <a href=\"/contact/\">neem contact op</a> als je wilt overleggen welke stap bij jouw situatie past.</p>"
+        "body": "<p>Een quickscan bekijkt onder meer vloeren, scheefstand, gevels en, voor zover toegankelijk, de kruipruimte. Samen met archief- en bodemonderzoek geeft dat een <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a> en advies: geen aanleiding voor vervolg, monitoren, gericht aanvullend onderzoek of fase 1 met metingen zoals een vloerveldwaterpassing.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>In de regel als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Lees meer over de <a href=\"/quickscan-fundering/\">quickscan fundering</a> of <a href=\"/contact/\">neem contact op</a> als je wilt overleggen welke stap bij jouw situatie past.</p>"
       }
     ],
     "faqs": [

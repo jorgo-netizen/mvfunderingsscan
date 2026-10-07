@@ -1,0 +1,130 @@
+[
+  {
+    "path": "/bronnen-en-richtlijnen/",
+    "title": "Bronnen en richtlijnen funderingsonderzoek | MV Funderingsscan",
+    "description": "Welke officiële bronnen MV Funderingsscan gebruikt (KCAF, NRVT, NHG, RVO) en wat de regels rond funderingsrisico A–E en taxatie in 2026 zijn.",
+    "keyword": "bronnen funderingsonderzoek",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/bronnen-en-richtlijnen/",
+        "name": "Bronnen en richtlijnen"
+      }
+    ],
+    "eyebrow": "Bronnen en werkwijze",
+    "h1": "Bronnen en richtlijnen achter onze informatie",
+    "lead": "Informatie over funderingen moet kloppen. Op deze pagina zie je welke officiële bronnen we gebruiken, wat die bronnen in 2026 zeggen over funderingsrisico, taxatie en NHG, en hoe we onze teksten controleren en bijwerken.",
+    "facts": [
+      {
+        "label": "Laatst gecontroleerd",
+        "value": "7 oktober 2026"
+      },
+      {
+        "label": "Primaire bronnen",
+        "value": "KCAF, NRVT, NHG, RVO, Rijksoverheid"
+      },
+      {
+        "label": "Fout gezien?",
+        "value": "<a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>"
+      }
+    ],
+    "sections": [
+      {
+        "id": "waarom-bronnen",
+        "h2": "Waarom noemen we onze bronnen?",
+        "answer": "Omdat beslissingen over een woning, een taxatie of een hypotheek afhangen van informatie die klopt. We baseren technische en regelgevende uitspraken op primaire bronnen en vermelden die, zodat je ze zelf kunt nalezen.",
+        "body": "<p>Over funderingen circuleren veel stellige uitspraken, bijvoorbeeld dat onderzoek altijd verplicht is of dat een bepaalde risicoklasse iets zegt over de werkelijke staat van je fundering. Dat klopt lang niet altijd. Daarom gebruiken we bij voorkeur de bron zelf: de richtlijn, de regeling of het officiële bericht van de organisatie die erover gaat. Een blog of nieuwsartikel gebruiken we hooguit om een primaire bron te vinden.</p>"
+      },
+      {
+        "id": "welke-bronnen",
+        "h2": "Welke bronnen gebruiken we?",
+        "answer": "We gebruiken vooral publicaties van KCAF, NRVT, NHG, RVO en de Rijksoverheid, aangevuld met regionale bronnen zoals het Veenweideprogramma Fryslân.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Bron</th><th>Waarvoor</th></tr></thead><tbody>\n<tr><td><a href=\"https://www.kcaf.nl/wp-content/uploads/2023/01/Richtlijnen-onderzoek-funderingen-onder-gebouwen.pdf\" rel=\"noopener\" target=\"_blank\">KCAF – Richtlijn Funderingen onder gebouwen (herziene versie 22 november 2022)</a></td><td>Onderdelen van funderingsonderzoek, begrippen als droogstand, bacteriële aantasting en negatieve kleef</td></tr>\n<tr><td><a href=\"https://www.kcaf.nl/funderingsrisico-onderzoeken/\" rel=\"noopener\" target=\"_blank\">KCAF – Funderingsrisico en onderzoeken</a></td><td>Risicoklassen A t/m E, funderingsrisicorapport en QuickScan</td></tr>\n<tr><td><a href=\"https://www.kcaf.nl/erkenningsregeling/\" rel=\"noopener\" target=\"_blank\">KCAF – Erkenningsregeling</a></td><td>Hoe erkenning van onderzoeks- en herstelbedrijven werkt</td></tr>\n<tr><td><a href=\"https://www.nrvt.nl/over-nrvt/nieuws/nieuw-model-taxatierapport-woonruimte-per-1-april-2026-wat-betekent-dit-in-de-praktijk\" rel=\"noopener\" target=\"_blank\">NRVT – Nieuw model taxatierapport woonruimte per 1 april 2026</a></td><td>Hoe de taxateur met funderingsrisico omgaat</td></tr>\n<tr><td><a href=\"https://www.nhg.nl/nhg-actueel/funderingsrisico-in-het-taxatierapport-wat-verandert-er-vanaf-1-april/\" rel=\"noopener\" target=\"_blank\">NHG – Funderingsrisico in het taxatierapport</a> en <a href=\"https://www.nhg.nl/kennis-innovatie/voorwaarden-en-normen-2027/\" rel=\"noopener\" target=\"_blank\">NHG – Voorwaarden en normen 2027</a></td><td>Funderingsrisico bij een hypotheek met NHG</td></tr>\n<tr><td><a href=\"https://www.kcaf.nl/wp-content/uploads/2022/11/74323-RVO-RPAF-22-Brochure_Woningeigenaren_TGPDFA.pdf\" rel=\"noopener\" target=\"_blank\">RVO en KCAF – Brochure voor woningeigenaren</a></td><td>Houten palen, bouwperiode, mededelings- en onderzoeksplicht</td></tr>\n<tr><td><a href=\"https://www.rijksoverheid.nl/actueel/nieuws/2025/07/04/kabinet-van-start-met-meerjarenaanpak-voor-funderingsproblematiek\" rel=\"noopener\" target=\"_blank\">Rijksoverheid – Meerjarenaanpak funderingsproblematiek</a></td><td>Landelijke aanpak en loketten</td></tr>\n<tr><td><a href=\"https://veenweidefryslan.frl/uploads/Downloads/4107-veenweideprogramma-2021-2030-bijlage-lr.pdf\" rel=\"noopener\" target=\"_blank\">Veenweideprogramma Fryslân 2021–2030 (achtergronddocument)</a></td><td>Bodemdaling en droogstand in het Friese veenweidegebied</td></tr>\n<tr><td><a href=\"https://historischcentrumleeuwarden.nl/images/Educatie/CanonvanLeeuwarden/Canon_van_Leeuwarden_-_De_Oldehove.pdf\" rel=\"noopener\" target=\"_blank\">Historisch Centrum Leeuwarden – Canon van Leeuwarden: De Oldehove</a></td><td>Achtergrond bij de Oldehove; de scheefstand van circa 4,2° in onze meetdemonstratie is een gepubliceerde waarde, geen eigen meting</td></tr>\n</tbody></table></div>"
+      },
+      {
+        "id": "risicoklasse-a-tot-e",
+        "h2": "Wat betekenen de risicoklassen A tot en met E?",
+        "answer": "KCAF deelt het funderingsrisico van een woning in klassen in: A geen risico, B licht risico, C verhoogd risico of onzekerheid, D hoog risico (nader onderzoek passend) en E vastgesteld funderingsprobleem. De klasse is een inschatting op basis van gegevens, geen vaststelling van de staat van jouw fundering.",
+        "body": "<p>De risicoklasse staat in het KCAF-funderingsrisicorapport. Het rapport komt uit een model dat onder meer gegevens over ondergrond, funderingstype, grondwaterstanden, archiefinformatie en eerder funderingsonderzoek gebruikt. Soms is de klasse gebaseerd op gegevens van het pand zelf, soms op afgeleide gegevens, zoals buurpanden of het bouwjaar.</p>\n<p>Daarom zegt een klasse iets over de <em>kans</em> op een probleem, niet over de werkelijke toestand van de fundering. Alleen onderzoek aan de woning zelf kan daar meer over zeggen. De term \"funderingslabel\" wordt vaak gebruikt, maar de officiële aanduiding is de risicoklasse in het funderingsrisicorapport.</p>"
+      },
+      {
+        "id": "taxatie-sinds-april-2026",
+        "h2": "Wat verandert er sinds 1 april 2026 bij een taxatie?",
+        "answer": "Sinds 1 april 2026 neemt de taxateur de KCAF-risicoklasse (A t/m E) op in het taxatierapport. Bij klasse D of E moet volgens het NRVT in principe eerst een aanvullend (beperkt) funderingsonderzoek plaatsvinden voordat het taxatierapport kan worden afgerond.",
+        "body": "<p>Volgens het NRVT moet de taxateur de KCAF-informatie actief raadplegen, controleren en vastleggen, en een duidelijk verschil met de eigen waarneming toelichten. De uitkomsten van een aanvullend onderzoek worden betrokken bij het waardeoordeel.</p>\n<p>Het is geen absolute plicht: in sommige situaties kan het aanvullend onderzoek achterwege blijven, bijvoorbeeld als er bewijsstukken zijn dat het risico niet aanwezig is, of als de opdrachtgever niet instemt met de kosten. De taxateur legt dat dan vast in het rapport. Hoe dit in jouw situatie uitpakt, bespreek je met je taxateur. Lees ook <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek en taxatie</a>.</p>"
+      },
+      {
+        "id": "nhg-vanaf-2027",
+        "h2": "Wat heeft NHG aangekondigd voor 2027?",
+        "answer": "NHG heeft aangekondigd dat vanaf 1 januari 2027 bij een lening met NHG een verkennend funderingsonderzoek verplicht is als de woning risicoklasse D of E heeft. Bij klasse A, B of C, of als er geen inschatting is, hoeft volgens die aankondiging geen rekening te worden gehouden met funderingsrisico.",
+        "body": "<p>Dit staat op de pagina van NHG over de voorgenomen voorwaarden en normen 2027; de definitieve tekst wordt later gepubliceerd. Uit dezelfde aankondiging: als het onderzoek een hoog risico laat zien, wordt rekening gehouden met de indicatieve herstelkosten uit het taxatierapport. We passen deze pagina aan zodra de definitieve voorwaarden bekend zijn. Meer over de koop van een woning lees je bij <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>.</p>"
+      },
+      {
+        "id": "is-funderingsonderzoek-verplicht",
+        "h2": "Is funderingsonderzoek wettelijk verplicht?",
+        "answer": "Nee, er is in Nederland geen algemene wettelijke plicht om bij koop of verkoop een funderingsonderzoek te laten doen. Wel heeft de verkoper een mededelingsplicht en de koper een onderzoeksplicht.",
+        "body": "<p>Volgens de brochure van RVO en KCAF moet een verkoper de koper informeren over bekende bouwkundige gebreken, zoals een funderingsprobleem. Daarnaast kunnen regels uit de taxatie (zie hierboven) of van een geldverstrekker ertoe leiden dat onderzoek in de praktijk nodig is, en sommige gemeenten hebben eigen regels. Het gaat dan om voorwaarden of lokale regels, niet om een landelijke wet voor elke woning.</p>"
+      },
+      {
+        "id": "fasen-en-termen",
+        "h2": "Waarom verschillen de namen voor fasen van funderingsonderzoek?",
+        "answer": "Omdat termen als QuickScan, fase 0, fase 1 en fase 2 niet overal hetzelfde betekenen. De KCAF-richtlijn zelf spreekt van onderdelen: bureaustudie, visuele inspectie, scheefstands- en hoogtemetingen, omgevingsfactoren en funderingsinspectie met ontgraving.",
+        "body": "<p>In gemeentelijke regelingen wordt fase 1 vaak gebruikt voor de bureaustudie, visuele inspectie en metingen, en fase 2 voor de funderingsinspectie met een inspectieput. KCAF omschrijft de QuickScan (fase 0) als verkennend onderzoek dat ook metingen kan omvatten.</p>\n<p>Op deze website gebruiken we de indeling van onze eigen werkwijze: in de <a href=\"/fase-0-funderingsonderzoek/\">Quick Scan (fase 0)</a> doen we archief- en bodemonderzoek en een visuele inspectie, en in <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a> doen we metingen zoals een lintvoegwaterpassing. Graafwerk voor een inspectieput hoort bij geen van beide; dat is een aparte, verdergaande stap. Vergelijk je offertes van verschillende bureaus, kijk dan vooral naar wat er wordt onderzocht, niet alleen naar de naam van de fase.</p>"
+      },
+      {
+        "id": "hoe-we-controleren",
+        "h2": "Hoe controleren en actualiseren we onze teksten?",
+        "answer": "We toetsen technische en regelgevende uitspraken aan de primaire bron, formuleren voorzichtig waar een bron ruimte laat, en controleren de pagina's opnieuw wanneer regels rond taxatie, NHG of richtlijnen veranderen.",
+        "body": "<ul class=\"checklist\">\n<li><strong>Bron eerst</strong> – een uitspraak over regels of techniek moet terug te voeren zijn op een officiële publicatie.</li>\n<li><strong>Geen absolute beloftes</strong> – waar een bron \"in principe\" of \"kan\" zegt, schrijven wij dat ook.</li>\n<li><strong>Datum</strong> – kennisartikelen tonen wanneer ze voor het laatst inhoudelijk zijn bijgewerkt.</li>\n<li><strong>Niets verzinnen</strong> – we noemen alleen erkenningen, opleidingen, reviews en praktijkvoorbeelden die aantoonbaar kloppen.</li>\n<li><strong>Correcties</strong> – zie je een fout of een verouderde regel, mail dan naar <a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>.</li>\n</ul>\n<p>Begrippen die op deze site terugkomen, staan uitgelegd in de <a href=\"/kennisbank/begrippenlijst/\">begrippenlijst</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Wat betekent funderingsrisicoklasse D?",
+        "a": "<p>Volgens KCAF betekent klasse D een hoog risico, waarbij nader onderzoek passend is. Sinds 1 april 2026 moet bij klasse D in principe eerst een aanvullend (beperkt) funderingsonderzoek plaatsvinden voordat de taxateur het taxatierapport afrondt. De klasse is een inschatting op basis van gegevens, geen vaststelling van de staat van de fundering.</p>"
+      },
+      {
+        "q": "Wat betekent funderingsrisicoklasse E?",
+        "a": "<p>KCAF omschrijft klasse E als een vastgesteld funderingsprobleem. Ook bij klasse E geldt sinds 1 april 2026 dat de taxateur in principe eerst een aanvullend (beperkt) funderingsonderzoek laat doen. NHG heeft aangekondigd dat vanaf 2027 bij klasse D of E een verkennend funderingsonderzoek verplicht is voor een lening met NHG.</p>"
+      },
+      {
+        "q": "Zegt de risicoklasse hoe mijn fundering ervoor staat?",
+        "a": "<p>Nee. De risicoklasse is een modelmatige inschatting op basis van gegevens zoals funderingstype, bodem, grondwater en archiefinformatie. Hoe de fundering er werkelijk bij staat, blijkt alleen uit onderzoek aan de woning zelf.</p>"
+      },
+      {
+        "q": "Werken jullie met de nieuwste regels?",
+        "a": "<p>We controleren onze teksten aan de hand van de officiële bronnen op deze pagina. De laatste controle was op 7 oktober 2026. Veranderen de regels, bijvoorbeeld de NHG-voorwaarden voor 2027, dan passen we de pagina's aan.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/begrippenlijst/",
+        "label": "Begrippenlijst",
+        "text": "Alle vaktermen rond funderingen kort uitgelegd."
+      },
+      {
+        "href": "/funderingsonderzoek-taxatie/",
+        "label": "Funderingsonderzoek en taxatie",
+        "text": "Wat de risicoklasse betekent voor je taxatie."
+      },
+      {
+        "href": "/over-ons/",
+        "label": "Over MV Funderingsscan",
+        "text": "Wie we zijn en hoe we werken."
+      }
+    ],
+    "cta": [
+      "Vragen over de risicoklasse van je woning?",
+      "Leg je situatie aan ons voor. We leggen uit wat de klasse betekent en welke vervolgstap in jouw geval zinvol kan zijn."
+    ]
+  }
+]

@@ -79,7 +79,7 @@ vercel.json             build-instellingen, nette URL's, redirects en headers
 2. **Root Directory:** leeg laten (de site staat in de root van de repository). Build command en output staan al in `vercel.json`.
 3. **Domains:** voeg `mvfunderingsscan.nl` en `www.mvfunderingsscan.nl` toe. De www-variant
    wordt naar het hoofddomein doorgestuurd.
-4. Meld `https://mvfunderingsscan.nl/sitemap.xml` aan in Google Search Console en Bing
+4. Meld `https://www.mvfunderingsscan.nl/sitemap.xml` aan in Google Search Console en Bing
    Webmaster Tools.
 
 ## Formulieren

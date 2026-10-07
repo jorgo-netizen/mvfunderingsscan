@@ -5,6 +5,22 @@ import {
   breadcrumbSchema, faqSchema, GEMEENTEN, gemeenteArea,
 } from './layout.mjs';
 import { widgetHtml } from './widgets.mjs';
+import { expertSection, reviewsSection, personSchema, bylineHtml, EXPERT_OK, PERSON_ID_SUFFIX } from './eeat.mjs';
+
+const MAANDEN = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
+const dateNl = (iso) => { const [y, m, d] = iso.split('-').map(Number); return `${d} ${MAANDEN[m - 1]} ${y}`; };
+
+/** Voegt op /over-ons/ de deskundige en echte reviews toe (alleen als ze zijn ingevuld in eeat.json). */
+function withEeat(p) {
+  if (p.path !== '/over-ons/') return p;
+  const sections = [...p.sections];
+  const exp = expertSection();
+  const rev = reviewsSection();
+  const after = sections.findIndex((s) => s.id === 'wie-zijn-wij');
+  if (exp) sections.splice(after + 1, 0, exp);
+  if (rev) { const i = sections.findIndex((s) => s.id === 'bedrijfsgegevens'); sections.splice(i < 0 ? sections.length : i, 0, rev); }
+  return { ...p, sections };
+}
 
 function factsCard(facts, title = 'In het kort') {
   const rows = facts.map((f) => `<div><dt>${esc(f.label)}</dt><dd>${f.value}</dd></div>`).join('');
@@ -120,7 +136,7 @@ function sideHtml(links, sections, path) {
         ${tocHtml(sections)}
         <div class="side-card side-card-navy">
           <p class="side-title">Direct duidelijkheid</p>
-          <p>Quick Scan vanaf ca. €350, vaste prijs vooraf en rapport binnen 5 werkdagen na de inspectie.</p>
+          <p>Quick Scan vanaf ca. €350, prijs vooraf bekend en rapport normaal gesproken binnen 5 werkdagen na de inspectie.</p>
           <a class="btn btn-gold btn-block" href="/funderingsscan-aanvragen/">Scan aanvragen <span aria-hidden="true">→</span></a>
           <a class="side-phone" href="${NAP.phone_href}">Of bel ${NAP.phone_display}</a>
         </div>
@@ -128,7 +144,8 @@ function sideHtml(links, sections, path) {
       </aside>`;
 }
 
-export function render(p) {
+export function render(page0) {
+  const p = withEeat(page0);
   const url = DOMAIN + p.path;
   const graph = [orgSchema(), websiteSchema(), {
     '@type': p.webpage_type || 'WebPage',
@@ -141,7 +158,10 @@ export function render(p) {
     about: { '@id': ORG_ID },
     breadcrumb: { '@id': url + '#breadcrumb' },
     dateModified: TODAY,
+    ...(EXPERT_OK && p.article ? { reviewedBy: { '@id': DOMAIN + PERSON_ID_SUFFIX }, lastReviewed: TODAY } : {}),
   }, breadcrumbSchema(url, p.crumbs)];
+  const person = personSchema(DOMAIN, ORG_ID);
+  if (person && (p.path === '/over-ons/' || p.article)) graph.push(person);
   const gemeente = GEMEENTEN.find((g) => g.href === p.path);
   for (const key of p.services || []) graph.push(serviceSchema(key, gemeente ? gemeenteArea(gemeente) : null));
   if (p.article) {
@@ -205,7 +225,8 @@ export function render(p) {
 <section class="section">
   <div class="container content-layout">
     <article class="prose">
-${p.defined_term ? `        <div class="definition-box reveal">
+${p.article ? `        ${bylineHtml(dateNl(TODAY))}
+` : ''}${p.defined_term ? `        <div class="definition-box reveal">
           <span class="definition-label">Definitie</span>
           <p><dfn>${esc(p.defined_term.name)}</dfn>: ${esc(p.defined_term.description)}</p>
           <a href="/kennisbank/begrippenlijst/">Bekijk alle begrippen</a>

@@ -25,7 +25,7 @@
     "lead": "Scheefstand van een gevel stel je vast door de gevel te vergelijken met een zuivere verticaal. Dat kan globaal door goed te kijken, nauwkeuriger met een <a href=\"/kennisbank/loodmeting/\">loodmeting</a> op meerdere hoogtes, of indirect door hoogteverschillen in een lintvoeg of vloer te meten. <strong>Welke aanpak past, hangt af van de vraag</strong>: wil je weten óf een gevel scheef staat, of ook hoeveel, in welke richting en waarom?",
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
-      "alt": "Specialist met een waterpas bij de gevel van een woning"
+      "alt": "Persoon met een waterpas bij de gevel van een woning"
     },
     "facts": [
       {
@@ -53,7 +53,7 @@
         "id": "welke-manieren-zijn-er",
         "h2": "Welke manieren zijn er om scheefstand vast te stellen?",
         "answer": "Grofweg zijn er drie routes: gerichte observatie, een directe loodmeting en het afleiden van kanteling uit gemeten hoogteverschillen. Ze vullen elkaar aan.",
-        "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Observatie\"><h3>Observatie</h3><p>Een ervaren inspecteur kijkt langs gevellijnen, goten, kozijnen en voegen en vergelijkt de woning met de buren. Observatie is snel en geeft richting, maar levert geen vastgelegde maat op.</p></section><section class=\"tab-panel\" data-tab=\"Loodmeting\"><h3>Loodmeting</h3><p>Bij een loodmeting wordt de afwijking ten opzichte van de verticaal direct gemeten, op meerdere hoogtes en plekken. Vroeger gebeurde dat met een schietlood, tegenwoordig vaak met een (laser)meetinstrument. Het resultaat is een vastgelegde afwijking met richting per meetpunt.</p></section><section class=\"tab-panel\" data-tab=\"Hoogteverschillen\"><h3>Afleiden uit hoogteverschillen</h3><p>Als een lintvoeg of vloer aan één kant lager ligt dan aan de andere, kan dat erop wijzen dat een deel van de woning gekanteld is. Door hoogtes te meten met een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a> of <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a> ontstaat een beeld dat de loodmeting ondersteunt of juist nuanceert.</p></section></div>"
+        "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Observatie\"><h3>Observatie</h3><p>Een inspecteur kijkt langs gevellijnen, goten, kozijnen en voegen en vergelijkt de woning met de buren. Observatie is snel en geeft richting, maar levert geen vastgelegde maat op.</p></section><section class=\"tab-panel\" data-tab=\"Loodmeting\"><h3>Loodmeting</h3><p>Bij een loodmeting wordt de afwijking ten opzichte van de verticaal direct gemeten, op meerdere hoogtes en plekken. Vroeger gebeurde dat met een schietlood, tegenwoordig vaak met een (laser)meetinstrument. Het resultaat is een vastgelegde afwijking met richting per meetpunt.</p></section><section class=\"tab-panel\" data-tab=\"Hoogteverschillen\"><h3>Afleiden uit hoogteverschillen</h3><p>Als een lintvoeg of vloer aan één kant lager ligt dan aan de andere, kan dat erop wijzen dat een deel van de woning gekanteld is. Door hoogtes te meten met een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a> of <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a> ontstaat een beeld dat de loodmeting ondersteunt of juist nuanceert.</p></section></div>"
       },
       {
         "id": "wat-wordt-vastgelegd",
@@ -162,7 +162,7 @@
     "lead": "Een hoogtemeting bij een woning bepaalt hoe hoog meetpunten liggen ten opzichte van één vast referentiepunt of ten opzichte van NAP. In funderingsonderzoek wordt zo gekeken of lintvoegen, vloeren of het terrein rond de woning ongelijk liggen. <strong>Het gaat daarbij om verschillen en patronen</strong>, niet om de absolute hoogte van één punt.",
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
-      "alt": "Specialist met een waterpas bij de gevel van een woning"
+      "alt": "Persoon met een waterpas bij de gevel van een woning"
     },
     "facts": [
       {
@@ -802,7 +802,7 @@
       },
       {
         "q": "Speelt maaivelddaling ook in Groningen?",
-        "a": "<p>Ja, bodembeweging speelt in delen van Groningen, onder meer door gaswinning en in de veengebieden. Schade door gaswinning meld je bij het IMG; een funderingsscan is geen schademelding.</p>"
+        "a": "<p>Ja. In de veengebieden van Groningen kan de bodem dalen. Daarnaast hebben de gevolgen van de gaswinning, zoals aardbevingen en bodemdaling, invloed gehad; de gaswinning uit het Groningenveld is beëindigd, maar schadeafhandeling en versterking lopen nog. Schade door gaswinning meld je bij het IMG; een funderingsscan is geen schademelding.</p>"
       }
     ],
     "related": [
@@ -846,7 +846,7 @@
     "title": "Grondwatermeting en je fundering: peilbuizen | MV Funderingsscan",
     "description": "Hoe wordt de grondwaterstand gemeten? Over peilbuizen, meetnetten van overheden en waterschap, en waarom grondwater ertoe doet voor houten palen en zetting.",
     "h1": "Grondwatermeting: hoe de grondwaterstand wordt gemeten en waarom dat telt",
-    "lead": "Bij een grondwatermeting wordt de stand van het grondwater bepaald, meestal in een peilbuis. Gemeenten, waterschappen en provincies houden vaak meetnetten bij. <strong>Voor funderingsonderzoek is dat relevant</strong> omdat houten palen permanent onder water moeten staan en omdat een dalende grondwaterstand zetting van veen en klei kan versnellen.",
+    "lead": "Bij een grondwatermeting wordt de stand van het grondwater bepaald, meestal in een peilbuis. Gemeenten, waterschappen en provincies houden vaak meetnetten bij. <strong>Voor funderingsonderzoek is dat relevant</strong> omdat de koppen van houten palen onder water moeten blijven om schimmelaantasting (paalrot) te voorkomen en omdat een dalende grondwaterstand zetting van veen en klei kan versnellen.",
     "hero_image": {
       "name": "vooroorlogse-woning-voordeur",
       "alt": "Klassieke voordeur in een bakstenen gevel van een vooroorlogse woning"
@@ -888,8 +888,8 @@
       {
         "id": "belang-voor-houten-palen",
         "h2": "Waarom is grondwater belangrijk voor houten palen?",
-        "answer": "Houten palen blijven goed zolang ze permanent onder water staan. Bij een lage grondwaterstand kunnen paalkoppen droog komen te staan, waardoor schimmels het hout kunnen aantasten.",
-        "body": "<p>Woningen van vóór circa 1970 staan vaker op <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a>. Onder water is hout lange tijd goed bestand tegen aantasting, hoewel ook daar bacteriële aantasting langzaam kan optreden. Komt de bovenkant van de palen droog te staan, dan krijgen schimmels de kans; dat heet <a href=\"/kennisbank/paalrot/\">paalrot</a>. Een woning met houten palen heeft niet automatisch problemen, maar de grondwaterstand is wel een van de belangrijkste factoren in de <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a>.</p>"
+        "answer": "Zolang houten palen onder water staan, is het risico op schimmelaantasting (paalrot) klein; bacteriële aantasting kan onder water wel optreden. Bij een lage grondwaterstand kunnen paalkoppen droog komen te staan, waardoor schimmels het hout kunnen aantasten.",
+        "body": "<p>Woningen van vóór circa 1970 staan vaker op <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a>. Onder water krijgen schimmels weinig kans, maar bacteriële aantasting kan daar wel optreden, over de hele lengte van de paal; grenen is daar gevoeliger voor dan vuren. Komt de bovenkant van de palen droog te staan, dan krijgen schimmels de kans; dat heet <a href=\"/kennisbank/paalrot/\">paalrot</a>. Een woning met houten palen heeft niet automatisch problemen, maar de grondwaterstand is wel een van de belangrijkste factoren in de <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a>.</p>"
       },
       {
         "id": "belang-voor-zetting",

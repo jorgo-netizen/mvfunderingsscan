@@ -5,7 +5,7 @@ https://business.google.com. Controleer alles nog één keer voordat je publicee
 
 > **Belangrijkste regel: NAP exact gelijk houden.**
 > Naam, adres en telefoon moeten overal letterlijk hetzelfde zijn als op de website
-> (`src/content/site.json`): **MV Funderingsscan · Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden · +31 (0) 582037172 · https://mvfunderingsscan.nl/**
+> (`src/content/site.json`): **MV Funderingsscan · Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden · +31 (0) 582037172 · https://www.mvfunderingsscan.nl/**
 
 ---
 
@@ -16,7 +16,7 @@ https://business.google.com. Controleer alles nog één keer voordat je publicee
 | Bedrijfsnaam | MV Adviseurs *(geen zoekwoorden toevoegen zoals "Funderingsonderzoek Friesland" – dat is tegen de richtlijnen)* |
 | Hoofdcategorie | Kies de best passende categorie die Google aanbiedt, bijv. een categorie rond bouwkundig advies of woninginspectie. Typ "bouwkundig" en "inspectie" in het categorieveld en kies de meest specifieke. |
 | Extra categorieën | Eventueel een tweede passende categorie (inspectie/adviesbureau). Niet te veel. |
-| Website | https://mvfunderingsscan.nl/ |
+| Website | https://www.mvfunderingsscan.nl/ |
 | Telefoon | +31 (0) 582037172 |
 | Openingstijden | Ma – vr 09:00 – 17:00 |
 | Adres tonen | Alleen als klanten op het kantoor terechtkunnen. Werk je alleen op locatie, kies dan "servicegebied" en verberg het adres. |
@@ -51,11 +51,11 @@ Zet bij prijzen altijd "indicatief" of "vanaf".
 
 Plaats ongeveer twee keer per maand een bericht met een link naar een pagina op de site:
 
-1. "Wat is een lintvoegwaterpassing?" → https://mvfunderingsscan.nl/kennisbank/lintvoegwaterpassing/
-2. "Scheur in de gevel: wanneer laten bekijken?" → https://mvfunderingsscan.nl/scheuren-in-gevel/
-3. "Funderingsparagraaf in het taxatierapport: wat betekent klasse D of E?" → https://mvfunderingsscan.nl/funderingsonderzoek-taxatie/
-4. "Funderingsonderzoek bij aankoop: plan het binnen je voorbehoud" → https://mvfunderingsscan.nl/funderingsonderzoek-bij-aankoop/
-5. "Online funderingscheck in 8 vragen" → https://mvfunderingsscan.nl/funderingsscan-check/
+1. "Wat is een lintvoegwaterpassing?" → https://www.mvfunderingsscan.nl/kennisbank/lintvoegwaterpassing/
+2. "Scheur in de gevel: wanneer laten bekijken?" → https://www.mvfunderingsscan.nl/scheuren-in-gevel/
+3. "Funderingsparagraaf in het taxatierapport: wat betekent klasse D of E?" → https://www.mvfunderingsscan.nl/funderingsonderzoek-taxatie/
+4. "Funderingsonderzoek bij aankoop: plan het binnen je voorbehoud" → https://www.mvfunderingsscan.nl/funderingsonderzoek-bij-aankoop/
+5. "Online funderingscheck in 8 vragen" → https://www.mvfunderingsscan.nl/funderingsscan-check/
 6. Na elke gepubliceerde praktijkcase: korte samenvatting + link.
 
 ## 6. Vragen en antwoorden
@@ -64,8 +64,8 @@ Als de vraag-en-antwoordfunctie in je profiel beschikbaar is, kun je deze vragen
 
 - Wat kost een funderingsscan? → Indicatief vanaf ca. €350 voor fase 0; vooraf vaste prijs.
 - Hoe snel krijg ik het rapport? → Binnen vijf werkdagen na de inspectie.
-- Werken jullie in mijn dorp? → In heel Friesland en Groningen; zie https://mvfunderingsscan.nl/werkgebied/
-- Wat is het verschil tussen fase 0 en fase 1? → https://mvfunderingsscan.nl/kennisbank/verschil-fase-0-en-fase-1/
+- Werken jullie in mijn dorp? → In heel Friesland en Groningen; zie https://www.mvfunderingsscan.nl/werkgebied/
+- Wat is het verschil tussen fase 0 en fase 1? → https://www.mvfunderingsscan.nl/kennisbank/verschil-fase-0-en-fase-1/
 - Doen jullie ook funderingsherstel? → Nee, we zijn onafhankelijk en voeren geen herstel uit.
 
 ## 7. Overige vermeldingen (citations) – overal exact dezelfde NAP
@@ -73,7 +73,7 @@ Als de vraag-en-antwoordfunctie in je profiel beschikbaar is, kun je deze vragen
 - [ ] Bing Places for Business (belangrijk voor ChatGPT Search en Copilot)
 - [ ] Apple Business Connect (Apple Kaarten / Siri)
 - [ ] Telefoonboek.nl, Openingstijden.nl, Cylex
-- [ ] Website van MV Adviseurs: link naar https://mvfunderingsscan.nl/
+- [ ] Website van MV Adviseurs: link naar https://www.mvfunderingsscan.nl/
 - [ ] Samenwerkende makelaars en taxateurs: vraag om een vermelding met link
 
 Zie ook `docs/reviews.md` voor het vragen om reviews.

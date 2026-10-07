@@ -15,7 +15,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = join(ROOT, 'dist');
-const DOMAIN = 'https://mvfunderingsscan.nl';
+const DOMAIN = JSON.parse(readFileSync(join(ROOT, 'src/content/site.json'), 'utf8')).domain;
 const problems = [];
 
 if (!existsSync(DIST)) {
@@ -153,7 +153,7 @@ for (const [path, p] of Object.entries(pages).sort((a, b) => a[0].localeCompare(
   const html = readFileSync(join(DIST, path === '/' ? 'index.html' : join(path, 'index.html')), 'utf8');
   const main = (html.match(/<main[\s\S]*?<\/main>/) || [''])[0];
   const words = (norm(main.replace(/<script[\s\S]*?<\/script>/g, '')).match(/\S+/g) || []).length;
-  if (/lorem|ipsum|coming soon|hier komt tekst/i.test(main) || /VUL IN/.test(main)) problems.push(`[${path}] placeholdertekst gevonden`);
+  if (/lorem|ipsum|coming soon|hier komt tekst/i.test(main) || /VUL IN|INVULLEN]|placeholder-box|placeholder-inline/.test(html)) problems.push(`[${path}] placeholdertekst gevonden`);
   if (/href="#"/.test(html)) problems.push(`[${path}] lege #-link`);
   if (/javascript:void/i.test(html)) problems.push(`[${path}] javascript:void-link`);
   if (/<a(?![^>]*\shref=)(?:\s[^>]*)?>/.test(html)) problems.push(`[${path}] <a> zonder href`);

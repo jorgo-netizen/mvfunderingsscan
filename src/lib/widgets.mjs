@@ -353,7 +353,7 @@ ${PATRONEN.map(([name, desc, causes, look, measure]) => `    <section class="tab
 
 // ================================================================ 3b. scheuranalyse-keuzehulp
 const SCHEURKEUZE = [
-  ['een', 'Ik zie één kleine scheur', 'Eén kleine scheur heeft vaak een onschuldige oorzaak, zoals krimp of temperatuurwerking. Leg de scheur vast met een foto met liniaal en kijk na een paar maanden of hij groeit. Twijfel je, of zie je ook andere signalen, dan geeft een Quick Scan duidelijkheid.'],
+  ['een', 'Ik zie één kleine scheur', 'Eén kleine scheur heeft vaak een onschuldige oorzaak, zoals krimp of temperatuurwerking. Leg de scheur vast met een foto met liniaal en kijk na een paar maanden of hij groeit. Twijfel je, of zie je ook andere signalen, dan kan een Quick Scan meer duidelijkheid geven.'],
   ['meerdere', 'Ik zie meerdere scheuren', 'Bij meerdere of terugkerende scheuren kan het verstandig zijn om niet alleen naar de scheur zelf te kijken, maar ook naar het patroon en mogelijke beweging van de constructie.'],
   ['diagonaal', 'Ik zie diagonale scheuren', 'Diagonale scheuren worden vaak in verband gebracht met ongelijke zetting, maar ook vervorming rond openingen kan een rol spelen. De richting van de scheuren en de plek in de gevel zijn belangrijk om te bepalen of nader onderzoek zinvol is.'],
   ['kozijnen', 'De scheuren zitten vooral bij kozijnen', 'Scheuren bij kozijnen hebben vaak met de constructie boven de opening te maken, zoals een latei. Klemmen ramen of deuren ook, of zie je scheefstand, dan is het verstandig om breder te laten kijken.'],
@@ -458,7 +458,7 @@ const KEUZES = [
     'Hoogteverschillen in de gevel worden vastgelegd met een lintvoegwaterpassing langs een doorlopende metselvoeg. Het verloop zegt meer dan één los punt.',
     [['/kennisbank/lintvoegwaterpassing/', 'Lees wat een lintvoegwaterpassing meet'], ['/verzakking-woning/', 'Verzakking van een woning']]],
   ['risico', 'E · Ik wil weten of mijn woning funderingsrisico heeft', ['fase 0 / quickscan fundering', 'pas bij een verhoogd risico: fase 1 met metingen'],
-    'Wil je in het algemeen weten hoe het met de fundering staat, dan is de Quick Scan de logische start: archief- en bodemonderzoek plus een inspectie, met advies over de vervolgstap.',
+    'Wil je weten of er aanwijzingen zijn voor een funderingsrisico, dan is de Quick Scan vaak een goede eerste stap: archief- en bodemonderzoek plus een inspectie, met advies over de vervolgstap.',
     [['/fase-0-funderingsonderzoek/', 'Bekijk wat fase 0 funderingsonderzoek inhoudt'], ['/quickscan-fundering/', 'Quickscan fundering']]],
 ];
 

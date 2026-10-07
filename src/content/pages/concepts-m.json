@@ -23,14 +23,14 @@
     "eyebrow": "Kennisbank · Begrippen",
     "article": true,
     "h1": "Zetting van een woning: waarom elk huis een beetje zakt",
-    "lead": "Zetting is het <strong>samendrukken van de ondergrond</strong> onder het gewicht van een gebouw, waardoor de woning iets zakt. Elke woning zet in meer of mindere mate, vooral in de eerste jaren na de bouw. Gelijkmatige zetting is meestal onschuldig. Pas als delen van een woning verschillend zakken of de beweging blijft doorgaan, kan zetting wijzen op een probleem dat onderzoek ter plaatse vraagt.",
+    "lead": "Zetting is het <strong>samendrukken van de ondergrond</strong> onder het gewicht van een gebouw, waardoor de woning iets zakt. Elke woning zet in meer of mindere mate, vooral in de eerste jaren na de bouw. Gelijkmatige zetting is meestal onschuldig. Vooral als delen van een woning verschillend zakken of de beweging blijft doorgaan, kan zetting wijzen op een probleem dat onderzoek ter plaatse vraagt.",
     "defined_term": {
       "name": "Zetting",
       "description": "Zetting is het samendrukken van de ondergrond onder de belasting van een gebouw, waardoor de woning zakt; dit gebeurt vooral in de eerste jaren na de bouw en is in principe een normaal verschijnsel."
     },
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
-      "alt": "Specialist met waterpas bij de gevel van een woning"
+      "alt": "Persoon met een waterpas bij de gevel van een woning"
     },
     "sections": [
       {
@@ -85,7 +85,7 @@
         "id": "wanneer-onderzoek",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Onderzoek is verstandig als je twijfelt of de zakking van je woning nog normaal is, bijvoorbeeld bij nieuwe of groeiende scheuren, scheefstand of klemmende deuren, of als je een oudere woning wilt kopen.",
-        "body": "<ul class=\"checklist\"><li>Er ontstaan nieuwe scheuren of bestaande scheuren lijken te groeien.</li><li>Deuren of ramen gaan klemmen zonder duidelijke andere oorzaak.</li><li>Je overweegt een oudere woning op slappe grond te kopen.</li></ul><p>Een <a href=\"/funderingsscan/\">funderingsscan</a> begint met fase 0: een niet-destructief vooronderzoek dat helpt bepalen of verder onderzoek nodig is. Twijfel je welke stap bij jouw situatie past? Neem dan <a href=\"/contact/\">contact</a> op.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek, visuele inspectie en een risico-inschatting. Vanaf circa €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft. Indicatief €750 – €1.500.</span></a></div>"
+        "body": "<ul class=\"checklist\"><li>Er ontstaan nieuwe scheuren of bestaande scheuren lijken te groeien.</li><li>Deuren of ramen gaan klemmen zonder duidelijke andere oorzaak.</li><li>Je overweegt een oudere woning op slappe grond te kopen.</li></ul><p>Een <a href=\"/funderingsscan/\">funderingsscan</a> begint met fase 0: een niet-destructief vooronderzoek dat helpt bepalen of verder onderzoek nodig is. Twijfel je welke stap bij jouw situatie past? Neem dan <a href=\"/contact/\">contact</a> op.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek, visuele inspectie en een risico-inschatting. Vanaf circa €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>In de regel als fase 0 daar aanleiding voor geeft. Indicatief €750 – €1.500.</span></a></div>"
       }
     ],
     "faqs": [
@@ -210,7 +210,7 @@
         "id": "wanneer-onderzoek",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Onderzoek is verstandig als je meerdere signalen tegelijk ziet, zoals scheuren in combinatie met scheefstand of klemmende deuren, of als bestaande scheuren groter worden.",
-        "body": "<p>Eén losse scheur is meestal geen reden voor uitgebreid onderzoek. Wel als signalen samenkomen, terugkeren na herstel of in de loop van maanden toenemen. Ook bij de aankoop van een oudere woning op slappe grond kan een vooronderzoek duidelijkheid geven.</p><p>Een <a href=\"/funderingsscan/\">funderingsscan</a> begint met <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>. Daaruit volgt een advies: geen directe aanleiding, monitoren, aanvullend onderzoek of fase 1 met metingen. Weet je niet welke stap past? Stel je vraag via <a href=\"/contact/\">contact</a>.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek, visuele inspectie en een risico-inschatting. Vanaf circa €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft. Indicatief €750 – €1.500.</span></a></div>"
+        "body": "<p>Eén losse scheur is meestal geen reden voor uitgebreid onderzoek. Wel als signalen samenkomen, terugkeren na herstel of in de loop van maanden toenemen. Ook bij de aankoop van een oudere woning op slappe grond kan een vooronderzoek meer duidelijkheid geven.</p><p>Een <a href=\"/funderingsscan/\">funderingsscan</a> begint met <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>. Daaruit volgt een advies: geen directe aanleiding, monitoren, aanvullend onderzoek of fase 1 met metingen. Weet je niet welke stap past? Stel je vraag via <a href=\"/contact/\">contact</a>.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek, visuele inspectie en een risico-inschatting. Vanaf circa €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>In de regel als fase 0 daar aanleiding voor geeft. Indicatief €750 – €1.500.</span></a></div>"
       }
     ],
     "faqs": [
@@ -228,7 +228,7 @@
       },
       {
         "q": "Kan ongelijke zetting vanzelf stoppen?",
-        "a": "<p>Ja, dat kan. Zetting neemt na verloop van tijd vaak af. Veranderingen in grondwaterstand of belasting kunnen de beweging echter weer op gang brengen. Herhaalde metingen geven daarover uitsluitsel.</p>"
+        "a": "<p>Ja, dat kan. Zetting neemt na verloop van tijd vaak af. Veranderingen in grondwaterstand of belasting kunnen de beweging echter weer op gang brengen. Herhaalde metingen (monitoring) maken zichtbaar of dat zo is.</p>"
       },
       {
         "q": "Hoe meet je ongelijke zetting?",
@@ -315,7 +315,7 @@
         "id": "soorten-paalfundering",
         "h2": "Welke soorten paalfundering zijn er?",
         "answer": "De belangrijkste soorten zijn paalfunderingen met houten palen, met betonnen palen en met stalen palen. Bij oudere woningen komen houten palen relatief vaak voor.",
-        "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Houten palen\"><h3>Houten palen</h3><p>Houten palen werden lange tijd veel toegepast, vooral bij woningen van vóór circa 1970. Ze blijven goed zolang ze permanent onder water staan. Meer over opbouw en aandachtspunten lees je bij <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a>.</p></section><section class=\"tab-panel\" data-tab=\"Betonnen palen\"><h3>Betonnen palen</h3><p>Betonnen palen zijn niet gevoelig voor droogstand van de paalkoppen zoals hout. Bij nieuwere woningen kom je dit type vaak tegen. Ook betonnen palen kunnen in uitvoering en kwaliteit verschillen.</p></section><section class=\"tab-panel\" data-tab=\"Stalen palen\"><h3>Stalen palen</h3><p>Stalen palen worden onder meer toegepast bij herstel of verbouw, omdat ze in sommige situaties met beperkte ruimte kunnen worden aangebracht. Ze komen bij oorspronkelijke woningfunderingen minder vaak voor.</p></section></div><p>Naast het paalmateriaal verschilt ook de constructie op de palen. Daarom zegt het type paal alleen niet alles over de staat van een fundering.</p>"
+        "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Houten palen\"><h3>Houten palen</h3><p>Houten palen werden lange tijd veel toegepast, vooral bij woningen van vóór circa 1970. Zolang ze onder water staan, is het risico op schimmelaantasting (paalrot) klein; bacteriële aantasting kan onder water wel optreden. Meer over opbouw en aandachtspunten lees je bij <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a>.</p></section><section class=\"tab-panel\" data-tab=\"Betonnen palen\"><h3>Betonnen palen</h3><p>Betonnen palen zijn niet gevoelig voor droogstand van de paalkoppen zoals hout. Bij nieuwere woningen kom je dit type vaak tegen. Ook betonnen palen kunnen in uitvoering en kwaliteit verschillen.</p></section><section class=\"tab-panel\" data-tab=\"Stalen palen\"><h3>Stalen palen</h3><p>Stalen palen worden onder meer toegepast bij herstel of verbouw, omdat ze in sommige situaties met beperkte ruimte kunnen worden aangebracht. Ze komen bij oorspronkelijke woningfunderingen minder vaak voor.</p></section></div><p>Naast het paalmateriaal verschilt ook de constructie op de palen. Daarom zegt het type paal alleen niet alles over de staat van een fundering.</p>"
       },
       {
         "id": "verschil-met-fundering-op-staal",
@@ -339,7 +339,7 @@
         "id": "wanneer-onderzoek",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Onderzoek is verstandig als je niet weet op welke fundering je woning staat en de woning ouder is of op slappe grond ligt, of als je signalen ziet zoals scheuren, scheefstand of klemmende deuren.",
-        "body": "<p>Een paalfundering betekent niet automatisch dat er problemen zijn, en ook houten palen kunnen nog prima functioneren. Toch helpt het om te weten wat je hebt, zeker bij aankoop of als je signalen ziet. Lees ook over <a href=\"/problemen-met-houten-palen/\">problemen met houten palen</a> en over <a href=\"/kennisbank/paalrot/\">paalrot</a>.</p><p>Met een <a href=\"/funderingsscan/\">funderingsscan</a> wordt in fase 0 onder meer het vermoedelijke funderingstype onderzocht. Vragen over je situatie? Neem <a href=\"/contact/\">contact</a> op.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek, visuele inspectie en een risico-inschatting. Vanaf circa €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft. Indicatief €750 – €1.500.</span></a></div>"
+        "body": "<p>Een paalfundering betekent niet automatisch dat er problemen zijn, en ook houten palen kunnen nog prima functioneren. Toch helpt het om te weten wat je hebt, zeker bij aankoop of als je signalen ziet. Lees ook over <a href=\"/problemen-met-houten-palen/\">problemen met houten palen</a> en over <a href=\"/kennisbank/paalrot/\">paalrot</a>.</p><p>Met een <a href=\"/funderingsscan/\">funderingsscan</a> wordt in fase 0 onder meer het vermoedelijke funderingstype onderzocht. Vragen over je situatie? Neem <a href=\"/contact/\">contact</a> op.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek, visuele inspectie en een risico-inschatting. Vanaf circa €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>In de regel als fase 0 daar aanleiding voor geeft. Indicatief €750 – €1.500.</span></a></div>"
       }
     ],
     "faqs": [
@@ -361,7 +361,7 @@
       },
       {
         "q": "Zijn houten palen altijd een probleem?",
-        "a": "<p>Nee, een woning met houten palen heeft niet automatisch problemen. Houten palen blijven goed zolang ze permanent onder water staan. Bij een lage grondwaterstand kan wel aantasting ontstaan; zie <a href=\"/kennisbank/paalrot/\">paalrot</a>.</p>"
+        "a": "<p>Nee, een woning met houten palen heeft niet automatisch problemen. Zolang houten palen onder water staan, is het risico op schimmelaantasting klein; bacteriële aantasting kan onder water wel optreden. Bij een lage grondwaterstand kunnen schimmels het hout aantasten; zie <a href=\"/kennisbank/paalrot/\">paalrot</a>.</p>"
       },
       {
         "q": "Kan ik de palen zelf zien in de kruipruimte?",
@@ -369,7 +369,7 @@
       },
       {
         "q": "Onderzoekt een funderingsscan welk type fundering ik heb?",
-        "a": "<p>Ja, het vermoedelijke funderingstype is onderdeel van het archief- en bodemonderzoek in fase 0. Zekerheid over de staat van palen geeft een quickscan niet; daarvoor is nader onderzoek nodig.</p>"
+        "a": "<p>Ja, het vermoedelijke funderingstype is onderdeel van het archief- en bodemonderzoek in fase 0. Uitsluitsel over de conditie van palen geeft een quickscan niet; daarvoor is nader onderzoek nodig.</p>"
       }
     ],
     "related": [
@@ -418,10 +418,10 @@
     "eyebrow": "Kennisbank · Begrippen",
     "article": true,
     "h1": "Paalrot: aantasting van houten funderingspalen",
-    "lead": "Paalrot is <strong>aantasting van houten funderingspalen</strong>, vooral van de paalkoppen. Het ontstaat meestal doordat schimmels het hout aantasten als de koppen bij een lage grondwaterstand droog komen te staan. Ook onder water kan langzaam bacteriële aantasting optreden. Een woning met houten palen heeft niet automatisch paalrot; of het speelt, blijkt alleen uit onderzoek aan de fundering zelf.",
+    "lead": "Paalrot is <strong>schimmelaantasting van houten funderingspalen door droogstand</strong>, vooral van de paalkoppen. Het ontstaat als de koppen bij een lage grondwaterstand droog komen te staan, waardoor schimmels het hout kunnen aantasten. Bacteriële aantasting is een apart proces: die treedt juist onder water op en kan de paal over de hele lengte aantasten. Een woning met houten palen heeft niet automatisch paalrot; of er aantasting is, blijkt alleen uit onderzoek aan de fundering zelf.",
     "defined_term": {
       "name": "Paalrot",
-      "description": "Paalrot is de aantasting van houten funderingspalen, vooral van de paalkoppen, door schimmels wanneer het hout droog komt te staan, of langzamer door bacteriën onder water."
+      "description": "Paalrot is de aantasting van houten funderingspalen, vooral van de paalkoppen, door schimmels wanneer het hout door een lage grondwaterstand droog komt te staan (droogstand). Bacteriële aantasting onder water is een apart proces."
     },
     "hero_image": {
       "name": "vooroorlogse-woning-voordeur",
@@ -431,14 +431,14 @@
       {
         "id": "wat-is-paalrot",
         "h2": "Wat is paalrot?",
-        "answer": "Paalrot is het verlies van sterkte van houten funderingspalen door aantasting door schimmels of bacteriën. Daardoor kan de paal minder gewicht dragen.",
-        "body": "<p>Houten palen zijn een gangbare funderingsvorm bij oudere woningen. Zolang het hout permanent onder water staat, krijgen schimmels nauwelijks kans, omdat ze zuurstof nodig hebben. Komt het hout droog te staan, dan kan het wel worden aangetast. De term paalrot wordt in de praktijk gebruikt voor beide vormen van aantasting: door schimmels bij droogstand en door bacteriën onder water.</p><p>Hoe een houten paalfundering is opgebouwd, lees je bij <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a>. Dit artikel gaat over de aantasting zelf en over hoe je die laat onderzoeken.</p><div class=\"term-box\"><strong>Wat betekent droogstand?</strong><p>Van droogstand spreek je als de bovenkant van houten palen boven de grondwaterspiegel komt te liggen. Het hout komt dan in contact met zuurstof, waardoor schimmels het kunnen aantasten.</p></div>"
+        "answer": "Paalrot is het verlies van sterkte van houten funderingspalen door schimmelaantasting bij droogstand. Daardoor kan de paal minder gewicht dragen. Bacteriële aantasting onder water is een apart proces dat ook sterkteverlies kan geven.",
+        "body": "<p>Houten palen zijn een gangbare funderingsvorm bij oudere woningen. Zolang het hout permanent onder water staat, krijgen schimmels nauwelijks kans, omdat ze zuurstof nodig hebben. Komt het hout droog te staan, dan kan het wel worden aangetast. De KCAF-richtlijn omschrijft paalrot als een (ongewenste) term voor schimmelaantasting van funderingshout door droogstand. Het woord wordt soms ook losser gebruikt voor bacteriële aantasting, maar dat is een ander proces: bacteriën tasten het hout juist onder water aan. Welke bronnen we hiervoor gebruiken, lees je bij <a href=\"/bronnen-en-richtlijnen/\">bronnen en richtlijnen</a>.</p><p>Hoe een houten paalfundering is opgebouwd, lees je bij <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a>. Dit artikel gaat over de aantasting zelf en over hoe je die laat onderzoeken.</p><div class=\"term-box\"><strong>Wat betekent droogstand?</strong><p>Van droogstand spreek je als de bovenkant van houten palen boven de grondwaterspiegel komt te liggen. Het hout komt dan in contact met zuurstof, waardoor schimmels het kunnen aantasten.</p></div>"
       },
       {
         "id": "hoe-ontstaat-paalrot",
         "h2": "Hoe ontstaat paalrot?",
-        "answer": "Paalrot ontstaat vooral als paalkoppen bij een lage grondwaterstand droog komen te staan en schimmels het hout aantasten. Bacteriën kunnen hout ook onder water aantasten, maar dat gaat langzamer.",
-        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Schimmels bij droogstand</h3><p>Daalt het grondwater onder het niveau van de paalkoppen, dan kan zuurstof bij het hout komen. Schimmels kunnen het hout dan aantasten, vaak van buiten naar binnen.</p></div><div class=\"info-card\"><h3>Bacteriën onder water</h3><p>Ook in hout dat onder water blijft, kunnen bacteriën langzaam actief zijn. Dit proces verloopt doorgaans veel trager dan aantasting door schimmels.</p></div></div><p>Het grondwater speelt dus een centrale rol. Waarom dat zo is, lees je in het artikel over <a href=\"/kennisbank/grondwater-en-fundering/\">grondwater en fundering</a>.</p>"
+        "answer": "Paalrot ontstaat als paalkoppen bij een lage grondwaterstand droog komen te staan en schimmels het hout aantasten. Daarnaast kunnen bacteriën hout juist onder water aantasten; dat is een apart proces, bacteriële aantasting.",
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Schimmels bij droogstand</h3><p>Daalt het grondwater onder het niveau van de paalkoppen, dan kan zuurstof bij het hout komen. Schimmels kunnen het hout dan aantasten, vaak van buiten naar binnen.</p></div><div class=\"info-card\"><h3>Apart proces: bacteriën onder water</h3><p>Ook in hout dat onder water blijft, kunnen bacteriën actief zijn. Strikt genomen is dat geen paalrot maar bacteriële aantasting. Die verloopt anders dan schimmelaantasting en kan de paal over de hele lengte aantasten; grenen is daar gevoeliger voor dan vuren.</p></div></div><p>Het grondwater speelt dus een centrale rol. Waarom dat zo is, lees je in het artikel over <a href=\"/kennisbank/grondwater-en-fundering/\">grondwater en fundering</a>.</p>"
       },
       {
         "id": "oorzaken",
@@ -450,7 +450,7 @@
         "id": "signalen",
         "h2": "Welke signalen kunnen wijzen op paalrot?",
         "answer": "Paalrot zelf is van buitenaf niet te zien. Er zijn alleen indirecte signalen, zoals scheuren, scheefstand of ongelijke zakking, en die kunnen ook andere oorzaken hebben.",
-        "body": "<p>Als palen minder kunnen dragen, kan de woning plaatselijk meer gaan zakken. Dat kan zich uiten in:</p><ul class=\"checklist\"><li>Scheuren in metselwerk, vaak diagonaal of trapvormig.</li><li><a href=\"/kennisbank/scheefstand/\">Scheefstand</a> van gevels of vloeren.</li><li>Deuren en ramen die gaan klemmen.</li><li>Een duidelijk verschil in zakking ten opzichte van naastgelegen woningen.</li></ul><div class=\"callout callout-warn\"><strong>Geen diagnose op afstand</strong><p>Deze signalen bewijzen geen paalrot. Ze kunnen ook ontstaan door <a href=\"/kennisbank/ongelijke-zetting/\">ongelijke zetting</a>, krimp, temperatuurwisselingen, roestende lateien of vocht. Alleen onderzoek ter plaatse geeft duidelijkheid.</p></div>"
+        "body": "<p>Als palen minder kunnen dragen, kan de woning plaatselijk meer gaan zakken. Dat kan zich uiten in:</p><ul class=\"checklist\"><li>Scheuren in metselwerk, vaak diagonaal of trapvormig.</li><li><a href=\"/kennisbank/scheefstand/\">Scheefstand</a> van gevels of vloeren.</li><li>Deuren en ramen die gaan klemmen.</li><li>Een duidelijk verschil in zakking ten opzichte van naastgelegen woningen.</li></ul><div class=\"callout callout-warn\"><strong>Geen diagnose op afstand</strong><p>Deze signalen bewijzen geen paalrot. Ze kunnen ook ontstaan door <a href=\"/kennisbank/ongelijke-zetting/\">ongelijke zetting</a>, krimp, temperatuurwisselingen, roestende lateien of vocht. Alleen onderzoek aan de fundering zelf kan aantasting aantonen.</p></div>"
       },
       {
         "id": "wat-kan-fase-0",
@@ -462,7 +462,7 @@
         "id": "inspectieput-en-houtonderzoek",
         "h2": "Hoe wordt paalrot vastgesteld?",
         "answer": "Paalrot wordt vastgesteld met een inspectieput, waarbij de fundering plaatselijk wordt vrijgegraven, eventueel aangevuld met houtonderzoek. Dit valt buiten fase 0 en fase 1.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Vooronderzoek</strong><span>Fase 0 bepaalt of er aanleiding is voor vervolgonderzoek.</span></li><li><strong>Metingen</strong><span>Fase 1 brengt vervorming en zakking van de woning in kaart, als fase 0 daar aanleiding voor geeft.</span></li><li><strong>Inspectieput</strong><span>De fundering wordt op een of meer plekken vrijgegraven, zodat de constructie en paalkoppen zichtbaar worden.</span></li><li><strong>Houtonderzoek</strong><span>Bij houten palen kan het hout worden onderzocht op aantasting.</span></li></ol><p>Een inspectieput en houtonderzoek worden uitgevoerd door een gespecialiseerde partij. MV Funderingsscan voert zelf geen funderingsherstel uit en adviseert onafhankelijk over de vervolgstap. Lees meer over vervolgstappen bij <a href=\"/problemen-met-houten-palen/\">problemen met houten palen</a>.</p>"
+        "body": "<ol class=\"mini-steps\"><li><strong>Vooronderzoek</strong><span>Fase 0 bepaalt of er aanleiding is voor vervolgonderzoek.</span></li><li><strong>Metingen</strong><span>Fase 1 brengt scheefstand en hoogteverschillen van de woning in kaart, in de regel als fase 0 daar aanleiding voor geeft.</span></li><li><strong>Inspectieput</strong><span>De fundering wordt op een of meer plekken vrijgegraven, zodat de constructie en paalkoppen zichtbaar worden.</span></li><li><strong>Houtonderzoek</strong><span>Bij houten palen kan het hout worden onderzocht op aantasting.</span></li></ol><p>Een inspectieput en houtonderzoek worden uitgevoerd door een gespecialiseerde partij. MV Funderingsscan voert zelf geen funderingsherstel uit en adviseert onafhankelijk over de vervolgstap. Lees meer over vervolgstappen bij <a href=\"/problemen-met-houten-palen/\">problemen met houten palen</a>.</p>"
       },
       {
         "id": "voorbeeld",
@@ -473,14 +473,14 @@
       {
         "id": "wanneer-onderzoek",
         "h2": "Wanneer is onderzoek verstandig?",
-        "answer": "Onderzoek is verstandig als je woning vermoedelijk op houten palen staat en je signalen ziet zoals scheuren of scheefstand, of als je zo’n woning wilt kopen en meer zekerheid wilt over het risico.",
-        "body": "<p>Begin met een <a href=\"/funderingsscan/\">funderingsscan</a>: een niet-destructief vooronderzoek dat laat zien of verder onderzoek nodig is. Twijfel je of dat bij jouw situatie past? Stel je vraag via <a href=\"/contact/\">contact</a>.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek, visuele inspectie en een risico-inschatting. Vanaf circa €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>Alleen als fase 0 daar aanleiding voor geeft. Indicatief €750 – €1.500.</span></a></div>"
+        "answer": "Onderzoek is verstandig als je woning vermoedelijk op houten palen staat en je signalen ziet zoals scheuren of scheefstand, of als je zo’n woning wilt kopen en meer inzicht wilt in het risico.",
+        "body": "<p>Begin met een <a href=\"/funderingsscan/\">funderingsscan</a>: een niet-destructief vooronderzoek dat laat zien of verder onderzoek nodig is. Twijfel je of dat bij jouw situatie past? Stel je vraag via <a href=\"/contact/\">contact</a>.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek, visuele inspectie en een risico-inschatting. Vanaf circa €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>In de regel als fase 0 daar aanleiding voor geeft. Indicatief €750 – €1.500.</span></a></div>"
       }
     ],
     "faqs": [
       {
         "q": "Heeft elke woning met houten palen paalrot?",
-        "a": "<p>Nee. Houten palen blijven goed zolang ze permanent onder water staan. Een woning met houten palen heeft dus niet automatisch paalrot; of er aantasting is, blijkt alleen uit onderzoek aan de fundering.</p>"
+        "a": "<p>Nee. Zolang houten palen onder water staan, is het risico op schimmelaantasting (paalrot) klein; bacteriële aantasting kan onder water wel optreden. Een woning met houten palen heeft dus niet automatisch paalrot; of er aantasting is, blijkt alleen uit onderzoek aan de fundering.</p>"
       },
       {
         "q": "Kun je paalrot zien aan de buitenkant van een huis?",
@@ -488,7 +488,7 @@
       },
       {
         "q": "Wat is het verschil tussen schimmel- en bacterieaantasting?",
-        "a": "<p>Schimmels tasten hout aan als het droog komt te staan en zuurstof krijgt. Bacteriën kunnen ook onder water actief zijn, maar dat proces verloopt doorgaans langzamer.</p>"
+        "a": "<p>Schimmels tasten hout aan als het droog komt te staan en zuurstof krijgt; dat is paalrot. Bacteriën tasten hout juist onder water aan. Bacteriële aantasting verloopt anders dan schimmelaantasting en kan de paal over de hele lengte aantasten; grenen is daar gevoeliger voor dan vuren.</p>"
       },
       {
         "q": "Stelt een quickscan paalrot vast?",

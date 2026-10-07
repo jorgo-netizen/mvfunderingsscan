@@ -8,6 +8,7 @@ import { readFileSync } from 'node:fs';
 
 const site = JSON.parse(readFileSync(new URL('../content/site.json', import.meta.url), 'utf8'));
 
+import { ORG_SAME_AS } from './eeat.mjs';
 export const DOMAIN = site.domain;
 export const TODAY = site.today;
 export const NAP = site.nap;
@@ -77,6 +78,7 @@ export function orgSchema() {
     name: NAP.name,
     legalName: NAP.name,
     alternateName: NAP.brand,
+    ...(ORG_SAME_AS.length ? { sameAs: ORG_SAME_AS } : {}),
     url: `${DOMAIN}/`,
     logo: { '@type': 'ImageObject', url: `${DOMAIN}/assets/logo-midea.png`, width: 480, height: 137 },
     image: `${DOMAIN}/assets/img/og-mv-funderingsscan.jpg`,
@@ -193,7 +195,7 @@ export function head(page) {
   <meta property="og:image" content="${ogImg}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Funderingsspecialist van MV Funderingsscan inspecteert de gevel van een woning">
+  <meta property="og:image:alt" content="Persoon met een waterpas bij de gevel van een woning">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${ogTitle}">
   <meta name="twitter:description" content="${esc(page.description)}">
@@ -313,7 +315,7 @@ ${links.map(([h, l]) => `        <li><a href="${h}">${l}</a></li>`).join('\n')}
 ${cols}
   </div>
   <div class="container footer-bottom">
-    <span>© <span id="year">2026</span> MV Funderingsscan · mvfunderingsscan.nl</span>
+    <span>© <span id="year">2026</span> MV Adviseurs · MV Funderingsscan · mvfunderingsscan.nl</span>
     <nav class="footer-meta" aria-label="Overige pagina's"><a href="/over-ons/">Over ons</a><a href="/werkwijze/">Werkwijze</a><a href="/kennisbank/">Kennisbank</a><a href="/contact/">Contact</a><a href="/funderingsscan-aanvragen/">Aanvragen</a></nav>
   </div>
 </footer>
@@ -361,7 +363,7 @@ ${faqItems(faqs)}
 
 export function ctaBand(
   title = 'Weten hoe jouw fundering ervoor staat?',
-  text = 'Vraag een Quick Scan aan. Je ontvangt vooraf een vaste prijs en binnen vijf werkdagen na de inspectie een helder rapport.',
+  text = 'Vraag een Quick Scan aan. Je hoort vooraf wat het kost en ontvangt normaal gesproken binnen vijf werkdagen na de inspectie een helder rapport.',
   button = 'Vraag een funderingsscan aan',
 ) {
   return `<section class="cta-band" aria-labelledby="cta-title">

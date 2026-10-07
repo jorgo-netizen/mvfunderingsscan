@@ -1,0 +1,50 @@
+{
+  "_uitleg": [
+    "Alle E-E-A-T-gegevens (wie, opleiding, certificaten, reviews, profielen) staan ALLEEN in dit bestand.",
+    "Een waarde tussen vierkante haken, zoals [NAAM DESKUNDIGE INVULLEN], is een placeholder.",
+    "Placeholders verschijnen NOOIT op de live site: blokken met een placeholder worden in productie overgeslagen.",
+    "Met `npm run dev` zie je ze wel (gestippelde gele vakken), zodat je weet wat nog ontbreekt.",
+    "Vul alleen gegevens in die aantoonbaar kloppen. Laat een veld staan als placeholder als je het niet zeker weet.",
+    "`npm run build` en `npm run audit` tonen een lijst van alle open placeholders."
+  ],
+  "expert": {
+    "naam": "[NAAM DESKUNDIGE INVULLEN]",
+    "functie": "[FUNCTIE INVULLEN, bijv. funderingsonderzoeker]",
+    "foto": "[PAD NAAR PORTRETFOTO INVULLEN, bijv. /assets/img/team-naam.jpg]",
+    "introductie": "[KORTE INTRODUCTIE IN 2-3 ZINNEN INVULLEN – alleen feiten]",
+    "opleiding": [
+      "[OPLEIDING INVULLEN]"
+    ],
+    "ervaring": "[RELEVANTE WERKERVARING INVULLEN – alleen feiten, geen schattingen]",
+    "specialisaties": [
+      "[SPECIALISATIE INVULLEN]"
+    ],
+    "certificaten": [
+      "[CERTIFICAAT OF ERKENNING INVULLEN – alleen als je het echt hebt, met naam van de uitgevende organisatie]"
+    ],
+    "lidmaatschappen": [
+      "[LIDMAATSCHAP VAKORGANISATIE INVULLEN]"
+    ],
+    "linkedin": "[LINKEDIN-PROFIEL-URL INVULLEN]"
+  },
+  "bedrijf": {
+    "kvk": "[KVK-NUMMER INVULLEN]",
+    "juridische_naam": "[JURIDISCHE NAAM VOLGENS KVK INVULLEN]",
+    "sameAs": [
+      "[URL LINKEDIN-BEDRIJFSPAGINA INVULLEN]",
+      "[URL GOOGLE BEDRIJFSPROFIEL INVULLEN]",
+      "[URL FACEBOOK-PAGINA INVULLEN]"
+    ]
+  },
+  "rapportvoorbeeld": "[URL OF PAD NAAR GEANONIMISEERD VOORBEELDRAPPORT (PDF) INVULLEN]",
+  "reviews": [
+    {
+      "tekst": "[LETTERLIJKE REVIEWTEKST INVULLEN – alleen echte reviews met toestemming]",
+      "naam": "[NAAM OF INITIALEN INVULLEN]",
+      "plaats": "[PLAATS INVULLEN]",
+      "datum": "[DATUM INVULLEN, bijv. 2026-09-14]",
+      "bron": "[BRON INVULLEN, bijv. Google]",
+      "bron_url": "[URL NAAR DE REVIEW INVULLEN]"
+    }
+  ]
+}

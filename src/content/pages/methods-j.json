@@ -29,7 +29,7 @@
     },
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
-      "alt": "Specialist met een waterpas bij de gevel van een woning"
+      "alt": "Persoon met een waterpas bij de gevel van een woning"
     },
     "article": true,
     "sections": [
@@ -74,7 +74,7 @@
       {
         "id": "wat-betekent-een-hellende-vloer",
         "h2": "Wat zegt een scheve vloer over de fundering?",
-        "answer": "Een scheve vloer kan wijzen op ongelijke zakking van de fundering, maar kan ook ontstaan door de manier waarop de vloer is gelegd of door doorbuiging van de vloer zelf; alleen een meting in samenhang met andere signalen geeft daar duidelijkheid over.",
+        "answer": "Een scheve vloer kan wijzen op ongelijke zakking van de fundering, maar kan ook ontstaan door de manier waarop de vloer is gelegd of door doorbuiging van de vloer zelf; alleen een meting in samenhang met andere signalen geeft daar meer duidelijkheid over.",
         "body": "<p>Een hellende vloer is een signaal, geen diagnose. De vloer kan van begin af aan niet vlak zijn gelegd, zelf zijn vervormd (zoals een doorbuigende houten balklaag), of meebewegen met muren die ongelijk zijn gezakt.</p><p>Alleen in die laatste situatie zegt de helling iets over de fundering. Het onderscheid wordt duidelijker als je kijkt of het patroon in de vloer overeenkomt met wat de gevel laat zien. Loopt de vloer af naar dezelfde hoek waar ook de lintvoeg lager ligt en waar scheuren zitten, dan wijzen de signalen dezelfde kant op. Meer over het verschijnsel zelf lees je bij <a href=\"/kennisbank/helling-in-vloer/\">helling in de vloer</a> en bij <a href=\"/verzakking-woning/\">verzakking van de woning</a>.</p>"
       },
       {
@@ -215,7 +215,7 @@
     ],
     "eyebrow": "Kennisbank · Meetmethoden",
     "h1": "Scheurpatronen in woningen: wat vertellen scheuren over de fundering?",
-    "lead": "Een <strong>scheurpatroon</strong> is de samenhang tussen meerdere scheuren in een woning: hun richting, plaats, breedte en ontwikkeling in de tijd. Eén scheur zegt weinig, maar een patroon kan aanwijzingen geven over beweging van de woning. Scheuren hebben vaak andere oorzaken dan de fundering; alleen onderzoek ter plaatse, zoals een <a href=\"/fase-0-funderingsonderzoek/\">fase 0 onderzoek</a>, geeft duidelijkheid.",
+    "lead": "Een <strong>scheurpatroon</strong> is de samenhang tussen meerdere scheuren in een woning: hun richting, plaats, breedte en ontwikkeling in de tijd. Eén scheur zegt weinig, maar een patroon kan aanwijzingen geven over beweging van de woning. Scheuren hebben vaak andere oorzaken dan de fundering; onderzoek ter plaatse, zoals een <a href=\"/fase-0-funderingsonderzoek/\">fase 0 onderzoek</a>, helpt bepalen of er aanwijzingen zijn dat de fundering een rol speelt.",
     "defined_term": {
       "name": "Scheurpatroon",
       "description": "De samenhang tussen meerdere scheuren in een woning, beoordeeld op richting, locatie, lengte, breedte en ontwikkeling in de tijd, om aanwijzingen te krijgen over mogelijke oorzaken en beweging van de woning."
@@ -304,13 +304,13 @@
         "id": "wanneer-aanvullend-onderzoek",
         "h2": "Wanneer is aanvullend onderzoek verstandig?",
         "answer": "Aanvullend onderzoek is verstandig als scheuren groeien of terugkomen, als ze samen een patroon vormen, of als ze samengaan met andere signalen zoals scheefstand, klemmende deuren of een hellende vloer.",
-        "body": "<ul class=\"check-interactive\"><li>Een scheur wordt zichtbaar breder of langer.</li><li>Een eerder herstelde scheur is opnieuw opengegaan.</li><li>Er lopen meerdere schuine of trapsgewijze scheuren aan dezelfde kant van de woning.</li><li>Deuren of ramen zijn gaan klemmen in dezelfde periode.</li><li>Je ziet of voelt dat de vloer naar één kant afloopt.</li><li>Je overweegt een oudere woning te kopen en wilt weten hoe het ervoor staat.</li></ul><p>Herken je meerdere punten, dan is een <a href=\"/quickscan-fundering/\">quickscan fundering</a> een logische eerste stap. Wil je eerst meer weten over de samenhang met <a href=\"/verzakking-woning/\">verzakking van de woning</a>, lees dan dat artikel. Uit fase 0 volgt of monitoren volstaat, of dat metingen in <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a> zinvol zijn.</p>"
+        "body": "<ul class=\"check-interactive\"><li>Een scheur wordt zichtbaar breder of langer.</li><li>Een eerder herstelde scheur is opnieuw opengegaan.</li><li>Er lopen meerdere schuine of trapsgewijze scheuren aan dezelfde kant van de woning.</li><li>Deuren of ramen zijn gaan klemmen in dezelfde periode.</li><li>Je ziet of voelt dat de vloer naar één kant afloopt.</li><li>Je overweegt een oudere woning te kopen en wilt weten hoe groot het funderingsrisico lijkt.</li></ul><p>Herken je meerdere punten, dan kan een <a href=\"/quickscan-fundering/\">quickscan fundering</a> een logische eerste stap zijn. Wil je eerst meer weten over de samenhang met <a href=\"/verzakking-woning/\">verzakking van de woning</a>, lees dan dat artikel. Uit fase 0 volgt of monitoren volstaat, of dat metingen in <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a> zinvol zijn.</p>"
       },
       {
         "id": "scheuren-laten-beoordelen",
         "h2": "Scheuren laten beoordelen?",
         "answer": "Twijfel je over scheuren in je woning, laat ze dan beoordelen in samenhang met de rest van de woning; een funderingsscan is daarvoor de eerste stap.",
-        "body": "<p>MV Funderingsscan onderzoekt woningen in heel Friesland en Groningen en voert zelf geen funderingsherstel uit. Daardoor is het advies onafhankelijk. Een funderingsscan in fase 0 kost vanaf circa €350 en het rapport ontvang je binnen 5 werkdagen na de inspectie.</p><p><a href=\"/funderingsscan/\">Bekijk de funderingsscan</a> of <a href=\"/contact/\">stel je vraag</a> als je twijfelt welke stap bij jouw situatie past.</p>"
+        "body": "<p>MV Funderingsscan onderzoekt woningen in heel Friesland en Groningen en voert zelf geen funderingsherstel uit. Daardoor is het advies onafhankelijk. Een funderingsscan in fase 0 kost vanaf circa €350 en het rapport ontvang je normaal gesproken binnen 5 werkdagen na de inspectie.</p><p><a href=\"/funderingsscan/\">Bekijk de funderingsscan</a> of <a href=\"/contact/\">stel je vraag</a> als je twijfelt welke stap bij jouw situatie past.</p>"
       }
     ],
     "faqs": [
@@ -324,7 +324,7 @@
       },
       {
         "q": "Zijn trapscheuren in de gevel gevaarlijk?",
-        "a": "<p>Een trapscheur is een reden om beter te kijken, niet direct een reden tot zorg. Hij kan passen bij ongelijke zakking, maar ook bij zwakke voegen of andere bewegingen. Een beoordeling ter plaatse geeft duidelijkheid.</p>"
+        "a": "<p>Een trapscheur is een reden om beter te kijken, niet direct een reden tot zorg. Hij kan passen bij ongelijke zakking, maar ook bij zwakke voegen of andere bewegingen. Een beoordeling ter plaatse geeft meer duidelijkheid.</p>"
       },
       {
         "q": "Wat betekent een horizontale scheur in de muur?",

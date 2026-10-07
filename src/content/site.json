@@ -1,6 +1,6 @@
 {
-  "domain": "https://mvfunderingsscan.nl",
-  "today": "2026-10-05",
+  "domain": "https://www.mvfunderingsscan.nl",
+  "today": "2026-10-07",
   "nap": {
     "name": "MV Adviseurs",
     "street": "Mr. P. J. Troelstraweg 149",
@@ -282,13 +282,13 @@
     "funderingsscan": {
       "name": "Funderingsscan",
       "serviceType": "Funderingsonderzoek",
-      "url": "https://mvfunderingsscan.nl/funderingsscan/",
+      "url": "https://www.mvfunderingsscan.nl/funderingsscan/",
       "description": "Onafhankelijk onderzoek naar de staat en de risico's van de fundering van een woning, beginnend met een Quick Scan en waar nodig gevolgd door metingen."
     },
     "fase0": {
       "name": "Fase 0 funderingsonderzoek (Quick Scan)",
       "serviceType": "Quick Scan fundering",
-      "url": "https://mvfunderingsscan.nl/fase-0-funderingsonderzoek/",
+      "url": "https://www.mvfunderingsscan.nl/fase-0-funderingsonderzoek/",
       "description": "Niet-destructief vooronderzoek: archief- en bodemonderzoek, visuele inspectie van woning en kruipruimte, risico-inschatting en rapport met vervolgadvies.",
       "offers": {
         "minPrice": 350
@@ -301,8 +301,8 @@
     "fase1": {
       "name": "Fase 1 funderingsonderzoek",
       "serviceType": "Funderingsonderzoek met metingen",
-      "url": "https://mvfunderingsscan.nl/fase-1-funderingsonderzoek/",
-      "description": "Vervolgonderzoek met lintvoegwaterpassing, loodmetingen, vloerveldwaterpassing en het vastleggen van scheurpatronen om vast te stellen of een woning stabiel staat.",
+      "url": "https://www.mvfunderingsscan.nl/fase-1-funderingsonderzoek/",
+      "description": "Vervolgonderzoek met lintvoegwaterpassing, loodmetingen, vloerveldwaterpassing en het vastleggen van scheurpatronen, om scheefstand en hoogteverschillen in beeld te brengen en te beoordelen of er aanwijzingen zijn voor ongelijkmatige zetting.",
       "offers": {
         "minPrice": 750,
         "maxPrice": 1500
@@ -475,17 +475,17 @@
     },
     {
       "name": "KCAF-risicoklasse",
-      "description": "Indeling van het funderingsrisico van een woning in klasse A (laag) tot en met E (hoog) in het funderingsrisicorapport van het Kenniscentrum Aanpak Funderingsproblematiek.",
+      "description": "Indeling van het funderingsrisico van een woning in klasse A (geen risico) tot en met E (vastgesteld funderingsprobleem) in het funderingsrisicorapport van het KCAF. Het is een inschatting op basis van gegevens, geen vaststelling van de staat van de fundering.",
       "href": "/funderingsonderzoek-taxatie/"
     },
     {
       "name": "Funderingsparagraaf",
-      "description": "Het vaste onderdeel over funderingsrisico in het model Taxatierapport Woonruimte dat sinds 1 april 2026 wordt gebruikt.",
+      "description": "Het onderdeel over funderingsrisico in het model Taxatierapport Woonruimte. Sinds 1 april 2026 neemt de taxateur daarin de KCAF-risicoklasse A tot en met E op.",
       "href": "/kennisbank/funderingsscan-en-taxatie/"
     },
     {
       "name": "Inspectieput",
-      "description": "Een plaatselijke uitgraving naast de woning om de fundering direct te bekijken, eventueel met houtonderzoek bij houten palen. Valt buiten fase 0 en fase 1.",
+      "description": "Een plaatselijke uitgraving naast de woning om de fundering direct te bekijken, eventueel met houtonderzoek bij houten palen. In gemeentelijke regelingen valt dit vaak onder fase 2; bij MV Funderingsscan valt het buiten fase 0 en fase 1.",
       "href": "/kennisbank/wat-na-een-quickscan/"
     },
     {

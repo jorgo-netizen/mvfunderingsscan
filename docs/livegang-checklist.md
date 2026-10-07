@@ -20,12 +20,20 @@ e-mailadres, zodat er geen aanvragen ongemerkt verloren gaan.
 ## 2. Publiceren
 
 - [ ] Vercel → Add New Project → kies de GitHub-repo van MV Funderingsscan → Root Directory leeg laten.
-- [ ] Domains: `mvfunderingsscan.nl` en `www.mvfunderingsscan.nl` (www stuurt automatisch door).
-- [ ] Controleer: `https://mvfunderingsscan.nl/robots.txt`, `/sitemap.xml`, `/llms.txt` en een paar pagina's.
+- [ ] Domains: voeg `www.mvfunderingsscan.nl` toe als **primair** domein en `mvfunderingsscan.nl` als tweede domein. `vercel.json` stuurt het kale domein al met een 301 door naar www.
+- [ ] Controleer: `https://www.mvfunderingsscan.nl/robots.txt`, `/sitemap.xml`, `/llms.txt` en een paar pagina's. Canonicals, sitemap en structured data gebruiken al `https://www.mvfunderingsscan.nl`.
+- [ ] **Pas als www.mvfunderingsscan.nl werkt:** laat ook de Vercel-URL permanent doorsturen. Zet deze regel bovenaan `redirects` in `vercel.json`:
+
+  ```json
+  { "source": "/:path*", "has": [{ "type": "host", "value": "mvfunderingsscan.vercel.app" }], "destination": "https://www.mvfunderingsscan.nl/:path*", "permanent": true }
+  ```
+
+  Tot die tijd krijgt `mvfunderingsscan.vercel.app` een `X-Robots-Tag: noindex`-header, zodat de Vercel-URL geen concurrerende geïndexeerde versie wordt. Haal die header-regel weg zodra de redirect actief is.
+- [ ] Vul de E-E-A-T-gegevens in `src/content/eeat.json` in (deskundige, KvK, profielen, echte reviews). `npm run build` toont wat nog open staat.
 
 ## 3. Zoekmachines
 
-- [ ] Google Search Console: domeineigendom verifiëren (DNS), sitemap `https://mvfunderingsscan.nl/sitemap.xml` indienen.
+- [ ] Google Search Console: domeineigendom verifiëren (DNS), sitemap `https://www.mvfunderingsscan.nl/sitemap.xml` indienen.
 - [ ] Bing Webmaster Tools: site toevoegen (kan via import uit Search Console), sitemap indienen. Belangrijk voor ChatGPT Search en Copilot.
 - [ ] In Search Console de belangrijkste URL's handmatig laten indexeren: `/`, `/funderingsscan/`, `/quickscan-fundering/`, `/fase-0-funderingsonderzoek/`, `/kennisbank/lintvoegwaterpassing/`.
 

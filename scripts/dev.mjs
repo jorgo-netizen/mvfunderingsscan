@@ -54,7 +54,7 @@ const REDIRECTS = new Map(
 // ---------------------------------------------------------------- bouwen
 function runBuild() {
   // Apart proces, zodat gewijzigde JSON/templates altijd vers worden ingelezen.
-  const r = spawnSync(process.execPath, [join(ROOT, 'scripts', 'build.mjs')], { cwd: ROOT, encoding: 'utf8' });
+  const r = spawnSync(process.execPath, [join(ROOT, 'scripts', 'build.mjs')], { cwd: ROOT, encoding: 'utf8', env: { ...process.env, MVFS_PLACEHOLDERS: '1' } });
   if (r.status !== 0) {
     console.error('\n✖ Build mislukt:\n' + (r.stderr || r.stdout));
     return false;

@@ -22,7 +22,7 @@
     ],
     "eyebrow": "Kennisbank",
     "h1": "Scheuren in je woning: wanneer zorgwekkend, wanneer onschuldig?",
-    "lead": "Scheuren in de woning, zoals in binnenmuren, plafonds of rond deurkozijnen, zijn <strong>vaak onschuldig</strong>: krimp van stucwerk, werking van hout en temperatuurverschillen geven veel haarscheuren. Een scheur wordt pas zorgwekkend als hij groeit, terugkomt na herstel, schuin of trapvormig loopt of samengaat met andere signalen zoals klemmende deuren of scheve vloeren. Alleen onderzoek ter plaatse geeft daarover duidelijkheid.",
+    "lead": "Scheuren in de woning, zoals in binnenmuren, plafonds of rond deurkozijnen, zijn <strong>vaak onschuldig</strong>: krimp van stucwerk, werking van hout en temperatuurverschillen geven veel haarscheuren. Een scheur wordt pas zorgwekkend als hij groeit, terugkomt na herstel, schuin of trapvormig loopt of samengaat met andere signalen zoals klemmende deuren of scheve vloeren. Alleen onderzoek ter plaatse geeft daarover meer duidelijkheid.",
     "hero_image": {
       "name": "vooroorlogse-woning-voordeur",
       "alt": "Klassieke voordeur in een bakstenen gevel van een vooroorlogse woning"
@@ -56,7 +56,7 @@
       {
         "id": "wanneer-is-onderzoek-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
-        "answer": "Onderzoek is verstandig als scheuren groeien of terugkomen, als je meerdere signalen tegelijk ziet, of als je een oudere woning wilt kopen en wilt weten hoe de fundering ervoor staat.",
+        "answer": "Onderzoek is verstandig als scheuren groeien of terugkomen, als je meerdere signalen tegelijk ziet, of als je een oudere woning wilt kopen en wilt weten of er een verhoogd funderingsrisico is.",
         "body": "<p>Een <a href=\"/quickscan-fundering/\">quickscan fundering</a> combineert archief- en bodemonderzoek met een <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a> van onder meer scheuren en <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, deuren, vloeren en de kruipruimte voor zover toegankelijk. Dat is <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>: niet-destructief, met een rapport met foto's, conclusie en advies. Twijfel je of het al zover is, doe dan eerst de <a href=\"/funderingsscan-check/\">online funderingscheck</a> of <a href=\"/contact/\">stel je vraag</a>.</p><p>Zie je vooral scheuren aan de buitenkant? Lees dan ons artikel over <a href=\"/kennisbank/scheuren-in-gevel/\">scheuren in de gevel</a>.</p>"
       }
     ],
@@ -322,7 +322,7 @@
     "lead": "Of je huis aan het verzakken is, kun je <strong>niet aan één signaal</strong> zien. Verzakking laat zich meestal kennen door een combinatie: scheuren die groeien, deuren en ramen die gaan klemmen, vloeren die aflopen of een gevel die uit het lood staat. Elk van die signalen kan ook een andere oorzaak hebben. Een verstandige eerste stap is signalen vastleggen en daarna laten beoordelen.",
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
-      "alt": "Specialist houdt een waterpas tegen de gevel van een woning"
+      "alt": "Persoon houdt een waterpas tegen de gevel van een woning"
     },
     "article": true,
     "sections": [
@@ -354,13 +354,13 @@
         "id": "wat-is-een-goede-eerste-stap",
         "h2": "Wat is een goede eerste stap?",
         "answer": "Begin met vastleggen: fotografeer scheuren met een liniaal ernaast, noteer welke deuren klemmen en wanneer, en zoek op wat je weet over bouwjaar en eventuele verbouwingen.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Signalen vastleggen</strong><span>Maak foto's met datum en noteer per kamer wat je opvalt.</span></li><li><strong>Achtergrond verzamelen</strong><span>Zoek bouwjaar, tekeningen en eventuele eerdere verbouwingen of herstelwerk op.</span></li><li><strong>Vergelijken met de buren</strong><span>Vraag of buren vergelijkbare scheuren of klemmende deuren hebben.</span></li><li><strong>Laten beoordelen</strong><span>Laat een specialist de signalen in samenhang bekijken in plaats van zelf conclusies te trekken.</span></li></ol><p>Met deze informatie bij de hand verloopt een onderzoek efficiënter, en kun je zelf beter inschatten wat er in het rapport staat. Uitleg over dat rapport vind je bij <a href=\"/kennisbank/funderingsrapport-lezen/\">een funderingsrapport lezen</a>.</p>"
+        "body": "<ol class=\"mini-steps\"><li><strong>Signalen vastleggen</strong><span>Maak foto's met datum en noteer per kamer wat je opvalt.</span></li><li><strong>Achtergrond verzamelen</strong><span>Zoek bouwjaar, tekeningen en eventuele eerdere verbouwingen of herstelwerk op.</span></li><li><strong>Vergelijken met de buren</strong><span>Vraag of buren vergelijkbare scheuren of klemmende deuren hebben.</span></li><li><strong>Laten beoordelen</strong><span>Laat een vakkundige partij de signalen in samenhang bekijken in plaats van zelf conclusies te trekken.</span></li></ol><p>Met deze informatie bij de hand verloopt een onderzoek efficiënter, en kun je zelf beter inschatten wat er in het rapport staat. Uitleg over dat rapport vind je bij <a href=\"/kennisbank/funderingsrapport-lezen/\">een funderingsrapport lezen</a>.</p>"
       },
       {
         "id": "wanneer-is-onderzoek-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Onderzoek is verstandig als je meerdere signalen tegelijk ziet, als signalen toenemen, of als je een woning wilt kopen waarvan het funderingstype en de staat onbekend zijn.",
-        "body": "<p>De eerste stap is meestal <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>: archief- en bodemonderzoek plus <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a>, met een rapport binnen 5 werkdagen na de inspectie. Uitkomst kan zijn dat er geen aanleiding is voor vervolgonderzoek, dat monitoren volstaat, dat aanvullend onderzoek zinvol is of dat <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a> wordt geadviseerd. Je kunt eerst de <a href=\"/funderingsscan-check/\">funderingscheck</a> invullen of direct <a href=\"/funderingsscan-aanvragen/\">een funderingsscan aanvragen</a>.</p>"
+        "body": "<p>De eerste stap is meestal <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>: archief- en bodemonderzoek plus <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a>, met een rapport normaal gesproken binnen 5 werkdagen na de inspectie. Uitkomst kan zijn dat er geen aanleiding is voor vervolgonderzoek, dat monitoren volstaat, dat aanvullend onderzoek zinvol is of dat <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a> wordt geadviseerd. Je kunt eerst de <a href=\"/funderingsscan-check/\">funderingscheck</a> invullen of direct <a href=\"/funderingsscan-aanvragen/\">een funderingsscan aanvragen</a>.</p>"
       }
     ],
     "faqs": [
@@ -391,7 +391,7 @@
       {
         "href": "/quickscan-fundering/",
         "label": "Quickscan fundering",
-        "text": "Een eerste, niet-destructieve beoordeling van je fundering."
+        "text": "Een eerste, niet-destructieve inschatting van het funderingsrisico."
       }
     ],
     "defined_term": {
@@ -432,7 +432,7 @@
       {
         "id": "wat-bedoelen-we-met-scheefstand",
         "h2": "Wat bedoelen we met scheefstand?",
-        "answer": "Scheefstand is een afwijking van gevels of wanden ten opzichte van de verticaal, of van vloeren ten opzichte van de horizontaal, die vaak ontstaat door ongelijke zakking van de fundering.",
+        "answer": "Scheefstand is een afwijking van gevels of wanden ten opzichte van de verticaal, of van vloeren ten opzichte van de horizontaal. Scheefstand kan aanwijzingen geven over ongelijkmatige zetting, maar kan ook bouwkundig of historisch zijn.",
         "body": "<p>Geen enkel huis staat volmaakt recht; tijdens de bouw zijn kleine afwijkingen normaal. Bij scheefstand gaat het om een afwijking die groter is geworden doordat de woning na de bouw ongelijk is gezakt. Het gaat dan zowel om een gevel die voorover of opzij helt als om vloeren die naar één kant aflopen. Meer achtergrond vind je in de gids over <a href=\"/scheefstand-woning/\">scheefstand van een woning</a>.</p>"
       },
       {
@@ -456,20 +456,20 @@
       {
         "id": "wanneer-is-meten-zinvol",
         "h2": "Wanneer is meten zinvol?",
-        "answer": "Meten is zinvol als er bij de inspectie signalen zijn die op ongelijke zakking wijzen; metingen zijn onderdeel van fase 1 en volgen alleen als fase 0 daar aanleiding voor geeft.",
+        "answer": "Meten is zinvol als er bij de inspectie signalen zijn die op ongelijke zakking wijzen; metingen zijn onderdeel van fase 1 en volgen in de regel na fase 0, als die daar aanleiding voor geeft.",
         "body": "<p>Bij <a href=\"/funderingsmetingen/\">funderingsmetingen</a> in fase 1 horen onder meer de scheefstandsmeting of loodmeting (afwijking van gevels en wanden ten opzichte van verticaal), de lintvoegwaterpassing en de <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a> (een raster van hoogtemetingen op de begane grondvloer). Samen geven ze een beeld van hoe de woning in de loop der jaren is vervormd. De indicatieve kosten van fase 1 zijn €750 – €1.500; zie ook de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
         "id": "wanneer-is-onderzoek-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
-        "answer": "Laat de woning onderzoeken als je scheefstand vermoedt en daarnaast scheuren, klemmende deuren of aflopende vloeren ziet, of als je een oudere woning koopt en meer zekerheid wilt.",
-        "body": "<p>De logische start is een <a href=\"/quickscan-fundering/\">quickscan fundering</a>, waarin scheefstand visueel wordt beoordeeld samen met de andere signalen en de achtergrond van woning en bodem. Blijkt meten zinvol, dan volgt het advies voor fase 1. Lees ook over <a href=\"/kennisbank/verzakking-woning/\">signalen van verzakking</a> of <a href=\"/contact/\">stel je vraag</a>.</p>"
+        "answer": "Laat de woning onderzoeken als je scheefstand vermoedt en daarnaast scheuren, klemmende deuren of aflopende vloeren ziet, of als je een oudere woning koopt en meer inzicht wilt.",
+        "body": "<p>Een <a href=\"/quickscan-fundering/\">quickscan fundering</a> is dan vaak een logische eerste stap. Daarin wordt scheefstand visueel beoordeeld samen met de andere signalen en de achtergrond van woning en bodem. Blijkt meten zinvol, dan volgt het advies voor fase 1. Lees ook over <a href=\"/kennisbank/verzakking-woning/\">signalen van verzakking</a> of <a href=\"/contact/\">stel je vraag</a>.</p>"
       }
     ],
     "faqs": [
       {
         "q": "Kan ik scheefstand meten met een waterpas?",
-        "a": "<p>Met een waterpas krijg je een eerste indruk, maar geen betrouwbare meting van de hele woning. Lokale oneffenheden, doorbuiging en bouwafwijkingen spelen mee. Een loodmeting door een specialist geeft een objectiever beeld.</p>"
+        "a": "<p>Met een waterpas krijg je een eerste indruk, maar geen betrouwbare meting van de hele woning. Lokale oneffenheden, doorbuiging en bouwafwijkingen spelen mee. Een loodmeting door een vakkundige partij geeft een objectiever beeld.</p>"
       },
       {
         "q": "Betekent scheefstand dat de fundering kapot is?",
@@ -548,7 +548,7 @@
         "id": "eenvoudige-controle-in-vier-stappen",
         "h2": "Hoe controleer je een klemmende deur zelf?",
         "answer": "Controleer eerst de scharnieren, kijk dan of de kier rondom gelijkmatig is, let op het seizoen en vergelijk met andere deuren en ramen in dezelfde zone van de woning.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Scharnieren</strong><span>Draai schroeven vast en kijk of de deur dan weer vrij loopt.</span></li><li><strong>Kier rondom</strong><span>Bekijk of de kier tussen deur en kozijn overal ongeveer even breed is of schuin verloopt.</span></li><li><strong>Seizoen</strong><span>Noteer wanneer de deur klemt. Alleen in natte maanden wijst eerder op vocht.</span></li><li><strong>Vergelijken</strong><span>Kijk of andere deuren en ramen in hetzelfde deel van de woning ook gaan klemmen.</span></li></ol><p>Noteer je bevindingen per deur, met datum. Zo zie je na een paar maanden of er een patroon is, en heb je bruikbare informatie als je later toch een specialist laat kijken.</p>"
+        "body": "<ol class=\"mini-steps\"><li><strong>Scharnieren</strong><span>Draai schroeven vast en kijk of de deur dan weer vrij loopt.</span></li><li><strong>Kier rondom</strong><span>Bekijk of de kier tussen deur en kozijn overal ongeveer even breed is of schuin verloopt.</span></li><li><strong>Seizoen</strong><span>Noteer wanneer de deur klemt. Alleen in natte maanden wijst eerder op vocht.</span></li><li><strong>Vergelijken</strong><span>Kijk of andere deuren en ramen in hetzelfde deel van de woning ook gaan klemmen.</span></li></ol><p>Noteer je bevindingen per deur, met datum. Zo zie je na een paar maanden of er een patroon is, en heb je bruikbare informatie als je later toch een vakkundige partij laat kijken.</p>"
       },
       {
         "id": "voorbeeld-de-achterdeur-die-steeds-terugkomt",
@@ -566,7 +566,7 @@
     "faqs": [
       {
         "q": "Klemt mijn deur door de fundering of door vocht?",
-        "a": "<p>Klemt de deur alleen in natte periodes en is de kier verder gelijkmatig, dan is vocht een waarschijnlijke oorzaak. Verloopt de kier schuin en klemmen meer deuren in hetzelfde deel van de woning, dan kan het kozijn zelf vervormd zijn. Zekerheid geeft alleen onderzoek ter plaatse.</p>"
+        "a": "<p>Klemt de deur alleen in natte periodes en is de kier verder gelijkmatig, dan is vocht een waarschijnlijke oorzaak. Verloopt de kier schuin en klemmen meer deuren in hetzelfde deel van de woning, dan kan het kozijn zelf vervormd zijn. Meer duidelijkheid geeft alleen onderzoek ter plaatse.</p>"
       },
       {
         "q": "Moet ik een klemmende deur laten schaven?",
@@ -578,7 +578,7 @@
       },
       {
         "q": "Hoe snel kan een quickscan worden ingepland?",
-        "a": "<p>Een inspectie wordt meestal binnen enkele werkdagen ingepland en het rapport volgt binnen 5 werkdagen na de inspectie. Je kunt <a href=\"/funderingsscan-aanvragen/\">hier aanvragen</a>.</p>"
+        "a": "<p>Een inspectie wordt meestal binnen enkele werkdagen ingepland en het rapport volgt normaal gesproken binnen 5 werkdagen na de inspectie. Je kunt <a href=\"/funderingsscan-aanvragen/\">hier aanvragen</a>.</p>"
       }
     ],
     "related": [
@@ -625,7 +625,7 @@
     "lead": "Bij een kruipruimte-inspectie wordt, <strong>voor zover de ruimte toegankelijk is</strong>, gekeken naar zichtbare funderingsdelen, de staat van de vloerconstructie en vocht. De kruipruimte is vaak de enige plek waar je zonder graven iets van de fundering ziet. Is hij niet toegankelijk, dan wordt dat in het rapport vermeld en kan het advies zijn om de kruipruimte eerst toegankelijk te maken.",
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
-      "alt": "Specialist houdt een waterpas tegen de gevel van een woning"
+      "alt": "Persoon houdt een waterpas tegen de gevel van een woning"
     },
     "article": true,
     "sections": [
@@ -669,7 +669,7 @@
     "faqs": [
       {
         "q": "Moet ik zelf de kruipruimte in?",
-        "a": "<p>Nee, dat is niet nodig. Het is wel handig als je weet waar het luik zit en of het open kan. De inspectie zelf laat je over aan de specialist.</p>"
+        "a": "<p>Nee, dat is niet nodig. Het is wel handig als je weet waar het luik zit en of het open kan. De inspectie zelf laat je over aan de inspecteur.</p>"
       },
       {
         "q": "Is een natte kruipruimte een funderingsprobleem?",
@@ -751,8 +751,8 @@
       {
         "id": "waarom-grondwater-zo-belangrijk-is",
         "h2": "Waarom is grondwater zo belangrijk?",
-        "answer": "Houten palen blijven in goede staat zolang ze permanent onder water staan; als de grondwaterstand daalt en paalkoppen droog komen te staan, kunnen schimmels en bacteriën het hout aantasten.",
-        "body": "<p>Onder water is er weinig zuurstof, waardoor schimmels geen kans krijgen. Daardoor zijn palen die altijd onder de grondwaterspiegel zitten vaak lang in redelijke staat gebleven. Daalt de grondwaterstand, door droogte, peilverlaging of drainage, dan kan het bovenste deel van de palen met lucht in aanraking komen. <a href=\"/kennisbank/paalrot/\">Paalrot</a> is dan een risico. Ook onder water kan bacteriële aantasting langzaam optreden. Meer daarover lees je in <a href=\"/kennisbank/grondwater-en-fundering/\">grondwater en fundering</a>.</p><div class=\"callout callout-note\"><strong>Goed om te weten</strong><p>Een woning met houten palen heeft niet automatisch problemen. Veel paalfunderingen functioneren nog goed. Het funderingstype zegt iets over het risico, niet over de werkelijke staat.</p></div>"
+        "answer": "Zolang houten palen onder water staan, is het risico op schimmelaantasting (paalrot) klein; als de grondwaterstand daalt en paalkoppen droog komen te staan, kunnen schimmels het hout aantasten. Bacteriële aantasting kan onder water wel optreden.",
+        "body": "<p>Onder water is er weinig zuurstof, waardoor schimmels geen kans krijgen. Daardoor zijn palen die altijd onder de grondwaterspiegel zitten vaak lang in redelijke staat gebleven. Daalt de grondwaterstand, door droogte, peilverlaging of drainage, dan kan het bovenste deel van de palen met lucht in aanraking komen. <a href=\"/kennisbank/paalrot/\">Paalrot</a> is dan een risico. Daarnaast kan bacteriële aantasting optreden, juist onder water en over de hele lengte van de paal; grenen is daar gevoeliger voor dan vuren. Meer daarover lees je in <a href=\"/kennisbank/grondwater-en-fundering/\">grondwater en fundering</a>.</p><div class=\"callout callout-note\"><strong>Goed om te weten</strong><p>Een woning met houten palen heeft niet automatisch problemen. Veel paalfunderingen functioneren nog goed. Het funderingstype zegt iets over het risico, niet over de werkelijke staat.</p></div>"
       },
       {
         "id": "hoe-weet-je-of-je-woning-op-houten-palen-staat",
@@ -776,7 +776,7 @@
     "faqs": [
       {
         "q": "Hoe lang gaat een houten paalfundering mee?",
-        "a": "<p>Dat verschilt sterk per woning. Palen die permanent onder water staan, kunnen lang in goede staat blijven. Bepalend zijn onder meer de grondwaterstand, de kwaliteit van het hout en de belasting. Een algemene levensduur is daarom niet te geven.</p>"
+        "a": "<p>Dat verschilt sterk per woning. Bij palen die permanent onder water staan, is het risico op schimmelaantasting klein, al kan bacteriële aantasting onder water wel optreden. Bepalend zijn onder meer de grondwaterstand, de kwaliteit van het hout en de belasting. Een algemene levensduur is daarom niet te geven.</p>"
       },
       {
         "q": "Kan ik de palen zelf zien in de kruipruimte?",
@@ -806,7 +806,7 @@
     ],
     "defined_term": {
       "name": "Houten paalfundering",
-      "description": "Een fundering waarbij de woning rust op houten palen die tot in een draagkrachtige laag reiken. De palen blijven goed zolang ze permanent onder grondwater staan."
+      "description": "Een fundering waarbij de woning rust op houten palen die tot in een draagkrachtige laag reiken. Zolang de palen onder grondwater staan, is het risico op schimmelaantasting (paalrot) klein."
     }
   },
   {
@@ -879,7 +879,7 @@
         "id": "wanneer-is-onderzoek-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Onderzoek is verstandig als je een oudere woning op staal koopt in een klei- of veengebied, als je scheuren of scheefstand ziet, of als je na een droge periode nieuwe signalen opmerkt.",
-        "body": "<p>De gids <a href=\"/fundering-op-staal/\">fundering op staal</a> gaat dieper in op de risico's en mogelijke problemen bij dit funderingstype. Voor een beoordeling van je eigen woning is een <a href=\"/funderingsscan/\">funderingsscan</a> de logische start. Twijfel je, <a href=\"/contact/\">neem dan contact op</a>.</p>"
+        "body": "<p>De gids <a href=\"/fundering-op-staal/\">fundering op staal</a> gaat dieper in op de risico's en mogelijke problemen bij dit funderingstype. Voor een beoordeling van je eigen woning is een <a href=\"/funderingsscan/\">funderingsscan</a> vaak een logische eerste stap. Twijfel je, <a href=\"/contact/\">neem dan contact op</a>.</p>"
       }
     ],
     "faqs": [
@@ -1160,7 +1160,7 @@
     "lead": "Bodemdaling is het langzaam lager komen te liggen van het maaiveld. In Noord-Nederland komt dat vooral door <strong>inklinking en oxidatie van veen</strong>, en op sommige plekken door de winning van gas of zout. Voor woningen kan bodemdaling betekenen dat de grond rond de woning zakt, dat de fundering ongelijk gaat zakken of dat houten palen boven het grondwater uitkomen.",
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
-      "alt": "Specialist houdt een waterpas tegen de gevel van een woning"
+      "alt": "Persoon houdt een waterpas tegen de gevel van een woning"
     },
     "article": true,
     "sections": [
@@ -1179,8 +1179,8 @@
       {
         "id": "waar-speelt-bodemdaling-in-het-noorden",
         "h2": "Waar speelt bodemdaling in Friesland en Groningen?",
-        "answer": "In Friesland speelt bodemdaling vooral in het veenweidegebied en rond Harlingen door zoutwinning; in Groningen zorgt gaswinning voor bodembeweging, met naast bodemdaling ook aardbevingen.",
-        "body": "<p>Het waterschap beheert in Friesland het waterpeil, wat in veenweidegebieden direct invloed heeft op de snelheid van oxidatie. In Groningen is de bodembeweging door gaswinning een bekend onderwerp. Schade die je toeschrijft aan gaswinning meld je bij het Instituut Mijnbouwschade Groningen (IMG). Een funderingsscan is geen schademelding. Lees meer in <a href=\"/kennisbank/funderingsproblemen-groningen/\">funderingsproblemen in Groningen</a>.</p>"
+        "answer": "In Friesland speelt bodemdaling vooral in het veenweidegebied en rond Harlingen door zoutwinning; in Groningen hebben de gevolgen van de gaswinning, zoals bodemdaling en aardbevingen, invloed gehad; de gaswinning uit het Groningenveld is beëindigd, maar schadeafhandeling en versterking lopen nog.",
+        "body": "<p>Het waterschap beheert in Friesland het waterpeil, wat in veenweidegebieden direct invloed heeft op de snelheid van oxidatie. In Groningen spelen daarnaast de gevolgen van de gaswinning, zoals aardbevingsschade en versterking, nog een rol. Schade die je toeschrijft aan gaswinning meld je bij het Instituut Mijnbouwschade Groningen (IMG). Een funderingsscan is geen schademelding. Lees meer in <a href=\"/kennisbank/funderingsproblemen-groningen/\">funderingsproblemen in Groningen</a>.</p>"
       },
       {
         "id": "wat-zijn-de-gevolgen-voor-woningen",
@@ -1266,7 +1266,7 @@
     ],
     "eyebrow": "Kennisbank",
     "h1": "Grondwater en fundering: de rol van peil, droogte en houten palen",
-    "lead": "Grondwater is belangrijk voor de fundering omdat het bepaalt <strong>hoe de bodem zich gedraagt</strong> en, bij houten palen, of het hout beschermd blijft. Palen die permanent onder water staan, blijven vaak in goede staat. Daalt de grondwaterstand door droogte of peilverlaging, dan kunnen paalkoppen droog komen te staan en kan veen gaan oxideren. Peilbeheer door het waterschap speelt daarin een rol.",
+    "lead": "Grondwater is belangrijk voor de fundering omdat het bepaalt <strong>hoe de bodem zich gedraagt</strong> en, bij houten palen, of het hout beschermd blijft. Zolang houten palen onder water staan, is het risico op schimmelaantasting (paalrot) klein. Daalt de grondwaterstand door droogte of peilverlaging, dan kunnen paalkoppen droog komen te staan en kan veen gaan oxideren. Peilbeheer door het waterschap speelt daarin een rol.",
     "hero_image": {
       "name": "jaren-dertig-woningen-straat",
       "alt": "Rij jaren-dertigwoningen in een groene straat"
@@ -1282,8 +1282,8 @@
       {
         "id": "waarom-grondwater-belangrijk-is-voor-houten-palen",
         "h2": "Waarom is grondwater belangrijk voor houten palen?",
-        "answer": "Onder water krijgen schimmels weinig kans omdat er nauwelijks zuurstof is; komen houten paalkoppen boven het grondwater, dan kunnen schimmels en bacteriën het hout aantasten.",
-        "body": "<p>Houten paalfunderingen zijn gebouwd in de verwachting dat het hout altijd nat blijft. Zolang dat zo is, gaat aantasting vaak langzaam. Bij een structureel lagere grondwaterstand kan het bovenste deel van de paal, juist waar de draagconstructie aansluit, droog komen te staan. Dat vergroot de kans op <a href=\"/kennisbank/paalrot/\">paalrot</a>. Ook onder water kan bacteriële aantasting langzaam optreden, dus een hoge grondwaterstand is geen garantie. De opbouw van zo'n fundering wordt uitgelegd in <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a>.</p>"
+        "answer": "Onder water krijgen schimmels weinig kans omdat er nauwelijks zuurstof is; komen houten paalkoppen boven het grondwater, dan kunnen schimmels het hout aantasten (paalrot).",
+        "body": "<p>Houten paalfunderingen zijn gebouwd in de verwachting dat het hout altijd nat blijft. Zolang dat zo is, is het risico op schimmelaantasting klein. Bij een structureel lagere grondwaterstand kan het bovenste deel van de paal, juist waar de draagconstructie aansluit, droog komen te staan. Dat vergroot de kans op <a href=\"/kennisbank/paalrot/\">paalrot</a>. Daarnaast kan bacteriële aantasting optreden, juist onder water en over de hele lengte van de paal; grenen is daar gevoeliger voor dan vuren. Een hoge grondwaterstand is dus geen garantie. De opbouw van zo'n fundering wordt uitgelegd in <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a>.</p>"
       },
       {
         "id": "wat-doet-grondwater-met-de-bodem",
@@ -1371,7 +1371,7 @@
     ],
     "eyebrow": "Kennisbank",
     "h1": "Funderingsrisico: wat betekent het en wat is het verschil met schade?",
-    "lead": "Funderingsrisico is de <strong>kans</strong> dat een fundering problemen krijgt of al heeft, op basis van kenmerken zoals bouwjaar, funderingstype, bodem en grondwater. Het is geen vaststelling van schade. Een woning met een hoog risico kan in goede staat zijn, en andersom. Het KCAF werkt met risicoklassen A (laag) tot en met E (hoog), die sinds 1 april 2026 ook een rol spelen bij taxaties.",
+    "lead": "Funderingsrisico is de <strong>kans</strong> dat een fundering problemen krijgt of al heeft, op basis van kenmerken zoals bouwjaar, funderingstype, bodem en grondwater. Het is geen vaststelling van schade. Een woning met een hoog risico kan in goede staat zijn, en andersom. Het KCAF-funderingsrisicorapport deelt woningen in risicoklassen A (laag) tot en met E (hoog) in; sinds 1 april 2026 neemt de taxateur die klasse op in het taxatierapport.",
     "hero_image": {
       "name": "jaren-dertig-woningen-straat",
       "alt": "Rij jaren-dertigwoningen in een groene straat"
@@ -1393,14 +1393,14 @@
       {
         "id": "wat-zijn-de-kcaf-risicoklassen",
         "h2": "Wat zijn de KCAF-risicoklassen?",
-        "answer": "Het KCAF (Kenniscentrum Aanpak Funderingsproblematiek) deelt woningen in risicoklassen in van A (laag) tot en met E (hoog); dat funderingsrisicorapport is volgens de huidige richtlijnen de basis voor de funderingsparagraaf in taxatierapporten.",
-        "body": "<p>Sinds 1 april 2026 werkt het model Taxatierapport Woonruimte van het <a href=\"https://www.nrvt.nl/\" rel=\"noopener\" target=\"_blank\">NRVT</a> met een vaste funderingsparagraaf. Bij klasse D of E is aanvullend funderingsonderzoek nodig voordat de taxatie kan worden afgerond. Bij klasse A tot en met C is aanvullend onderzoek in de regel vrijwillig. Stem de precieze gevolgen voor jouw situatie altijd af met je taxateur of geldverstrekker. Meer achtergrond vind je bij het <a href=\"https://www.kcaf.nl/\" rel=\"noopener\" target=\"_blank\">KCAF</a> en in <a href=\"/kennisbank/funderingsscan-en-taxatie/\">funderingsscan en taxatie</a>.</p><div class=\"callout callout-note\"><strong>Goed om te weten</strong><p>Een risicoklasse is een inschatting op basis van gegevens. Het is geen oordeel over de werkelijke staat van jouw fundering.</p></div>"
+        "answer": "Het KCAF (Kenniscentrum Aanpak Funderingsproblematiek) deelt het funderingsrisico in vijf klassen in: A geen risico, B licht risico, C verhoogd risico of onzekerheid, D hoog risico en E een vastgesteld funderingsprobleem. Het is een modelmatige inschatting op basis van gegevens zoals funderingstype, bodem, grondwater, archief en eerder onderzoek.",
+        "body": "<p>Sinds 1 april 2026 is de funderingsparagraaf in het model Taxatierapport Woonruimte van het <a href=\"https://www.nrvt.nl/\" rel=\"noopener\" target=\"_blank\">NRVT</a> gebaseerd op deze risicoklassen. Bij klasse D of E moet volgens het NRVT in principe eerst een aanvullend (beperkt) funderingsonderzoek plaatsvinden voordat de taxatie kan worden afgerond. Bij klasse A tot en met C is aanvullend onderzoek in de regel vrijwillig. Voor hypotheken met Nationale Hypotheek Garantie heeft NHG aangekondigd dat vanaf 1 januari 2027 bij klasse D of E een verkennend funderingsonderzoek verplicht wordt; die regel is nog niet definitief. Stem de precieze gevolgen voor jouw situatie altijd af met je taxateur of geldverstrekker. Meer achtergrond vind je bij het <a href=\"https://www.kcaf.nl/\" rel=\"noopener\" target=\"_blank\">KCAF</a>, in <a href=\"/kennisbank/funderingsscan-en-taxatie/\">funderingsscan en taxatie</a> en op de pagina <a href=\"/bronnen-en-richtlijnen/\">bronnen en richtlijnen</a>.</p><div class=\"callout callout-note\"><strong>Goed om te weten</strong><p>Een risicoklasse is een inschatting op basis van gegevens. Het is geen oordeel over de werkelijke staat van jouw fundering.</p></div>"
       },
       {
         "id": "voorbeeld-hoge-klasse-weinig-signalen",
         "h2": "Voorbeeld: hoge risicoklasse, weinig signalen",
-        "answer": "In dit voorbeeld valt een woning in een hoge risicoklasse terwijl de eigenaar weinig ziet; onderzoek moet dan uitwijzen hoe de woning er werkelijk voor staat.",
-        "body": "<p>Een koper ziet in de taxatie dat de woning in een hoge risicoklasse valt. De woning oogt goed: geen grote scheuren, deuren lopen vrij. De klasse is gebaseerd op bouwjaar, vermoedelijk funderingstype en de bodem in de buurt. Omdat het om een hoge klasse gaat, is aanvullend onderzoek nodig om de taxatie af te ronden. Een vooronderzoek geeft dan een onderbouwd beeld van de woning zelf, en kan uitmonden in geen directe aanleiding voor vervolgonderzoek, monitoren, aanvullend onderzoek of fase 1.</p>"
+        "answer": "In dit voorbeeld valt een woning in een hoge risicoklasse terwijl de eigenaar weinig ziet; onderzoek ter plaatse geeft dan een beter beeld van de woning zelf.",
+        "body": "<p>Een koper ziet in de taxatie dat de woning in een hoge risicoklasse valt. De woning oogt goed: geen grote scheuren, deuren lopen vrij. De klasse is gebaseerd op bouwjaar, vermoedelijk funderingstype en de bodem in de buurt. Omdat het om klasse D of E gaat, moet volgens het NRVT in principe eerst aanvullend onderzoek plaatsvinden voordat de taxatie kan worden afgerond. Een vooronderzoek geeft dan een onderbouwd beeld van de woning zelf, en kan uitmonden in geen directe aanleiding voor vervolgonderzoek, monitoren, aanvullend onderzoek of fase 1.</p>"
       },
       {
         "id": "hoe-wordt-risico-in-een-onderzoek-ingeschat",
@@ -1418,7 +1418,7 @@
     "faqs": [
       {
         "q": "Betekent een hoge risicoklasse dat mijn fundering slecht is?",
-        "a": "<p>Nee. Een risicoklasse is een inschatting van de kans op problemen op basis van gegevens. De werkelijke staat blijkt pas uit onderzoek aan de woning zelf.</p>"
+        "a": "<p>Nee. Een risicoklasse is een inschatting van de kans op problemen op basis van gegevens. Over de werkelijke situatie zegt pas onderzoek aan de woning zelf meer.</p>"
       },
       {
         "q": "Kan mijn risicoklasse veranderen na onderzoek?",
@@ -1430,7 +1430,7 @@
       },
       {
         "q": "Is onderzoek bij klasse A tot en met C zinvol?",
-        "a": "<p>In de regel is het dan vrijwillig. Het kan toch zinvol zijn als je signalen ziet of meer zekerheid wilt bij aankoop. Lees ook <a href=\"/kennisbank/heb-ik-een-funderingsscan-nodig/\">heb ik een funderingsscan nodig?</a></p>"
+        "a": "<p>In de regel is het dan vrijwillig. Het kan toch zinvol zijn als je signalen ziet of meer inzicht wilt bij aankoop. Lees ook <a href=\"/kennisbank/heb-ik-een-funderingsscan-nodig/\">heb ik een funderingsscan nodig?</a></p>"
       }
     ],
     "related": [
@@ -1478,10 +1478,10 @@
     ],
     "eyebrow": "Kennisbank",
     "h1": "Funderingsherstel: wat houdt het in en wie doet het?",
-    "lead": "Funderingsherstel is het <strong>vervangen, versterken of ondersteunen</strong> van een fundering die niet meer goed functioneert, bijvoorbeeld door de woning te onderschoren met nieuwe palen. Het wordt uitgevoerd door gespecialiseerde herstelpartijen op basis van een herstelplan. MV Funderingsscan voert zelf geen herstel uit, maar doet het onderzoek dat vooraf duidelijk maakt of herstel aan de orde is.",
+    "lead": "Funderingsherstel is het <strong>vervangen, versterken of ondersteunen</strong> van een fundering die niet meer goed functioneert, bijvoorbeeld door de woning te onderschoren met nieuwe palen. Het wordt uitgevoerd door gespecialiseerde herstelpartijen op basis van een herstelplan. MV Funderingsscan voert zelf geen herstel uit, maar doet het onderzoek dat vooraf meer duidelijkheid geeft over de vraag of herstel aan de orde kan zijn.",
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
-      "alt": "Specialist houdt een waterpas tegen de gevel van een woning"
+      "alt": "Persoon houdt een waterpas tegen de gevel van een woning"
     },
     "article": true,
     "sections": [
@@ -1507,7 +1507,7 @@
         "id": "waarom-eerst-onderzoek",
         "h2": "Waarom is onderzoek vooraf nodig?",
         "answer": "Zonder onderzoek is niet duidelijk of herstel nodig is, welk deel van de woning het betreft en wat de oorzaak is; dat zijn precies de vragen waar een herstelplan op voortbouwt.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Fase 0</strong><span>Archief- en bodemonderzoek, <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a> en een <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a> met advies.</span></li><li><strong>Fase 1</strong><span>Metingen zoals <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a> en <a href=\"/kennisbank/loodmeting/\">loodmeting</a>, als fase 0 daar aanleiding voor geeft.</span></li><li><strong>Nader onderzoek</strong><span>Bijvoorbeeld een inspectieput met eventueel houtonderzoek; dat valt buiten fase 0 en 1.</span></li><li><strong>Herstelplan</strong><span>Uitgewerkt door een gespecialiseerde partij, als het onderzoek daar aanleiding toe geeft.</span></li></ol><p>Niet elke woning doorloopt al deze stappen. Vaak blijkt al na <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a> dat er geen directe aanleiding is voor vervolgonderzoek, of dat monitoren volstaat. Meer over de meetfase lees je bij <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>.</p>"
+        "body": "<ol class=\"mini-steps\"><li><strong>Fase 0</strong><span>Archief- en bodemonderzoek, <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a> en een <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a> met advies.</span></li><li><strong>Fase 1</strong><span>Metingen zoals <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a> en <a href=\"/kennisbank/loodmeting/\">loodmeting</a>, als fase 0 daar aanleiding voor geeft.</span></li><li><strong>Nader onderzoek</strong><span>Bijvoorbeeld een inspectieput met eventueel houtonderzoek; dat valt buiten fase 0 en 1.</span></li><li><strong>Herstelplan</strong><span>Uitgewerkt door een gespecialiseerde partij, als het onderzoek daar aanleiding toe geeft.</span></li></ol><p>Niet elke woning doorloopt al deze stappen. Het kan al na <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a> blijken dat er geen directe aanleiding is voor vervolgonderzoek, of dat monitoren volstaat. Meer over de meetfase lees je bij <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>.</p>"
       },
       {
         "id": "voorbeeld-herstel-van-een-deel-van-de-woning",
@@ -1518,8 +1518,8 @@
       {
         "id": "wanneer-is-onderzoek-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
-        "answer": "Onderzoek is verstandig zodra je twijfelt over de staat van je fundering, nog vóórdat je offertes voor herstel opvraagt, zodat je weet of herstel nodig is en waar.",
-        "body": "<p>Een <a href=\"/quickscan-fundering/\">quickscan fundering</a> is de logische eerste stap. Wil je weten wat herstel kan kosten en waarom dat zo verschilt, lees dan <a href=\"/kennisbank/kosten-funderingsherstel/\">kosten funderingsherstel</a>. Wat er in het rapport staat, wordt uitgelegd op de pagina <a href=\"/funderingsrapport/\">funderingsrapport</a>.</p>"
+        "answer": "Onderzoek is verstandig zodra je twijfelt over de staat van je fundering, nog vóórdat je offertes voor herstel opvraagt, zodat je beter weet of herstel aan de orde kan zijn en waar.",
+        "body": "<p>Een <a href=\"/quickscan-fundering/\">quickscan fundering</a> is dan vaak een logische eerste stap. Wil je weten wat herstel kan kosten en waarom dat zo verschilt, lees dan <a href=\"/kennisbank/kosten-funderingsherstel/\">kosten funderingsherstel</a>. Wat er in het rapport staat, wordt uitgelegd op de pagina <a href=\"/funderingsrapport/\">funderingsrapport</a>.</p>"
       }
     ],
     "faqs": [
@@ -1608,7 +1608,7 @@
         "id": "waarom-eerst-onderzoek",
         "h2": "Waarom eerst onderzoek, dan offerte?",
         "answer": "Onderzoek laat zien óf herstel nodig is, welk deel van de woning het betreft en wat de oorzaak is; zonder die informatie kan een offerte te ruim of juist onvolledig zijn.",
-        "body": "<p>Wie zonder onderzoek offertes opvraagt, vergelijkt vaak appels met peren: elke partij maakt eigen aannames over oorzaak en omvang. Met een onafhankelijk onderzoek op tafel kunnen herstelpartijen op dezelfde basis rekenen. Bovendien blijkt na onderzoek regelmatig dat herstel (nog) niet nodig is en dat monitoren volstaat.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Vooronderzoek vanaf circa €350, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Vervolgonderzoek, indicatief €750 – €1.500, als fase 0 daar aanleiding voor geeft.</span></a></div><p>De bedragen voor onderzoek zijn indicatief; de definitieve prijs van fase 0 is vooraf bekend. Zie de pagina <a href=\"/prijzen/\">prijzen</a> voor de toelichting.</p>"
+        "body": "<p>Wie zonder onderzoek offertes opvraagt, vergelijkt vaak appels met peren: elke partij maakt eigen aannames over oorzaak en omvang. Met een onafhankelijk onderzoek op tafel kunnen herstelpartijen op dezelfde basis rekenen. Bovendien kan na onderzoek blijken dat herstel (nog) niet nodig is en dat monitoren volstaat.</p><div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Vooronderzoek vanaf circa €350, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Vervolgonderzoek, indicatief €750 – €1.500, als fase 0 daar aanleiding voor geeft.</span></a></div><p>De bedragen voor onderzoek zijn indicatief; de definitieve prijs van fase 0 is vooraf bekend. Zie de pagina <a href=\"/prijzen/\">prijzen</a> voor de toelichting.</p>"
       },
       {
         "id": "hoe-kom-je-tot-een-goede-offerte",
@@ -1620,7 +1620,7 @@
         "id": "regelingen-bij-je-gemeente",
         "h2": "Zijn er regelingen voor funderingsherstel?",
         "answer": "Er kunnen regelingen bestaan die per gemeente of regio verschillen; informeer daarom bij je gemeente welke mogelijkheden er voor jouw situatie zijn.",
-        "body": "<p>Gemeenten hebben soms zicht op lokale funderingsproblematiek en op mogelijke ondersteuning. Omdat de voorwaarden en beschikbaarheid kunnen verschillen en veranderen, is je gemeente het beste aanspreekpunt. Algemene informatie over funderingsproblematiek vind je bij het <a href=\"https://www.kcaf.nl/\" rel=\"noopener\" target=\"_blank\">KCAF</a>. Gaat het om schade die je toeschrijft aan gaswinning in Groningen, dan is het Instituut Mijnbouwschade Groningen het loket.</p>"
+        "body": "<p>Gemeenten hebben soms zicht op lokale funderingsproblematiek en op mogelijke ondersteuning. Omdat de voorwaarden en beschikbaarheid kunnen verschillen en veranderen, is je gemeente het beste aanspreekpunt. Daarnaast is sinds 1 juli 2025 het Fonds Duurzaam Funderingsherstel landelijk beschikbaar, met leningen met NHG-borging, en kun je in het Friese veenweidegebied terecht bij het Funderingsloket Fryslân. Algemene informatie over funderingsproblematiek vind je bij het <a href=\"https://www.kcaf.nl/\" rel=\"noopener\" target=\"_blank\">KCAF</a>. Gaat het om schade die je toeschrijft aan gaswinning in Groningen, dan is het Instituut Mijnbouwschade Groningen het loket.</p>"
       },
       {
         "id": "voorbeeld-twee-offertes-die-niet-te-vergelijken-zijn",
@@ -1740,7 +1740,7 @@
       {
         "id": "wanneer-is-onderzoek-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
-        "answer": "Onderzoek is verstandig bij aankoop van een oudere woning in Friesland, bij signalen zoals scheuren, scheefstand of klemmende deuren, en als je woning in een veen- of kleigebied staat en je meer zekerheid wilt.",
+        "answer": "Onderzoek is verstandig bij aankoop van een oudere woning in Friesland, bij signalen zoals scheuren, scheefstand of klemmende deuren, en als je woning in een veen- of kleigebied staat en je meer inzicht wilt.",
         "body": "<p>MV Funderingsscan is gevestigd in Leeuwarden en werkt in heel Friesland. Lees meer over onze aanpak in de provincie op <a href=\"/funderingsonderzoek-friesland/\">funderingsonderzoek Friesland</a>, bekijk de <a href=\"/funderingsscan-friesland/\">funderingsscan in Friesland</a> of het hele <a href=\"/werkgebied/\">werkgebied</a>.</p>"
       }
     ],
@@ -1799,7 +1799,7 @@
     ],
     "eyebrow": "Kennisbank",
     "h1": "Funderingsproblemen in Groningen: de achtergrond",
-    "lead": "Funderingsproblemen in Groningen hebben twee achtergronden: de <strong>bodem</strong>, met zware zeeklei in het noorden, veen in het oosten en zuidoosten en zand op de Hondsrug, en de <strong>bodembeweging door gaswinning</strong>. Schade door gaswinning meld je bij het Instituut Mijnbouwschade Groningen (IMG). Een funderingsscan is iets anders: onderzoek naar de staat en het risico van je fundering.",
+    "lead": "Funderingsproblemen in Groningen hebben twee achtergronden: de <strong>bodem</strong>, met zware zeeklei in het noorden, veen in het oosten en zuidoosten en zand op de Hondsrug, en de <strong>gevolgen van de gaswinning</strong>, zoals aardbevingsschade en versterking. Schade door gaswinning meld je bij het Instituut Mijnbouwschade Groningen (IMG). Een funderingsscan is iets anders: onderzoek naar het funderingsrisico van je woning en de signalen die erop kunnen wijzen.",
     "hero_image": {
       "name": "jaren-dertig-woningen-straat",
       "alt": "Rij jaren-dertigwoningen in een groene straat"
@@ -1815,8 +1815,8 @@
       {
         "id": "wat-is-de-rol-van-gaswinning",
         "h2": "Wat is de rol van gaswinning?",
-        "answer": "Gaswinning in Groningen veroorzaakt bodembeweging, zowel in de vorm van aardbevingen als bodemdaling; dat staat naast de bodemfactoren die ook elders in het noorden spelen.",
-        "body": "<p>In delen van de provincie, zoals rond Appingedam en Delfzijl, liggen woningen in het gebied met aardbevingen door gaswinning. In Delfzijl is er veel versterkingswerk aan woningen geweest of nog gaande. Voor eigenaren is het belangrijk om twee vragen uit elkaar te houden: is er schade die je toeschrijft aan gaswinning, en hoe staat het met de fundering van je woning in het algemeen?</p><div class=\"callout callout-warn\"><strong>Geen schademelding</strong><p>Schade die je toeschrijft aan gaswinning meld je bij het <a href=\"https://www.schadedoormijnbouw.nl/\" rel=\"noopener\" target=\"_blank\">Instituut Mijnbouwschade Groningen (IMG)</a>. Een funderingsscan van MV Funderingsscan is geen schademelding en vervangt die procedure niet.</p></div>"
+        "answer": "De gaswinning uit het Groningenveld heeft geleid tot aardbevingen en bodemdaling; de winning is beëindigd, maar schadeafhandeling en versterking lopen nog. Dat staat naast de bodemfactoren die ook elders in het noorden spelen.",
+        "body": "<p>In delen van de provincie, zoals rond Appingedam en Delfzijl, liggen woningen in het gebied met aardbevingen door gaswinning. In Delfzijl is er veel versterkingswerk aan woningen geweest of nog gaande. De schotelvormige bodemdaling door gaswinning geeft volgens NAM zelf geen gebouwschade; aardbevingen zijn een ander mechanisme. Voor eigenaren is het belangrijk om twee vragen uit elkaar te houden: is er schade die je toeschrijft aan gaswinning, en hoe staat het met de fundering van je woning in het algemeen?</p><div class=\"callout callout-warn\"><strong>Geen schademelding</strong><p>Schade die je toeschrijft aan gaswinning meld je bij het <a href=\"https://www.schadedoormijnbouw.nl/\" rel=\"noopener\" target=\"_blank\">Instituut Mijnbouwschade Groningen (IMG)</a>. Een funderingsscan van MV Funderingsscan is geen schademelding en vervangt die procedure niet.</p></div>"
       },
       {
         "id": "groningen-stad-per-wijk-verschillend",
@@ -1827,26 +1827,26 @@
       {
         "id": "appingedam-en-delfzijl",
         "h2": "Wat maakt Appingedam en Delfzijl bijzonder?",
-        "answer": "Appingedam en Delfzijl liggen beide in een kleigebied én in het gebied met aardbevingen door gaswinning, waardoor zowel bodemfactoren als bodembeweging een rol spelen.",
+        "answer": "Appingedam en Delfzijl liggen beide in een kleigebied én in het gebied met aardbevingen door gaswinning, waardoor zowel bodemfactoren als de gevolgen van aardbevingen een rol spelen.",
         "body": "<p>Appingedam is een historische stad aan het Damsterdiep, bekend om de hangende keukens boven het water. Delfzijl is een havenstad aan de Eems. In beide plaatsen is het extra belangrijk om helder te hebben welk onderzoek je laat doen en waarvoor: een schademelding gaat via het IMG, een beoordeling van de fundering via funderingsonderzoek.</p>"
       },
       {
         "id": "voorbeeld-scheur-in-het-aardbevingsgebied",
         "h2": "Voorbeeld: een scheur in het aardbevingsgebied",
         "answer": "In dit voorbeeld ziet een eigenaar een nieuwe scheur en vraagt zich af of hij die moet melden of moet laten onderzoeken; dat zijn twee verschillende routes.",
-        "body": "<p>Een eigenaar van een oudere woning op klei in het aardbevingsgebied ziet een nieuwe scheur in de zijgevel. Denkt hij dat gaswinning de oorzaak is, dan meldt hij de schade bij het IMG. Wil hij daarnaast weten hoe de fundering ervoor staat, bijvoorbeeld omdat hij de woning wil verkopen of omdat er ook deuren klemmen, dan is funderingsonderzoek een aparte stap. De scheur kan ook samenhangen met klei, een latei of een aanbouw; dat zegt een foto niet.</p><p>Het helpt in zo'n situatie om de scheur vanaf het begin goed vast te leggen, met foto's, een liniaal ernaast en de datum. Die informatie is bruikbaar voor beide routes.</p>"
+        "body": "<p>Een eigenaar van een oudere woning op klei in het aardbevingsgebied ziet een nieuwe scheur in de zijgevel. Denkt hij dat gaswinning de oorzaak is, dan meldt hij de schade bij het IMG. Wil hij daarnaast weten of er aanwijzingen zijn voor funderingsproblemen, bijvoorbeeld omdat hij de woning wil verkopen of omdat er ook deuren klemmen, dan is funderingsonderzoek een aparte stap. De scheur kan ook samenhangen met klei, een latei of een aanbouw; dat zegt een foto niet.</p><p>Het helpt in zo'n situatie om de scheur vanaf het begin goed vast te leggen, met foto's, een liniaal ernaast en de datum. Die informatie is bruikbaar voor beide routes.</p>"
       },
       {
         "id": "wanneer-is-onderzoek-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
-        "answer": "Onderzoek is verstandig bij aankoop of verkoop van een oudere woning in Groningen, bij signalen zoals scheuren, scheefstand of klemmende deuren, of als je los van een schademelding wilt weten hoe je fundering ervoor staat.",
+        "answer": "Onderzoek is verstandig bij aankoop of verkoop van een oudere woning in Groningen, bij signalen zoals scheuren, scheefstand of klemmende deuren, of als je los van een schademelding een onderbouwde inschatting van je funderingsrisico wilt.",
         "body": "<p>MV Funderingsscan werkt in de hele provincie Groningen. Lees meer op <a href=\"/funderingsonderzoek-groningen/\">funderingsonderzoek Groningen</a> of bekijk de <a href=\"/funderingsscan-groningen/\">funderingsscan in Groningen</a>. Wat er in het vooronderzoek zit, staat bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>.</p>"
       }
     ],
     "faqs": [
       {
         "q": "Kan ik met een funderingsscan schade door gaswinning melden?",
-        "a": "<p>Nee. Schade die je toeschrijft aan gaswinning meld je bij het Instituut Mijnbouwschade Groningen (IMG). Een funderingsscan is onderzoek naar de staat en het risico van je fundering, geen schademelding.</p>"
+        "a": "<p>Nee. Schade die je toeschrijft aan gaswinning meld je bij het Instituut Mijnbouwschade Groningen (IMG). Een funderingsscan is onderzoek naar het funderingsrisico van je woning, geen schademelding.</p>"
       },
       {
         "q": "Zijn alle funderingsproblemen in Groningen door gaswinning?",

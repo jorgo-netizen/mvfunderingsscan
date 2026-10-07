@@ -1,1154 +1,1163 @@
 [
- {
-  "path": "/",
-  "label": "Home",
-  "group": "home",
-  "file": "(handgebouwd)",
-  "minWords": 0,
-  "keyword": "funderingsscan friesland groningen",
-  "intent": "commercieel"
- },
- {
-  "path": "/contact/",
-  "label": "Contact",
-  "group": "over",
-  "file": "(handgebouwd)",
-  "minWords": 0,
-  "keyword": "contact funderingsscan",
-  "intent": "transactioneel"
- },
- {
-  "path": "/funderingsscan-aanvragen/",
-  "label": "Funderingsscan aanvragen",
-  "group": "over",
-  "file": "(handgebouwd)",
-  "minWords": 0,
-  "keyword": "funderingsscan aanvragen",
-  "intent": "transactioneel"
- },
- {
-  "path": "/funderingsscan-check/",
-  "label": "Funderingscheck",
-  "group": "over",
-  "file": "(handgebouwd)",
-  "minWords": 0,
-  "keyword": "funderingsscan check",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/",
-  "label": "Kennisbank",
-  "group": "kennisbank",
-  "file": "(handgebouwd)",
-  "minWords": 0,
-  "keyword": "kennisbank funderingsonderzoek",
-  "intent": "informatief"
- },
- {
-  "path": "/funderingsscan/",
-  "label": "Funderingsscan",
-  "group": "diensten",
-  "file": "pillar-a.json",
-  "minWords": 3000,
-  "keyword": "funderingsscan",
-  "intent": "commercieel"
- },
- {
-  "path": "/quickscan-fundering/",
-  "label": "Quickscan fundering",
-  "group": "diensten",
-  "file": "pillar-a.json",
-  "minWords": 2800,
-  "keyword": "quickscan fundering",
-  "intent": "commercieel"
- },
- {
-  "path": "/fase-0-funderingsonderzoek/",
-  "label": "Fase 0 funderingsonderzoek",
-  "group": "diensten",
-  "file": "pillar-b.json",
-  "minWords": 3800,
-  "keyword": "fase 0 funderingsonderzoek",
-  "intent": "commercieel"
- },
- {
-  "path": "/fase-1-funderingsonderzoek/",
-  "label": "Fase 1 funderingsonderzoek",
-  "group": "diensten",
-  "file": "services-c.json",
-  "minWords": 2200,
-  "keyword": "fase 1 funderingsonderzoek",
-  "intent": "commercieel"
- },
- {
-  "path": "/funderingsinspectie/",
-  "label": "Funderingsinspectie",
-  "group": "diensten",
-  "file": "services-c.json",
-  "minWords": 1300,
-  "keyword": "funderingsinspectie",
-  "intent": "commercieel"
- },
- {
-  "path": "/funderingsmetingen/",
-  "label": "Funderingsmetingen",
-  "group": "diensten",
-  "file": "services-c.json",
-  "minWords": 1300,
-  "keyword": "funderingsmetingen",
-  "intent": "commercieel"
- },
- {
-  "path": "/funderingsrapport/",
-  "label": "Funderingsrapport",
-  "group": "diensten",
-  "file": "services-c.json",
-  "minWords": 1300,
-  "keyword": "funderingsrapport",
-  "intent": "commercieel"
- },
- {
-  "path": "/prijzen/",
-  "label": "Prijzen",
-  "group": "diensten",
-  "file": "services-c.json",
-  "minWords": 1000,
-  "keyword": "kosten funderingsscan",
-  "intent": "commercieel"
- },
- {
-  "path": "/funderingsonderzoek-woning/",
-  "label": "Funderingsonderzoek woning",
-  "group": "aankoop",
-  "file": "situations-d.json",
-  "minWords": 1400,
-  "keyword": "funderingsonderzoek woning",
-  "intent": "commercieel"
- },
- {
-  "path": "/funderingsonderzoek-bij-aankoop/",
-  "label": "Funderingsonderzoek bij aankoop",
-  "group": "aankoop",
-  "file": "situations-d.json",
-  "minWords": 2800,
-  "keyword": "funderingsonderzoek bij aankoop",
-  "intent": "commercieel"
- },
- {
-  "path": "/funderingsonderzoek-bij-verkoop/",
-  "label": "Funderingsonderzoek bij verkoop",
-  "group": "aankoop",
-  "file": "situations-d.json",
-  "minWords": 1500,
-  "keyword": "funderingsonderzoek bij verkoop",
-  "intent": "commercieel"
- },
- {
-  "path": "/funderingsonderzoek-taxatie/",
-  "label": "Funderingsonderzoek en taxatie",
-  "group": "aankoop",
-  "file": "situations-d.json",
-  "minWords": 1600,
-  "keyword": "funderingsonderzoek taxatie",
-  "intent": "informatief"
- },
- {
-  "path": "/over-ons/",
-  "label": "Over ons",
-  "group": "over",
-  "file": "situations-d.json",
-  "minWords": 800,
-  "keyword": "mv funderingsscan",
-  "intent": "navigatie"
- },
- {
-  "path": "/werkwijze/",
-  "label": "Werkwijze",
-  "group": "over",
-  "file": "situations-d.json",
-  "minWords": 1400,
-  "keyword": "werkwijze funderingsonderzoek",
-  "intent": "informatief"
- },
- {
-  "path": "/funderingsproblemen/",
-  "label": "Funderingsproblemen",
-  "group": "problemen",
-  "file": "problems-e.json",
-  "minWords": 1800,
-  "keyword": "funderingsproblemen",
-  "intent": "informatief"
- },
- {
-  "path": "/scheuren-in-gevel/",
-  "label": "Scheuren in gevel",
-  "group": "problemen",
-  "file": "problems-e.json",
-  "minWords": 2800,
-  "keyword": "scheuren in gevel",
-  "intent": "informatief"
- },
- {
-  "path": "/verzakking-woning/",
-  "label": "Verzakking woning",
-  "group": "problemen",
-  "file": "problems-e.json",
-  "minWords": 1500,
-  "keyword": "verzakking woning",
-  "intent": "informatief"
- },
- {
-  "path": "/scheefstand-woning/",
-  "label": "Scheefstand woning",
-  "group": "problemen",
-  "file": "problems-e.json",
-  "minWords": 1300,
-  "keyword": "scheefstand woning",
-  "intent": "informatief"
- },
- {
-  "path": "/klemmende-deuren-en-ramen/",
-  "label": "Klemmende deuren en ramen",
-  "group": "problemen",
-  "file": "problems-e.json",
-  "minWords": 1100,
-  "keyword": "klemmende deuren fundering",
-  "intent": "informatief"
- },
- {
-  "path": "/problemen-met-houten-palen/",
-  "label": "Problemen met houten palen",
-  "group": "problemen",
-  "file": "problems-e.json",
-  "minWords": 1600,
-  "keyword": "houten paalfundering problemen",
-  "intent": "informatief"
- },
- {
-  "path": "/fundering-op-staal/",
-  "label": "Fundering op staal",
-  "group": "problemen",
-  "file": "problems-e.json",
-  "minWords": 1500,
-  "keyword": "fundering op staal",
-  "intent": "informatief"
- },
- {
-  "path": "/funderingsproblemen-veen/",
-  "label": "Funderingsproblemen veen",
-  "group": "problemen",
-  "file": "problems-e.json",
-  "minWords": 1200,
-  "keyword": "funderingsproblemen veen",
-  "intent": "informatief"
- },
- {
-  "path": "/funderingsproblemen-klei/",
-  "label": "Funderingsproblemen klei",
-  "group": "problemen",
-  "file": "problems-e.json",
-  "minWords": 1200,
-  "keyword": "funderingsproblemen klei",
-  "intent": "informatief"
- },
- {
-  "path": "/werkgebied/",
-  "label": "Werkgebied",
-  "group": "regio",
-  "file": "regio-f.json",
-  "minWords": 900,
-  "keyword": "werkgebied funderingsonderzoek",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-friesland/",
-  "label": "Funderingsonderzoek Friesland",
-  "group": "regio",
-  "file": "regio-f.json",
-  "minWords": 1100,
-  "keyword": "funderingsonderzoek friesland",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsscan-friesland/",
-  "label": "Funderingsscan Friesland",
-  "group": "regio",
-  "file": "regio-f.json",
-  "minWords": 1100,
-  "keyword": "funderingsscan friesland",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-groningen/",
-  "label": "Funderingsonderzoek Groningen",
-  "group": "regio",
-  "file": "regio-f.json",
-  "minWords": 1100,
-  "keyword": "funderingsonderzoek groningen",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsscan-groningen/",
-  "label": "Funderingsscan Groningen",
-  "group": "regio",
-  "file": "regio-f.json",
-  "minWords": 1100,
-  "keyword": "funderingsscan groningen",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-leeuwarden/",
-  "label": "Leeuwarden",
-  "group": "regio",
-  "file": "regio-f.json",
-  "minWords": 1100,
-  "keyword": "funderingsonderzoek leeuwarden",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-sneek/",
-  "label": "Sneek",
-  "group": "regio",
-  "file": "regio-f.json",
-  "minWords": 1100,
-  "keyword": "funderingsonderzoek sneek",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-harlingen/",
-  "label": "Harlingen",
-  "group": "regio",
-  "file": "regio-f.json",
-  "minWords": 1100,
-  "keyword": "funderingsonderzoek harlingen",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-drachten/",
-  "label": "Drachten",
-  "group": "regio",
-  "file": "regio-f.json",
-  "minWords": 1100,
-  "keyword": "funderingsonderzoek drachten",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-heerenveen/",
-  "label": "Heerenveen",
-  "group": "regio",
-  "file": "regio-f.json",
-  "minWords": 1100,
-  "keyword": "funderingsonderzoek heerenveen",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-groningen-stad/",
-  "label": "Groningen stad",
-  "group": "regio",
-  "file": "regio-f.json",
-  "minWords": 1100,
-  "keyword": "funderingsonderzoek groningen stad",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-appingedam/",
-  "label": "Appingedam",
-  "group": "regio",
-  "file": "regio-f.json",
-  "minWords": 1100,
-  "keyword": "funderingsonderzoek appingedam",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-delfzijl/",
-  "label": "Delfzijl",
-  "group": "regio",
-  "file": "regio-f.json",
-  "minWords": 1100,
-  "keyword": "funderingsonderzoek delfzijl",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/kennisbank/wat-is-een-funderingsscan/",
-  "label": "Wat is een funderingsscan?",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "wat is een funderingsscan",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/wat-is-een-quickscan-fundering/",
-  "label": "Wat is een quickscan fundering?",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "wat is een quickscan fundering",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/wat-is-fase-0/",
-  "label": "Wat is fase 0?",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "wat is fase 0",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/wat-is-fase-1/",
-  "label": "Wat is fase 1?",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "wat is fase 1",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/verschil-fase-0-en-fase-1/",
-  "label": "Verschil fase 0 en fase 1",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "verschil fase 0 en fase 1",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/wat-kost-een-funderingsscan/",
-  "label": "Wat kost een funderingsscan?",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "wat kost een funderingsscan",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/wat-kost-fase-0/",
-  "label": "Wat kost fase 0?",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "wat kost fase 0",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/hoe-lang-duurt-funderingsonderzoek/",
-  "label": "Hoe lang duurt funderingsonderzoek?",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "hoe lang duurt funderingsonderzoek",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/wat-wordt-onderzocht/",
-  "label": "Wat wordt onderzocht?",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "wat wordt onderzocht",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/wanneer-funderingsonderzoek/",
-  "label": "Wanneer funderingsonderzoek?",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "wanneer funderingsonderzoek",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/heb-ik-een-funderingsscan-nodig/",
-  "label": "Heb ik een funderingsscan nodig?",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "heb ik een funderingsscan nodig",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/funderingsscan-bij-aankoop/",
-  "label": "Funderingsscan bij aankoop",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "funderingsscan bij aankoop",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/funderingsscan-bij-verkoop/",
-  "label": "Funderingsscan bij verkoop",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "funderingsscan bij verkoop",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/funderingsscan-en-taxatie/",
-  "label": "Funderingsscan en taxatie",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "funderingsscan en taxatie",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/funderingsscan-en-hypotheek/",
-  "label": "Funderingsscan en hypotheek",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "funderingsscan en hypotheek",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/funderingsrapport-lezen/",
-  "label": "Funderingsrapport lezen",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "funderingsrapport lezen",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/wat-na-een-quickscan/",
-  "label": "Wat na een quickscan?",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "wat na een quickscan",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/wanneer-fase-1/",
-  "label": "Wanneer fase 1?",
-  "group": "kennisbank",
-  "file": "kennisbank-g.json",
-  "minWords": 800,
-  "keyword": "wanneer fase 1",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/scheuren-in-woning/",
-  "label": "Scheuren in woning",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "scheuren in woning",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/scheuren-in-gevel/",
-  "label": "Scheuren in gevel",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "scheuren in gevel",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/scheuren-in-metselwerk/",
-  "label": "Scheuren in metselwerk",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "scheuren in metselwerk",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/verzakking-woning/",
-  "label": "Verzakking woning",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "verzakking woning",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/scheefstand/",
-  "label": "Scheefstand",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "scheefstand",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/klemmende-deuren/",
-  "label": "Klemmende deuren",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "klemmende deuren",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/kruipruimte-inspectie/",
-  "label": "Kruipruimte-inspectie",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "kruipruimte-inspectie",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/houten-paalfundering/",
-  "label": "Houten paalfundering",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "houten paalfundering",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/fundering-op-staal/",
-  "label": "Fundering op staal",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "fundering op staal",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/veenbodem/",
-  "label": "Veenbodem",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "veenbodem",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/kleibodem/",
-  "label": "Kleibodem",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "kleibodem",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/bodemdaling/",
-  "label": "Bodemdaling",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "bodemdaling",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/grondwater-en-fundering/",
-  "label": "Grondwater en fundering",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "grondwater en fundering",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/funderingsrisico/",
-  "label": "Funderingsrisico",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "funderingsrisico",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/funderingsherstel/",
-  "label": "Funderingsherstel",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "funderingsherstel",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/kosten-funderingsherstel/",
-  "label": "Kosten funderingsherstel",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "kosten funderingsherstel",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/funderingsproblemen-friesland/",
-  "label": "Funderingsproblemen Friesland",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "funderingsproblemen friesland",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/funderingsproblemen-groningen/",
-  "label": "Funderingsproblemen Groningen",
-  "group": "kennisbank",
-  "file": "kennisbank-h.json",
-  "minWords": 800,
-  "keyword": "funderingsproblemen groningen",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/lintvoegwaterpassing/",
-  "label": "Lintvoegwaterpassing",
-  "group": "kennisbank",
-  "file": "methods-i.json",
-  "minWords": 2000,
-  "keyword": "lintvoegwaterpassing",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/loodmeting/",
-  "label": "Loodmeting",
-  "group": "kennisbank",
-  "file": "methods-i.json",
-  "minWords": 1800,
-  "keyword": "loodmeting",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/vloerveldwaterpassing/",
-  "label": "Vloerveldwaterpassing",
-  "group": "kennisbank",
-  "file": "methods-j.json",
-  "minWords": 1800,
-  "keyword": "vloerveldwaterpassing",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/scheurpatronen/",
-  "label": "Scheurpatronen",
-  "group": "kennisbank",
-  "file": "methods-j.json",
-  "minWords": 2000,
-  "keyword": "scheurpatronen",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/scheefstandsmeting/",
-  "label": "Scheefstandsmeting",
-  "group": "kennisbank",
-  "file": "measure-k.json",
-  "minWords": 1000,
-  "keyword": "scheefstand gevel meten",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/hoogtemeting/",
-  "label": "Hoogtemeting",
-  "group": "kennisbank",
-  "file": "measure-k.json",
-  "minWords": 1000,
-  "keyword": "hoogtemeting woning",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/zettingsmeting/",
-  "label": "Zettingsmeting",
-  "group": "kennisbank",
-  "file": "measure-k.json",
-  "minWords": 1000,
-  "keyword": "zettingsmeting",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/scheurmeting/",
-  "label": "Scheurmeting",
-  "group": "kennisbank",
-  "file": "measure-k.json",
-  "minWords": 1000,
-  "keyword": "scheurmeting",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/monitoring-scheuren/",
-  "label": "Scheuren monitoren",
-  "group": "kennisbank",
-  "file": "measure-k.json",
-  "minWords": 1000,
-  "keyword": "scheuren monitoren",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/maaiveldhoogte/",
-  "label": "Maaiveldhoogte",
-  "group": "kennisbank",
-  "file": "measure-k.json",
-  "minWords": 900,
-  "keyword": "maaiveldhoogte",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/grondwatermeting/",
-  "label": "Grondwatermeting",
-  "group": "kennisbank",
-  "file": "measure-k.json",
-  "minWords": 900,
-  "keyword": "grondwatermeting",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/wat-is-funderingsonderzoek/",
-  "label": "Wat is funderingsonderzoek?",
-  "group": "kennisbank",
-  "file": "process-l.json",
-  "minWords": 1200,
-  "keyword": "wat is funderingsonderzoek",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/archiefonderzoek-fundering/",
-  "label": "Archiefonderzoek fundering",
-  "group": "kennisbank",
-  "file": "process-l.json",
-  "minWords": 1500,
-  "keyword": "archiefonderzoek fundering",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/visuele-funderingsinspectie/",
-  "label": "Visuele funderingsinspectie",
-  "group": "kennisbank",
-  "file": "process-l.json",
-  "minWords": 1600,
-  "keyword": "visuele funderingsinspectie",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/funderingsrisico-inschatting/",
-  "label": "Funderingsrisico-inschatting",
-  "group": "kennisbank",
-  "file": "process-l.json",
-  "minWords": 1500,
-  "keyword": "funderingsrisico inschatting",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/zetting/",
-  "label": "Zetting",
-  "group": "kennisbank",
-  "file": "concepts-m.json",
-  "minWords": 1000,
-  "keyword": "zetting woning",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/ongelijke-zetting/",
-  "label": "Ongelijke zetting",
-  "group": "kennisbank",
-  "file": "concepts-m.json",
-  "minWords": 1000,
-  "keyword": "ongelijke zetting",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/paalfundering/",
-  "label": "Paalfundering",
-  "group": "kennisbank",
-  "file": "concepts-m.json",
-  "minWords": 1000,
-  "keyword": "paalfundering",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/paalrot/",
-  "label": "Paalrot",
-  "group": "kennisbank",
-  "file": "concepts-m.json",
-  "minWords": 1000,
-  "keyword": "paalrot",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/zandbodem/",
-  "label": "Zandbodem",
-  "group": "kennisbank",
-  "file": "concepts-m.json",
-  "minWords": 850,
-  "keyword": "zandbodem fundering",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/peilverschillen/",
-  "label": "Peilverschillen",
-  "group": "kennisbank",
-  "file": "concepts-m2.json",
-  "minWords": 850,
-  "keyword": "grondwaterpeil fundering",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/scheuren-boven-kozijnen/",
-  "label": "Scheuren boven kozijnen",
-  "group": "kennisbank",
-  "file": "concepts-m2.json",
-  "minWords": 900,
-  "keyword": "scheuren boven kozijnen",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/scheuren-bij-aanbouw/",
-  "label": "Scheuren bij aanbouw",
-  "group": "kennisbank",
-  "file": "concepts-m2.json",
-  "minWords": 900,
-  "keyword": "scheur aanbouw",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/klemmende-ramen/",
-  "label": "Klemmende ramen",
-  "group": "kennisbank",
-  "file": "concepts-m2.json",
-  "minWords": 850,
-  "keyword": "klemmende ramen",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/helling-in-vloer/",
-  "label": "Helling in de vloer",
-  "group": "kennisbank",
-  "file": "concepts-m2.json",
-  "minWords": 900,
-  "keyword": "scheve vloer",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/funderingsonderzoek-voor-bod/",
-  "label": "Funderingsonderzoek vóór je bod",
-  "group": "kennisbank",
-  "file": "buying-n.json",
-  "minWords": 900,
-  "keyword": "funderingsonderzoek voor bod",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/funderingsrisico-bij-aankoop/",
-  "label": "Funderingsrisico bij aankoop",
-  "group": "kennisbank",
-  "file": "buying-n.json",
-  "minWords": 900,
-  "keyword": "funderingsrisico aankoop",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/funderingsrapport-voor-verkoper/",
-  "label": "Funderingsrapport voor verkoper",
-  "group": "kennisbank",
-  "file": "buying-n.json",
-  "minWords": 900,
-  "keyword": "funderingsrapport verkoper",
-  "intent": "informatief"
- },
- {
-  "path": "/kennisbank/kosten-fase-1/",
-  "label": "Kosten fase 1",
-  "group": "kennisbank",
-  "file": "buying-n.json",
-  "minWords": 850,
-  "keyword": "kosten fase 1 funderingsonderzoek",
-  "intent": "informatief"
- },
- {
-  "path": "/fase-0-funderingsonderzoek-aankoop/",
-  "label": "Fase 0 bij aankoop",
-  "group": "diensten",
-  "file": "buying-n.json",
-  "minWords": 1500,
-  "keyword": "fase 0 funderingsonderzoek aankoop",
-  "intent": "commercieel"
- },
- {
-  "path": "/funderingsonderzoek-franeker/",
-  "label": "Franeker",
-  "group": "regio",
-  "file": "regio-o.json",
-  "minWords": 1050,
-  "keyword": "funderingsonderzoek franeker",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-haren/",
-  "label": "Haren",
-  "group": "regio",
-  "file": "regio-o.json",
-  "minWords": 1050,
-  "keyword": "funderingsonderzoek haren",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-veendam/",
-  "label": "Veendam",
-  "group": "regio",
-  "file": "regio-o.json",
-  "minWords": 1050,
-  "keyword": "funderingsonderzoek veendam",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-winschoten/",
-  "label": "Winschoten",
-  "group": "regio",
-  "file": "regio-o.json",
-  "minWords": 1050,
-  "keyword": "funderingsonderzoek winschoten",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsscan-leeuwarden/",
-  "label": "Funderingsscan Leeuwarden",
-  "group": "regio",
-  "file": "regio-o.json",
-  "minWords": 1050,
-  "keyword": "funderingsscan leeuwarden",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/kennisbank/begrippenlijst/",
-  "label": "Begrippenlijst",
-  "group": "kennisbank",
-  "file": "(handgebouwd)",
-  "minWords": 0,
-  "keyword": "begrippen funderingsonderzoek",
-  "intent": "informatief"
- },
- {
-  "path": "/funderingsonderzoek-achtkarspelen/",
-  "label": "Gemeente Achtkarspelen",
-  "group": "regio",
-  "file": "gemeenten-q.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek buitenpost",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-dantumadiel/",
-  "label": "Gemeente Dantumadiel",
-  "group": "regio",
-  "file": "gemeenten-q.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek damwâld",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-de-fryske-marren/",
-  "label": "Gemeente De Fryske Marren",
-  "group": "regio",
-  "file": "gemeenten-q.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek joure",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-noardeast-fryslan/",
-  "label": "Gemeente Noardeast-Fryslân",
-  "group": "regio",
-  "file": "gemeenten-q.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek dokkum",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-ooststellingwerf/",
-  "label": "Gemeente Ooststellingwerf",
-  "group": "regio",
-  "file": "gemeenten-q.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek oosterwolde",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-opsterland/",
-  "label": "Gemeente Opsterland",
-  "group": "regio",
-  "file": "gemeenten-r.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek gorredijk",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-tytsjerksteradiel/",
-  "label": "Gemeente Tytsjerksteradiel",
-  "group": "regio",
-  "file": "gemeenten-r.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek burgum",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-weststellingwerf/",
-  "label": "Gemeente Weststellingwerf",
-  "group": "regio",
-  "file": "gemeenten-r.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek wolvega",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-eemsdelta/",
-  "label": "Gemeente Eemsdelta",
-  "group": "regio",
-  "file": "gemeenten-r.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek appingedam",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-het-hogeland/",
-  "label": "Gemeente Het Hogeland",
-  "group": "regio",
-  "file": "gemeenten-r.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek winsum",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-midden-groningen/",
-  "label": "Gemeente Midden-Groningen",
-  "group": "regio",
-  "file": "gemeenten-s.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek hoogezand",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-pekela/",
-  "label": "Gemeente Pekela",
-  "group": "regio",
-  "file": "gemeenten-s.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek oude pekela",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-stadskanaal/",
-  "label": "Gemeente Stadskanaal",
-  "group": "regio",
-  "file": "gemeenten-s.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek stadskanaal",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-westerkwartier/",
-  "label": "Gemeente Westerkwartier",
-  "group": "regio",
-  "file": "gemeenten-s.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek zuidhorn",
-  "intent": "lokaal-commercieel"
- },
- {
-  "path": "/funderingsonderzoek-westerwolde/",
-  "label": "Gemeente Westerwolde",
-  "group": "regio",
-  "file": "gemeenten-s.json",
-  "minWords": 950,
-  "keyword": "funderingsonderzoek ter apel",
-  "intent": "lokaal-commercieel"
- }
+  {
+    "path": "/",
+    "label": "Home",
+    "group": "home",
+    "file": "(handgebouwd)",
+    "minWords": 0,
+    "keyword": "funderingsscan friesland groningen",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/contact/",
+    "label": "Contact",
+    "group": "over",
+    "file": "(handgebouwd)",
+    "minWords": 0,
+    "keyword": "contact funderingsscan",
+    "intent": "transactioneel"
+  },
+  {
+    "path": "/funderingsscan-aanvragen/",
+    "label": "Funderingsscan aanvragen",
+    "group": "over",
+    "file": "(handgebouwd)",
+    "minWords": 0,
+    "keyword": "funderingsscan aanvragen",
+    "intent": "transactioneel"
+  },
+  {
+    "path": "/funderingsscan-check/",
+    "label": "Funderingscheck",
+    "group": "over",
+    "file": "(handgebouwd)",
+    "minWords": 0,
+    "keyword": "funderingsscan check",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/",
+    "label": "Kennisbank",
+    "group": "kennisbank",
+    "file": "(handgebouwd)",
+    "minWords": 0,
+    "keyword": "kennisbank funderingsonderzoek",
+    "intent": "informatief"
+  },
+  {
+    "path": "/funderingsscan/",
+    "label": "Funderingsscan",
+    "group": "diensten",
+    "file": "pillar-a.json",
+    "minWords": 3000,
+    "keyword": "funderingsscan",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/quickscan-fundering/",
+    "label": "Quickscan fundering",
+    "group": "diensten",
+    "file": "pillar-a.json",
+    "minWords": 2800,
+    "keyword": "quickscan fundering",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/fase-0-funderingsonderzoek/",
+    "label": "Fase 0 funderingsonderzoek",
+    "group": "diensten",
+    "file": "pillar-b.json",
+    "minWords": 3800,
+    "keyword": "fase 0 funderingsonderzoek",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/fase-1-funderingsonderzoek/",
+    "label": "Fase 1 funderingsonderzoek",
+    "group": "diensten",
+    "file": "services-c.json",
+    "minWords": 2200,
+    "keyword": "fase 1 funderingsonderzoek",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/funderingsinspectie/",
+    "label": "Funderingsinspectie",
+    "group": "diensten",
+    "file": "services-c.json",
+    "minWords": 1300,
+    "keyword": "funderingsinspectie",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/funderingsmetingen/",
+    "label": "Funderingsmetingen",
+    "group": "diensten",
+    "file": "services-c.json",
+    "minWords": 1300,
+    "keyword": "funderingsmetingen",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/funderingsrapport/",
+    "label": "Funderingsrapport",
+    "group": "diensten",
+    "file": "services-c.json",
+    "minWords": 1300,
+    "keyword": "funderingsrapport",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/prijzen/",
+    "label": "Prijzen",
+    "group": "diensten",
+    "file": "services-c.json",
+    "minWords": 1000,
+    "keyword": "kosten funderingsscan",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-woning/",
+    "label": "Funderingsonderzoek woning",
+    "group": "aankoop",
+    "file": "situations-d.json",
+    "minWords": 1400,
+    "keyword": "funderingsonderzoek woning",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-bij-aankoop/",
+    "label": "Funderingsonderzoek bij aankoop",
+    "group": "aankoop",
+    "file": "situations-d.json",
+    "minWords": 2800,
+    "keyword": "funderingsonderzoek bij aankoop",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-bij-verkoop/",
+    "label": "Funderingsonderzoek bij verkoop",
+    "group": "aankoop",
+    "file": "situations-d.json",
+    "minWords": 1500,
+    "keyword": "funderingsonderzoek bij verkoop",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-taxatie/",
+    "label": "Funderingsonderzoek en taxatie",
+    "group": "aankoop",
+    "file": "situations-d.json",
+    "minWords": 1600,
+    "keyword": "funderingsonderzoek taxatie",
+    "intent": "informatief"
+  },
+  {
+    "path": "/over-ons/",
+    "label": "Over ons",
+    "group": "over",
+    "file": "situations-d.json",
+    "minWords": 800,
+    "keyword": "mv funderingsscan",
+    "intent": "navigatie"
+  },
+  {
+    "path": "/bronnen-en-richtlijnen/",
+    "label": "Bronnen en richtlijnen",
+    "group": "over",
+    "file": "trust-t.json",
+    "minWords": 900,
+    "keyword": "bronnen funderingsonderzoek",
+    "intent": "informatief"
+  },
+  {
+    "path": "/werkwijze/",
+    "label": "Werkwijze",
+    "group": "over",
+    "file": "situations-d.json",
+    "minWords": 1400,
+    "keyword": "werkwijze funderingsonderzoek",
+    "intent": "informatief"
+  },
+  {
+    "path": "/funderingsproblemen/",
+    "label": "Funderingsproblemen",
+    "group": "problemen",
+    "file": "problems-e.json",
+    "minWords": 1800,
+    "keyword": "funderingsproblemen",
+    "intent": "informatief"
+  },
+  {
+    "path": "/scheuren-in-gevel/",
+    "label": "Scheuren in gevel",
+    "group": "problemen",
+    "file": "problems-e.json",
+    "minWords": 2800,
+    "keyword": "scheuren in gevel",
+    "intent": "informatief"
+  },
+  {
+    "path": "/verzakking-woning/",
+    "label": "Verzakking woning",
+    "group": "problemen",
+    "file": "problems-e.json",
+    "minWords": 1500,
+    "keyword": "verzakking woning",
+    "intent": "informatief"
+  },
+  {
+    "path": "/scheefstand-woning/",
+    "label": "Scheefstand woning",
+    "group": "problemen",
+    "file": "problems-e.json",
+    "minWords": 1300,
+    "keyword": "scheefstand woning",
+    "intent": "informatief"
+  },
+  {
+    "path": "/klemmende-deuren-en-ramen/",
+    "label": "Klemmende deuren en ramen",
+    "group": "problemen",
+    "file": "problems-e.json",
+    "minWords": 1100,
+    "keyword": "klemmende deuren fundering",
+    "intent": "informatief"
+  },
+  {
+    "path": "/problemen-met-houten-palen/",
+    "label": "Problemen met houten palen",
+    "group": "problemen",
+    "file": "problems-e.json",
+    "minWords": 1600,
+    "keyword": "houten paalfundering problemen",
+    "intent": "informatief"
+  },
+  {
+    "path": "/fundering-op-staal/",
+    "label": "Fundering op staal",
+    "group": "problemen",
+    "file": "problems-e.json",
+    "minWords": 1500,
+    "keyword": "fundering op staal",
+    "intent": "informatief"
+  },
+  {
+    "path": "/funderingsproblemen-veen/",
+    "label": "Funderingsproblemen veen",
+    "group": "problemen",
+    "file": "problems-e.json",
+    "minWords": 1200,
+    "keyword": "funderingsproblemen veen",
+    "intent": "informatief"
+  },
+  {
+    "path": "/funderingsproblemen-klei/",
+    "label": "Funderingsproblemen klei",
+    "group": "problemen",
+    "file": "problems-e.json",
+    "minWords": 1200,
+    "keyword": "funderingsproblemen klei",
+    "intent": "informatief"
+  },
+  {
+    "path": "/werkgebied/",
+    "label": "Werkgebied",
+    "group": "regio",
+    "file": "regio-f.json",
+    "minWords": 900,
+    "keyword": "werkgebied funderingsonderzoek",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-friesland/",
+    "label": "Funderingsonderzoek Friesland",
+    "group": "regio",
+    "file": "regio-f.json",
+    "minWords": 1100,
+    "keyword": "funderingsonderzoek friesland",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsscan-friesland/",
+    "label": "Funderingsscan Friesland",
+    "group": "regio",
+    "file": "regio-f.json",
+    "minWords": 1100,
+    "keyword": "funderingsscan friesland",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-groningen/",
+    "label": "Funderingsonderzoek Groningen",
+    "group": "regio",
+    "file": "regio-f.json",
+    "minWords": 1100,
+    "keyword": "funderingsonderzoek groningen",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsscan-groningen/",
+    "label": "Funderingsscan Groningen",
+    "group": "regio",
+    "file": "regio-f.json",
+    "minWords": 1100,
+    "keyword": "funderingsscan groningen",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-leeuwarden/",
+    "label": "Leeuwarden",
+    "group": "regio",
+    "file": "regio-f.json",
+    "minWords": 1100,
+    "keyword": "funderingsonderzoek leeuwarden",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-sneek/",
+    "label": "Sneek",
+    "group": "regio",
+    "file": "regio-f.json",
+    "minWords": 1100,
+    "keyword": "funderingsonderzoek sneek",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-harlingen/",
+    "label": "Harlingen",
+    "group": "regio",
+    "file": "regio-f.json",
+    "minWords": 1100,
+    "keyword": "funderingsonderzoek harlingen",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-drachten/",
+    "label": "Drachten",
+    "group": "regio",
+    "file": "regio-f.json",
+    "minWords": 1100,
+    "keyword": "funderingsonderzoek drachten",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-heerenveen/",
+    "label": "Heerenveen",
+    "group": "regio",
+    "file": "regio-f.json",
+    "minWords": 1100,
+    "keyword": "funderingsonderzoek heerenveen",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-groningen-stad/",
+    "label": "Groningen stad",
+    "group": "regio",
+    "file": "regio-f.json",
+    "minWords": 1100,
+    "keyword": "funderingsonderzoek groningen stad",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-appingedam/",
+    "label": "Appingedam",
+    "group": "regio",
+    "file": "regio-f.json",
+    "minWords": 1100,
+    "keyword": "funderingsonderzoek appingedam",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-delfzijl/",
+    "label": "Delfzijl",
+    "group": "regio",
+    "file": "regio-f.json",
+    "minWords": 1100,
+    "keyword": "funderingsonderzoek delfzijl",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/kennisbank/wat-is-een-funderingsscan/",
+    "label": "Wat is een funderingsscan?",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "wat is een funderingsscan",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/wat-is-een-quickscan-fundering/",
+    "label": "Wat is een quickscan fundering?",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "wat is een quickscan fundering",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/wat-is-fase-0/",
+    "label": "Wat is fase 0?",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "wat is fase 0",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/wat-is-fase-1/",
+    "label": "Wat is fase 1?",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "wat is fase 1",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/verschil-fase-0-en-fase-1/",
+    "label": "Verschil fase 0 en fase 1",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "verschil fase 0 en fase 1",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/wat-kost-een-funderingsscan/",
+    "label": "Wat kost een funderingsscan?",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "wat kost een funderingsscan",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/wat-kost-fase-0/",
+    "label": "Wat kost fase 0?",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "wat kost fase 0",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/hoe-lang-duurt-funderingsonderzoek/",
+    "label": "Hoe lang duurt funderingsonderzoek?",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "hoe lang duurt funderingsonderzoek",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/wat-wordt-onderzocht/",
+    "label": "Wat wordt onderzocht?",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "wat wordt onderzocht",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/wanneer-funderingsonderzoek/",
+    "label": "Wanneer funderingsonderzoek?",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "wanneer funderingsonderzoek",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/heb-ik-een-funderingsscan-nodig/",
+    "label": "Heb ik een funderingsscan nodig?",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "heb ik een funderingsscan nodig",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/funderingsscan-bij-aankoop/",
+    "label": "Funderingsscan bij aankoop",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "funderingsscan bij aankoop",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/funderingsscan-bij-verkoop/",
+    "label": "Funderingsscan bij verkoop",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "funderingsscan bij verkoop",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/funderingsscan-en-taxatie/",
+    "label": "Funderingsscan en taxatie",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "funderingsscan en taxatie",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/funderingsscan-en-hypotheek/",
+    "label": "Funderingsscan en hypotheek",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "funderingsscan en hypotheek",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/funderingsrapport-lezen/",
+    "label": "Funderingsrapport lezen",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "funderingsrapport lezen",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/wat-na-een-quickscan/",
+    "label": "Wat na een quickscan?",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "wat na een quickscan",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/wanneer-fase-1/",
+    "label": "Wanneer fase 1?",
+    "group": "kennisbank",
+    "file": "kennisbank-g.json",
+    "minWords": 800,
+    "keyword": "wanneer fase 1",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/scheuren-in-woning/",
+    "label": "Scheuren in woning",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "scheuren in woning",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/scheuren-in-gevel/",
+    "label": "Scheuren in gevel",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "scheuren in gevel",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/scheuren-in-metselwerk/",
+    "label": "Scheuren in metselwerk",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "scheuren in metselwerk",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/verzakking-woning/",
+    "label": "Verzakking woning",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "verzakking woning",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/scheefstand/",
+    "label": "Scheefstand",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "scheefstand",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/klemmende-deuren/",
+    "label": "Klemmende deuren",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "klemmende deuren",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/kruipruimte-inspectie/",
+    "label": "Kruipruimte-inspectie",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "kruipruimte-inspectie",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/houten-paalfundering/",
+    "label": "Houten paalfundering",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "houten paalfundering",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/fundering-op-staal/",
+    "label": "Fundering op staal",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "fundering op staal",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/veenbodem/",
+    "label": "Veenbodem",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "veenbodem",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/kleibodem/",
+    "label": "Kleibodem",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "kleibodem",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/bodemdaling/",
+    "label": "Bodemdaling",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "bodemdaling",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/grondwater-en-fundering/",
+    "label": "Grondwater en fundering",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "grondwater en fundering",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/funderingsrisico/",
+    "label": "Funderingsrisico",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "funderingsrisico",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/funderingsherstel/",
+    "label": "Funderingsherstel",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "funderingsherstel",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/kosten-funderingsherstel/",
+    "label": "Kosten funderingsherstel",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "kosten funderingsherstel",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/funderingsproblemen-friesland/",
+    "label": "Funderingsproblemen Friesland",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "funderingsproblemen friesland",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/funderingsproblemen-groningen/",
+    "label": "Funderingsproblemen Groningen",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "funderingsproblemen groningen",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/lintvoegwaterpassing/",
+    "label": "Lintvoegwaterpassing",
+    "group": "kennisbank",
+    "file": "methods-i.json",
+    "minWords": 2000,
+    "keyword": "lintvoegwaterpassing",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/loodmeting/",
+    "label": "Loodmeting",
+    "group": "kennisbank",
+    "file": "methods-i.json",
+    "minWords": 1800,
+    "keyword": "loodmeting",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/vloerveldwaterpassing/",
+    "label": "Vloerveldwaterpassing",
+    "group": "kennisbank",
+    "file": "methods-j.json",
+    "minWords": 1800,
+    "keyword": "vloerveldwaterpassing",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/scheurpatronen/",
+    "label": "Scheurpatronen",
+    "group": "kennisbank",
+    "file": "methods-j.json",
+    "minWords": 2000,
+    "keyword": "scheurpatronen",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/scheefstandsmeting/",
+    "label": "Scheefstandsmeting",
+    "group": "kennisbank",
+    "file": "measure-k.json",
+    "minWords": 1000,
+    "keyword": "scheefstand gevel meten",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/hoogtemeting/",
+    "label": "Hoogtemeting",
+    "group": "kennisbank",
+    "file": "measure-k.json",
+    "minWords": 1000,
+    "keyword": "hoogtemeting woning",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/zettingsmeting/",
+    "label": "Zettingsmeting",
+    "group": "kennisbank",
+    "file": "measure-k.json",
+    "minWords": 1000,
+    "keyword": "zettingsmeting",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/scheurmeting/",
+    "label": "Scheurmeting",
+    "group": "kennisbank",
+    "file": "measure-k.json",
+    "minWords": 1000,
+    "keyword": "scheurmeting",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/monitoring-scheuren/",
+    "label": "Scheuren monitoren",
+    "group": "kennisbank",
+    "file": "measure-k.json",
+    "minWords": 1000,
+    "keyword": "scheuren monitoren",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/maaiveldhoogte/",
+    "label": "Maaiveldhoogte",
+    "group": "kennisbank",
+    "file": "measure-k.json",
+    "minWords": 900,
+    "keyword": "maaiveldhoogte",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/grondwatermeting/",
+    "label": "Grondwatermeting",
+    "group": "kennisbank",
+    "file": "measure-k.json",
+    "minWords": 900,
+    "keyword": "grondwatermeting",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/wat-is-funderingsonderzoek/",
+    "label": "Wat is funderingsonderzoek?",
+    "group": "kennisbank",
+    "file": "process-l.json",
+    "minWords": 1200,
+    "keyword": "wat is funderingsonderzoek",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/archiefonderzoek-fundering/",
+    "label": "Archiefonderzoek fundering",
+    "group": "kennisbank",
+    "file": "process-l.json",
+    "minWords": 1500,
+    "keyword": "archiefonderzoek fundering",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/visuele-funderingsinspectie/",
+    "label": "Visuele funderingsinspectie",
+    "group": "kennisbank",
+    "file": "process-l.json",
+    "minWords": 1600,
+    "keyword": "visuele funderingsinspectie",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/funderingsrisico-inschatting/",
+    "label": "Funderingsrisico-inschatting",
+    "group": "kennisbank",
+    "file": "process-l.json",
+    "minWords": 1500,
+    "keyword": "funderingsrisico inschatting",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/zetting/",
+    "label": "Zetting",
+    "group": "kennisbank",
+    "file": "concepts-m.json",
+    "minWords": 1000,
+    "keyword": "zetting woning",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/ongelijke-zetting/",
+    "label": "Ongelijke zetting",
+    "group": "kennisbank",
+    "file": "concepts-m.json",
+    "minWords": 1000,
+    "keyword": "ongelijke zetting",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/paalfundering/",
+    "label": "Paalfundering",
+    "group": "kennisbank",
+    "file": "concepts-m.json",
+    "minWords": 1000,
+    "keyword": "paalfundering",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/paalrot/",
+    "label": "Paalrot",
+    "group": "kennisbank",
+    "file": "concepts-m.json",
+    "minWords": 1000,
+    "keyword": "paalrot",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/zandbodem/",
+    "label": "Zandbodem",
+    "group": "kennisbank",
+    "file": "concepts-m.json",
+    "minWords": 850,
+    "keyword": "zandbodem fundering",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/peilverschillen/",
+    "label": "Peilverschillen",
+    "group": "kennisbank",
+    "file": "concepts-m2.json",
+    "minWords": 850,
+    "keyword": "grondwaterpeil fundering",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/scheuren-boven-kozijnen/",
+    "label": "Scheuren boven kozijnen",
+    "group": "kennisbank",
+    "file": "concepts-m2.json",
+    "minWords": 900,
+    "keyword": "scheuren boven kozijnen",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/scheuren-bij-aanbouw/",
+    "label": "Scheuren bij aanbouw",
+    "group": "kennisbank",
+    "file": "concepts-m2.json",
+    "minWords": 900,
+    "keyword": "scheur aanbouw",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/klemmende-ramen/",
+    "label": "Klemmende ramen",
+    "group": "kennisbank",
+    "file": "concepts-m2.json",
+    "minWords": 850,
+    "keyword": "klemmende ramen",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/helling-in-vloer/",
+    "label": "Helling in de vloer",
+    "group": "kennisbank",
+    "file": "concepts-m2.json",
+    "minWords": 900,
+    "keyword": "scheve vloer",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/funderingsonderzoek-voor-bod/",
+    "label": "Funderingsonderzoek vóór je bod",
+    "group": "kennisbank",
+    "file": "buying-n.json",
+    "minWords": 900,
+    "keyword": "funderingsonderzoek voor bod",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/funderingsrisico-bij-aankoop/",
+    "label": "Funderingsrisico bij aankoop",
+    "group": "kennisbank",
+    "file": "buying-n.json",
+    "minWords": 900,
+    "keyword": "funderingsrisico aankoop",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/funderingsrapport-voor-verkoper/",
+    "label": "Funderingsrapport voor verkoper",
+    "group": "kennisbank",
+    "file": "buying-n.json",
+    "minWords": 900,
+    "keyword": "funderingsrapport verkoper",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/kosten-fase-1/",
+    "label": "Kosten fase 1",
+    "group": "kennisbank",
+    "file": "buying-n.json",
+    "minWords": 850,
+    "keyword": "kosten fase 1 funderingsonderzoek",
+    "intent": "informatief"
+  },
+  {
+    "path": "/fase-0-funderingsonderzoek-aankoop/",
+    "label": "Fase 0 bij aankoop",
+    "group": "diensten",
+    "file": "buying-n.json",
+    "minWords": 1500,
+    "keyword": "fase 0 funderingsonderzoek aankoop",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-franeker/",
+    "label": "Franeker",
+    "group": "regio",
+    "file": "regio-o.json",
+    "minWords": 1050,
+    "keyword": "funderingsonderzoek franeker",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-haren/",
+    "label": "Haren",
+    "group": "regio",
+    "file": "regio-o.json",
+    "minWords": 1050,
+    "keyword": "funderingsonderzoek haren",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-veendam/",
+    "label": "Veendam",
+    "group": "regio",
+    "file": "regio-o.json",
+    "minWords": 1050,
+    "keyword": "funderingsonderzoek veendam",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-winschoten/",
+    "label": "Winschoten",
+    "group": "regio",
+    "file": "regio-o.json",
+    "minWords": 1050,
+    "keyword": "funderingsonderzoek winschoten",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsscan-leeuwarden/",
+    "label": "Funderingsscan Leeuwarden",
+    "group": "regio",
+    "file": "regio-o.json",
+    "minWords": 1050,
+    "keyword": "funderingsscan leeuwarden",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/kennisbank/begrippenlijst/",
+    "label": "Begrippenlijst",
+    "group": "kennisbank",
+    "file": "(handgebouwd)",
+    "minWords": 0,
+    "keyword": "begrippen funderingsonderzoek",
+    "intent": "informatief"
+  },
+  {
+    "path": "/funderingsonderzoek-achtkarspelen/",
+    "label": "Gemeente Achtkarspelen",
+    "group": "regio",
+    "file": "gemeenten-q.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek buitenpost",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-dantumadiel/",
+    "label": "Gemeente Dantumadiel",
+    "group": "regio",
+    "file": "gemeenten-q.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek damwâld",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-de-fryske-marren/",
+    "label": "Gemeente De Fryske Marren",
+    "group": "regio",
+    "file": "gemeenten-q.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek joure",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-noardeast-fryslan/",
+    "label": "Gemeente Noardeast-Fryslân",
+    "group": "regio",
+    "file": "gemeenten-q.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek dokkum",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-ooststellingwerf/",
+    "label": "Gemeente Ooststellingwerf",
+    "group": "regio",
+    "file": "gemeenten-q.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek oosterwolde",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-opsterland/",
+    "label": "Gemeente Opsterland",
+    "group": "regio",
+    "file": "gemeenten-r.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek gorredijk",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-tytsjerksteradiel/",
+    "label": "Gemeente Tytsjerksteradiel",
+    "group": "regio",
+    "file": "gemeenten-r.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek burgum",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-weststellingwerf/",
+    "label": "Gemeente Weststellingwerf",
+    "group": "regio",
+    "file": "gemeenten-r.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek wolvega",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-eemsdelta/",
+    "label": "Gemeente Eemsdelta",
+    "group": "regio",
+    "file": "gemeenten-r.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek appingedam",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-het-hogeland/",
+    "label": "Gemeente Het Hogeland",
+    "group": "regio",
+    "file": "gemeenten-r.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek winsum",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-midden-groningen/",
+    "label": "Gemeente Midden-Groningen",
+    "group": "regio",
+    "file": "gemeenten-s.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek hoogezand",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-pekela/",
+    "label": "Gemeente Pekela",
+    "group": "regio",
+    "file": "gemeenten-s.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek oude pekela",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-stadskanaal/",
+    "label": "Gemeente Stadskanaal",
+    "group": "regio",
+    "file": "gemeenten-s.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek stadskanaal",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-westerkwartier/",
+    "label": "Gemeente Westerkwartier",
+    "group": "regio",
+    "file": "gemeenten-s.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek zuidhorn",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-westerwolde/",
+    "label": "Gemeente Westerwolde",
+    "group": "regio",
+    "file": "gemeenten-s.json",
+    "minWords": 950,
+    "keyword": "funderingsonderzoek ter apel",
+    "intent": "lokaal-commercieel"
+  }
 ]

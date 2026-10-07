@@ -83,7 +83,7 @@ export function aanvraagForm() {
         <p class="form-status" role="alert" hidden></p>
         ${PRIVACY_TEXT}
       </form>
-${success('aanvraagSuccess', 'Bedankt voor je aanvraag!', 'We nemen zo snel mogelijk contact met je op om je situatie te bespreken en je een vaste prijs te geven.')}
+${success('aanvraagSuccess', 'Bedankt voor je aanvraag!', 'We nemen zo snel mogelijk contact met je op om je situatie te bespreken en je te laten weten wat het onderzoek kost.')}
     </div>`;
 }
 

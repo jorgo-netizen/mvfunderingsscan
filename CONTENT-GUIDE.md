@@ -23,27 +23,32 @@ Het script moet zonder FOUT eindigen. WAARSCHUWINGEN over woordaantal moet je oo
 Bedrijf
 - Adres: Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden · Telefoon +31 (0) 582037172 (link `tel:+31582037172`) · E-mail info@mideavastgoed.nl (link `mailto:info@mideavastgoed.nl`) · Bereikbaar ma–vr 09:00–17:00.
 - Werkgebied: heel Friesland en de hele provincie Groningen.
-- Onderdeel van Midea Vastgoed Adviseurs (alleen noemen op /over-ons/).
+- Bedrijfsnaam: **MV Adviseurs**; MV Funderingsscan is de naam van de dienst/website.
+- Deskundige, opleiding, certificaten, lidmaatschappen, KvK, reviews en voorbeeldrapport: ALLEEN via `src/content/eeat.json` (placeholders tussen [vierkante haken] verschijnen niet op de live site). Zet zulke gegevens nooit los in een pagina.
 
 Diensten en prijzen (ALTIJD als indicatief presenteren)
 - **Fase 0 = Quick Scan / quickscan fundering / funderingscheck**: niet-destructief vooronderzoek. Bestaat uit archief- en bodemonderzoek (bouwjaar, beschikbare (bouw)tekeningen, vermoedelijk funderingstype, bodemopbouw, grondwater, bodemdaling) + visuele inspectie (gevels, metselwerk, scheuren en scheurpatronen, kozijnen, deuren, ramen, vloeren, scheefstand, kruipruimte voor zover toegankelijk, zichtbare funderingsdelen, vocht) + risico-inschatting + rapport met foto's, conclusie en advies.
-- Fase 0 prijs: **vanaf circa €350**; bij grotere of complexere woningen kan het hoger uitvallen (indicatief tot circa €550). Definitieve prijs vooraf bekend.
-- Fase 0 doorlooptijd: inspectie meestal **binnen enkele werkdagen** ingepland; rapport **binnen 5 werkdagen na de inspectie**. De duur van de inspectie ter plaatse is NIET bekend: noem geen uren/minuten.
+- Fase 0 prijs: **vanaf circa €350**; bij grotere of complexere woningen kan het hoger uitvallen (indicatief tot circa €550). Definitieve prijs vooraf bekend. Schrijf niet "vaste prijs". Btw: nog niet bekend – noem niets tot de eigenaar dit aanlevert.
+- Fase 0 doorlooptijd: inspectie meestal **binnen enkele werkdagen** ingepland; rapport **normaal gesproken binnen 5 werkdagen na de inspectie** (geen garantie). De duur van de inspectie ter plaatse is NIET bekend: noem geen uren/minuten.
 - Uitkomsten fase 0: (1) geen directe aanleiding voor vervolgonderzoek, (2) monitoren, (3) aanvullend onderzoek adviseren (bijv. gericht naar één onderdeel, of de kruipruimte toegankelijk maken), (4) fase 1 adviseren.
 - **Fase 1** = vervolgonderzoek met metingen, alleen als fase 0 daar aanleiding voor geeft. Onderdelen: lintvoegwaterpassing, scheefstandsmeting/loodmeting, vloerveldwaterpassing, vastleggen en duiden van scheurpatronen, aanvullende inspecties waar nodig. Niet-destructief, geen graafwerk. Prijs **indicatief €750 – €1.500**. Doorlooptijd hangt af van de woning; wordt bij de offerte afgestemd (noem geen dagen).
 - Na fase 1 kan het advies zijn: monitoren, nader onderzoek zoals een **inspectieput** (fundering plaatselijk vrijgraven, bij houten palen eventueel houtonderzoek) – dat valt buiten fase 0/1 – of een herstelplan laten uitwerken door een gespecialiseerde partij.
 - **Wat een quickscan NIET is:** geen constructieve berekening, geen vrijlegging van de fundering, geen houtonderzoek, geen herstelplan of herstelofferte, geen schademelding (bijv. gaswinning), geen bouwkundige keuring van de hele woning, geen garantie.
 - Funderingsherstel kan **tienduizenden euro's** kosten, afhankelijk van type en omvang. Geef GEEN andere bedragen of prijsranges voor herstel. Voor herstelkosten heb je een offerte van een herstelspecialist nodig.
 
-Taxatie (formuleer voorzichtig, "volgens de huidige richtlijnen", "stem af met je taxateur/geldverstrekker")
-- Sinds **1 april 2026** werkt het model Taxatierapport Woonruimte (NRVT) met een vaste **funderingsparagraaf**.
-- Basis is het funderingsrisicorapport van het **KCAF** (Kenniscentrum Aanpak Funderingsproblematiek) met risicoklassen **A (laag) t/m E (hoog)**.
-- Bij **klasse D of E** is aanvullend funderingsonderzoek nodig voordat de taxatie kan worden afgerond. Zonder afgeronde taxatie geen hypotheek.
+Taxatie, NHG en regels (gecontroleerd 7 oktober 2026 – bronnen op /bronnen-en-richtlijnen/)
+- KCAF-risicoklassen: A geen risico, B licht risico, C verhoogd risico of onzekerheid, D hoog risico (nader onderzoek passend), E vastgesteld funderingsprobleem. Het is een modelmatige inschatting, geen vaststelling van de staat. Schrijf "risicoklasse", niet "funderingslabel".
+- Sinds **1 april 2026** (NRVT, nieuw model Taxatierapport Woonruimte) neemt de taxateur de KCAF-risicoklasse A t/m E op.
+- Bij **klasse D of E** moet volgens het NRVT **in principe** eerst een aanvullend (beperkt) funderingsonderzoek plaatsvinden voordat de taxatie kan worden afgerond. Er zijn uitzonderingen (bewijsstukken, of de opdrachtgever stemt niet in met de kosten). Schrijf nooit dat het altijd verplicht is.
+- Geldverstrekkers vragen voor een hypotheek in de regel om een afgerond taxatierapport (niet: "zonder taxatie geen hypotheek").
+- NHG heeft **aangekondigd** dat vanaf 1 januari 2027 bij D of E een verkennend funderingsonderzoek verplicht is voor een lening met NHG. Presenteer dit als aankondiging tot de definitieve voorwaarden er zijn.
+- Er is geen algemene wettelijke plicht tot funderingsonderzoek; verkoper heeft mededelingsplicht, koper onderzoeksplicht.
 - Klasse A–C: aanvullend onderzoek in de regel vrijwillig.
+- Fase-namen verschillen per bron (KCAF-richtlijn kent onderdelen; gemeenten gebruiken fase 1 = metingen, fase 2 = inspectieput). Op deze site is de indeling die van MV.
 
 Algemene vakkennis (mag, maar zonder getallen/normen)
 - Woningen van vóór circa 1970 hebben vaker een fundering op houten palen of op staal (op staal = op de ondergrond, zonder palen; vaak gemetselde of betonnen strook/voet).
-- Houten palen blijven goed zolang ze permanent onder water staan; bij lage grondwaterstand kunnen paalkoppen droog komen te staan → schimmels/bacteriën (paalrot) kunnen hout aantasten. Ook onder water kan bacteriële aantasting langzaam optreden. Een woning met houten palen heeft NIET automatisch problemen.
+- Houten palen werden in de woningbouw gebruikt tot ongeveer 1970. Droogstand (grondwater onder de bovenkant van de palen) kan leiden tot **schimmel**aantasting (paalrot). **Bacteriële** aantasting ontstaat juist onder water en kan de paal over de hele lengte aantasten (grenen gevoeliger dan vuren). Noem bacteriën dus niet als gevolg van droogstand. Een woning met houten palen heeft NIET automatisch problemen.
 - Veen klinkt in en oxideert bij droogvallen → bodemdaling; klei krimpt bij droogte en zwelt bij nat weer; zand is meestal stabieler. Ongelijke zetting is schadelijker dan gelijkmatige.
 - Zetting = normaal samendrukken van grond onder belasting; vooral na de bouw. Verzakking/ongelijke zetting kan wijzen op een probleem.
 - Lintvoeg = doorlopende horizontale metselvoeg die destijds (vrijwel) waterpas is gemetseld; hoogteverschillen tonen ongelijke zakking. Loodmeting = afwijking van gevels/wanden t.o.v. verticaal. Vloerveldwaterpassing = raster van hoogtemetingen op de begane grondvloer. Noem GEEN normwaarden, grenswaarden of millimeters.
@@ -57,13 +62,15 @@ Regio – ALLEEN deze lokale feiten gebruiken (verder algemeen blijven)
 - Harlingen: havenstad aan de Waddenzee, historische binnenstad met grachten, zeeklei, bodemdaling door zoutwinning.
 - Drachten: ontwikkeld mede door vervening (veenontginning, Drachtster Compagnie, 17e eeuw); veen- en zandgronden in de omgeving; veel naoorlogse wijken naast oudere kernen.
 - Heerenveen: ontstaan als veenkolonie in de 16e eeuw (vervening); veen in de ondergrond/omgeving.
-- Groningen (provincie): noorden (Hogeland) vooral zware zeeklei; oosten/zuidoosten (Veenkoloniën, rond Veendam) van oorsprong veen; Hondsrug (zand) in het zuiden; bodembeweging door gaswinning (aardbevingen, bodemdaling); schade door gaswinning meld je bij het **Instituut Mijnbouwschade Groningen (IMG)** – een funderingsscan is GEEN schademelding.
+- Groningen (provincie): noorden (Hogeland) vooral zware zeeklei; oosten/zuidoosten (Veenkoloniën, rond Veendam) van oorsprong veen; Hondsrug (zand) in het zuiden; gevolgen van de (inmiddels beëindigde) gaswinning uit het Groningenveld: aardbevingen, bodemdaling, schadeafhandeling en versterking – schrijf niet in de tegenwoordige tijd dat gaswinning bodembeweging veroorzaakt; schade door gaswinning meld je bij het **Instituut Mijnbouwschade Groningen (IMG)** – een funderingsscan is GEEN schademelding.
 - Groningen stad: ligt aan de noordpunt van de Hondsrug; delen op zand, lagere delen op klei/veen → risico kan per wijk verschillen; vooroorlogse wijken o.a. Oosterpoort, Schildersbuurt, Korrewegwijk, Herewegbuurt, Badstratenbuurt; Haren hoort bij de gemeente Groningen.
 - Appingedam: historische stad aan het Damsterdiep, bekend om de hangende keukens; kleigebied; ligt in het gebied met aardbevingen door gaswinning.
 - Delfzijl: havenstad aan de Eems; kleigebied; in het aardbevingsgebied; er is veel versterkingswerk aan woningen geweest/gaande.
 - Andere plaatsen in het werkgebied (alleen noemen): Grou, Franeker, Bolsward, Haren, Veendam, Winschoten, Winsum, Zuidhorn.
 
 ## 3. Wat je NOOIT doet
+
+- Ervaringsclaims zonder onderbouwing ("we onderzoeken vaak…", "we kennen…", "ervaren", "specialist in…", "meest gekozen"), beloftes van zekerheid, of zeggen dat fase 1 vaststelt of een woning nog beweegt (dat kan alleen met herhaalde metingen).
 
 - Niets verzinnen: geen reviews, sterren, klantaantallen, jaren ervaring, certificaten, keurmerken, namen van medewerkers, statistieken, percentages, normwaarden, extra prijzen, doorlooptijden die hierboven niet staan.
 - Niet kopiëren of parafraseren van mvadviseurs-preview.vercel.app of fundexa.nl.

@@ -12,10 +12,10 @@
       "has": [
         {
           "type": "host",
-          "value": "www.mvfunderingsscan.nl"
+          "value": "mvfunderingsscan.nl"
         }
       ],
-      "destination": "https://mvfunderingsscan.nl/:path*",
+      "destination": "https://www.mvfunderingsscan.nl/:path*",
       "permanent": true
     },
     {
@@ -108,6 +108,21 @@
         {
           "key": "Referrer-Policy",
           "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "mvfunderingsscan.vercel.app"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
         }
       ]
     }
