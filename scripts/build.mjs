@@ -231,8 +231,8 @@ function buildAanvragen() {
 function buildContact() {
   specialPage({
     path: '/contact/',
-    title: 'Contact | MV Funderingsscan Leeuwarden | 058 - 203 71 72',
-    description: 'Neem contact op met MV Funderingsscan in Leeuwarden voor funderingsonderzoek in Friesland en Groningen. Bel 058 - 203 71 72 of stel je vraag online.',
+    title: 'Contact | MV Funderingsscan Leeuwarden | +31 (0) 582037172',
+    description: 'Neem contact op met MV Funderingsscan in Leeuwarden voor funderingsonderzoek in Friesland en Groningen. Bel +31 (0) 582037172 of stel je vraag online.',
     crumbs: [{ href: '/', name: 'Home' }, { href: '/contact/', name: 'Contact' }],
     eyebrow: 'Contact',
     h1: 'Contact met MV Funderingsscan',

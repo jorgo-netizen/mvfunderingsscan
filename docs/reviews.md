@@ -38,7 +38,7 @@ en de uitleg hebt ervaren.
 
 Met vriendelijke groet,
 MV Funderingsscan
-058 - 203 71 72
++31 (0) 582037172
 ```
 
 ## Sjabloon – WhatsApp/sms
@@ -51,4 +51,4 @@ Hoi [naam], bedankt voor je vertrouwen in MV Funderingsscan! Zou je je ervaring 
 
 - Reageer op **elke** review, ook op kritische, binnen een paar dagen.
 - Noem in je antwoord natuurlijk de dienst en de plaats ("Fijn dat de Quick Scan in Sneek je duidelijkheid gaf…").
-- Bij kritiek: zakelijk, vriendelijk, bied contact aan via 058 - 203 71 72.
+- Bij kritiek: zakelijk, vriendelijk, bied contact aan via +31 (0) 582037172.

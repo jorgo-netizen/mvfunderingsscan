@@ -75,6 +75,8 @@ export function orgSchema() {
     '@type': 'ProfessionalService',
     '@id': ORG_ID,
     name: NAP.name,
+    legalName: NAP.name,
+    alternateName: NAP.brand,
     url: `${DOMAIN}/`,
     logo: { '@type': 'ImageObject', url: `${DOMAIN}/assets/logo-midea.png`, width: 480, height: 137 },
     image: `${DOMAIN}/assets/img/og-mv-funderingsscan.jpg`,
@@ -110,7 +112,7 @@ export function websiteSchema() {
     '@type': 'WebSite',
     '@id': SITE_ID,
     url: `${DOMAIN}/`,
-    name: NAP.name,
+    name: NAP.brand,
     inLanguage: 'nl-NL',
     publisher: { '@id': ORG_ID },
   };
@@ -298,7 +300,7 @@ ${links.map(([h, l]) => `        <li><a href="${h}">${l}</a></li>`).join('\n')}
         <source srcset="/assets/logo-midea-wit.webp" type="image/webp">
         <img src="/assets/logo-midea-wit.png" width="480" height="137" loading="lazy" alt="MV Funderingsscan – Midea Vastgoed Adviseurs">
       </picture>
-      <p>MV Funderingsscan voert onafhankelijk funderingsonderzoek uit voor woningen in Friesland en Groningen – van Quick Scan tot onderzoek met metingen.</p>
+      <p>MV Funderingsscan is een dienst van MV Adviseurs en voert onafhankelijk funderingsonderzoek uit voor woningen in Friesland en Groningen – van Quick Scan tot onderzoek met metingen.</p>
       <address>
         <strong>${NAP.name}</strong><br>
         ${NAP.street}<br>

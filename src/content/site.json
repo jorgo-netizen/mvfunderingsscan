@@ -2,17 +2,18 @@
   "domain": "https://mvfunderingsscan.nl",
   "today": "2026-10-05",
   "nap": {
-    "name": "MV Funderingsscan",
+    "name": "MV Adviseurs",
     "street": "Mr. P. J. Troelstraweg 149",
     "postal": "8919 AA",
     "city": "Leeuwarden",
     "region": "Friesland",
     "country": "NL",
-    "phone_display": "058 - 203 71 72",
+    "phone_display": "+31 (0) 582037172",
     "phone_href": "tel:+31582037172",
     "phone_intl": "+31 58 203 7172",
-    "email": "info@mvadviseurs.nl",
-    "hours_display": "Ma – vr 09:00 – 17:00"
+    "email": "info@mideavastgoed.nl",
+    "hours_display": "Ma – vr 09:00 – 17:00",
+    "brand": "MV Funderingsscan"
   },
   "images": {
     "funderingsinspectie-woning-gevel": {

@@ -413,7 +413,7 @@
         })
         .catch((err) => {
           if (statusEl) {
-            statusEl.innerHTML = `${err.message && err.message !== 'Failed to fetch' ? err.message : 'Verzenden lukt nu niet.'} Bel ons op <a href="tel:+31582037172">058 - 203 71 72</a> of mail naar <a href="mailto:info@mvadviseurs.nl">info@mvadviseurs.nl</a>.`;
+            statusEl.innerHTML = `${err.message && err.message !== 'Failed to fetch' ? err.message : 'Verzenden lukt nu niet.'} Bel ons op <a href="tel:+31582037172">+31 (0) 582037172</a> of mail naar <a href="mailto:info@mideavastgoed.nl">info@mideavastgoed.nl</a>.`;
             statusEl.hidden = false;
           }
         })

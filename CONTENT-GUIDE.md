@@ -21,7 +21,7 @@ Het script moet zonder FOUT eindigen. WAARSCHUWINGEN over woordaantal moet je oo
 ## 2. Feiten die je MAG gebruiken (en verder NIETS verzinnen)
 
 Bedrijf
-- Adres: Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden · Telefoon 058 - 203 71 72 (link `tel:+31582037172`) · E-mail info@mvadviseurs.nl (link `mailto:info@mvadviseurs.nl`) · Bereikbaar ma–vr 09:00–17:00.
+- Adres: Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden · Telefoon +31 (0) 582037172 (link `tel:+31582037172`) · E-mail info@mideavastgoed.nl (link `mailto:info@mideavastgoed.nl`) · Bereikbaar ma–vr 09:00–17:00.
 - Werkgebied: heel Friesland en de hele provincie Groningen.
 - Onderdeel van Midea Vastgoed Adviseurs (alleen noemen op /over-ons/).
 

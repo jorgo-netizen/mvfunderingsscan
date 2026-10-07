@@ -5,7 +5,7 @@ https://business.google.com. Controleer alles nog één keer voordat je publicee
 
 > **Belangrijkste regel: NAP exact gelijk houden.**
 > Naam, adres en telefoon moeten overal letterlijk hetzelfde zijn als op de website
-> (`src/content/site.json`): **MV Funderingsscan · Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden · 058 - 203 71 72 · https://mvfunderingsscan.nl/**
+> (`src/content/site.json`): **MV Funderingsscan · Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden · +31 (0) 582037172 · https://mvfunderingsscan.nl/**
 
 ---
 
@@ -13,11 +13,11 @@ https://business.google.com. Controleer alles nog één keer voordat je publicee
 
 | Veld | Invullen |
 |---|---|
-| Bedrijfsnaam | MV Funderingsscan *(geen zoekwoorden toevoegen zoals "Funderingsonderzoek Friesland" – dat is tegen de richtlijnen)* |
+| Bedrijfsnaam | MV Adviseurs *(geen zoekwoorden toevoegen zoals "Funderingsonderzoek Friesland" – dat is tegen de richtlijnen)* |
 | Hoofdcategorie | Kies de best passende categorie die Google aanbiedt, bijv. een categorie rond bouwkundig advies of woninginspectie. Typ "bouwkundig" en "inspectie" in het categorieveld en kies de meest specifieke. |
 | Extra categorieën | Eventueel een tweede passende categorie (inspectie/adviesbureau). Niet te veel. |
 | Website | https://mvfunderingsscan.nl/ |
-| Telefoon | 058 - 203 71 72 |
+| Telefoon | +31 (0) 582037172 |
 | Openingstijden | Ma – vr 09:00 – 17:00 |
 | Adres tonen | Alleen als klanten op het kantoor terechtkunnen. Werk je alleen op locatie, kies dan "servicegebied" en verberg het adres. |
 | Servicegebied | Friesland en Groningen (provincies), aangevuld met de grootste plaatsen. Google staat maximaal 20 gebieden toe, bijv.: Friesland, Groningen, Leeuwarden, Sneek, Drachten, Heerenveen, Harlingen, Franeker, Dokkum, Joure, Burgum, Wolvega, Groningen (stad), Haren, Appingedam, Delfzijl, Veendam, Winschoten, Hoogezand, Zuidhorn |
