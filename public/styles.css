@@ -1739,3 +1739,13 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 @media (max-width: 640px) {
   .hero h1 { font-size: clamp(28px, 8.4vw, 40px); }
 }
+
+/* Ingang interactieve hulpmiddelen op de homepage (toegevoegd; overschrijft niets) */
+.tool-entry { background: var(--gold-soft); border-bottom: 1px solid var(--line); }
+.tool-entry-inner { display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; align-items: center; }
+.tool-entry-copy .section-title { margin-bottom: 10px; }
+.tool-entry-copy p:last-child { margin: 0; color: var(--text); }
+.tool-entry-actions { display: grid; gap: 12px; justify-items: start; }
+.tool-entry-links { margin: 0; font-size: 14.5px; }
+.tool-entry-links a { color: var(--navy); font-weight: 700; border-bottom: 1.5px solid var(--gold); }
+@media (max-width: 900px) { .tool-entry-inner { grid-template-columns: 1fr; gap: 18px; } .tool-entry-actions .btn { width: 100%; justify-content: center; } }

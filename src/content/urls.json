@@ -1159,5 +1159,95 @@
     "minWords": 950,
     "keyword": "funderingsonderzoek ter apel",
     "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/hulpmiddelen/",
+    "label": "Hulpmiddelen",
+    "group": "hulpmiddelen",
+    "file": "tools-u.json",
+    "minWords": 350,
+    "keyword": "hulpmiddelen fundering",
+    "intent": "informatief"
+  },
+  {
+    "path": "/gratis-funderingscheck/",
+    "label": "Gratis Funderingscheck",
+    "group": "hulpmiddelen",
+    "file": "tools-u.json",
+    "minWords": 250,
+    "keyword": "gratis funderingscheck",
+    "intent": "informatief"
+  },
+  {
+    "path": "/vertel-wat-je-ziet/",
+    "label": "Vertel ons wat je ziet",
+    "group": "hulpmiddelen",
+    "file": "tools-u.json",
+    "minWords": 250,
+    "keyword": "scheur foto beoordelen",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/welke-stap-past-bij-mij/",
+    "label": "Welke stap past bij mij?",
+    "group": "hulpmiddelen",
+    "file": "tools-u.json",
+    "minWords": 250,
+    "keyword": "wanneer funderingsonderzoek",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kosten-funderingsonderzoek-berekenen/",
+    "label": "Kostenwijzer",
+    "group": "hulpmiddelen",
+    "file": "tools-u.json",
+    "minWords": 250,
+    "keyword": "kosten funderingsonderzoek",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/welke-fundering-heeft-mijn-woning/",
+    "label": "Welke fundering heeft mijn woning?",
+    "group": "hulpmiddelen",
+    "file": "tools-u.json",
+    "minWords": 250,
+    "keyword": "welke fundering heeft mijn huis",
+    "intent": "informatief"
+  },
+  {
+    "path": "/funderingsrisicoklasse-uitgelegd/",
+    "label": "Risicoklassen A–E",
+    "group": "hulpmiddelen",
+    "file": "tools-u.json",
+    "minWords": 250,
+    "keyword": "funderingsrisicoklasse",
+    "intent": "informatief"
+  },
+  {
+    "path": "/huis-kopen-funderingscheck/",
+    "label": "Aankoop-check",
+    "group": "hulpmiddelen",
+    "file": "tools-u.json",
+    "minWords": 250,
+    "keyword": "huis kopen fundering check",
+    "intent": "commercieel"
+  },
+  {
+    "path": "/meetwaarden-uitgelegd/",
+    "label": "Meetwaarden uitgelegd",
+    "group": "hulpmiddelen",
+    "file": "tools-u.json",
+    "minWords": 250,
+    "keyword": "scheefstand mm per meter",
+    "intent": "informatief"
+  },
+  {
+    "path": "/funderingsquiz/",
+    "label": "Funderingsquiz",
+    "group": "hulpmiddelen",
+    "file": "tools-u.json",
+    "minWords": 250,
+    "keyword": "funderingsquiz",
+    "intent": "informatief"
   }
 ]

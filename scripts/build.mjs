@@ -509,6 +509,9 @@ ${(site.gemeenten || []).map((g) => `- Gemeente ${g.naam} (${g.provincie}): ${g.
 ## Kennisbank
 ${groupLines('kennisbank')}
 
+## Interactieve hulpmiddelen (indicaties en uitleg, geen diagnose)
+${groupLines('hulpmiddelen')}
+
 ## Over MV Funderingsscan
 ${groupLines('over')}
 - [Funderingsscan aanvragen](${DOMAIN}/funderingsscan-aanvragen/): aanvraagformulier; de prijs hoor je vooraf.

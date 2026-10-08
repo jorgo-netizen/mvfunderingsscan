@@ -1,0 +1,884 @@
+[
+  {
+    "path": "/hulpmiddelen/",
+    "title": "Hulpmiddelen fundering: checks, keuzehulpen en uitleg",
+    "description": "Interactieve hulpmiddelen over funderingen: gratis Funderingscheck, signalen-checklist, kostenwijzer, risicoklassen A–E en meer. Indicatief, geen diagnose.",
+    "keyword": "hulpmiddelen fundering",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/hulpmiddelen/",
+        "name": "Hulpmiddelen"
+      }
+    ],
+    "eyebrow": "Interactieve hulpmiddelen",
+    "h1": "Hulpmiddelen: begrijp eerst wat er speelt",
+    "lead": "Met deze hulpmiddelen krijg je zelf meer grip op vragen over de fundering van een woning: welke signalen tellen, welke stap logisch kan zijn, wat een risicoklasse betekent en wat onderzoek kost. Ze geven uitleg en een indicatie, <strong>geen funderingsdiagnose</strong>. Wil je daarna verder, dan kun je je situatie met ons bespreken.",
+    "tools": true,
+    "facts": [
+      {
+        "label": "Kosten",
+        "value": "gratis"
+      },
+      {
+        "label": "Wat je krijgt",
+        "value": "uitleg en een indicatie"
+      },
+      {
+        "label": "Wat het niet is",
+        "value": "een diagnose"
+      }
+    ],
+    "sections": [
+      {
+        "id": "welke-situatie",
+        "h2": "Welke situatie past bij jou?",
+        "answer": "Kies je situatie: een woning kopen, je eigen woning, verkopen of als makelaar of taxateur. Je ziet direct welke informatie en welke vervolgstap voor jou relevant kunnen zijn.",
+        "widget": "situatiekeuze",
+        "widget_position": "after",
+        "body": "<p>Twijfel je tussen meerdere situaties? Doorloop dan de <a href=\"/welke-stap-past-bij-mij/\">stappenhulp</a>; die stelt een paar extra vragen.</p>"
+      },
+      {
+        "id": "alle-hulpmiddelen",
+        "h2": "Welke hulpmiddelen zijn er?",
+        "answer": "Er zijn hulpmiddelen om je situatie te verkennen, om uitleg te krijgen over begrippen en meetwaarden, en om je vraag met foto's aan ons voor te leggen.",
+        "body": "<ul class=\"tool-cards\">\n<li><a href=\"/gratis-funderingscheck/\"><strong>Gratis Funderingscheck</strong><span>Elf vragen, daarna een voorzichtige indicatie met uitleg.</span></a></li>\n<li><a href=\"/vertel-wat-je-ziet/\"><strong>Vertel ons wat je ziet</strong><span>Signalen-checklist en een formulier met foto's.</span></a></li>\n<li><a href=\"/welke-stap-past-bij-mij/\"><strong>Welke stap past bij mij?</strong><span>Een beslisboom en drie voorbeeldscenario's.</span></a></li>\n<li><a href=\"/huis-kopen-funderingscheck/\"><strong>Aankoop-check</strong><span>Wat is relevant voordat je een huis koopt?</span></a></li>\n<li><a href=\"/kosten-funderingsonderzoek-berekenen/\"><strong>Kostenwijzer</strong><span>Welke dienst past en wat kost die, met een vergelijking.</span></a></li>\n<li><a href=\"/funderingsrisicoklasse-uitgelegd/\"><strong>Risicoklassen A tot en met E</strong><span>De officiële KCAF-omschrijvingen, klik per klasse.</span></a></li>\n<li><a href=\"/welke-fundering-heeft-mijn-woning/\"><strong>Welke fundering heeft mijn woning?</strong><span>Bouwjaar-tijdlijn met uitleg per periode.</span></a></li>\n<li><a href=\"/meetwaarden-uitgelegd/\"><strong>Meetwaarden uitgelegd</strong><span>Reken mm/m om en lees wat een waarde wel en niet zegt.</span></a></li>\n<li><a href=\"/funderingsquiz/\"><strong>Funderingsquiz</strong><span>Tien vragen over droogstand, zetting en meer.</span></a></li>\n<li><a href=\"/funderingsmetingen/\"><strong>Funderingsmetingen interactief</strong><span>Simulaties van lintvoegwaterpassing, loodmeting en vloerveld.</span></a></li>\n</ul>"
+      },
+      {
+        "id": "werkgebied-kaart",
+        "h2": "Waar werkt MV Funderingsscan?",
+        "answer": "MV Funderingsscan werkt in heel Friesland en de hele provincie Groningen, vanuit Leeuwarden. Op de kaart staan plaatsen met een eigen pagina met lokale informatie.",
+        "widget": "werkgebiedkaart",
+        "widget_position": "after",
+        "body": "<p>De bodem verschilt per plaats en soms per wijk. Dat is één van de factoren die bij funderingen een rol kan spelen; wat dat voor een woning betekent, blijkt pas uit onderzoek. Lees meer bij <a href=\"/funderingsonderzoek-friesland/\">funderingsonderzoek in Friesland</a> en <a href=\"/funderingsonderzoek-groningen/\">funderingsonderzoek in Groningen</a>.</p>"
+      },
+      {
+        "id": "wat-de-hulpmiddelen-niet-doen",
+        "h2": "Wat kunnen deze hulpmiddelen niet?",
+        "answer": "De hulpmiddelen stellen geen diagnose. Ze kunnen niet vaststellen of er funderingsschade is, welke fundering er onder een woning zit of wat herstel zou kosten.",
+        "body": "<p>Een indicatie op basis van antwoorden of een foto is altijd beperkt: een scheur kan veel oorzaken hebben en een bouwjaar zegt iets over wat gebruikelijk was, niet over jouw woning. Daarvoor is onderzoek ter plaatse nodig, zoals een <a href=\"/quickscan-fundering/\">quickscan fundering</a>. Onze bronnen staan op <a href=\"/bronnen-en-richtlijnen/\">bronnen en richtlijnen</a>.</p>"
+      },
+      {
+        "id": "stel-je-vraag",
+        "h2": "Wil je je vraag direct stellen?",
+        "answer": "Beschrijf je situatie in het formulier. We nemen contact met je op en laten weten welke stap zinvol kan zijn.",
+        "widget": "contactformulier",
+        "widget_position": "after",
+        "body": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Zijn de hulpmiddelen echt gratis?",
+        "a": "<p>Ja. Je betaalt niets voor de checks, keuzehulpen en uitleg. Alleen als je daarna zelf een onderzoek aanvraagt, zijn er kosten; die hoor je vooraf.</p>"
+      },
+      {
+        "q": "Worden mijn antwoorden opgeslagen?",
+        "a": "<p>Nee. De antwoorden blijven in je browser. Alleen als je zelf een formulier verstuurt, worden je gegevens en antwoorden per e-mail naar MV Funderingsscan gestuurd.</p>"
+      },
+      {
+        "q": "Kan een online check funderingsschade vaststellen?",
+        "a": "<p>Nee. Een online check geeft een indicatie op basis van je antwoorden. Of er funderingsschade is, kan alleen onderzoek aan de woning zelf laten zien.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/gratis-funderingscheck/",
+        "label": "Gratis Funderingscheck",
+        "text": "Elf vragen en een indicatie met uitleg."
+      },
+      {
+        "href": "/vertel-wat-je-ziet/",
+        "label": "Vertel ons wat je ziet",
+        "text": "Signalen aanvinken en foto's meesturen."
+      },
+      {
+        "href": "/kennisbank/",
+        "label": "Kennisbank",
+        "text": "Alle uitleg over funderingen op een rij."
+      }
+    ],
+    "cta": [
+      "Twijfel je over jouw fundering?",
+      "Begin met de gratis Funderingscheck of bespreek je situatie direct met ons."
+    ]
+  },
+  {
+    "path": "/gratis-funderingscheck/",
+    "title": "Gratis Funderingscheck: indicatie in 11 vragen",
+    "description": "Doe de gratis Funderingscheck: beantwoord 11 vragen over je woning en krijg een voorzichtige indicatie met uitleg wat die wel en niet betekent. Geen diagnose.",
+    "keyword": "gratis funderingscheck",
+    "intent": "informatief",
+    "nav_active": "/funderingsscan/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/hulpmiddelen/",
+        "name": "Hulpmiddelen"
+      },
+      {
+        "href": "/gratis-funderingscheck/",
+        "name": "Gratis Funderingscheck"
+      }
+    ],
+    "eyebrow": "Gratis Funderingscheck",
+    "h1": "Gratis Funderingscheck: zijn er signalen om verder te kijken?",
+    "lead": "Beantwoord elf korte vragen over het bouwjaar, zichtbare signalen en wat er al bekend is over de fundering. Je krijgt een voorzichtige indicatie, met uitleg wat die wel en niet betekent. <strong>Dit is geen funderingsdiagnose.</strong>",
+    "tools": true,
+    "facts": [
+      {
+        "label": "Duur",
+        "value": "ca. 2 minuten"
+      },
+      {
+        "label": "Kosten",
+        "value": "gratis"
+      },
+      {
+        "label": "Resultaat",
+        "value": "indicatie, geen diagnose"
+      }
+    ],
+    "sections": [
+      {
+        "id": "doe-de-check",
+        "h2": "Hoe werkt de gratis Funderingscheck?",
+        "answer": "Je beantwoordt elf vragen. De check zet zichtbare signalen (zoals scheuren, klemmende deuren en een scheve vloer) naast omstandigheden (zoals het bouwjaar en een bekend funderingstype) en geeft één van vier indicaties: weinig signalen, enkele signalen, meerdere signalen of een sterke aanleiding. Zijn te veel antwoorden onbekend, dan geeft de check bewust geen indicatie.",
+        "widget": "funderingscheck",
+        "widget_position": "after",
+        "body": "<p>Een bekende KCAF-risicoklasse D of E of eerder onderzoek met aandachtspunten leidt altijd tot de indicatie \"sterke aanleiding\", omdat er dan al gegevens zijn die op een verhoogd risico wijzen. Bij een aantal antwoorden \"weet ik niet\" meldt de check dat de indicatie minder betrouwbaar is; bij vier of meer en geen signalen geeft hij geen indicatie, omdat \"weinig signalen\" dan ten onrechte geruststellend zou kunnen zijn. Tegenstrijdige antwoorden, zoals geen scheuren maar wel groeiende scheuren, tellen niet mee als signaal.</p>"
+      },
+      {
+        "id": "wat-zegt-de-indicatie",
+        "h2": "Wat zegt de indicatie wel en niet?",
+        "answer": "De indicatie zegt of je antwoorden signalen bevatten die het waard kunnen zijn om verder te laten bekijken. Ze zegt niet of er funderingsschade is en ook niet dat alles in orde is.",
+        "body": "<p>Scheuren, klemmende deuren en scheve vloeren kunnen met de fundering te maken hebben, maar ook met krimp, temperatuurwerking, vocht, een roestende latei of de manier waarop de woning ooit is gebouwd. Het bouwjaar geeft een aanwijzing welke funderingswijzen gebruikelijk waren, maar niet welke fundering onder jouw woning zit. Daarom is de uitkomst een indicatie. Wat er werkelijk speelt, blijkt alleen uit onderzoek, zoals een <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>.</p>"
+      },
+      {
+        "id": "verschil-met-online-check",
+        "h2": "Wat is het verschil met de online funderingscheck?",
+        "answer": "De <a href=\"/funderingsscan-check/\">online funderingscheck</a> is een korte versie met acht ja/nee-vragen. De gratis Funderingscheck vraagt meer, onder meer naar de risicoklasse en eerder onderzoek, en legt bij het resultaat uit wat het wel en niet betekent.",
+        "body": "<p>Beide werken alleen in je browser. Alleen als je aan het eind zelf kiest om je situatie te bespreken, stuur je je antwoorden naar ons mee.</p>"
+      },
+      {
+        "id": "na-de-check",
+        "h2": "Wat kun je doen na de check?",
+        "answer": "Je kunt je situatie met ons bespreken, een Quick Scan aanvragen of eerst verder lezen. Welke stap past, hangt af van je situatie: kopen, verkopen, een taxatie of signalen in je eigen woning.",
+        "body": "<ul class=\"checklist\"><li>Koop je een woning? Lees over <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>.</li><li>Zie je signalen? Vink ze aan en stuur foto's via <a href=\"/vertel-wat-je-ziet/\">vertel ons wat je ziet</a>.</li><li>Gaat het om een taxatie? Lees <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek en taxatie</a>.</li><li>Wil je weten wat onderzoek kost? Gebruik de <a href=\"/kosten-funderingsonderzoek-berekenen/\">kostenwijzer</a>.</li><li>Wil je weten welke funderingswijzen bij je bouwjaar kunnen voorkomen? Bekijk de <a href=\"/welke-fundering-heeft-mijn-woning/\">bouwjaar-tijdlijn</a>.</li><li>Zin om je kennis te testen? Doe de <a href=\"/funderingsquiz/\">funderingsquiz</a>.</li></ul>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is de gratis Funderingscheck een diagnose?",
+        "a": "<p>Nee. Deze tool geeft alleen een indicatie op basis van de ingevulde antwoorden. Het is geen funderingsdiagnose en vervangt geen professioneel funderingsonderzoek.</p>"
+      },
+      {
+        "q": "Worden mijn antwoorden opgeslagen?",
+        "a": "<p>Nee. De check werkt in je browser. Alleen als je na het resultaat zelf het formulier verstuurt, gaan je gegevens en antwoorden per e-mail naar MV Funderingsscan.</p>"
+      },
+      {
+        "q": "Wat betekent \"sterke aanleiding\"?",
+        "a": "<p>Dat je antwoorden signalen of gegevens bevatten waarbij het verstandig kan zijn om de situatie professioneel te laten beoordelen, bijvoorbeeld een bekende risicoklasse D of E. Het betekent niet dat er zeker funderingsschade is.</p>"
+      },
+      {
+        "q": "Kan ik de check doen voor een woning buiten Friesland of Groningen?",
+        "a": "<p>Ja, de uitleg is overal bruikbaar. Een inspectie voeren we alleen uit in Friesland en Groningen.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/vertel-wat-je-ziet/",
+        "label": "Vertel ons wat je ziet",
+        "text": "Signalen aanvinken en foto's meesturen."
+      },
+      {
+        "href": "/quickscan-fundering/",
+        "label": "Quickscan fundering",
+        "text": "Wat een Quick Scan onderzoekt en oplevert."
+      },
+      {
+        "href": "/hulpmiddelen/",
+        "label": "Alle hulpmiddelen",
+        "text": "Keuzehulpen, kostenwijzer en uitleg."
+      }
+    ],
+    "cta": [
+      "Wil je weten wat dit voor jouw woning kan betekenen?",
+      "Bespreek je situatie of plan een Quick Scan. Je hoort vooraf wat het onderzoek kost.",
+      "Plan een Quick Scan"
+    ]
+  },
+  {
+    "path": "/vertel-wat-je-ziet/",
+    "title": "Scheur of signaal? Vertel ons wat je ziet, met foto",
+    "description": "Vink aan welke signalen je herkent, zoals scheuren of klemmende deuren, en stuur je vraag met foto's. We laten weten welke vervolgstap zinvol kan zijn.",
+    "keyword": "scheur foto beoordelen",
+    "intent": "commercieel",
+    "nav_active": "/funderingsproblemen/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/hulpmiddelen/",
+        "name": "Hulpmiddelen"
+      },
+      {
+        "href": "/vertel-wat-je-ziet/",
+        "name": "Vertel ons wat je ziet"
+      }
+    ],
+    "eyebrow": "Signalen en foto's",
+    "h1": "Heb je een scheur of ander signaal? Vertel ons wat je ziet",
+    "lead": "Vink aan welke signalen je herkent en lees wat ze kunnen betekenen. Wil je dat we meekijken, beschrijf dan je situatie en stuur maximaal drie foto's mee. <strong>Een foto alleen is onvoldoende om de oorzaak van een scheur vast te stellen</strong>, maar helpt wel om te bepalen welke vervolgstap zinvol kan zijn.",
+    "tools": true,
+    "facts": [
+      {
+        "label": "Foto's",
+        "value": "maximaal 3 (JPG, PNG, WebP)"
+      },
+      {
+        "label": "Privacy",
+        "value": "locatiegegevens worden verwijderd"
+      },
+      {
+        "label": "Kosten",
+        "value": "gratis"
+      }
+    ],
+    "sections": [
+      {
+        "id": "signalen-en-foto",
+        "h2": "Welke signalen herken je aan je woning?",
+        "answer": "Vink de signalen aan die je ziet. Je krijgt per signaal een korte uitleg; daarna kun je je vraag met foto's aan ons voorleggen.",
+        "widget": "vertelwatjeziet",
+        "widget_position": "after",
+        "body": ""
+      },
+      {
+        "id": "wat-zegt-een-signaal",
+        "h2": "Wat zegt een afzonderlijk signaal?",
+        "answer": "Afzonderlijke signalen bewijzen geen funderingsprobleem. Een scheur, een klemmende deur of een scheve vloer kan veel oorzaken hebben; pas het patroon en de samenhang met andere signalen zeggen iets.",
+        "body": "<p>Juist daarom is het nuttig om te weten of signalen veranderen. Leg scheuren vast met een foto, de datum en een liniaal ernaast en herhaal dat na een paar maanden. Meer daarover lees je bij <a href=\"/kennisbank/monitoring-scheuren/\">scheuren monitoren</a>, <a href=\"/scheuren-in-gevel/\">scheuren in de gevel</a> en <a href=\"/funderingsproblemen/\">funderingsproblemen herkennen</a>.</p>"
+      },
+      {
+        "id": "wat-doen-we-met-je-foto",
+        "h2": "Wat doen we met je foto's?",
+        "answer": "We bekijken je beschrijving en foto's en laten weten welke vervolgstap zinvol kan zijn. We stellen op basis van foto's geen diagnose: of een scheur met de fundering te maken heeft, blijkt pas uit onderzoek ter plaatse.",
+        "body": "<p>Je foto's worden in je browser verkleind voordat ze worden verstuurd. Daarbij worden camera- en locatiegegevens (EXIF) verwijderd. De foto's en je gegevens gaan per e-mail naar MV Funderingsscan en worden niet op deze website opgeslagen. Wil je liever direct een onderzoek, vraag dan een <a href=\"/quickscan-fundering/\">quickscan fundering</a> aan.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Kunnen jullie aan de hand van een foto zeggen of het funderingsschade is?",
+        "a": "<p>Nee. Een foto alleen is onvoldoende om de oorzaak van een scheur vast te stellen. We kunnen wel aangeven welke vervolgstap zinvol kan zijn.</p>"
+      },
+      {
+        "q": "Hoe maak ik een bruikbare foto van een scheur?",
+        "a": "<p>Fotografeer de scheur recht van voren met een liniaal of meetlint ernaast, en maak ook een foto van een afstand zodat de plek in de gevel zichtbaar is. Noteer de datum.</p>"
+      },
+      {
+        "q": "Welke bestanden kan ik uploaden?",
+        "a": "<p>Maximaal drie foto's in JPG, PNG of WebP, elk tot 20 MB. Foto's in HEIC-formaat van sommige telefoons kun je eerst als JPG opslaan.</p>"
+      },
+      {
+        "q": "Wat gebeurt er met mijn gegevens?",
+        "a": "<p>We gebruiken je gegevens en foto's alleen om je vraag te beantwoorden. Ze worden per e-mail naar MV Funderingsscan verstuurd en niet op de website opgeslagen.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/scheurpatronen/",
+        "label": "Scheurpatronen",
+        "text": "Wat de richting en plek van een scheur kunnen zeggen."
+      },
+      {
+        "href": "/gratis-funderingscheck/",
+        "label": "Gratis Funderingscheck",
+        "text": "Elf vragen en een indicatie met uitleg."
+      },
+      {
+        "href": "/scheefstand-woning/",
+        "label": "Scheefstand van een woning",
+        "text": "Wanneer een scheve gevel of vloer aandacht verdient."
+      }
+    ],
+    "cta": [
+      "Liever direct onderzoek?",
+      "Een Quick Scan brengt in beeld of er aanwijzingen zijn dat de fundering een rol speelt.",
+      "Plan een Quick Scan"
+    ]
+  },
+  {
+    "path": "/welke-stap-past-bij-mij/",
+    "title": "Wanneer funderingsonderzoek? Stappenhulp en scenario's",
+    "description": "Wanneer is funderingsonderzoek zinvol? Doorloop de stappenhulp voor kopen, verkopen, taxatie of signalen in je woning, en bekijk drie voorbeeldscenario's.",
+    "keyword": "wanneer funderingsonderzoek",
+    "intent": "informatief",
+    "nav_active": "/funderingsscan/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/hulpmiddelen/",
+        "name": "Hulpmiddelen"
+      },
+      {
+        "href": "/welke-stap-past-bij-mij/",
+        "name": "Welke stap past bij mij?"
+      }
+    ],
+    "eyebrow": "Stappenhulp",
+    "h1": "Welke stap past bij jouw situatie?",
+    "lead": "Of funderingsonderzoek zinvol is, hangt af van je situatie. Met de stappenhulp beantwoord je een paar vragen en zie je welke vervolgstap logisch kan zijn. Het is een informatieve route, geen technisch oordeel.",
+    "tools": true,
+    "sections": [
+      {
+        "id": "stappenhulp",
+        "h2": "Wanneer is funderingsonderzoek zinvol?",
+        "answer": "Funderingsonderzoek kan zinvol zijn bij de aankoop van een oudere woning, bij signalen zoals scheuren of een scheve vloer, of als de taxateur bij risicoklasse D of E om aanvullend onderzoek vraagt. Er is geen algemene wettelijke plicht.",
+        "widget": "stapwizard",
+        "widget_position": "after",
+        "body": "<p>De stappenhulp gebruikt dezelfde uitgangspunten als de rest van deze website. Bij een taxatie met klasse D of E moet volgens het NRVT in principe eerst een aanvullend (beperkt) funderingsonderzoek plaatsvinden; daarop bestaan uitzonderingen. Meer daarover op <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek en taxatie</a> en <a href=\"/bronnen-en-richtlijnen/\">bronnen en richtlijnen</a>.</p>"
+      },
+      {
+        "id": "scenarios",
+        "h2": "Wat weet je na een onderzoek, en wat nog niet?",
+        "answer": "Een onderzoek kan drie soorten uitkomsten hebben: geen duidelijke signalen, nader onderzoek gewenst of een vastgesteld funderingsprobleem. Bij elke uitkomst weet je iets, en blijft er ook iets onbekend.",
+        "widget": "scenario",
+        "widget_position": "after",
+        "body": "<p>Bij MV Funderingsscan eindigt een Quick Scan met één van vier adviezen: geen directe aanleiding, monitoren, gericht aanvullend onderzoek of fase 1 met metingen. Zie de <a href=\"/werkwijze/\">werkwijze</a> en <a href=\"/kennisbank/wat-na-een-quickscan/\">wat je na een quickscan kunt doen</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is funderingsonderzoek verplicht?",
+        "a": "<p>Er is geen algemene wettelijke plicht. De verkoper heeft wel een mededelingsplicht en de koper een onderzoeksplicht. Bij een taxatie met risicoklasse D of E moet volgens het NRVT in principe eerst aanvullend (beperkt) onderzoek plaatsvinden.</p>"
+      },
+      {
+        "q": "Geeft de stappenhulp een technisch advies?",
+        "a": "<p>Nee. De stappenhulp laat zien welke stap in jouw situatie logisch kan zijn. Een technisch oordeel over je woning vraagt onderzoek ter plaatse.</p>"
+      },
+      {
+        "q": "Wat als mijn situatie niet in de stappenhulp past?",
+        "a": "<p>Stel je vraag via <a href=\"/contact/\">contact</a>. We denken mee over welke stap zinvol kan zijn.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/wanneer-funderingsonderzoek/",
+        "label": "Wanneer funderingsonderzoek?",
+        "text": "De situaties waarin onderzoek zinvol kan zijn."
+      },
+      {
+        "href": "/huis-kopen-funderingscheck/",
+        "label": "Aankoop-check",
+        "text": "Wat is relevant voordat je een huis koopt?"
+      },
+      {
+        "href": "/kosten-funderingsonderzoek-berekenen/",
+        "label": "Kostenwijzer",
+        "text": "Welke dienst past en wat kost die?"
+      }
+    ],
+    "cta": [
+      "Twijfel je nog?",
+      "Leg je situatie aan ons voor. We laten weten welke stap zinvol kan zijn en wat die kost."
+    ]
+  },
+  {
+    "path": "/kosten-funderingsonderzoek-berekenen/",
+    "title": "Kostenwijzer funderingsonderzoek: welke dienst past?",
+    "description": "Kostenwijzer: kies wat je wilt laten onderzoeken en zie welke dienst past, met de indicatieve prijs. Plus een vergelijking van check, Quick Scan en fase 1.",
+    "keyword": "kosten funderingsonderzoek",
+    "intent": "commercieel",
+    "nav_active": "/funderingsscan/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/hulpmiddelen/",
+        "name": "Hulpmiddelen"
+      },
+      {
+        "href": "/kosten-funderingsonderzoek-berekenen/",
+        "name": "Kostenwijzer"
+      }
+    ],
+    "eyebrow": "Kostenwijzer",
+    "h1": "Kostenwijzer: welk onderzoek past en wat kost het?",
+    "lead": "Kies wat je wilt laten onderzoeken en zie welke dienst daarbij past, met de indicatieve prijs. Een Quick Scan (fase 0) kost vanaf ca. €350; fase 1 met metingen indicatief €750 – €1.500. De definitieve prijs hoor je altijd vooraf.",
+    "tools": true,
+    "facts": [
+      {
+        "label": "Quick Scan (fase 0)",
+        "value": "vanaf ca. €350"
+      },
+      {
+        "label": "Fase 1",
+        "value": "indicatief €750 – €1.500"
+      },
+      {
+        "label": "Prijs",
+        "value": "vooraf bekend"
+      }
+    ],
+    "sections": [
+      {
+        "id": "kostenwijzer",
+        "h2": "Wat kost funderingsonderzoek?",
+        "answer": "Een Quick Scan (fase 0) kost vanaf ca. €350, bij grotere of complexere woningen tot ca. €550. Fase 1 met metingen kost indicatief €750 – €1.500. Voor een vraag van de taxateur is vooraf een prijsinschatting nodig.",
+        "widget": "kostenwijzer",
+        "widget_position": "after",
+        "body": "<p>Alle bedragen zijn indicatief. De definitieve prijs hangt af van de woning en wat er onderzocht moet worden; je hoort hem vooraf. Zie ook de pagina <a href=\"/prijzen/\">prijzen</a> en <a href=\"/kennisbank/wat-kost-een-funderingsscan/\">wat een funderingsscan kost</a>.</p>"
+      },
+      {
+        "id": "wat-krijg-ik-voor-mijn-geld",
+        "h2": "Wat krijg ik voor mijn geld?",
+        "answer": "De gratis check geeft een indicatie op basis van je antwoorden. De Quick Scan onderzoekt je woning met archief- en bodemonderzoek en een inspectie. Fase 1 voegt metingen toe, zoals een lintvoegwaterpassing.",
+        "widget": "dienstvergelijking",
+        "widget_position": "after",
+        "body": "<p>Meer over de inhoud lees je bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a> en <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>. Wat de meetwaarden uit fase 1 betekenen, lees je bij <a href=\"/meetwaarden-uitgelegd/\">meetwaarden uitgelegd</a>.</p>"
+      },
+      {
+        "id": "tijdlijn-quick-scan",
+        "h2": "Wat gebeurt er tijdens een Quick Scan?",
+        "answer": "Een Quick Scan verloopt in zes stappen: aanvraag, informatie verzamelen, archief- en bodemonderzoek, inspectie, analyse en rapport. Alleen als het advies daartoe aanleiding geeft, volgt vervolgonderzoek.",
+        "widget": "quickscantijdlijn",
+        "widget_position": "after",
+        "body": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Waarom staat er bij taxatie geen prijs?",
+        "a": "<p>Welk onderzoek een taxateur nodig heeft, verschilt per situatie. Laat ons weten wat er gevraagd wordt; dan hoor je vooraf of en tegen welke prijs wij dat kunnen uitvoeren.</p>"
+      },
+      {
+        "q": "Zit graafwerk in de prijs?",
+        "a": "<p>Nee. Graafwerk voor een inspectieput valt buiten fase 0 en fase 1 en dus buiten deze prijzen.</p>"
+      },
+      {
+        "q": "Wanneer hoor ik de definitieve prijs?",
+        "a": "<p>Vooraf, voordat je akkoord geeft. Zo weet je wat het onderzoek kost voordat het wordt ingepland.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/prijzen/",
+        "label": "Prijzen",
+        "text": "Alle prijzen en wat erin zit."
+      },
+      {
+        "href": "/kennisbank/wat-kost-een-funderingsscan/",
+        "label": "Wat kost een funderingsscan?",
+        "text": "Uitleg over de kosten per fase."
+      },
+      {
+        "href": "/welke-stap-past-bij-mij/",
+        "label": "Welke stap past bij mij?",
+        "text": "Stappenhulp en scenario's."
+      }
+    ],
+    "cta": [
+      "Een exacte prijs voor jouw woning?",
+      "Vraag een funderingsscan aan; je hoort de definitieve prijs vooraf.",
+      "Funderingsscan aanvragen"
+    ]
+  },
+  {
+    "path": "/welke-fundering-heeft-mijn-woning/",
+    "title": "Welke fundering heeft mijn woning? Bouwjaar-tijdlijn",
+    "description": "Welke funderingswijzen kunnen bij jouw bouwjaar voorkomen? Vul het bouwjaar in en lees waarom het bouwjaar alleen het funderingstype niet vaststelt.",
+    "keyword": "welke fundering heeft mijn huis",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/hulpmiddelen/",
+        "name": "Hulpmiddelen"
+      },
+      {
+        "href": "/welke-fundering-heeft-mijn-woning/",
+        "name": "Welke fundering heeft mijn woning?"
+      }
+    ],
+    "eyebrow": "Bouwjaar-tijdlijn",
+    "h1": "Welke fundering heeft mijn woning?",
+    "lead": "Het bouwjaar geeft een aanwijzing welke funderingswijzen in die periode gebruikelijk waren. Op de tijdlijn zie je welke dat zijn. Welke fundering er werkelijk onder je woning zit, blijkt alleen uit documentatie of onderzoek.",
+    "tools": true,
+    "sections": [
+      {
+        "id": "bouwjaar-tijdlijn",
+        "h2": "Welke funderingswijzen kunnen bij mijn bouwjaar voorkomen?",
+        "answer": "Tot ongeveer 1970 werden woningen onder meer op houten palen of op staal gefundeerd; tussen circa 1930 en 1970 kwamen ook houten palen met een betonnen oplanger voor. Vanaf ongeveer 1970 werden bij paalfunderingen in veruit de meeste gevallen betonnen palen gebruikt.",
+        "widget": "bouwjaarfundering",
+        "widget_position": "after",
+        "body": "<p>Een fundering op staal is een fundering zonder palen, ook wel ondiepe fundering genoemd. Of een woning op palen of op staal staat, hangt onder meer af van de ondergrond. Meer uitleg vind je bij <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a>, <a href=\"/kennisbank/fundering-op-staal/\">fundering op staal</a> en <a href=\"/kennisbank/paalfundering/\">paalfundering</a>.</p>"
+      },
+      {
+        "id": "hoe-weet-je-het-zeker",
+        "h2": "Hoe weet je welke fundering er onder je woning zit?",
+        "answer": "Het meest betrouwbaar zijn documenten zoals bouwtekeningen of eerder onderzoek. Ontbreken die, dan kan archiefonderzoek een eerste beeld geven. Zekerheid over de staat van een fundering geeft alleen onderzoek waarbij de fundering zichtbaar wordt gemaakt.",
+        "body": "<p>Bouwtekeningen zijn vaak op te vragen bij het archief van je gemeente. In de <a href=\"/fase-0-funderingsonderzoek/\">Quick Scan</a> zoeken we uit wat er over de woning bekend is, het zogenoemde <a href=\"/kennisbank/archiefonderzoek-fundering/\">archiefonderzoek</a>. Het vrijgraven van de fundering is een aparte, verdergaande stap. Test daarna je kennis met de <a href=\"/funderingsquiz/\">funderingsquiz</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Heeft mijn huis van vóór 1970 houten palen?",
+        "a": "<p>Niet per se. Woningen uit die periode kunnen op houten palen staan, maar ook op staal (zonder palen) of op houten palen met een betonnen oplanger. Het bouwjaar alleen is onvoldoende om dat vast te stellen.</p>"
+      },
+      {
+        "q": "Is een fundering op houten palen een probleem?",
+        "a": "<p>Niet automatisch. Een woning met houten palen heeft niet vanzelf problemen. Wel kan de grondwaterstand een rol spelen: bij droogstand kan schimmelaantasting ontstaan.</p>"
+      },
+      {
+        "q": "Waar vind ik bouwtekeningen van mijn woning?",
+        "a": "<p>Vaak bij het bouwarchief van de gemeente. Ook eerdere eigenaren of een VvE kunnen informatie hebben.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/houten-paalfundering/",
+        "label": "Houten paalfundering",
+        "text": "Hoe houten palen werken en wanneer ze kwetsbaar zijn."
+      },
+      {
+        "href": "/kennisbank/fundering-op-staal/",
+        "label": "Fundering op staal",
+        "text": "Funderen zonder palen."
+      },
+      {
+        "href": "/kennisbank/archiefonderzoek-fundering/",
+        "label": "Archiefonderzoek",
+        "text": "Wat er over je woning te vinden is."
+      }
+    ],
+    "cta": [
+      "Wil je weten welke fundering er werkelijk onder je woning zit?",
+      "In de Quick Scan zoeken we uit wat er over de woning bekend is, en beoordelen we het funderingsrisico."
+    ]
+  },
+  {
+    "path": "/funderingsrisicoklasse-uitgelegd/",
+    "title": "Funderingsrisicoklasse A tot en met E uitgelegd",
+    "description": "Wat betekent funderingsrisicoklasse A, B, C, D of E? Klik op een klasse voor de officiële KCAF-omschrijving, wat het wel en niet betekent en de vervolgstap.",
+    "keyword": "funderingsrisicoklasse",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/hulpmiddelen/",
+        "name": "Hulpmiddelen"
+      },
+      {
+        "href": "/funderingsrisicoklasse-uitgelegd/",
+        "name": "Risicoklassen A–E"
+      }
+    ],
+    "eyebrow": "Risicoklassen A–E",
+    "h1": "Funderingsrisicoklasse A tot en met E: wat betekent jouw klasse?",
+    "lead": "Het KCAF-funderingsrisicorapport deelt het funderingsrisico van een woning in klassen A tot en met E in. Sinds 1 april 2026 staat die klasse in het taxatierapport. Klik op een klasse voor de officiële omschrijving en wat die wel en niet betekent.",
+    "tools": true,
+    "sections": [
+      {
+        "id": "klassen",
+        "h2": "Wat betekenen de klassen A tot en met E?",
+        "answer": "KCAF omschrijft de klassen als volgt: A – geen risico, B – licht risico, C – verhoogd risico of onzekerheid, D – hoog risico, nader onderzoek passend, en E – vastgesteld funderingsprobleem.",
+        "widget": "risicoklassen",
+        "widget_position": "after",
+        "body": "<p>De klasse komt uit een model dat gegevens gebruikt over onder meer ondergrond, funderingstype, grondwaterstanden, archiefinformatie en, waar beschikbaar, eerder funderingsonderzoek. Het is een inschatting op basis van gegevens, geen vaststelling van de staat van de fundering. De omschrijvingen hierboven zijn letterlijk overgenomen van KCAF; zie <a href=\"/bronnen-en-richtlijnen/\">bronnen en richtlijnen</a>.</p>"
+      },
+      {
+        "id": "klasse-in-taxatie",
+        "h2": "Wat betekent de klasse voor een taxatie?",
+        "answer": "Sinds 1 april 2026 neemt de taxateur de KCAF-risicoklasse op in het taxatierapport. Bij klasse D of E moet volgens het NRVT in principe eerst een aanvullend (beperkt) funderingsonderzoek plaatsvinden voordat het taxatierapport wordt afgerond.",
+        "body": "<p>In sommige situaties kan dat onderzoek achterwege blijven, bijvoorbeeld als er bewijsstukken zijn dat het risico niet aanwezig is; de taxateur legt dat dan vast. NHG heeft aangekondigd dat vanaf 1 januari 2027 bij klasse D of E een verkennend funderingsonderzoek verplicht is voor een lening met NHG. Meer daarover lees je bij <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek en taxatie</a>, <a href=\"/kennisbank/funderingsscan-en-hypotheek/\">funderingsscan en hypotheek</a> en <a href=\"/kennisbank/funderingsrisico/\">funderingsrisico</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Wat betekent funderingsrisicoklasse D?",
+        "a": "<p>KCAF omschrijft klasse D als “hoog risico → nader onderzoek passend”. Bij een taxatie moet dan volgens het NRVT in principe eerst een aanvullend (beperkt) funderingsonderzoek plaatsvinden.</p>"
+      },
+      {
+        "q": "Wat betekent funderingsrisicoklasse E?",
+        "a": "<p>KCAF omschrijft klasse E als “vastgesteld funderingsprobleem”. De klasse zegt niet hoe ernstig het probleem is of welke maatregel nodig is.</p>"
+      },
+      {
+        "q": "Kan ik mijn risicoklasse laten aanpassen?",
+        "a": "<p>Volgens het NRVT kan de taxateur onjuistheden in de KCAF-informatie melden en een duidelijk verschil met de eigen waarneming toelichten. Onderzoek aan de woning kan meer duidelijkheid geven dan de klasse alleen.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/funderingsonderzoek-taxatie/",
+        "label": "Funderingsonderzoek en taxatie",
+        "text": "Wat de klasse betekent voor je taxatie."
+      },
+      {
+        "href": "/kennisbank/funderingsrisico/",
+        "label": "Funderingsrisico",
+        "text": "Het verschil tussen risico en schade."
+      },
+      {
+        "href": "/bronnen-en-richtlijnen/",
+        "label": "Bronnen en richtlijnen",
+        "text": "KCAF, NRVT en NHG op een rij."
+      }
+    ],
+    "cta": [
+      "Klasse D of E in je taxatie?",
+      "Laat ons weten welk onderzoek er gevraagd wordt; dan hoor je vooraf of en tegen welke prijs wij dat kunnen uitvoeren."
+    ]
+  },
+  {
+    "path": "/huis-kopen-funderingscheck/",
+    "title": "Huis kopen? Doe eerst de funderingscheck voor kopers",
+    "description": "Een huis kopen? Beantwoord zes vragen over bouwjaar, risicoklasse, signalen en je voorbehoud, en zie welke funderingsonderwerpen voor jou relevant zijn.",
+    "keyword": "huis kopen fundering check",
+    "intent": "commercieel",
+    "nav_active": "/funderingsscan/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/hulpmiddelen/",
+        "name": "Hulpmiddelen"
+      },
+      {
+        "href": "/huis-kopen-funderingscheck/",
+        "name": "Aankoop-check"
+      }
+    ],
+    "eyebrow": "Aankoop-check",
+    "h1": "Een huis kopen? Doe eerst deze funderingscheck",
+    "lead": "Funderingsrisico kan bij de aankoop van een woning gevolgen hebben voor onderzoek, mogelijke herstelmaatregelen, financiering, verkoopbaarheid en je onderhandelingspositie. Beantwoord zes vragen en zie welke onderwerpen in jouw situatie aandacht verdienen.",
+    "tools": true,
+    "sections": [
+      {
+        "id": "aankoop-check",
+        "h2": "Waar let je op bij de fundering als je een huis koopt?",
+        "answer": "Let op het bouwjaar, de KCAF-risicoklasse in het taxatierapport, zichtbare signalen bij de bezichtiging, informatie van de verkoper, eventuele verbouwplannen en de termijn van je voorbehoud.",
+        "widget": "aankoopcheck",
+        "widget_position": "after",
+        "body": "<p>Een uitgebreide uitleg staat op <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a> en <a href=\"/kennisbank/funderingsrisico-bij-aankoop/\">funderingsrisico bij aankoop</a>.</p>"
+      },
+      {
+        "id": "scenarios-bij-aankoop",
+        "h2": "Wat als er na onderzoek iets uitkomt?",
+        "answer": "Dat hangt af van de uitkomst: geen duidelijke signalen, nader onderzoek gewenst of een vastgesteld probleem. Bij elke uitkomst weet je iets, en blijft er iets onbekend.",
+        "widget": "scenario",
+        "widget_position": "after",
+        "body": "<p>Bespreek een uitkomst altijd met je aankoopmakelaar. Wat het betekent voor je financiering, stem je af met je taxateur en geldverstrekker. MV Funderingsscan geeft geen financieel of juridisch advies. Lees ook <a href=\"/kennisbank/funderingsonderzoek-voor-bod/\">funderingsonderzoek vóór je bod</a> en de uitleg over <a href=\"/funderingsrisicoklasse-uitgelegd/\">risicoklassen A tot en met E</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Moet ik funderingsonderzoek laten doen als ik een huis koop?",
+        "a": "<p>Er is geen algemene wettelijke plicht. Als koper heb je wel een onderzoeksplicht, en bij een taxatie met risicoklasse D of E moet volgens het NRVT in principe eerst aanvullend (beperkt) onderzoek plaatsvinden.</p>"
+      },
+      {
+        "q": "Past een Quick Scan binnen mijn voorbehoud?",
+        "a": "<p>De inspectie wordt meestal binnen enkele werkdagen ingepland en het rapport volgt normaal gesproken binnen 5 werkdagen na de inspectie. Geef je termijn bij de aanvraag door.</p>"
+      },
+      {
+        "q": "Geven jullie advies over de koop zelf?",
+        "a": "<p>Nee. We beoordelen het funderingsrisico. Over de koop, de prijs en de financiering overleg je met je aankoopmakelaar, taxateur en geldverstrekker.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/fase-0-funderingsonderzoek-aankoop/",
+        "label": "Quick Scan bij aankoop",
+        "text": "Fase 0, gepland rond je voorbehoud."
+      },
+      {
+        "href": "/funderingsrisicoklasse-uitgelegd/",
+        "label": "Risicoklassen A–E",
+        "text": "Wat de klasse in je taxatierapport betekent."
+      },
+      {
+        "href": "/funderingsonderzoek-bij-aankoop/",
+        "label": "Funderingsonderzoek bij aankoop",
+        "text": "Alles over onderzoek vóór je koopt."
+      }
+    ],
+    "cta": [
+      "Een woning op het oog?",
+      "Plan een Quick Scan binnen je voorbehoud. Je hoort vooraf wat het kost.",
+      "Plan een Quick Scan"
+    ]
+  },
+  {
+    "path": "/meetwaarden-uitgelegd/",
+    "title": "Meetwaarden fundering uitgelegd: wat betekent 12 mm/m?",
+    "description": "Wat betekent een scheefstand van 12 mm/m? Reken meetwaarden om naar verhouding, procent en graden, en lees waarom context belangrijker is dan één getal.",
+    "keyword": "scheefstand mm per meter",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/hulpmiddelen/",
+        "name": "Hulpmiddelen"
+      },
+      {
+        "href": "/meetwaarden-uitgelegd/",
+        "name": "Meetwaarden uitgelegd"
+      }
+    ],
+    "eyebrow": "Meetwaarden",
+    "h1": "Wat betekent mijn meetgegeven?",
+    "lead": "In een funderingsrapport kom je meetwaarden tegen, zoals een scheefstand in millimeters per meter. Met de rekenhulp zie je dezelfde waarde als verhouding, percentage en hoek. Belangrijker nog: je leest waarom één getal zonder context weinig zegt.",
+    "tools": true,
+    "sections": [
+      {
+        "id": "rekenhulp",
+        "h2": "Hoe reken je een meetwaarde om?",
+        "answer": "Deel de afwijking in millimeters door de lengte in meters: 12 mm over 1 meter is 12 mm/m. Dat is gelijk aan een verhouding van ongeveer 1 : 83, 1,2 procent of 0,69 graden.",
+        "widget": "meetwaarden",
+        "widget_position": "after",
+        "body": ""
+      },
+      {
+        "id": "context",
+        "h2": "Waarom is één meetwaarde niet genoeg?",
+        "answer": "Er is geen universele grens waarboven een waarde “slecht” is. Een afwijking kan bij de bouw zijn ontstaan, al decennia stabiel zijn, of juist nog veranderen. Onderzoekers beoordelen meetwaarden daarom in samenhang.",
+        "body": "<p>Ze leggen een loodmeting naast een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a>, scheurpatronen, het bouwjaar, het funderingstype en de bodem. Of een woning nog beweegt, blijkt pas uit herhaalde metingen op dezelfde punten. Probeer de metingen zelf in de simulaties op <a href=\"/funderingsmetingen/\">funderingsmetingen uitgelegd</a>, bekijk welke funderingswijzen bij een bouwjaar horen op de <a href=\"/welke-fundering-heeft-mijn-woning/\">bouwjaar-tijdlijn</a> en lees meer over de <a href=\"/kennisbank/loodmeting/\">loodmeting</a> en de <a href=\"/kennisbank/zettingsmeting/\">zettingsmeting</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Vanaf welke scheefstand is een woning slecht?",
+        "a": "<p>Daar is geen universele grens voor. Een waarde wordt beoordeeld in samenhang met andere metingen, signalen en gegevens over de woning, en het liefst met herhaalde metingen.</p>"
+      },
+      {
+        "q": "Wat is het verschil tussen mm/m en een verhouding?",
+        "a": "<p>Het is dezelfde waarde anders geschreven. 10 mm/m betekent 10 millimeter afwijking per meter, wat gelijk is aan 1 : 100 of 1 procent.</p>"
+      },
+      {
+        "q": "Laat één meting zien of mijn huis nog zakt?",
+        "a": "<p>Nee. Eén meting is een momentopname. Daarvoor zijn herhaalde metingen nodig.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/funderingsmetingen/",
+        "label": "Funderingsmetingen interactief",
+        "text": "Simulaties van lintvoegwaterpassing en loodmeting."
+      },
+      {
+        "href": "/kennisbank/scheefstandsmeting/",
+        "label": "Scheefstandsmeting",
+        "text": "Hoe scheefstand wordt vastgelegd."
+      },
+      {
+        "href": "/funderingsrapport/",
+        "label": "Het funderingsrapport",
+        "text": "Wat er in ons rapport staat."
+      }
+    ],
+    "cta": [
+      "Vragen over meetwaarden in een rapport?",
+      "Leg je vraag aan ons voor. We leggen uit wat de waarden in jouw situatie kunnen betekenen."
+    ]
+  },
+  {
+    "path": "/funderingsquiz/",
+    "title": "Funderingsquiz: hoeveel weet jij over funderingen?",
+    "description": "Test je kennis in tien vragen over droogstand, zetting, negatieve kleef, risicoklassen en meer. Bij elk antwoord krijg je direct een korte uitleg met bron.",
+    "keyword": "funderingsquiz",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/hulpmiddelen/",
+        "name": "Hulpmiddelen"
+      },
+      {
+        "href": "/funderingsquiz/",
+        "name": "Funderingsquiz"
+      }
+    ],
+    "eyebrow": "Mini-quiz",
+    "h1": "Hoeveel weet jij over funderingen?",
+    "lead": "Tien vragen over begrippen die je tegenkomt bij funderingsonderzoek: van droogstand en zetting tot de KCAF-risicoklassen. Bij elk antwoord lees je direct de uitleg.",
+    "tools": true,
+    "sections": [
+      {
+        "id": "quiz",
+        "h2": "Test je kennis over funderingen",
+        "answer": "Kies bij elke vraag een antwoord. De uitleg is gebaseerd op de KCAF-richtlijn, de brochure van RVO en KCAF en de regels van NRVT en NHG.",
+        "widget": "funderingsquiz",
+        "widget_position": "after",
+        "body": "<p>Wil je een begrip nalezen? Kijk in de <a href=\"/kennisbank/begrippenlijst/\">begrippenlijst</a>, reken een meetwaarde om met <a href=\"/meetwaarden-uitgelegd/\">meetwaarden uitgelegd</a>, lees over <a href=\"/kennisbank/paalrot/\">paalrot</a> en <a href=\"/kennisbank/zetting/\">zetting</a>, of bekijk de <a href=\"/bronnen-en-richtlijnen/\">bronnen</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Waar komen de antwoorden vandaan?",
+        "a": "<p>Uit de KCAF-richtlijn Funderingen onder gebouwen (2022), de brochure van RVO en KCAF voor woningeigenaren, en de informatie van NRVT en NHG. Zie <a href=\"/bronnen-en-richtlijnen/\">bronnen en richtlijnen</a>.</p>"
+      },
+      {
+        "q": "Zegt mijn score iets over mijn woning?",
+        "a": "<p>Nee. De quiz gaat over algemene kennis. Of er iets speelt bij je eigen woning, blijkt alleen uit onderzoek.</p>"
+      },
+      {
+        "q": "Wordt mijn score opgeslagen?",
+        "a": "<p>Nee, de quiz werkt alleen in je browser.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/begrippenlijst/",
+        "label": "Begrippenlijst",
+        "text": "Alle vaktermen kort uitgelegd."
+      },
+      {
+        "href": "/gratis-funderingscheck/",
+        "label": "Gratis Funderingscheck",
+        "text": "Een indicatie voor je eigen woning."
+      },
+      {
+        "href": "/kennisbank/",
+        "label": "Kennisbank",
+        "text": "Uitgebreide artikelen over funderingen."
+      }
+    ],
+    "cta": [
+      "Benieuwd naar je eigen woning?",
+      "Doe de gratis Funderingscheck of laat een Quick Scan uitvoeren."
+    ]
+  }
+]

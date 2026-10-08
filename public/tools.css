@@ -1,0 +1,199 @@
+/* MV Funderingsscan – interactieve hulpmiddelen. Alleen geladen op pagina's met tools;
+   gebruikt de bestaande kleuren en componenten uit styles.css en overschrijft die niet. */
+
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.btn-link { background: none; border: 0; padding: 10px 4px; font: inherit; font-weight: 700; color: var(--navy); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 4px; cursor: pointer; min-height: 44px; }
+.btn-link:hover, .btn-link:focus-visible { color: var(--gold); }
+
+.tool { margin: 26px 0 30px; padding: 26px; border-radius: 20px; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); position: relative; }
+.tool::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 4px; border-radius: 20px 20px 0 0; background: linear-gradient(90deg, var(--gold), var(--gold-light)); }
+.tool .sim { box-shadow: none; border: 0; padding: 0; margin: 0; }
+.tool .sim::before { display: none; }
+.tool [hidden], .tool-lead [hidden], .tool-wizard [hidden], .wz-node[hidden] { display: none !important; }
+.tool-small { font-size: 13px; color: var(--muted); margin: 12px 0 0; }
+.prose .tool-small { font-size: 13px; }
+
+/* Stappen / vragen */
+.tq-progress { height: 6px; border-radius: 6px; background: var(--light); overflow: hidden; margin: 6px 0 8px; }
+.tq-progress span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--gold), var(--gold-light)); transition: width .3s var(--ease); }
+.tq-count { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; } /* alleen voor schermlezers; de vraag toont zelf het nummer */
+.tq-step, .ak-q, .qz-q { border: 0; margin: 0 0 18px; padding: 0; min-width: 0; }
+.tq-step legend, .ak-q legend, .qz-q legend, .tf legend { font-weight: 700; color: var(--navy); font-size: 18px; margin-bottom: 12px; padding: 0; }
+.ak-q legend, .tf legend { font-size: 16px; }
+.tq-num { display: block; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+.tq-opts { display: grid; gap: 8px; }
+.tq-opts-row { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+.tq-opts-grid { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); border: 0; padding: 0; margin: 0 0 14px; }
+.tq-opt { position: relative; display: flex; align-items: center; gap: 12px; min-height: 48px; padding: 10px 14px; border: 1.5px solid var(--line); border-radius: 12px; background: #fff; cursor: pointer; transition: border-color .2s ease, background-color .2s ease; }
+.tq-opt:hover { border-color: var(--gold); }
+.tq-opt input { width: 20px; height: 20px; margin: 0; flex: none; accent-color: var(--navy); }
+.tq-opt:has(input:checked) { border-color: var(--navy); background: var(--gold-soft); }
+.tq-opt:has(input:focus-visible) { outline: 3px solid var(--gold); outline-offset: 2px; }
+.tq-opt span { color: var(--text); font-size: 15.5px; }
+.tq-opt.is-right { border-color: #3f8a55; background: #eef8f0; }
+.tq-opt.is-wrong { border-color: #c2402a; background: #fdf1ee; }
+.tq-opt:has(input:disabled) { cursor: default; }
+.tq-extra { margin-top: 12px; }
+.tq-nav { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.tq-nav [data-tq-next], .tq-nav [data-tq-done] { margin-left: auto; }
+.prose .tq-error { color: #b5432f; font-weight: 700; font-size: 14.5px; margin: 10px 0 0; }
+.tq-error[hidden] { display: none; }
+.tq textarea, .tf textarea, .tf input:not([type="radio"]):not([type="checkbox"]) { width: 100%; font: inherit; color: var(--text); padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 12px; background: #fff; }
+.tq textarea:focus, .tf textarea:focus, .tf input:not([type="radio"]):not([type="checkbox"]):focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 4px rgba(201, 155, 62, .14); }
+
+/* Resultaat */
+.tool-result { margin-top: 6px; }
+.tool-result:focus { outline: none; }
+.tool-result-inline { padding: 18px 20px; border-radius: 14px; background: var(--light); border: 1px solid var(--line); margin: 6px 0 22px; }
+.tr-cat { padding: 20px 22px; border-radius: 14px; background: var(--navy); color: #fff; margin-bottom: 16px; }
+.prose .tr-cat h3 { color: #fff; margin: 6px 0 6px; }
+.prose .tr-cat p { color: #e3eaf1; margin: 0; }
+.tr-badge { display: inline-block; padding: 3px 10px; border-radius: 30px; background: var(--gold); color: #fff; font-size: 11.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.tr-lists, .tr-meaning { display: grid; gap: 14px; margin: 14px 0; }
+.tr-lists { grid-template-columns: 1fr 1fr; }
+.tr-meaning { grid-template-columns: repeat(3, 1fr); }
+.tr-lists > div, .tr-meaning > div { padding: 16px 18px; border-radius: 12px; background: var(--light); border: 1px solid var(--line); }
+.prose .tr-lists h4, .prose .tr-meaning h4 { margin: 0 0 8px; font-size: 15px; color: var(--navy); }
+.prose .tr-meaning p, .prose .tr-lists li { font-size: 14.5px; }
+.prose .tr-meaning p:last-child { margin-bottom: 0; }
+.prose .tr-note { padding: 12px 14px; border-radius: 10px; background: #fff8ef; border: 1px solid #f0d6ad; font-size: 14.5px; }
+.tr-note[hidden] { display: none; }
+.tr-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 16px 0; }
+.prose .tr-disclaimer { font-size: 13.5px; color: var(--muted); padding-top: 12px; border-top: 1px solid var(--line); }
+.prose .tr-count { margin: 0 0 8px; font-size: 16px; color: var(--navy); }
+.tr-signal-info { margin: 10px 0 0; padding-left: 18px; }
+.prose .tr-signal-info li { font-size: 14.5px; margin-bottom: 6px; }
+.tr-signal-info li[hidden] { display: none; }
+
+/* Leadformulieren */
+.tool-lead { margin-top: 20px; padding: 22px; border-radius: 16px; border: 1px solid var(--line); background: #fff; }
+.js .tool-lead[data-collapsible]:not(.is-open) { display: none; }
+.tool-lead.is-sent > :not(.tool-lead-success) { display: none !important; }
+.prose .tool-lead h3 { margin-top: 6px; }
+.tf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 14px 0; }
+.tf-full { grid-column: 1 / -1; }
+.tf label { display: block; font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+.tf .tq-opt { display: flex; font-weight: 400; margin-bottom: 0; }
+.tf .tq-opt span { color: var(--text); }
+.tf input[type="file"] { padding: 10px; background: var(--light); }
+.field-opt { font-weight: 400; color: var(--muted); }
+.prose .field-tip { font-size: 13px; color: var(--muted); margin: 6px 0 0; }
+.check-line { display: flex; gap: 10px; align-items: flex-start; margin: 10px 0; font-size: 14.5px; color: var(--text); cursor: pointer; }
+.check-line input { width: 20px; height: 20px; margin: 2px 0 0; flex: none; accent-color: var(--navy); }
+.prose .tool-privacy { text-align: left; }
+.form-status.is-error { color: #b5432f; font-weight: 700; }
+.prose .form-status { font-size: 14.5px; }
+.tool-lead-success { padding: 16px 18px; border-radius: 12px; background: #eef8f0; border: 1px solid #b9dcc2; }
+.tool-lead-success:focus { outline: none; }
+.photo-previews { list-style: none; padding: 0; margin: 10px 0 0; display: flex; flex-wrap: wrap; gap: 12px; }
+.photo-previews li { display: grid; gap: 4px; justify-items: start; }
+.photo-previews img { width: 120px; height: 90px; object-fit: cover; border-radius: 10px; border: 1px solid var(--line); }
+
+/* Tijdlijn Quick Scan */
+.tool-timeline { list-style: none; padding: 0; margin: 18px 0 0; counter-reset: none; display: grid; gap: 8px; }
+.tool-timeline details { border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.tool-timeline summary { display: flex; align-items: center; gap: 12px; padding: 12px 16px; min-height: 48px; cursor: pointer; font-weight: 700; color: var(--navy); list-style: none; }
+.tool-timeline summary::-webkit-details-marker { display: none; }
+.tool-timeline summary::after { content: "+"; margin-left: auto; color: var(--gold); font-size: 20px; }
+.tool-timeline details[open] summary::after { content: "–"; }
+.tool-timeline summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; border-radius: 12px; }
+.prose .tool-timeline p { margin: 0; padding: 0 16px 14px 58px; font-size: 15px; }
+.tl-num { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--gold); color: #fff; font-size: 14px; flex: none; }
+
+/* Bouwjaar */
+.bj-form { display: grid; gap: 14px; margin-bottom: 18px; }
+.bj-form .tf input { max-width: 220px; }
+.bj-line { position: relative; height: 150px; margin: 10px 0 18px; }
+.bj-seg { position: absolute; min-height: 40px; border-radius: 8px; display: flex; align-items: center; padding: 4px 10px; font-size: 12.5px; font-weight: 700; line-height: 1.25; }
+.bj-seg span { white-space: normal; }
+.bj-seg-a { top: 0; left: 0; width: 55%; background: #e9dfc9; color: #5b4720; }
+.bj-seg-b { top: 48px; left: 30%; width: 25%; background: #d9c69c; color: #4a3814; }
+.bj-seg-c { top: 0; left: 55%; width: 45%; background: #cfdbe6; color: var(--navy); }
+.bj-axis { position: absolute; top: 118px; left: 0; right: 0; height: 24px; border-top: 2px solid var(--navy); font-size: 12px; color: var(--muted); }
+.bj-axis span { position: absolute; top: 4px; transform: translateX(-50%); }
+.bj-axis span:nth-child(1) { left: 2%; transform: none; }
+.bj-axis span:nth-child(2) { left: 30%; }
+.bj-axis span:nth-child(3) { left: 55%; }
+.bj-axis span:nth-child(4) { right: 0; left: auto; transform: none; }
+.bj-marker { position: absolute; top: 94px; transform: translateX(-50%); padding: 2px 8px; border-radius: 20px; background: var(--gold); color: #fff; font-size: 12px; font-weight: 700; }
+.bj-marker[hidden] { display: none; }
+.bj-period[hidden], .bj-doc[hidden] { display: none; }
+
+/* Risicoklassen */
+.rk-row { display: grid !important; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.rk-btn { display: grid !important; gap: 4px; text-align: left; padding: 12px !important; min-height: 92px; }
+.rk-btn strong { font-size: 26px; line-height: 1; }
+.rk-btn span { font-size: 12.5px; font-weight: 400; line-height: 1.3; }
+.rk-a { border-left: 6px solid #3f8a55 !important; }
+.rk-b { border-left: 6px solid #8fb36a !important; }
+.rk-c { border-left: 6px solid var(--gold) !important; }
+.rk-d { border-left: 6px solid #d9822b !important; }
+.rk-e { border-left: 6px solid #c2402a !important; }
+
+/* Stappenhulp */
+.js .wz-node[data-hidden] { display: none; }
+.js .wz-node[hidden] { display: none; }
+.prose .wz-q { font-weight: 700; color: var(--navy); font-size: 18px; margin: 0 0 12px; }
+.prose .wz-path { font-size: 13px; color: var(--muted); margin: 0 0 10px; }
+.wz-node:focus { outline: none; }
+.wz-result { padding: 18px 20px; border-radius: 14px; background: var(--gold-soft); border: 1px solid rgba(201, 155, 62, .45); }
+
+/* Aankoop-check */
+.ak-form { display: grid; gap: 4px; }
+.ak-form > .btn { justify-self: start; }
+[data-point][hidden] { display: none; }
+
+/* Meetwaarden */
+.mw-form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.mw-out { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 18px 0; }
+.mw-out div { padding: 12px 14px; border-radius: 12px; background: var(--navy); color: #fff; }
+.mw-out dt { font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--gold-light); }
+.mw-out dd { margin: 4px 0 0; font-size: 22px; font-weight: 700; }
+
+/* Quiz */
+.prose .qz-feedback { margin: 10px 0 0; padding: 12px 14px; border-radius: 10px; background: var(--light); font-size: 14.5px; }
+.qz-feedback[hidden] { display: none; }
+
+/* Kaart */
+.tool-map svg { display: block; width: 100%; height: auto; background: linear-gradient(180deg, #eef3f7, #f8fafb); border-radius: 14px; border: 1px solid var(--line); }
+.map-dot circle { fill: var(--gold); stroke: #fff; stroke-width: 3; transition: r .2s ease; }
+.map-dot text { font-size: 15px; font-weight: 700; fill: var(--navy); paint-order: stroke; stroke: #fff; stroke-width: 4px; }
+.map-dot:hover circle, .map-dot:focus circle { fill: var(--navy); }
+.map-dot:focus { outline: none; }
+.map-dot:focus-visible text { text-decoration: underline; }
+.map-prov { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; fill: var(--muted); font-weight: 700; }
+.map-list { margin-top: 14px; }
+
+/* Vergelijking */
+.tool-compare th[scope="row"] { text-align: left; color: var(--navy); }
+.prose .kw-price { font-size: 17px; color: var(--navy); }
+.prose .kw-note { font-size: 13px; color: var(--muted); }
+
+/* Hulpmiddelen-overzicht */
+.tool-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 18px 0; padding: 0; list-style: none; }
+.tool-cards li { margin: 0; }
+.tool-cards a { display: block; height: 100%; padding: 18px; border-radius: 14px; border: 1px solid var(--line); background: #fff; color: var(--text); text-decoration: none; border-bottom: 1px solid var(--line) !important; transition: border-color .2s ease, transform .2s var(--ease); }
+.tool-cards a:hover, .tool-cards a:focus-visible { border-color: var(--gold) !important; transform: translateY(-3px); }
+.tool-cards strong { display: block; color: var(--navy); font-size: 16.5px; margin-bottom: 4px; }
+.tool-cards span { font-size: 14px; color: var(--muted); }
+
+@media (max-width: 760px) {
+  .tool { padding: 20px 16px; }
+  .tr-lists, .tr-meaning, .tf-grid, .mw-form { grid-template-columns: 1fr; }
+  .mw-out { grid-template-columns: 1fr 1fr; }
+  .rk-row { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
+  .rk-btn { min-height: 64px; padding: 8px !important; }
+  .rk-btn span { display: none; }
+  .tq-nav .btn { flex: 1 1 auto; }
+  .bj-seg { font-size: 11px; padding: 4px 6px; }
+  .bj-line { height: 190px; }
+  .bj-seg-a { width: 55%; }
+  .bj-seg-b { top: 66px; }
+  .bj-seg { min-height: 58px; }
+  .bj-axis { top: 158px; }
+  .bj-marker { top: 134px; }
+  .map-dot text { font-size: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tq-progress span, .tool-cards a { transition: none; }
+}

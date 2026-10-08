@@ -170,6 +170,11 @@ export function jsonld(graph) {
 
 // ---------------------------------------------------------------- html-blokken
 
+// Extra CSS/JS voor de interactieve hulpmiddelen; alleen op pagina's met `tools: true`.
+const TOOLS_ASSETS = `<link rel="stylesheet" href="/tools.css">
+  <script src="/tools.js" defer></script>
+  `;
+
 export function head(page) {
   const url = DOMAIN + page.path;
   const ogImg = `${DOMAIN}/assets/img/og-mv-funderingsscan.jpg`;
@@ -205,7 +210,7 @@ export function head(page) {
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   ${preload}<link rel="stylesheet" href="/styles.css">
-  <script>document.documentElement.classList.add('js');</script>
+  ${page.tools ? TOOLS_ASSETS : ''}<script>document.documentElement.classList.add('js');</script>
   ${page.schema}
 </head>`;
 }
