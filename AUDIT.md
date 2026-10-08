@@ -1,10 +1,10 @@
 # SEO/GEO-audit mvfunderingsscan.nl
 
-Gegenereerd door `npm run audit` op 2026-10-07 – 129 indexeerbare pagina's, 198.654 woorden in totaal.
+Gegenereerd door `npm run audit` op 2026-10-08 – 129 indexeerbare pagina's, 198.629 woorden in totaal.
 
 | URL | Title | H1 | Primair zoekwoord | Zoekintentie | Interne links | Schema | Indexeerbaar | Woorden |
 |---|---|---|---|---|---|---|---|---|
-| / | Funderingsscan & funderingsonderzoek \| Friesland & Groningen \| MV Funderingsscan | Funderingsonderzoek in Friesland en Groningen | funderingsscan friesland groningen | commercieel | 60 | ProfessionalService, WebSite, WebPage, Service, FAQPage | ja | 3528 |
+| / | Funderingsscan & funderingsonderzoek \| Friesland & Groningen \| MV Funderingsscan | Funderingsonderzoek in Friesland en Groningen | funderingsscan friesland groningen | commercieel | 60 | ProfessionalService, WebSite, WebPage, Service, FAQPage | ja | 3503 |
 | /bronnen-en-richtlijnen/ | Bronnen en richtlijnen funderingsonderzoek \| MV Funderingsscan | Bronnen en richtlijnen achter onze informatie | bronnen funderingsonderzoek | informatief | 51 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 1477 |
 | /contact/ | Contact \| MV Funderingsscan Leeuwarden \| +31 (0) 582037172 | Contact met MV Funderingsscan | contact funderingsscan | transactioneel | 50 | ProfessionalService, WebSite, ContactPage, BreadcrumbList | ja | 258 |
 | /fase-0-funderingsonderzoek-aankoop/ | Fase 0 funderingsonderzoek bij aankoop \| MV Funderingsscan | Fase 0 funderingsonderzoek bij aankoop van een woning | fase 0 funderingsonderzoek aankoop | commercieel | 61 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1786 |

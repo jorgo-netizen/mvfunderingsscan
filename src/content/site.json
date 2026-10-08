@@ -52,6 +52,15 @@
       ],
       "width": 1600,
       "height": 1067
+    },
+    "funderingsmeting-laser-tablet": {
+      "widths": [
+        640,
+        1024,
+        1536
+      ],
+      "width": 1536,
+      "height": 1024
     }
   },
   "nav": [

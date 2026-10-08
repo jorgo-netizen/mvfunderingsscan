@@ -222,18 +222,18 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
    ========================================================== */
 .hero {
   position: relative; overflow: hidden;
-  background: var(--navy-deep); color: #fff;
+  background: #071b33; color: #fff;
   min-height: clamp(640px, calc(100vh - var(--header-h)), 760px);
   display: flex; align-items: center;
 }
-.hero-media { position: absolute; inset: 0; overflow: hidden; }
+.hero-media { position: absolute; top: 0; bottom: 0; right: 0; overflow: hidden; }
 .hero-media img {
-  /* Beeld iets breder dan de hero en naar links geschoven: de inspecteur
-     komt zo in de vrije zone tussen tekst en kaart te staan. */
-  position: absolute; top: 0; left: -14%;
-  width: 114%; max-width: none; height: 100%;
-  object-fit: cover; object-position: 62% 20%;
+  /* Foto rechts uitgelijnd op volle hoogte; links loopt de hero over in navy voor de tekst. */
+  position: relative; display: block;
+  height: 100%; width: auto; max-width: none;
+  object-fit: cover;
   transform: scale(1.03);
+  transform-origin: 70% 40%;
   animation: heroZoom 1.8s var(--ease) backwards;
   transition: transform .9s var(--ease);
   will-change: transform;
@@ -242,8 +242,8 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 .hero-media::after {
   content: ""; position: absolute; inset: 0;
   background:
-    linear-gradient(90deg, rgba(10, 29, 51, .97) 0%, rgba(10, 29, 51, .9) 34%, rgba(10, 29, 51, .45) 52%, rgba(10, 29, 51, .12) 68%, rgba(10, 29, 51, .28) 100%),
-    linear-gradient(0deg, rgba(10, 29, 51, .45), transparent 35%);
+    linear-gradient(90deg, #071b33 0%, rgba(7, 27, 51, .92) 12%, rgba(7, 27, 51, .66) 30%, rgba(7, 27, 51, .24) 45%, rgba(7, 27, 51, 0) 58%),
+    linear-gradient(0deg, rgba(7, 27, 51, .35), transparent 30%);
 }
 
 .hero-inner { position: relative; z-index: 3; padding: 80px 0; }
@@ -842,8 +842,8 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
   .hero { min-height: 0; }
   .hero-inner { padding: 64px 0 44px; }
   .hero-copy { max-width: 680px; }
-  .hero-media { position: relative; inset: auto; height: 460px; }
-  .hero-media img { left: 0; width: 100%; object-position: 62% 22%; }
+  .hero-media { position: relative; inset: auto; width: 100%; height: 460px; }
+  .hero-media img { width: 100%; height: 100%; object-position: 74% 10%; transform-origin: 74% 30%; }
   .hero-media::after { background: linear-gradient(180deg, rgba(10, 29, 51, .55) 0%, transparent 30%, transparent 70%, rgba(10, 29, 51, .5) 100%); }
   .hero { display: flex; flex-direction: column; align-items: stretch; }
   .hero-inner { order: 1; }
@@ -901,7 +901,7 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
   .hero-lead { font-size: 16.5px; }
   .hero-buttons .btn { width: 100%; }
   .hero-media { height: 340px; }
-  .hero-media img { object-position: 63% 20%; }
+  .hero-media img { object-position: 76% 8%; }
   .hero-card { width: calc(100% - 32px); margin: -36px auto 36px; padding: 24px; }
 
   .usp-grid { grid-template-columns: 1fr; }
@@ -1722,3 +1722,20 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 @media (max-width: 760px) { .expert-card { flex-direction: column; } }
 
 @media (max-width: 1100px) and (min-width: 901px) { .outcome-grid { grid-template-columns: 1fr 1fr; } }
+
+/* Hero: compact aanbod in de tekstkolom (de foto rechts blijft vrij) */
+.hero-offer { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 26px 0 0; padding: 14px 18px; border-radius: 14px; background: rgba(255, 255, 255, .07); border: 1px solid rgba(255, 255, 255, .14); max-width: 560px; backdrop-filter: blur(4px); }
+.hero-offer .badge { margin: 0; }
+.hero-offer p { margin: 0; font-size: 14.5px; color: #dfe7ef; line-height: 1.5; }
+.hero-offer strong { color: #fff; font-size: 16px; }
+
+/* Smallere desktops: foto iets naar rechts en tekstkolom smaller, zodat tekst niet over de persoon valt */
+@media (min-width: 1181px) and (max-width: 1439px) {
+  .hero-media { right: -130px; }
+  .hero-copy { max-width: 500px; }
+  .hero h1 { font-size: 52px; }
+  .hero-lead { font-size: 17px; }
+}
+@media (max-width: 640px) {
+  .hero h1 { font-size: clamp(28px, 8.4vw, 40px); }
+}

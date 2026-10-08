@@ -150,9 +150,9 @@ ${[
 function buildHome() {
   const bySlug = Object.fromEntries(pages.filter((p) => p.path.startsWith('/kennisbank/')).map((p) => [p.path.split('/')[2], p]));
   const fill = {
-    '{{IMG_HERO}}': img('funderingsinspectie-woning-gevel',
-      'Persoon met een waterpas bij de gevel van een woning',
-      '(min-width: 1181px) 114vw, 100vw', { lazy: false, priority: true }),
+    '{{IMG_HERO}}': img('funderingsmeting-laser-tablet',
+      'Persoon met een tablet en lasermeetapparatuur bij een meting op de vloer van een woning',
+      '(min-width: 1181px) 80vw, 100vw', { lazy: false, priority: true }),
     '{{IMG_GEVEL}}': img('metselwerk-gevel-detail', 'Close-up van metselwerk en voegen in een bakstenen gevel', '(min-width: 901px) 590px, 100vw'),
     '{{IMG_STRAAT}}': img('jaren-dertig-woningen-straat', 'Rij vooroorlogse bakstenen woningen in een groene straat', '(min-width: 901px) 590px, 100vw'),
     '{{IMG_VOORDEUR}}': img('vooroorlogse-woning-voordeur', 'Klassieke voordeur in een vooroorlogse bakstenen gevel', '(min-width: 901px) 560px, 100vw'),
@@ -182,13 +182,13 @@ function buildHome() {
   const graph = [orgSchema(), websiteSchema(), {
     '@type': 'WebPage', '@id': url + '#webpagina', url, name: title,
     inLanguage: 'nl-NL', isPartOf: { '@id': SITE_ID }, about: { '@id': ORG_ID },
-    primaryImageOfPage: `${DOMAIN}/assets/img/funderingsinspectie-woning-gevel-1600.webp`, dateModified: TODAY,
+    primaryImageOfPage: `${DOMAIN}/assets/img/funderingsmeting-laser-tablet-1536.webp`, dateModified: TODAY,
   }, serviceSchema('funderingsscan'), serviceSchema('fase0'), serviceSchema('fase1'), faqSchema(url, home.faqs)];
   write('/', head({
     path: '/', title,
     description: 'Funderingsscan en funderingsonderzoek in Friesland en Groningen. Onafhankelijk onderzoek naar de staat en risico\'s van de fundering. Vraag een scan aan.',
     schema: jsonld(graph),
-    preload: '<link rel="preload" as="image" type="image/webp" fetchpriority="high" imagesrcset="/assets/img/funderingsinspectie-woning-gevel-640.webp 640w, /assets/img/funderingsinspectie-woning-gevel-1024.webp 1024w, /assets/img/funderingsinspectie-woning-gevel-1600.webp 1600w, /assets/img/funderingsinspectie-woning-gevel-2000.webp 2000w" imagesizes="(min-width: 1181px) 114vw, 100vw">\n  ',
+    preload: '<link rel="preload" as="image" type="image/webp" fetchpriority="high" imagesrcset="/assets/img/funderingsmeting-laser-tablet-640.webp 640w, /assets/img/funderingsmeting-laser-tablet-1024.webp 1024w, /assets/img/funderingsmeting-laser-tablet-1536.webp 1536w" imagesizes="(min-width: 1181px) 80vw, 100vw">\n  ',
   }) + '\n' + header('/') + s + footer());
 }
 
