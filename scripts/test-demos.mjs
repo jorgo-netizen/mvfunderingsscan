@@ -1,11 +1,12 @@
 /**
- * Rekentests voor de vier interactieve meetdemo's (lintvoeg, loodmeting/Oldehove, vloerveld, scheuren).
+ * Rekentests voor de interactieve meetdemo's (lintvoeg, uitgebreide lintvoegmeting, loodmeting/Oldehove, vloerveld, scheuren).
  * Zonder dependencies: `npm test` (node:test). Controleert de voorbeelddata, de formules en de HTML-haken
  * waar public/script.js op rekent. Browsergedrag zelf wordt hier niet getest.
  */
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { DEMO_DATA, widgetHtml } from '../src/lib/widgets.mjs';
+import { LINTVOEG_EXT_DATA } from '../src/lib/lintvoeg-ext.mjs';
 
 const { LV, VV, OL_DEG, OL_HEIGHT_M, olOffset, CRACKS, PATRONEN, SIM_NOTE } = DEMO_DATA;
 const mm = (cm) => Math.round(cm * 10);
@@ -81,4 +82,55 @@ test('scheuren: acht klikbare scheuren met eigen uitleg en vijf patronen', () =>
   assert.ok(/niet automatisch/.test(html), 'vermeldt dat een scheur niet automatisch een funderingsprobleem is');
   // geen diagnose-taal
   assert.ok(!/(bewijst|zeker weten|altijd funderingsschade)/i.test(html));
+});
+
+const LVM = LINTVOEG_EXT_DATA.calc;
+
+test('lintvoegmeting: demowaarden A 0, B −3, C −7, D −5, E +2 mm', () => {
+  assert.deepEqual(LVM.DEMO, [0, -3, -7, -5, 2]);
+  assert.deepEqual(LVM.LABELS, ['A', 'B', 'C', 'D', 'E']);
+  assert.equal(LVM.range(LVM.DEMO), 9, 'hoogste (E +2) min laagste (C −7) = 9 mm');
+  assert.deepEqual(LVM.steps(LVM.DEMO), [-3, -4, 2, 7]);
+  assert.deepEqual(LVM.biggestStep(LVM.DEMO), [3, 4, 7], 'grootste stap D → E, 7 mm');
+  assert.equal(LVM.pattern(LVM.DEMO), 'kom');
+});
+
+test('lintvoegmeting: patroonherkenning en invoercontrole', () => {
+  assert.equal(LVM.pattern([0, 1, 0, -1, 1]), 'vlak');
+  assert.equal(LVM.pattern([0, -2, -4, -6, -8]), 'aflopend');
+  assert.equal(LVM.pattern([0, 2, 4, 6, 8]), 'oplopend');
+  assert.equal(LVM.pattern([0, 4, 6, 3, 0]), 'bolling');
+  assert.equal(LVM.pattern([0, 5, -5, 5, -5]), 'onregelmatig');
+  assert.equal(LVM.parse('-7'), -7);
+  assert.equal(LVM.parse('−7'), -7, 'typografisch minteken');
+  assert.equal(LVM.parse('2,4'), 2, 'afronden op hele mm');
+  assert.equal(LVM.parse('abc'), null);
+  assert.equal(LVM.parse(''), null, 'leeg veld telt niet als 0 mm');
+  assert.equal(LVM.parse('  '), null);
+  assert.equal(LVM.parse('51'), null);
+  assert.equal(LVM.parse('-50'), -50);
+  assert.equal(LVM.signed(2), '+2');
+  assert.equal(LVM.signed(-7), '−7');
+  assert.equal(LVM.signed(0), '0');
+  // de uitleg trekt nooit een conclusie over de fundering
+  for (const v of [LVM.DEMO, [0, -20, -40, -30, 0], [0, 0, 0, 0, 0]]) assert.ok(/geen conclusie over de oorzaak/.test(LVM.describe(v)));
+});
+
+test('lintvoegmeting: HTML met vijf punten, invoervelden, reset en geen grenswaarden', () => {
+  const html = widgetHtml('lintvoegmeting');
+  assert.equal(count(html, /<button type="button" class="sim-point"/g), 5);
+  assert.equal(count(html, /data-lvm-input /g), 5);
+  LVM.DEMO.forEach((v, i) => assert.ok(html.includes(`value="${v}" data-lvm-input data-i="${i}"`), `beginwaarde punt ${LVM.LABELS[i]}`));
+  assert.ok(html.includes('data-lvm-reset') && html.includes('data-lvm-profile'));
+  assert.ok(html.includes('9 mm'), 'server-side samenvatting (werkt zonder JS)');
+  assert.ok(/fictie/i.test(html), 'gemarkeerd als fictief');
+  assert.ok(!/(sim-dot-max|sim-dot-min|#c2402a|groen|rood)/i.test(html), 'geen rood/groen-oordeel');
+});
+
+test('lintvoegstappen: vier stappen met Vorige/Volgende', () => {
+  const html = widgetHtml('lintvoegstappen');
+  assert.equal(LINTVOEG_EXT_DATA.STAPPEN.length, 4);
+  assert.equal(count(html, /data-lvs-step /g), 4);
+  assert.ok(html.includes('data-lvs-prev') && html.includes('data-lvs-next'));
+  assert.ok(!/ hidden/.test(html), 'zonder JS zijn alle stappen zichtbaar');
 });

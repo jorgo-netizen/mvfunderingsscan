@@ -8,6 +8,7 @@
  */
 
 import { TOOL_WIDGETS } from './tools.mjs';
+import { LINTVOEG_EXT_WIDGETS } from './lintvoeg-ext.mjs';
 const nl = (n, d = 1) => n.toFixed(d).replace('.', ',');
 const SIM_NOTE = 'Deze visualisatie is een educatieve simulatie en vervangt geen professioneel funderingsonderzoek.';
 
@@ -495,7 +496,7 @@ function keuzeWidget() {
 const WIDGETS = {
   lintvoeg: lintvoegWidget, lood: loodWidget, oldehove: oldehoveWidget, scheuren: scheurenWidget,
   scheurkeuze: scheurkeuzeWidget, vloerveld: vloerveldWidget, keuze: keuzeWidget,
-  ...TOOL_WIDGETS,
+  ...TOOL_WIDGETS, ...LINTVOEG_EXT_WIDGETS,
 };
 export const WIDGET_NAMES = Object.keys(WIDGETS);
 

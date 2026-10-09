@@ -210,7 +210,8 @@ export function head(page) {
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   ${preload}<link rel="stylesheet" href="/styles.css">
-  ${page.tools ? TOOLS_ASSETS : ''}<script>document.documentElement.classList.add('js');</script>
+  ${page.tools ? TOOLS_ASSETS : ''}${(page.scripts || []).map((src) => `<script src="${src}" defer></script>
+  `).join('')}<script>document.documentElement.classList.add('js');</script>
   ${page.schema}
 </head>`;
 }

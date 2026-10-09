@@ -1,8 +1,8 @@
 [
   {
     "path": "/kennisbank/lintvoegwaterpassing/",
-    "title": "Wat is een lintvoegwaterpassing? Uitleg | MV Funderingsscan",
-    "description": "Een lintvoegwaterpassing meet hoogteverschillen in een doorlopende metselvoeg. Lees hoe de meting werkt, wat ze aantoont en waar de grenzen liggen.",
+    "title": "Lintvoegwaterpassing: uitleg en demo | MV Funderingsscan",
+    "description": "Wat is lintvoegwaterpassing? Uitleg in vier stappen, een interactieve gevel met voorbeeldwaarden en wat de meting wel en niet zegt, ook in Friesland.",
     "keyword": "lintvoegwaterpassing",
     "intent": "informatief",
     "nav_active": "/kennisbank/",
@@ -25,7 +25,7 @@
     "lead": "Een <strong>lintvoegwaterpassing</strong> is een hoogtemeting waarbij de hoogte van één doorlopende horizontale metselvoeg op meerdere punten langs de gevel wordt gemeten. Door die punten met elkaar te vergelijken, zie je of delen van de gevel hoogteverschillen vertonen die kunnen passen bij <a href=\"/kennisbank/ongelijke-zetting/\">ongelijke zetting</a>. De meting is vaak onderdeel van <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>.",
     "defined_term": {
       "name": "Lintvoegwaterpassing",
-      "description": "Een lintvoegwaterpassing is een hoogtemeting langs een doorlopende horizontale metselvoeg, waarbij meerdere meetpunten worden vergeleken om hoogteverschillen in een gevel zichtbaar te maken die kunnen wijzen op ongelijke zetting."
+      "description": "Een lintvoegwaterpassing is een hoogtemeting langs een doorlopende horizontale metselvoeg tussen twee steenlagen, waarbij meerdere meetpunten worden vergeleken om hoogteverschillen in een gevel zichtbaar te maken. De meting stelt zelf geen diagnose."
     },
     "hero_image": {
       "name": "metselwerk-gevel-detail",
@@ -35,9 +35,11 @@
     "sections": [
       {
         "id": "wat-is-een-lintvoegwaterpassing",
-        "h2": "Wat is een lintvoegwaterpassing?",
-        "answer": "Een lintvoegwaterpassing is een meting die vastlegt hoe hoog een doorlopende metselvoeg op verschillende plekken in de gevel ligt. Omdat die voeg ooit vrijwel waterpas is gemetseld, laten hoogteverschillen zien of de gevel sindsdien ongelijk is gezakt.",
-        "body": "<p>Een <strong>lintvoeg</strong> is een horizontale voeg die als een lint over de hele gevel doorloopt. <strong>Waterpassen</strong> betekent hoogtes bepalen ten opzichte van een horizontaal vlak. Samen: nagaan of die voeg nog net zo horizontaal ligt als bij de bouw.</p>\n<p>De meting is niet-destructief en gebeurt aan de buitenkant van de woning. Ze is een vast onderdeel van de <a href=\"/funderingsmetingen/\">funderingsmetingen</a> in vervolgonderzoek.</p>\n<div class=\"term-box\"><strong>Wat betekent zetting?</strong><p>Zetting is het samendrukken van de ondergrond onder het gewicht van een gebouw. Dat gebeurt vooral in de eerste jaren na de bouw en is op zichzelf normaal; het wordt pas een aandachtspunt als delen van de woning verschillend zakken.</p><a href=\"/kennisbank/zetting/\">Lees meer over zetting</a></div>"
+        "h2": "Wat is lintvoegwaterpassing?",
+        "answer": "Lintvoegwaterpassing is een meting waarbij op meerdere punten de hoogte van één lintvoeg wordt bepaald: de doorlopende horizontale voeg tussen twee lagen bakstenen. Door die hoogtes te vergelijken, zie je of de voeg nog recht loopt of op sommige plekken hoger of lager ligt.",
+        "body": "<p>Een <strong>lintvoeg</strong> is een horizontale voeg die als een lint over de gevel doorloopt, tussen twee steenlagen in. <strong>Waterpassen</strong> betekent hoogtes bepalen ten opzichte van een horizontaal vlak. Samen: nagaan hoe die ene voeg over de lengte van de gevel ligt.</p><p>De meting is niet-destructief en gebeurt aan de buitenkant van de woning. Bij MV Funderingsscan is ze een onderdeel van de <a href=\"/funderingsmetingen/\">funderingsmetingen</a> in fase 1.</p><div class=\"callout callout-note\"><strong>Een meting, geen diagnose</strong><p>Een lintvoegwaterpassing laat hoogteverschillen zien, meer niet. Een afwijking is geen bewijs dat de fundering slecht is: een voeg is nooit volmaakt waterpas gemetseld en ook verbouwingen of hermetselwerk kunnen verschillen geven. Uit de meting alleen kun je de oorzaak niet vaststellen.</p></div><div class=\"term-box\"><strong>Wat betekent zetting?</strong><p>Zetting is het samendrukken van de ondergrond onder het gewicht van een gebouw. Dat gebeurt vooral in de eerste jaren na de bouw en is op zichzelf normaal; het wordt pas een aandachtspunt als delen van de woning verschillend zakken.</p><a href=\"/kennisbank/zetting/\">Lees meer over zetting</a></div>",
+        "widget": "lintvoegschema",
+        "widget_position": "after"
       },
       {
         "id": "wat-wordt-gemeten",
@@ -48,22 +50,22 @@
       {
         "id": "waarom-een-metselvoeg",
         "h2": "Waarom is een doorlopende metselvoeg een geschikte referentie?",
-        "answer": "Een metselaar legt de lagen stenen bij de bouw zo waterpas mogelijk. Een lange horizontale voeg is daardoor een soort ingebouwde meetlat die laat zien hoe de gevel er bij oplevering ongeveer bij lag.",
+        "answer": "Een metselaar legt de lagen stenen bij de bouw zo waterpas mogelijk. Een lange horizontale voeg is daardoor een bruikbare referentie: als delen later anders zijn gaan liggen, wordt dat in de voeg zichtbaar.",
         "body": "<p>De metselaar werkt laag voor laag, met een draad of waterpas als leidraad. Zakt een deel van de fundering later meer dan een ander deel, dan neemt het metselwerk die beweging mee en gaat de voeg aflopen of krom trekken.</p>\n<p>Omdat de voeg over de volle breedte doorloopt, volg je beweging over de hele gevel in plaats van op één plek. Vaak wordt een goed zichtbare voeg gekozen, bijvoorbeeld net boven het maaiveld of ter hoogte van de onderdorpels van de ramen.</p>\n<div class=\"callout callout-note\"><strong>Geen volmaakte meetlat</strong><p>Ook een vakkundig gemetselde voeg is nooit helemaal waterpas. Daarom kijkt de onderzoeker naar het totaalbeeld, niet naar één afwijkend punt.</p></div>"
       },
       {
         "id": "hoe-wordt-de-meting-uitgevoerd",
-        "h2": "Hoe wordt de meting uitgevoerd?",
-        "answer": "De onderzoeker kiest een geschikte doorlopende voeg, bepaalt een referentiepunt en meet daarna op een reeks punten de hoogte van die voeg met een waterpasinstrument of een vergelijkbaar digitaal of lasermeetinstrument.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Voeg kiezen</strong><span>Per gevel wordt één horizontale voeg gekozen die over de volle lengte doorloopt en niet is verstoord door latere aanpassingen.</span></li><li><strong>Referentiepunt vastleggen</strong><span>Alle hoogtes worden bepaald ten opzichte van één vast punt.</span></li><li><strong>Meetpunten aflopen</strong><span>Op elke gekozen plek wordt de hoogte van diezelfde voeg afgelezen of digitaal vastgelegd.</span></li><li><strong>Bijzonderheden noteren</strong><span>Herstelde delen, scheuren en onbereikbare stukken worden genoteerd.</span></li><li><strong>Uitwerken</strong><span>De waarden worden verwerkt tot een hoogteprofiel en samen met de andere bevindingen geïnterpreteerd.</span></li></ol>\n<p>Waar mogelijk worden meerdere gevels gemeten.</p>"
+        "h2": "Hoe wordt lintvoegwaterpassing uitgevoerd?",
+        "answer": "Een lintvoegwaterpassing verloopt in vier stappen: de gevel bekijken, meetpunten bepalen, de hoogten meten en de resultaten vergelijken. Het meetinstrument en de precieze werkwijze verschillen per situatie en onderzoeker.",
+        "body": "<p>Herstelde delen, scheuren en onbereikbare stukken worden onderweg genoteerd, zodat duidelijk is welke punten wel en niet goed te vergelijken zijn. Waar mogelijk worden meerdere gevels gemeten.</p>",
+        "widget": "lintvoegstappen"
       },
       {
         "id": "probeer-het-zelf",
         "h2": "Probeer het zelf: interactieve lintvoegwaterpassing",
-        "answer": "In deze educatieve simulatie meet je zelf zes punten (A tot en met F) langs een lintvoeg en zie je hoe het hoogteprofiel en het hoogteverschil van de gevel ontstaan.",
-        "widget": "lintvoeg",
-        "widget_position": "after",
-        "body": "<p>De simulatie gebruikt fictieve waarden en laat het principe zien, niet de toestand van een echte woning. Wil je ook zien hoe een loodmeting werkt en welke meting bij jouw situatie past? Bekijk dan de <a href=\"/funderingsmetingen/\">interactieve uitleg van funderingsmetingen</a>.</p>"
+        "answer": "In deze demonstratie zie je vijf meetpunten (A tot en met E) op de gevel van een rijwoning, met fictieve waarden ten opzichte van punt A: A 0 mm, B −3 mm, C −7 mm, D −5 mm en E +2 mm. Je kunt de waarden aanpassen; tekening, profiel en uitleg rekenen direct mee.",
+        "widget": "lintvoegmeting",
+        "body": "<p>Het grootste verschil in het voorbeeld is 9 mm, tussen punt E (+2 mm) en punt C (−7 mm). Het middendeel ligt lager dan de uiteinden. Dat is een beschrijving van de getallen, geen conclusie over de woning: de waarden zijn verzonnen om het principe te laten zien.</p><p>Een tweede demonstratie met zes punten op een jaren-dertiggevel en een loodmeting vind je bij de <a href=\"/funderingsmetingen/\">interactieve uitleg van funderingsmetingen</a>.</p>"
       },
       {
         "id": "welke-meetpunten",
@@ -76,6 +78,12 @@
         "h2": "Hoe worden hoogteverschillen geïnterpreteerd?",
         "answer": "Niet één losse waarde maar het patroon van alle meetpunten samen is bepalend. Een hoek die lager ligt, een geleidelijk aflopende lijn of een duidelijke knik vertellen elk een ander verhaal.",
         "body": "<p>De meetpunten worden achter elkaar uitgezet tot een lijn. Die wordt gelezen samen met scheuren, scheefstand, vloeren, bouwjaar en vermoedelijk funderingstype.</p>\n<div class=\"info-cards\"><div class=\"info-card\"><h3>Eén hoek ligt lager</h3><p>Kan passen bij een deel van de fundering dat meer is gezakt, bijvoorbeeld op een zachtere ondergrond.</p></div><div class=\"info-card\"><h3>Geleidelijk aflopend</h3><p>De gevel is als geheel wat scheef gezakt; dat geeft meestal minder schade dan een plotseling verschil.</p></div><div class=\"info-card\"><h3>Doorbuiging in het midden</h3><p>Kan wijzen op meer zakking onder het middendeel van de gevel.</p></div><div class=\"info-card\"><h3>Knik of sprong</h3><p>Valt vaak samen met een scheur, een aansluiting of een plek waar het metselwerk is aangepast.</p></div></div>\n<p>Een patroon is een aanwijzing, geen bewijs. Een knik bij een aanbouw kan komen door een eigen fundering, en een aflopende lijn kan deels al bij de bouw zijn ontstaan.</p>"
+      },
+      {
+        "id": "meetresultaten-begrijpen",
+        "h2": "Hoe moet je de meetresultaten begrijpen?",
+        "answer": "Een meetresultaat krijgt pas betekenis in samenhang met de woning: het bouwjaar, het vermoedelijke funderingstype, scheuren, eerdere verbouwingen en eventuele eerdere metingen. Er bestaat geen algemene grens waarboven een lintvoeg \"fout\" is.",
+        "body": "<p>Drie fictieve voorbeelden laten zien hoe verschillend dezelfde soort meting kan uitpakken:</p><div class=\"info-cards\"><div class=\"info-card\"><h3>Voorbeeld A: weinig hoogteverschil</h3><p>De punten liggen binnen enkele millimeters van elkaar en er zijn geen andere signalen. Dat geeft weinig aanleiding om verder te meten, maar het is geen garantie voor de staat van de fundering.</p></div><div class=\"info-card\"><h3>Voorbeeld B: zichtbaar verschil</h3><p>Eén deel van de voeg ligt duidelijk lager. Dat kan bij de bouw zijn ontstaan, door een verbouwing of door latere zakking. Welke verklaring past, blijkt pas uit de overige informatie.</p></div><div class=\"info-card\"><h3>Voorbeeld C: verschil met andere signalen</h3><p>Het lage deel valt samen met een trapvormige scheur, klemmende deuren en een aflopende vloer. Dan weegt het hoogteverschil zwaarder en kan gericht vervolgonderzoek zinvol zijn.</p></div></div><p>Een onderzoeker kijkt daarom niet naar één getal, maar naar het patroon, de plek van de verschillen en hoe die passen bij <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, <a href=\"/kennisbank/loodmeting/\">scheefstand</a> en de <a href=\"/kennisbank/vloerveldwaterpassing/\">vloeren</a>. Eén herhaalde meting op dezelfde punten zegt bovendien meer over beweging dan één momentopname.</p>"
       },
       {
         "id": "wat-kan-de-meting-aantonen",
@@ -96,10 +104,16 @@
         "body": "<p>Elke woning zakt na de bouw een beetje; gelijkmatige zakking merk je nauwelijks. Zakt het ene deel meer dan het andere, dan ontstaan spanningen in het metselwerk. Een aflopende lintvoeg is een van de manieren waarop dat zichtbaar wordt.</p>\n<div class=\"term-box\"><strong>Wat betekent een hoogteverschil in een gevel?</strong><p>Een hoogteverschil betekent dat dezelfde voeg op de ene plek lager ligt dan op de andere. Dat kan komen door zakking na de bouw, maar ook door onnauwkeurigheid bij het metselen of latere aanpassingen.</p><a href=\"/kennisbank/ongelijke-zetting/\">Lees meer over ongelijke zetting</a></div>\n<p>Gaat het om een woning van vóór circa 1970 op een slappe ondergrond, met verse scheuren en aflopende vloeren? Dan weegt een hoogteverschil zwaarder dan in een woning zonder andere signalen. Meer over het totale risicobeeld lees je bij <a href=\"/kennisbank/funderingsrisico/\">funderingsrisico</a>.</p>"
       },
       {
+        "id": "lintvoegwaterpassing-friesland",
+        "h2": "Lintvoegwaterpassing bij woningen in Friesland",
+        "answer": "In Friesland staan veel oudere gemetselde woningen op uiteenlopende funderingen en op een bodem die per plek sterk verschilt. Een lintvoegwaterpassing kan daar helpen om hoogteverschillen in de gevel vast te leggen, maar zegt alleen iets in combinatie met de lokale situatie.",
+        "body": "<p>Wat speelt er bij Friese woningen?</p><ul class=\"checklist\"><li><strong>Oudere metselwerkwoningen</strong> – veel vooroorlogse en vroeg-naoorlogse rijwoningen hebben een doorlopende lintvoeg die goed te volgen is.</li><li><strong>Verschillende funderingen</strong> – houten palen, een <a href=\"/kennisbank/fundering-op-staal/\">fundering op staal</a> of latere aanpassingen; wat er onder een woning zit, verschilt per woning en soms per bouwdeel.</li><li><strong>Bodem en bodemdaling</strong> – <a href=\"/kennisbank/veenbodem/\">veen</a> en <a href=\"/kennisbank/kleibodem/\">klei</a> komen veel voor, maar de opbouw verschilt per locatie en zelfs per perceel. In veengebieden kan <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a> een rol spelen.</li><li><strong>Grondwater</strong> – de grondwaterstand is van belang voor houten funderingen; zie <a href=\"/kennisbank/grondwater-en-fundering/\">grondwater en fundering</a>.</li><li><strong>Bouwkundige context</strong> – aanbouwen, verbouwingen en aansluitingen op buurwoningen kunnen eigen hoogteverschillen geven.</li></ul><p>Neem <a href=\"/funderingsonderzoek-leeuwarden/\">Leeuwarden</a> als voorbeeld: daar staan in verschillende wijken oudere rijwoningen naast elkaar, maar welke fundering en welke bodemopbouw een individuele woning heeft, moet per adres worden nagegaan. Hetzelfde geldt voor bijvoorbeeld <a href=\"/funderingsonderzoek-sneek/\">Sneek</a>, <a href=\"/funderingsonderzoek-heerenveen/\">Heerenveen</a>, <a href=\"/funderingsonderzoek-drachten/\">Drachten</a> en <a href=\"/funderingsonderzoek-harlingen/\">Harlingen</a>. Een lintvoegwaterpassing is dan één van de bronnen, naast archiefgegevens, bodeminformatie en een inspectie.</p><p>Meer over de regio lees je bij <a href=\"/funderingsonderzoek-friesland/\">funderingsonderzoek in Friesland</a> en <a href=\"/kennisbank/funderingsproblemen-friesland/\">funderingsproblemen in Friesland</a>.</p>"
+      },
+      {
         "id": "wanneer-zinvol",
-        "h2": "Wanneer is een lintvoegwaterpassing zinvol?",
-        "answer": "Een lintvoegwaterpassing is zinvol als er aanwijzingen zijn voor ongelijke zakking, bijvoorbeeld uit een quickscan, en je wilt weten of en waar de gevel werkelijk is vervormd.",
-        "body": "<div class=\"two-col-list\"><div><h3>Signalen aan de woning</h3><ul class=\"checklist\"><li>trapvormige of diagonale scheuren in het metselwerk</li><li>een gevel of hoek die zichtbaar lager lijkt</li><li>klemmende deuren en ramen zonder duidelijke andere oorzaak</li><li>aflopende vloeren of plinten met kieren</li></ul></div><div><h3>Situaties en kenmerken</h3><ul class=\"checklist\"><li>een fase 0 die fase 1 adviseert</li><li>een vooroorlogse woning op klei of veen</li><li>een vermoedelijke houten paalfundering of <a href=\"/kennisbank/fundering-op-staal/\">fundering op staal</a></li><li>een wens om een nulmeting vast te leggen voor later</li></ul></div></div>\n<p>Zie je zelf signalen, begin dan met een <a href=\"/fase-0-funderingsonderzoek/\">fase 0-vooronderzoek</a>. Daaruit blijkt of metingen iets toevoegen.</p>"
+        "h2": "Wanneer kan lintvoegwaterpassing nuttig zijn?",
+        "answer": "Een lintvoegwaterpassing kan nuttig zijn als er vragen zijn over hoe een gevel ligt, bijvoorbeeld na een vooronderzoek, bij scheuren of bij een wens om een nulmeting vast te leggen. Geen van die situaties betekent automatisch dat er schade is.",
+        "body": "<div class=\"two-col-list\"><div><h3>Signalen aan de woning</h3><ul class=\"checklist\"><li>trapvormige of diagonale scheuren in het metselwerk</li><li>een gevel of hoek die zichtbaar lager lijkt</li><li>klemmende deuren en ramen zonder duidelijke andere oorzaak</li><li>aflopende vloeren of plinten met kieren</li></ul></div><div><h3>Situaties en kenmerken</h3><ul class=\"checklist\"><li>een fase 0 die fase 1 adviseert</li><li>een vooroorlogse woning op klei of veen</li><li>een vermoedelijke houten paalfundering of <a href=\"/kennisbank/fundering-op-staal/\">fundering op staal</a></li><li>een wens om een nulmeting vast te leggen voor later</li></ul></div></div>\n<p>Deze signalen kunnen ook andere oorzaken hebben, zoals krimp, temperatuurwerking of een verbouwing. Zie je zelf signalen, begin dan met een <a href=\"/fase-0-funderingsonderzoek/\">fase 0-vooronderzoek</a>. Daaruit blijkt of metingen iets toevoegen.</p>"
       },
       {
         "id": "verschil-met-loodmeting",
@@ -112,6 +126,12 @@
         "h2": "Verschil met een vloerveldwaterpassing",
         "answer": "Een vloerveldwaterpassing meet hoogtes in een raster over de begane grondvloer, terwijl een lintvoegwaterpassing langs een gevel meet. De vloermeting laat zien hoe de binnenkant van de woning ligt.",
         "body": "<p>Bij een <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a> ontstaat vaak een hoogtekaart van de vloer. Samen met de lintvoegwaterpassing zie je zowel de buitenmuren als de vloer daartussen. De drie methoden naast elkaar:</p>\n<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Methode</th><th>Wat wordt gemeten</th><th>Waar</th><th>Typisch resultaat</th><th>Belangrijke beperking</th></tr></thead><tbody><tr><td>Lintvoegwaterpassing</td><td>Hoogteverschillen in één doorlopende metselvoeg</td><td>Langs de gevels, buiten</td><td>Hoogteprofiel per gevel</td><td>Voeg is nooit volmaakt waterpas gemetseld</td></tr><tr><td>Loodmeting</td><td>Afwijking ten opzichte van de verticaal</td><td>Gevels, wanden, kozijnstijlen</td><td>Afwijking en richting per meetplek</td><td>Gevels zijn niet altijd te lood gebouwd</td></tr><tr><td>Vloerveldwaterpassing</td><td>Hoogtes in een raster over de vloer</td><td>Begane grondvloer, binnen</td><td>Hoogtekaart met lijnen of kleurvlakken</td><td>Vloeren zijn niet altijd vlak gelegd</td></tr></tbody></table></div>"
+      },
+      {
+        "id": "lintvoegwaterpassing-en-fase-0",
+        "h2": "Is lintvoegwaterpassing onderdeel van een Fase 0 Quickscan?",
+        "answer": "Nee. Bij MV Funderingsscan is de lintvoegwaterpassing een meting uit fase 1. De Fase 0 Quickscan is het vooronderzoek dat bepaalt of zo’n meting zinvol is.",
+        "body": "<p>Een <a href=\"/fase-0-funderingsonderzoek/\">Fase 0 Quickscan</a> bestaat uit archief- en bodemonderzoek, een visuele inspectie van de woning en een risico-inschatting, vastgelegd in een rapport. Tijdens die inspectie wordt onder meer gekeken naar scheuren, scheefstand en vloeren; er wordt in fase 0 geen lintvoegwaterpassing uitgevoerd.</p><p>Het advies na fase 0 kan zijn:</p><ul class=\"checklist\"><li>geen directe aanleiding voor vervolgonderzoek;</li><li>de situatie in de gaten houden (monitoren);</li><li>gericht aanvullend onderzoek naar een specifiek punt;</li><li><a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>, waarin onder meer de lintvoegwaterpassing wordt uitgevoerd.</li></ul><p>Zo meet je niet meer dan nodig is, en wel wanneer de woning daar aanleiding toe geeft. Het verschil tussen beide stappen lees je ook bij <a href=\"/kennisbank/verschil-fase-0-en-fase-1/\">verschil tussen fase 0 en fase 1</a>.</p><p><a class=\"btn btn-gold\" href=\"/fase-0-funderingsonderzoek/\">Meer weten over de Fase 0 Quickscan? <span aria-hidden=\"true\">→</span></a></p>"
       },
       {
         "id": "binnen-fase-1",
@@ -157,11 +177,11 @@
       },
       {
         "q": "Hoe wordt een lintvoeg gemeten?",
-        "a": "<p>Een lintvoeg wordt gemeten met een waterpasinstrument of een vergelijkbaar digitaal of lasermeetinstrument.</p>"
+        "a": "<p>Op meerdere vastgelegde punten van dezelfde voeg wordt met een meetinstrument de hoogte bepaald ten opzichte van één referentie. Welk instrument passend is, verschilt per situatie.</p>"
       },
       {
         "q": "Waarom meet je een lintvoeg?",
-        "a": "<p>Je meet een lintvoeg omdat die bij de bouw vrijwel waterpas is gemetseld en dus laat zien of de gevel sindsdien ongelijk is gezakt.</p>"
+        "a": "<p>Je meet een lintvoeg omdat die bij de bouw zo waterpas mogelijk is gemetseld. Hoogteverschillen in die voeg maken zichtbaar of delen van de gevel anders liggen; de oorzaak blijkt daar niet uit.</p>"
       },
       {
         "q": "Kan een lintvoegwaterpassing verzakking aantonen?",
@@ -190,6 +210,18 @@
       {
         "q": "Wat kost een lintvoegwaterpassing?",
         "a": "<p>Een lintvoegwaterpassing heeft geen losse prijs; ze valt binnen fase 1, dat indicatief €750 – €1.500 kost voor het hele onderzoek.</p><p>De exacte prijs hangt af van de woning en de benodigde metingen en wordt vooraf afgestemd.</p>"
+      },
+      {
+        "q": "Is lintvoegwaterpassing onderdeel van de Fase 0 Quickscan?",
+        "a": "<p>Nee, bij MV Funderingsscan hoort de lintvoegwaterpassing bij fase 1. De <a href=\"/fase-0-funderingsonderzoek/\">Fase 0 Quickscan</a> bepaalt of zo’n meting zinvol is.</p>"
+      },
+      {
+        "q": "Is er een grenswaarde voor een lintvoegwaterpassing?",
+        "a": "<p>Er is geen algemene grens waarboven een lintvoeg als slecht geldt. Hoe een verschil wordt beoordeeld, hangt af van de woning, het patroon en de andere bevindingen.</p>"
+      },
+      {
+        "q": "Is lintvoegwaterpassing in Friesland anders?",
+        "a": "<p>De meting zelf is hetzelfde. In Friesland verschilt de bodem wel sterk per plek, daarom wordt het resultaat altijd samen met bodem- en archiefgegevens van het adres bekeken.</p>"
       }
     ],
     "related": [
@@ -212,6 +244,9 @@
     "cta": [
       "Vermoed je ongelijke zetting?",
       "Bekijk wanneer aanvullend funderingsonderzoek met metingen zinvol is."
+    ],
+    "scripts": [
+      "/lintvoegmeting.js"
     ]
   },
   {
