@@ -1749,3 +1749,14 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 .tool-entry-links { margin: 0; font-size: 14.5px; }
 .tool-entry-links a { color: var(--navy); font-weight: 700; border-bottom: 1.5px solid var(--gold); }
 @media (max-width: 900px) { .tool-entry-inner { grid-template-columns: 1fr; gap: 18px; } .tool-entry-actions .btn { width: 100%; justify-content: center; } }
+
+/* Demo's: eenheidstoelichting (toegevoegd) */
+.prose .sim-unit-note { margin: 0 0 8px; font-size: 12.5px; color: #c8d5e2; }
+.prose .sim-lood-extra { margin: 4px 0 0; font-size: 14px; color: var(--muted); }
+
+/* Doelgroepkaarten: link naar de doelgroeppagina (toegevoegd) */
+.audience-card { display: flex; flex-direction: column; }
+.aud-link { margin-top: auto; padding-top: 14px; font-weight: 700; font-size: 14.5px; color: var(--navy); }
+.aud-link span { color: var(--gold); transition: margin-left .2s var(--ease); }
+.aud-link:hover span, .aud-link:focus-visible span { margin-left: 4px; }
+.aud-link:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 4px; }

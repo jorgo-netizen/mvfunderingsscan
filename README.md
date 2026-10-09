@@ -29,6 +29,7 @@ de site automatisch opnieuw en ververst de browser vanzelf.
 | `npm run check`   | Controleert alle content in `src/content/pages/` tegen `CONTENT-GUIDE.md`: velden, lengtes, links, toegestane bedragen, verboden tekst, woordaantallen en uniekheid |
 | `npm run audit`   | Bouwt de site, controleert SEO/GEO van elke pagina en schrijft het eindoverzicht naar `AUDIT.md` |
 | `npm run autolink` | Legt bij de eerste vermelding van vakbegrippen (lintvoegwaterpassing, loodmeting, zetting, enz.) automatisch een interne link naar de kennispagina. Gebruik `npm run autolink -- --dry` om eerst te zien wat er verandert |
+| `npm test` | Rekentests van de vier meetdemo's (lintvoeg, loodmeting/Oldehove, vloerveld, scheuren) met de ingebouwde `node:test`; geen extra dependencies |
 | `npm run clean`   | Verwijdert `dist/` |
 
 Een andere poort: `npm run dev -- --port 4000`.

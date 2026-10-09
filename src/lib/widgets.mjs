@@ -25,7 +25,7 @@ function lintvoegWidget() {
           <button type="button" class="sim-point" data-i="${i}" data-h="${h}" data-label="${label}" aria-pressed="false"
             style="left:${(LV_X[i] / 800 * 100).toFixed(2)}%;top:${(ys[i] / 380 * 100).toFixed(2)}%"
             aria-label="Meetpunt ${label}"><span>${label}</span></button>`).join('');
-  const rows = LV.map(([label, h]) => `<tr><th scope="row">Punt ${label}</th><td>${nl(h)} cm (voorbeeldwaarde)</td></tr>`).join('');
+  const rows = LV.map(([label, h]) => { const d = Math.round((h - LV[0][1]) * 10); return `<tr><th scope="row">Punt ${label}</th><td>${nl(h)} cm</td><td>${d === 0 ? 'referentiepunt' : `${d > 0 ? '+' : '−'}${Math.abs(d)} mm`}</td></tr>`; }).join('');
   return `
 <figure class="sim sim-lintvoeg" data-sim="lintvoeg" aria-labelledby="sim-lv-title">
   <div class="sim-head">
@@ -68,6 +68,7 @@ function lintvoegWidget() {
     </div>
     <div class="sim-profile-wrap">
       <p class="sim-profile-title">Hoogteprofiel van de lintvoeg (voorbeeldwaarden)</p>
+      <p class="sim-unit-note">Hoogtes in cm ten opzichte van een vast referentiepunt (meetpeil). Het gaat om de verschillen tussen de punten, niet om een absolute hoogte. Punt A is het referentiepunt van de referentielijn.</p>
       <svg class="sim-profile" data-sim-profile viewBox="0 0 800 220" role="img" aria-label="Hoogteprofiel van de gemeten punten">
         <text x="410" y="120" text-anchor="middle" class="sim-placeholder">Selecteer minimaal twee meetpunten</text>
       </svg>
@@ -90,7 +91,7 @@ function lintvoegWidget() {
   </div>
   <details class="sim-data">
     <summary>Bekijk alle voorbeeldwaarden</summary>
-    <table class="data-table"><thead><tr><th>Meetpunt</th><th>Hoogte</th></tr></thead><tbody>${rows}</tbody></table>
+    <table class="data-table"><thead><tr><th>Meetpunt</th><th>Hoogte t.o.v. meetpeil (voorbeeld)</th><th>Verschil t.o.v. punt A</th></tr></thead><tbody>${rows}</tbody></table>
   </details>
   <figcaption class="sim-caption">Dit is een educatieve simulatie met voorbeeldwaarden; de hoogteverschillen zijn in de tekening sterk overdreven. Een echte lintvoegwaterpassing wordt met professionele meetapparatuur uitgevoerd. ${SIM_NOTE}</figcaption>
 </figure>`;
@@ -99,7 +100,7 @@ function lintvoegWidget() {
 // ================================================================ 2a. loodmeting (gevel, mm)
 function loodWidget() {
   return `
-<figure class="sim sim-lood" data-sim="lood" aria-labelledby="sim-lood-title">
+<figure class="sim sim-lood" data-sim="lood" data-gevel="6" aria-labelledby="sim-lood-title">
   <div class="sim-head">
     <span class="sim-badge">Interactieve demonstratie</span>
     <h3 id="sim-lood-title">Ervaar hoe een loodmeting werkt</h3>
@@ -131,6 +132,7 @@ function loodWidget() {
     <div class="sim-panel">
       <div class="sim-readout" aria-live="polite">
         <p class="sim-big"><span>Gemeten afwijking</span><strong data-lood-value>0 mm</strong></p>
+        <p class="sim-lood-extra" data-lood-extra>Over 6 m gevelhoogte: geen afwijking van de loodlijn.</p>
         <p class="sim-level" data-lood-level>Geen duidelijke afwijking</p>
       </div>
       <label class="sim-slider-label" for="sim-lood-range">Scheefstand van de gevel</label>
@@ -149,7 +151,7 @@ function loodWidget() {
       </div>
     </div>
   </div>
-  <figcaption class="sim-caption">Educatieve simulatie: de kanteling is sterk overdreven en de indeling in "klein" en "groter" geldt alleen voor deze demonstratie. ${SIM_NOTE}</figcaption>
+  <figcaption class="sim-caption">Educatieve simulatie met een voorbeeldgevel van 6 m hoog: de afwijking is de horizontale afstand tussen de bovenkant van de gevel en de loodlijn (afwijking = hoogte × tan(hoek)). De kanteling in de tekening is sterk overdreven, en de indeling in "klein" en "groter" geldt alleen voor deze demonstratie; het zijn geen normwaarden. Een scheefstand zegt op zichzelf niets over de oorzaak of de ernst. ${SIM_NOTE}</figcaption>
 </figure>`;
 }
 
@@ -437,7 +439,7 @@ function vloerveldWidget() {
     </div>
   </div>
   <details class="sim-data">
-    <summary>Bekijk alle voorbeeldwaarden (cm)</summary>
+    <summary>Bekijk alle voorbeeldwaarden (cm t.o.v. meetpeil; A1 is het referentiepunt)</summary>
     <div class="table-wrap"><table class="data-table"><thead><tr><th>Rij</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr></thead><tbody>${table}</tbody></table></div>
   </details>
   <figcaption class="sim-caption">Educatieve simulatie met voorbeeldwaarden. Een vloer hoeft niet overal exact even hoog te zijn: afwerklagen, de vloerconstructie zelf en bouwtoleranties spelen mee. ${SIM_NOTE}</figcaption>
@@ -503,3 +505,6 @@ export function widgetHtml(name) {
   if (!fn) throw new Error(`Onbekende widget: ${name}`);
   return fn();
 }
+
+/** Voorbeelddata van de demo's, voor de rekentests in scripts/test-demos.mjs. */
+export const DEMO_DATA = { LV, VV, OL_DEG, OL_HEIGHT_M, olOffset, CRACKS, PATRONEN, SIM_NOTE };

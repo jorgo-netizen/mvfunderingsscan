@@ -153,6 +153,24 @@
     "intent": "informatief"
   },
   {
+    "path": "/woningeigenaren/",
+    "label": "Woningeigenaren",
+    "group": "aankoop",
+    "file": "doelgroepen-v.json",
+    "minWords": 900,
+    "keyword": "funderingsonderzoek woningeigenaar",
+    "intent": "informatief"
+  },
+  {
+    "path": "/makelaars-en-taxateurs/",
+    "label": "Makelaars en taxateurs",
+    "group": "aankoop",
+    "file": "doelgroepen-v.json",
+    "minWords": 900,
+    "keyword": "funderingsonderzoek makelaar taxateur",
+    "intent": "commercieel"
+  },
+  {
     "path": "/over-ons/",
     "label": "Over ons",
     "group": "over",

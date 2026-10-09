@@ -186,7 +186,7 @@ function buildHome() {
   }, serviceSchema('funderingsscan'), serviceSchema('fase0'), serviceSchema('fase1'), faqSchema(url, home.faqs)];
   write('/', head({
     path: '/', title,
-    description: 'Funderingsscan en funderingsonderzoek in Friesland en Groningen. Onafhankelijk onderzoek naar de staat en risico\'s van de fundering. Vraag een scan aan.',
+    description: 'Funderingsscan en funderingsonderzoek in Friesland en Groningen. Onafhankelijk onderzoek naar het funderingsrisico van je woning. Vraag een scan aan.',
     schema: jsonld(graph),
     preload: '<link rel="preload" as="image" type="image/webp" fetchpriority="high" imagesrcset="/assets/img/funderingsmeting-laser-tablet-640.webp 640w, /assets/img/funderingsmeting-laser-tablet-1024.webp 1024w, /assets/img/funderingsmeting-laser-tablet-1536.webp 1536w" imagesizes="(min-width: 1181px) 80vw, 100vw">\n  ',
   }) + '\n' + header('/') + s + footer());

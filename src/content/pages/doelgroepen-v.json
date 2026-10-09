@@ -1,0 +1,285 @@
+[
+  {
+    "path": "/makelaars-en-taxateurs/",
+    "title": "Funderingsonderzoek voor makelaars en taxateurs",
+    "description": "Funderingsonderzoek voor makelaars en taxateurs in Friesland en Groningen: wat een Quick Scan oplevert, wat niet en hoe je het voor een klant regelt.",
+    "keyword": "funderingsonderzoek makelaar taxateur",
+    "intent": "commercieel",
+    "nav_active": "/funderingsonderzoek-woning/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/makelaars-en-taxateurs/",
+        "name": "Makelaars en taxateurs"
+      }
+    ],
+    "eyebrow": "Voor makelaars en taxateurs",
+    "h1": "Funderingsonderzoek voor makelaars en taxateurs",
+    "lead": "Speelt de fundering een rol in een verkoop, een aankoopbegeleiding of een taxatie, dan kan een Fase 0 Quick Scan een onderbouwde eerste beoordeling geven. MV Funderingsscan voert die uit in Friesland en Groningen. Op deze pagina lees je wat het onderzoek oplevert, wat het niet is, en hoe je het voor een opdrachtgever regelt.",
+    "hero_image": {
+      "name": "jaren-dertig-woningen-straat",
+      "alt": "Rij jaren-dertigwoningen in een groene straat"
+    },
+    "services": [
+      "fase0",
+      "fase1"
+    ],
+    "facts": [
+      {
+        "label": "Fase 0 Quick Scan",
+        "value": "vanaf ca. €350"
+      },
+      {
+        "label": "Inspectie",
+        "value": "meestal binnen enkele werkdagen"
+      },
+      {
+        "label": "Rapport",
+        "value": "normaal gesproken binnen 5 werkdagen na inspectie"
+      },
+      {
+        "label": "Werkgebied",
+        "value": "Friesland en Groningen"
+      }
+    ],
+    "sections": [
+      {
+        "id": "waarom-relevant",
+        "h2": "Waarom is funderingsrisico relevant voor makelaars en taxateurs?",
+        "answer": "Funderingsrisico kan invloed hebben op de waardebepaling, de financiering en het verloop van een transactie. Sinds 1 april 2026 neemt de taxateur de KCAF-risicoklasse (A t/m E) op in het taxatierapport; bij klasse D of E moet volgens het NRVT in principe eerst een aanvullend (beperkt) funderingsonderzoek plaatsvinden voordat het rapport kan worden afgerond.",
+        "body": "<p>Daarop bestaan uitzonderingen, bijvoorbeeld als er bewijsstukken zijn dat het risico niet aanwezig is of als de opdrachtgever niet instemt met de kosten; de taxateur legt dat dan vast. NHG heeft daarnaast aangekondigd dat vanaf 1 januari 2027 bij klasse D of E een verkennend funderingsonderzoek verplicht is voor een lening met NHG. De definitieve voorwaarden volgen nog. Bronnen en de precieze formuleringen staan op <a href=\"/bronnen-en-richtlijnen/\">bronnen en richtlijnen</a>; de achtergrond lees je bij <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek en taxatie</a> en <a href=\"/funderingsrisicoklasse-uitgelegd/\">risicoklassen A tot en met E</a>.</p>"
+      },
+      {
+        "id": "herkenbare-situaties",
+        "h2": "In welke situaties kun je een funderingsscan inzetten?",
+        "answer": "Bijvoorbeeld bij een taxatie met risicoklasse D of E, bij een oudere woning waar kopers vragen over de fundering hebben, of als bij een bezichtiging signalen als scheuren of scheefstand opvallen.",
+        "body": "<div class=\"two-col-list\"><div><h3>Aankoop- en verkoopmakelaar</h3><ul class=\"checklist\"><li>Een koper wil vóór het verstrijken van het voorbehoud meer weten over de fundering.</li><li>Een verkoper wil vooraf weten waar hij staat, zodat vragen van kopers beantwoord kunnen worden.</li><li>Er zijn bij een bezichtiging scheuren, scheefstand of klemmende deuren gezien.</li></ul></div><div><h3>Taxateur</h3><ul class=\"checklist\"><li>Het funderingsrisicorapport vermeldt klasse D of E.</li><li>De eigen waarneming wijkt af van de KCAF-informatie en je wilt dat onderbouwen.</li><li>Er is onduidelijkheid over het funderingstype of over eerder onderzoek.</li></ul></div></div><p>Welk onderzoek in een dossier nodig is, hangt af van de opdracht en de toepasselijke richtlijnen. Lees ook <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a> en <a href=\"/funderingsonderzoek-bij-verkoop/\">funderingsonderzoek bij verkoop</a>.</p>"
+      },
+      {
+        "id": "fase-0-voor-professionals",
+        "h2": "Wat levert een Fase 0 Quick Scan op?",
+        "answer": "Een Fase 0 Quick Scan combineert archief- en bodemonderzoek met een visuele inspectie ter plaatse, zonder graafwerk. Het rapport bevat de bevindingen, foto's, een risico-inschatting, een conclusie en één van vier adviezen.",
+        "body": "<p>De vier mogelijke adviezen zijn: geen directe aanleiding voor vervolgonderzoek, monitoren, gericht aanvullend onderzoek of <a href=\"/fase-1-funderingsonderzoek/\">fase 1 met metingen</a>. Beperkingen, zoals een kruipruimte die niet toegankelijk was, staan in het rapport. Hoe het rapport is opgebouwd, lees je op <a href=\"/funderingsrapport/\">het funderingsrapport</a>; de inhoud van de scan staat bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>.</p>"
+      },
+      {
+        "id": "voldoet-quickscan",
+        "h2": "Voldoet een Quick Scan aan de eisen van een taxatie of hypotheek?",
+        "answer": "Niet automatisch. Of een Quick Scan voldoet als aanvullend onderzoek, hangt af van wat de taxateur, de geldverstrekker of de opdracht vraagt en van de toepasselijke richtlijnen. Stem dat vooraf af.",
+        "body": "<p>Laat ons weten welk onderzoek er gevraagd wordt en met welk doel. Dan hoor je vooraf of en tegen welke prijs MV Funderingsscan dat kan uitvoeren, en wat het rapport wel en niet bevat. Gelden er eisen aan het type onderzoek of aan het onderzoeksbureau, controleer die dan vooraf bij de partij die ze stelt. Rapportage en vervolgadvies zijn altijd afhankelijk van de situatie van de woning.</p>"
+      },
+      {
+        "id": "vervolgstappen-professionals",
+        "h2": "Wanneer is vervolgonderzoek aan de orde?",
+        "answer": "Als de Quick Scan signalen of omstandigheden laat zien die meer duidelijkheid vragen. Meestal is dat fase 1 met metingen; soms past monitoring of gericht aanvullend onderzoek beter.",
+        "body": "<p>Fase 1 brengt met een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a>, <a href=\"/kennisbank/loodmeting/\">loodmetingen</a> en een <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a> de huidige scheefstand en hoogteverschillen in beeld. Of een woning nog beweegt, blijkt pas uit herhaalde metingen. Een inspectieput, waarbij de fundering plaatselijk wordt vrijgegraven, is een aparte, verdergaande stap die buiten fase 0 en fase 1 valt.</p>"
+      },
+      {
+        "id": "voordelen-beperkingen-professionals",
+        "h2": "Wat zijn de voordelen en beperkingen van het onderzoek?",
+        "answer": "Het onderzoek geeft een onderbouwde, onafhankelijke beoordeling van het funderingsrisico van één woning. Het is geen diagnose van de fundering zelf, geen constructieve beoordeling en geen garantie.",
+        "body": "<div class=\"two-col-list\"><div><h3>Wat het oplevert</h3><ul class=\"checklist\"><li>Een beoordeling van deze woning, niet alleen een modelinschatting</li><li>Bevindingen met foto's die je kunt delen met je opdrachtgever</li><li>Een concreet vervolgadvies</li><li>Onafhankelijk: MV Funderingsscan voert zelf geen herstel uit</li></ul></div><div><h3>Wat het niet is</h3><ul class=\"checklist\"><li>Geen vaststelling van de staat van houten palen (daarvoor moet de fundering worden vrijgegraven)</li><li>Geen constructieve berekening of herstelplan</li><li>Geen garantie voor de toekomst</li><li>Geen taxatie en geen oordeel over de waarde</li></ul></div></div>"
+      },
+      {
+        "id": "werkwijze-professionals",
+        "h2": "Hoe vraag je een onderzoek aan voor een opdrachtgever?",
+        "answer": "Je vraagt het onderzoek aan namens of samen met je opdrachtgever. Vermeld het adres, het doel (aankoop, verkoop of taxatie), eventuele termijnen en wat er precies gevraagd wordt.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Je vertelt over de woning en je vraag, en hoort vooraf de prijs.</span></li><li><strong>Archief- en bodemonderzoek</strong><span>Bouwjaar, vermoedelijk funderingstype, bodem en grondwater.</span></li><li><strong>Inspectie</strong><span>Meestal binnen enkele werkdagen ingepland; zonder graafwerk.</span></li><li><strong>Rapport</strong><span>Normaal gesproken binnen 5 werkdagen na de inspectie, met risico-inschatting en advies.</span></li></ol><p>Kies in het <a href=\"/funderingsscan-aanvragen/\">aanvraagformulier</a> de optie \"Zakelijk\". Het rapport is zo geschreven dat je het kunt delen met je opdrachtgever; afspraken over wie het rapport ontvangt, maken we vooraf.</p>"
+      },
+      {
+        "id": "contact-professionals",
+        "h2": "Hoe neem je contact op?",
+        "answer": "Bel of mail ons met het adres en je vraag. We laten weten welk onderzoek past en wat het kost.",
+        "body": "<p>Bel <a href=\"tel:+31582037172\">+31 (0) 582037172</a>, mail naar <a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a> of gebruik het <a href=\"/contact/\">contactformulier</a>. Wil je direct een onderzoek laten inplannen, ga dan naar <a href=\"/funderingsscan-aanvragen/\">funderingsscan aanvragen</a>. We zijn bereikbaar van maandag tot en met vrijdag, 09:00–17:00.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Kan ik als makelaar een Quick Scan aanvragen voor mijn klant?",
+        "a": "<p>Ja. Je kunt het onderzoek namens of samen met je opdrachtgever aanvragen. Vermeld het adres, het doel en eventuele termijnen; afspraken over wie het rapport ontvangt, maken we vooraf.</p>"
+      },
+      {
+        "q": "Is een Quick Scan voldoende als aanvullend onderzoek bij klasse D of E?",
+        "a": "<p>Dat is niet automatisch zo. Het hangt af van wat de taxateur of geldverstrekker vraagt en van de toepasselijke richtlijnen. Laat ons weten wat er gevraagd wordt; dan hoor je vooraf of wij dat kunnen uitvoeren.</p>"
+      },
+      {
+        "q": "Bepaalt MV Funderingsscan de risicoklasse?",
+        "a": "<p>Nee. De risicoklasse komt uit het KCAF-funderingsrisicorapport. MV Funderingsscan beoordeelt de woning zelf en geeft een eigen risico-inschatting en advies.</p>"
+      },
+      {
+        "q": "Hoe snel is het rapport beschikbaar?",
+        "a": "<p>De inspectie wordt meestal binnen enkele werkdagen ingepland. Het rapport volgt normaal gesproken binnen 5 werkdagen na de inspectie. Geef termijnen bij de aanvraag door.</p>"
+      },
+      {
+        "q": "Werken jullie ook in Drenthe?",
+        "a": "<p>Het werkgebied van MV Funderingsscan is Friesland en de provincie Groningen. Voor een adres daarbuiten kun je contact opnemen; we laten dan weten of we kunnen helpen.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/funderingsonderzoek-taxatie/",
+        "label": "Funderingsonderzoek en taxatie",
+        "text": "Wat de funderingsparagraaf en de risicoklasse betekenen."
+      },
+      {
+        "href": "/funderingsrapport/",
+        "label": "Het funderingsrapport",
+        "text": "Wat er in het rapport staat."
+      },
+      {
+        "href": "/bronnen-en-richtlijnen/",
+        "label": "Bronnen en richtlijnen",
+        "text": "KCAF, NRVT en NHG op een rij."
+      }
+    ],
+    "cta": [
+      "Bespreek een funderingsscan voor je opdrachtgever",
+      "Laat ons weten om welke woning en welk doel het gaat. Je hoort vooraf welk onderzoek past en wat het kost.",
+      "Funderingsscan aanvragen"
+    ]
+  },
+  {
+    "path": "/woningeigenaren/",
+    "title": "Funderingsonderzoek voor woningeigenaren | MV Funderingsscan",
+    "description": "Woon je al in je huis en twijfel je over de fundering? Lees welke signalen ertoe doen, wat een Quick Scan onderzoekt en wanneer vervolgonderzoek past.",
+    "keyword": "funderingsonderzoek woningeigenaar",
+    "intent": "informatief",
+    "nav_active": "/funderingsonderzoek-woning/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/woningeigenaren/",
+        "name": "Woningeigenaren"
+      }
+    ],
+    "eyebrow": "Voor woningeigenaren",
+    "h1": "Funderingsonderzoek voor woningeigenaren",
+    "lead": "Woon je al in je huis en zie je scheuren, een scheve vloer of klemmende deuren, of wil je gewoon weten hoe het met het funderingsrisico staat? Je hoeft niet te wachten tot er ernstige schade zichtbaar is. Een Fase 0 Quick Scan brengt in beeld of er aanwijzingen zijn voor funderingsproblemen en welke vervolgstap bij je woning past.",
+    "hero_image": {
+      "name": "vooroorlogse-woning-voordeur",
+      "alt": "Klassieke voordeur in een bakstenen gevel van een oudere woning"
+    },
+    "services": [
+      "fase0"
+    ],
+    "facts": [
+      {
+        "label": "Fase 0 Quick Scan",
+        "value": "vanaf ca. €350"
+      },
+      {
+        "label": "Onderzoek",
+        "value": "zonder graafwerk"
+      },
+      {
+        "label": "Werkgebied",
+        "value": "Friesland en Groningen"
+      }
+    ],
+    "sections": [
+      {
+        "id": "waarom-als-eigenaar",
+        "h2": "Waarom zou je als eigenaar naar de fundering laten kijken?",
+        "answer": "Omdat funderingsproblemen zich vaak langzaam ontwikkelen en vroeg inzicht meer keuzes geeft: vastleggen en volgen, gericht onderzoek of, als het nodig is, tijdig herstel laten uitwerken.",
+        "body": "<p>Eigenaren zijn zelf verantwoordelijk voor het onderhoud van hun woning, en dus ook voor de fundering. Dat betekent niet dat elke oudere woning een probleem heeft: een woning met houten palen of een fundering op staal heeft niet automatisch problemen. Wel helpt het om te weten welke signalen ertoe doen en wanneer een beoordeling zinvol is. Twijfel je? Doe dan eerst de <a href=\"/gratis-funderingscheck/\">gratis Funderingscheck</a>.</p>"
+      },
+      {
+        "id": "signalen",
+        "h2": "Welke signalen kunnen aanleiding zijn om de fundering te laten beoordelen?",
+        "answer": "Scheuren in gevels en metselwerk, een scheve gevel of vloer, verzakking rond de woning en deuren of ramen die steeds meer klemmen kunnen aanleiding zijn. Geen van die signalen bewijst op zichzelf een funderingsprobleem.",
+        "body": "<ul class=\"checklist\"><li><strong>Scheuren</strong> – vooral trapvormige of diagonale scheuren, scheuren die groter worden of meerdere scheuren in dezelfde richting. Lees <a href=\"/scheuren-in-gevel/\">scheuren in de gevel</a>.</li><li><strong>Verzakking</strong> – een woning of deel van de woning die lager is komen te liggen. Lees <a href=\"/verzakking-woning/\">verzakking van een woning</a>.</li><li><strong>Scheefstand</strong> – een gevel die uit het lood staat of een vloer die afloopt. Lees <a href=\"/scheefstand-woning/\">scheefstand van een woning</a>.</li><li><strong>Klemmende deuren en ramen</strong> – kunnen ook door vocht, scharnieren of afstelling komen. Zie <a href=\"/klemmende-deuren-en-ramen/\">klemmende deuren en ramen</a>.</li></ul><p>Pas het patroon en de samenhang van signalen zeggen iets. Wil je zelf signalen aanvinken en foto's sturen, gebruik dan <a href=\"/vertel-wat-je-ziet/\">vertel ons wat je ziet</a>.</p>"
+      },
+      {
+        "id": "niet-elk-probleem",
+        "h2": "Is elk bouwkundig probleem een funderingsprobleem?",
+        "answer": "Nee. Scheuren en klemmende deuren hebben vaak andere oorzaken, zoals krimp, temperatuurwerking, vocht, een roestende latei of een aanbouw met een eigen fundering.",
+        "body": "<p>Een scheur boven een kozijn wijst bijvoorbeeld vaak op de latei erboven, en een scheur op de aansluiting van een aanbouw kan ontstaan doordat beide delen anders zakken. Daarom kijkt een onderzoek naar het geheel: waar zitten de signalen, hoe lopen ze en veranderen ze? Meer over scheurpatronen lees je bij <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>.</p>"
+      },
+      {
+        "id": "bodem-en-grondwater",
+        "h2": "Welke rol spelen bodem, grondwater en funderingstype?",
+        "answer": "De ondergrond, de grondwaterstand en het funderingstype bepalen mede hoe een woning zich gedraagt. Een fundering op houten palen en een fundering op staal hebben verschillende aandachtspunten.",
+        "body": "<div class=\"two-col-list\"><div><h3>Houten palen</h3><p>Komt de grondwaterstand onder de bovenkant van de palen (droogstand), dan kan schimmelaantasting (paalrot) ontstaan. Daarnaast kan bacteriële aantasting juist onder water optreden, over de hele lengte van de paal. Houten palen werden in de woningbouw gebruikt tot ongeveer 1970. Lees <a href=\"/kennisbank/houten-paalfundering/\">houten paalfundering</a>.</p></div><div><h3>Fundering op staal</h3><p>Een fundering zonder palen rust direct op de ondergrond. Dan bepaalt de bodem veel: klei kan krimpen bij droogte en zwellen bij nat weer, en veen kan inklinken. Ongelijke zetting kan dan tot scheuren leiden. Lees <a href=\"/kennisbank/fundering-op-staal/\">fundering op staal</a>.</p></div></div><p>In Friesland en Groningen wisselt de bodem sterk, van zeeklei tot veen en zand; in het Friese veenweidegebied daalt de bodem door de vertering van veen. Dat zegt iets over de omstandigheden, niet over elke woning afzonderlijk. Lees meer bij <a href=\"/funderingsonderzoek-friesland/\">funderingsonderzoek in Friesland</a> en <a href=\"/funderingsonderzoek-groningen/\">funderingsonderzoek in Groningen</a>.</p>"
+      },
+      {
+        "id": "fase-0-voor-eigenaren",
+        "h2": "Wat onderzoekt een Fase 0 Quick Scan bij je woning?",
+        "answer": "De Quick Scan combineert archief- en bodemonderzoek (bouwjaar, vermoedelijk funderingstype, bodem en grondwater) met een visuele inspectie van gevels, scheuren, kozijnen, deuren, vloeren, scheefstand en de kruipruimte voor zover toegankelijk. Er wordt niet gegraven.",
+        "body": "<p>Na het onderzoek ontvang je een rapport met de bevindingen, foto's, een risico-inschatting, een conclusie en één van vier adviezen: geen directe aanleiding, monitoren, gericht aanvullend onderzoek of fase 1 met metingen. Meer details staan bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a> en <a href=\"/quickscan-fundering/\">quickscan fundering</a>.</p>"
+      },
+      {
+        "id": "monitoring-en-vervolg",
+        "h2": "Wanneer kies je voor monitoring of vervolgonderzoek?",
+        "answer": "Monitoring past als er iets te zien is dat nu geen ingrijpen vraagt, maar wel gevolgd moet worden. Vervolgonderzoek, meestal fase 1 met metingen, past als de signalen meer duidelijkheid vragen.",
+        "body": "<p>Bij monitoring worden scheuren of hoogtes na verloop van tijd opnieuw vastgelegd, zodat zichtbaar wordt of er nog iets verandert. Je kunt zelf alvast beginnen: fotografeer scheuren met een liniaal ernaast en noteer de datum (zie <a href=\"/kennisbank/monitoring-scheuren/\">scheuren monitoren</a>). Fase 1 brengt met metingen de huidige scheefstand en hoogteverschillen in beeld; probeer de meetmethoden zelf op <a href=\"/funderingsmetingen/\">funderingsmetingen uitgelegd</a>.</p>"
+      },
+      {
+        "id": "voordelen-beperkingen-eigenaren",
+        "h2": "Wat zijn de voordelen en beperkingen van een Quick Scan?",
+        "answer": "Een Quick Scan geeft een onderbouwd en onafhankelijk beeld van het funderingsrisico van je woning, zonder graafwerk. Het is geen volledige constructieve beoordeling en geen garantie.",
+        "body": "<div class=\"two-col-list\"><div><h3>Wat het oplevert</h3><ul class=\"checklist\"><li>Inzicht in de signalen en omstandigheden bij jouw woning</li><li>Een concreet advies over de vervolgstap</li><li>Een rapport dat je kunt bewaren en delen</li></ul></div><div><h3>Wat het niet kan</h3><ul class=\"checklist\"><li>De exacte staat van houten palen vaststellen</li><li>Verborgen funderingsgebreken uitsluiten</li><li>De resterende levensduur of exacte herstelkosten bepalen</li><li>Garanderen dat er in de toekomst niets verandert</li></ul></div></div>"
+      },
+      {
+        "id": "werkwijze-eigenaren",
+        "h2": "Hoe verloopt het onderzoek?",
+        "answer": "In vier stappen: aanvraag, archief- en bodemonderzoek, inspectie en rapport. Je hoort vooraf wat het kost.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Je vertelt over de woning en je vraag, en hoort vooraf de prijs.</span></li><li><strong>Archief- en bodemonderzoek</strong><span>Bouwjaar, vermoedelijk funderingstype, bodem en grondwater.</span></li><li><strong>Inspectie</strong><span>Meestal binnen enkele werkdagen ingepland; zonder graafwerk.</span></li><li><strong>Rapport</strong><span>Normaal gesproken binnen 5 werkdagen na de inspectie, met risico-inschatting en advies.</span></li></ol><p>De volledige werkwijze staat op <a href=\"/werkwijze/\">werkwijze</a>; de kosten op <a href=\"/prijzen/\">prijzen</a>.</p>"
+      },
+      {
+        "id": "contact-eigenaren",
+        "h2": "Hoe neem je contact op?",
+        "answer": "Bel, mail of vul het formulier in. Vertel wat je ziet en sinds wanneer; foto's helpen.",
+        "body": "<p>Bel <a href=\"tel:+31582037172\">+31 (0) 582037172</a>, mail naar <a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a> of gebruik het <a href=\"/contact/\">contactformulier</a>. Wil je direct een onderzoek laten inplannen, ga dan naar <a href=\"/funderingsscan-aanvragen/\">funderingsscan aanvragen</a>. We zijn bereikbaar van maandag tot en met vrijdag, 09:00–17:00.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Moet ik wachten tot er grote scheuren zijn?",
+        "a": "<p>Nee. Je kunt de fundering ook laten beoordelen als je twijfelt of als je wilt weten hoe het risico ervoor staat. Vroeg inzicht geeft meer keuzes.</p>"
+      },
+      {
+        "q": "Betekenen klemmende deuren dat mijn fundering slecht is?",
+        "a": "<p>Niet per se. Deuren en ramen kunnen ook klemmen door vocht, seizoenswerking of afstelling. Pas in combinatie met andere signalen kan het op beweging van de woning wijzen.</p>"
+      },
+      {
+        "q": "Heeft mijn woning van vóór 1970 houten palen?",
+        "a": "<p>Dat kan, maar het hoeft niet. Woningen uit die periode staan ook vaak op staal. Archiefonderzoek kan meer duidelijkheid geven; zie <a href=\"/welke-fundering-heeft-mijn-woning/\">welke fundering heeft mijn woning</a>.</p>"
+      },
+      {
+        "q": "Is een Quick Scan een volledige constructieve beoordeling?",
+        "a": "<p>Nee. Een Quick Scan is een onderbouwde beoordeling van het funderingsrisico, zonder graafwerk. Een constructieve berekening, houtonderzoek of herstelplan valt erbuiten.</p>"
+      },
+      {
+        "q": "Werken jullie in mijn regio?",
+        "a": "<p>MV Funderingsscan werkt in heel Friesland en de hele provincie Groningen. Bekijk het <a href=\"/werkgebied/\">werkgebied</a>.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/funderingsproblemen/",
+        "label": "Funderingsproblemen herkennen",
+        "text": "Signalen en oorzaken op een rij."
+      },
+      {
+        "href": "/funderingsonderzoek-woning/",
+        "label": "Welk onderzoek past bij je woning?",
+        "text": "Fase 0, fase 1 en vervolgstappen."
+      },
+      {
+        "href": "/vertel-wat-je-ziet/",
+        "label": "Vertel ons wat je ziet",
+        "text": "Signalen aanvinken en foto's sturen."
+      }
+    ],
+    "cta": [
+      "Ontdek welke vervolgstap bij je woning past",
+      "Vraag een Quick Scan aan of leg je situatie aan ons voor. Je hoort vooraf wat het kost.",
+      "Funderingsscan aanvragen"
+    ]
+  }
+]

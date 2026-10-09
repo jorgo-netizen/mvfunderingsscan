@@ -519,7 +519,9 @@
         if (on && !tip) { tip = document.createElement('em'); tip.className = 'sim-point-value'; tip.textContent = `${fmt(heights[i])} cm`; p.appendChild(tip); }
         if (!on && tip) tip.remove();
       });
-      readings.innerHTML = idx.map((i) => `<li><span>Punt ${labels[i]}</span><strong>Hoogte: ${fmt(heights[i])} cm</strong></li>`).join('');
+      // Relatief: verschil t.o.v. punt A (het referentiepunt waar de referentielijn door loopt), in mm.
+      const rel = (i) => { const d = Math.round((heights[i] - heights[0]) * 10); return i === 0 ? 'referentiepunt' : `${d > 0 ? '+' : d < 0 ? '−' : '±'}${Math.abs(d)} mm t.o.v. A`; };
+      readings.innerHTML = idx.map((i) => `<li><span>Punt ${labels[i]}</span><strong>${fmt(heights[i])} cm</strong> <span>(${rel(i)})</span></li>`).join('');
       lastIdx = idx;
       drawProfile(idx);
       if (idx.length >= 2) {
@@ -529,8 +531,8 @@
         const iMax = idx[vals.indexOf(max)];
         const iMin = idx[vals.indexOf(min)];
         const mm = Math.round((max - min) * 10);
-        $('[data-sim-max]', sim).textContent = `Punt ${labels[iMax]} · ${fmt(max)} cm`;
-        $('[data-sim-min]', sim).textContent = `Punt ${labels[iMin]} · ${fmt(min)} cm`;
+        $('[data-sim-max]', sim).textContent = `Punt ${labels[iMax]} · ${fmt(max)} cm (${rel(iMax)})`;
+        $('[data-sim-min]', sim).textContent = `Punt ${labels[iMin]} · ${fmt(min)} cm (${rel(iMin)})`;
         $('[data-sim-diff]', sim).textContent = `${mm} mm`;
         result.hidden = false;
         status.textContent = `${idx.length} van ${N} meetpunten gemeten. Hoogteverschil tussen de gemeten punten: ${mm} mm.`;
@@ -578,6 +580,8 @@
     const texts = $$('.sim-level-text', sim);
     const chips = $$('[data-lood-set]', sim);
     const WALL_H = 310;
+    const extra = $('[data-lood-extra]', sim);
+    const GEVEL_M = parseFloat(sim.dataset.gevel || '6');
     const DEG_PER_MM = 0.35; // sterk overdreven weergave
     let current = 0;
     let anim = null;
@@ -596,6 +600,12 @@
       label.setAttribute('y', String(topY - 10));
       label.setAttribute('text-anchor', 'end');
       value.textContent = `${rounded} mm`;
+      if (extra) {
+        // Afwijking = H × tan(hoek)  →  hoek = arctan(afwijking ÷ H), met H = meethoogte van de gevel.
+        const perM = rounded / GEVEL_M;
+        const deg = (Math.atan(rounded / (GEVEL_M * 1000)) * 180) / Math.PI;
+        extra.textContent = rounded ? `Over ${fmt(GEVEL_M, 0)} m gevelhoogte: ${fmt(perM, 1)} mm/m, een hoek van ${fmt(deg, 2)}°.` : `Over ${fmt(GEVEL_M, 0)} m gevelhoogte: geen afwijking van de loodlijn.`;
+      }
       const lvl = rounded <= 3 ? 0 : rounded < 15 ? 1 : 2;
       level.textContent = ['Geen duidelijke afwijking', 'Kleine afwijking', 'Grotere afwijking'][lvl];
       level.dataset.level = String(lvl);
@@ -786,8 +796,9 @@
         const max = Math.max(...vals); const min = Math.min(...vals);
         const cMax = cells[idx[vals.indexOf(max)]]; const cMin = cells[idx[vals.indexOf(min)]];
         const mm = Math.round((max - min) * 10);
-        $('[data-vv-max]', sim).textContent = `${id(cMax)} · ${fmt(max)} cm`;
-        $('[data-vv-min]', sim).textContent = `${id(cMin)} · ${fmt(min)} cm`;
+        const relv = (h) => { const d = Math.round((h - all[0]) * 10); return d === 0 ? 'gelijk aan A1' : `${d > 0 ? '+' : '−'}${Math.abs(d)} mm t.o.v. A1`; };
+        $('[data-vv-max]', sim).textContent = `${id(cMax)} · ${fmt(max)} cm (${relv(max)})`;
+        $('[data-vv-min]', sim).textContent = `${id(cMin)} · ${fmt(min)} cm (${relv(min)})`;
         $('[data-vv-diff]', sim).textContent = `${mm} mm`;
         result.hidden = false;
         status.textContent = `${idx.length} van ${cells.length} meetpunten gemeten. Hoogteverschil tussen hoogste en laagste meetpunt: ${mm} mm.`
