@@ -134,3 +134,15 @@ test('lintvoegstappen: vier stappen met Vorige/Volgende', () => {
   assert.ok(html.includes('data-lvs-prev') && html.includes('data-lvs-next'));
   assert.ok(!/ hidden/.test(html), 'zonder JS zijn alle stappen zichtbaar');
 });
+
+test('Oldehove: aangeleverd silhouet ongedraaid, schietlood hangt verticaal', () => {
+  const html = widgetHtml('oldehove');
+  assert.ok(html.includes('/assets/img/oldehove-scheef.png'), 'nieuwe foto');
+  assert.ok(!/rotate\(/.test(html), 'foto wordt niet gedraaid');
+  // touw van het schietlood is zuiver verticaal (x1 = x2)
+  const m = html.match(/data-ol-string x1="([\d.]+)" y1="[\d.]+" x2="([\d.]+)"/);
+  assert.ok(m && m[1] === m[2]);
+  // afstand onderaan op 39 m = 2,86 m, hoek terug = 4,2°
+  assert.ok(html.includes('2,86 m') && html.includes('arctan(2,86 ÷ 39)'));
+  for (const h of [10, 20, 30, 39]) assert.ok(html.includes(`arctan(${(olOffset(h)).toFixed(2).replace('.', ',')} ÷ ${h}) = 4,2°`));
+});

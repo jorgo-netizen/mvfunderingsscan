@@ -630,94 +630,88 @@
     render(0);
   });
 
-  // Oldehove: loodmeting op een toren van 4,2° – meethoogte kiezen, afwijking meten, hoek berekenen
+  // Oldehove: loodmeting op een toren van 4,2° – schietlood op een hoogte ophangen, onderaan de afstand meten, hoek berekenen
   $$('[data-sim="oldehove"]').forEach((sim) => {
     const DEG = parseFloat(sim.dataset.deg);
     const PX = parseFloat(sim.dataset.px);
+    const FOOT = parseFloat(sim.dataset.foot);
+    const GROUND = parseFloat(sim.dataset.ground);
     const TAN = Math.tan(DEG * Math.PI / 180);
-    const LEAN = parseFloat(sim.dataset.lean); // scheefstand die al in het silhouet zit
-    const PX0 = parseFloat(sim.dataset.pivot); // voet van de gemeten gevel
     const range = $('[data-ol-range]', sim);
-    const tower = $('[data-ol-tower]', sim);
-    const ghost = $('[data-ol-ghost]', sim);
     const chips = $$('[data-ol-set]', sim);
-    const exag = $('[data-ol-exag]', sim);
-    const ghostToggle = $('[data-ol-ghost-toggle]', sim);
     const log = $('[data-ol-loglist]', sim);
     const explain = $('[data-ol-explain]', sim);
     const el = (k) => $(`[data-ol-${k}]`, sim);
+    const set = (k, attrs) => Object.entries(attrs).forEach(([a, v]) => el(k).setAttribute(a, typeof v === 'number' ? v.toFixed(1) : v));
     const logged = new Map();
     let h = Number(range.value);
-    let tilt = DEG; // getekende hoek (kan animeren)
+    let drop = 1; // 0 = lood nog bovenaan, 1 = lood hangt tot vlak boven het maaiveld
     let anim = null;
 
     const draw = () => {
-      const factor = exag.checked ? 3 : 1;
-      const vis = tilt * factor;
-      tower.setAttribute('transform', `rotate(${(vis - LEAN).toFixed(2)} ${PX0} 440)`);
-      const y = 440 - h * PX;
-      const x = PX0 + h * PX * Math.tan(vis * Math.PI / 180);
-      const d = h * TAN; // echte afwijking in meters
-      el('offset').setAttribute('y1', y.toFixed(1));
-      el('offset').setAttribute('y2', y.toFixed(1));
-      el('offset').setAttribute('x2', x.toFixed(1));
-      el('dot').setAttribute('cx', x.toFixed(1));
-      el('dot').setAttribute('cy', y.toFixed(1));
-      el('label').setAttribute('x', (x + 10).toFixed(1));
-      el('label').setAttribute('y', (y + 5).toFixed(1));
+      const d = h * TAN; // afstand onderaan in meters
+      const y = GROUND - h * PX; // ophangpunt op de meetlijn
+      const x = FOOT + d * PX; // het lood hangt zuiver verticaal onder het ophangpunt
+      const yb = y + (GROUND - 12 - y) * drop; // onderkant van het touw
+      set('string', { x1: x, y1: y, x2: x, y2: yb });
+      set('hook', { cx: x, cy: y });
+      set('bob', { d: `M${(x - 6).toFixed(1)} ${(yb - 2).toFixed(1)} h12 l-6 12 z` });
+      set('plumblabel', { x: x + 10, y: y + 4 });
+      set('offset', { x2: x });
+      set('tick', { x1: x, x2: x });
+      set('label', { x: x + 8 });
       el('label').textContent = `${fmt(d, 2)} m`;
-      el('hline').setAttribute('y2', y.toFixed(1));
-      el('htick').setAttribute('y1', y.toFixed(1));
-      el('htick').setAttribute('y2', y.toFixed(1));
-      el('guide').setAttribute('y1', y.toFixed(1));
-      el('guide').setAttribute('y2', y.toFixed(1));
-      el('hlabel').setAttribute('y', ((440 + y) / 2 + 4).toFixed(1));
+      el('offset').style.opacity = drop >= 1 ? '1' : '0';
+      el('label').style.opacity = drop >= 1 ? '1' : '0';
+      set('hline', { y2: y });
+      set('htick', { y1: y, y2: y });
+      set('guide', { y1: y, y2: y, x2: x });
+      set('hlabel', { y: (GROUND + y) / 2 + 4 });
       el('hlabel').textContent = `${h} m`;
       el('h').textContent = `${h} m`;
       el('d').textContent = `${fmt(d, 2)} m`;
-      el('angle').textContent = `${fmt(DEG)}°`;
-      el('formula').textContent = `Scheefstand = arctan(afwijking ÷ hoogte) = arctan(${fmt(d, 2)} ÷ ${h}) ≈ ${fmt(Math.atan(d / h) * 180 / Math.PI)}°`;
-      range.setAttribute('aria-valuetext', `${h} meter, afwijking ${fmt(d, 2)} meter`);
+      el('angle').textContent = `${fmt(Math.atan(d / h) * 180 / Math.PI)}°`;
+      el('formula').textContent = `Scheefstand = arctan(afstand ÷ hoogte) = arctan(${fmt(d, 2)} ÷ ${h}) ≈ ${fmt(Math.atan(d / h) * 180 / Math.PI)}°`;
+      range.setAttribute('aria-valuetext', `${h} meter, afstand onderaan ${fmt(d, 2)} meter`);
       chips.forEach((c) => c.setAttribute('aria-pressed', String(Number(c.dataset.olSet) === h)));
+    };
+
+    // Het lood zakt van het ophangpunt naar beneden (bij elke nieuwe hoogte opnieuw).
+    const lower = () => {
+      cancelAnimationFrame(anim);
+      if (reduceMotion) { drop = 1; draw(); return; }
+      const t0 = performance.now();
+      const step = (now) => {
+        const p = Math.max(0, Math.min((now - t0) / 700, 1));
+        drop = 1 - Math.pow(1 - p, 3);
+        draw();
+        if (p < 1) anim = requestAnimationFrame(step);
+      };
+      drop = 0; draw();
+      anim = requestAnimationFrame(step);
     };
 
     const renderLog = () => {
       const items = [...logged.keys()].sort((a, b) => a - b);
       log.innerHTML = items.map((k) => `<li><span>${k} m</span><strong>${fmt(k * TAN, 2)} m</strong><em>${fmt(DEG)}°</em></li>`).join('');
       if (items.length >= 2) {
-        explain.textContent = `Je hebt ${items.length} meetpunten vastgelegd. De afwijking groeit van ${fmt(items[0] * TAN, 2)} m naar ${fmt(items.at(-1) * TAN, 2)} m, maar de berekende hoek blijft ${fmt(DEG)}°: de toren staat als één geheel scheef. Bij een gevel die bol staat of een knik heeft, zou de hoek per meethoogte juist verschillen.`;
+        explain.textContent = `Je hebt ${items.length} metingen vastgelegd. De afstand onderaan groeit van ${fmt(items[0] * TAN, 2)} m naar ${fmt(items.at(-1) * TAN, 2)} m, maar de berekende hoek blijft ${fmt(DEG)}°: de toren staat als één geheel scheef. Bij een gevel die bol staat of een knik heeft, zou de hoek per meethoogte juist verschillen.`;
       }
     };
 
-    // Intro: toren kantelt van rechtop naar 4,2° zodra de module in beeld komt.
-    const tiltIn = () => {
-      if (reduceMotion) { tilt = DEG; draw(); return; }
-      cancelAnimationFrame(anim);
-      const t0 = performance.now();
-      const step = (now) => {
-        const p = Math.max(0, Math.min((now - t0) / 1400, 1));
-        tilt = DEG * (1 - Math.pow(1 - p, 3));
-        draw();
-        if (p < 1) anim = requestAnimationFrame(step);
-      };
-      tilt = 0; draw();
-      anim = requestAnimationFrame(step);
-    };
-
-    range.addEventListener('input', () => { h = Number(range.value); draw(); });
-    chips.forEach((c) => c.addEventListener('click', () => { h = Number(c.dataset.olSet); range.value = h; draw(); }));
-    exag.addEventListener('change', draw);
-    ghostToggle.addEventListener('change', () => { ghost.style.display = ghostToggle.checked ? '' : 'none'; });
+    range.addEventListener('input', () => { h = Number(range.value); drop = 1; draw(); });
+    range.addEventListener('change', lower);
+    chips.forEach((c) => c.addEventListener('click', () => { h = Number(c.dataset.olSet); range.value = h; lower(); }));
     el('log').addEventListener('click', () => { logged.set(h, true); renderLog(); });
     el('reset').addEventListener('click', () => {
       logged.clear(); log.innerHTML = ''; h = Number(range.max); range.value = h;
-      explain.textContent = explain.dataset.default; tiltIn();
+      explain.textContent = explain.dataset.default; lower();
     });
     explain.dataset.default = explain.textContent;
     draw();
     if ('IntersectionObserver' in window && !reduceMotion) {
       const io = new IntersectionObserver((entries) => {
-        if (entries.some((e) => e.isIntersecting)) { io.disconnect(); tiltIn(); }
+        if (entries.some((e) => e.isIntersecting)) { io.disconnect(); lower(); }
       }, { threshold: 0.35 });
       io.observe(sim);
     }

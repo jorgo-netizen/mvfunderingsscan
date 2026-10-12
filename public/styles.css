@@ -1828,3 +1828,12 @@ html:not(.js) .sim-lvm .sim-points, html:not(.js) .sim-lvm [data-lvm-reset], htm
   .lvs-count { order: -1; flex: 1 1 100%; text-align: center; }
 }
 @media (prefers-reduced-motion: reduce) { .sim-lvm .sim-point, .sim-lvm .sim-joint { transition: none; } }
+
+/* Oldehove: loodmeting met schietlood op het aangeleverde silhouet (toegevoegd) */
+.ol-axis { stroke: #c2402a; stroke-width: 2.5; stroke-dasharray: 7 5; }
+.ol-axis-label { font-size: 13px; font-weight: 700; fill: #c2402a; paint-order: stroke; stroke: #fff; stroke-width: 4px; }
+.ol-vert { stroke: var(--navy); stroke-width: 1; stroke-dasharray: 2 5; opacity: .45; }
+.sim-oldehove .sim-plumb { stroke: var(--gold); stroke-width: 2.5; stroke-dasharray: none; }
+.ol-plumb-label { paint-order: stroke; stroke: #fff; stroke-width: 4px; }
+.sim-oldehove [data-ol-offset], .sim-oldehove [data-ol-label] { transition: opacity .2s ease; }
+@media (max-width: 760px) { .ol-axis-label { font-size: 18px; } }
