@@ -279,6 +279,10 @@
       ]
     },
     {
+      "label": "Nieuws",
+      "href": "/nieuws/"
+    },
+    {
       "href": "/werkwijze/",
       "label": "Werkwijze"
     },

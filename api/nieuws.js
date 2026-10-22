@@ -15,7 +15,7 @@ const CACHE = 'public, max-age=0, s-maxage=60, stale-while-revalidate=600';
 
 function notFound(res) {
   const html = `${head({ path: '/nieuws/', title: 'Bericht niet gevonden | MV Funderingsscan', description: 'Dit nieuwsbericht bestaat niet (meer).', robots: 'noindex, follow', canonical: false, schema: '' })}
-${header('')}
+${header('/nieuws/')}
 <main id="main"><section class="section"><div class="container prose">
   <h1>Bericht niet gevonden</h1>
   <p>Dit nieuwsbericht bestaat niet of is niet (meer) gepubliceerd.</p>

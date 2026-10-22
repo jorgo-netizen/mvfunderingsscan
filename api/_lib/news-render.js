@@ -71,7 +71,7 @@ export function renderNewsIndex(db, posts) {
     robots: posts.length ? undefined : 'noindex, follow',
   };
   return `${head(page)}
-${header('')}
+${header('/nieuws/')}
 <main id="main">
 ${hero({ crumbs, eyebrow: 'Nieuws', h1: 'Nieuws over funderingen', lead: 'Berichten van MV Funderingsscan over funderingsonderzoek, regelgeving en ontwikkelingen die van belang zijn voor woningeigenaren en kopers in Friesland en Groningen.' })}
 <section class="section">
@@ -111,7 +111,7 @@ export function renderNewsArticle(db, post, { preview = false } = {}) {
   };
   const meta = `<p class="news-hero-meta"><time datetime="${isoDate(published)}">${preview && !post.published_at ? 'Nog niet gepubliceerd' : dateNl(published)}</time>${author ? ` · ${esc(author)}` : ''}</p>`;
   return `${head(page)}
-${header('')}
+${header('/nieuws/')}
 <main id="main">
 ${preview ? `<div class="news-preview-banner" role="status"><div class="container">Voorbeeld – ${post.status === 'gepubliceerd' ? 'dit bericht is gepubliceerd' : 'dit is een concept en niet openbaar zichtbaar'}.</div></div>` : ''}
 ${hero({ crumbs, eyebrow: 'Nieuws', h1: esc(post.title), lead: post.excerpt ? esc(post.excerpt) : '', meta })}

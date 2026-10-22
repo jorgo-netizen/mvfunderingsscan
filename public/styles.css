@@ -1866,3 +1866,9 @@ html:not(.js) .sim-lvm .sim-points, html:not(.js) .sim-lvm [data-lvm-reset], htm
 .news-article ul, .portal-preview ul { list-style: disc; padding-left: 24px; }
 .news-article ol, .portal-preview ol { list-style: decimal; padding-left: 24px; }
 .news-article li, .portal-preview li { margin: 4px 0; }
+
+/* Hoofdmenu met 'Nieuws': iets minder tussenruimte net boven het omslagpunt naar het mobiele menu (toegevoegd) */
+@media (min-width: 1421px) and (max-width: 1500px) {
+  .main-nav { gap: 13px; }
+  .header-inner { gap: 20px; }
+}
