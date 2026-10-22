@@ -394,6 +394,9 @@
       const button = $('button[type="submit"]', form);
       const fields = {};
       for (const [k, v] of data.entries()) fields[k] = typeof v === 'string' ? v : '';
+      // Eén sleutel per ingevuld formulier: voorkomt een dubbel dossier bij opnieuw versturen.
+      if (!form.dataset.formulierId) form.dataset.formulierId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}-${Math.random().toString(36).slice(2)}`;
+      fields.formulier_id = form.dataset.formulierId;
       button.disabled = true;
       button.classList.add('is-loading');
       if (statusEl) { statusEl.hidden = true; statusEl.textContent = ''; }
@@ -406,6 +409,9 @@
         .then((r) => r.json().catch(() => ({ ok: false })).then((body) => ({ ok: r.ok && body.ok, body })))
         .then(({ ok, body }) => {
           if (!ok) throw new Error(body.error || 'Verzenden mislukt');
+          if (textEl && body.tracking && body.tracking.dossier) {
+            textEl.textContent += ` Je dossiernummer is ${body.tracking.dossier}.${body.tracking.mail === 'verzonden' ? ' Je ontvangt een bevestiging per e-mail met een persoonlijke link waarmee je de voortgang kunt volgen.' : ''}`;
+          }
           form.hidden = true;
           success.hidden = false;
           success.focus({ preventScroll: true });
@@ -422,6 +428,7 @@
 
     $$('[data-form-reset], #formReset', success).forEach((btn) => btn.addEventListener('click', () => {
       form.reset();
+      delete form.dataset.formulierId; // nieuw formulier = nieuwe aanvraag
       $$('.has-error', form).forEach((f) => f.classList.remove('has-error'));
       success.hidden = true;
       form.hidden = false;

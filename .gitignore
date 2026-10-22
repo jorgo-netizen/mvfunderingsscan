@@ -10,3 +10,7 @@ Thumbs.db
 bestanden/
 install.bat
 push-commands.txt
+
+# Lokale geheimen en testdata
+.env
+.env.local

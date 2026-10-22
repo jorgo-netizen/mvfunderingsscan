@@ -199,13 +199,37 @@ Let op: het domein www.mvfunderingsscan.nl is (nog) niet actief; "live" verwijst
 | Meetwaarden fundering uitgelegd: wat betekent 12 mm/m? | `/meetwaarden-uitgelegd/` | bestaand, live | Wat betekent een scheefstand van 12 mm/m? Reken meetwaarden om naar verhouding, procent en graden, en lees waarom context belangrijker is dan één getal. | informatief | scheefstand mm per meter | – | `/funderingsscan-aanvragen/`, `/funderingsmetingen/`, `/kennisbank/lintvoegwaterpassing/`, `/welke-fundering-heeft-mijn-woning/` |
 | Funderingsquiz: hoeveel weet jij over funderingen? | `/funderingsquiz/` | bestaand, live | Test je kennis in tien vragen over droogstand, zetting, negatieve kleef, risicoklassen en meer. Bij elk antwoord krijg je direct een korte uitleg met bron. | informatief | funderingsquiz | – | `/funderingsscan-aanvragen/`, `/kennisbank/begrippenlijst/`, `/meetwaarden-uitgelegd/`, `/kennisbank/paalrot/` |
 
+## J. Nieuws, beheerportaal en QuickScan Track & Trace (toegevoegd 22-10-2026, nog niet live)
+
+| Route | Doel | Toegang | Functionaliteit | Afhankelijkheden |
+|---|---|---|---|---|
+| `/nieuws/` | Overzicht van gepubliceerde nieuwsberichten | openbaar (noindex zolang er geen berichten zijn) | Kaarten met titel, datum, introductie en afbeelding; nette lege toestand | `api/nieuws.js`, Supabase |
+| `/nieuws/<slug>/` | Nieuwsartikel | openbaar; concepten geven 404 | Artikel met kopjes, afbeelding, terug-link, canonical, NewsArticle-JSON-LD | `api/nieuws.js`, Supabase |
+| `/nieuws-sitemap.xml` | Sitemap met gepubliceerde berichten | openbaar | Automatisch bijgewerkt; vermeld in robots.txt | `api/nieuws.js` |
+| `/beheer/` | Beheerportaal voor medewerkers | afgeschermd (inloggen), noindex, CSP | Inloggen/uitloggen, dashboard, nieuws aanmaken/bewerken/voorbeeld/publiceren/depubliceren/verwijderen, aanvragen zoeken/openen, status wijzigen, klantbericht, interne notities, trackinglink opnieuw uitgeven of intrekken, rapport uploaden, e-mailstatus, verwijderen (alleen beheerder) | `public/beheer.js`, `public/portaal.css`, `api/beheer.js` |
+| `/status/` | Track & Trace voor klanten | persoonlijk (alleen met link `#t=<token>`), noindex, no-referrer, CSP | Huidige status, tijdlijn, klantbericht, laatst bijgewerkt, rapport downloaden (link 60 s geldig) | `public/status.js`, `api/status.js` |
+
+**API-routes**
+
+| Route | Doel | Toegang |
+|---|---|---|
+| `POST /api/aanvraag/` | Formulieren mailen (bestaand); Fase 0-aanvraag registreren en trackingmail sturen (nieuw) | openbaar, honeypot, max. 5 nieuwe dossiers per uur per IP |
+| `POST /api/lead/` | Hulpmiddelen (bestaand, ongewijzigd) | openbaar |
+| `POST /api/status/` | Status of rapportlink bij een geldig trackingtoken | openbaar met token; max. 30 ongeldige pogingen per uur per IP |
+| `GET/POST /api/beheer/?actie=…` | Alle beheeracties | sessie + rol + CSRF, server-side gecontroleerd |
+| `GET /api/nieuws` | Nieuwspagina's en nieuws-sitemap (via rewrites) | openbaar |
+
+**Database (Supabase, `supabase/migrations/001_mvfs_basis.sql`)**: `mvfs_users`, `mvfs_sessions`, `mvfs_login_attempts`, `mvfs_news`, `mvfs_requests`, `mvfs_status_history`, `mvfs_notes` (intern), `mvfs_emails`; opslag: `nieuws` (openbaar), `rapporten` (privé). Zie `IMPLEMENTATIEHANDLEIDING-MV-FUNDERINGSSCAN.md`.
+
+**Externe integraties**: Vercel (hosting en functies), Supabase (database en opslag, EU), Resend (e-mail).
+
 ## Technische pagina's en bestanden
 
 | Bestand | Status | Toelichting |
 |---|---|---|
 | `/404.html` | bestaand | Foutpagina met noindex en links naar de belangrijkste pagina's. |
 | `/sitemap.xml` | bestaand, aangevuld | Alle 141 indexeerbare pagina's; nieuwe pagina's worden automatisch opgenomen. |
-| `/robots.txt` | bestaand, ongewijzigd | Staat alle zoekmachines en AI-crawlers toe (o.a. OAI-SearchBot, ChatGPT-User, PerplexityBot); alleen `/api/` uitgesloten. |
+| `/robots.txt` | bestaand, aangepast | Staat alle zoekmachines en AI-crawlers toe (o.a. OAI-SearchBot, ChatGPT-User, PerplexityBot); `/api/`, `/beheer/` en `/status/` uitgesloten; verwijst ook naar `/nieuws-sitemap.xml`. |
 | `/llms.txt` | bestaand, aangevuld | Samenvatting en kernfeiten voor AI-systemen; aanvullende documentatie, geen garantie op vindbaarheid. |
 | `/api/aanvraag`, `/api/lead` | bestaand | Formulierverwerking (Resend); niet indexeerbaar. |
 
@@ -233,7 +257,8 @@ Let op: het domein www.mvfunderingsscan.nl is (nog) niet actief; "live" verwijst
 
 | Voorstel | URL (voorstel) | Waarom nog niet |
 |---|---|---|
-| Regiopagina Drenthe | `/funderingsonderzoek-drenthe/` | Het werkgebied op de site is Friesland en Groningen. Drenthe (Assen, Emmen, Hoogeveen, Meppel, Coevorden, Beilen, Roden) pas toevoegen nadat de eigenaar bevestigt dat MV Funderingsscan daar werkt, en dan met unieke lokale informatie. |
+| Regiopagina Drenthe | – | Niet maken: Drenthe is geen werkgebied (bevestigd door de eigenaar op 22-10-2026). |
+| Privacyverklaring | `/privacyverklaring/` | Nodig vóór productiegebruik van Track & Trace; concept met invulvelden in `docs/privacyverklaring-concept.md`, eerst laten beoordelen. |
 | Pagina over de deskundige | onderdeel van `/over-ons/` | Wordt automatisch zichtbaar zodra `src/content/eeat.json` echt is ingevuld. |
 | Praktijkcases | `/cases/` | Wordt automatisch gebouwd zodra er echte, geanonimiseerde cases in `src/content/cases/` staan. |
 

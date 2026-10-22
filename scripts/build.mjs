@@ -19,6 +19,7 @@ import {
 import { render, relatedHtml } from '../src/lib/template.mjs';
 import { aanvraagForm, contactForm, checkForm } from '../src/lib/forms.mjs';
 import { openPlaceholders, SHOW_PLACEHOLDERS } from '../src/lib/eeat.mjs';
+import { statusPage, beheerPage } from '../src/lib/portal.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, 'dist');
@@ -439,24 +440,42 @@ function buildMetaFiles(paths) {
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /beheer/
+Disallow: /status/
 
 # Expliciet: OpenAI zoekcrawler en gebruikersverzoeken vanuit ChatGPT
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /api/
+Disallow: /beheer/
+Disallow: /status/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /api/
+Disallow: /beheer/
+Disallow: /status/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /api/
+Disallow: /beheer/
+Disallow: /status/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /api/
+Disallow: /beheer/
+Disallow: /status/
 
 User-agent: Googlebot
 Allow: /
+Disallow: /api/
+Disallow: /beheer/
+Disallow: /status/
 
 Sitemap: ${DOMAIN}/sitemap.xml
+Sitemap: ${DOMAIN}/nieuws-sitemap.xml
 `);
 
   const meta = Object.fromEntries(urls.map((u) => [u.path, u]));
@@ -565,6 +584,11 @@ export function build({ quiet = false } = {}) {
     paths.push('/praktijkvoorbeelden/');
   }
   build404();
+  // Track & Trace en beheerportaal: statische schil, noindex, niet in de sitemap
+  write('/status/', statusPage());
+  write('/beheer/', beheerPage());
+  // veilige Markdown-weergave ook in de browser (live voorbeeld in de nieuwseditor)
+  write('/beheer-markdown.js', readFileSync(join(ROOT, 'api', '_lib', 'markdown.js'), 'utf8'));
   buildMetaFiles(paths);
   if (!quiet) console.log(`✔ ${paths.length} pagina's gebouwd in dist/ (${Date.now() - t0} ms)`);
   const open = openPlaceholders();

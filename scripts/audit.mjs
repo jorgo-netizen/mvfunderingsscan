@@ -63,9 +63,14 @@ for (const file of walk(DIST).filter((f) => f.endsWith('.html'))) {
   pages[path] = parse(readFileSync(file, 'utf8'));
 }
 
+// Persoonlijke/afgeschermde pagina's (noindex, niet in de sitemap) en dynamische routes via vercel.json-rewrites.
+const PRIVATE = new Set(['/404.html', '/status/', '/beheer/']);
+const DYNAMIC = new Set(['/nieuws/']);
+
 const titles = new Map();
 const descs = new Map();
 for (const [path, p] of Object.entries(pages).sort()) {
+  if (path === '/beheer/') continue; // app-schil voor medewerkers: inhoud komt via JavaScript, getest in scripts/test-backend.mjs
   const tag = `[${path}]`;
   const h1 = p.headings.filter(([l]) => l === 1);
   if (h1.length !== 1) problems.push(`${tag} ${h1.length} H1's`);
@@ -75,7 +80,7 @@ for (const [path, p] of Object.entries(pages).sort()) {
     prev = lvl;
   }
   const d = p.meta.description || '';
-  if (path !== '/404.html') {
+  if (!PRIVATE.has(path)) {
     titles.set(p.title, [...(titles.get(p.title) || []), path]);
     descs.set(d, [...(descs.get(d) || []), path]);
     if (p.title.length < 30 || p.title.length > 80) problems.push(`${tag} titel ${p.title.length} tekens`);
@@ -102,7 +107,7 @@ for (const [path, p] of Object.entries(pages).sort()) {
     if (/^(tel:|mailto:|https?:)/.test(href)) continue;
     const [base, frag] = href.split('#');
     const target = base === '' ? path : base;
-    if (!pages[target]) problems.push(`${tag} kapotte link ${href}`);
+    if (!pages[target] && !DYNAMIC.has(target)) problems.push(`${tag} kapotte link ${href}`);
     else if (frag && !pages[target].ids.has(frag)) problems.push(`${tag} kapot anker ${href}`);
     if (base && !base.endsWith('/') && !base.endsWith('.html')) problems.push(`${tag} link zonder trailing slash ${href}`);
   }
@@ -124,7 +129,7 @@ for (const [d, ps] of descs) if (ps.length > 1) problems.push(`dubbele descripti
 // sitemap en robots
 const sitemap = readFileSync(join(DIST, 'sitemap.xml'), 'utf8');
 const locs = new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1].replace(DOMAIN, '')));
-const indexable = Object.keys(pages).filter((p) => p !== '/404.html');
+const indexable = Object.keys(pages).filter((p) => !PRIVATE.has(p));
 const missing = indexable.filter((p) => !locs.has(p));
 const extra = [...locs].filter((p) => !pages[p]);
 if (missing.length || extra.length) problems.push(`sitemap: mist [${missing}] extra [${extra}]`);
@@ -142,14 +147,14 @@ for (const [path, p] of Object.entries(pages)) {
   }
 }
 for (const [p, n] of Object.entries(inbound)) {
-  if (n < 2 && p !== '/404.html') problems.push(`weinig inkomende links (${n}) naar ${p}`);
+  if (n < 2 && !PRIVATE.has(p)) problems.push(`weinig inkomende links (${n}) naar ${p}`);
 }
 
 // ---------------------------------------------------------------- eindoverzicht (AUDIT.md)
 const urlMeta = Object.fromEntries(JSON.parse(readFileSync(join(ROOT, 'src', 'content', 'urls.json'), 'utf8')).map((u) => [u.path, u]));
 const rows = [];
 for (const [path, p] of Object.entries(pages).sort((a, b) => a[0].localeCompare(b[0]))) {
-  if (path === '/404.html') continue;
+  if (PRIVATE.has(path)) continue;
   const html = readFileSync(join(DIST, path === '/' ? 'index.html' : join(path, 'index.html')), 'utf8');
   const main = (html.match(/<main[\s\S]*?<\/main>/) || [''])[0];
   const words = (norm(main.replace(/<script[\s\S]*?<\/script>/g, '')).match(/\S+/g) || []).length;

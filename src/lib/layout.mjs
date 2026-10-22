@@ -210,7 +210,8 @@ export function head(page) {
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   ${preload}<link rel="stylesheet" href="/styles.css">
-  ${page.tools ? TOOLS_ASSETS : ''}${(page.scripts || []).map((src) => `<script src="${src}" defer></script>
+  ${(page.styles || []).map((href) => `<link rel="stylesheet" href="${href}">
+  `).join('')}${page.tools ? TOOLS_ASSETS : ''}${(page.scripts || []).map((src) => `<script src="${src}" defer></script>
   `).join('')}<script>document.documentElement.classList.add('js');</script>
   ${page.schema}
 </head>`;
@@ -322,7 +323,7 @@ ${cols}
   </div>
   <div class="container footer-bottom">
     <span>© <span id="year">2026</span> MV Adviseurs · MV Funderingsscan · mvfunderingsscan.nl</span>
-    <nav class="footer-meta" aria-label="Overige pagina's"><a href="/over-ons/">Over ons</a><a href="/werkwijze/">Werkwijze</a><a href="/kennisbank/">Kennisbank</a><a href="/contact/">Contact</a><a href="/funderingsscan-aanvragen/">Aanvragen</a></nav>
+    <nav class="footer-meta" aria-label="Overige pagina's"><a href="/over-ons/">Over ons</a><a href="/werkwijze/">Werkwijze</a><a href="/kennisbank/">Kennisbank</a><a href="/nieuws/">Nieuws</a><a href="/contact/">Contact</a><a href="/funderingsscan-aanvragen/">Aanvragen</a></nav>
   </div>
 </footer>
 

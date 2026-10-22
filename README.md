@@ -115,3 +115,7 @@ en de casepagina automatisch, inclusief sitemap.
 - `docs/livegang-checklist.md` – alles wat na de deploy moet gebeuren
 - `docs/google-bedrijfsprofiel.md` – kant-en-klare teksten voor het Google Bedrijfsprofiel
 - `docs/reviews.md` – reviews vragen en beantwoorden
+
+## Nieuws, beheerportaal en QuickScan Track & Trace
+
+Zie `IMPLEMENTATIEHANDLEIDING-MV-FUNDERINGSSCAN.md` (configuratie, Supabase, medewerkersaccounts, beveiliging) en `SEO-GEO-PLAN-MV-FUNDERINGSSCAN.md`. Zonder database-configuratie werkt de site als voorheen. Tests: `npm test`.
