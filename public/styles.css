@@ -1202,6 +1202,8 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 .footer-meta { display: flex; flex-wrap: wrap; gap: 6px 18px; }
 .footer-meta a { color: #c3d0dd; font-weight: 700; }
 .footer-meta a:hover { color: var(--gold-light); }
+.footer-meta .footer-login { display: inline-flex; align-items: center; gap: 5px; font-weight: 400; font-size: 12.5px; color: #6f8399; }
+.footer-meta .footer-login:hover { color: #c3d0dd; }
 
 /* Callouts */
 .callout {
