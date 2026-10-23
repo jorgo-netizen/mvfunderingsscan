@@ -652,7 +652,7 @@
     ],
     "eyebrow": "Over MV Funderingsscan",
     "h1": "Over MV Funderingsscan",
-    "lead": "MV Funderingsscan richt zich op funderingsonderzoek voor woningen in Friesland en Groningen. We zijn gevestigd in Leeuwarden, maken deel uit van MV Adviseurs en doen uitsluitend onderzoek: we voeren zelf geen funderingsherstel uit. Zo krijg je een onafhankelijk beeld van je woning, te beginnen met een <a href=\"/funderingsscan/\">funderingsscan</a>.",
+    "lead": "MV Funderingsscan richt zich op funderingsonderzoek voor woningen in Friesland en Groningen. We zijn gevestigd in Leeuwarden en doen uitsluitend onderzoek: we voeren zelf geen funderingsherstel uit. Zo krijg je een onafhankelijk beeld van je woning, te beginnen met een <a href=\"/funderingsscan/\">funderingsscan</a>.",
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
       "alt": "Persoon met een waterpas bij de gevel van een woning"
@@ -679,8 +679,8 @@
       {
         "id": "wie-zijn-wij",
         "h2": "Wie is MV Funderingsscan?",
-        "answer": "MV Funderingsscan is een onafhankelijk bureau voor funderingsonderzoek van woningen, gevestigd in Leeuwarden en onderdeel van MV Adviseurs. We werken in heel Friesland en de hele provincie Groningen.",
-        "body": "<p>We richten ons op één vraag: is er bij een woning een verhoogd funderingsrisico, en welke informatie heb je nodig om een goede beslissing te nemen? Dat kan gaan om een woning die je wilt kopen, een woning die je gaat verkopen, een taxatie waarin de fundering ter sprake komt, of je eigen huis waarin je scheuren of andere signalen ziet.</p>\n<p>Als onderdeel van MV Adviseurs kijken we vanuit een vastgoedperspectief naar funderingsvragen. Funderingsinformatie is vaak nodig op een moment dat er ook andere beslissingen spelen, zoals een bod, een verkoop of een hypotheek. Daarom zijn heldere rapporten en een duidelijke planning voor ons net zo belangrijk als het onderzoek zelf.</p>"
+        "answer": "MV Funderingsscan is een onafhankelijk bureau voor funderingsonderzoek van woningen, gevestigd in Leeuwarden. We werken in heel Friesland en de hele provincie Groningen.",
+        "body": "<p>We richten ons op één vraag: is er bij een woning een verhoogd funderingsrisico, en welke informatie heb je nodig om een goede beslissing te nemen? Dat kan gaan om een woning die je wilt kopen, een woning die je gaat verkopen, een taxatie waarin de fundering ter sprake komt, of je eigen huis waarin je scheuren of andere signalen ziet.</p>\n<p>We kijken vanuit een vastgoedperspectief naar funderingsvragen. Funderingsinformatie is vaak nodig op een moment dat er ook andere beslissingen spelen, zoals een bod, een verkoop of een hypotheek. Daarom zijn heldere rapporten en een duidelijke planning voor ons net zo belangrijk als het onderzoek zelf.</p>"
       },
       {
         "id": "wat-we-wel-en-niet-doen",
@@ -710,7 +710,7 @@
         "id": "bedrijfsgegevens",
         "h2": "Wat zijn de bedrijfsgegevens van MV Funderingsscan?",
         "answer": "MV Funderingsscan is gevestigd aan de Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden, en is bereikbaar op werkdagen van 09:00 tot 17:00 uur.",
-        "body": "<dl class=\"def-list\">\n<div><dt>Naam</dt><dd>MV Funderingsscan, onderdeel van MV Adviseurs</dd></div>\n<div><dt>Adres</dt><dd>Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden</dd></div>\n<div><dt>Telefoon</dt><dd><a href=\"tel:+31582037172\">+31 (0) 582037172</a></dd></div>\n<div><dt>E-mail</dt><dd><a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a></dd></div>\n<div><dt>Bereikbaar</dt><dd>Maandag tot en met vrijdag, 09:00–17:00</dd></div>\n<div><dt>Werkgebied</dt><dd>Heel Friesland en de hele provincie Groningen</dd></div>\n</dl>\n<p>Heb je een vraag of wil je overleggen welk onderzoek past? <a href=\"/contact/\">Neem contact met ons op</a> of <a href=\"/funderingsscan-aanvragen/\">vraag direct een funderingsscan aan</a>.</p>"
+        "body": "<dl class=\"def-list\">\n<div><dt>Naam</dt><dd>MV Funderingsscan</dd></div>\n<div><dt>Adres</dt><dd>Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden</dd></div>\n<div><dt>Telefoon</dt><dd><a href=\"tel:+31582037172\">+31 (0) 582037172</a></dd></div>\n<div><dt>E-mail</dt><dd><a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a></dd></div>\n<div><dt>Bereikbaar</dt><dd>Maandag tot en met vrijdag, 09:00–17:00</dd></div>\n<div><dt>Werkgebied</dt><dd>Heel Friesland en de hele provincie Groningen</dd></div>\n</dl>\n<p>Heb je een vraag of wil je overleggen welk onderzoek past? <a href=\"/contact/\">Neem contact met ons op</a> of <a href=\"/funderingsscan-aanvragen/\">vraag direct een funderingsscan aan</a>.</p>"
       }
     ],
     "faqs": [

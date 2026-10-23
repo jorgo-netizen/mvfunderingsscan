@@ -13,7 +13,7 @@ https://business.google.com. Controleer alles nog één keer voordat je publicee
 
 | Veld | Invullen |
 |---|---|
-| Bedrijfsnaam | MV Adviseurs *(geen zoekwoorden toevoegen zoals "Funderingsonderzoek Friesland" – dat is tegen de richtlijnen)* |
+| Bedrijfsnaam | MV Funderingsscan *(gelijk aan de naam op de website, het logo en de borden/briefpapier; geen zoekwoorden toevoegen zoals "Funderingsonderzoek Friesland" – dat is tegen de richtlijnen)* |
 | Hoofdcategorie | Kies de best passende categorie die Google aanbiedt, bijv. een categorie rond bouwkundig advies of woninginspectie. Typ "bouwkundig" en "inspectie" in het categorieveld en kies de meest specifieke. |
 | Extra categorieën | Eventueel een tweede passende categorie (inspectie/adviesbureau). Niet te veel. |
 | Website | https://www.mvfunderingsscan.nl/ |
@@ -73,7 +73,7 @@ Als de vraag-en-antwoordfunctie in je profiel beschikbaar is, kun je deze vragen
 - [ ] Bing Places for Business (belangrijk voor ChatGPT Search en Copilot)
 - [ ] Apple Business Connect (Apple Kaarten / Siri)
 - [ ] Telefoonboek.nl, Openingstijden.nl, Cylex
-- [ ] Website van MV Adviseurs: link naar https://www.mvfunderingsscan.nl/
+- [ ] Website van MV Funderingsscan: link naar https://www.mvfunderingsscan.nl/
 - [ ] Samenwerkende makelaars en taxateurs: vraag om een vermelding met link
 
 Zie ook `docs/reviews.md` voor het vragen om reviews.

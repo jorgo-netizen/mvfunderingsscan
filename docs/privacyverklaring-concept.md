@@ -3,7 +3,7 @@
 > **Let op:** dit is een werkdocument met invulvelden en géén juridisch advies. Laat de tekst beoordelen voordat je hem publiceert. Alles tussen [HAKEN] moet nog worden ingevuld of gecontroleerd. Dit document staat bewust niet op de website.
 
 ## Wie is verantwoordelijk?
-MV Adviseurs (MV Funderingsscan), Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden, info@mideavastgoed.nl, +31 (0) 582037172. KvK-nummer: [KVK-NUMMER INVULLEN].
+MV Funderingsscan, Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden, info@mideavastgoed.nl, +31 (0) 582037172. KvK-nummer: [KVK-NUMMER INVULLEN].
 
 ## Welke gegevens verwerken we en waarom?
 | Situatie | Gegevens | Doel | Grondslag |

@@ -458,7 +458,7 @@ Sitemap: ${DOMAIN}/nieuws-sitemap.xml
   const groupLines = (g) => pages.filter((p) => meta[p.path]?.group === g).map(line).join('\n');
   write('/llms.txt', `# MV Funderingsscan
 
-> MV Funderingsscan is een dienst van MV Adviseurs (Leeuwarden) voor onafhankelijk funderingsonderzoek aan woningen in Friesland en Groningen. Het onderzoek begint in de regel met een Quick Scan (fase 0, vanaf €350, rapport normaal gesproken binnen 2 werkdagen na inspectie). Geeft die daar aanleiding toe, dan volgt fase 1 met metingen (vanaf €950). MV Funderingsscan voert zelf geen funderingsherstel uit.
+> MV Funderingsscan (Leeuwarden) voert onafhankelijk funderingsonderzoek uit aan woningen in Friesland en Groningen. Het onderzoek begint in de regel met een Quick Scan (fase 0, vanaf €350, rapport normaal gesproken binnen 2 werkdagen na inspectie). Geeft die daar aanleiding toe, dan volgt fase 1 met metingen (vanaf €950). MV Funderingsscan voert zelf geen funderingsherstel uit.
 
 ## Kernfeiten (gecontroleerd ${TODAY}; bronnen: ${DOMAIN}/bronnen-en-richtlijnen/)
 - Onafhankelijk: MV Funderingsscan doet uitsluitend onderzoek en voert geen funderingsherstel uit.

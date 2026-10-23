@@ -23,7 +23,7 @@ Het script moet zonder FOUT eindigen. WAARSCHUWINGEN over woordaantal moet je oo
 Bedrijf
 - Adres: Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden · Telefoon +31 (0) 582037172 (link `tel:+31582037172`) · E-mail info@mideavastgoed.nl (link `mailto:info@mideavastgoed.nl`) · Bereikbaar ma–vr 09:00–17:00.
 - Werkgebied: heel Friesland en de hele provincie Groningen.
-- Bedrijfsnaam: **MV Adviseurs**; MV Funderingsscan is de naam van de dienst/website.
+- Bedrijfsnaam: **MV Funderingsscan** (sinds oktober 2026 overal; niet meer "MV Adviseurs" of "Midea Vastgoed Adviseurs"). Logo: `/assets/logo-mvfunderingsscan.png` (wit: `-wit`). Het e-mailadres blijft info@mideavastgoed.nl.
 - Deskundige, opleiding, certificaten, lidmaatschappen, KvK, reviews en voorbeeldrapport: ALLEEN via `src/content/eeat.json` (placeholders tussen [vierkante haken] verschijnen niet op de live site). Zet zulke gegevens nooit los in een pagina.
 
 Diensten en prijzen (ALTIJD als indicatief presenteren)

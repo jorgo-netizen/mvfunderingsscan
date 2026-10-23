@@ -77,10 +77,10 @@ export function orgSchema() {
     '@id': ORG_ID,
     name: NAP.name,
     legalName: NAP.name,
-    alternateName: NAP.brand,
+    ...(NAP.brand !== NAP.name ? { alternateName: NAP.brand } : {}),
     ...(ORG_SAME_AS.length ? { sameAs: ORG_SAME_AS } : {}),
     url: `${DOMAIN}/`,
-    logo: { '@type': 'ImageObject', url: `${DOMAIN}/assets/logo-midea.png`, width: 480, height: 137 },
+    logo: { '@type': 'ImageObject', url: `${DOMAIN}/assets/logo-mvfunderingsscan.png`, width: 694, height: 96 },
     image: `${DOMAIN}/assets/img/og-mv-funderingsscan.jpg`,
     description: 'MV Funderingsscan voert onafhankelijk funderingsonderzoek uit voor woningen in Friesland en Groningen: een Quick Scan (fase 0) en, waar nodig, vervolgonderzoek met metingen (fase 1).',
     telephone: NAP.phone_intl,
@@ -260,8 +260,8 @@ export function header(active) {
   <div class="header-inner">
     <a class="brand" href="/" aria-label="MV Funderingsscan – home">
       <picture>
-        <source srcset="/assets/logo-midea.webp" type="image/webp">
-        <img class="brand-logo" src="/assets/logo-midea.png" width="480" height="137" alt="MV Funderingsscan – Midea Vastgoed Adviseurs">
+        <source srcset="/assets/logo-mvfunderingsscan.webp" type="image/webp">
+        <img class="brand-logo" src="/assets/logo-mvfunderingsscan.png" width="694" height="96" alt="MV Funderingsscan">
       </picture>
     </a>
 
@@ -324,10 +324,10 @@ ${links.map(([h, l]) => `        <li><a href="${h}">${l}</a></li>`).join('\n')}
   <div class="container footer-grid footer-grid-wide">
     <div class="footer-brand">
       <picture>
-        <source srcset="/assets/logo-midea-wit.webp" type="image/webp">
-        <img src="/assets/logo-midea-wit.png" width="480" height="137" loading="lazy" alt="MV Funderingsscan – Midea Vastgoed Adviseurs">
+        <source srcset="/assets/logo-mvfunderingsscan-wit.webp" type="image/webp">
+        <img src="/assets/logo-mvfunderingsscan-wit.png" width="694" height="96" loading="lazy" alt="MV Funderingsscan">
       </picture>
-      <p>MV Funderingsscan is een dienst van MV Adviseurs en voert onafhankelijk funderingsonderzoek uit voor woningen in Friesland en Groningen – van Quick Scan tot onderzoek met metingen.</p>
+      <p>MV Funderingsscan voert onafhankelijk funderingsonderzoek uit voor woningen in Friesland en Groningen – van Quick Scan tot onderzoek met metingen.</p>
       <address>
         <strong>${NAP.name}</strong><br>
         ${NAP.street}<br>
@@ -340,7 +340,7 @@ ${links.map(([h, l]) => `        <li><a href="${h}">${l}</a></li>`).join('\n')}
 ${cols}
   </div>
   <div class="container footer-bottom">
-    <span>© <span id="year">2026</span> MV Adviseurs · MV Funderingsscan · mvfunderingsscan.nl</span>
+    <span>© <span id="year">2026</span> MV Funderingsscan · mvfunderingsscan.nl</span>
     <nav class="footer-meta" aria-label="Overige pagina's"><a href="/over-ons/">Over ons</a><a href="/werkwijze/">Werkwijze</a><a href="/kennisbank/">Kennisbank</a><a href="/nieuws/">Nieuws</a><a href="/contact/">Contact</a><a href="/funderingsscan-aanvragen/">Aanvragen</a></nav>
   </div>
 </footer>

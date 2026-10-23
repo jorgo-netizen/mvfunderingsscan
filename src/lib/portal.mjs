@@ -83,7 +83,7 @@ export function beheerPage() {
 <a class="skip-link" href="#main">Direct naar de inhoud</a>
 <header class="portal-header">
   <div class="portal-header-inner">
-    <a class="portal-brand" href="/beheer/"><img src="/assets/logo-midea-wit.png" width="160" height="46" alt="MV Funderingsscan"><span>Beheer</span></a>
+    <a class="portal-brand" href="/beheer/"><img src="/assets/logo-mvfunderingsscan-wit.png" width="694" height="96" alt="MV Funderingsscan"><span>Beheer</span></a>
     <nav class="portal-nav" aria-label="Beheer" data-nav hidden>
       <a href="#/" data-nav-link="dashboard">Dashboard</a>
       <a href="#/nieuws" data-nav-link="nieuws">Nieuws</a>

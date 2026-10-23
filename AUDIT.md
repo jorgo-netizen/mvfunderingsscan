@@ -1,6 +1,6 @@
 # SEO/GEO-audit mvfunderingsscan.nl
 
-Gegenereerd door `npm run audit` op 2026-10-23 – 140 indexeerbare pagina's, 212.224 woorden in totaal.
+Gegenereerd door `npm run audit` op 2026-10-23 – 140 indexeerbare pagina's, 212.204 woorden in totaal.
 
 | URL | Title | H1 | Primair zoekwoord | Zoekintentie | Interne links | Schema | Indexeerbaar | Woorden |
 |---|---|---|---|---|---|---|---|---|
@@ -131,7 +131,7 @@ Gegenereerd door `npm run audit` op 2026-10-23 – 140 indexeerbare pagina's, 21
 | /kosten-funderingsonderzoek-berekenen/ | Kostenwijzer funderingsonderzoek: welke dienst past? | Kostenwijzer: welk onderzoek past en wat kost het? | kosten funderingsonderzoek | commercieel | 72 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 1135 |
 | /makelaars-en-taxateurs/ | Funderingsonderzoek voor makelaars en taxateurs | Funderingsonderzoek voor makelaars en taxateurs | funderingsonderzoek makelaar taxateur | commercieel | 69 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1274 |
 | /meetwaarden-uitgelegd/ | Meetwaarden fundering uitgelegd: wat betekent 12 mm/m? | Wat betekent mijn meetgegeven? | scheefstand mm per meter | informatief | 71 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 554 |
-| /over-ons/ | Over ons: onafhankelijk funderingsonderzoek \| MV Funderingsscan | Over MV Funderingsscan | mv funderingsscan | navigatie | 68 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 988 |
+| /over-ons/ | Over ons: onafhankelijk funderingsonderzoek \| MV Funderingsscan | Over MV Funderingsscan | mv funderingsscan | navigatie | 68 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 968 |
 | /prijzen/ | Kosten funderingsscan: prijzen fase 0 en 1 \| MV Funderingsscan | Kosten funderingsscan: indicatieve prijzen per fase | kosten funderingsscan | commercieel | 71 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1259 |
 | /problemen-met-houten-palen/ | Problemen met houten palen onder je woning \| MV Funderingsscan | Problemen met een houten paalfundering: oorzaken, risico’s en onderzoek | houten paalfundering problemen | informatief | 75 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 1942 |
 | /quickscan-fundering/ | Quickscan fundering in Friesland en Groningen \| MV Funderingsscan | Quickscan fundering | quickscan fundering | commercieel | 75 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 3234 |
