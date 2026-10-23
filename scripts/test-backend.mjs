@@ -358,13 +358,13 @@ const FOTOVAKKEN = [['voorblad', 1], ['conclusie', 1], ['bouwtekening', 1], ['bo
 const volledig = () => ({
   voorblad: { object_straat: 'Voorbeeldstraat 1', object_postcode: '8911 AA', object_plaats: 'Leeuwarden', uitgebracht_op: '2026-10-20' },
   algemeen: { inspectie_datum: '2026-10-15', inspectie_tijd: '10:30', opdrachtgever_naam: 'Testpersoon', opdrachtgever_straat: 'Teststraat 2', opdrachtgever_postcode: '8911 AB', opdrachtgever_plaats: 'Leeuwarden', opdrachtgever_email: 'klant@example.com' },
-  object: { type: 'tussenwoning', bouwjaar: '1930', weertype: 'droog', temperatuur: '12', luchtvochtigheid: '70' },
+  object: { type: 'Tussenwoning', bouwjaar: '1930', weertype: 'Bewolkt', temperatuur: '12', luchtvochtigheid: '70' },
   vraagstelling: { reden: 'verkoop', bestemming: 'woonfunctie' },
   conclusie: { risico: 'midden', risico_bevestigd: true, advies: 'Testadvies voor dit fictieve testrapport.', opmaak_plaats: 'Leeuwarden', opmaak_datum: '2026-10-20' },
-  bouwtekeningen: { ontvangen: 'ja', vorm: 'digitaal', jaartal: '1930', fundering: 'testfundering' },
-  bodem: { mm_per_jaar: '1', typering: 'klein' },
+  bouwtekeningen: { ontvangen: 'ja', vorm: 'digitaal', jaartal: '1930', fundering: 'Houten paalfundering' },
+  bodem: { mm_per_jaar: '1', typering: 'Klein' },
   omgeving: { resultaat: 'Testresultaat omgeving.' },
-  lintvoeg: { meetpunten: 'voorgevel', rijen: [{ omschrijving: 'meting 1', meting: '5', afstand: '2000', typering: 'Klein' }] },
+  lintvoeg: { meetpunten: 'voorgevel', rijen: [{ omschrijving: 'meting 1', meting: '5', afstand: '2000', typering: 'Zeer klein' }] },
   schietlood: { nvt: true, nvt_motivatie: 'Niet uitgevoerd in deze test.' },
 });
 async function fotosToevoegen(s, id) {
@@ -443,6 +443,31 @@ test('rapporten: risicocategorie komt alleen van de adviseur en moet worden beve
   assert.equal(vb.status, 200);
   assert.ok(vb.body.includes('Melvin Krikke'));
   assert.ok(vb.headers['content-security-policy'].includes("default-src 'none'"));
+});
+
+test('rapporten: keuzelijsten verplicht, 1 tot 4 foto\'s per onderdeel, extra foto\'s in Word', async () => {
+  await newUser('beheerder'); const s = await loginAs('beheerder@test.nl');
+  const db = getDb();
+  const { id } = await rapportKlaar(s);
+  const keuzes = (await admin(s, 'rapport', { query: `&id=${id}` })).json.keuzes;
+  assert.ok(keuzes['object.type'].includes('Tussenwoning') && keuzes['object.weertype'].length > 3);
+  // vrije tekst in een keuzeveld wordt niet geaccepteerd
+  const vrij = volledig(); vrij.object.type = 'kasteel'; vrij.object.weertype = 'lekker'; vrij.lintvoeg.rijen[0].typering = 'erg';
+  const o = await admin(s, 'rapport-opslaan', { method: 'POST', body: { id, data: vrij } });
+  for (const [stap, veld] of [['object', 'type'], ['object', 'weertype'], ['lintvoeg', 'rij0']]) assert.ok(o.json.controle.fouten.some((f) => f.stap === stap && f.veld === veld), `${stap}.${veld}`);
+  await admin(s, 'rapport-opslaan', { method: 'POST', body: { id, data: volledig() } });
+  // maximaal 4 foto's per onderdeel, voorblad 1
+  for (const position of [2, 3, 4]) assert.equal((await admin(s, 'rapport-foto', { method: 'POST', body: { id, slot: 'conclusie', position, data: testPng(120 + position, 90).toString('base64'), caption: `bijschrift ${position}` } })).status, 200);
+  assert.equal((await admin(s, 'rapport-foto', { method: 'POST', body: { id, slot: 'conclusie', position: 5, data: testPng().toString('base64') } })).status, 422);
+  assert.equal((await admin(s, 'rapport-foto', { method: 'POST', body: { id, slot: 'voorblad', position: 2, data: testPng().toString('base64') } })).status, 422);
+  assert.equal((await admin(s, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } })).status, 200);
+  const d = await admin(s, 'rapport', { query: `&id=${id}` });
+  const docx = readZip(await db.getObject('rapport-bestanden', d.json.versions[0].docx_path));
+  const xml = docx.get('word/document.xml').toString('utf8');
+  for (const p of [1, 2, 3, 4]) assert.ok(docx.get(`word/media/mvfs_conclusie_${p}.png`), `conclusiefoto ${p}`);
+  assert.ok(xml.includes('Foto 3: bijschrift 3'), 'bijschriften extra foto\'s');
+  const ids = [...xml.matchAll(/<wp:docPr id="(\d+)"/g)].map((m) => m[1]);
+  assert.equal(new Set(ids).size, ids.length, 'unieke tekening-id\'s');
 });
 
 test('rapporten: definitief maken alleen door gekoppelde adviseur of beheerder; adviseurs alleen door beheerder', async () => {

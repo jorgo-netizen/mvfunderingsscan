@@ -7,7 +7,7 @@
  * alleen beheerder.
  */
 import { randomToken, isUuid, isEmail, sha256, logError, esc } from './http.js';
-import { STATUSES, EDIT_STATUSES, RISKS, SLOTS, TEMPLATE_VERSION, controle, maakDocx, docxNaarHtml, imageSize, waarden } from './rapport.js';
+import { STATUSES, EDIT_STATUSES, RISKS, SLOTS, KEUZES, TEMPLATE_VERSION, controle, maakDocx, docxNaarHtml, imageSize, waarden } from './rapport.js';
 import { resendSend } from './mail.js';
 
 const BUCKET = 'rapport-bestanden';
@@ -60,7 +60,7 @@ function vanAanvraag(req) {
   return {
     voorblad: { object_straat: straat, object_postcode: req.postcode || '', object_plaats: req.plaats || '' },
     algemeen: { opdrachtgever_naam: req.naam || '', opdrachtgever_straat: straat, opdrachtgever_postcode: req.postcode || '', opdrachtgever_plaats: req.plaats || '', opdrachtgever_email: req.email || '' },
-    object: { type: det.woningtype || '', bouwjaar: /^\d{4}$/.test(String(det.bouwjaar || '')) ? String(det.bouwjaar) : '' },
+    object: { type: KEUZES['object.type'].includes(det.woningtype) ? det.woningtype : '', bouwjaar: /^\d{4}$/.test(String(det.bouwjaar || '')) ? String(det.bouwjaar) : '' },
     vraagstelling: { reden: sit.includes('verkoop') ? 'verkoop' : sit.includes('kopen') ? 'aankoop' : '' },
   };
 }
@@ -91,7 +91,7 @@ export async function rapportActies(db, req, res, actie, user, url, { json, fail
     return json(res, 200, {
       ok: true, report: { ...r, data: r.data }, advisors: advisors.filter((a) => a.active || a.id === r.advisor_id), fotos, versions, emails,
       controle: controle(r.data, { advisor, images }), statussen: STATUSES, bewerkbaar: EDIT_STATUSES.includes(r.status),
-      mag_afronden: magAfronden(user, advisor), slots: SLOTS,
+      mag_afronden: magAfronden(user, advisor), slots: SLOTS, keuzes: KEUZES,
       aanvraag: request ? { id: request.id, dossier_nr: request.dossier_nr, status: request.status, email: request.email } : null,
     });
   }

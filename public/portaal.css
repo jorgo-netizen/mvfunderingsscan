@@ -159,7 +159,7 @@
 .portal-grid-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; }
 .portal-field input[type="date"], .portal-field input[type="time"] { width: 100%; padding: 10px 12px; border: 1.5px solid #c9d3dc; border-radius: 8px; font: inherit; font-size: 15px; background: #fff; }
 .portal-field-missing input, .portal-field-missing select, .portal-field-missing textarea { border-color: #d9877a !important; background: #fffafa !important; }
-.portal-field-missing > label::after, .portal-field-missing > legend::after { content: " (verplicht)"; font-weight: 400; font-size: 13px; color: #8a1c12; }
+.portal-field-missing > label:not(.portal-radio)::after, .portal-field-missing > legend::after { content: " (verplicht)"; font-weight: 400; font-size: 13px; color: #8a1c12; }
 .portal-choice { border: 0; padding: 0; margin: 0 0 16px; }
 .portal-choice legend { font-weight: 700; color: var(--navy); font-size: 15px; margin-bottom: 6px; padding: 0; }
 .portal-radio { display: inline-flex; align-items: center; gap: 6px; margin: 0 18px 6px 0; font-size: 15px; cursor: pointer; }
@@ -176,6 +176,8 @@
 .portal-foto input[type="file"]:focus-visible + .portal-file, .portal-file:focus-within { outline: 3px solid var(--gold); outline-offset: 2px; }
 .portal-foto-rij { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
 .portal-foto-rij .portal-foto { max-width: none; }
+.portal-meet select { width: 100%; min-width: 110px; padding: 8px 9px; border: 1.5px solid #c9d3dc; border-radius: 7px; font: inherit; font-size: 14px; background: #fff; }
+.portal-foto-reeks { margin-bottom: 8px; }
 .portal-meet input { width: 100%; min-width: 80px; padding: 8px 9px; border: 1.5px solid #c9d3dc; border-radius: 7px; font: inherit; font-size: 14px; }
 .portal-meet td { vertical-align: top; }
 .portal-meet .portal-hint { display: block; margin-top: 4px; }

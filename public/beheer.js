@@ -408,6 +408,20 @@
       if ((controle.fouten || []).some((f) => f.stap === sectie && f.veld === veld)) fs.classList.add('portal-field-missing');
       return fs;
     };
+    // Vaste keuzelijst (opties komen van de server, zodat formulier en controle gelijk blijven)
+    const kies = (sectie, veld, label, sleutel, opts = {}) => {
+      const fid = `f-${sectie}-${veld}`;
+      const opties = (d.keuzes || {})[sleutel] || [];
+      const huidig = (data[sectie] || {})[veld] || '';
+      const sel = h('select', { id: fid, disabled: !kanBewerken }, h('option', { value: '', text: 'Kies…' }),
+        opties.map((o) => h('option', { value: o, text: o })),
+        huidig && !opties.includes(huidig) ? h('option', { value: huidig, text: `${huidig} (eerder ingevuld, kies opnieuw)` }) : null);
+      sel.value = huidig;
+      sel.addEventListener('change', () => { data[sectie][veld] = sel.value; markeer(); opts.onInput && opts.onInput(); });
+      const wrap = field(label, sel, opts.hint);
+      if ((controle.fouten || []).some((f) => f.stap === sectie && f.veld === veld)) wrap.classList.add('portal-field-missing');
+      return wrap;
+    };
     const vinkje = (sectie, veld, label, onChange) => {
       const c = h('input', { type: 'checkbox', id: `v-${sectie}-${veld}`, checked: data[sectie][veld] === true, disabled: !kanBewerken });
       c.addEventListener('change', () => { data[sectie][veld] = c.checked; markeer(); onChange && onChange(); });
@@ -417,7 +431,7 @@
 
     // --- fotovakken
     const fotos = d.fotos;
-    const fotoVak = (slot, position, label) => {
+    const fotoVak = (slot, position, label, naWijziging) => {
       const box = h('div', { class: 'portal-foto' });
       const teken = () => {
         box.textContent = '';
@@ -432,7 +446,7 @@
             const res = await api('rapport-foto', { method: 'POST', body: { id: r.id, slot, position, type: 'image/jpeg', data: b64, caption: f?.caption || '' } });
             const i = fotos.findIndex((x) => x.slot === slot && x.position === position);
             if (i >= 0) fotos.splice(i, 1);
-            fotos.push(res.foto); teken(); refreshControle();
+            fotos.push(res.foto); (naWijziging || teken)(); refreshControle();
           } catch (err) { flash(fmsg, err.message, 'error'); }
           file.value = '';
         });
@@ -445,11 +459,29 @@
               h('label', { class: 'btn btn-ghost-dark btn-sm portal-file', for: file.id }, 'Vervangen'), file,
               h('button', { type: 'button', class: 'btn btn-danger btn-sm', text: 'Verwijderen', onclick: async () => {
                 if (!window.confirm('Deze foto verwijderen?')) return;
-                try { await api('rapport-foto-verwijderen', { method: 'POST', body: { id: r.id, foto_id: f.id } }); fotos.splice(fotos.indexOf(f), 1); teken(); refreshControle(); } catch (err) { flash(fmsg, err.message, 'error'); }
+                try { await api('rapport-foto-verwijderen', { method: 'POST', body: { id: r.id, foto_id: f.id } }); fotos.splice(fotos.indexOf(f), 1); (naWijziging || teken)(); refreshControle(); } catch (err) { flash(fmsg, err.message, 'error'); }
               } })) : null, fmsg);
         } else {
           box.append(h('div', { class: 'portal-foto-leeg', text: 'Nog geen foto' }), kanBewerken ? h('label', { class: 'btn btn-gold btn-sm portal-file', for: file.id }, 'Foto kiezen') : null, file, fmsg);
         }
+      };
+      teken();
+      return box;
+    };
+    // Reeks foto's bij één onderdeel: ingevulde foto's plus één leeg vak, tot het maximum (4).
+    const fotoReeks = (slot, label) => {
+      const max = (d.slots || {})[slot] || 1;
+      const box = h('div', { class: 'portal-foto-reeks' });
+      const teken = () => {
+        box.textContent = '';
+        const lijst = fotos.filter((x) => x.slot === slot).sort((a, b) => a.position - b.position);
+        const rij = h('div', { class: 'portal-foto-rij' }, lijst.map((f, i) => fotoVak(slot, f.position, `${label} ${i + 1}`, teken)));
+        if (lijst.length < max && kanBewerken) {
+          const vrij = [1, 2, 3, 4].find((n) => n <= max && !lijst.some((x) => x.position === n));
+          rij.append(fotoVak(slot, vrij, lijst.length ? `${label} ${lijst.length + 1} (optioneel)` : `${label} 1 (verplicht)`, teken));
+        }
+        box.append(h('p', { class: 'portal-label', text: label === 'Foto' ? 'Foto\'s' : 'Afbeeldingen' }),
+          h('p', { class: 'portal-hint', text: `Minimaal 1, maximaal ${max} (${lijst.length} van ${max} toegevoegd).` }), rij);
       };
       teken();
       return box;
@@ -465,9 +497,17 @@
         tbody.textContent = '';
         data[sectie].rijen.forEach((rij, i) => {
           const hint = h('span', { class: 'portal-hint', text: rot(rij.meting, rij.afstand) });
+          const typSel = () => {
+            const opties = (d.keuzes || {}).typering || [];
+            const e = h('select', { 'aria-label': `Schadetypering regel ${i + 1}`, disabled: !kanBewerken }, h('option', { value: '', text: 'Kies…' }), opties.map((o) => h('option', { value: o, text: o })),
+              rij.typering && !opties.includes(rij.typering) ? h('option', { value: rij.typering, text: `${rij.typering} (kies opnieuw)` }) : null);
+            e.value = rij.typering || '';
+            e.addEventListener('change', () => { rij.typering = e.value; markeer(); });
+            return e;
+          };
           const cel = (k, ph, num) => { const e = h('input', { type: 'text', value: rij[k] || '', placeholder: ph, inputmode: num ? 'decimal' : null, 'aria-label': `${ph} regel ${i + 1}`, disabled: !kanBewerken }); e.addEventListener('input', () => { rij[k] = e.value; markeer(); hint.textContent = rot(rij.meting, rij.afstand); }); return e; };
           tbody.append(h('tr', {}, h('td', {}, cel('omschrijving', 'Omschrijving')), h('td', {}, cel('meting', 'mm', true)), h('td', {}, cel('afstand', 'mm', true)),
-            h('td', {}, cel('typering', 'Schadetypering'), hint),
+            h('td', {}, typSel(), hint),
             h('td', {}, kanBewerken ? h('button', { type: 'button', class: 'btn btn-link', text: 'Verwijderen', 'aria-label': `Meetregel ${i + 1} verwijderen`, onclick: () => { data[sectie].rijen.splice(i, 1); markeer(); teken(); } }) : null)));
         });
       };
@@ -476,7 +516,7 @@
         h('p', { class: 'portal-label', text: 'Meetgegevens' }),
         h('div', { class: 'portal-table-wrap' }, h('table', { class: 'portal-table portal-meet' }, h('thead', {}, h('tr', {}, ['Omschrijving', 'Meting (mm)', 'Afstand (mm)', 'Schadetypering', ''].map((t) => h('th', { scope: 'col', text: t })))), tbody)),
         kanBewerken ? h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: '+ Meetregel toevoegen', onclick: () => { data[sectie].rijen.push({ omschrijving: '', meting: '', afstand: '', typering: '' }); markeer(); teken(); } }) : null,
-        h('p', { class: 'portal-hint', text: 'Ter controle staat de verhouding (afstand ÷ meting) en de klasse volgens de tabel in het rapport erbij. De schadetypering vul je zelf in; de applicatie bepaalt die niet.' }));
+        h('p', { class: 'portal-hint', text: 'Ter controle staat de verhouding (afstand ÷ meting) en de klasse volgens de tabel in het rapport erbij. De schadetypering kies je zelf; de applicatie bepaalt die niet.' }));
     };
 
     // --- stappen
@@ -518,15 +558,15 @@
         h('h2', { class: 'portal-h2', text: 'B. Object' }),
         h('p', { class: 'portal-hint', text: `Adres: ${[data.voorblad.object_straat, data.voorblad.object_postcode, data.voorblad.object_plaats].filter(Boolean).join(', ') || 'vul het adres in bij het voorblad'}` }),
         h('div', { class: 'portal-grid-form' },
-          inp('object', 'type', 'Type', { placeholder: 'bv. eengezinswoning, twee-onder-een-kap' }), inp('object', 'bouwjaar', 'Bouwjaar', { max: 10, inputmode: 'numeric', placeholder: 'jaartal of "onbekend"' }),
-          inp('object', 'weertype', 'Weertype', { placeholder: 'bv. droog, matige regen' }), inp('object', 'temperatuur', 'Temperatuur (°C)', { max: 6, inputmode: 'decimal' }),
+          kies('object', 'type', 'Type woning / object', 'object.type'), inp('object', 'bouwjaar', 'Bouwjaar', { max: 10, inputmode: 'numeric', placeholder: 'jaartal of "onbekend"' }),
+          kies('object', 'weertype', 'Weertype', 'object.weertype'), inp('object', 'temperatuur', 'Temperatuur (°C)', { max: 6, inputmode: 'decimal' }),
           inp('object', 'luchtvochtigheid', 'Luchtvochtigheid (%)', { max: 6, inputmode: 'decimal' })),
       ],
       vraagstelling: () => { zin(); return [
         h('h2', { class: 'portal-h2', text: 'C. Vraagstelling' }),
         h('div', { class: 'portal-grid-form' },
-          inp('vraagstelling', 'datum', 'Datum', { type: 'date', onInput: zin, hint: 'Leeg = de inspectiedatum.' }), inp('vraagstelling', 'reden', 'Reden van het onderzoek', { placeholder: 'bv. verkoop', onInput: zin }),
-          inp('vraagstelling', 'bestemming', 'Bestemming van het pand', { placeholder: 'bv. woonfunctie', onInput: zin })),
+          inp('vraagstelling', 'datum', 'Datum', { type: 'date', onInput: zin, hint: 'Leeg = de inspectiedatum.' }), kies('vraagstelling', 'reden', 'Reden van het onderzoek', 'vraagstelling.reden', { onInput: zin }),
+          kies('vraagstelling', 'bestemming', 'Bestemming van het pand', 'vraagstelling.bestemming', { onInput: zin })),
         h('p', { class: 'portal-label', text: 'Zo komt de tekst in het rapport' }), vsZin,
         h('p', { class: 'portal-note portal-note-warn' }, 'Aandachtspunt: de vaste slotzin ("…dient te worden aangetoond dat de fundering geen risico heeft…") is stellig voor een Fase 0-onderzoek. Laat deze formulering inhoudelijk goedkeuren; de applicatie past hem niet aan.'),
       ]; },
@@ -538,43 +578,43 @@
         inp('conclusie', 'advies', 'Advies', { textarea: true, rows: 6, max: 4000 }),
         h('div', { class: 'portal-grid-form' }, inp('conclusie', 'opmaak_plaats', 'Plaats van opmaak'), inp('conclusie', 'opmaak_datum', 'Datum van opmaak', { type: 'date' })),
         h('p', { class: 'portal-hint', text: 'De vaste teksten (beperkingen, geldigheidsduur van 6 maanden, klimaatverandering en ondertekening) komen ongewijzigd uit het rapportsjabloon. Het pijltje op het voorblad volgt de gekozen categorie.' }),
-        fotoVak('conclusie', 1, 'Foto bij de conclusie'),
+        fotoReeks('conclusie', 'Foto'),
       ],
       bouwtekeningen: () => [
         h('h2', { class: 'portal-h2', text: 'E. Archief – bouwtekeningen' }),
         keuze('bouwtekeningen', 'ontvangen', 'Bouwtekeningen ontvangen?', [['ja', 'Ja'], ['nee', 'Nee']]),
         keuze('bouwtekeningen', 'vorm', 'Beschikbaar gesteld als', [['fysiek', 'Fysiek'], ['digitaal', 'Digitaal']]),
-        h('div', { class: 'portal-grid-form' }, inp('bouwtekeningen', 'jaartal', 'Bouwtekeningen (jaartal)', { max: 8, placeholder: 'jaartal of N.V.T.' }), inp('bouwtekeningen', 'fundering', 'Soort fundering')),
-        fotoVak('bouwtekening', 1, 'Afbeelding bouwtekening'),
+        h('div', { class: 'portal-grid-form' }, inp('bouwtekeningen', 'jaartal', 'Bouwtekeningen (jaartal)', { max: 8, placeholder: 'jaartal of N.V.T.' }), kies('bouwtekeningen', 'fundering', 'Soort fundering', 'bouwtekeningen.fundering')),
+        fotoReeks('bouwtekening', 'Afbeelding'),
       ],
       bodem: () => [
         h('h2', { class: 'portal-h2', text: 'F. Archief – bodemdalingskaart' }),
         vinkje('bodem', 'niet_beschikbaar', 'Er zijn geen bodemdalingsgegevens beschikbaar'),
         inp('bodem', 'motivatie', 'Toelichting (alleen bij niet beschikbaar)', { max: 400 }),
-        h('div', { class: 'portal-grid-form' }, inp('bodem', 'mm_per_jaar', 'Bodemdaling (mm per jaar)', { max: 8, inputmode: 'decimal' }), inp('bodem', 'typering', 'Typering', { hint: 'Rapporttekst: tot 2 mm/jaar klein, meer dan 3 mm/jaar groot. Voor 2–3 mm geeft de tekst geen typering: beoordeel zelf.' }),
+        h('div', { class: 'portal-grid-form' }, inp('bodem', 'mm_per_jaar', 'Bodemdaling (mm per jaar)', { max: 8, inputmode: 'decimal' }), kies('bodem', 'typering', 'Typering', 'bodem.typering', { hint: 'Rapporttekst: tot 2 mm/jaar klein, meer dan 3 mm/jaar groot. Voor 2–3 mm geeft de tekst geen typering: beoordeel zelf.' }),
           inp('bodem', 'bron', 'Bron van de gegevens (intern)', { max: 200 }), inp('bodem', 'peildatum', 'Datum van de gegevens (intern)', { type: 'date' })),
         h('p', { class: 'portal-hint', text: 'Bron en datum worden bij het dossier bewaard; ze staan niet in het rapportsjabloon. Vul alleen gegevens in die echt bij dit object horen.' }),
-        fotoVak('bodemdaling', 1, 'Afbeelding bodemdalingskaart'),
+        fotoReeks('bodemdaling', 'Afbeelding'),
       ],
       omgeving: () => [
         h('h2', { class: 'portal-h2', text: 'G. Omgevingsfactoren' }),
         h('p', { class: 'portal-label', text: 'Bevinding 1' }),
         inp('omgeving', 'resultaat', 'Resultaat / conclusie', { textarea: true, rows: 4, max: 2000 }),
-        fotoVak('omgeving', 1, 'Afbeelding omgevingsfactoren'),
+        fotoReeks('omgeving', 'Afbeelding'),
       ],
       lintvoeg: () => [
         h('h2', { class: 'portal-h2', text: 'H. Lintvoegmeting' }),
         vinkje('lintvoeg', 'nvt', 'Niet uitgevoerd / niet van toepassing'), inp('lintvoeg', 'nvt_motivatie', 'Motivatie (alleen bij niet van toepassing)', { max: 400 }),
         inp('lintvoeg', 'meetpunten', 'Meetpunten (locaties)', { placeholder: 'gevel(s) waar gemeten is', max: 300 }),
         meettabel('lintvoeg', 3),
-        h('div', { class: 'portal-foto-rij' }, [1, 2, 3, 4].map((n) => fotoVak('lintvoeg', n, `Foto ${n}`))),
+        fotoReeks('lintvoeg', 'Foto'),
       ],
       schietlood: () => [
         h('h2', { class: 'portal-h2', text: 'I. Schietloodmeting' }),
         vinkje('schietlood', 'nvt', 'Niet uitgevoerd / niet van toepassing'), inp('schietlood', 'nvt_motivatie', 'Motivatie (alleen bij niet van toepassing)', { max: 400 }),
         inp('schietlood', 'meetpunten', 'Meetpunten (locaties)', { placeholder: 'gevel waarop gemeten is', max: 300 }),
         meettabel('schietlood', 1),
-        fotoVak('schietlood', 1, 'Foto schietloodmeting'),
+        fotoReeks('schietlood', 'Foto'),
       ],
       afronden: () => afronden(),
     };
