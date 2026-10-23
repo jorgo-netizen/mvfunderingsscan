@@ -105,11 +105,11 @@
       ]
     },
     {
-      "source": "/(styles.css|script.js)",
+      "source": "/(styles.css|script.js|tools.css|tools.js|portaal.css|status.js|beheer.js|beheer-markdown.js|lintvoegmeting.js)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=86400, must-revalidate"
+          "value": "public, max-age=0, must-revalidate"
         }
       ]
     },

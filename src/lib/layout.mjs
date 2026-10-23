@@ -170,9 +170,14 @@ export function jsonld(graph) {
 
 // ---------------------------------------------------------------- html-blokken
 
+// Versie per deploy (commit van Vercel), zodat browsers na een update nooit een oud script of oude CSS
+// combineren met nieuwe pagina's. Lokaal en zonder Vercel: geen versie (de bestanden worden dan toch steeds gecontroleerd).
+const V = (process.env.VERCEL_GIT_COMMIT_SHA || '').slice(0, 8);
+export const asset = (path) => (V ? `${path}?v=${V}` : path);
+
 // Extra CSS/JS voor de interactieve hulpmiddelen; alleen op pagina's met `tools: true`.
-const TOOLS_ASSETS = `<link rel="stylesheet" href="/tools.css">
-  <script src="/tools.js" defer></script>
+const TOOLS_ASSETS = `<link rel="stylesheet" href="${asset('/tools.css')}">
+  <script src="${asset('/tools.js')}" defer></script>
   `;
 
 export function head(page) {
@@ -209,9 +214,9 @@ export function head(page) {
   <link rel="icon" type="image/png" sizes="256x256" href="/assets/favicon.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  ${preload}<link rel="stylesheet" href="/styles.css">
-  ${(page.styles || []).map((href) => `<link rel="stylesheet" href="${href}">
-  `).join('')}${page.tools ? TOOLS_ASSETS : ''}${(page.scripts || []).map((src) => `<script src="${src}" defer></script>
+  ${preload}<link rel="stylesheet" href="${asset('/styles.css')}">
+  ${(page.styles || []).map((href) => `<link rel="stylesheet" href="${asset(href)}">
+  `).join('')}${page.tools ? TOOLS_ASSETS : ''}${(page.scripts || []).map((src) => `<script src="${asset(src)}" defer></script>
   `).join('')}<script>document.documentElement.classList.add('js');</script>
   ${page.schema}
 </head>`;
@@ -350,7 +355,7 @@ ${cols}
   <a class="btn btn-gold" href="/funderingsscan-aanvragen/">Vraag scan aan <span aria-hidden="true">→</span></a>
 </div>
 
-<script src="/script.js" defer></script>
+<script src="${asset('/script.js')}" defer></script>
 </body>
 </html>
 `;
