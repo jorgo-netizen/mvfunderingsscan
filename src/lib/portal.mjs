@@ -49,6 +49,15 @@ ${header('')}
           <p data-veld="text"></p>
           <div class="portal-note" data-veld="message-wrap" hidden><strong>Bericht van MV Funderingsscan</strong><p data-veld="message"></p></div>
           <p class="status-updated">Laatst bijgewerkt: <time data-veld="updated"></time></p>
+          <div class="status-uitkomst" data-veld="uitkomst" hidden>
+            <p class="status-uitkomst-titel">Uitkomst Fase 0 – Funderingsrisico-onderzoek</p>
+            <ol class="status-uitkomst-schaal" aria-label="Uitkomst">
+              <li data-risico="laag"><span>Laag risico</span></li>
+              <li data-risico="midden"><span>Midden risico</span></li>
+              <li data-risico="hoog"><span>Hoog risico</span></li>
+            </ol>
+            <p class="status-uitkomst-tekst" data-veld="uitkomst-tekst"></p>
+          </div>
           <div class="status-report" data-veld="report" hidden>
             <p><strong>Je rapport staat klaar.</strong> De downloadlink is één minuut geldig en wordt pas gemaakt als je op de knop klikt.</p>
             <button type="button" class="btn btn-gold" data-rapport>Download het rapport (PDF)</button>
@@ -88,6 +97,7 @@ export function beheerPage() {
       <a href="#/" data-nav-link="dashboard">Dashboard</a>
       <a href="#/nieuws" data-nav-link="nieuws">Nieuws</a>
       <a href="#/aanvragen" data-nav-link="aanvragen">Aanvragen</a>
+      <a href="#/rapporten" data-nav-link="rapporten">Rapporten</a>
     </nav>
     <div class="portal-user" data-user hidden><span data-user-name></span><button type="button" class="btn btn-outline-light btn-sm" data-uitloggen>Uitloggen</button></div>
   </div>

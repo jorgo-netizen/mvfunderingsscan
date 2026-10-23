@@ -45,7 +45,7 @@
     if (!data.ok) throw Object.assign(new Error(data.error || 'Er ging iets mis.'), { status: r.status });
     return data;
   }
-  function render(...nodes) { view.textContent = ''; view.append(...nodes); }
+  function render(...nodes) { view.textContent = ''; view.append(...nodes.filter((n) => n != null && n !== false)); }
   function flash(el, msg, kind = 'ok') { el.textContent = msg; el.className = `portal-flash portal-flash-${kind}`; el.hidden = !msg; }
   const flashEl = () => h('p', { class: 'portal-flash', role: 'status', hidden: true });
   function busy(btn, on) { btn.disabled = on; btn.classList.toggle('is-loading', on); }
@@ -91,13 +91,16 @@
   });
 
   // ---------------------------------------------------------------- router
-  function route() {
+  async function route() {
     if (!me) return;
+    if (leaveGuard) { const g = leaveGuard; leaveGuard = null; window.onbeforeunload = null; await g(); }
     const parts = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
     document.querySelectorAll('[data-nav-link]').forEach((a) => a.classList.toggle('is-active', a.dataset.navLink === (parts[0] || 'dashboard')));
     const go = parts[0] === 'nieuws' ? (parts[1] ? editNews(parts[1]) : listNews())
       : parts[0] === 'aanvragen' ? (parts[1] ? showRequest(parts[1]) : listRequests())
-        : dashboard();
+        : parts[0] === 'rapporten' ? (parts[1] === 'nieuw' ? newReportDialog() : parts[1] ? editReport(parts[1].split('?')[0], parts[2]) : listReports())
+          : parts[0] === 'adviseurs' ? advisorsPage()
+            : dashboard();
     Promise.resolve(go).then(() => main.focus({ preventScroll: true })).catch((err) => { if (err.message !== 'niet ingelogd') render(h('div', { class: 'portal-card' }, h('p', { class: 'portal-error', text: err.message }))); });
   }
   window.addEventListener('hashchange', route);
@@ -276,6 +279,451 @@
       img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('De afbeelding kan niet worden gelezen.')); };
       img.src = url;
     });
+  }
+
+  // ---------------------------------------------------------------- QuickScan-rapporten
+  const RSTATUS = { concept: 'Concept', in_uitvoering: 'In uitvoering', wacht_op_info: 'Wacht op aanvullende informatie', gereed_voor_controle: 'Gereed voor controle', definitief: 'Definitief', verzonden: 'Verzonden aan klant' };
+  const RISICO = { laag: 'Laag risico', midden: 'Midden risico', hoog: 'Hoog risico' };
+  const STAPPEN = [
+    ['voorblad', 'Voorblad'], ['algemeen', 'A. Opdracht / opname'], ['object', 'B. Object'], ['vraagstelling', 'C. Vraagstelling'],
+    ['conclusie', 'D. Conclusie'], ['bouwtekeningen', 'E. Bouwtekeningen'], ['bodem', 'F. Bodemdalingskaart'], ['omgeving', 'G. Omgevingsfactoren'],
+    ['lintvoeg', 'H. Lintvoegmeting'], ['schietlood', 'I. Schietloodmeting'], ['afronden', 'Uitkomst en afronden'],
+  ];
+  let leaveGuard = null; // wordt aangeroepen voordat je het rapport verlaat (automatisch opslaan)
+  const rbadge = (st) => h('span', { class: `portal-badge portal-badge-r-${st}`, text: RSTATUS[st] || st });
+  const riskBadge = (r) => (r ? h('span', { class: `portal-badge portal-risk-${r}`, text: RISICO[r] }) : h('span', { class: 'portal-muted', text: '–' }));
+  const datumKort = (iso) => (/^\d{4}-\d{2}-\d{2}$/.test(iso || '') ? iso.split('-').reverse().join('-') : '–');
+
+  async function listReports() {
+    const params = new URLSearchParams(location.hash.split('?')[1] || '');
+    const q = h('input', { id: 'rp-q', type: 'search', value: params.get('q') || '', placeholder: 'Rapportnummer, adres of opdrachtgever' });
+    const st = h('select', { id: 'rp-status' }, h('option', { value: '', text: 'Alle statussen' }), Object.entries(RSTATUS).map(([k, v]) => h('option', { value: k, text: v })));
+    st.value = params.get('status') || '';
+    const msg = flashEl();
+    const results = h('div', { class: 'portal-card portal-table-wrap', 'aria-live': 'polite' }, h('p', { text: 'Bezig met laden…' }));
+    const load = async () => {
+      const d = await api('rapporten', { params: { q: q.value.trim(), status: st.value } });
+      results.textContent = '';
+      if (!d.items.length) {
+        results.append(h('div', { class: 'portal-empty' }, h('p', { text: q.value || st.value ? 'Geen rapporten gevonden.' : 'Er zijn nog geen QuickScan-rapporten.' }), q.value || st.value ? null : h('p', { class: 'portal-muted', text: 'Klik op "Nieuw rapport" om het eerste rapport te maken.' })));
+        return;
+      }
+      results.append(h('table', { class: 'portal-table' },
+        h('thead', {}, h('tr', {}, ['Rapportnummer', 'Adres object', 'Opdrachtgever', 'Inspectie', 'Adviseur', 'Status', 'Risico', 'Gewijzigd', ''].map((t) => h('th', { scope: 'col', text: t })))),
+        h('tbody', {}, d.items.map((r) => h('tr', {},
+          h('td', {}, h('a', { href: `#/rapporten/${r.id}`, text: r.report_nr })), h('td', { text: r.adres || '–' }), h('td', { text: r.opdrachtgever || '–' }),
+          h('td', { text: datumKort(r.inspectiedatum) }), h('td', { text: r.adviseur || '–' }), h('td', {}, rbadge(r.status)), h('td', {}, riskBadge(r.risk)),
+          h('td', { text: fmt(r.updated_at) }), h('td', {}, h('a', { class: 'btn btn-ghost-dark btn-sm', href: `#/rapporten/${r.id}`, text: 'Openen' })))))));
+    };
+    const form = h('form', { class: 'portal-filter', role: 'search', onsubmit: (e) => { e.preventDefault(); load().catch((err) => flash(msg, err.message, 'error')); } },
+      field('Zoeken', q), field('Status', st), h('button', { type: 'submit', class: 'btn btn-gold', text: 'Zoeken' }));
+    st.addEventListener('change', () => form.requestSubmit());
+    render(
+      h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'QuickScan-rapporten' }),
+        h('div', { class: 'portal-actions' },
+          me.role === 'beheerder' ? h('a', { class: 'btn btn-ghost-dark', href: '#/adviseurs', text: 'Adviseurs' }) : null,
+          h('a', { class: 'btn btn-gold', href: '#/rapporten/nieuw', text: 'Nieuw rapport' }))),
+      h('div', { class: 'portal-card' }, form, msg), results);
+    await load();
+  }
+
+  async function newReportDialog() {
+    const msg = flashEl();
+    const sel = h('select', { id: 'nr-aanvraag' }, h('option', { value: '', text: 'Zonder aanvraag (handmatig invullen)' }));
+    try {
+      const d = await api('aanvragen');
+      d.items.forEach((r) => sel.append(h('option', { value: r.id, text: `${r.dossier_nr} – ${r.naam}${r.plaats ? `, ${r.plaats}` : ''}` })));
+    } catch { /* geen aanvragen beschikbaar */ }
+    const btn = h('button', { type: 'submit', class: 'btn btn-gold', text: 'Rapport aanmaken' });
+    render(h('form', { class: 'portal-card portal-narrow', onsubmit: async (e) => {
+      e.preventDefault(); busy(btn, true);
+      try { const r = await api('rapport-nieuw', { method: 'POST', body: { request_id: sel.value || undefined } }); location.hash = `#/rapporten/${r.id}/voorblad`; }
+      catch (err) { flash(msg, err.message, 'error'); busy(btn, false); }
+    } },
+    h('h1', { class: 'portal-h1', text: 'Nieuw QuickScan-rapport' }),
+    h('p', { text: 'Koppel het rapport aan een bestaande QuickScan-aanvraag. Naam, adres en contactgegevens worden dan overgenomen. Het rapportnummer wordt automatisch toegekend.' }),
+    field('QuickScan-aanvraag', sel), msg, h('div', { class: 'portal-actions' }, btn, h('a', { class: 'btn btn-ghost-dark', href: '#/rapporten', text: 'Annuleren' }))));
+  }
+
+  async function editReport(id, stap) {
+    stap = STAPPEN.some(([k]) => k === stap) ? stap : 'voorblad';
+    const d = await api('rapport', { params: { id } });
+    const r = d.report;
+    const data = JSON.parse(JSON.stringify(r.data || {}));
+    for (const [k] of STAPPEN) if (k !== 'afronden' && k !== 'voorblad') data[k] = data[k] || {};
+    data.voorblad = data.voorblad || {};
+    let advisorId = r.advisor_id || '';
+    let status = r.status;
+    let controle = d.controle;
+    let dirty = false;
+    const kanBewerken = d.bewerkbaar;
+    const opslagKey = `mvfs-rapport-${r.id}-v${r.version}`;
+    // Herstel van niet-opgeslagen invoer (bijv. na een verbroken verbinding)
+    try {
+      const lokaal = JSON.parse(localStorage.getItem(opslagKey) || 'null');
+      if (lokaal && kanBewerken && lokaal.t > Date.parse(r.updated_at) && window.confirm('Er staan niet-opgeslagen wijzigingen van dit rapport in deze browser. Wil je die terugzetten?')) Object.assign(data, lokaal.data);
+      else if (lokaal) localStorage.removeItem(opslagKey);
+    } catch { /* geen lokale opslag */ }
+    const markeer = () => { dirty = true; try { localStorage.setItem(opslagKey, JSON.stringify({ t: Date.now(), data })); } catch { /* */ } saveState.textContent = 'Niet opgeslagen wijzigingen'; };
+    const saveState = h('span', { class: 'portal-muted portal-savestate', text: 'Opgeslagen' });
+    const msg = flashEl();
+
+    async function opslaan(stil) {
+      if (!kanBewerken || !dirty) return true;
+      saveState.textContent = 'Bezig met opslaan…';
+      try {
+        const res = await api('rapport-opslaan', { method: 'POST', body: { id: r.id, data, advisor_id: advisorId || null, status } });
+        controle = res.controle; dirty = false; saveState.textContent = `Opgeslagen om ${fmt(new Date().toISOString()).split(' ').pop()}`;
+        try { localStorage.removeItem(opslagKey); } catch { /* */ }
+        updateNav();
+        return true;
+      } catch (err) {
+        saveState.textContent = 'Opslaan mislukt'; if (!stil) flash(msg, `${err.message} Je invoer staat nog in deze browser.`, 'error');
+        return false;
+      }
+    }
+    leaveGuard = () => opslaan(true);
+    window.onbeforeunload = () => (dirty ? 'Er zijn niet-opgeslagen wijzigingen.' : undefined);
+
+    // --- invoervelden (gekoppeld aan data[sectie][veld])
+    const inp = (sectie, veld, label, opts = {}) => {
+      const fid = `f-${sectie}-${veld}`;
+      const el = opts.textarea ? h('textarea', { id: fid, rows: opts.rows || 4, maxlength: opts.max || 400 }) : h('input', { id: fid, type: opts.type || 'text', maxlength: opts.max || 160, inputmode: opts.inputmode || null, placeholder: opts.placeholder || null });
+      el.value = (data[sectie] || {})[veld] || '';
+      el.disabled = !kanBewerken;
+      el.addEventListener('input', () => { data[sectie][veld] = el.value; markeer(); opts.onInput && opts.onInput(); });
+      const fout = (controle.fouten || []).some((f) => f.stap === sectie && f.veld === veld);
+      const wrap = field(label, el, opts.hint);
+      if (fout) wrap.classList.add('portal-field-missing');
+      return wrap;
+    };
+    const keuze = (sectie, veld, label, opties, onChange) => {
+      const name = `k-${sectie}-${veld}`;
+      const fs = h('fieldset', { class: 'portal-field portal-choice' }, h('legend', { text: label }),
+        opties.map(([v, l]) => {
+          const radio = h('input', { type: 'radio', name, value: v, checked: (data[sectie] || {})[veld] === v, disabled: !kanBewerken });
+          radio.addEventListener('change', () => { data[sectie][veld] = v; markeer(); onChange && onChange(); });
+          return h('label', { class: 'portal-radio' }, radio, ' ', l);
+        }));
+      if ((controle.fouten || []).some((f) => f.stap === sectie && f.veld === veld)) fs.classList.add('portal-field-missing');
+      return fs;
+    };
+    const vinkje = (sectie, veld, label, onChange) => {
+      const c = h('input', { type: 'checkbox', id: `v-${sectie}-${veld}`, checked: data[sectie][veld] === true, disabled: !kanBewerken });
+      c.addEventListener('change', () => { data[sectie][veld] = c.checked; markeer(); onChange && onChange(); });
+      return h('div', { class: 'portal-check' }, c, h('label', { for: c.id, text: label }));
+    };
+    const vast = (rows) => h('dl', { class: 'portal-dl portal-vast' }, rows.map(([k, v]) => h('div', { class: 'portal-dl-row' }, h('dt', { text: k }), h('dd', { text: v }))));
+
+    // --- fotovakken
+    const fotos = d.fotos;
+    const fotoVak = (slot, position, label) => {
+      const box = h('div', { class: 'portal-foto' });
+      const teken = () => {
+        box.textContent = '';
+        const f = fotos.find((x) => x.slot === slot && x.position === position);
+        const fmsg = flashEl();
+        const file = h('input', { type: 'file', accept: 'image/jpeg,image/png,image/webp', id: `foto-${slot}-${position}`, disabled: !kanBewerken });
+        file.addEventListener('change', async () => {
+          const fl = file.files[0]; if (!fl) return;
+          flash(fmsg, 'Foto wordt verkleind en geüpload…');
+          try {
+            const b64 = await resizeImage(fl, 2000);
+            const res = await api('rapport-foto', { method: 'POST', body: { id: r.id, slot, position, type: 'image/jpeg', data: b64, caption: f?.caption || '' } });
+            const i = fotos.findIndex((x) => x.slot === slot && x.position === position);
+            if (i >= 0) fotos.splice(i, 1);
+            fotos.push(res.foto); teken(); refreshControle();
+          } catch (err) { flash(fmsg, err.message, 'error'); }
+          file.value = '';
+        });
+        box.append(h('p', { class: 'portal-foto-label', text: label }));
+        if (f) {
+          const cap = h('input', { type: 'text', maxlength: 200, value: f.caption || '', placeholder: 'Bijschrift (optioneel)', 'aria-label': `Bijschrift ${label}`, disabled: !kanBewerken });
+          cap.addEventListener('change', () => api('rapport-foto-bijschrift', { method: 'POST', body: { id: r.id, foto_id: f.id, caption: cap.value } }).then(() => { f.caption = cap.value; flash(fmsg, 'Bijschrift opgeslagen.'); }).catch((err) => flash(fmsg, err.message, 'error')));
+          box.append(h('img', { src: f.url, alt: label }), cap,
+            kanBewerken ? h('div', { class: 'portal-actions' },
+              h('label', { class: 'btn btn-ghost-dark btn-sm portal-file', for: file.id }, 'Vervangen'), file,
+              h('button', { type: 'button', class: 'btn btn-danger btn-sm', text: 'Verwijderen', onclick: async () => {
+                if (!window.confirm('Deze foto verwijderen?')) return;
+                try { await api('rapport-foto-verwijderen', { method: 'POST', body: { id: r.id, foto_id: f.id } }); fotos.splice(fotos.indexOf(f), 1); teken(); refreshControle(); } catch (err) { flash(fmsg, err.message, 'error'); }
+              } })) : null, fmsg);
+        } else {
+          box.append(h('div', { class: 'portal-foto-leeg', text: 'Nog geen foto' }), kanBewerken ? h('label', { class: 'btn btn-gold btn-sm portal-file', for: file.id }, 'Foto kiezen') : null, file, fmsg);
+        }
+      };
+      teken();
+      return box;
+    };
+    const refreshControle = async () => { try { const x = await api('rapport', { params: { id: r.id } }); controle = x.controle; updateNav(); } catch { /* */ } };
+
+    // --- meettabel
+    const meettabel = (sectie, minRijen) => {
+      data[sectie].rijen = Array.isArray(data[sectie].rijen) && data[sectie].rijen.length ? data[sectie].rijen : Array.from({ length: minRijen }, () => ({ omschrijving: '', meting: '', afstand: '', typering: '' }));
+      const tbody = h('tbody');
+      const rot = (m, a) => { const mm = Math.abs(parseFloat(String(m).replace(',', '.'))); const af = parseFloat(String(a).replace(',', '.')); if (!(mm > 0) || !(af > 0)) return ''; const n = af / mm; return `1:${Math.round(n)} → tabel: ${n > 300 ? 'Zeer klein' : n > 200 ? 'Klein' : n > 100 ? 'Matig' : n >= 75 ? 'Groot' : 'Zeer groot'}`; };
+      const teken = () => {
+        tbody.textContent = '';
+        data[sectie].rijen.forEach((rij, i) => {
+          const hint = h('span', { class: 'portal-hint', text: rot(rij.meting, rij.afstand) });
+          const cel = (k, ph, num) => { const e = h('input', { type: 'text', value: rij[k] || '', placeholder: ph, inputmode: num ? 'decimal' : null, 'aria-label': `${ph} regel ${i + 1}`, disabled: !kanBewerken }); e.addEventListener('input', () => { rij[k] = e.value; markeer(); hint.textContent = rot(rij.meting, rij.afstand); }); return e; };
+          tbody.append(h('tr', {}, h('td', {}, cel('omschrijving', 'Omschrijving')), h('td', {}, cel('meting', 'mm', true)), h('td', {}, cel('afstand', 'mm', true)),
+            h('td', {}, cel('typering', 'Schadetypering'), hint),
+            h('td', {}, kanBewerken ? h('button', { type: 'button', class: 'btn btn-link', text: 'Verwijderen', 'aria-label': `Meetregel ${i + 1} verwijderen`, onclick: () => { data[sectie].rijen.splice(i, 1); markeer(); teken(); } }) : null)));
+        });
+      };
+      teken();
+      return h('div', { class: 'portal-field' },
+        h('p', { class: 'portal-label', text: 'Meetgegevens' }),
+        h('div', { class: 'portal-table-wrap' }, h('table', { class: 'portal-table portal-meet' }, h('thead', {}, h('tr', {}, ['Omschrijving', 'Meting (mm)', 'Afstand (mm)', 'Schadetypering', ''].map((t) => h('th', { scope: 'col', text: t })))), tbody)),
+        kanBewerken ? h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: '+ Meetregel toevoegen', onclick: () => { data[sectie].rijen.push({ omschrijving: '', meting: '', afstand: '', typering: '' }); markeer(); teken(); } }) : null,
+        h('p', { class: 'portal-hint', text: 'Ter controle staat de verhouding (afstand ÷ meting) en de klasse volgens de tabel in het rapport erbij. De schadetypering vul je zelf in; de applicatie bepaalt die niet.' }));
+    };
+
+    // --- stappen
+    const adviseurSel = h('select', { id: 'f-adviseur', disabled: !kanBewerken }, h('option', { value: '', text: 'Kies adviseur' }), d.advisors.map((a) => h('option', { value: a.id, text: a.name })));
+    adviseurSel.value = advisorId;
+    const certTekst = h('p', { class: 'portal-hint' });
+    const toonCert = () => { const a = d.advisors.find((x) => x.id === adviseurSel.value); certTekst.textContent = a ? `Certificaatnummer: ${a.certificate}` : 'Het certificaatnummer wordt automatisch ingevuld.'; };
+    adviseurSel.addEventListener('change', () => { advisorId = adviseurSel.value; toonCert(); markeer(); });
+    toonCert();
+    const statusSel = h('select', { id: 'f-status', disabled: !kanBewerken }, Object.entries(RSTATUS).filter(([k]) => ['concept', 'in_uitvoering', 'wacht_op_info', 'gereed_voor_controle'].includes(k)).map(([k, v]) => h('option', { value: k, text: v })));
+    if (kanBewerken) statusSel.value = status;
+    statusSel.addEventListener('change', () => { status = statusSel.value; markeer(); });
+
+    const vsZin = h('p', { class: 'portal-preview-zin' });
+    const zin = () => { const q = data.vraagstelling || {}; const a = data.algemeen || {}; const v = data.voorblad || {}; const x = (t, ph) => t || `[ ${ph} ]`; const dNl = (iso) => (/^\d{4}-\d{2}-\d{2}$/.test(iso || '') ? new Date(`${iso}T12:00:00`).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' }) : iso);
+      vsZin.textContent = `Op ${x(dNl(q.datum || a.inspectie_datum), 'datum')} heeft Midea Vastgoed Adviseurs in opdracht van ${x(a.opdrachtgever_naam, 'naam opdrachtgever')} een funderingsrisico Fase 0 (QuickScan) uitgevoerd in verband met ${x(q.reden, 'reden')} van het pand ${x(v.object_straat, 'adres')} te ${x(v.object_plaats, 'plaats')}. Het omvat een bestaand pand met een ${x(q.bestemming, 'bestemming')}. Met betrekking tot de fundering dient te worden aangetoond dat de fundering geen risico heeft op funderingsproblemen.`; };
+
+    const STAP = {
+      voorblad: () => [
+        h('h2', { class: 'portal-h2', text: 'Voorblad' }),
+        d.aanvraag ? h('p', { class: 'portal-note' }, `Gekoppeld aan QuickScan-aanvraag ${d.aanvraag.dossier_nr}. Gegevens uit de aanvraag zijn overgenomen.`) : null,
+        h('div', { class: 'portal-grid-form' },
+          inp('voorblad', 'object_straat', 'Straat en huisnummer (object)'), inp('voorblad', 'object_postcode', 'Postcode (object)', { max: 10, placeholder: '8919 AA' }),
+          inp('voorblad', 'object_plaats', 'Plaats (object)'), inp('voorblad', 'uitgebracht_op', 'Uitgebracht op', { type: 'date' }),
+          field('Naam adviseur', adviseurSel), h('div', {}, certTekst), field('Status van het rapport', statusSel)),
+        fotoVak('voorblad', 1, 'Foto voorblad'),
+      ],
+      algemeen: () => [
+        h('h2', { class: 'portal-h2', text: 'A. Opdracht / opname' }),
+        h('div', { class: 'portal-grid-form' },
+          inp('algemeen', 'inspectie_datum', 'Inspectiedatum', { type: 'date', onInput: zin }), inp('algemeen', 'inspectie_tijd', 'Inspectietijd', { type: 'time' }),
+          inp('algemeen', 'opdrachtgever_naam', 'Naam opdrachtgever'), inp('algemeen', 'opdrachtgever_straat', 'Straat en huisnummer opdrachtgever'),
+          inp('algemeen', 'opdrachtgever_postcode', 'Postcode opdrachtgever', { max: 10 }), inp('algemeen', 'opdrachtgever_plaats', 'Plaats opdrachtgever'),
+          inp('algemeen', 'opdrachtgever_email', 'E-mailadres opdrachtgever', { type: 'email', hint: 'Alleen om het rapport te versturen; staat niet in het rapport.' })),
+        h('p', { class: 'portal-label', text: 'Vaste gegevens in het rapport' }),
+        vast([['Onderzoeksmethode', 'Fase 0 Funderingsrisico-onderzoek'], ['Toegepaste richtlijn', 'KCAF (Quickscan)'], ['Afmeldorganisatie', 'Midea Vastgoed Adviseurs (MV-Adviseurs)'], ['Naam kantoor', 'Midea Vastgoed Adviseurs'], ['Adres kantoor', 'Mr. P.J. Troelstraweg 149 unit 29 8919 AA Leeuwarden'], ['Telefoon kantoor', '058 – 2037 172']]),
+      ],
+      object: () => [
+        h('h2', { class: 'portal-h2', text: 'B. Object' }),
+        h('p', { class: 'portal-hint', text: `Adres: ${[data.voorblad.object_straat, data.voorblad.object_postcode, data.voorblad.object_plaats].filter(Boolean).join(', ') || 'vul het adres in bij het voorblad'}` }),
+        h('div', { class: 'portal-grid-form' },
+          inp('object', 'type', 'Type', { placeholder: 'bv. eengezinswoning, twee-onder-een-kap' }), inp('object', 'bouwjaar', 'Bouwjaar', { max: 10, inputmode: 'numeric', placeholder: 'jaartal of "onbekend"' }),
+          inp('object', 'weertype', 'Weertype', { placeholder: 'bv. droog, matige regen' }), inp('object', 'temperatuur', 'Temperatuur (°C)', { max: 6, inputmode: 'decimal' }),
+          inp('object', 'luchtvochtigheid', 'Luchtvochtigheid (%)', { max: 6, inputmode: 'decimal' })),
+      ],
+      vraagstelling: () => { zin(); return [
+        h('h2', { class: 'portal-h2', text: 'C. Vraagstelling' }),
+        h('div', { class: 'portal-grid-form' },
+          inp('vraagstelling', 'datum', 'Datum', { type: 'date', onInput: zin, hint: 'Leeg = de inspectiedatum.' }), inp('vraagstelling', 'reden', 'Reden van het onderzoek', { placeholder: 'bv. verkoop', onInput: zin }),
+          inp('vraagstelling', 'bestemming', 'Bestemming van het pand', { placeholder: 'bv. woonfunctie', onInput: zin })),
+        h('p', { class: 'portal-label', text: 'Zo komt de tekst in het rapport' }), vsZin,
+        h('p', { class: 'portal-note portal-note-warn' }, 'Aandachtspunt: de vaste slotzin ("…dient te worden aangetoond dat de fundering geen risico heeft…") is stellig voor een Fase 0-onderzoek. Laat deze formulering inhoudelijk goedkeuren; de applicatie past hem niet aan.'),
+      ]; },
+      conclusie: () => [
+        h('h2', { class: 'portal-h2', text: 'D. Conclusie' }),
+        h('p', { text: 'Uit de visuele opname, de meetgegevens en het onderzoek maken wij het volgende op:' }),
+        keuze('conclusie', 'risico', 'Geconstateerd funderingsrisico', [['laag', 'Laag funderingsrisico'], ['midden', 'Midden funderingsrisico'], ['hoog', 'Hoog funderingsrisico']], () => { data.conclusie.risico_bevestigd = false; bevestig.checked = false; }),
+        (() => { return h('div', {}, vinkje('conclusie', 'risico_bevestigd', 'Ik bevestig deze risicocategorie op basis van het uitgevoerde onderzoek.')); })(),
+        inp('conclusie', 'advies', 'Advies', { textarea: true, rows: 6, max: 4000 }),
+        h('div', { class: 'portal-grid-form' }, inp('conclusie', 'opmaak_plaats', 'Plaats van opmaak'), inp('conclusie', 'opmaak_datum', 'Datum van opmaak', { type: 'date' })),
+        h('p', { class: 'portal-hint', text: 'De vaste teksten (beperkingen, geldigheidsduur van 6 maanden, klimaatverandering en ondertekening) komen ongewijzigd uit het rapportsjabloon. Het pijltje op het voorblad volgt de gekozen categorie.' }),
+        fotoVak('conclusie', 1, 'Foto bij de conclusie'),
+      ],
+      bouwtekeningen: () => [
+        h('h2', { class: 'portal-h2', text: 'E. Archief – bouwtekeningen' }),
+        keuze('bouwtekeningen', 'ontvangen', 'Bouwtekeningen ontvangen?', [['ja', 'Ja'], ['nee', 'Nee']]),
+        keuze('bouwtekeningen', 'vorm', 'Beschikbaar gesteld als', [['fysiek', 'Fysiek'], ['digitaal', 'Digitaal']]),
+        h('div', { class: 'portal-grid-form' }, inp('bouwtekeningen', 'jaartal', 'Bouwtekeningen (jaartal)', { max: 8, placeholder: 'jaartal of N.V.T.' }), inp('bouwtekeningen', 'fundering', 'Soort fundering')),
+        fotoVak('bouwtekening', 1, 'Afbeelding bouwtekening'),
+      ],
+      bodem: () => [
+        h('h2', { class: 'portal-h2', text: 'F. Archief – bodemdalingskaart' }),
+        vinkje('bodem', 'niet_beschikbaar', 'Er zijn geen bodemdalingsgegevens beschikbaar'),
+        inp('bodem', 'motivatie', 'Toelichting (alleen bij niet beschikbaar)', { max: 400 }),
+        h('div', { class: 'portal-grid-form' }, inp('bodem', 'mm_per_jaar', 'Bodemdaling (mm per jaar)', { max: 8, inputmode: 'decimal' }), inp('bodem', 'typering', 'Typering', { hint: 'Rapporttekst: tot 2 mm/jaar klein, meer dan 3 mm/jaar groot. Voor 2–3 mm geeft de tekst geen typering: beoordeel zelf.' }),
+          inp('bodem', 'bron', 'Bron van de gegevens (intern)', { max: 200 }), inp('bodem', 'peildatum', 'Datum van de gegevens (intern)', { type: 'date' })),
+        h('p', { class: 'portal-hint', text: 'Bron en datum worden bij het dossier bewaard; ze staan niet in het rapportsjabloon. Vul alleen gegevens in die echt bij dit object horen.' }),
+        fotoVak('bodemdaling', 1, 'Afbeelding bodemdalingskaart'),
+      ],
+      omgeving: () => [
+        h('h2', { class: 'portal-h2', text: 'G. Omgevingsfactoren' }),
+        h('p', { class: 'portal-label', text: 'Bevinding 1' }),
+        inp('omgeving', 'resultaat', 'Resultaat / conclusie', { textarea: true, rows: 4, max: 2000 }),
+        fotoVak('omgeving', 1, 'Afbeelding omgevingsfactoren'),
+      ],
+      lintvoeg: () => [
+        h('h2', { class: 'portal-h2', text: 'H. Lintvoegmeting' }),
+        vinkje('lintvoeg', 'nvt', 'Niet uitgevoerd / niet van toepassing'), inp('lintvoeg', 'nvt_motivatie', 'Motivatie (alleen bij niet van toepassing)', { max: 400 }),
+        inp('lintvoeg', 'meetpunten', 'Meetpunten (locaties)', { placeholder: 'gevel(s) waar gemeten is', max: 300 }),
+        meettabel('lintvoeg', 3),
+        h('div', { class: 'portal-foto-rij' }, [1, 2, 3, 4].map((n) => fotoVak('lintvoeg', n, `Foto ${n}`))),
+      ],
+      schietlood: () => [
+        h('h2', { class: 'portal-h2', text: 'I. Schietloodmeting' }),
+        vinkje('schietlood', 'nvt', 'Niet uitgevoerd / niet van toepassing'), inp('schietlood', 'nvt_motivatie', 'Motivatie (alleen bij niet van toepassing)', { max: 400 }),
+        inp('schietlood', 'meetpunten', 'Meetpunten (locaties)', { placeholder: 'gevel waarop gemeten is', max: 300 }),
+        meettabel('schietlood', 1),
+        fotoVak('schietlood', 1, 'Foto schietloodmeting'),
+      ],
+      afronden: () => afronden(),
+    };
+    let bevestig = { checked: false };
+
+    function afronden() {
+      const ctl = h('div');
+      const fout = controle.fouten || []; const aand = controle.aandacht || [];
+      ctl.append(fout.length
+        ? h('div', { class: 'portal-note portal-note-warn' }, h('strong', { text: `Nog ${fout.length} ${fout.length === 1 ? 'punt' : 'punten'} in te vullen voordat het rapport definitief kan worden:` }),
+          h('ul', {}, fout.map((f) => h('li', {}, h('a', { href: `#/rapporten/${r.id}/${f.stap}`, text: STAPPEN.find(([k]) => k === f.stap)?.[1] || f.stap }), `: ${f.melding}`))))
+        : h('p', { class: 'portal-flash portal-flash-ok', text: 'Alle verplichte onderdelen zijn ingevuld.' }));
+      if (aand.length) ctl.append(h('div', { class: 'portal-note' }, h('strong', { text: 'Aandachtspunten voor inhoudelijke controle (blokkeren niet):' }), h('ul', {}, aand.map((a) => h('li', { text: a.melding })))));
+      const amsg = flashEl();
+      const download = async (versie) => { try { const x = await api('rapport-word', { params: { id: r.id, ...(versie ? { versie } : {}) } }); window.location.assign(x.url); } catch (err) { flash(amsg, err.message, 'error'); } };
+      const acties = h('div', { class: 'portal-actions' },
+        h('a', { class: 'btn btn-ghost-dark', href: `${API}?actie=rapport-voorbeeld&id=${encodeURIComponent(r.id)}`, target: '_blank', rel: 'noopener', text: 'Voorbeeld rapport bekijken' }),
+        kanBewerken ? h('button', { type: 'button', class: 'btn btn-ghost-dark', text: 'Download Word (concept)', onclick: async () => { await opslaan(); download(); } }) : null,
+        kanBewerken ? h('button', { type: 'button', class: 'btn btn-gold', text: 'Definitief maken', disabled: !!fout.length || !d.mag_afronden, title: !d.mag_afronden ? 'Alleen de gekozen adviseur of een beheerder' : null, onclick: async (e) => {
+          if (!(await opslaan())) return;
+          const keus = data.conclusie.risico;
+          if (!window.confirm(`Rapport ${r.report_nr} definitief maken met uitkomst "${RISICO[keus] || '?'}"?\n\nDaarna kun je het niet meer wijzigen zonder een nieuwe versie te starten.`)) return;
+          busy(e.target, true);
+          try { await api('rapport-definitief', { method: 'POST', body: { id: r.id, bevestig_risico: keus } }); dirty = false; await editReport(r.id, 'afronden'); }
+          catch (err) { flash(amsg, err.message, 'error'); busy(e.target, false); }
+        } }) : null);
+      if (kanBewerken && !d.mag_afronden) ctl.append(h('p', { class: 'portal-hint', text: 'Definitief maken, PDF vastleggen en versturen kan alleen de gekozen adviseur (met gekoppeld account) of een beheerder.' }));
+
+      // versies, PDF en versturen
+      const versies = h('section', { class: 'portal-card' }, h('h2', { class: 'portal-h2', text: 'Definitieve versies' }));
+      if (!d.versions.length) versies.append(h('p', { class: 'portal-muted', text: 'Nog geen definitieve versie.' }));
+      d.versions.forEach((v) => {
+        const huidig = v.version === r.version && !kanBewerken;
+        const pdfIn = h('input', { type: 'file', accept: 'application/pdf', id: `pdf-${v.version}` });
+        const vmsg = flashEl();
+        pdfIn.addEventListener('change', async () => {
+          const f = pdfIn.files[0]; if (!f) return;
+          if (f.type !== 'application/pdf') { flash(vmsg, 'Kies een PDF-bestand.', 'error'); return; }
+          flash(vmsg, 'PDF wordt geüpload…');
+          try {
+            const u = await api('rapport-pdf-upload', { method: 'POST', body: { id: r.id, type: f.type, grootte: f.size } });
+            const put = await fetch(u.upload_url, { method: 'PUT', headers: { 'Content-Type': 'application/pdf', 'x-upsert': 'false' }, body: f });
+            if (!put.ok) throw new Error('Uploaden is mislukt.');
+            await api('rapport-pdf-bevestig', { method: 'POST', body: { id: r.id, pad: u.pad } });
+            await editReport(r.id, 'afronden');
+          } catch (err) { flash(vmsg, err.message, 'error'); }
+        });
+        const email = h('input', { type: 'email', id: `mail-${v.version}`, value: data.algemeen?.opdrachtgever_email || d.aanvraag?.email || '' });
+        const email2 = h('input', { type: 'email', id: `mail2-${v.version}`, autocomplete: 'off' });
+        const koppel = h('input', { type: 'checkbox', id: `koppel-${v.version}`, checked: !!d.aanvraag });
+        const stuur = h('button', { type: 'button', class: 'btn btn-gold', text: v.sent_at ? 'Opnieuw versturen' : 'Rapport naar klant versturen', onclick: async () => {
+          if (!window.confirm(`Rapport ${r.report_nr} (versie ${v.version}) versturen naar ${email.value}?`)) return;
+          busy(stuur, true);
+          try {
+            await api('rapport-versturen', { method: 'POST', body: { id: r.id, email: email.value, bevestig_email: email2.value, koppel_tracking: koppel.checked, opnieuw: !!v.sent_at } });
+            await editReport(r.id, 'afronden');
+          } catch (err) { flash(vmsg, err.message, 'error'); busy(stuur, false); }
+        } });
+        versies.append(h('div', { class: 'portal-versie' },
+          h('p', {}, h('strong', { text: `Versie ${v.version}` }), ' ', riskBadge(v.risk), h('span', { class: 'portal-muted', text: ` · definitief ${fmt(v.finalized_at)}${v.finalizer?.name ? ` door ${v.finalizer.name}` : ''} · sjabloon ${v.template_version}` })),
+          v.sent_at ? h('p', { class: 'portal-muted', text: `Verstuurd op ${fmt(v.sent_at)} naar ${v.sent_to}${v.sender?.name ? ` door ${v.sender.name}` : ''}.` }) : null,
+          h('div', { class: 'portal-actions' },
+            h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: 'Download Word', onclick: () => download(v.version) }),
+            h('a', { class: 'btn btn-ghost-dark btn-sm', href: `${API}?actie=rapport-voorbeeld&id=${encodeURIComponent(r.id)}&versie=${v.version}`, target: '_blank', rel: 'noopener', text: 'Voorbeeld' }),
+            v.pdf_path ? h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: 'Download PDF', onclick: async () => { try { const x = await api('rapport-pdf-bekijken', { method: 'POST', body: { id: r.id, versie: v.version } }); window.location.assign(x.url); } catch (err) { flash(vmsg, err.message, 'error'); } } }) : null),
+          huidig && d.mag_afronden && !v.sent_at ? h('div', { class: 'portal-field' },
+            h('p', { class: 'portal-label', text: v.pdf_path ? `PDF geüpload op ${fmt(v.pdf_uploaded_at)}. Ander PDF-bestand uploaden:` : 'PDF uploaden' }),
+            h('p', { class: 'portal-hint', text: 'Open het Word-bestand van deze versie in Word, controleer het en kies Bestand → Opslaan als → PDF. Upload die PDF hier.' }),
+            pdfIn) : null,
+          huidig && d.mag_afronden && v.pdf_path ? h('div', { class: 'portal-send' },
+            h('p', { class: 'portal-label', text: 'Versturen naar de klant' }),
+            h('div', { class: 'portal-grid-form' }, field('E-mailadres ontvanger', email), field('Typ het e-mailadres nogmaals ter controle', email2)),
+            d.aanvraag ? h('div', { class: 'portal-check' }, koppel, h('label', { for: koppel.id, text: `Rapport ook beschikbaar maken op de trackingpagina van aanvraag ${d.aanvraag.dossier_nr} en de status op "Rapport afgerond" zetten` })) : null,
+            stuur) : null,
+          vmsg));
+      });
+      if (!kanBewerken && d.mag_afronden) versies.append(h('div', { class: 'portal-actions' }, h('button', { type: 'button', class: 'btn btn-ghost-dark', text: 'Nieuwe versie starten', onclick: async () => {
+        if (!window.confirm('Een nieuwe versie starten? De huidige definitieve versie blijft bewaard en ongewijzigd.')) return;
+        try { await api('rapport-nieuwe-versie', { method: 'POST', body: { id: r.id } }); await editReport(r.id, 'voorblad'); } catch (err) { flash(amsg, err.message, 'error'); }
+      } })));
+      const mails = d.emails.length ? h('section', { class: 'portal-card' }, h('h2', { class: 'portal-h2', text: 'Verzendhistorie' }), h('ul', { class: 'portal-list' }, d.emails.map((m) => h('li', { text: `${m.kind}: ${m.status === 'verzonden' ? 'verzonden (door de e-maildienst geaccepteerd)' : m.status} · ${fmt(m.updated_at || m.created_at)}${m.error ? ` · ${m.error}` : ''}` })))) : null;
+      const del = me.role === 'beheerder' ? h('section', { class: 'portal-card portal-danger' }, h('h2', { class: 'portal-h2', text: 'Rapport verwijderen' }),
+        h('p', { text: 'Verwijdert het rapport, alle versies, foto\'s en bestanden definitief.' }),
+        h('button', { type: 'button', class: 'btn btn-danger', text: 'Definitief verwijderen', onclick: async () => {
+          const ans = window.prompt(`Typ ter bevestiging het rapportnummer (${r.report_nr}):`); if (ans === null) return;
+          try { await api('rapport-verwijderen', { method: 'POST', body: { id: r.id, bevestig: ans.trim() } }); dirty = false; location.hash = '#/rapporten'; } catch (err) { flash(amsg, err.message, 'error'); }
+        } })) : null;
+      return [h('h2', { class: 'portal-h2', text: 'Uitkomst en afronden' }),
+        data.conclusie?.risico ? h('p', {}, 'Uitkomst Fase 0: ', riskBadge(data.conclusie.risico), data.conclusie.risico_bevestigd ? ' (bevestigd)' : ' (nog niet bevestigd)') : h('p', { class: 'portal-muted', text: 'Nog geen risicocategorie gekozen (stap D. Conclusie).' }),
+        ctl, acties, amsg, versies, mails, del];
+    }
+
+    // --- opbouw scherm
+    const nav = h('ol', { class: 'portal-steps' });
+    function updateNav() {
+      nav.textContent = '';
+      STAPPEN.forEach(([k, l], i) => {
+        const open = (controle.fouten || []).filter((f) => f.stap === k).length;
+        nav.append(h('li', { class: `${k === stap ? 'is-current' : ''} ${k === 'afronden' ? '' : open ? 'is-open' : 'is-done'}` },
+          h('a', { href: `#/rapporten/${r.id}/${k}`, 'aria-current': k === stap ? 'step' : null },
+            h('span', { class: 'portal-step-num', 'aria-hidden': 'true', text: k === 'afronden' ? '✓' : String(i) }), l,
+            k !== 'afronden' ? h('span', { class: 'sr-only', text: open ? ` (nog ${open} open)` : ' (ingevuld)' }) : null,
+            k !== 'afronden' && open ? h('span', { class: 'portal-step-open', 'aria-hidden': 'true', text: String(open) }) : null)));
+      });
+    }
+    updateNav();
+    const idx = STAPPEN.findIndex(([k]) => k === stap);
+    const inhoud = STAP[stap]();
+    const naar = (i) => { location.hash = `#/rapporten/${r.id}/${STAPPEN[i][0]}`; };
+    render(
+      h('div', { class: 'portal-toolbar' },
+        h('div', {}, h('h1', { class: 'portal-h1', text: `Rapport ${r.report_nr}` }), h('p', { class: 'portal-muted', text: `Versie ${r.version} · ${RSTATUS[r.status]}${r.risk ? ` · ${RISICO[r.risk]}` : ''}` })),
+        h('div', { class: 'portal-actions' }, saveState, kanBewerken ? h('button', { type: 'button', class: 'btn btn-gold', text: 'Opslaan', onclick: () => opslaan() }) : null)),
+      h('p', {}, h('a', { href: '#/rapporten', text: '← Alle rapporten' })),
+      !kanBewerken ? h('p', { class: 'portal-note' }, `Dit rapport is ${RSTATUS[r.status].toLowerCase()} en kan niet meer worden gewijzigd. Start een nieuwe versie (bij "Uitkomst en afronden") om aanpassingen te doen; de definitieve versie blijft bewaard.`) : null,
+      msg,
+      h('div', { class: 'portal-rapport' },
+        h('nav', { class: 'portal-card portal-steps-wrap', 'aria-label': 'Hoofdstukken' }, nav),
+        h('div', { class: 'portal-card portal-rapport-main' }, ...inhoud.flat().filter(Boolean),
+          h('div', { class: 'portal-actions portal-stepnav' },
+            idx > 0 ? h('button', { type: 'button', class: 'btn btn-ghost-dark', text: `← ${STAPPEN[idx - 1][1]}`, onclick: () => naar(idx - 1) }) : null,
+            idx < STAPPEN.length - 1 ? h('button', { type: 'button', class: 'btn btn-gold', text: `${STAPPEN[idx + 1][1]} →`, onclick: () => naar(idx + 1) }) : null))),
+    );
+    if (stap === 'conclusie') bevestig = document.getElementById('v-conclusie-risico_bevestigd') || bevestig;
+  }
+
+  async function advisorsPage() {
+    if (me.role !== 'beheerder') { render(h('div', { class: 'portal-card' }, h('p', { text: 'Alleen een beheerder kan adviseurs beheren.' }))); return; }
+    const [d, u] = await Promise.all([api('rapport-adviseurs'), api('rapport-gebruikers')]);
+    const msg = flashEl();
+    const rij = (a = {}) => {
+      const naam = h('input', { type: 'text', value: a.name || '', 'aria-label': 'Naam adviseur', maxlength: 120 });
+      const cert = h('input', { type: 'text', value: a.certificate || '', 'aria-label': 'Certificaatnummer', maxlength: 60 });
+      const acc = h('select', { 'aria-label': 'Gekoppeld account' }, h('option', { value: '', text: '– geen –' }), u.items.map((x) => h('option', { value: x.id, text: `${x.name} (${x.email})` })));
+      acc.value = a.user_id || '';
+      const actief = h('input', { type: 'checkbox', checked: a.active !== false, 'aria-label': 'Actief' });
+      return h('tr', {}, h('td', {}, naam), h('td', {}, cert), h('td', {}, acc), h('td', {}, actief),
+        h('td', {}, h('button', { type: 'button', class: 'btn btn-gold btn-sm', text: a.id ? 'Opslaan' : 'Toevoegen', onclick: async () => {
+          if (a.id && (cert.value !== a.certificate || naam.value !== a.name) && !window.confirm('Naam of certificaatnummer wijzigen? Dit wordt gebruikt in nieuwe rapporten.')) return;
+          try { await api('rapport-adviseur-opslaan', { method: 'POST', body: { id: a.id, name: naam.value, certificate: cert.value, user_id: acc.value || null, active: actief.checked } }); await advisorsPage(); }
+          catch (err) { flash(msg, err.message, 'error'); }
+        } })));
+    };
+    render(h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'Adviseurs en certificaatnummers' })),
+      h('p', {}, h('a', { href: '#/rapporten', text: '← Rapporten' })),
+      h('div', { class: 'portal-card' },
+        h('p', { class: 'portal-hint', text: 'Het certificaatnummer wordt automatisch in het rapport gezet bij de gekozen adviseur. Koppel een adviseur aan een account: dat account mag rapporten van deze adviseur definitief maken en versturen.' }),
+        msg, h('div', { class: 'portal-table-wrap' }, h('table', { class: 'portal-table' }, h('thead', {}, h('tr', {}, ['Naam', 'Certificaatnummer', 'Gekoppeld account', 'Actief', ''].map((t) => h('th', { scope: 'col', text: t })))),
+          h('tbody', {}, d.items.map((a) => rij(a)), rij())))));
   }
 
   // ---------------------------------------------------------------- aanvragen

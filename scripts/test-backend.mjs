@@ -345,6 +345,186 @@ test('statusbeheer: wijziging zichtbaar voor klant, interne notitie niet, link o
 });
 
 // ---------------------------------------------------------------- statische pagina's
+// ---------------------------------------------------------------- QuickScan-rapporten
+const { crc32, readZip } = await import('../api/_lib/zip.js');
+const { deflateSync } = await import('node:zlib');
+function testPng(w = 80, hgt = 60) {
+  const chunk = (type, data) => { const len = Buffer.alloc(4); len.writeUInt32BE(data.length); const td = Buffer.concat([Buffer.from(type), data]); const c = Buffer.alloc(4); c.writeUInt32BE(crc32(td)); return Buffer.concat([len, td, c]); };
+  const ihdr = Buffer.alloc(13); ihdr.writeUInt32BE(w, 0); ihdr.writeUInt32BE(hgt, 4); ihdr[8] = 8; ihdr[9] = 2;
+  const raw = Buffer.alloc((w * 3 + 1) * hgt, 0x80); for (let y = 0; y < hgt; y++) raw[y * (w * 3 + 1)] = 0;
+  return Buffer.concat([Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]), chunk('IHDR', ihdr), chunk('IDAT', deflateSync(raw)), chunk('IEND', Buffer.alloc(0))]);
+}
+const FOTOVAKKEN = [['voorblad', 1], ['conclusie', 1], ['bouwtekening', 1], ['bodemdaling', 1], ['omgeving', 1], ['lintvoeg', 1]];
+const volledig = () => ({
+  voorblad: { object_straat: 'Voorbeeldstraat 1', object_postcode: '8911 AA', object_plaats: 'Leeuwarden', uitgebracht_op: '2026-10-20' },
+  algemeen: { inspectie_datum: '2026-10-15', inspectie_tijd: '10:30', opdrachtgever_naam: 'Testpersoon', opdrachtgever_straat: 'Teststraat 2', opdrachtgever_postcode: '8911 AB', opdrachtgever_plaats: 'Leeuwarden', opdrachtgever_email: 'klant@example.com' },
+  object: { type: 'tussenwoning', bouwjaar: '1930', weertype: 'droog', temperatuur: '12', luchtvochtigheid: '70' },
+  vraagstelling: { reden: 'verkoop', bestemming: 'woonfunctie' },
+  conclusie: { risico: 'midden', risico_bevestigd: true, advies: 'Testadvies voor dit fictieve testrapport.', opmaak_plaats: 'Leeuwarden', opmaak_datum: '2026-10-20' },
+  bouwtekeningen: { ontvangen: 'ja', vorm: 'digitaal', jaartal: '1930', fundering: 'testfundering' },
+  bodem: { mm_per_jaar: '1', typering: 'klein' },
+  omgeving: { resultaat: 'Testresultaat omgeving.' },
+  lintvoeg: { meetpunten: 'voorgevel', rijen: [{ omschrijving: 'meting 1', meting: '5', afstand: '2000', typering: 'Klein' }] },
+  schietlood: { nvt: true, nvt_motivatie: 'Niet uitgevoerd in deze test.' },
+});
+async function fotosToevoegen(s, id) {
+  for (const [slot, position] of FOTOVAKKEN) {
+    const f = await admin(s, 'rapport-foto', { method: 'POST', body: { id, slot, position, data: testPng().toString('base64') } });
+    assert.equal(f.status, 200, f.body);
+  }
+}
+async function rapportKlaar(s) {
+  const adv = (await admin(s, 'rapport-adviseurs')).json.items.sort((a, b) => a.name.localeCompare(b.name));
+  const nieuw = await admin(s, 'rapport-nieuw', { method: 'POST', body: {} });
+  assert.equal(nieuw.status, 200, nieuw.body);
+  const id = nieuw.json.id;
+  const opslaan = await admin(s, 'rapport-opslaan', { method: 'POST', body: { id, data: volledig(), advisor_id: adv[0].id, status: 'in_uitvoering' } });
+  assert.equal(opslaan.status, 200, opslaan.body);
+  await fotosToevoegen(s, id);
+  return { id, nr: nieuw.json.report_nr, adv };
+}
+
+test('rapporten: vaste adviseurs, uniek rapportnummer, alleen bekende velden, controle blokkeert onvolledig rapport', async () => {
+  await newUser('beheerder'); const s = await loginAs('beheerder@test.nl');
+  const adv = (await admin(s, 'rapport-adviseurs')).json.items;
+  assert.deepEqual(adv.map((a) => [a.name, a.certificate]).sort(), [['Melvin Krikke', 'CE240260817-02'], ['Rutger Fopma', 'CE240260817-03']]);
+  const a = await admin(s, 'rapport-nieuw', { method: 'POST', body: {} });
+  const b = await admin(s, 'rapport-nieuw', { method: 'POST', body: {} });
+  assert.match(a.json.report_nr, /^QS-\d{4}-\d{4}$/);
+  assert.notEqual(a.json.report_nr, b.json.report_nr);
+  const o = await admin(s, 'rapport-opslaan', { method: 'POST', body: { id: a.json.id, data: { voorblad: { object_straat: 'x'.repeat(500), onbekend: 'weg' }, extra: { a: 1 }, conclusie: { risico: 'zeerhoog' } } } });
+  assert.equal(o.status, 200);
+  assert.equal(o.json.report.data.voorblad.object_straat.length, 120);
+  assert.equal(o.json.report.data.voorblad.onbekend, undefined);
+  assert.equal(o.json.report.data.extra, undefined);
+  assert.equal(o.json.report.data.conclusie.risico, '', 'geen onbekende risicocategorie');
+  assert.ok(o.json.controle.fouten.some((f) => f.stap === 'conclusie' && f.veld === 'risico'));
+  assert.equal((await admin(s, 'rapport-definitief', { method: 'POST', body: { id: a.json.id, bevestig_risico: '' } })).status, 422);
+  // foto: alleen echte afbeeldingen in bestaande fotovakken
+  assert.equal((await admin(s, 'rapport-foto', { method: 'POST', body: { id: a.json.id, slot: 'voorblad', position: 1, data: Buffer.from('<script>').toString('base64') } })).status, 422);
+  assert.equal((await admin(s, 'rapport-foto', { method: 'POST', body: { id: a.json.id, slot: 'onbekend', position: 1, data: testPng().toString('base64') } })).status, 422);
+  assert.equal((await admin(s, 'rapport-foto', { method: 'POST', body: { id: a.json.id, slot: 'lintvoeg', position: 5, data: testPng().toString('base64') } })).status, 422);
+  // zoeken op rapportnummer
+  const lijst = await admin(s, 'rapporten', { query: `&q=${encodeURIComponent(a.json.report_nr)}` });
+  assert.deepEqual(lijst.json.items.map((x) => x.report_nr), [a.json.report_nr]);
+  // onbekend id
+  assert.equal((await admin(s, 'rapport', { query: '&id=00000000-0000-4000-8000-000000000000' })).status, 404);
+});
+
+test('rapporten: risicocategorie komt alleen van de adviseur en moet worden bevestigd; Word volgt het sjabloon', async () => {
+  await newUser('beheerder'); const s = await loginAs('beheerder@test.nl');
+  const db = getDb();
+  const { id, nr } = await rapportKlaar(s);
+  let d = await admin(s, 'rapport', { query: `&id=${id}` });
+  assert.deepEqual(d.json.controle.fouten, [], JSON.stringify(d.json.controle.fouten));
+  assert.equal((await admin(s, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'laag' } })).status, 422, 'andere categorie dan gekozen');
+  const data = volledig(); data.conclusie.risico_bevestigd = false;
+  await admin(s, 'rapport-opslaan', { method: 'POST', body: { id, data } });
+  assert.equal((await admin(s, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } })).status, 422, 'onbevestigd risico blokkeert');
+  await admin(s, 'rapport-opslaan', { method: 'POST', body: { id, data: volledig() } });
+  const w = await admin(s, 'rapport-word', { query: `&id=${id}` });
+  assert.equal(w.status, 200, w.body);
+  assert.match(w.json.url, /verloopt=/);
+  const def = await admin(s, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } });
+  assert.equal(def.status, 200, def.body);
+  d = await admin(s, 'rapport', { query: `&id=${id}` });
+  assert.equal(d.json.report.status, 'definitief');
+  assert.equal(d.json.report.risk, 'midden');
+  assert.equal(d.json.bewerkbaar, false);
+  const docx = readZip(await db.getObject('rapport-bestanden', d.json.versions[0].docx_path));
+  const xml = [...docx.entries()].filter(([k]) => /^word\/(document|footer\d*)\.xml$/.test(k)).map(([, v]) => v.toString('utf8')).join('');
+  assert.ok(!xml.includes('{{'), 'geen open sjabloonvelden');
+  for (const t of ['Melvin Krikke', 'CE240260817-02', 'Voorbeeldstraat 1', nr, 'Midea Vastgoed Adviseurs', 'Testadvies voor dit fictieve testrapport.']) assert.ok(xml.includes(t), `ontbreekt: ${t}`);
+  assert.ok(xml.includes('mvfs-pijl'), 'pijl op het voorblad');
+  // definitief = niet meer te wijzigen
+  assert.equal((await admin(s, 'rapport-opslaan', { method: 'POST', body: { id, data: volledig() } })).status, 409);
+  assert.equal((await admin(s, 'rapport-foto', { method: 'POST', body: { id, slot: 'voorblad', position: 1, data: testPng().toString('base64') } })).status, 409);
+  const vb = await admin(s, 'rapport-voorbeeld', { query: `&id=${id}&versie=1` });
+  assert.equal(vb.status, 200);
+  assert.ok(vb.body.includes('Melvin Krikke'));
+  assert.ok(vb.headers['content-security-policy'].includes("default-src 'none'"));
+});
+
+test('rapporten: definitief maken alleen door gekoppelde adviseur of beheerder; adviseurs alleen door beheerder', async () => {
+  await newUser('beheerder'); await newUser('medewerker'); await newUser('medewerker', 'melvin@test.nl');
+  const s = await loginAs('beheerder@test.nl'); const m = await loginAs('medewerker@test.nl'); const mk = await loginAs('melvin@test.nl');
+  const { id, adv } = await rapportKlaar(m);
+  assert.equal((await admin(m, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } })).status, 403);
+  assert.equal((await admin(m, 'rapport-adviseur-opslaan', { method: 'POST', body: { id: adv[0].id, name: 'X', certificate: 'Y-123' } })).status, 403);
+  assert.equal((await admin(m, 'rapport-gebruikers')).status, 403);
+  const users = (await admin(s, 'rapport-gebruikers')).json.items;
+  const melvinUser = users.find((u) => u.email === 'melvin@test.nl');
+  assert.ok(melvinUser && !('password_hash' in melvinUser));
+  assert.equal((await admin(s, 'rapport-adviseur-opslaan', { method: 'POST', body: { id: adv[0].id, name: adv[0].name, certificate: adv[0].certificate, user_id: melvinUser.id } })).status, 200);
+  assert.equal((await admin(m, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } })).status, 403, 'andere medewerker nog steeds niet');
+  assert.equal((await admin(mk, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } })).status, 200);
+  assert.equal((await admin(m, 'rapport-verwijderen', { method: 'POST', body: { id, bevestig: 'x' } })).status, 403);
+});
+
+test('rapporten: PDF vastleggen, versturen met adrescontrole, geen dubbele verzending, nieuwe versie overschrijft niets, uitkomst op trackingpagina', async () => {
+  await newUser('beheerder'); const s = await loginAs('beheerder@test.nl');
+  const db = getDb();
+  await call(aanvraag, { method: 'POST', url: '/api/aanvraag/', body: { form: 'aanvraag', fields: formFields() } });
+  const token = tokenFromMail(mails.find((m) => m.to[0] === 'jan@example.com')); const req = db._data.requests[0];
+  const nieuw = await admin(s, 'rapport-nieuw', { method: 'POST', body: { request_id: req.id } });
+  const id = nieuw.json.id;
+  let d = await admin(s, 'rapport', { query: `&id=${id}` });
+  assert.equal(d.json.report.data.algemeen.opdrachtgever_naam, 'Jan de Vries', 'gegevens uit de aanvraag overgenomen');
+  assert.equal(d.json.aanvraag.dossier_nr, req.dossier_nr);
+  await admin(s, 'rapport-opslaan', { method: 'POST', body: { id, data: volledig(), advisor_id: d.json.advisors[0].id } });
+  await fotosToevoegen(s, id);
+  const view = () => call(status, { method: 'POST', url: '/api/status/', body: { token } });
+  assert.equal((await view()).json.uitkomst, null, 'geen uitkomst zolang het rapport niet definitief is');
+  assert.equal((await admin(s, 'rapport-versturen', { method: 'POST', body: { id, email: 'klant@example.com', bevestig_email: 'klant@example.com' } })).status, 409);
+  assert.equal((await admin(s, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } })).status, 200);
+  assert.equal((await view()).json.uitkomst, 'midden', 'uitkomst zichtbaar na definitief');
+  assert.equal((await admin(s, 'rapport-versturen', { method: 'POST', body: { id, email: 'klant@example.com', bevestig_email: 'klant@example.com' } })).status, 422, 'eerst PDF');
+  // PDF: alleen echte PDF, alleen het eigen pad
+  assert.equal((await admin(s, 'rapport-pdf-upload', { method: 'POST', body: { id, type: 'image/png', grootte: 10 } })).status, 422);
+  const up = await admin(s, 'rapport-pdf-upload', { method: 'POST', body: { id, type: 'application/pdf', grootte: 20 } });
+  assert.equal(up.status, 200);
+  await db.putObject('rapport-bestanden', up.json.pad, Buffer.from('geen pdf'));
+  assert.equal((await admin(s, 'rapport-pdf-bevestig', { method: 'POST', body: { id, pad: up.json.pad } })).status, 422);
+  const up2 = await admin(s, 'rapport-pdf-upload', { method: 'POST', body: { id, type: 'application/pdf', grootte: 20 } });
+  await db.putObject('rapport-bestanden', up2.json.pad, Buffer.from('%PDF-1.7 test'));
+  assert.equal((await admin(s, 'rapport-pdf-bevestig', { method: 'POST', body: { id, pad: '../rapporten/x.pdf' } })).status, 422);
+  assert.equal((await admin(s, 'rapport-pdf-bevestig', { method: 'POST', body: { id, pad: up2.json.pad } })).status, 200);
+  // versturen: e-mailadres twee keer gelijk
+  mails = [];
+  assert.equal((await admin(s, 'rapport-versturen', { method: 'POST', body: { id, email: 'klant@example.com', bevestig_email: 'klant@exampel.com' } })).status, 422);
+  assert.equal(mails.length, 0);
+  const send = await admin(s, 'rapport-versturen', { method: 'POST', body: { id, email: 'klant@example.com', bevestig_email: 'KLANT@example.com', koppel_tracking: true } });
+  assert.equal(send.status, 200, send.body);
+  assert.equal(mails.length, 1);
+  assert.deepEqual(mails[0].to, ['klant@example.com']);
+  assert.equal(Buffer.from(mails[0].attachments[0].content, 'base64').toString(), '%PDF-1.7 test');
+  // dubbel versturen geblokkeerd, tenzij bewust opnieuw
+  assert.equal((await admin(s, 'rapport-versturen', { method: 'POST', body: { id, email: 'klant@example.com', bevestig_email: 'klant@example.com' } })).status, 409);
+  assert.equal(mails.length, 1);
+  assert.equal((await admin(s, 'rapport-pdf-upload', { method: 'POST', body: { id, type: 'application/pdf', grootte: 20 } })).status, 409, 'verzonden PDF niet vervangen');
+  const v = await view();
+  assert.equal(v.json.status, 'afgerond');
+  assert.equal(v.json.report.available, true);
+  d = await admin(s, 'rapport', { query: `&id=${id}` });
+  assert.equal(d.json.report.status, 'verzonden');
+  assert.deepEqual(d.json.emails.map((e) => [e.kind, e.status]), [['rapport_v1', 'verzonden']]);
+  assert.equal(d.json.versions[0].sent_to, 'klant@example.com');
+  // nieuwe versie: versie 1 blijft ongewijzigd bewaard
+  const v1Docx = await db.getObject('rapport-bestanden', d.json.versions[0].docx_path);
+  assert.equal((await admin(s, 'rapport-nieuwe-versie', { method: 'POST', body: { id } })).status, 200);
+  const data2 = volledig(); data2.conclusie.risico = 'hoog';
+  await admin(s, 'rapport-opslaan', { method: 'POST', body: { id, data: data2 } });
+  assert.equal((await admin(s, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'hoog' } })).status, 200);
+  d = await admin(s, 'rapport', { query: `&id=${id}` });
+  assert.deepEqual(d.json.versions.map((x) => [x.version, x.risk]), [[2, 'hoog'], [1, 'midden']]);
+  assert.ok((await db.getObject('rapport-bestanden', d.json.versions[1].docx_path)).equals(v1Docx), 'versie 1 ongewijzigd');
+  assert.equal((await view()).json.uitkomst, 'hoog');
+  // verwijderen met rapportnummer als bevestiging
+  assert.equal((await admin(s, 'rapport-verwijderen', { method: 'POST', body: { id, bevestig: 'fout' } })).status, 422);
+  assert.equal((await admin(s, 'rapport-verwijderen', { method: 'POST', body: { id, bevestig: nieuw.json.report_nr } })).status, 200);
+  assert.equal((await admin(s, 'rapport', { query: `&id=${id}` })).status, 404);
+});
+
 test('trackingpagina en beheer: noindex, geen externe scripts, niet in de sitemap', () => {
   const dist = join(import.meta.dirname, '..', 'dist');
   for (const p of ['status', 'beheer']) {

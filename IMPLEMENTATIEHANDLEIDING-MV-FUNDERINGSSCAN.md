@@ -20,7 +20,8 @@ Deze handleiding beschrijft wat er nodig is om het beheerportaal, de nieuwspagin
    - de functies `mvfs_register_request` en `mvfs_set_status`;
    - de opslagbuckets `nieuws` (openbaar, alleen afbeeldingen) en `rapporten` (**privé**, alleen PDF).
 3. Controleer onder **Table Editor** dat bij alle `mvfs_`-tabellen RLS aan staat. Er horen geen policies te zijn: de publieke sleutel kan dan niets lezen of schrijven.
-4. Kopieer onder **Project Settings → API** de *Project URL* en de geheime server-sleutel (*service_role*, of een *secret key* `sb_secret_…`). **Deel die sleutel nooit en zet hem nooit in de browser of in Git.**
+4. **QuickScan-rapporten:** voer daarna ook `supabase/migrations/002_mvfs_rapporten.sql` uit (SQL Editor → Run). Dit voegt de rapporttabellen, de vaste adviseurs met certificaatnummer en de privé-bucket `rapport-bestanden` toe. Zie `HANDLEIDING-QUICKSCAN-RAPPORTAGE.md`.
+5. Kopieer onder **Project Settings → API** de *Project URL* en de geheime server-sleutel (*service_role*, of een *secret key* `sb_secret_…`). **Deel die sleutel nooit en zet hem nooit in de browser of in Git.**
 
 ## 3. Omgevingsvariabelen in Vercel
 

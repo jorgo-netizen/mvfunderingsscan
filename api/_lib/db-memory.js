@@ -17,8 +17,9 @@ export function memoryDb() {
   const STORE_DIR = resolve(process.env.MVFS_DEV_STORAGE || 'tmp/dev-storage');
   const key = `__mvfsMemoryDb:${FILE}`;
   if (!globalThis[key]) {
-    let data = { users: [], sessions: [], attempts: [], news: [], requests: [], history: [], notes: [], emails: [], seq: 0, ids: 0 };
+    let data = { users: [], sessions: [], attempts: [], news: [], requests: [], history: [], notes: [], emails: [], advisors: [], reports: [], reportImages: [], versions: [], seq: 0, reportSeq: 0, ids: 0 };
     if (FILE && existsSync(FILE)) data = { ...data, ...JSON.parse(readFileSync(FILE, 'utf8')) };
+    if (!data.advisors.length) data.advisors = [['Melvin Krikke', 'CE240260817-02'], ['Rutger Fopma', 'CE240260817-03']].map(([name, certificate]) => ({ id: randomUUID(), name, certificate, user_id: null, active: true, created_at: now(), updated_at: now() }));
     globalThis[key] = data;
   }
   const D = globalThis[key];
@@ -36,6 +37,7 @@ export function memoryDb() {
     _data: D,
     userByEmail: async (email) => clone(D.users.find((u) => u.email === email) || null),
     userById: async (id) => { const u = D.users.find((x) => x.id === id); return u ? clone({ id: u.id, email: u.email, name: u.name, role: u.role, active: u.active }) : null; },
+    usersList: async () => clone(D.users.map(({ id, email, name, role, active }) => ({ id, email, name, role, active })).sort((a, b) => a.name.localeCompare(b.name))),
     createUser: async (u) => {
       if (D.users.some((x) => x.email === u.email)) throw conflict();
       const row = { id: randomUUID(), role: 'medewerker', active: true, created_at: now(), last_login_at: null, ...u };
@@ -135,6 +137,60 @@ export function memoryDb() {
 
     emailCreate: async (row) => { const e = { id: nextId(), status: 'voorbereid', provider_id: null, error: null, created_at: now(), updated_at: now(), ...row }; D.emails.push(e); save(); return clone(e); },
     emailUpdate: async (id, f) => { const e = D.emails.find((x) => x.id === id); if (e) Object.assign(e, f, { updated_at: now() }); save(); },
+
+    // QuickScan-rapporten (zelfde regels als 002_mvfs_rapporten.sql)
+    advisorsList: async () => clone([...D.advisors].sort((a, b) => a.name.localeCompare(b.name))),
+    advisorById: async (id) => clone(D.advisors.find((a) => a.id === id) || null),
+    advisorCreate: async (row) => {
+      if (D.advisors.some((a) => a.name === row.name)) throw conflict();
+      const a = { id: randomUUID(), user_id: null, active: true, created_at: now(), updated_at: now(), ...row }; D.advisors.push(a); save(); return clone(a);
+    },
+    advisorUpdate: async (id, f) => {
+      const a = D.advisors.find((x) => x.id === id); if (!a) return null;
+      if (f.name && D.advisors.some((x) => x.name === f.name && x.id !== id)) throw conflict();
+      Object.assign(a, f, { updated_at: now() }); save(); return clone(a);
+    },
+    nextReportNr: async () => { D.reportSeq += 1; save(); return `QS-${new Date().getFullYear()}-${String(D.reportSeq).padStart(4, '0')}`; },
+    reportCreate: async (row) => {
+      if (D.reports.some((r) => r.report_nr === row.report_nr)) throw conflict();
+      const r = { id: randomUUID(), request_id: null, advisor_id: null, status: 'concept', risk: null, version: 1, data: {}, created_by: null, updated_by: null, created_at: now(), updated_at: now(), ...row };
+      D.reports.push(r); save(); return clone(r);
+    },
+    reportsList: async ({ status, search } = {}) => {
+      const s = String(search || '').toLowerCase();
+      const hay = (r) => [r.report_nr, r.data?.voorblad?.object_straat, r.data?.voorblad?.object_plaats, r.data?.algemeen?.opdrachtgever_naam].map((x) => String(x || '').toLowerCase());
+      return clone(D.reports.filter((r) => (!status || r.status === status) && (!s || hay(r).some((x) => x.includes(s))))
+        .sort((a, b) => (b.updated_at > a.updated_at ? 1 : -1))
+        .map((r) => ({ id: r.id, report_nr: r.report_nr, status: r.status, risk: r.risk, version: r.version, request_id: r.request_id, updated_at: r.updated_at, created_at: r.created_at, data: r.data, advisor: r.advisor_id ? { name: D.advisors.find((a) => a.id === r.advisor_id)?.name || null } : null })));
+    },
+    reportById: async (id) => clone(D.reports.find((r) => r.id === id) || null),
+    reportUpdate: async (id, f) => { const r = D.reports.find((x) => x.id === id); if (!r) return null; Object.assign(r, f, { updated_at: now() }); save(); return clone(r); },
+    reportDelete: async (id) => {
+      D.reports = D.reports.filter((r) => r.id !== id);
+      D.reportImages = D.reportImages.filter((i) => i.report_id !== id); D.versions = D.versions.filter((v) => v.report_id !== id); D.emails = D.emails.filter((e) => e.report_id !== id); save();
+    },
+    reportImages: async (reportId) => clone(D.reportImages.filter((i) => i.report_id === reportId).sort((a, b) => (a.slot === b.slot ? a.position - b.position : a.slot.localeCompare(b.slot)))),
+    reportImageById: async (id) => clone(D.reportImages.find((i) => i.id === id) || null),
+    reportImageCreate: async (row) => {
+      if (D.reportImages.some((i) => i.report_id === row.report_id && i.slot === row.slot && i.position === row.position)) throw conflict();
+      const i = { id: randomUUID(), caption: '', created_at: now(), ...row }; D.reportImages.push(i); save(); return clone(i);
+    },
+    reportImageUpdate: async (id, f) => { const i = D.reportImages.find((x) => x.id === id); if (i) Object.assign(i, f); save(); return clone(i || null); },
+    reportImageDelete: async (id) => { D.reportImages = D.reportImages.filter((i) => i.id !== id); save(); },
+    versionCreate: async (row) => {
+      if (D.versions.some((v) => v.report_id === row.report_id && v.version === row.version)) throw conflict();
+      const v = { id: randomUUID(), pdf_path: null, pdf_uploaded_at: null, finalized_at: now(), sent_at: null, sent_by: null, sent_to: null, ...row }; D.versions.push(v); save(); return clone(v);
+    },
+    versionsList: async (reportId) => clone(D.versions.filter((v) => v.report_id === reportId).sort((a, b) => b.version - a.version)
+      .map(({ data, images, ...v }) => ({ ...v, finalizer: userName(v.finalized_by), sender: userName(v.sent_by) }))),
+    versionGet: async (reportId, version) => clone(D.versions.find((v) => v.report_id === reportId && v.version === Number(version)) || null),
+    versionUpdate: async (id, f) => { const v = D.versions.find((x) => x.id === id); if (v) Object.assign(v, f); save(); return clone(v || null); },
+    reportEmails: async (reportId) => clone(D.emails.filter((e) => e.report_id === reportId)),
+    finalRiskForRequest: async (requestId) => {
+      const r = D.reports.filter((x) => x.request_id === requestId && ['definitief', 'verzonden'].includes(x.status)).sort((a, b) => (b.updated_at > a.updated_at ? 1 : -1))[0];
+      return r ? clone({ risk: r.risk, report_nr: r.report_nr, version: r.version }) : null;
+    },
+    getObject: async (bucket, path) => { const p = objPath(bucket, path); if (!existsSync(p)) throw Object.assign(new Error('bestand niet gevonden'), { status: 404 }); return readFileSync(p); },
 
     // opslag op schijf; de lokale dev-server (scripts/dev.mjs) serveert /__dev-storage/ en accepteert PUT op /__dev-upload/
     putObject: async (bucket, path, bytes) => { const p = objPath(bucket, path); mkdirSync(dirname(p), { recursive: true }); writeFileSync(p, bytes); },

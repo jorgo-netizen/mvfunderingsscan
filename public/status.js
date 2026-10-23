@@ -32,6 +32,17 @@
     field('message-wrap').hidden = !d.message;
     field('message').textContent = d.message || '';
     const t = field('updated'); t.dateTime = d.updated_at; t.textContent = fmt(d.updated_at, true);
+    const uit = field('uitkomst');
+    uit.hidden = !d.uitkomst;
+    if (d.uitkomst) {
+      const namen = { laag: 'Laag risico', midden: 'Midden risico', hoog: 'Hoog risico' };
+      uit.querySelectorAll('[data-risico]').forEach((li) => {
+        const on = li.dataset.risico === d.uitkomst;
+        li.classList.toggle('is-gekozen', on);
+        if (on) li.setAttribute('aria-current', 'true'); else li.removeAttribute('aria-current');
+      });
+      field('uitkomst-tekst').textContent = `De adviseur heeft het funderingsrisico beoordeeld als: ${namen[d.uitkomst]}. De onderbouwing en het advies staan in het rapport.`;
+    }
     field('report').hidden = !d.report.available;
     field('report-later').hidden = !(d.status === 'afgerond' && !d.report.available);
     const list = field('steps'); list.textContent = '';

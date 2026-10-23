@@ -12,6 +12,7 @@ import { STATUS_KEYS, statusInfo, newToken, hashToken, trackingUrl } from './_li
 import { sendLogged, trackingMail } from './_lib/mail.js';
 import { slugify, isSlug, plainText } from './_lib/markdown.js';
 import { renderNewsArticle } from './_lib/news-render.js';
+import { rapportActies } from './_lib/rapport-api.js';
 
 const NOINDEX = { 'X-Robots-Tag': 'noindex, nofollow', 'Referrer-Policy': 'no-referrer' };
 const json = (res, status, body) => sendJson(res, status, body, NOINDEX);
@@ -241,6 +242,10 @@ export default async function handler(req, res) {
     }
     if (actie.startsWith('nieuws')) {
       const out = await newsActions(db, req, res, actie, user, url);
+      if (out !== null) return out;
+    }
+    if (actie.startsWith('rapport')) {
+      const out = await rapportActies(db, req, res, actie, user, url, { json, fail, readJson, sendHtml, NOINDEX });
       if (out !== null) return out;
     }
     if (actie.startsWith('aanvra')) {

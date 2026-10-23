@@ -232,7 +232,8 @@
       "includeFiles": "src/**"
     },
     "api/beheer.js": {
-      "includeFiles": "src/**"
+      "includeFiles": "{src,rapport-sjabloon}/**",
+      "maxDuration": 30
     }
   }
 }

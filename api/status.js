@@ -41,7 +41,9 @@ export default async function handler(req, res) {
       const url = await db.signedUrl('rapporten', r.report_path, 60, r.report_name || `rapport-${r.dossier_nr}.pdf`);
       return sendJson(res, 200, { ok: true, url, expires_in: 60 }, headers);
     }
-    return sendJson(res, 200, { ok: true, ...customerView(found) }, headers);
+    // Uitkomst Fase 0 alleen tonen als het rapport van deze aanvraag definitief is (door de adviseur bevestigd).
+    const fr = db.finalRiskForRequest ? await db.finalRiskForRequest(found.request.id).catch(() => null) : null;
+    return sendJson(res, 200, { ok: true, ...customerView(found), uitkomst: fr && ['laag', 'midden', 'hoog'].includes(fr.risk) ? fr.risk : null }, headers);
   } catch (err) {
     logError('status', err);
     return sendJson(res, 500, { ok: false, error: 'De status kan nu niet worden opgehaald. Probeer het later opnieuw.' }, headers);

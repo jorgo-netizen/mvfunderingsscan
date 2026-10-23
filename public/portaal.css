@@ -115,3 +115,77 @@
   .portal-dl-row { grid-template-columns: 1fr; gap: 0; }
   .portal-user { margin-left: 0; width: 100%; justify-content: space-between; }
 }
+
+/* Uitkomst Fase 0 op de trackingpagina (zelfde indeling als het voorblad van het rapport) */
+.status-uitkomst { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+.status-uitkomst-titel { margin: 0 0 10px; padding: 8px 12px; background: var(--navy); color: #fff; font-weight: 700; font-size: 14px; border-radius: 6px; }
+.status-uitkomst-schaal { list-style: none; margin: 0; padding: 14px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.status-uitkomst-schaal li { position: relative; display: grid; place-items: center; min-height: 54px; border-radius: 6px; font-weight: 700; font-size: 14px; text-align: center; padding: 6px; border: 2px solid transparent; opacity: .55; }
+.status-uitkomst-schaal li[data-risico="laag"] { background: #8bc34a; color: #10300f; }
+.status-uitkomst-schaal li[data-risico="midden"] { background: #f39c12; color: #3b2300; }
+.status-uitkomst-schaal li[data-risico="hoog"] { background: #e53935; color: #fff; }
+.status-uitkomst-schaal li.is-gekozen { opacity: 1; border-color: var(--navy); box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--navy); }
+.status-uitkomst-schaal li.is-gekozen::before { content: ""; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); border: 11px solid transparent; border-top: 13px solid var(--navy); border-bottom: 0; }
+.status-uitkomst-schaal li.is-gekozen span::after { content: " ◀ uitkomst"; font-size: 12px; }
+.status-uitkomst-tekst { margin: 12px 0 0; font-size: 14.5px; }
+@media (max-width: 520px) { .status-uitkomst-schaal li { font-size: 12.5px; } .status-uitkomst-schaal li.is-gekozen span::after { content: ""; } }
+
+/* ---- QuickScan-rapporten (beheer) ---- */
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.portal-label { margin: 0 0 6px; font-weight: 700; color: var(--navy); font-size: 15px; }
+.portal-narrow { max-width: 640px; }
+.portal-empty { text-align: center; padding: 18px 0; }
+.btn-link { background: none; border: 0; padding: 4px 0; color: #b3261e; text-decoration: underline; cursor: pointer; font: inherit; font-size: 14px; }
+.portal-savestate { font-size: 14px; align-self: center; }
+.portal-badge-r-definitief { background: #e9f5ee; color: #1d5b33; border-color: #b9dcc6; }
+.portal-badge-r-verzonden { background: var(--navy); color: #fff; border-color: var(--navy); }
+.portal-badge-r-wacht_op_info { background: #fff4f2; color: #8a2a1c; border-color: #f0c4bb; }
+.portal-badge-r-gereed_voor_controle { background: var(--gold-soft); border-color: #ecd9b0; }
+.portal-risk-laag { background: #e3f2e7; color: #1d5b33; border-color: #2e7d46; }
+.portal-risk-midden { background: #fff3dc; color: #7a4b00; border-color: #c98a12; }
+.portal-risk-hoog { background: #fde7e4; color: #8a1c12; border-color: #b3261e; }
+.portal-rapport { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 18px; align-items: start; }
+.portal-steps-wrap { position: sticky; top: 12px; padding: 12px; }
+.portal-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; position: relative; }
+.portal-steps li { position: relative; }
+.portal-steps a { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 8px; color: var(--navy); text-decoration: none; font-size: 14.5px; }
+.portal-steps a:hover { background: var(--light); }
+.portal-steps li.is-current a { background: var(--gold-soft); font-weight: 700; }
+.portal-step-num { flex: none; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--line); font-size: 12.5px; font-weight: 700; background: #fff; }
+.portal-steps li.is-done .portal-step-num { background: var(--navy); border-color: var(--navy); color: #fff; }
+.portal-step-open { margin-left: auto; min-width: 22px; padding: 1px 7px; border-radius: 20px; background: #fde7e4; color: #8a1c12; font-size: 12px; font-weight: 700; text-align: center; }
+.portal-rapport > * { min-width: 0; }
+.portal-stepnav { justify-content: space-between; border-top: 1px solid var(--line); padding-top: 16px; margin-top: 20px; }
+.portal-grid-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; }
+.portal-field input[type="date"], .portal-field input[type="time"] { width: 100%; padding: 10px 12px; border: 1.5px solid #c9d3dc; border-radius: 8px; font: inherit; font-size: 15px; background: #fff; }
+.portal-field-missing input, .portal-field-missing select, .portal-field-missing textarea { border-color: #d9877a !important; background: #fffafa !important; }
+.portal-field-missing > label::after, .portal-field-missing > legend::after { content: " (verplicht)"; font-weight: 400; font-size: 13px; color: #8a1c12; }
+.portal-choice { border: 0; padding: 0; margin: 0 0 16px; }
+.portal-choice legend { font-weight: 700; color: var(--navy); font-size: 15px; margin-bottom: 6px; padding: 0; }
+.portal-radio { display: inline-flex; align-items: center; gap: 6px; margin: 0 18px 6px 0; font-size: 15px; cursor: pointer; }
+.portal-radio input { width: 19px; height: 19px; accent-color: var(--navy); }
+.portal-vast { background: var(--light); border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 14.5px; }
+.portal-preview-zin { background: var(--light); border-left: 4px solid var(--gold); padding: 12px 14px; border-radius: 6px; line-height: 1.6; }
+.portal-foto { border: 1.5px dashed #c9d3dc; border-radius: 10px; padding: 12px; margin: 0 0 16px; max-width: 420px; display: grid; gap: 8px; }
+.portal-foto img { width: 100%; max-height: 260px; object-fit: contain; background: var(--light); border-radius: 6px; }
+.portal-foto input[type="text"] { width: 100%; padding: 8px 10px; border: 1.5px solid #c9d3dc; border-radius: 8px; font: inherit; font-size: 14px; }
+.portal-foto-label { margin: 0; font-weight: 700; color: var(--navy); font-size: 14.5px; }
+.portal-foto-leeg { display: grid; place-items: center; min-height: 110px; background: var(--light); border-radius: 6px; color: var(--muted); font-size: 14px; }
+.portal-foto input[type="file"] { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; }
+.portal-file { cursor: pointer; justify-self: start; }
+.portal-foto input[type="file"]:focus-visible + .portal-file, .portal-file:focus-within { outline: 3px solid var(--gold); outline-offset: 2px; }
+.portal-foto-rij { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+.portal-foto-rij .portal-foto { max-width: none; }
+.portal-meet input { width: 100%; min-width: 80px; padding: 8px 9px; border: 1.5px solid #c9d3dc; border-radius: 7px; font: inherit; font-size: 14px; }
+.portal-meet td { vertical-align: top; }
+.portal-meet .portal-hint { display: block; margin-top: 4px; }
+.portal-versie { border-top: 1px solid var(--line); padding: 14px 0 4px; }
+.portal-versie:first-of-type { border-top: 0; }
+.portal-send { background: var(--light); border-radius: 10px; padding: 14px; margin-top: 12px; }
+.portal-danger { border-color: #f0c4bb; }
+@media (max-width: 900px) {
+  .portal-rapport { grid-template-columns: 1fr; }
+  .portal-steps-wrap { position: static; }
+  .portal-steps { grid-auto-flow: column; grid-auto-columns: max-content; overflow-x: auto; }
+  .portal-grid-form { grid-template-columns: 1fr; }
+}

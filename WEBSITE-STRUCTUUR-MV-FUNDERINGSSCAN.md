@@ -206,7 +206,7 @@ Let op: het domein www.mvfunderingsscan.nl is (nog) niet actief; "live" verwijst
 | `/nieuws/` | Overzicht van gepubliceerde nieuwsberichten | openbaar (noindex zolang er geen berichten zijn) | Kaarten met titel, datum, introductie en afbeelding; nette lege toestand | `api/nieuws.js`, Supabase |
 | `/nieuws/<slug>/` | Nieuwsartikel | openbaar; concepten geven 404 | Artikel met kopjes, afbeelding, terug-link, canonical, NewsArticle-JSON-LD | `api/nieuws.js`, Supabase |
 | `/nieuws-sitemap.xml` | Sitemap met gepubliceerde berichten | openbaar | Automatisch bijgewerkt; vermeld in robots.txt | `api/nieuws.js` |
-| `/beheer/` | Beheerportaal voor medewerkers | afgeschermd (inloggen), noindex, CSP | Inloggen/uitloggen, dashboard, nieuws aanmaken/bewerken/voorbeeld/publiceren/depubliceren/verwijderen, aanvragen zoeken/openen, status wijzigen, klantbericht, interne notities, trackinglink opnieuw uitgeven of intrekken, rapport uploaden, e-mailstatus, verwijderen (alleen beheerder) | `public/beheer.js`, `public/portaal.css`, `api/beheer.js` |
+| `/beheer/` | Beheerportaal voor medewerkers | afgeschermd (inloggen), noindex, CSP | Inloggen/uitloggen, dashboard, nieuws aanmaken/bewerken/voorbeeld/publiceren/depubliceren/verwijderen, aanvragen zoeken/openen, status wijzigen, klantbericht, interne notities, trackinglink opnieuw uitgeven of intrekken, rapport uploaden, e-mailstatus, verwijderen (alleen beheerder); QuickScan-rapporten opstellen (stappenformulier, foto's, controle, Word, definitieve versies, PDF, versturen) en adviseurs beheren | `public/beheer.js`, `public/portaal.css`, `api/beheer.js` |
 | `/status/` | Track & Trace voor klanten | persoonlijk (alleen met link `#t=<token>`), noindex, no-referrer, CSP | Huidige status, tijdlijn, klantbericht, laatst bijgewerkt, rapport downloaden (link 60 s geldig) | `public/status.js`, `api/status.js` |
 
 **API-routes**
@@ -218,6 +218,8 @@ Let op: het domein www.mvfunderingsscan.nl is (nog) niet actief; "live" verwijst
 | `POST /api/status/` | Status of rapportlink bij een geldig trackingtoken | openbaar met token; max. 30 ongeldige pogingen per uur per IP |
 | `GET/POST /api/beheer/?actie=…` | Alle beheeracties | sessie + rol + CSRF, server-side gecontroleerd |
 | `GET /api/nieuws` | Nieuwspagina's en nieuws-sitemap (via rewrites) | openbaar |
+
+**QuickScan-rapporten (toegevoegd 23-10-2026, nog niet live)**: `/beheer/#/rapporten` en `#/adviseurs`; tabellen `mvfs_advisors`, `mvfs_reports`, `mvfs_report_images`, `mvfs_report_versions` (`supabase/migrations/002_mvfs_rapporten.sql`), privé-opslag `rapport-bestanden`, sjabloon `rapport-sjabloon/`. Uitkomst Fase 0 (pijltje) ook op `/status/` zodra het rapport definitief is. Zie `HANDLEIDING-QUICKSCAN-RAPPORTAGE.md`.
 
 **Database (Supabase, `supabase/migrations/001_mvfs_basis.sql`)**: `mvfs_users`, `mvfs_sessions`, `mvfs_login_attempts`, `mvfs_news`, `mvfs_requests`, `mvfs_status_history`, `mvfs_notes` (intern), `mvfs_emails`; opslag: `nieuws` (openbaar), `rapporten` (privé). Zie `IMPLEMENTATIEHANDLEIDING-MV-FUNDERINGSSCAN.md`.
 

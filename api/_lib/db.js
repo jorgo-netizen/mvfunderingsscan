@@ -62,6 +62,7 @@ function supabaseDb(URL, KEY) {
     // medewerkers en sessies
     userByEmail: async (email) => one(await rest('GET', `mvfs_users?email=eq.${q(email)}&select=*`)),
     userById: async (id) => one(await rest('GET', `mvfs_users?id=eq.${q(id)}&select=id,email,name,role,active`)),
+    usersList: async () => rest('GET', 'mvfs_users?select=id,email,name,role,active&order=name.asc'),
     createUser: async (u) => one(await rest('POST', 'mvfs_users', { body: u, prefer: 'return=representation' })),
     updateUser: async (id, f) => one(await rest('PATCH', `mvfs_users?id=eq.${q(id)}`, { body: f, prefer: 'return=representation' })),
     createSession: async (s) => { await rest('POST', 'mvfs_sessions', { body: s }); },
@@ -122,6 +123,42 @@ function supabaseDb(URL, KEY) {
     // e-maillog
     emailCreate: async (row) => one(await rest('POST', 'mvfs_emails', { body: row, prefer: 'return=representation' })),
     emailUpdate: async (id, f) => { await rest('PATCH', `mvfs_emails?id=eq.${q(id)}`, { body: { ...f, updated_at: nowIso() } }); },
+
+    // QuickScan-rapporten
+    advisorsList: async () => rest('GET', 'mvfs_advisors?select=*&order=name.asc'),
+    advisorById: async (id) => one(await rest('GET', `mvfs_advisors?id=eq.${q(id)}&select=*`)),
+    advisorCreate: async (row) => one(await rest('POST', 'mvfs_advisors', { body: row, prefer: 'return=representation' })),
+    advisorUpdate: async (id, f) => one(await rest('PATCH', `mvfs_advisors?id=eq.${q(id)}`, { body: { ...f, updated_at: nowIso() }, prefer: 'return=representation' })),
+    nextReportNr: async () => rest('POST', 'rpc/mvfs_next_report_nr', { body: {} }),
+    reportCreate: async (row) => one(await rest('POST', 'mvfs_reports', { body: row, prefer: 'return=representation' })),
+    reportsList: async ({ status, search } = {}) => {
+      let path = 'mvfs_reports?select=id,report_nr,status,risk,version,request_id,updated_at,created_at,data,advisor:mvfs_advisors(name)&order=updated_at.desc&limit=200';
+      if (status) path += `&status=eq.${q(status)}`;
+      if (search) {
+        const s = search.replace(/[(),*]/g, ' ').trim();
+        path += `&or=(report_nr.ilike.*${q(s)}*,data->voorblad->>object_straat.ilike.*${q(s)}*,data->voorblad->>object_plaats.ilike.*${q(s)}*,data->algemeen->>opdrachtgever_naam.ilike.*${q(s)}*)`;
+      }
+      return rest('GET', path);
+    },
+    reportById: async (id) => one(await rest('GET', `mvfs_reports?id=eq.${q(id)}&select=*`)),
+    reportUpdate: async (id, f) => one(await rest('PATCH', `mvfs_reports?id=eq.${q(id)}`, { body: { ...f, updated_at: nowIso() }, prefer: 'return=representation' })),
+    reportDelete: async (id) => { await rest('DELETE', `mvfs_reports?id=eq.${q(id)}`); },
+    reportImages: async (reportId) => rest('GET', `mvfs_report_images?report_id=eq.${q(reportId)}&select=*&order=slot.asc,position.asc`),
+    reportImageById: async (id) => one(await rest('GET', `mvfs_report_images?id=eq.${q(id)}&select=*`)),
+    reportImageCreate: async (row) => one(await rest('POST', 'mvfs_report_images', { body: row, prefer: 'return=representation' })),
+    reportImageUpdate: async (id, f) => one(await rest('PATCH', `mvfs_report_images?id=eq.${q(id)}`, { body: f, prefer: 'return=representation' })),
+    reportImageDelete: async (id) => { await rest('DELETE', `mvfs_report_images?id=eq.${q(id)}`); },
+    versionCreate: async (row) => one(await rest('POST', 'mvfs_report_versions', { body: row, prefer: 'return=representation' })),
+    versionsList: async (reportId) => rest('GET', `mvfs_report_versions?report_id=eq.${q(reportId)}&select=id,version,risk,template_version,docx_path,pdf_path,pdf_uploaded_at,finalized_at,sent_at,sent_to,finalizer:mvfs_users!mvfs_report_versions_finalized_by_fkey(name),sender:mvfs_users!mvfs_report_versions_sent_by_fkey(name)&order=version.desc`),
+    versionGet: async (reportId, version) => one(await rest('GET', `mvfs_report_versions?report_id=eq.${q(reportId)}&version=eq.${q(version)}&select=*`)),
+    versionUpdate: async (id, f) => one(await rest('PATCH', `mvfs_report_versions?id=eq.${q(id)}`, { body: f, prefer: 'return=representation' })),
+    reportEmails: async (reportId) => rest('GET', `mvfs_emails?report_id=eq.${q(reportId)}&select=id,kind,status,error,created_at,updated_at&order=created_at.asc`),
+    finalRiskForRequest: async (requestId) => one(await rest('GET', `mvfs_reports?request_id=eq.${q(requestId)}&status=in.(definitief,verzonden)&select=risk,report_nr,version&order=updated_at.desc&limit=1`)),
+    getObject: async (bucket, path) => {
+      const r = await fetch(`${URL}/storage/v1/object/${bucket}/${path}`, { headers: headers() });
+      if (!r.ok) throw new DbError(`opslag ${r.status}`, 502);
+      return Buffer.from(await r.arrayBuffer());
+    },
 
     // opslag
     putObject: async (bucket, path, bytes, type) => { await storage('POST', `object/${bucket}/${path}`, { body: bytes, type }); },
