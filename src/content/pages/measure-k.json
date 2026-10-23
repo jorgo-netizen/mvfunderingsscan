@@ -38,7 +38,7 @@
       },
       {
         "label": "Kosten",
-        "value": "geen losse prijs; onderdeel van fase 1 (indicatief €750 – €1.500)"
+        "value": "geen losse prijs; onderdeel van fase 1 (vanaf €950)"
       }
     ],
     "article": true,
@@ -115,7 +115,7 @@
       },
       {
         "q": "Wat kost een scheefstandsmeting?",
-        "a": "<p>Een scheefstandsmeting heeft geen losse prijs. Ze maakt deel uit van fase 1, dat indicatief €750 – €1.500 kost, afhankelijk van welke metingen bij jouw woning nodig zijn. De prijs wordt vooraf afgestemd.</p>"
+        "a": "<p>Een scheefstandsmeting heeft geen losse prijs. Ze maakt deel uit van fase 1, dat vanaf €950 kost, afhankelijk van welke metingen bij jouw woning nodig zijn. De prijs wordt vooraf afgestemd.</p>"
       }
     ],
     "related": [
@@ -175,7 +175,7 @@
       },
       {
         "label": "Kosten",
-        "value": "geen losse prijs; onderdeel van fase 1 (indicatief €750 – €1.500)"
+        "value": "geen losse prijs; onderdeel van fase 1 (vanaf €950)"
       }
     ],
     "article": true,
@@ -635,7 +635,7 @@
         "id": "wanneer-professioneel",
         "h2": "Wanneer schakel je een specialist in?",
         "answer": "Als een scheur groeit, als er nieuwe scheuren bijkomen, als scheuren samengaan met klemmende deuren of scheefstand, of als je de woning wilt kopen of verkopen.",
-        "body": "<ul class=\"checklist\"><li>De scheur wordt bij herhaling langer of breder</li><li>Een gerepareerde scheur komt terug</li><li>Er zijn ook klemmende deuren of ramen, of een helling in de vloer</li><li>De scheur loopt diagonaal of trapvormig vanaf een kozijnhoek</li><li>Je staat op het punt een woning te kopen of te verkopen</li></ul><p>Twijfel je of jouw situatie reden is voor onderzoek? Doe de <a href=\"/funderingsscan-check/\">online funderingscheck</a> of neem <a href=\"/contact/\">contact</a> op.</p>"
+        "body": "<ul class=\"checklist\"><li>De scheur wordt bij herhaling langer of breder</li><li>Een gerepareerde scheur komt terug</li><li>Er zijn ook klemmende deuren of ramen, of een helling in de vloer</li><li>De scheur loopt diagonaal of trapvormig vanaf een kozijnhoek</li><li>Je staat op het punt een woning te kopen of te verkopen</li></ul><p>Twijfel je of jouw situatie reden is voor onderzoek? Doe de <a href=\"/gratis-funderingscheck/\">online funderingscheck</a> of neem <a href=\"/contact/\">contact</a> op.</p>"
       },
       {
         "id": "fase-0-en-fase-1",
@@ -692,7 +692,7 @@
         "text": "Oorzaken van gevelscheuren en wanneer onderzoek zinvol is."
       },
       {
-        "href": "/funderingsscan-check/",
+        "href": "/gratis-funderingscheck/",
         "label": "Online funderingscheck",
         "text": "Ontdek in een paar vragen of onderzoek verstandig is."
       }

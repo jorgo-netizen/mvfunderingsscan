@@ -256,18 +256,22 @@
     const text = $('#resultText');
     const cta = $('#resultCta');
 
+    // Telt zichtbare signalen (scheuren, klemmen, scheefstand) apart van omstandigheden (bouwjaar) en context
+    // (aan- of verkoop). "Weet ik niet" telt niet als signaal. Nooit een diagnose; zelfde categorieën als de
+    // uitgebreide Funderingscheck (/gratis-funderingscheck/).
     const evaluate = () => {
       let answered = 0;
-      let score = 0;
-      let strongSignals = 0;
+      let signals = 0; let unknownSignals = 0; let oldHouse = false; let transaction = false;
       questions.forEach((q) => {
         const checked = $('input:checked', q);
         q.classList.toggle('is-answered', !!checked);
         if (!checked) return;
         answered++;
-        const w = parseFloat(q.dataset.weight);
-        if (checked.value === 'yes') { score += w; if (w >= 1.5) strongSignals++; }
-        if (checked.value === 'unknown') score += w * 0.4;
+        const kind = q.dataset.kind;
+        if (kind === 'signaal' && checked.value === 'yes') signals++;
+        if (kind === 'signaal' && checked.value === 'unknown') unknownSignals++;
+        if (kind === 'factor' && checked.value === 'yes') oldHouse = true;
+        if (kind === 'transactie' && checked.value === 'yes') transaction = true;
       });
 
       bar.style.width = `${(answered / questions.length) * 100}%`;
@@ -277,39 +281,54 @@
 
       if (answered < questions.length) { result.hidden = true; return; }
 
-      let level;
-      if (strongSignals >= 2 || score >= 4) level = 'high';
-      else if (score >= 1) level = 'mid';
-      else level = 'low';
+      let cat;
+      if (signals >= 2) cat = 'meerdere';
+      else if (signals === 1 || oldHouse) cat = 'enkele';
+      else if (unknownSignals >= 2) cat = 'onvoldoende';
+      else cat = 'weinig';
 
       const copy = {
-        high: {
-          label: 'Duidelijke signalen',
-          title: 'Bespreek je situatie met een specialist.',
-          text: 'Je noemt meerdere signalen die kunnen wijzen op beweging in de fundering. Het is verstandig om dit goed te laten onderzoeken. Een Quick Scan geeft snel duidelijkheid over de ernst en de beste vervolgstap.',
-          cta: 'Bespreek je situatie',
-          href: '/contact/',
-          type: 'onbekend',
-        },
-        mid: {
-          label: 'Indicatie',
-          title: 'Een funderingsscan kan interessant zijn.',
-          text: 'Er zijn een of meer factoren die een funderingsscan zinvol maken – bijvoorbeeld de leeftijd van de woning of een geplande aan- of verkoop. Met een Quick Scan weet je zeker waar je staat.',
+        meerdere: {
+          level: 'high',
+          title: 'Meerdere signalen',
+          text: 'Je noemt meerdere signalen. Die kunnen verschillende oorzaken hebben, zoals krimp, vocht of temperatuurwerking, maar samen zijn ze een reden om het funderingsrisico te laten beoordelen. Een Quick Scan brengt in beeld of er aanwijzingen zijn dat de fundering een rol speelt.',
           cta: 'Vraag een Quick Scan aan',
           href: '/funderingsscan-aanvragen/',
           type: 'fase0',
         },
-        low: {
-          label: 'Indicatie',
-          title: 'Geen directe aanleiding gevonden.',
-          text: 'Op basis van je antwoorden zijn er weinig signalen. Twijfel je toch, of krijg je vragen van een taxateur of koper? Neem gerust contact op, dan denken we vrijblijvend mee.',
+        enkele: {
+          level: 'mid',
+          title: 'Enkele signalen of aandachtspunten',
+          text: oldHouse && signals === 0
+            ? 'Je ziet geen signalen, maar de woning is van vóór circa 1970. In die periode zijn houten palen en funderingen op staal gebruikelijk; dat is geen probleem op zich, maar het maakt het funderingsrisico relevanter om te kennen.'
+            : 'Je noemt één signaal. Een losse aanwijzing bewijst geen funderingsprobleem en kan ook een andere oorzaak hebben. Het kan wel de moeite waard zijn om verder te kijken, bijvoorbeeld met de uitgebreide Funderingscheck.',
+          cta: 'Doe de uitgebreide Funderingscheck',
+          href: '/gratis-funderingscheck/',
+          type: 'onbekend',
+        },
+        onvoldoende: {
+          level: 'low',
+          title: 'Te weinig informatie voor een indicatie',
+          text: 'Je hebt meerdere vragen met "weet ik niet" beantwoord. Daardoor kunnen we geen zinvolle indicatie geven; dat zegt niets over de staat van de fundering. Kijk bij gelegenheid naar gevels, deuren en vloeren, of leg je vraag aan ons voor.',
           cta: 'Bespreek je situatie',
           href: '/contact/',
           type: 'onbekend',
         },
-      }[level];
+        weinig: {
+          level: 'low',
+          title: 'Weinig signalen',
+          text: 'Op basis van je antwoorden zien we weinig signalen die direct aanleiding geven voor funderingsonderzoek. Dat is geen garantie dat de fundering in orde is. Twijfel je toch, neem dan gerust contact op.',
+          cta: 'Bespreek je situatie',
+          href: '/contact/',
+          type: 'onbekend',
+        },
+      }[cat];
+      if (transaction) copy.text += ' Koop of verkoop je de woning? Dan is het verstandig om het funderingsrisico vóór de transactie in beeld te hebben, zeker bij een oudere woning.';
+      copy.label = 'Indicatie';
+      const level = copy.level;
 
       result.dataset.level = level;
+      result.dataset.cat = cat;
       label.textContent = copy.label;
       title.textContent = copy.title;
       text.textContent = copy.text;

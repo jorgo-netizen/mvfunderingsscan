@@ -27,15 +27,6 @@
     "intent": "transactioneel"
   },
   {
-    "path": "/funderingsscan-check/",
-    "label": "Funderingscheck",
-    "group": "over",
-    "file": "(handgebouwd)",
-    "minWords": 0,
-    "keyword": "funderingsscan check",
-    "intent": "informatief"
-  },
-  {
     "path": "/kennisbank/",
     "label": "Kennisbank",
     "group": "kennisbank",

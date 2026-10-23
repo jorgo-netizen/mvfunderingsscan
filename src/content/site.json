@@ -169,72 +169,132 @@
     {
       "href": "/werkgebied/",
       "label": "Werkgebied",
-      "children": [
+      "columns": [
         {
-          "href": "/werkgebied/",
-          "label": "Heel het werkgebied"
-        },
-        {
+          "title": "Friesland",
           "href": "/funderingsonderzoek-friesland/",
-          "label": "Friesland"
+          "items": [
+            {
+              "label": "Buitenpost & Surhuisterveen",
+              "href": "/funderingsonderzoek-achtkarspelen/"
+            },
+            {
+              "label": "Burgum & Hurdegaryp",
+              "href": "/funderingsonderzoek-tytsjerksteradiel/"
+            },
+            {
+              "label": "Damwâld & Feanwâlden",
+              "href": "/funderingsonderzoek-dantumadiel/"
+            },
+            {
+              "label": "Dokkum",
+              "href": "/funderingsonderzoek-noardeast-fryslan/"
+            },
+            {
+              "label": "Drachten",
+              "href": "/funderingsonderzoek-drachten/"
+            },
+            {
+              "label": "Franeker",
+              "href": "/funderingsonderzoek-franeker/"
+            },
+            {
+              "label": "Gorredijk & Beetsterzwaag",
+              "href": "/funderingsonderzoek-opsterland/"
+            },
+            {
+              "label": "Harlingen",
+              "href": "/funderingsonderzoek-harlingen/"
+            },
+            {
+              "label": "Heerenveen",
+              "href": "/funderingsonderzoek-heerenveen/"
+            },
+            {
+              "label": "Joure, Lemmer & Balk",
+              "href": "/funderingsonderzoek-de-fryske-marren/"
+            },
+            {
+              "label": "Leeuwarden",
+              "href": "/funderingsonderzoek-leeuwarden/"
+            },
+            {
+              "label": "Oosterwolde & Appelscha",
+              "href": "/funderingsonderzoek-ooststellingwerf/"
+            },
+            {
+              "label": "Sneek & Bolsward",
+              "href": "/funderingsonderzoek-sneek/"
+            },
+            {
+              "label": "Wolvega & Noordwolde",
+              "href": "/funderingsonderzoek-weststellingwerf/"
+            }
+          ]
         },
         {
+          "title": "Groningen",
           "href": "/funderingsonderzoek-groningen/",
-          "label": "Groningen"
-        },
-        {
-          "href": "/funderingsonderzoek-leeuwarden/",
-          "label": "Leeuwarden"
-        },
-        {
-          "href": "/funderingsonderzoek-sneek/",
-          "label": "Sneek"
-        },
-        {
-          "href": "/funderingsonderzoek-harlingen/",
-          "label": "Harlingen"
-        },
-        {
-          "href": "/funderingsonderzoek-drachten/",
-          "label": "Drachten"
-        },
-        {
-          "href": "/funderingsonderzoek-heerenveen/",
-          "label": "Heerenveen"
-        },
-        {
-          "href": "/funderingsonderzoek-groningen-stad/",
-          "label": "Groningen stad"
-        },
-        {
-          "href": "/funderingsonderzoek-appingedam/",
-          "label": "Appingedam"
-        },
-        {
-          "href": "/funderingsonderzoek-delfzijl/",
-          "label": "Delfzijl"
-        },
-        {
-          "href": "/funderingsonderzoek-franeker/",
-          "label": "Franeker"
-        },
-        {
-          "href": "/funderingsscan-leeuwarden/",
-          "label": "Funderingsscan Leeuwarden"
-        },
-        {
-          "href": "/funderingsonderzoek-haren/",
-          "label": "Haren"
-        },
-        {
-          "href": "/funderingsonderzoek-veendam/",
-          "label": "Veendam"
-        },
-        {
-          "href": "/funderingsonderzoek-winschoten/",
-          "label": "Winschoten"
+          "items": [
+            {
+              "label": "Appingedam",
+              "href": "/funderingsonderzoek-appingedam/"
+            },
+            {
+              "label": "Delfzijl",
+              "href": "/funderingsonderzoek-delfzijl/"
+            },
+            {
+              "label": "Groningen (stad)",
+              "href": "/funderingsonderzoek-groningen-stad/"
+            },
+            {
+              "label": "Haren",
+              "href": "/funderingsonderzoek-haren/"
+            },
+            {
+              "label": "Hoogezand & Slochteren",
+              "href": "/funderingsonderzoek-midden-groningen/"
+            },
+            {
+              "label": "Loppersum (Eemsdelta)",
+              "href": "/funderingsonderzoek-eemsdelta/"
+            },
+            {
+              "label": "Oude & Nieuwe Pekela",
+              "href": "/funderingsonderzoek-pekela/"
+            },
+            {
+              "label": "Stadskanaal & Musselkanaal",
+              "href": "/funderingsonderzoek-stadskanaal/"
+            },
+            {
+              "label": "Ter Apel & Vlagtwedde",
+              "href": "/funderingsonderzoek-westerwolde/"
+            },
+            {
+              "label": "Veendam",
+              "href": "/funderingsonderzoek-veendam/"
+            },
+            {
+              "label": "Winschoten",
+              "href": "/funderingsonderzoek-winschoten/"
+            },
+            {
+              "label": "Winsum, Uithuizen & Bedum",
+              "href": "/funderingsonderzoek-het-hogeland/"
+            },
+            {
+              "label": "Zuidhorn, Leek & Grootegast",
+              "href": "/funderingsonderzoek-westerkwartier/"
+            }
+          ]
         }
-      ]
+      ],
+      "all": {
+        "label": "Bekijk het hele werkgebied",
+        "href": "/werkgebied/"
+      }
     },
     {
       "href": "/kennisbank/",
@@ -273,7 +333,7 @@
           "label": "Zetting"
         },
         {
-          "href": "/funderingsscan-check/",
+          "href": "/gratis-funderingscheck/",
           "label": "Online funderingscheck"
         }
       ]
@@ -317,8 +377,7 @@
       "url": "https://www.mvfunderingsscan.nl/fase-1-funderingsonderzoek/",
       "description": "Vervolgonderzoek met lintvoegwaterpassing, loodmetingen, vloerveldwaterpassing en het vastleggen van scheurpatronen, om scheefstand en hoogteverschillen in beeld te brengen en te beoordelen of er aanwijzingen zijn voor ongelijkmatige zetting.",
       "offers": {
-        "minPrice": 750,
-        "maxPrice": 1500
+        "minPrice": 950
       }
     }
   },
@@ -344,7 +403,7 @@
       "label": "Prijzen"
     },
     {
-      "href": "/funderingsscan-check/",
+      "href": "/gratis-funderingscheck/",
       "label": "Online funderingscheck"
     }
   ],

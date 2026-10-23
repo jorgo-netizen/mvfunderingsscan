@@ -78,7 +78,7 @@
         "a": "<p>Ja. Je betaalt niets voor de checks, keuzehulpen en uitleg. Alleen als je daarna zelf een onderzoek aanvraagt, zijn er kosten; die hoor je vooraf.</p>"
       },
       {
-        "q": "Worden mijn antwoorden opgeslagen?",
+        "q": "Bewaren de hulpmiddelen mijn antwoorden?",
         "a": "<p>Nee. De antwoorden blijven in je browser. Alleen als je zelf een formulier verstuurt, worden je gegevens en antwoorden per e-mail naar MV Funderingsscan gestuurd.</p>"
       },
       {
@@ -163,9 +163,9 @@
         "body": "<p>Scheuren, klemmende deuren en scheve vloeren kunnen met de fundering te maken hebben, maar ook met krimp, temperatuurwerking, vocht, een roestende latei of de manier waarop de woning ooit is gebouwd. Het bouwjaar geeft een aanwijzing welke funderingswijzen gebruikelijk waren, maar niet welke fundering onder jouw woning zit. Daarom is de uitkomst een indicatie. Wat er werkelijk speelt, blijkt alleen uit onderzoek, zoals een <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>.</p>"
       },
       {
-        "id": "verschil-met-online-check",
-        "h2": "Wat is het verschil met de online funderingscheck?",
-        "answer": "De <a href=\"/funderingsscan-check/\">online funderingscheck</a> is een korte versie met acht ja/nee-vragen. De gratis Funderingscheck vraagt meer, onder meer naar de risicoklasse en eerder onderzoek, en legt bij het resultaat uit wat het wel en niet betekent.",
+        "id": "verschil-met-korte-check",
+        "h2": "Wat is het verschil met de korte check op de homepage?",
+        "answer": "Op de <a href=\"/#check\">homepage</a> staat een korte check met vijf ja/nee-vragen voor een eerste indruk. Deze gratis Funderingscheck vraagt meer, onder meer naar de risicoklasse en eerder onderzoek, en legt bij het resultaat uit wat het wel en niet betekent.",
         "body": "<p>Beide werken alleen in je browser. Alleen als je aan het eind zelf kiest om je situatie te bespreken, stuur je je antwoorden naar ons mee.</p>"
       },
       {
@@ -420,16 +420,16 @@
     ],
     "eyebrow": "Kostenwijzer",
     "h1": "Kostenwijzer: welk onderzoek past en wat kost het?",
-    "lead": "Kies wat je wilt laten onderzoeken en zie welke dienst daarbij past, met de indicatieve prijs. Een Quick Scan (fase 0) kost vanaf ca. €350; fase 1 met metingen indicatief €750 – €1.500. De definitieve prijs hoor je altijd vooraf.",
+    "lead": "Kies wat je wilt laten onderzoeken en zie welke dienst daarbij past, met de indicatieve prijs. Een Quick Scan (fase 0) kost vanaf €350; fase 1 met metingen vanaf €950. De definitieve prijs hoor je altijd vooraf.",
     "tools": true,
     "facts": [
       {
         "label": "Quick Scan (fase 0)",
-        "value": "vanaf ca. €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Fase 1",
-        "value": "indicatief €750 – €1.500"
+        "value": "vanaf €950"
       },
       {
         "label": "Prijs",
@@ -440,7 +440,7 @@
       {
         "id": "kostenwijzer",
         "h2": "Wat kost funderingsonderzoek?",
-        "answer": "Een Quick Scan (fase 0) kost vanaf ca. €350, bij grotere of complexere woningen tot ca. €550. Fase 1 met metingen kost indicatief €750 – €1.500. Voor een vraag van de taxateur is vooraf een prijsinschatting nodig.",
+        "answer": "Een Quick Scan (fase 0) kost vanaf €350. Fase 1 met metingen kost vanaf €950. Voor een vraag van de taxateur is vooraf een prijsinschatting nodig.",
         "widget": "kostenwijzer",
         "widget_position": "after",
         "body": "<p>Alle bedragen zijn indicatief. De definitieve prijs hangt af van de woning en wat er onderzocht moet worden; je hoort hem vooraf. Zie ook de pagina <a href=\"/prijzen/\">prijzen</a> en <a href=\"/kennisbank/wat-kost-een-funderingsscan/\">wat een funderingsscan kost</a>.</p>"
@@ -703,7 +703,7 @@
       },
       {
         "q": "Past een Quick Scan binnen mijn voorbehoud?",
-        "a": "<p>De inspectie wordt meestal binnen enkele werkdagen ingepland en het rapport volgt normaal gesproken binnen 5 werkdagen na de inspectie. Geef je termijn bij de aanvraag door.</p>"
+        "a": "<p>De inspectie wordt meestal binnen enkele werkdagen ingepland en het rapport volgt normaal gesproken binnen 2 werkdagen na de inspectie. Geef je termijn bij de aanvraag door.</p>"
       },
       {
         "q": "Geven jullie advies over de koop zelf?",

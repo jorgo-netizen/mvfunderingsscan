@@ -28,10 +28,10 @@ Bedrijf
 
 Diensten en prijzen (ALTIJD als indicatief presenteren)
 - **Fase 0 = Quick Scan / quickscan fundering / funderingscheck**: niet-destructief vooronderzoek. Bestaat uit archief- en bodemonderzoek (bouwjaar, beschikbare (bouw)tekeningen, vermoedelijk funderingstype, bodemopbouw, grondwater, bodemdaling) + visuele inspectie (gevels, metselwerk, scheuren en scheurpatronen, kozijnen, deuren, ramen, vloeren, scheefstand, kruipruimte voor zover toegankelijk, zichtbare funderingsdelen, vocht) + risico-inschatting + rapport met foto's, conclusie en advies.
-- Fase 0 prijs: **vanaf circa €350**; bij grotere of complexere woningen kan het hoger uitvallen (indicatief tot circa €550). Definitieve prijs vooraf bekend. Schrijf niet "vaste prijs". Btw: nog niet bekend – noem niets tot de eigenaar dit aanlevert.
-- Fase 0 doorlooptijd: inspectie meestal **binnen enkele werkdagen** ingepland; rapport **normaal gesproken binnen 5 werkdagen na de inspectie** (geen garantie). De duur van de inspectie ter plaatse is NIET bekend: noem geen uren/minuten.
+- Fase 0 prijs: **vanaf €350** (geen bovengrens noemen); bij grotere of complexere woningen kan het hoger uitvallen. Definitieve prijs vooraf bekend. Schrijf niet "vaste prijs". Btw: nog niet bekend – noem niets tot de eigenaar dit aanlevert.
+- Fase 0 doorlooptijd: inspectie meestal **binnen enkele werkdagen** ingepland; rapport **normaal gesproken binnen 2 werkdagen na de inspectie** (geen garantie). De duur van de inspectie ter plaatse is NIET bekend: noem geen uren/minuten.
 - Uitkomsten fase 0: (1) geen directe aanleiding voor vervolgonderzoek, (2) monitoren, (3) aanvullend onderzoek adviseren (bijv. gericht naar één onderdeel, of de kruipruimte toegankelijk maken), (4) fase 1 adviseren.
-- **Fase 1** = vervolgonderzoek met metingen, alleen als fase 0 daar aanleiding voor geeft. Onderdelen: lintvoegwaterpassing, scheefstandsmeting/loodmeting, vloerveldwaterpassing, vastleggen en duiden van scheurpatronen, aanvullende inspecties waar nodig. Niet-destructief, geen graafwerk. Prijs **indicatief €750 – €1.500**. Doorlooptijd hangt af van de woning; wordt bij de offerte afgestemd (noem geen dagen).
+- **Fase 1** = vervolgonderzoek met metingen, alleen als fase 0 daar aanleiding voor geeft. Onderdelen: lintvoegwaterpassing, scheefstandsmeting/loodmeting, vloerveldwaterpassing, vastleggen en duiden van scheurpatronen, aanvullende inspecties waar nodig. Niet-destructief, geen graafwerk. Prijs **vanaf €950**. Doorlooptijd hangt af van de woning; wordt bij de offerte afgestemd (noem geen dagen).
 - Na fase 1 kan het advies zijn: monitoren, nader onderzoek zoals een **inspectieput** (fundering plaatselijk vrijgraven, bij houten palen eventueel houtonderzoek) – dat valt buiten fase 0/1 – of een herstelplan laten uitwerken door een gespecialiseerde partij.
 - **Wat een quickscan NIET is:** geen constructieve berekening, geen vrijlegging van de fundering, geen houtonderzoek, geen herstelplan of herstelofferte, geen schademelding (bijv. gaswinning), geen bouwkundige keuring van de hele woning, geen garantie.
 - Funderingsherstel kan **tienduizenden euro's** kosten, afhankelijk van type en omvang. Geef GEEN andere bedragen of prijsranges voor herstel. Voor herstelkosten heb je een offerte van een herstelspecialist nodig.
@@ -97,7 +97,7 @@ Elk bestand is een JSON-array met pagina-objecten:
   "h1": "Eén duidelijke H1 met het hoofdzoekwoord",
   "lead": "DIRECT ANTWOORD (1–3 zinnen, 35–80 woorden): wat, voor wie, waar. Mag <a> en <strong> bevatten.",
   "hero_image": {"name": "funderingsinspectie-woning-gevel", "alt": "Beschrijvende alt-tekst zonder keyword stuffing"},
-  "facts": [{"label": "Prijs", "value": "vanaf ca. €350"}, {"label": "Rapport", "value": "binnen 5 werkdagen"}],
+  "facts": [{"label": "Prijs", "value": "vanaf €350"}, {"label": "Rapport", "value": "binnen 2 werkdagen"}],
   "services": ["fase0"],
   "article": true,
   "sections": [
@@ -162,7 +162,7 @@ Inline links in tekst: `<a href="/pad/">beschrijvende ankertekst</a>`.
 - **Hoogtemeting / maaiveld:** hoogtes worden onderling (relatief) of t.o.v. NAP (Normaal Amsterdams Peil) bepaald. Maaiveld = de hoogte van het terrein rondom de woning; een verzakt maaiveld kan wijzen op bodemdaling/inklinking maar zegt niet automatisch iets over de fundering.
 - **Grondwater:** grondwaterstanden worden gemeten in peilbuizen; gemeenten, waterschappen en provincies beheren vaak meetnetten; peilbeheer in polders gebeurt door het waterschap. Relevant voor houten palen (droogstand) en voor zetting van veen en klei.
 - **Archiefonderzoek:** bronnen kunnen o.a. zijn: (gemeentelijk) bouwarchief met bouwvergunningen en -tekeningen, gegevens over bouwjaar, eerdere verbouwingen/aanbouwen, eventuele eerdere funderingsrapporten of herstel, bodemkaarten en openbare gegevens over grondwater en bodemdaling. Niet bij elke woning is alles beschikbaar; ontbrekende gegevens worden als beperking genoemd.
-- **Kosten:** losse meetmethoden hebben GEEN eigen prijs; ze maken deel uit van fase 1 (indicatief €750 – €1.500 totaal). Zeg dat de prijs afhangt van welke metingen nodig zijn en vooraf wordt afgestemd.
+- **Kosten:** losse meetmethoden hebben GEEN eigen prijs; ze maken deel uit van fase 1 (vanaf €950 totaal). Zeg dat de prijs afhangt van welke metingen nodig zijn en vooraf wordt afgestemd.
 
 ### 7.2 Nieuwe velden
 - `defined_term` (alleen als je opdracht dat noemt): `{"name": "Lintvoegwaterpassing", "description": "Eén heldere definitiezin van 20–40 woorden."}` – wordt zichtbaar als definitieblok bovenaan de pagina én als DefinedTerm-schema. De definitie moet inhoudelijk overeenkomen met de lead.
@@ -207,7 +207,7 @@ Een sectie kan een veld `"widget"` hebben: `"lintvoeg"` (lintvoegwaterpassing, p
 
 - Bestanden: `src/lib/tools.mjs` (HTML van alle tools), `public/tools.js` en `public/tools.css` (alleen geladen op pagina's met `"tools": true`), `api/lead.js` (formulieren met eventuele foto's), pagina's in `src/content/pages/tools-u.json`.
 - Widgets: `funderingscheck`, `vertelwatjeziet`, `situatiekeuze`, `kostenwijzer`, `dienstvergelijking`, `quickscantijdlijn`, `bouwjaarfundering`, `risicoklassen`, `stapwizard`, `aankoopcheck`, `scenario`, `meetwaarden`, `funderingsquiz`, `werkgebiedkaart`, `contactformulier`.
-- Regels: nooit een diagnose; elk resultaat vermeldt wat het wel en niet betekent; alleen bestaande prijzen (€350 / tot €550 / €750 – €1.500); risicoklassen alleen met de letterlijke KCAF-omschrijving; bouwjaar alleen als "kan voorkomen".
+- Regels: nooit een diagnose; elk resultaat vermeldt wat het wel en niet betekent; alleen bestaande prijzen (fase 0 vanaf €350, fase 1 vanaf €950); risicoklassen alleen met de letterlijke KCAF-omschrijving; bouwjaar alleen als "kan voorkomen".
 - Funderingscheck-logica (`public/tools.js`): signalen = scheuren (binnen of buiten 1, beide 2), groeiende scheuren 1 (niet als er "geen scheuren" is gekozen), klemmen 1, scheve vloer 1. Omstandigheden = bouwjaar vóór 1970, houten palen, klasse D/E, eerder onderzoek met aandachtspunten. Klasse D/E of eerder onderzoek met aandachtspunten of 4+ signalen → "sterke aanleiding"; 2–3 signalen → "meerdere"; 1 signaal of 2 omstandigheden → "enkele"; anders "weinig"; bij 4+ keer "weet ik niet" en geen signalen → "te weinig informatie".
 - Foto's: maximaal 3, in de browser verkleind tot 1600 px JPEG (EXIF verdwijnt), server accepteert alleen JPEG tot 1,5 MB, niets wordt opgeslagen; alles gaat per e-mail via Resend.
 - Analytics: events worden alleen naar `window.dataLayer` gestuurd als die al bestaat (er is nu geen analytics op de site).

@@ -46,10 +46,16 @@
       const radios = $$('input[type="radio"]', steps[i]);
       return !radios.length || radios.some((r) => r.checked);
     };
+    const groeiStep = steps.findIndex((s) => $('input[name="groei"]', s));
     const go = (d) => {
       if (d > 0 && !answered()) { err.hidden = false; $('input', steps[i])?.focus(); return; }
       if (!started) { started = true; track('funderingscheck_started'); }
       i = Math.max(0, Math.min(steps.length - 1, i + d));
+      // Geen scheuren: de vraag of scheuren groter worden is niet van toepassing en wordt overgeslagen.
+      if (i === groeiStep && radioVal(form, 'scheuren') === 'nee') {
+        $('input[name="groei"][value="nvt"]', form).checked = true;
+        i = Math.max(0, Math.min(steps.length - 1, i + d));
+      }
       show();
       const first = $('input:checked, input, textarea', steps[i]);
       if (first) first.focus({ preventScroll: true });
@@ -102,7 +108,9 @@
         kopen: 'Koop je een woning? Bekijk wat een <a href="/fase-0-funderingsonderzoek-aankoop/">Quick Scan bij aankoop</a> inhoudt en doe ook de <a href="/huis-kopen-funderingscheck/">aankoop-check</a>.',
         verkopen: 'Verkoop je? Lees wat <a href="/funderingsonderzoek-bij-verkoop/">funderingsonderzoek bij verkoop</a> kan opleveren.',
         taxatie: 'Gaat het om een taxatie? Lees <a href="/funderingsonderzoek-taxatie/">funderingsonderzoek en taxatie</a> en stem af met je taxateur.',
-        klachten: 'Zie je signalen? Beschrijf ze en voeg foto\'s toe via <a href="/vertel-wat-je-ziet/">vertel ons wat je ziet</a>.',
+        wonen: signalen.length
+          ? 'Zie je signalen aan je eigen woning? Beschrijf ze en voeg foto\'s toe via <a href="/vertel-wat-je-ziet/">vertel ons wat je ziet</a>.'
+          : 'Wil je weten welke stap bij jouw woning past? Doorloop de <a href="/welke-stap-past-bij-mij/">stappenhulp</a>.',
       }[a.situatie] || 'Wil je weten welke stap bij jou past? Doorloop de <a href="/welke-stap-past-bij-mij/">stappenhulp</a>.';
       $('[data-out="advies"]', result).innerHTML = advies;
 
@@ -322,6 +330,9 @@
       if (a.signalen === 'ja') on.add('signalen');
       if (a.info === 'rapport') on.add('rapport');
       if (a.info === 'nee') on.add('geen-info');
+      if (a.info === 'mondeling') on.add('mondeling');
+      if (a.bouwjaar === 'onbekend') on.add('bouwjaar-onbekend');
+      if (a.signalen === 'onbekend') on.add('signalen-onbekend');
       if (a.verbouw === 'ja') on.add('verbouw');
       if (a.voorbehoud === 'ja') on.add('voorbehoud');
       if (a.voorbehoud === 'nee') on.add('geen-voorbehoud');

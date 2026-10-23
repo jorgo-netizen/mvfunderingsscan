@@ -34,11 +34,11 @@
       },
       {
         "label": "Indicatieve prijs",
-        "value": "vanaf circa €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Rapport",
-        "value": "meestal binnen 5 werkdagen na de inspectie"
+        "value": "meestal binnen 2 werkdagen na de inspectie"
       }
     ],
     "article": true,
@@ -77,7 +77,7 @@
         "id": "wanneer-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Een funderingsscan is verstandig als je een oudere woning koopt of bezit, signalen ziet die op beweging kunnen wijzen, of meer duidelijkheid wilt voordat je een grote beslissing neemt.",
-        "body": "<ul class=\"checklist\">\n<li>Je overweegt een woning te kopen die van vóór circa 1970 is.</li>\n<li>Je ziet scheuren, scheefstand of klemmende deuren en wilt weten of de fundering een rol speelt.</li>\n<li>De woning staat op veen of klei, of in een gebied met bodemdaling.</li>\n<li>Je wilt je woning verkopen en kopers vooraf duidelijkheid geven.</li>\n<li>Je taxateur of geldverstrekker vraagt om aanvullende informatie over de fundering.</li>\n</ul>\n<p>Twijfel je of het voor jouw situatie zinvol is? Doe de <a href=\"/funderingsscan-check/\">online funderingscheck</a> of bekijk wat <a href=\"/prijzen/\">een funderingsscan kost</a>.</p>"
+        "body": "<ul class=\"checklist\">\n<li>Je overweegt een woning te kopen die van vóór circa 1970 is.</li>\n<li>Je ziet scheuren, scheefstand of klemmende deuren en wilt weten of de fundering een rol speelt.</li>\n<li>De woning staat op veen of klei, of in een gebied met bodemdaling.</li>\n<li>Je wilt je woning verkopen en kopers vooraf duidelijkheid geven.</li>\n<li>Je taxateur of geldverstrekker vraagt om aanvullende informatie over de fundering.</li>\n</ul>\n<p>Twijfel je of het voor jouw situatie zinvol is? Doe de <a href=\"/gratis-funderingscheck/\">online funderingscheck</a> of bekijk wat <a href=\"/prijzen/\">een funderingsscan kost</a>.</p>"
       }
     ],
     "faqs": [
@@ -91,7 +91,7 @@
       },
       {
         "q": "Wat kost een funderingsscan ongeveer?",
-        "a": "<p>Een funderingsscan kost indicatief vanaf circa €350, en bij grotere of complexere woningen kan dat hoger uitvallen. De definitieve prijs hoor je altijd vooraf.</p>"
+        "a": "<p>Een funderingsscan kost vanaf €350, en bij grotere of complexere woningen kan dat hoger uitvallen. De definitieve prijs hoor je altijd vooraf.</p>"
       },
       {
         "q": "Krijg ik na een funderingsscan zekerheid?",
@@ -156,7 +156,7 @@
         "id": "synoniemen",
         "h2": "Welke andere namen worden gebruikt voor een quickscan?",
         "answer": "Een quickscan fundering heet ook wel funderingsscan, funderingscheck of fase 0 funderingsonderzoek. Bij MV Funderingsscan bedoelen we met al deze termen hetzelfde vooronderzoek.",
-        "body": "<dl class=\"def-list\">\n<div><dt>Quickscan fundering</dt><dd>De meest gebruikte zoekterm voor het vooronderzoek naar de fundering.</dd></div>\n<div><dt>Funderingsscan</dt><dd>Dezelfde dienst, met de nadruk op het scannen van de woning op risico's. Lees meer over de <a href=\"/funderingsscan/\">funderingsscan</a>.</dd></div>\n<div><dt>Funderingscheck</dt><dd>Een informele naam voor dezelfde eerste controle.</dd></div>\n<div><dt>Fase 0</dt><dd>De vaktaalnaam: het nulpunt waarop eventueel vervolgonderzoek voortbouwt.</dd></div>\n</dl>\n<p>Let op: de online <a href=\"/funderingsscan-check/\">funderingscheck op deze website</a> is iets anders. Dat is een korte vragenlijst die je zelf invult om te zien of een quickscan zinvol kan zijn. Het vervangt het onderzoek ter plaatse niet.</p>"
+        "body": "<dl class=\"def-list\">\n<div><dt>Quickscan fundering</dt><dd>De meest gebruikte zoekterm voor het vooronderzoek naar de fundering.</dd></div>\n<div><dt>Funderingsscan</dt><dd>Dezelfde dienst, met de nadruk op het scannen van de woning op risico's. Lees meer over de <a href=\"/funderingsscan/\">funderingsscan</a>.</dd></div>\n<div><dt>Funderingscheck</dt><dd>Een informele naam voor dezelfde eerste controle.</dd></div>\n<div><dt>Fase 0</dt><dd>De vaktaalnaam: het nulpunt waarop eventueel vervolgonderzoek voortbouwt.</dd></div>\n</dl>\n<p>Let op: de online <a href=\"/gratis-funderingscheck/\">funderingscheck op deze website</a> is iets anders. Dat is een korte vragenlijst die je zelf invult om te zien of een quickscan zinvol kan zijn. Het vervangt het onderzoek ter plaatse niet.</p>"
       },
       {
         "id": "relatie-fase-0",
@@ -168,7 +168,7 @@
         "id": "verwachting",
         "h2": "Wat mag je van een quickscan verwachten?",
         "answer": "Je mag een onderbouwde risico-inschatting verwachten, vastgelegd in een rapport met foto's, een conclusie en een advies. Een garantie of herstelplan hoort er niet bij.",
-        "body": "<div class=\"two-col-list\"><div><h3>Wel</h3><ul class=\"checklist\"><li>Inzicht in het vermoedelijke funderingstype en de bodem</li><li>Beoordeling van zichtbare signalen zoals scheuren en scheefstand</li><li>Een conclusie over het risico</li><li>Een concreet advies voor de volgende stap</li></ul></div><div><h3>Niet</h3><ul class=\"checklist\"><li>Een constructieve berekening</li><li>Het vrijleggen van de fundering of houtonderzoek</li><li>Een herstelplan of herstelofferte</li><li>Een schademelding of een bouwkundige keuring van de hele woning</li><li>De exacte conditie van houten palen of verborgen funderingsgebreken</li><li>De constructieve capaciteit, de resterende levensduur of de exacte herstelkosten</li></ul></div></div>\n<p>Die afbakening maakt een quickscan betaalbaar en snel te plannen. De inspectie wordt meestal binnen enkele werkdagen ingepland en het rapport ontvang je normaal gesproken binnen 5 werkdagen na de inspectie.</p>"
+        "body": "<div class=\"two-col-list\"><div><h3>Wel</h3><ul class=\"checklist\"><li>Inzicht in het vermoedelijke funderingstype en de bodem</li><li>Beoordeling van zichtbare signalen zoals scheuren en scheefstand</li><li>Een conclusie over het risico</li><li>Een concreet advies voor de volgende stap</li></ul></div><div><h3>Niet</h3><ul class=\"checklist\"><li>Een constructieve berekening</li><li>Het vrijleggen van de fundering of houtonderzoek</li><li>Een herstelplan of herstelofferte</li><li>Een schademelding of een bouwkundige keuring van de hele woning</li><li>De exacte conditie van houten palen of verborgen funderingsgebreken</li><li>De constructieve capaciteit, de resterende levensduur of de exacte herstelkosten</li></ul></div></div>\n<p>Die afbakening maakt een quickscan betaalbaar en snel te plannen. De inspectie wordt meestal binnen enkele werkdagen ingepland en het rapport ontvang je normaal gesproken binnen 2 werkdagen na de inspectie.</p>"
       },
       {
         "id": "voorbeeld",
@@ -189,8 +189,8 @@
         "a": "<p>Nee, het is hetzelfde onderzoek onder een andere naam. Bij MV Funderingsscan bestaan beide uit archief- en bodemonderzoek, visuele inspectie, risico-inschatting en een rapport.</p>"
       },
       {
-        "q": "Wat kost een quickscan fundering?",
-        "a": "<p>Een quickscan kost indicatief vanaf circa €350, en bij grotere of complexere woningen indicatief tot circa €550 of iets daaromtrent. Je hoort vooraf wat het onderzoek kost.</p>"
+        "q": "Wat zijn de kosten van een quickscan?",
+        "a": "<p>Een quickscan kost vanaf €350. Je hoort vooraf wat het onderzoek kost.</p>"
       },
       {
         "q": "Kan ik na een quickscan direct laten herstellen?",
@@ -254,11 +254,11 @@
       },
       {
         "label": "Indicatieve prijs",
-        "value": "vanaf circa €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Rapport",
-        "value": "meestal binnen 5 werkdagen na de inspectie"
+        "value": "meestal binnen 2 werkdagen na de inspectie"
       }
     ],
     "article": true,
@@ -311,7 +311,7 @@
       },
       {
         "q": "Hoe snel ontvang ik het rapport van fase 0?",
-        "a": "<p>Het rapport ontvang je normaal gesproken binnen 5 werkdagen na de inspectie. De inspectie zelf wordt meestal binnen enkele werkdagen ingepland.</p>"
+        "a": "<p>Het rapport ontvang je normaal gesproken binnen 2 werkdagen na de inspectie. De inspectie zelf wordt meestal binnen enkele werkdagen ingepland.</p>"
       },
       {
         "q": "Is fase 0 een bouwkundige keuring?",
@@ -363,7 +363,7 @@
     ],
     "eyebrow": "Kennisbank",
     "h1": "Wat is fase 1 bij funderingsonderzoek?",
-    "lead": "<strong>Fase 1</strong> is het vervolgonderzoek met metingen dat volgt als fase 0 daar aanleiding voor geeft. Met onder meer een lintvoegwaterpassing, loodmeting en vloerveldwaterpassing brengen we de huidige scheefstand, hoogteverschillen en andere afwijkingen in beeld en beoordelen we of er aanwijzingen zijn voor ongelijkmatige zetting. Of een woning nog beweegt, blijkt pas uit herhaalde metingen (monitoring). Fase 1 is niet-destructief: er wordt niet gegraven. De indicatieve prijs ligt tussen €750 en €1.500, afhankelijk van de woning.",
+    "lead": "<strong>Fase 1</strong> is het vervolgonderzoek met metingen dat volgt als fase 0 daar aanleiding voor geeft. Met onder meer een lintvoegwaterpassing, loodmeting en vloerveldwaterpassing brengen we de huidige scheefstand, hoogteverschillen en andere afwijkingen in beeld en beoordelen we of er aanwijzingen zijn voor ongelijkmatige zetting. Of een woning nog beweegt, blijkt pas uit herhaalde metingen (monitoring). Fase 1 is niet-destructief: er wordt niet gegraven. De prijs begint bij €950, afhankelijk van de woning.",
     "hero_image": {
       "name": "metselwerk-gevel-detail",
       "alt": "Close-up van metselwerk en voegen in een bakstenen gevel"
@@ -379,7 +379,7 @@
       },
       {
         "label": "Indicatieve prijs",
-        "value": "€750 – €1.500"
+        "value": "vanaf €950"
       }
     ],
     "article": true,
@@ -427,7 +427,7 @@
         "a": "<p>Dat hangt af van de woning. De doorlooptijd van fase 1 wordt bij de offerte met je afgestemd.</p>"
       },
       {
-        "q": "Wordt er bij fase 1 gegraven?",
+        "q": "Hoort een inspectieput bij fase 1?",
         "a": "<p>Nee, fase 1 is niet-destructief en omvat geen graafwerk. Een inspectieput is een aparte, verdergaande stap die na fase 1 als nader onderzoek kan worden geadviseerd.</p>"
       },
       {
@@ -436,7 +436,7 @@
       },
       {
         "q": "Wat kost fase 1?",
-        "a": "<p>Fase 1 kost indicatief tussen €750 en €1.500, afhankelijk van de woning en het aantal benodigde metingen.</p>"
+        "a": "<p>Fase 1 kost vanaf €950, afhankelijk van de woning en het aantal benodigde metingen.</p>"
       }
     ],
     "related": [
@@ -497,7 +497,7 @@
         "id": "vergelijkingstabel",
         "h2": "Hoe verhouden fase 0 en fase 1 zich tot elkaar?",
         "answer": "In de tabel zie je per aspect hoe fase 0 en fase 1 van elkaar verschillen, van inhoud en prijs tot doorlooptijd.",
-        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Aspect</th><th>Fase 0 (Quick Scan)</th><th>Fase 1</th></tr></thead><tbody>\n<tr><td>Doel</td><td>Risico inschatten en vervolgstap bepalen</td><td>Scheefstand en hoogteverschillen in beeld brengen met metingen</td></tr>\n<tr><td>Inhoud</td><td>Archief- en bodemonderzoek, <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a>, <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a></td><td><a href=\"/kennisbank/lintvoegwaterpassing/\">Lintvoegwaterpassing</a>, <a href=\"/kennisbank/loodmeting/\">loodmeting</a>, <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a>, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a> duiden, aanvullende inspecties</td></tr>\n<tr><td>Wanneer</td><td>Meestal de eerste stap</td><td>In de regel na een fase 0 die daar aanleiding voor geeft</td></tr>\n<tr><td>Ingrijpend?</td><td>Niet-destructief</td><td>Niet-destructief, geen graafwerk</td></tr>\n<tr><td>Indicatieve prijs</td><td>Vanaf circa €350, bij grotere of complexere woningen hoger</td><td>€750 – €1.500</td></tr>\n<tr><td>Doorlooptijd</td><td>Inspectie meestal binnen enkele werkdagen, rapport normaal gesproken binnen 5 werkdagen na de inspectie</td><td>Afhankelijk van de woning, afgestemd bij de offerte</td></tr>\n<tr><td>Resultaat</td><td>Rapport met foto's, conclusie en advies</td><td>Meetresultaten met duiding en advies</td></tr>\n</tbody></table></div>"
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Aspect</th><th>Fase 0 (Quick Scan)</th><th>Fase 1</th></tr></thead><tbody>\n<tr><td>Doel</td><td>Risico inschatten en vervolgstap bepalen</td><td>Scheefstand en hoogteverschillen in beeld brengen met metingen</td></tr>\n<tr><td>Inhoud</td><td>Archief- en bodemonderzoek, <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a>, <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a></td><td><a href=\"/kennisbank/lintvoegwaterpassing/\">Lintvoegwaterpassing</a>, <a href=\"/kennisbank/loodmeting/\">loodmeting</a>, <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a>, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a> duiden, aanvullende inspecties</td></tr>\n<tr><td>Wanneer</td><td>Meestal de eerste stap</td><td>In de regel na een fase 0 die daar aanleiding voor geeft</td></tr>\n<tr><td>Ingrijpend?</td><td>Niet-destructief</td><td>Niet-destructief, geen graafwerk</td></tr>\n<tr><td>Indicatieve prijs</td><td>Vanaf €350, bij grotere of complexere woningen hoger</td><td>vanaf €950</td></tr>\n<tr><td>Doorlooptijd</td><td>Inspectie meestal binnen enkele werkdagen, rapport normaal gesproken binnen 2 werkdagen na de inspectie</td><td>Afhankelijk van de woning, afgestemd bij de offerte</td></tr>\n<tr><td>Resultaat</td><td>Rapport met foto's, conclusie en advies</td><td>Meetresultaten met duiding en advies</td></tr>\n</tbody></table></div>"
       },
       {
         "id": "waarom-volgorde",
@@ -515,7 +515,7 @@
         "id": "voorbeeld",
         "h2": "Voorbeeld: kopen met een strakke planning",
         "answer": "Ook met weinig tijd is fase 0 meestal een goede start: het helpt bepalen of fase 1 nodig is.",
-        "body": "<p><em>Voorbeeld:</em> je hebt een bod gedaan op een vooroorlogse woning en de verkoper wil snel duidelijkheid. Je overweegt meteen \"het uitgebreide onderzoek\" te laten doen om meer zekerheid te krijgen. Toch is fase 0 hier meestal de logische start: die is snel te plannen en het rapport volgt normaal gesproken binnen 5 werkdagen na de inspectie. Adviseert het rapport fase 1, dan weet je beter waarom en kun je dat meenemen in je afspraken. Lees meer over <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>.</p>"
+        "body": "<p><em>Voorbeeld:</em> je hebt een bod gedaan op een vooroorlogse woning en de verkoper wil snel duidelijkheid. Je overweegt meteen \"het uitgebreide onderzoek\" te laten doen om meer zekerheid te krijgen. Toch is fase 0 hier meestal de logische start: die is snel te plannen en het rapport volgt normaal gesproken binnen 2 werkdagen na de inspectie. Adviseert het rapport fase 1, dan weet je beter waarom en kun je dat meenemen in je afspraken. Lees meer over <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>.</p>"
       },
       {
         "id": "wanneer-verstandig",
@@ -539,7 +539,7 @@
       },
       {
         "q": "Welke fase is goedkoper?",
-        "a": "<p>Fase 0 is de goedkopere stap, indicatief vanaf circa €350 per woning. Fase 1 kost indicatief €750 – €1.500, omdat er meer wordt gemeten en uitgewerkt.</p>"
+        "a": "<p>Fase 0 is de goedkopere stap, vanaf €350 per woning. Fase 1 kost vanaf €950, omdat er meer wordt gemeten en uitgewerkt.</p>"
       }
     ],
     "related": [
@@ -583,15 +583,15 @@
     ],
     "eyebrow": "Kennisbank",
     "h1": "Wat kost een funderingsscan?",
-    "lead": "Een <strong>funderingsscan (fase 0)</strong> kost indicatief vanaf circa €350 per woning. Bij grotere of complexere woningen kan het hoger uitvallen, indicatief tot circa €550 of daaromtrent. Geeft de scan aanleiding voor vervolgonderzoek met metingen (fase 1), dan ligt de indicatieve prijs tussen €750 en €1.500 per woning. De definitieve prijs hoor je altijd vooraf.",
+    "lead": "Een <strong>funderingsscan (fase 0)</strong> kost vanaf €350 per woning. Geeft de scan aanleiding voor vervolgonderzoek met metingen (fase 1), dan begint de prijs bij €950. De definitieve prijs hoor je altijd vooraf.",
     "facts": [
       {
         "label": "Fase 0",
-        "value": "vanaf circa €350 (indicatief)"
+        "value": "vanaf €350 (indicatief)"
       },
       {
         "label": "Fase 1",
-        "value": "€750 – €1.500 (indicatief)"
+        "value": "vanaf €950 (indicatief)"
       },
       {
         "label": "Prijs",
@@ -603,8 +603,8 @@
       {
         "id": "prijzen-overzicht",
         "h2": "Wat kosten fase 0 en fase 1 indicatief?",
-        "answer": "Fase 0 kost indicatief vanaf circa €350 en fase 1 indicatief €750 – €1.500, afhankelijk van de woning. Fase 1 volgt in de regel alleen als fase 0 daar aanleiding voor geeft.",
-        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Onderzoek</th><th>Indicatieve prijs</th><th>Wanneer</th></tr></thead><tbody>\n<tr><td>Fase 0 (funderingsscan, quickscan)</td><td>Vanaf circa €350, bij grotere of complexere woningen tot circa €550</td><td>Meestal de eerste stap</td></tr>\n<tr><td>Fase 1 (metingen)</td><td>€750 – €1.500</td><td>In de regel na een fase 0 die daar aanleiding voor geeft</td></tr>\n</tbody></table></div>\n<p>Omdat fase 1 niet automatisch volgt, betaal je in veel gevallen alleen voor fase 0. Het volledige prijsoverzicht staat op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "answer": "Fase 0 kost vanaf €350 en fase 1 vanaf €950, afhankelijk van de woning. Fase 1 volgt in de regel alleen als fase 0 daar aanleiding voor geeft.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Onderzoek</th><th>Indicatieve prijs</th><th>Wanneer</th></tr></thead><tbody>\n<tr><td>Fase 0 (funderingsscan, quickscan)</td><td>Vanaf €350</td><td>Meestal de eerste stap</td></tr>\n<tr><td>Fase 1 (metingen)</td><td>vanaf €950</td><td>In de regel na een fase 0 die daar aanleiding voor geeft</td></tr>\n</tbody></table></div>\n<p>Omdat fase 1 niet automatisch volgt, betaal je in veel gevallen alleen voor fase 0. Het volledige prijsoverzicht staat op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
         "id": "wat-bepaalt-prijs",
@@ -634,7 +634,7 @@
         "id": "wanneer-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Onderzoek is verstandig als de kosten van onzekerheid groter zijn dan de kosten van de scan, bijvoorbeeld bij aankoop van een oudere woning of bij zichtbare signalen.",
-        "body": "<p>Twijfel je of het voor jouw woning nodig is? Doe de <a href=\"/funderingsscan-check/\">online funderingscheck</a>. Wil je direct een prijs voor jouw woning? <a href=\"/funderingsscan-aanvragen/\">Vraag een funderingsscan aan</a>.</p>"
+        "body": "<p>Twijfel je of het voor jouw woning nodig is? Doe de <a href=\"/gratis-funderingscheck/\">online funderingscheck</a>. Wil je direct een prijs voor jouw woning? <a href=\"/funderingsscan-aanvragen/\">Vraag een funderingsscan aan</a>.</p>"
       }
     ],
     "faqs": [
@@ -676,7 +676,7 @@
   {
     "path": "/kennisbank/wat-kost-fase-0/",
     "title": "Wat kost fase 0 funderingsonderzoek? | MV Funderingsscan",
-    "description": "Wat kost fase 0 funderingsonderzoek? Lees wat je krijgt voor de indicatieve prijs vanaf circa €350 en waarom de prijs per woning kan verschillen.",
+    "description": "Wat kost fase 0 funderingsonderzoek? Lees wat je krijgt voor de indicatieve prijs vanaf €350 en waarom de prijs per woning kan verschillen.",
     "keyword": "wat kost fase 0",
     "intent": "informatief",
     "nav_active": "/kennisbank/",
@@ -696,19 +696,19 @@
     ],
     "eyebrow": "Kennisbank",
     "h1": "Wat kost fase 0 funderingsonderzoek?",
-    "lead": "<strong>Fase 0</strong> kost indicatief vanaf circa €350 per woning. Bij grotere of complexere woningen kan de prijs hoger uitvallen, indicatief tot circa €550 of iets daaromtrent. Daarvoor krijg je archief- en bodemonderzoek, een visuele inspectie, een risico-inschatting en een rapport met foto's, conclusie en advies. De definitieve prijs hoor je altijd vooraf.",
+    "lead": "<strong>Fase 0</strong> kost vanaf €350 per woning. Daarvoor krijg je archief- en bodemonderzoek, een visuele inspectie, een risico-inschatting en een rapport met foto's, conclusie en advies. De definitieve prijs hoor je altijd vooraf.",
     "facts": [
       {
-        "label": "Indicatief vanaf",
-        "value": "circa €350"
+        "label": "Prijs",
+        "value": "vanaf €350"
       },
       {
-        "label": "Grotere of complexere woning",
-        "value": "indicatief tot circa €550"
+        "label": "Exacte prijs",
+        "value": "vooraf bekend"
       },
       {
         "label": "Rapport",
-        "value": "meestal binnen 5 werkdagen na de inspectie"
+        "value": "meestal binnen 2 werkdagen na de inspectie"
       }
     ],
     "article": true,
@@ -716,14 +716,14 @@
       {
         "id": "prijs-fase-0",
         "h2": "Wat is de prijs van fase 0?",
-        "answer": "De indicatieve prijs van fase 0 begint bij circa €350 en kan bij grotere of complexere woningen oplopen tot indicatief circa €550 of daaromtrent.",
+        "answer": "De prijs van fase 0 begint bij €350.",
         "body": "<p>Het vanaf-bedrag past bij een gangbare woning zonder bijzonderheden in de opbouw. Hoe meer er te inspecteren en uit te werken valt, hoe meer tijd het onderzoek vraagt. Dat zie je terug in de prijs. Belangrijk is dat je vooraf weet wat het kost: de definitieve prijs wordt altijd vooraf met je gedeeld, voordat het onderzoek start.</p>\n<p>Wil je de prijzen van fase 0 en fase 1 naast elkaar zien? Lees dan het artikel <a href=\"/kennisbank/wat-kost-een-funderingsscan/\">wat kost een funderingsscan</a> of bekijk de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
         "id": "wat-zit-erin",
         "h2": "Wat zit er in fase 0 voor dat geld?",
         "answer": "Voor de prijs van fase 0 krijg je vier onderdelen: archief- en bodemonderzoek, een visuele inspectie, een risico-inschatting en een rapport.",
-        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Onderdeel</th><th>Wat je krijgt</th></tr></thead><tbody>\n<tr><td>Archief- en bodemonderzoek</td><td>Bouwjaar, beschikbare (bouw)tekeningen, vermoedelijk funderingstype, bodemopbouw, grondwater en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a></td></tr>\n<tr><td><a href=\"/kennisbank/visuele-funderingsinspectie/\">Visuele inspectie</a></td><td>Gevels, metselwerk, scheuren en <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, kozijnen, deuren, ramen, vloeren, scheefstand, vocht, zichtbare funderingsdelen en de kruipruimte voor zover toegankelijk; de fundering zelf wordt niet vrijgegraven</td></tr>\n<tr><td><a href=\"/kennisbank/funderingsrisico-inschatting/\">Risico-inschatting</a></td><td>Een onderbouwde weging van alle bevindingen samen</td></tr>\n<tr><td>Rapport</td><td>Foto's, conclusie en advies, normaal gesproken binnen 5 werkdagen na de inspectie</td></tr>\n</tbody></table></div>\n<p>Een uitgebreide toelichting op elk onderdeel staat op de pagina over <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>.</p>"
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Onderdeel</th><th>Wat je krijgt</th></tr></thead><tbody>\n<tr><td>Archief- en bodemonderzoek</td><td>Bouwjaar, beschikbare (bouw)tekeningen, vermoedelijk funderingstype, bodemopbouw, grondwater en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a></td></tr>\n<tr><td><a href=\"/kennisbank/visuele-funderingsinspectie/\">Visuele inspectie</a></td><td>Gevels, metselwerk, scheuren en <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, kozijnen, deuren, ramen, vloeren, scheefstand, vocht, zichtbare funderingsdelen en de kruipruimte voor zover toegankelijk; de fundering zelf wordt niet vrijgegraven</td></tr>\n<tr><td><a href=\"/kennisbank/funderingsrisico-inschatting/\">Risico-inschatting</a></td><td>Een onderbouwde weging van alle bevindingen samen</td></tr>\n<tr><td>Rapport</td><td>Foto's, conclusie en advies, normaal gesproken binnen 2 werkdagen na de inspectie</td></tr>\n</tbody></table></div>\n<p>Een uitgebreide toelichting op elk onderdeel staat op de pagina over <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>.</p>"
       },
       {
         "id": "waarom-varieert",
@@ -735,7 +735,7 @@
         "id": "wat-niet",
         "h2": "Wat zit er niet in fase 0?",
         "answer": "Fase 0 omvat geen metingen, geen graafwerk, geen houtonderzoek en geen herstelplan. Die onderdelen kunnen pas later in beeld komen.",
-        "body": "<div class=\"callout callout-warn\"><strong>Buiten fase 0</strong><p>Geen constructieve berekening, geen vrijlegging van de fundering, geen houtonderzoek, geen herstelplan of herstelofferte, geen schademelding en geen bouwkundige keuring van de hele woning. Metingen horen bij fase 1, die indicatief €750 – €1.500 kost en in de regel volgt als fase 0 daar aanleiding voor geeft.</p></div>\n<p>Juist doordat fase 0 zo duidelijk is afgebakend, blijft het een betaalbare eerste stap. Je investeert eerst in overzicht en beslist daarna, met het rapport in de hand, of verdere kosten zinvol zijn.</p>"
+        "body": "<div class=\"callout callout-warn\"><strong>Buiten fase 0</strong><p>Geen constructieve berekening, geen vrijlegging van de fundering, geen houtonderzoek, geen herstelplan of herstelofferte, geen schademelding en geen bouwkundige keuring van de hele woning. Metingen horen bij fase 1, die vanaf €950 kost en in de regel volgt als fase 0 daar aanleiding voor geeft.</p></div>\n<p>Juist doordat fase 0 zo duidelijk is afgebakend, blijft het een betaalbare eerste stap. Je investeert eerst in overzicht en beslist daarna, met het rapport in de hand, of verdere kosten zinvol zijn.</p>"
       },
       {
         "id": "voorbeeld",
@@ -747,7 +747,7 @@
         "id": "wanneer-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Fase 0 is verstandig als je twijfelt over de fundering van een woning die je koopt, verkoopt of bezit. De kosten zijn dan klein vergeleken met de onzekerheid.",
-        "body": "<p>Funderingsherstel kan tienduizenden euro's kosten, afhankelijk van type en omvang. Een fase 0 vooraf helpt bepalen of er reden is voor verder onderzoek. Twijfel je? Doe de <a href=\"/funderingsscan-check/\">online funderingscheck</a> of <a href=\"/funderingsscan-aanvragen/\">vraag fase 0 aan</a> en ontvang vooraf de definitieve prijs.</p>"
+        "body": "<p>Funderingsherstel kan tienduizenden euro's kosten, afhankelijk van type en omvang. Een fase 0 vooraf helpt bepalen of er reden is voor verder onderzoek. Twijfel je? Doe de <a href=\"/gratis-funderingscheck/\">online funderingscheck</a> of <a href=\"/funderingsscan-aanvragen/\">vraag fase 0 aan</a> en ontvang vooraf de definitieve prijs.</p>"
       }
     ],
     "faqs": [
@@ -809,7 +809,7 @@
     ],
     "eyebrow": "Kennisbank",
     "h1": "Hoe lang duurt funderingsonderzoek?",
-    "lead": "Bij <strong>fase 0</strong> wordt de inspectie meestal binnen enkele werkdagen ingepland en ontvang je het rapport normaal gesproken binnen 5 werkdagen na de inspectie. De doorlooptijd van <strong>fase 1</strong> hangt af van de woning en wordt bij de offerte met je afgestemd. Hoe snel het in jouw geval gaat, hangt ook af van bereikbaarheid en beschikbare gegevens.",
+    "lead": "Bij <strong>fase 0</strong> wordt de inspectie meestal binnen enkele werkdagen ingepland en ontvang je het rapport normaal gesproken binnen 2 werkdagen na de inspectie. De doorlooptijd van <strong>fase 1</strong> hangt af van de woning en wordt bij de offerte met je afgestemd. Hoe snel het in jouw geval gaat, hangt ook af van bereikbaarheid en beschikbare gegevens.",
     "facts": [
       {
         "label": "Fase 0 inspectie",
@@ -817,7 +817,7 @@
       },
       {
         "label": "Fase 0 rapport",
-        "value": "meestal binnen 5 werkdagen na de inspectie"
+        "value": "meestal binnen 2 werkdagen na de inspectie"
       },
       {
         "label": "Fase 1",
@@ -829,8 +829,8 @@
       {
         "id": "doorlooptijd-fase-0",
         "h2": "Hoe lang duurt fase 0?",
-        "answer": "Bij fase 0 wordt de inspectie meestal binnen enkele werkdagen ingepland. Het rapport volgt normaal gesproken binnen 5 werkdagen na de inspectie.",
-        "body": "<ol class=\"mini-steps\">\n<li><strong>Aanvraag</strong><span>Je vraagt het onderzoek aan en ontvangt vooraf de definitieve prijs.</span></li>\n<li><strong>Inplannen</strong><span>De inspectie wordt meestal binnen enkele werkdagen ingepland.</span></li>\n<li><strong>Inspectie ter plaatse</strong><span>De woning wordt van buiten en binnen bekeken, inclusief de kruipruimte voor zover toegankelijk.</span></li>\n<li><strong>Rapport</strong><span>Normaal gesproken binnen 5 werkdagen na de inspectie ontvang je het rapport met foto's, conclusie en advies.</span></li>\n</ol>\n<p>Hoe lang de inspectie zelf duurt, verschilt per woning. Een compacte woning is sneller bekeken dan een grote woning met aanbouwen. Meer over het verloop lees je bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a> en op de pagina <a href=\"/werkwijze/\">werkwijze</a>.</p>"
+        "answer": "Bij fase 0 wordt de inspectie meestal binnen enkele werkdagen ingepland. Het rapport volgt normaal gesproken binnen 2 werkdagen na de inspectie.",
+        "body": "<ol class=\"mini-steps\">\n<li><strong>Aanvraag</strong><span>Je vraagt het onderzoek aan en ontvangt vooraf de definitieve prijs.</span></li>\n<li><strong>Inplannen</strong><span>De inspectie wordt meestal binnen enkele werkdagen ingepland.</span></li>\n<li><strong>Inspectie ter plaatse</strong><span>De woning wordt van buiten en binnen bekeken, inclusief de kruipruimte voor zover toegankelijk.</span></li>\n<li><strong>Rapport</strong><span>Normaal gesproken binnen 2 werkdagen na de inspectie ontvang je het rapport met foto's, conclusie en advies.</span></li>\n</ol>\n<p>Hoe lang de inspectie zelf duurt, verschilt per woning. Een compacte woning is sneller bekeken dan een grote woning met aanbouwen. Meer over het verloop lees je bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a> en op de pagina <a href=\"/werkwijze/\">werkwijze</a>.</p>"
       },
       {
         "id": "doorlooptijd-fase-1",
@@ -854,7 +854,7 @@
         "id": "voorbeeld",
         "h2": "Voorbeeld: planning rond een koopbeslissing",
         "answer": "Met een vroege aanvraag en goede afspraken over toegang past fase 0 vaak goed binnen de planning van een aankoop.",
-        "body": "<p><em>Voorbeeld:</em> je hebt een woning op het oog en spreekt met de verkoper een periode af waarin je onderzoek kunt laten doen. Je vraagt direct fase 0 aan en regelt via de makelaar dat de woning en de kruipruimte toegankelijk zijn. De inspectie wordt binnen enkele werkdagen ingepland en het rapport volgt normaal gesproken binnen 5 werkdagen daarna. Adviseert het rapport fase 1, dan weet je dat er een extra stap nodig is en kun je daarover tijdig met de verkoper overleggen.</p>"
+        "body": "<p><em>Voorbeeld:</em> je hebt een woning op het oog en spreekt met de verkoper een periode af waarin je onderzoek kunt laten doen. Je vraagt direct fase 0 aan en regelt via de makelaar dat de woning en de kruipruimte toegankelijk zijn. De inspectie wordt binnen enkele werkdagen ingepland en het rapport volgt normaal gesproken binnen 2 werkdagen daarna. Adviseert het rapport fase 1, dan weet je dat er een extra stap nodig is en kun je daarover tijdig met de verkoper overleggen.</p>"
       },
       {
         "id": "wanneer-verstandig",
@@ -865,12 +865,12 @@
     ],
     "faqs": [
       {
-        "q": "Hoe snel kan de inspectie plaatsvinden?",
+        "q": "Hoe lang duurt het voordat de inspectie van fase 0 plaatsvindt?",
         "a": "<p>De inspectie van fase 0 wordt meestal binnen enkele werkdagen ingepland. De exacte datum hangt af van de beschikbaarheid en de toegang tot de woning.</p>"
       },
       {
         "q": "Wanneer krijg ik het rapport?",
-        "a": "<p>Het rapport van fase 0 ontvang je normaal gesproken binnen 5 werkdagen na de inspectie.</p>"
+        "a": "<p>Het rapport van fase 0 ontvang je normaal gesproken binnen 2 werkdagen na de inspectie.</p>"
       },
       {
         "q": "Hoe lang duurt de inspectie zelf?",
@@ -975,7 +975,7 @@
         "id": "wanneer-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Onderzoek is verstandig als je signalen ziet, een oudere woning koopt of bezit, of de woning op een gevoelige bodem staat.",
-        "body": "<p>Wil je weten of het in jouw situatie zinvol is? Doe de <a href=\"/funderingsscan-check/\">online funderingscheck</a> of <a href=\"/funderingsscan-aanvragen/\">vraag een funderingsscan aan</a>.</p>"
+        "body": "<p>Wil je weten of het in jouw situatie zinvol is? Doe de <a href=\"/gratis-funderingscheck/\">online funderingscheck</a> of <a href=\"/funderingsscan-aanvragen/\">vraag een funderingsscan aan</a>.</p>"
       }
     ],
     "faqs": [
@@ -1080,7 +1080,7 @@
         "id": "wanneer-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Onderzoek is verstandig zodra één of meer van de bovenstaande situaties op jou van toepassing zijn. In de meeste situaties begint het onderzoek met fase 0.",
-        "body": "<p>Twijfel je nog? Gebruik de <a href=\"/funderingsscan-check/\">online funderingscheck</a> of lees <a href=\"/kennisbank/heb-ik-een-funderingsscan-nodig/\">heb ik een funderingsscan nodig</a>. Wil je direct starten, dan kun je een <a href=\"/funderingsscan-aanvragen/\">funderingsscan aanvragen</a>.</p>"
+        "body": "<p>Twijfel je nog? Gebruik de <a href=\"/gratis-funderingscheck/\">online funderingscheck</a> of lees <a href=\"/kennisbank/heb-ik-een-funderingsscan-nodig/\">heb ik een funderingsscan nodig</a>. Wil je direct starten, dan kun je een <a href=\"/funderingsscan-aanvragen/\">funderingsscan aanvragen</a>.</p>"
       }
     ],
     "faqs": [
@@ -1151,7 +1151,7 @@
         "id": "uitslag",
         "h2": "Hoe lees je je uitslag?",
         "answer": "Eén vinkje is niet direct reden tot zorg, maar meerdere vinkjes, vooral in combinatie met zichtbare signalen, maken een funderingsscan zinvol.",
-        "body": "<div class=\"mini-outcomes\"><div class=\"mini-outcome mini-ok\"><strong>Geen of één vinkje</strong><span>Waarschijnlijk geen directe aanleiding. Blijf alert op veranderingen.</span></div><div class=\"mini-outcome mini-watch\"><strong>Een paar vinkjes over de woning</strong><span>Overweeg een scan, zeker rond aankoop of verkoop.</span></div><div class=\"mini-outcome mini-extra\"><strong>Vinkjes bij wat je ziet</strong><span>Laat de signalen beoordelen, ook al kunnen ze een andere oorzaak hebben.</span></div><div class=\"mini-outcome mini-next\"><strong>Vinkjes in alle drie de groepen</strong><span>Een funderingsscan is dan vaak een logische stap.</span></div></div>\n<p>Deze zelftest is een hulpmiddel en geen diagnose. Onderzoek ter plaatse geeft meer duidelijkheid. Wil je een uitgebreidere check? Doe de <a href=\"/funderingsscan-check/\">online funderingscheck</a>.</p>"
+        "body": "<div class=\"mini-outcomes\"><div class=\"mini-outcome mini-ok\"><strong>Geen of één vinkje</strong><span>Waarschijnlijk geen directe aanleiding. Blijf alert op veranderingen.</span></div><div class=\"mini-outcome mini-watch\"><strong>Een paar vinkjes over de woning</strong><span>Overweeg een scan, zeker rond aankoop of verkoop.</span></div><div class=\"mini-outcome mini-extra\"><strong>Vinkjes bij wat je ziet</strong><span>Laat de signalen beoordelen, ook al kunnen ze een andere oorzaak hebben.</span></div><div class=\"mini-outcome mini-next\"><strong>Vinkjes in alle drie de groepen</strong><span>Een funderingsscan is dan vaak een logische stap.</span></div></div>\n<p>Deze zelftest is een hulpmiddel en geen diagnose. Onderzoek ter plaatse geeft meer duidelijkheid. Wil je een uitgebreidere check? Doe de <a href=\"/gratis-funderingscheck/\">online funderingscheck</a>.</p>"
       },
       {
         "id": "andere-oorzaken",
@@ -1169,7 +1169,7 @@
         "id": "wat-scan-oplevert",
         "h2": "Wat levert een funderingsscan je op?",
         "answer": "Een funderingsscan levert een rapport met foto's, een conclusie over het risico en een concreet advies op, zodat je beter kunt bepalen of verdere stappen nodig zijn.",
-        "body": "<p>Het advies is één van vier uitkomsten: geen directe aanleiding voor vervolgonderzoek, monitoren, aanvullend onderzoek, of fase 1 met metingen. De scan kost indicatief vanaf circa €350 en het rapport ontvang je normaal gesproken binnen 5 werkdagen na de inspectie. Lees meer over de <a href=\"/funderingsscan/\">funderingsscan</a>.</p>"
+        "body": "<p>Het advies is één van vier uitkomsten: geen directe aanleiding voor vervolgonderzoek, monitoren, aanvullend onderzoek, of fase 1 met metingen. De scan kost vanaf €350 en het rapport ontvang je normaal gesproken binnen 2 werkdagen na de inspectie. Lees meer over de <a href=\"/funderingsscan/\">funderingsscan</a>.</p>"
       },
       {
         "id": "voorbereiden",
@@ -1191,7 +1191,7 @@
       },
       {
         "q": "Is de zelftest op deze pagina hetzelfde als de online check?",
-        "a": "<p>Nee, deze zelftest is een korte lijst om over na te denken. De <a href=\"/funderingsscan-check/\">online funderingscheck</a> is een aparte tool op de website.</p>"
+        "a": "<p>Nee, deze zelftest is een korte lijst om over na te denken. De <a href=\"/gratis-funderingscheck/\">online funderingscheck</a> is een aparte tool op de website.</p>"
       },
       {
         "q": "Wat als ik geen enkel vinkje heb?",
@@ -1204,7 +1204,7 @@
     ],
     "related": [
       {
-        "href": "/funderingsscan-check/",
+        "href": "/gratis-funderingscheck/",
         "label": "Doe de online funderingscheck",
         "text": "Beantwoord een paar vragen en zie of onderzoek zinvol kan zijn."
       },
@@ -1243,7 +1243,7 @@
     ],
     "eyebrow": "Kennisbank",
     "h1": "Funderingsscan bij aankoop: wanneer en hoe?",
-    "lead": "Een <strong>funderingsscan bij aankoop</strong> plan je bij voorkeur zo vroeg mogelijk, liefst voordat je koop definitief is of binnen een afgesproken onderzoekstermijn. Het rapport van fase 0 volgt normaal gesproken binnen 5 werkdagen na de inspectie. Een voorbehoud voor funderingsonderzoek in de koopovereenkomst kan je ruimte geven om op de uitkomst te reageren.",
+    "lead": "Een <strong>funderingsscan bij aankoop</strong> plan je bij voorkeur zo vroeg mogelijk, liefst voordat je koop definitief is of binnen een afgesproken onderzoekstermijn. Het rapport van fase 0 volgt normaal gesproken binnen 2 werkdagen na de inspectie. Een voorbehoud voor funderingsonderzoek in de koopovereenkomst kan je ruimte geven om op de uitkomst te reageren.",
     "hero_image": {
       "name": "jaren-dertig-woningen-straat",
       "alt": "Rij jaren-dertigwoningen in een groene straat"
@@ -1254,7 +1254,7 @@
         "id": "timing",
         "h2": "Wanneer plan je een funderingsscan bij aankoop?",
         "answer": "Plan de funderingsscan zo vroeg mogelijk in het koopproces: bij voorkeur vóór of direct na je bod, zodat je de uitkomst kunt meenemen in je beslissing.",
-        "body": "<ol class=\"mini-steps\">\n<li><strong>Oriëntatie</strong><span>Let bij de bezichtiging op bouwjaar, bodem en zichtbare signalen. Vraag de verkoper naar bekende informatie over de fundering.</span></li>\n<li><strong>Bod en afspraken</strong><span>Bespreek met je aankoopmakelaar of een voorbehoud voor funderingsonderzoek zinvol is.</span></li>\n<li><strong>Fase 0 aanvragen</strong><span>Vraag direct aan; de inspectie wordt meestal binnen enkele werkdagen ingepland.</span></li>\n<li><strong>Rapport en besluit</strong><span>Het rapport volgt normaal gesproken binnen 5 werkdagen na de inspectie. Op basis van het advies bepaal je je vervolgstap.</span></li>\n</ol>"
+        "body": "<ol class=\"mini-steps\">\n<li><strong>Oriëntatie</strong><span>Let bij de bezichtiging op bouwjaar, bodem en zichtbare signalen. Vraag de verkoper naar bekende informatie over de fundering.</span></li>\n<li><strong>Bod en afspraken</strong><span>Bespreek met je aankoopmakelaar of een voorbehoud voor funderingsonderzoek zinvol is.</span></li>\n<li><strong>Fase 0 aanvragen</strong><span>Vraag direct aan; de inspectie wordt meestal binnen enkele werkdagen ingepland.</span></li>\n<li><strong>Rapport en besluit</strong><span>Het rapport volgt normaal gesproken binnen 2 werkdagen na de inspectie. Op basis van het advies bepaal je je vervolgstap.</span></li>\n</ol>"
       },
       {
         "id": "voorbehoud",
@@ -1303,7 +1303,7 @@
         "a": "<p>Ja, voor de inspectie is toegang tot de woning nodig, binnen en buiten. Die regel je meestal via de verkopende makelaar.</p>"
       },
       {
-        "q": "Wat als het rapport fase 1 adviseert?",
+        "q": "Wat betekent een fase 1-advies voor mijn aankoop?",
         "a": "<p>Dan is er vervolgonderzoek met metingen nodig om de signalen te onderbouwen. Bespreek met je makelaar wat dat betekent voor je termijnen en afspraken.</p>"
       },
       {
@@ -1369,7 +1369,7 @@
         "id": "wanneer-in-proces",
         "h2": "Wanneer laat je de scan doen als verkoper?",
         "answer": "Bij voorkeur voordat de woning in de verkoop gaat. Dan heb je het rapport klaar op het moment dat kopers vragen stellen.",
-        "body": "<p>De inspectie van fase 0 wordt meestal binnen enkele werkdagen ingepland en het rapport volgt normaal gesproken binnen 5 werkdagen na de inspectie. Door het onderzoek vóór de verkoopstart te plannen, heb je ook tijd voor een eventuele vervolgstap. Bespreek met je verkoopmakelaar hoe je het rapport inzet in de verkoop. Lees uitgebreid over de aanpak bij <a href=\"/funderingsonderzoek-bij-verkoop/\">funderingsonderzoek bij verkoop</a>.</p>"
+        "body": "<p>De inspectie van fase 0 wordt meestal binnen enkele werkdagen ingepland en het rapport volgt normaal gesproken binnen 2 werkdagen na de inspectie. Door het onderzoek vóór de verkoopstart te plannen, heb je ook tijd voor een eventuele vervolgstap. Bespreek met je verkoopmakelaar hoe je het rapport inzet in de verkoop. Lees uitgebreid over de aanpak bij <a href=\"/funderingsonderzoek-bij-verkoop/\">funderingsonderzoek bij verkoop</a>.</p>"
       },
       {
         "id": "onafhankelijk",
@@ -1381,7 +1381,7 @@
         "id": "uitkomst-niet-gunstig",
         "h2": "Wat als de uitkomst niet gunstig is?",
         "answer": "Dan weet je in elk geval waar je staat, en kun je samen met je makelaar bepalen hoe je daarmee omgaat in de verkoop.",
-        "body": "<p>Een advies om te monitoren of aanvullend onderzoek te doen hoeft een verkoop niet in de weg te staan. Het geeft juist een eerlijk beeld. Adviseert het rapport fase 1, dan kun je overwegen dat vóór de verkoop te laten uitvoeren, zodat kopers een completer beeld krijgen. Fase 1 kost indicatief €750 – €1.500, afhankelijk van de woning. Lees verder bij <a href=\"/kennisbank/wat-na-een-quickscan/\">wat na een quickscan</a>.</p>"
+        "body": "<p>Een advies om te monitoren of aanvullend onderzoek te doen hoeft een verkoop niet in de weg te staan. Het geeft juist een eerlijk beeld. Adviseert het rapport fase 1, dan kun je overwegen dat vóór de verkoop te laten uitvoeren, zodat kopers een completer beeld krijgen. Fase 1 kost vanaf €950, afhankelijk van de woning. Lees verder bij <a href=\"/kennisbank/wat-na-een-quickscan/\">wat na een quickscan</a>.</p>"
       },
       {
         "id": "voorbeeld",
@@ -1399,7 +1399,7 @@
         "id": "wanneer-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Voor verkopers is een scan vooral verstandig bij een woning van vóór circa 1970, een woning op veen of klei, of als er zichtbare signalen zijn waar kopers naar zullen vragen.",
-        "body": "<p>Bekijk de <a href=\"/prijzen/\">indicatieve prijzen</a>: fase 0 kost vanaf circa €350 per woning. Klaar om te starten? <a href=\"/funderingsscan-aanvragen/\">Vraag een funderingsscan aan</a> of <a href=\"/contact/\">stel eerst je vraag</a>.</p><p>Meer praktische tips: <a href=\"/kennisbank/funderingsrapport-voor-verkoper/\">het funderingsrapport voor verkopers</a>.</p>"
+        "body": "<p>Bekijk de <a href=\"/prijzen/\">indicatieve prijzen</a>: fase 0 kost vanaf €350 per woning. Klaar om te starten? <a href=\"/funderingsscan-aanvragen/\">Vraag een funderingsscan aan</a> of <a href=\"/contact/\">stel eerst je vraag</a>.</p><p>Meer praktische tips: <a href=\"/kennisbank/funderingsrapport-voor-verkoper/\">het funderingsrapport voor verkopers</a>.</p>"
       }
     ],
     "faqs": [
@@ -1408,7 +1408,7 @@
         "a": "<p>Nee. Er is geen algemene wettelijke plicht tot funderingsonderzoek; als verkoper heb je wel een mededelingsplicht over wat je weet. Een scan is een vrijwillige keuze die je kunt maken om kopers vooraf duidelijkheid te geven.</p>"
       },
       {
-        "q": "Mag ik het rapport met kopers delen?",
+        "q": "Kan ik het funderingsrapport aan kopers en mijn makelaar geven?",
         "a": "<p>Ja, het rapport is van jou en je kunt het delen met kopers en je makelaar. Bespreek met je makelaar hoe je het in de verkoop inzet.</p>"
       },
       {
@@ -1417,7 +1417,7 @@
       },
       {
         "q": "Hoe snel heb ik het rapport?",
-        "a": "<p>Het rapport van fase 0 ontvang je normaal gesproken binnen 5 werkdagen na de inspectie. De inspectie wordt meestal binnen enkele werkdagen ingepland.</p>"
+        "a": "<p>Het rapport van fase 0 ontvang je normaal gesproken binnen 2 werkdagen na de inspectie. De inspectie wordt meestal binnen enkele werkdagen ingepland.</p>"
       }
     ],
     "related": [
@@ -1509,7 +1509,7 @@
     ],
     "faqs": [
       {
-        "q": "Sinds wanneer staat de fundering in het taxatierapport?",
+        "q": "Sinds wanneer telt de fundering mee in de taxatie?",
         "a": "<p>Fundering zit al sinds 2021 in het model Taxatierapport Woonruimte. Sinds 1 april 2026 neemt de taxateur daarin ook de KCAF-risicoklasse A tot en met E op.</p>"
       },
       {
@@ -1517,7 +1517,7 @@
         "a": "<p>Dan moet in principe eerst een aanvullend (beperkt) funderingsonderzoek plaatsvinden voordat de taxatie kan worden afgerond. Stem met je taxateur af welk onderzoek nodig is.</p>"
       },
       {
-        "q": "Bepaalt MV Funderingsscan de risicoklasse?",
+        "q": "Komt de risicoklasse uit de funderingsscan?",
         "a": "<p>Nee, de risicoklasse komt uit het funderingsrisicorapport van het KCAF dat in de taxatie wordt gebruikt. Een funderingsscan geeft een beeld van de woning zelf.</p>"
       },
       {
@@ -1584,7 +1584,7 @@
       {
         "id": "timing",
         "h2": "Wat betekent dit voor je planning?",
-        "answer": "Houd bij een aankoop rekening met de tijd die onderzoek kost. Het rapport van fase 0 volgt normaal gesproken binnen 5 werkdagen na de inspectie; fase 1 heeft een eigen doorlooptijd.",
+        "answer": "Houd bij een aankoop rekening met de tijd die onderzoek kost. Het rapport van fase 0 volgt normaal gesproken binnen 2 werkdagen na de inspectie; fase 1 heeft een eigen doorlooptijd.",
         "body": "<p>Bij het kopen van een woning werk je vaak met deadlines, zoals de datum waarop je financiering rond moet zijn. Blijkt uit de taxatie dat aanvullend funderingsonderzoek nodig is, dan wil je snel kunnen schakelen. Een vroege funderingsscan, eventueel al vóór de taxatie, kan dan helpen. Bespreek met je hypotheekadviseur of het verstandig is om de termijn van je financieringsvoorbehoud hierop af te stemmen. Lees ook <a href=\"/kennisbank/hoe-lang-duurt-funderingsonderzoek/\">hoe lang duurt funderingsonderzoek</a>.</p>"
       },
       {
@@ -1806,7 +1806,7 @@
       {
         "id": "fase-1",
         "h2": "Wat doe je bij het advies fase 1?",
-        "answer": "Laat fase 1 uitvoeren: vervolgonderzoek met metingen dat de huidige scheefstand en hoogteverschillen in beeld brengt en laat beoordelen of er aanwijzingen zijn voor ongelijkmatige zetting. Fase 1 kost indicatief €750 – €1.500, afhankelijk van de woning.",
+        "answer": "Laat fase 1 uitvoeren: vervolgonderzoek met metingen dat de huidige scheefstand en hoogteverschillen in beeld brengt en laat beoordelen of er aanwijzingen zijn voor ongelijkmatige zetting. Fase 1 kost vanaf €950, afhankelijk van de woning.",
         "body": "<p>In fase 1 worden onder meer een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a>, een <a href=\"/kennisbank/loodmeting/\">loodmeting</a> en een <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a> uitgevoerd, en worden <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a> vastgelegd en geduid. De doorlooptijd wordt bij de offerte afgestemd. Lees meer bij <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a> of in het artikel <a href=\"/kennisbank/wanneer-fase-1/\">wanneer fase 1</a>.</p>\n<p>Na fase 1 kan het advies zijn om te monitoren, nader onderzoek te laten doen zoals een inspectieput, of een herstelplan te laten uitwerken door een gespecialiseerde partij. MV Funderingsscan voert zelf geen herstel uit.</p>"
       },
       {
@@ -1843,7 +1843,7 @@
       },
       {
         "q": "Wat kost de vervolgstap?",
-        "a": "<p>Dat hangt af van het advies. Fase 1 kost indicatief €750 – €1.500, afhankelijk van de woning. Voor aanvullend onderzoek bespreek je de kosten vooraf.</p>"
+        "a": "<p>Dat hangt af van het advies. Fase 1 kost vanaf €950, afhankelijk van de woning. Voor aanvullend onderzoek bespreek je de kosten vooraf.</p>"
       }
     ],
     "related": [
@@ -1912,7 +1912,7 @@
         "id": "wat-fase-1-oplevert",
         "h2": "Wat levert fase 1 op?",
         "answer": "Fase 1 levert meetgegevens op over hoogteverschillen, scheefstand en het verloop van de vloer, met een duiding en een advies.",
-        "body": "<p>Met een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a>, <a href=\"/kennisbank/loodmeting/\">loodmeting</a> en <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a> wordt zichtbaar of de woning ongelijk is gezakt en in welke richting. Samen met het vastleggen en duiden van <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a> ontstaat een onderbouwd beeld. De indicatieve prijs ligt tussen €750 en €1.500, afhankelijk van de woning. Lees meer bij <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>.</p>"
+        "body": "<p>Met een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a>, <a href=\"/kennisbank/loodmeting/\">loodmeting</a> en <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a> wordt zichtbaar of de woning ongelijk is gezakt en in welke richting. Samen met het vastleggen en duiden van <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a> ontstaat een onderbouwd beeld. De prijs begint bij €950, afhankelijk van de woning. Lees meer bij <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>.</p>"
       },
       {
         "id": "voorbeeld",
@@ -1947,7 +1947,7 @@
         "a": "<p>Na fase 1 kan het advies monitoren zijn, nader onderzoek zoals een inspectieput, of een herstelplan laten uitwerken door een gespecialiseerde partij.</p>"
       },
       {
-        "q": "Wordt er bij fase 1 gegraven?",
+        "q": "Is fase 1 een destructief onderzoek?",
         "a": "<p>Nee, fase 1 is niet-destructief en omvat geen graafwerk.</p>"
       }
     ],

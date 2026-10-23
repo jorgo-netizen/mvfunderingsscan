@@ -42,11 +42,11 @@
       },
       {
         "label": "Quick Scan",
-        "value": "vanaf ca. €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Rapport",
-        "value": "meestal binnen 5 werkdagen na inspectie"
+        "value": "meestal binnen 2 werkdagen na inspectie"
       }
     ],
     "services": [
@@ -88,17 +88,17 @@
         "id": "werkwijze-opsterland",
         "h2": "Hoe verloopt het funderingsonderzoek bij een woning in Opsterland?",
         "answer": "Je begint met fase 0: archief- en bodemonderzoek, een visuele inspectie en een rapport met risico-inschatting en advies. Alleen als daar aanleiding voor is, volgt fase 1 met metingen.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Je geeft adres en vraag door en krijgt vooraf de definitieve prijs.</span></li><li><strong>Uitzoeken</strong><span>Bouwjaar, beschikbare tekeningen, vermoedelijk funderingstype, bodemopbouw, grondwater en bodemdaling.</span></li><li><strong>Inspectie</strong><span>Gevels, scheuren, kozijnen, vloeren, scheefstand en – voor zover toegankelijk – de kruipruimte.</span></li><li><strong>Rapport</strong><span>Normaal gesproken binnen 5 werkdagen na de inspectie, met foto's, conclusie en advies.</span></li></ol>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Niet-destructief vooronderzoek, vanaf ca. €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Lintvoeg, scheefstand en vloeren, indicatief €750 – €1.500.</span></a></div>\n<p>Op de pagina over onze <a href=\"/werkwijze/\">werkwijze</a> lees je stap voor stap wat je kunt verwachten. Klaar om te beginnen? <a href=\"/funderingsscan-aanvragen/\">Vraag de funderingsscan aan</a>.</p>"
+        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Je geeft adres en vraag door en krijgt vooraf de definitieve prijs.</span></li><li><strong>Uitzoeken</strong><span>Bouwjaar, beschikbare tekeningen, vermoedelijk funderingstype, bodemopbouw, grondwater en bodemdaling.</span></li><li><strong>Inspectie</strong><span>Gevels, scheuren, kozijnen, vloeren, scheefstand en – voor zover toegankelijk – de kruipruimte.</span></li><li><strong>Rapport</strong><span>Normaal gesproken binnen 2 werkdagen na de inspectie, met foto's, conclusie en advies.</span></li></ol>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Niet-destructief vooronderzoek, vanaf €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Lintvoeg, scheefstand en vloeren, vanaf €950.</span></a></div>\n<p>Op de pagina over onze <a href=\"/werkwijze/\">werkwijze</a> lees je stap voor stap wat je kunt verwachten. Klaar om te beginnen? <a href=\"/funderingsscan-aanvragen/\">Vraag de funderingsscan aan</a>.</p>"
       }
     ],
     "faqs": [
       {
         "q": "Waar kan ik funderingsonderzoek laten uitvoeren in Gorredijk?",
-        "a": "<p>Bij MV Funderingsscan: we voeren funderingsonderzoek uit in Gorredijk en de rest van Opsterland.</p><p>Je start met een Quick Scan van vanaf circa €350. Bij een grotere of complexere woning kan dat indicatief oplopen tot circa €550; de definitieve prijs hoor je vooraf. Aanvragen kan via <a href=\"/funderingsscan-aanvragen/\">het aanvraagformulier</a>.</p>"
+        "a": "<p>Bij MV Funderingsscan: we voeren funderingsonderzoek uit in Gorredijk en de rest van Opsterland.</p><p>Je start met een Quick Scan vanaf €350. Aanvragen kan via <a href=\"/funderingsscan-aanvragen/\">het aanvraagformulier</a>.</p>"
       },
       {
         "q": "Komen jullie ook in Bakkeveen en Lippenhuizen?",
-        "a": "<p>Ja, ook de kleinere kernen van Opsterland, zoals Bakkeveen en Lippenhuizen, horen bij ons werkgebied.</p><p>De inspectie wordt meestal binnen enkele werkdagen ingepland en het rapport volgt normaal gesproken binnen 5 werkdagen na de inspectie.</p>"
+        "a": "<p>Ja, ook de kleinere kernen van Opsterland, zoals Bakkeveen en Lippenhuizen, horen bij ons werkgebied.</p><p>De inspectie wordt meestal binnen enkele werkdagen ingepland en het rapport volgt normaal gesproken binnen 2 werkdagen na de inspectie.</p>"
       },
       {
         "q": "Heeft een woning op veengrond in Opsterland altijd funderingsproblemen?",
@@ -178,11 +178,11 @@
       },
       {
         "label": "Fase 0",
-        "value": "vanaf ca. €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Fase 1",
-        "value": "indicatief €750 – €1.500"
+        "value": "vanaf €950"
       }
     ],
     "services": [
@@ -206,13 +206,13 @@
         "id": "signalen-tytsjerksteradiel",
         "h2": "Welke signalen zijn voor bewoners in Tytsjerksteradiel reden om te laten kijken?",
         "answer": "Denk aan scheuren die groter worden, deuren en ramen die gaan klemmen, een aflopende vloer of een gevel die scheef lijkt. Ook bij aankoop van een oudere woning kan een scan meer duidelijkheid geven.",
-        "body": "<div class=\"two-col-list\"><div><h3>Kan op beweging wijzen</h3><ul class=\"checklist\"><li>Trapvormige scheuren die bij een hoek breder worden</li><li>Meerdere deuren die tegelijk gaan klemmen</li><li>Een vloer die merkbaar naar één kant afloopt</li></ul></div><div><h3>Heeft vaak een andere oorzaak</h3><ul class=\"checklist\"><li>Haarscheurtjes door krimp in metselwerk of stucwerk</li><li>Een scheur boven een kozijn door een roestende latei</li><li>Een scheur waar een aanbouw met eigen fundering aansluit</li></ul></div></div>\n<p>Twijfel je? Met de <a href=\"/funderingsscan-check/\">online funderingscheck</a> zet je je signalen op een rij. Meer over scheuren lees je op de pagina <a href=\"/scheuren-in-gevel/\">scheuren in de gevel</a>.</p>"
+        "body": "<div class=\"two-col-list\"><div><h3>Kan op beweging wijzen</h3><ul class=\"checklist\"><li>Trapvormige scheuren die bij een hoek breder worden</li><li>Meerdere deuren die tegelijk gaan klemmen</li><li>Een vloer die merkbaar naar één kant afloopt</li></ul></div><div><h3>Heeft vaak een andere oorzaak</h3><ul class=\"checklist\"><li>Haarscheurtjes door krimp in metselwerk of stucwerk</li><li>Een scheur boven een kozijn door een roestende latei</li><li>Een scheur waar een aanbouw met eigen fundering aansluit</li></ul></div></div>\n<p>Twijfel je? Met de <a href=\"/gratis-funderingscheck/\">online funderingscheck</a> zet je je signalen op een rij. Meer over scheuren lees je op de pagina <a href=\"/scheuren-in-gevel/\">scheuren in de gevel</a>.</p>"
       },
       {
         "id": "aanpak-tytsjerksteradiel",
         "h2": "Hoe ziet het onderzoek bij een woning in Tytsjerksteradiel eruit?",
         "answer": "Het onderzoek begint met fase 0, de Quick Scan. Als die daar aanleiding voor geeft, adviseren we fase 1: metingen zonder graafwerk.",
-        "body": "<p>In fase 0 verzamelen we eerst gegevens: bouwjaar, beschikbare (bouw)tekeningen, het vermoedelijke funderingstype, de bodemopbouw, grondwater en bodemdaling. Daarna inspecteren we de woning ter plaatse – gevels, metselwerk, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, kozijnen, deuren, ramen, vloeren, scheefstand en de kruipruimte voor zover die toegankelijk is. Het rapport met foto's, conclusie en advies ontvang je normaal gesproken binnen 5 werkdagen na de inspectie.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief, bodem en visuele inspectie met risico-inschatting.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek</strong><span>Lintvoegwaterpassing, loodmeting en vloerveldwaterpassing.</span></a></div>\n<p>Een uitgebreide beschrijving van elke stap staat bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
+        "body": "<p>In fase 0 verzamelen we eerst gegevens: bouwjaar, beschikbare (bouw)tekeningen, het vermoedelijke funderingstype, de bodemopbouw, grondwater en bodemdaling. Daarna inspecteren we de woning ter plaatse – gevels, metselwerk, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, kozijnen, deuren, ramen, vloeren, scheefstand en de kruipruimte voor zover die toegankelijk is. Het rapport met foto's, conclusie en advies ontvang je normaal gesproken binnen 2 werkdagen na de inspectie.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief, bodem en visuele inspectie met risico-inschatting.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek</strong><span>Lintvoegwaterpassing, loodmeting en vloerveldwaterpassing.</span></a></div>\n<p>Een uitgebreide beschrijving van elke stap staat bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
       },
       {
         "id": "uitkomst-tytsjerksteradiel",
@@ -230,7 +230,7 @@
     "faqs": [
       {
         "q": "Waar kan ik funderingsonderzoek laten uitvoeren in Burgum?",
-        "a": "<p>MV Funderingsscan voert funderingsonderzoek uit in Burgum en in de andere kernen van Tytsjerksteradiel.</p><p>Je begint met een Quick Scan (fase 0) vanaf circa €350. De inspectie plannen we meestal binnen enkele werkdagen in. Je kunt de scan direct <a href=\"/funderingsscan-aanvragen/\">online aanvragen</a>.</p>"
+        "a": "<p>MV Funderingsscan voert funderingsonderzoek uit in Burgum en in de andere kernen van Tytsjerksteradiel.</p><p>Je begint met een Quick Scan (fase 0) vanaf €350. De inspectie plannen we meestal binnen enkele werkdagen in. Je kunt de scan direct <a href=\"/funderingsscan-aanvragen/\">online aanvragen</a>.</p>"
       },
       {
         "q": "Doen jullie ook funderingsonderzoek in Hurdegaryp?",
@@ -238,7 +238,7 @@
       },
       {
         "q": "Hoe snel heb ik het rapport bij een woning in Tytsjerksteradiel?",
-        "a": "<p>Het rapport ontvang je normaal gesproken binnen 5 werkdagen na de inspectie.</p><p>Wordt na de scan fase 1 geadviseerd, dan stemmen we de doorlooptijd daarvan af bij de offerte, omdat die afhangt van de woning.</p>"
+        "a": "<p>Het rapport ontvang je normaal gesproken binnen 2 werkdagen na de inspectie.</p><p>Wordt na de scan fase 1 geadviseerd, dan stemmen we de doorlooptijd daarvan af bij de offerte, omdat die afhangt van de woning.</p>"
       },
       {
         "q": "Kan ik het rapport gebruiken voor de taxatie van mijn woning?",
@@ -274,7 +274,7 @@
   {
     "path": "/funderingsonderzoek-weststellingwerf/",
     "title": "Funderingsonderzoek Wolvega en Noordwolde | MV Funderingsscan",
-    "description": "Funderingsonderzoek in Weststellingwerf, zoals Wolvega, Noordwolde, Oldeberkoop en De Blesse. Quick Scan op zandgrond en in beekdalen, rapport in 5 werkdagen.",
+    "description": "Funderingsonderzoek in Weststellingwerf, zoals Wolvega, Noordwolde, Oldeberkoop en De Blesse. Quick Scan op zandgrond en in beekdalen, rapport in 2 werkdagen.",
     "keyword": "funderingsonderzoek wolvega",
     "intent": "lokaal-commercieel",
     "nav_active": "/werkgebied/",
@@ -314,7 +314,7 @@
       },
       {
         "label": "Quick Scan",
-        "value": "vanaf ca. €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Inspectie",
@@ -359,14 +359,14 @@
       {
         "id": "stappen-weststellingwerf",
         "h2": "Welke stappen doorloop je bij funderingsonderzoek in Weststellingwerf?",
-        "answer": "Stap één is de Quick Scan (fase 0) met rapport normaal gesproken binnen 5 werkdagen na de inspectie. Alleen als het rapport dat adviseert, volgt fase 1 met metingen aan gevel en vloeren.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Aanvragen</strong><span>Via het formulier of telefonisch; de definitieve prijs is vooraf bekend.</span></li><li><strong>Archief- en bodemonderzoek</strong><span>Bouwjaar, tekeningen, vermoedelijk funderingstype, bodem, grondwater en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>.</span></li><li><strong>Visuele inspectie</strong><span>Van gevel en metselwerk tot vloeren en, als die toegankelijk is, de kruipruimte.</span></li><li><strong>Rapport en advies</strong><span>Met foto's, <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a>, conclusie en het advies voor een eventuele vervolgstap.</span></li></ol>\n<p>Fase 1 kost indicatief €750 – €1.500 en bestaat onder meer uit een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a>, een scheefstandsmeting en een <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a>. Lees verder over <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a> en over onze <a href=\"/werkwijze/\">werkwijze</a>, of <a href=\"/funderingsscan-aanvragen/\">vraag direct een funderingsscan aan</a>.</p>"
+        "answer": "Stap één is de Quick Scan (fase 0) met rapport normaal gesproken binnen 2 werkdagen na de inspectie. Alleen als het rapport dat adviseert, volgt fase 1 met metingen aan gevel en vloeren.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Aanvragen</strong><span>Via het formulier of telefonisch; de definitieve prijs is vooraf bekend.</span></li><li><strong>Archief- en bodemonderzoek</strong><span>Bouwjaar, tekeningen, vermoedelijk funderingstype, bodem, grondwater en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>.</span></li><li><strong>Visuele inspectie</strong><span>Van gevel en metselwerk tot vloeren en, als die toegankelijk is, de kruipruimte.</span></li><li><strong>Rapport en advies</strong><span>Met foto's, <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a>, conclusie en het advies voor een eventuele vervolgstap.</span></li></ol>\n<p>Fase 1 kost vanaf €950 en bestaat onder meer uit een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a>, een scheefstandsmeting en een <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a>. Lees verder over <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a> en over onze <a href=\"/werkwijze/\">werkwijze</a>, of <a href=\"/funderingsscan-aanvragen/\">vraag direct een funderingsscan aan</a>.</p>"
       }
     ],
     "faqs": [
       {
         "q": "Waar kan ik funderingsonderzoek laten uitvoeren in Wolvega?",
-        "a": "<p>In Wolvega kun je terecht bij MV Funderingsscan, onafhankelijk bureau voor funderingsonderzoek in Friesland en Groningen.</p><p>We starten met een Quick Scan vanaf circa €350 en voeren zelf geen herstel uit. Lees eerst meer over de <a href=\"/funderingsscan/\">funderingsscan</a> of vraag hem direct aan.</p>"
+        "a": "<p>In Wolvega kun je terecht bij MV Funderingsscan, onafhankelijk bureau voor funderingsonderzoek in Friesland en Groningen.</p><p>We starten met een Quick Scan vanaf €350 en voeren zelf geen herstel uit. Lees eerst meer over de <a href=\"/funderingsscan/\">funderingsscan</a> of vraag hem direct aan.</p>"
       },
       {
         "q": "Werken jullie ook in Noordwolde en Oldeberkoop?",
@@ -400,7 +400,7 @@
     ],
     "cta": [
       "Woning in Weststellingwerf laten onderzoeken?",
-      "Vraag een Quick Scan aan; het rapport volgt normaal gesproken binnen 5 werkdagen na de inspectie."
+      "Vraag een Quick Scan aan; het rapport volgt normaal gesproken binnen 2 werkdagen na de inspectie."
     ]
   },
   {
@@ -446,11 +446,11 @@
       },
       {
         "label": "Quick Scan",
-        "value": "vanaf ca. €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Rapport",
-        "value": "meestal binnen 5 werkdagen na inspectie"
+        "value": "meestal binnen 2 werkdagen na inspectie"
       }
     ],
     "services": [
@@ -491,14 +491,14 @@
       {
         "id": "verloop-eemsdelta",
         "h2": "Hoe verloopt funderingsonderzoek bij een woning in Eemsdelta?",
-        "answer": "Het onderzoek begint met fase 0: archief- en bodemonderzoek, een visuele inspectie en een rapport normaal gesproken binnen 5 werkdagen na de inspectie. Fase 1 met metingen volgt alleen als daar aanleiding voor is.",
-        "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Vanaf ca. €350, bij grote of complexe woningen indicatief tot ca. €550.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Meten zonder graven</strong><span>Lintvoeg, lood en vloerveld, indicatief €750 – €1.500.</span></a></div>\n<p>Na fase 1 kan het advies zijn om te monitoren, nader onderzoek te doen met een inspectieput, of een herstelplan te laten uitwerken door een gespecialiseerde partij. MV Funderingsscan voert zelf geen herstel uit. Hoe alles stap voor stap gaat, lees je bij onze <a href=\"/werkwijze/\">werkwijze</a>. Wil je beginnen? <a href=\"/funderingsscan-aanvragen/\">Vraag een funderingsscan aan</a>.</p>"
+        "answer": "Het onderzoek begint met fase 0: archief- en bodemonderzoek, een visuele inspectie en een rapport normaal gesproken binnen 2 werkdagen na de inspectie. Fase 1 met metingen volgt alleen als daar aanleiding voor is.",
+        "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Vanaf €350.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Meten zonder graven</strong><span>Lintvoeg, lood en vloerveld, vanaf €950.</span></a></div>\n<p>Na fase 1 kan het advies zijn om te monitoren, nader onderzoek te doen met een inspectieput, of een herstelplan te laten uitwerken door een gespecialiseerde partij. MV Funderingsscan voert zelf geen herstel uit. Hoe alles stap voor stap gaat, lees je bij onze <a href=\"/werkwijze/\">werkwijze</a>. Wil je beginnen? <a href=\"/funderingsscan-aanvragen/\">Vraag een funderingsscan aan</a>.</p>"
       }
     ],
     "faqs": [
       {
-        "q": "Waar kan ik funderingsonderzoek laten uitvoeren in Delfzijl?",
-        "a": "<p>MV Funderingsscan voert funderingsonderzoek uit in Delfzijl en in de rest van Eemsdelta.</p><p>Op de pagina over <a href=\"/funderingsonderzoek-delfzijl/\">funderingsonderzoek in Delfzijl</a> lees je wat er in de havenstad speelt. Je start met een Quick Scan vanaf circa €350.</p>"
+        "q": "Doen jullie ook funderingsonderzoek in Delfzijl en de rest van Eemsdelta?",
+        "a": "<p>MV Funderingsscan voert funderingsonderzoek uit in Delfzijl en in de rest van Eemsdelta.</p><p>Op de pagina over <a href=\"/funderingsonderzoek-delfzijl/\">funderingsonderzoek in Delfzijl</a> lees je wat er in de havenstad speelt. Je start met een Quick Scan vanaf €350.</p>"
       },
       {
         "q": "Doen jullie ook funderingsonderzoek in Loppersum?",
@@ -578,11 +578,11 @@
       },
       {
         "label": "Fase 0",
-        "value": "vanaf ca. €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Fase 1",
-        "value": "indicatief €750 – €1.500"
+        "value": "vanaf €950"
       }
     ],
     "services": [
@@ -623,14 +623,14 @@
       {
         "id": "onderzoek-hogeland",
         "h2": "Hoe gaat funderingsonderzoek in Het Hogeland in zijn werk?",
-        "answer": "Je begint met fase 0, de Quick Scan, met een rapport normaal gesproken binnen 5 werkdagen na de inspectie. Geeft die daar aanleiding toe, dan volgt fase 1 met metingen zonder graafwerk.",
+        "answer": "Je begint met fase 0, de Quick Scan, met een rapport normaal gesproken binnen 2 werkdagen na de inspectie. Geeft die daar aanleiding toe, dan volgt fase 1 met metingen zonder graafwerk.",
         "body": "<ol class=\"mini-steps\"><li><strong>Aanvragen</strong><span>Je meldt je woning aan; de definitieve prijs ken je vooraf.</span></li><li><strong>Archief en bodem</strong><span>We zoeken bouwjaar, tekeningen, funderingstype, bodemopbouw, grondwater en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a> uit.</span></li><li><strong>Inspectie ter plaatse</strong><span>Gevels, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, kozijnen, vloeren, scheefstand en de kruipruimte voor zover toegankelijk.</span></li><li><strong>Rapport</strong><span>Foto's, <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a>, conclusie en een concreet advies.</span></li></ol>\n<p>De uitkomst kan zijn: geen directe aanleiding voor vervolgonderzoek, monitoren, gericht aanvullend onderzoek of <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a>. Lees meer over <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a> en onze <a href=\"/werkwijze/\">werkwijze</a>, of <a href=\"/funderingsscan-aanvragen/\">vraag de funderingsscan aan</a>.</p>"
       }
     ],
     "faqs": [
       {
         "q": "Waar kan ik funderingsonderzoek laten uitvoeren in Winsum?",
-        "a": "<p>MV Funderingsscan voert funderingsonderzoek uit in Winsum en de rest van Het Hogeland.</p><p>De Quick Scan kost vanaf circa €350 en bij een grotere of complexere woning indicatief tot circa €550. Meer over de inhoud lees je bij de <a href=\"/funderingsscan/\">funderingsscan</a>.</p>"
+        "a": "<p>MV Funderingsscan voert funderingsonderzoek uit in Winsum en de rest van Het Hogeland.</p><p>De Quick Scan kost vanaf €350. Meer over de inhoud lees je bij de <a href=\"/funderingsscan/\">funderingsscan</a>.</p>"
       },
       {
         "q": "Komen jullie ook in Uithuizen en Uithuizermeeden?",
@@ -668,7 +668,7 @@
     ],
     "cta": [
       "Woning in Het Hogeland laten onderzoeken?",
-      "Start met een Quick Scan; het rapport volgt normaal gesproken binnen 5 werkdagen na de inspectie."
+      "Start met een Quick Scan; het rapport volgt normaal gesproken binnen 2 werkdagen na de inspectie."
     ]
   }
 ]

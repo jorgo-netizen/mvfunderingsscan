@@ -30,7 +30,7 @@
     "facts": [
       {
         "label": "Fase 0 Quick Scan",
-        "value": "vanaf ca. €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Inspectie",
@@ -38,7 +38,7 @@
       },
       {
         "label": "Rapport",
-        "value": "normaal gesproken binnen 5 werkdagen na inspectie"
+        "value": "normaal gesproken binnen 2 werkdagen na inspectie"
       },
       {
         "label": "Werkgebied",
@@ -86,7 +86,7 @@
         "id": "werkwijze-professionals",
         "h2": "Hoe vraag je een onderzoek aan voor een opdrachtgever?",
         "answer": "Je vraagt het onderzoek aan namens of samen met je opdrachtgever. Vermeld het adres, het doel (aankoop, verkoop of taxatie), eventuele termijnen en wat er precies gevraagd wordt.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Je vertelt over de woning en je vraag, en hoort vooraf de prijs.</span></li><li><strong>Archief- en bodemonderzoek</strong><span>Bouwjaar, vermoedelijk funderingstype, bodem en grondwater.</span></li><li><strong>Inspectie</strong><span>Meestal binnen enkele werkdagen ingepland; zonder graafwerk.</span></li><li><strong>Rapport</strong><span>Normaal gesproken binnen 5 werkdagen na de inspectie, met risico-inschatting en advies.</span></li></ol><p>Kies in het <a href=\"/funderingsscan-aanvragen/\">aanvraagformulier</a> de optie \"Zakelijk\". Het rapport is zo geschreven dat je het kunt delen met je opdrachtgever; afspraken over wie het rapport ontvangt, maken we vooraf.</p>"
+        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Je vertelt over de woning en je vraag, en hoort vooraf de prijs.</span></li><li><strong>Archief- en bodemonderzoek</strong><span>Bouwjaar, vermoedelijk funderingstype, bodem en grondwater.</span></li><li><strong>Inspectie</strong><span>Meestal binnen enkele werkdagen ingepland; zonder graafwerk.</span></li><li><strong>Rapport</strong><span>Normaal gesproken binnen 2 werkdagen na de inspectie, met risico-inschatting en advies.</span></li></ol><p>Kies in het <a href=\"/funderingsscan-aanvragen/\">aanvraagformulier</a> de optie \"Zakelijk\". Het rapport is zo geschreven dat je het kunt delen met je opdrachtgever; afspraken over wie het rapport ontvangt, maken we vooraf.</p>"
       },
       {
         "id": "contact-professionals",
@@ -105,12 +105,12 @@
         "a": "<p>Dat is niet automatisch zo. Het hangt af van wat de taxateur of geldverstrekker vraagt en van de toepasselijke richtlijnen. Laat ons weten wat er gevraagd wordt; dan hoor je vooraf of wij dat kunnen uitvoeren.</p>"
       },
       {
-        "q": "Bepaalt MV Funderingsscan de risicoklasse?",
+        "q": "Stelt MV Funderingsscan de KCAF-risicoklasse vast?",
         "a": "<p>Nee. De risicoklasse komt uit het KCAF-funderingsrisicorapport. MV Funderingsscan beoordeelt de woning zelf en geeft een eigen risico-inschatting en advies.</p>"
       },
       {
         "q": "Hoe snel is het rapport beschikbaar?",
-        "a": "<p>De inspectie wordt meestal binnen enkele werkdagen ingepland. Het rapport volgt normaal gesproken binnen 5 werkdagen na de inspectie. Geef termijnen bij de aanvraag door.</p>"
+        "a": "<p>De inspectie wordt meestal binnen enkele werkdagen ingepland. Het rapport volgt normaal gesproken binnen 2 werkdagen na de inspectie. Geef termijnen bij de aanvraag door.</p>"
       },
       {
         "q": "Werken jullie ook in Drenthe?",
@@ -170,7 +170,7 @@
     "facts": [
       {
         "label": "Fase 0 Quick Scan",
-        "value": "vanaf ca. €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Onderzoek",
@@ -228,7 +228,7 @@
         "id": "werkwijze-eigenaren",
         "h2": "Hoe verloopt het onderzoek?",
         "answer": "In vier stappen: aanvraag, archief- en bodemonderzoek, inspectie en rapport. Je hoort vooraf wat het kost.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Je vertelt over de woning en je vraag, en hoort vooraf de prijs.</span></li><li><strong>Archief- en bodemonderzoek</strong><span>Bouwjaar, vermoedelijk funderingstype, bodem en grondwater.</span></li><li><strong>Inspectie</strong><span>Meestal binnen enkele werkdagen ingepland; zonder graafwerk.</span></li><li><strong>Rapport</strong><span>Normaal gesproken binnen 5 werkdagen na de inspectie, met risico-inschatting en advies.</span></li></ol><p>De volledige werkwijze staat op <a href=\"/werkwijze/\">werkwijze</a>; de kosten op <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Je vertelt over de woning en je vraag, en hoort vooraf de prijs.</span></li><li><strong>Archief- en bodemonderzoek</strong><span>Bouwjaar, vermoedelijk funderingstype, bodem en grondwater.</span></li><li><strong>Inspectie</strong><span>Meestal binnen enkele werkdagen ingepland; zonder graafwerk.</span></li><li><strong>Rapport</strong><span>Normaal gesproken binnen 2 werkdagen na de inspectie, met risico-inschatting en advies.</span></li></ol><p>De volledige werkwijze staat op <a href=\"/werkwijze/\">werkwijze</a>; de kosten op <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
         "id": "contact-eigenaren",
@@ -255,7 +255,7 @@
         "a": "<p>Nee. Een Quick Scan is een onderbouwde beoordeling van het funderingsrisico, zonder graafwerk. Een constructieve berekening, houtonderzoek of herstelplan valt erbuiten.</p>"
       },
       {
-        "q": "Werken jullie in mijn regio?",
+        "q": "In welke regio kunnen woningeigenaren bij jullie terecht?",
         "a": "<p>MV Funderingsscan werkt in heel Friesland en de hele provincie Groningen. Bekijk het <a href=\"/werkgebied/\">werkgebied</a>.</p>"
       }
     ],

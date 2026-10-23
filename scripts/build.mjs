@@ -17,7 +17,7 @@ import {
   faqItems, faqHtml, ctaBand, jsonld, orgSchema, websiteSchema, serviceSchema, breadcrumbSchema, faqSchema,
 } from '../src/lib/layout.mjs';
 import { render, relatedHtml } from '../src/lib/template.mjs';
-import { aanvraagForm, contactForm, checkForm } from '../src/lib/forms.mjs';
+import { aanvraagForm, contactForm } from '../src/lib/forms.mjs';
 import { openPlaceholders, SHOW_PLACEHOLDERS } from '../src/lib/eeat.mjs';
 import { statusPage, beheerPage } from '../src/lib/portal.mjs';
 
@@ -212,10 +212,10 @@ function buildAanvragen() {
         <li><strong>Formulier invullen</strong><span>Gegevens van jou en de woning, en wat je ziet.</span></li>
         <li><strong>Persoonlijk contact</strong><span>We bespreken je situatie en adviseren welke fase past.</span></li>
         <li><strong>Prijs vooraf bekend</strong><span>Pas na jouw akkoord plannen we de inspectie, meestal binnen enkele werkdagen.</span></li>
-        <li><strong>Rapport</strong><span>Normaal gesproken binnen 5 werkdagen na de inspectie, met conclusie en advies.</span></li>
+        <li><strong>Rapport</strong><span>Normaal gesproken binnen 2 werkdagen na de inspectie, met conclusie en advies.</span></li>
       </ol>
       <p>Liever eerst overleggen? Bel <a href="${NAP.phone_href}">${NAP.phone_display}</a> of <a href="/contact/">stel je vraag via het contactformulier</a>.</p>
-      <p>Twijfel je of onderzoek nodig is? <a href="/funderingsscan-check/">Doe eerst de online funderingscheck</a> of lees <a href="/quickscan-fundering/">wat een quickscan fundering inhoudt</a> en <a href="/prijzen/">wat het kost</a>.</p>
+      <p>Twijfel je of onderzoek nodig is? <a href="/gratis-funderingscheck/">Doe eerst de online funderingscheck</a> of lees <a href="/quickscan-fundering/">wat een quickscan fundering inhoudt</a> en <a href="/prijzen/">wat het kost</a>.</p>
     </div>
     ${aanvraagForm()}
   </div>
@@ -224,7 +224,7 @@ function buildAanvragen() {
       { q: 'Wat gebeurt er nadat ik de aanvraag heb verstuurd?', a: '<p>We nemen contact met je op om je situatie te bespreken. Daarna hoor je wat het onderzoek kost. Pas als je akkoord bent, plannen we het onderzoek in – meestal binnen enkele werkdagen.</p>' },
       { q: 'Zit ik ergens aan vast als ik dit formulier invul?', a: '<p>Nee. Het formulier is een aanvraag, geen opdracht. Je beslist pas nadat je de prijs weet.</p>' },
       { q: 'Wat als ik niet weet welke fase ik nodig heb?', a: '<p>Kies dan "Weet ik nog niet". We adviseren je op basis van je situatie. In de meeste gevallen begint het onderzoek met <a href="/fase-0-funderingsonderzoek/">fase 0, de Quick Scan</a>.</p>' },
-      { q: 'Wat kost een funderingsscan?', a: '<p>Een fase 0 funderingsscan begint indicatief vanaf circa €350; fase 1 kost indicatief €750 – €1.500. Zie <a href="/prijzen/">prijzen</a>.</p>' },
+      { q: 'Wat kost het onderzoek dat ik hier aanvraag?', a: '<p>Een fase 0 funderingsscan begint vanaf €350; fase 1 kost vanaf €950. Zie <a href="/prijzen/">prijzen</a>.</p>' },
     ],
   });
 }
@@ -266,42 +266,6 @@ ${relatedHtml([
     { href: '/prijzen/', label: 'Bekijk prijzen', text: 'Indicatieve prijzen voor fase 0 en fase 1.' },
     { href: '/werkwijze/', label: 'Onze werkwijze', text: 'Van aanvraag tot rapport in zeven stappen.' },
   ], 'Handig om te weten')}`,
-  });
-}
-
-// =================================================================== funderingscheck
-function buildCheck() {
-  specialPage({
-    path: '/funderingsscan-check/',
-    title: 'Online funderingscheck | Is een funderingsscan zinvol?',
-    description: 'Twijfel je over je fundering? Beantwoord 8 korte vragen en zie direct of een funderingsscan zinvol kan zijn. Indicatief, geen technisch oordeel.',
-    crumbs: [{ href: '/', name: 'Home' }, { href: '/funderingsscan-check/', name: 'Funderingscheck' }],
-    eyebrow: 'Online funderingscheck',
-    h1: 'Online funderingscheck: is een funderingsscan zinvol?',
-    lead: 'Met acht korte vragen krijg je een eerste indicatie of een funderingsscan voor jouw woning zinvol kan zijn. Deze online check is geen technisch oordeel en vervangt geen funderingsonderzoek.',
-    navActive: '/funderingsscan/',
-    body: `<section class="section" id="check" aria-labelledby="check-title">
-  <div class="container">
-    ${checkForm()}
-  </div>
-</section>
-<section class="section section-alt section-tight" aria-labelledby="check-uitleg">
-  <div class="container prose prose-center">
-    <h2 id="check-uitleg">Hoe werkt de funderingscheck?</h2>
-    <p class="answer-first">De check telt signalen en omstandigheden op die vaker samengaan met funderingsrisico's, zoals een bouwjaar van vóór circa 1970, scheuren en scheefstand. Zware signalen tellen zwaarder dan omstandigheden.</p>
-    <p>Een hoge uitkomst betekent niet dat de fundering slecht is, en een lage uitkomst betekent niet dat alles in orde is. Scheuren kunnen bijvoorbeeld ook door krimp of temperatuurwerking ontstaan, en een deur kan klemmen door vocht. Alleen een inspectie ter plaatse geeft duidelijkheid. Lees meer over <a href="/funderingsproblemen/">funderingsproblemen herkennen</a>, <a href="/quickscan-fundering/">wat een quickscan fundering is</a> en <a href="/kennisbank/heb-ik-een-funderingsscan-nodig/">of je een funderingsscan nodig hebt</a>.</p>
-    <div class="phase-mini">
-      <a href="/fase-0-funderingsonderzoek/" class="phase-mini-card"><span class="phase-tag">Fase 0</span><strong>Quick Scan</strong><span>Archief, inspectie en risico-inschatting. Vanaf ca. €350.</span></a>
-      <a href="/fase-1-funderingsonderzoek/" class="phase-mini-card"><span class="phase-tag phase-tag-navy">Fase 1</span><strong>Onderzoek met metingen</strong><span>Alleen bij verhoogd risico. Indicatief €750 – €1.500.</span></a>
-    </div>
-  </div>
-</section>
-${ctaBand('Bespreek je situatie', 'Twijfel je na de check nog? Leg je situatie aan ons voor, dan adviseren we welke vervolgstap past.')}`,
-    faqs: [
-      { q: 'Is de online funderingscheck een technisch oordeel?', a: '<p>Nee. Deze online check is geen technisch oordeel en vervangt geen funderingsonderzoek. Hij helpt je alleen inschatten of het zinvol is om de fundering te laten bekijken.</p>' },
-      { q: 'Wat doe ik als de check een hoge uitkomst geeft?', a: '<p>Bespreek je situatie met ons of vraag een <a href="/fase-0-funderingsonderzoek/">fase 0 funderingsonderzoek</a> aan. Daarmee wordt duidelijk of de signalen werkelijk met de fundering te maken hebben.</p>' },
-      { q: 'Worden mijn antwoorden opgeslagen?', a: '<p>Nee. De check werkt alleen in je eigen browser; je antwoorden worden niet verstuurd of bewaard.</p>' },
-    ],
   });
 }
 
@@ -494,12 +458,12 @@ Sitemap: ${DOMAIN}/nieuws-sitemap.xml
   const groupLines = (g) => pages.filter((p) => meta[p.path]?.group === g).map(line).join('\n');
   write('/llms.txt', `# MV Funderingsscan
 
-> MV Funderingsscan is een dienst van MV Adviseurs (Leeuwarden) voor onafhankelijk funderingsonderzoek aan woningen in Friesland en Groningen. Het onderzoek begint in de regel met een Quick Scan (fase 0, indicatief vanaf ca. €350, rapport normaal gesproken binnen 5 werkdagen na inspectie). Geeft die daar aanleiding toe, dan volgt fase 1 met metingen (indicatief €750 – €1.500). MV Funderingsscan voert zelf geen funderingsherstel uit.
+> MV Funderingsscan is een dienst van MV Adviseurs (Leeuwarden) voor onafhankelijk funderingsonderzoek aan woningen in Friesland en Groningen. Het onderzoek begint in de regel met een Quick Scan (fase 0, vanaf €350, rapport normaal gesproken binnen 2 werkdagen na inspectie). Geeft die daar aanleiding toe, dan volgt fase 1 met metingen (vanaf €950). MV Funderingsscan voert zelf geen funderingsherstel uit.
 
 ## Kernfeiten (gecontroleerd ${TODAY}; bronnen: ${DOMAIN}/bronnen-en-richtlijnen/)
 - Onafhankelijk: MV Funderingsscan doet uitsluitend onderzoek en voert geen funderingsherstel uit.
 - Werkgebied: heel Friesland en de hele provincie Groningen, vanuit Leeuwarden.
-- Prijs: fase 0 vanaf ca. €350 (grotere of complexere woningen tot ca. €550), fase 1 indicatief €750 – €1.500; de definitieve prijs hoor je vooraf.
+- Prijs: fase 0 vanaf €350, fase 1 vanaf €950; de definitieve prijs hoor je vooraf.
 - Fase 0 (Quick Scan): archief- en bodemonderzoek, visuele inspectie (kruipruimte voor zover toegankelijk) en een risico-inschatting met advies. Zonder graafwerk. Kan niet vaststellen: de exacte conditie van houten palen, verborgen gebreken, constructieve capaciteit, resterende levensduur of exacte herstelkosten.
 - Fase 1: metingen zoals lintvoegwaterpassing, loodmeting en vloerveldwaterpassing. Brengt de huidige scheefstand en hoogteverschillen in beeld; of een woning nog beweegt, blijkt pas uit herhaalde metingen (monitoring). Een inspectieput (graven) is een aparte, verdergaande stap.
 - Fasenamen verschillen per bron: de KCAF-richtlijn spreekt van onderdelen; deze site gebruikt de indeling van MV Funderingsscan.
@@ -534,7 +498,6 @@ ${groupLines('hulpmiddelen')}
 ## Over MV Funderingsscan
 ${groupLines('over')}
 - [Funderingsscan aanvragen](${DOMAIN}/funderingsscan-aanvragen/): aanvraagformulier; de prijs hoor je vooraf.
-- [Online funderingscheck](${DOMAIN}/funderingsscan-check/): indicatieve check in 8 vragen (geen technisch oordeel).
 - [Contact](${DOMAIN}/contact/): adres, telefoon, e-mail en contactformulier.
 `);
 
@@ -558,9 +521,8 @@ export function build({ quiet = false } = {}) {
   buildHome();
   buildAanvragen();
   buildContact();
-  buildCheck();
   buildKbIndex();
-  const paths = ['/', '/funderingsscan-aanvragen/', '/contact/', '/funderingsscan-check/', '/kennisbank/', buildGlossary()];
+  const paths = ['/', '/funderingsscan-aanvragen/', '/contact/', '/gratis-funderingscheck/', '/kennisbank/', buildGlossary()];
   // volgorde van urls.json aanhouden voor een logische sitemap
   const order = new Map(urls.map((u, i) => [u.path, i]));
   for (const p of [...pages].sort((a, b) => (order.get(a.path) ?? 999) - (order.get(b.path) ?? 999))) {

@@ -57,7 +57,7 @@ const CHECK_STEPS = [
   ['fundering', 'Is het funderingstype bekend?', [['houtenpalen', 'Ja, houten palen'], ['betonpalen', 'Ja, betonnen palen'], ['staal', 'Ja, op staal (zonder palen)'], ['onbekend', 'Nee / weet ik niet']]],
   ['klasse', 'Is er een KCAF-risicoklasse bekend, bijvoorbeeld uit een taxatierapport?', [['abc', 'Ja, klasse A, B of C'], ['de', 'Ja, klasse D of E'], ['onbekend', 'Nee / weet ik niet']]],
   ['onderzoek', 'Is er eerder funderingsonderzoek gedaan?', [['nee', 'Nee'], ['ok', 'Ja, zonder bijzonderheden'], ['aandacht', 'Ja, met aandachtspunten of een vastgesteld probleem'], ['onbekend', 'Weet ik niet']]],
-  ['situatie', 'Wat is je situatie?', [['kopen', 'Ik wil een woning kopen'], ['verkopen', 'Ik verkoop mijn woning'], ['wonen', 'Ik woon er al'], ['klachten', 'Ik heb klachten of scheuren'], ['taxatie', 'Voor een taxatie'], ['anders', 'Anders']]],
+  ['situatie', 'Wat is je situatie?', [['kopen', 'Ik wil een woning kopen'], ['verkopen', 'Ik verkoop mijn woning'], ['wonen', 'Het is mijn eigen woning'], ['taxatie', 'Het gaat om een taxatie'], ['anders', 'Anders']]],
 ];
 
 function funderingscheckWidget() {
@@ -223,11 +223,11 @@ function situatiekeuzeWidget() {
 
 // ---------------------------------------------------------------- 4. kostenwijzer (alleen bestaande prijzen)
 const KOSTEN = [
-  ['eerste', 'Een eerste beoordeling', 'Quick Scan (fase 0)', 'Indicatie: vanaf ca. €350; bij grotere of complexere woningen tot ca. €550.', 'Archief- en bodemonderzoek, een visuele inspectie (kruipruimte voor zover toegankelijk) en een risico-inschatting met advies.', '/fase-0-funderingsonderzoek/'],
-  ['aankoop', 'Funderingsrisico bij aankoop', 'Quick Scan bij aankoop (fase 0)', 'Indicatie: vanaf ca. €350; bij grotere of complexere woningen tot ca. €550.', 'Dezelfde Quick Scan, ingepland rond je voorbehoud of bedenktijd.', '/fase-0-funderingsonderzoek-aankoop/'],
-  ['scheuren', 'Scheuren of verzakking', 'Meestal eerst de Quick Scan; zo nodig fase 1', 'Indicatie: Quick Scan vanaf ca. €350. Geeft die aanleiding tot metingen, dan kost fase 1 indicatief €750 – €1.500.', 'Fase 1 brengt met metingen de huidige scheefstand en hoogteverschillen in beeld.', '/fase-1-funderingsonderzoek/'],
+  ['eerste', 'Een eerste beoordeling', 'Quick Scan (fase 0)', 'Indicatie: vanaf €350. De exacte prijs hoor je vooraf.', 'Archief- en bodemonderzoek, een visuele inspectie (kruipruimte voor zover toegankelijk) en een risico-inschatting met advies.', '/fase-0-funderingsonderzoek/'],
+  ['aankoop', 'Funderingsrisico bij aankoop', 'Quick Scan bij aankoop (fase 0)', 'Indicatie: vanaf €350. De exacte prijs hoor je vooraf.', 'Dezelfde Quick Scan, ingepland rond je voorbehoud of bedenktijd.', '/fase-0-funderingsonderzoek-aankoop/'],
+  ['scheuren', 'Scheuren of verzakking', 'Meestal eerst de Quick Scan; zo nodig fase 1', 'Indicatie: Quick Scan vanaf €350. Geeft die aanleiding tot metingen, dan kost fase 1 vanaf €950.', 'Fase 1 brengt met metingen de huidige scheefstand en hoogteverschillen in beeld.', '/fase-1-funderingsonderzoek/'],
   ['taxatie', 'Een vraag van de taxateur', 'Afhankelijk van wat er gevraagd wordt', 'Voor jouw situatie is vooraf een prijsinschatting nodig.', 'Welk onderzoek de taxateur nodig heeft, stem je af met de taxateur. Laat ons weten wat er gevraagd wordt; dan hoor je vooraf of en tegen welke prijs wij dat kunnen uitvoeren.', '/funderingsonderzoek-taxatie/'],
-  ['uitgebreid', 'Uitgebreider onderzoek met metingen', 'Fase 1 funderingsonderzoek', 'Indicatie: €750 – €1.500.', 'Fase 1 bouwt in de regel voort op een Quick Scan. Graafwerk voor een inspectieput valt buiten fase 0 en fase 1 en dus buiten deze prijzen.', '/fase-1-funderingsonderzoek/'],
+  ['uitgebreid', 'Uitgebreider onderzoek met metingen', 'Fase 1 funderingsonderzoek', 'Vanaf €950.', 'Fase 1 bouwt in de regel voort op een Quick Scan. Graafwerk voor een inspectieput valt buiten fase 0 en fase 1 en dus buiten deze prijzen.', '/fase-1-funderingsonderzoek/'],
   ['onbekend', 'Ik weet het niet', 'Laat je adviseren', 'Voor jouw situatie is vooraf een prijsinschatting nodig.', 'Beschrijf je situatie, dan laten we weten welke stap zinvol kan zijn en wat die kost. Je kunt ook eerst de stappenhulp doorlopen.', '/welke-stap-past-bij-mij/'],
 ];
 
@@ -263,14 +263,14 @@ function kostenwijzerWidget() {
 // ---------------------------------------------------------------- 5. vergelijking diensten (statisch, crawlbaar)
 function dienstvergelijkingWidget() {
   const rows = [
-    ['Kosten', 'Gratis', 'Vanaf ca. €350 (tot ca. €550)', 'Indicatief €750 – €1.500'],
+    ['Kosten', 'Gratis', 'Vanaf €350', 'Vanaf €950'],
     ['Online vragen over je woning', '✓', '–', '–'],
     ['Archief- en bodemonderzoek', '–', '✓', 'Bouwt voort op fase 0'],
     ['Visuele inspectie ter plaatse', '–', '✓', '✓ gericht op de metingen'],
     ['Kruipruimte, voor zover toegankelijk', '–', '✓', 'Waar nodig'],
     ['Metingen (lintvoeg, lood, vloerveld)', '–', '–', '✓'],
     ['Risico-inschatting en advies', 'Alleen een indicatie', '✓', '✓'],
-    ['Rapport', '–', '✓ normaal gesproken binnen 5 werkdagen na de inspectie', '✓'],
+    ['Rapport', '–', '✓ normaal gesproken binnen 2 werkdagen na de inspectie', '✓'],
     ['Graafwerk / inspectieput', '–', '– (aparte stap)', '– (aparte stap)'],
     ['Stelt een diagnose', 'Nee', 'Nee, een onderbouwde risico-inschatting', 'Brengt de huidige toestand in beeld; of een woning nog beweegt, blijkt pas uit herhaalde metingen'],
   ];
@@ -289,7 +289,7 @@ const QS_STAPPEN = [
   ['Archief- en bodemonderzoek', 'We onderzoeken archiefgegevens, het vermoedelijke funderingstype, de bodem en het grondwater.'],
   ['Inspectie', 'Visuele inspectie ter plaatse, meestal binnen enkele werkdagen ingepland: gevels, scheuren, kozijnen, deuren, vloeren, scheefstand en de kruipruimte voor zover toegankelijk. Er wordt niets opengebroken of afgegraven.'],
   ['Analyse', 'We combineren alle gegevens tot een risico-inschatting. Het patroon en de samenhang van signalen tellen, niet één losse waarneming.'],
-  ['Rapport', 'Normaal gesproken binnen 5 werkdagen na de inspectie: bevindingen, foto\'s, risico-inschatting, conclusie en een van vier adviezen.'],
+  ['Rapport', 'Normaal gesproken binnen 2 werkdagen na de inspectie: bevindingen, foto\'s, risico-inschatting, conclusie en een van vier adviezen.'],
   ['Eventueel vervolgonderzoek', 'Alleen als het advies daartoe aanleiding geeft, bijvoorbeeld fase 1 met metingen.'],
 ];
 
@@ -430,8 +430,11 @@ const AANKOOP_PUNTEN = [
   ['signalen', 'Signalen gezien', 'Scheuren, scheefstand of klemmende deuren kunnen verschillende oorzaken hebben. Laat ze beoordelen voordat je je definitief vastlegt.'],
   ['rapport', 'Er is een onderzoeksrapport', 'Vraag het volledige rapport op en laat de conclusie en de datum meewegen. Een rapport is een momentopname.'],
   ['geen-info', 'Geen funderingsinformatie', 'Zonder informatie kan archief- en bodemonderzoek een eerste beeld geven.'],
+  ['mondeling', 'Alleen mondelinge informatie', 'Vraag de verkoper of er iets op papier staat, zoals een onderzoeksrapport, facturen van herstel of correspondentie met de gemeente. Mondelinge informatie is lastig te controleren.'],
+  ['bouwjaar-onbekend', 'Bouwjaar onbekend', 'Het bouwjaar staat meestal in de verkoopinformatie of het Kadaster. Het geeft een aanwijzing welke funderingswijzen in die periode gebruikelijk waren.'],
+  ['signalen-onbekend', 'Niet op signalen gelet', 'Let bij een tweede bezichtiging op scheuren in gevels en muren, klemmende deuren en ramen, scheve vloeren en de kruipruimte, en maak foto’s.'],
   ['verbouw', 'Verbouwplannen', 'Bij een verbouwing kan de belasting op de fundering veranderen. Laat dat bij een constructeur of onderzoek meenemen.'],
-  ['voorbehoud', 'Voorbehoud loopt', 'Plan onderzoek binnen de termijn van je voorbehoud. De Quick Scan-inspectie wordt meestal binnen enkele werkdagen ingepland; het rapport volgt normaal gesproken binnen 5 werkdagen daarna.'],
+  ['voorbehoud', 'Voorbehoud loopt', 'Plan onderzoek binnen de termijn van je voorbehoud. De Quick Scan-inspectie wordt meestal binnen enkele werkdagen ingepland; het rapport volgt normaal gesproken binnen 2 werkdagen daarna.'],
   ['geen-voorbehoud', 'Geen voorbehoud', 'Zonder voorbehoud is het lastiger om na onderzoek nog terug te komen op de koop. Overleg met je aankoopmakelaar.'],
 ];
 

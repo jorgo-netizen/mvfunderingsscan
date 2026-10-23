@@ -75,7 +75,7 @@
         "id": "wanneer-onderzoek",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Onderzoek is verstandig als je woning van vóór circa 1970 is en in een gebied met veen, klei of wisselende waterstanden staat, zeker als er ook scheuren, scheefstand of klemmende deuren zijn.",
-        "body": "<p>Een quickscan is niet-destructief, kost <strong>vanaf circa €350</strong> en je ontvangt het rapport normaal gesproken binnen 5 werkdagen na de inspectie. Geeft fase 0 daar aanleiding toe, dan volgt eventueel een vervolgonderzoek met metingen.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>In de regel als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Twijfel je? <a href=\"/contact/\">Neem contact op</a> en vertel kort wat je ziet.</p>"
+        "body": "<p>Een quickscan is niet-destructief, kost <strong>vanaf €350</strong> en je ontvangt het rapport normaal gesproken binnen 2 werkdagen na de inspectie. Geeft fase 0 daar aanleiding toe, dan volgt eventueel een vervolgonderzoek met metingen.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus visuele inspectie, met rapport en advies.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Vervolgonderzoek met metingen</strong><span>In de regel als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Twijfel je? <a href=\"/contact/\">Neem contact op</a> en vertel kort wat je ziet.</p>"
       }
     ],
     "faqs": [
@@ -220,7 +220,7 @@
       },
       {
         "q": "Wat kost een vooronderzoek naar zulke scheuren?",
-        "a": "<p>Een quickscan (fase 0) kost vanaf circa €350; bij grotere of complexere woningen kan het oplopen tot indicatief circa €550. De definitieve prijs hoor je vooraf. Zie ook de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "a": "<p>Een quickscan (fase 0) kost vanaf €350. De definitieve prijs hoor je vooraf. Zie ook de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
       }
     ],
     "related": [
@@ -454,7 +454,7 @@
       },
       {
         "q": "Wat kost een vooronderzoek bij klemmende ramen en scheuren?",
-        "a": "<p>Een quickscan kost vanaf circa €350, bij grotere of complexere woningen tot indicatief circa €550. Je weet de prijs vooraf. Zie ook <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "a": "<p>Een quickscan kost vanaf €350. Je weet de prijs vooraf. Zie ook <a href=\"/prijzen/\">prijzen</a>.</p>"
       }
     ],
     "related": [
@@ -579,7 +579,7 @@
       },
       {
         "q": "Wat kost het om een scheve vloer te laten meten?",
-        "a": "<p>Een vloerveldwaterpassing heeft geen losse prijs; ze maakt deel uit van fase 1, indicatief €750 – €1.500 afhankelijk van welke metingen nodig zijn. Fase 1 volgt alleen als de quickscan daar aanleiding voor geeft.</p>"
+        "a": "<p>Een vloerveldwaterpassing heeft geen losse prijs; ze maakt deel uit van fase 1, vanaf €950 afhankelijk van welke metingen nodig zijn. Fase 1 volgt alleen als de quickscan daar aanleiding voor geeft.</p>"
       }
     ],
     "related": [

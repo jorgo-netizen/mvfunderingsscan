@@ -105,7 +105,7 @@ export function orgSchema() {
       'Funderingsonderzoek fase 1', 'Lintvoegwaterpassing', 'Loodmeting',
       'Vloerveldwaterpassing', 'Scheurpatronen in gevels', 'Funderingsrisico bij taxatie',
     ],
-    priceRange: '€350 – €1.500',
+    priceRange: 'Vanaf €350',
   };
 }
 
@@ -221,17 +221,35 @@ const CHEVRON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.4 8.6 1
 
 /** Hoofdnavigatie met dropdowns. Alle links staan in de HTML (crawlbaar, ook zonder JS). */
 export function header(active) {
+  const cur = (href) => (href === active ? ' aria-current="page"' : '');
   const nav = NAV.map((item, i) => {
-    const kidsActive = (item.children || []).some((c) => c.href === active);
+    const subs = item.columns ? item.columns.flatMap((c) => [c, ...c.items]) : (item.children || []);
+    const kidsActive = subs.some((c) => c.href === active);
     const isActive = item.href === active || kidsActive;
-    const self = item.href === active ? ' aria-current="page"' : '';
-    if (!item.children) {
+    const self = cur(item.href);
+    if (!item.children && !item.columns) {
       return `<a class="nav-link${isActive ? ' is-active' : ''}" href="${item.href}"${self}>${item.label}</a>`;
     }
-    const kids = item.children.map((c) => `<li><a href="${c.href}"${c.href === active ? ' aria-current="page"' : ''}>${c.label}</a></li>`).join('');
+    const toggle = `<button class="nav-sub-toggle" type="button" aria-expanded="false" aria-controls="sub-${i}" aria-label="Submenu ${item.label}">${CHEVRON}</button>`;
+    // Werkgebied: twee kolommen (Friesland links, Groningen rechts) met alle plaatsen die een eigen pagina hebben.
+    if (item.columns) {
+      const cols = item.columns.map((c) => `<div class="nav-mega-col">
+          <p class="nav-mega-title"><a href="${c.href}"${cur(c.href)}>${c.title}</a></p>
+          <ul>${c.items.map((x) => `<li><a href="${x.href}"${cur(x.href)}>${x.label}</a></li>`).join('')}</ul>
+        </div>`).join('\n        ');
+      return `<div class="nav-item${isActive ? ' is-active' : ''}">
+        <a class="nav-link" href="${item.href}"${self}>${item.label}</a>
+        ${toggle}
+        <div class="nav-dropdown nav-mega" id="sub-${i}">
+        ${cols}
+          ${item.all ? `<p class="nav-mega-all"><a href="${item.all.href}">${item.all.label} <span aria-hidden="true">→</span></a></p>` : ''}
+        </div>
+      </div>`;
+    }
+    const kids = item.children.map((c) => `<li><a href="${c.href}"${cur(c.href)}>${c.label}</a></li>`).join('');
     return `<div class="nav-item${isActive ? ' is-active' : ''}">
         <a class="nav-link" href="${item.href}"${self}>${item.label}</a>
-        <button class="nav-sub-toggle" type="button" aria-expanded="false" aria-controls="sub-${i}" aria-label="Submenu ${item.label}">${CHEVRON}</button>
+        ${toggle}
         <ul class="nav-dropdown" id="sub-${i}">${kids}</ul>
       </div>`;
   }).join('\n      ');
@@ -281,7 +299,7 @@ const FOOTER_COLS = [
     ['/funderingsonderzoek-bij-aankoop/', 'Onderzoek bij aankoop'], ['/funderingsonderzoek-bij-verkoop/', 'Onderzoek bij verkoop'],
     ['/funderingsonderzoek-taxatie/', 'Funderingsonderzoek en taxatie'], ['/funderingsproblemen/', 'Funderingsproblemen'],
     ['/scheuren-in-gevel/', 'Scheuren in de gevel'], ['/verzakking-woning/', 'Verzakking woning'],
-    ['/problemen-met-houten-palen/', 'Houten palen'], ['/funderingsscan-check/', 'Online funderingscheck'],
+    ['/problemen-met-houten-palen/', 'Houten palen'], ['/gratis-funderingscheck/', 'Online funderingscheck'],
     ['/kennisbank/lintvoegwaterpassing/', 'Lintvoegwaterpassing'], ['/kennisbank/loodmeting/', 'Loodmeting'],
     ['/kennisbank/vloerveldwaterpassing/', 'Vloerveldwaterpassing'], ['/kennisbank/scheurpatronen/', 'Scheurpatronen'], ['/kennisbank/begrippenlijst/', 'Begrippenlijst']]],
   ['Werkgebied', [
@@ -370,7 +388,7 @@ ${faqItems(faqs)}
 
 export function ctaBand(
   title = 'Weten hoe jouw fundering ervoor staat?',
-  text = 'Vraag een Quick Scan aan. Je hoort vooraf wat het kost en ontvangt normaal gesproken binnen vijf werkdagen na de inspectie een helder rapport.',
+  text = 'Vraag een Quick Scan aan. Je hoort vooraf wat het kost en ontvangt normaal gesproken binnen twee werkdagen na de inspectie een helder rapport.',
   button = 'Vraag een funderingsscan aan',
 ) {
   return `<section class="cta-band" aria-labelledby="cta-title">
@@ -385,6 +403,6 @@ export function ctaBand(
       <a class="btn btn-outline-light btn-lg" href="${NAP.phone_href}">Bel ${NAP.phone_display}</a>
     </div>
   </div>
-  <p class="container cta-band-note">Twijfel je nog? <a href="/funderingsscan-check/">Doe de online funderingscheck</a> of <a href="/contact/">stel je vraag</a>.</p>
+  <p class="container cta-band-note">Twijfel je nog? <a href="/gratis-funderingscheck/">Doe de online funderingscheck</a> of <a href="/contact/">stel je vraag</a>.</p>
 </section>`;
 }

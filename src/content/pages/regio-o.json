@@ -38,11 +38,11 @@
       },
       {
         "label": "Quick Scan",
-        "value": "vanaf ca. €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Rapport",
-        "value": "meestal binnen 5 werkdagen na inspectie"
+        "value": "meestal binnen 2 werkdagen na inspectie"
       },
       {
         "label": "Planning",
@@ -76,7 +76,7 @@
         "id": "scan-franeker",
         "h2": "Hoe verloopt een funderingsscan bij een woning in Franeker?",
         "answer": "De scan is fase 0 van ons onderzoek: een archief- en bodemonderzoek, een visuele inspectie ter plaatse en een rapport met risico-inschatting, conclusie en advies.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Je geeft het adres en je vraag door; de prijs is vooraf bekend.</span></li><li><strong>Archief en bodem</strong><span>We zoeken bouwjaar, tekeningen, vermoedelijk funderingstype, bodemopbouw, grondwater en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a> uit.</span></li><li><strong>Inspectie in Franeker</strong><span>Meestal binnen enkele werkdagen bekijken we gevels, metselwerk, kozijnen, vloeren en, als die toegankelijk is, de kruipruimte.</span></li><li><strong>Rapport</strong><span>Normaal gesproken binnen 5 werkdagen na de inspectie ontvang je het rapport met foto's en advies.</span></li></ol>\n<p>Alle details over deze eerste stap lees je bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>. Het totale verloop staat bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
+        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Je geeft het adres en je vraag door; de prijs is vooraf bekend.</span></li><li><strong>Archief en bodem</strong><span>We zoeken bouwjaar, tekeningen, vermoedelijk funderingstype, bodemopbouw, grondwater en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a> uit.</span></li><li><strong>Inspectie in Franeker</strong><span>Meestal binnen enkele werkdagen bekijken we gevels, metselwerk, kozijnen, vloeren en, als die toegankelijk is, de kruipruimte.</span></li><li><strong>Rapport</strong><span>Normaal gesproken binnen 2 werkdagen na de inspectie ontvang je het rapport met foto's en advies.</span></li></ol>\n<p>Alle details over deze eerste stap lees je bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>. Het totale verloop staat bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
       },
       {
         "id": "meten-in-franeker",
@@ -87,8 +87,8 @@
       {
         "id": "prijs-franeker",
         "h2": "Wat kost funderingsonderzoek in Franeker?",
-        "answer": "De Quick Scan kost vanaf circa €350 en kan bij grotere of complexere panden indicatief oplopen tot circa €550. Fase 1 kost indicatief €750 – €1.500.",
-        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Onderdeel</th><th>Indicatieve prijs</th><th>Wanneer</th></tr></thead><tbody><tr><td>Fase 0 – Quick Scan</td><td>vanaf ca. €350</td><td>Als eerste stap</td></tr><tr><td>Fase 0 bij een groot of complex pand</td><td>tot ca. €550</td><td>Bijvoorbeeld meerdere bouwdelen</td></tr><tr><td>Fase 1 – metingen</td><td>€750 – €1.500</td><td>In de regel na fase 0, als daar aanleiding voor is</td></tr></tbody></table></div>\n<p>Vooraf hoor je wat het onderzoek kost. We voeren zelf geen herstel uit, dus het advies is onafhankelijk. Meer over de opbouw van de kosten lees je bij <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "answer": "De Quick Scan kost vanaf €350. Fase 1 kost vanaf €950.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Onderdeel</th><th>Indicatieve prijs</th><th>Wanneer</th></tr></thead><tbody><tr><td>Fase 0 – Quick Scan</td><td>vanaf €350</td><td>Als eerste stap</td></tr><tr><td>Fase 1 – metingen</td><td>vanaf €950</td><td>In de regel na fase 0, als daar aanleiding voor is</td></tr></tbody></table></div>\n<p>Vooraf hoor je wat het onderzoek kost. We voeren zelf geen herstel uit, dus het advies is onafhankelijk. Meer over de opbouw van de kosten lees je bij <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
         "id": "rond-franeker",
@@ -164,7 +164,7 @@
     ],
     "eyebrow": "Werkgebied · Haren (Groningen)",
     "h1": "Funderingsonderzoek in Haren",
-    "lead": "Haren ligt op de Hondsrug, een zandrug, met in de omgeving ook <strong>lager gelegen gebieden</strong>. Er staan veel <strong>vrijstaande en oudere woningen</strong>. Met een onafhankelijke <a href=\"/funderingsscan/\">funderingsscan</a> breng je in kaart of er bij jouw woning in Haren aanwijzingen zijn voor funderingsproblemen, met een rapport normaal gesproken binnen 5 werkdagen na de inspectie.",
+    "lead": "Haren ligt op de Hondsrug, een zandrug, met in de omgeving ook <strong>lager gelegen gebieden</strong>. Er staan veel <strong>vrijstaande en oudere woningen</strong>. Met een onafhankelijke <a href=\"/funderingsscan/\">funderingsscan</a> breng je in kaart of er bij jouw woning in Haren aanwijzingen zijn voor funderingsproblemen, met een rapport normaal gesproken binnen 2 werkdagen na de inspectie.",
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
       "alt": "Persoon met een waterpas bij de gevel van een woning"
@@ -180,11 +180,11 @@
       },
       {
         "label": "Quick Scan",
-        "value": "vanaf ca. €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Rapport",
-        "value": "meestal binnen 5 werkdagen"
+        "value": "meestal binnen 2 werkdagen"
       }
     ],
     "services": [
@@ -231,7 +231,7 @@
       {
         "id": "kosten-en-aanvragen-haren",
         "h2": "Wat kost een scan in Haren en hoe vraag je hem aan?",
-        "answer": "De Quick Scan kost vanaf circa €350; bij grotere of complexere woningen indicatief tot circa €550. Fase 1 kost indicatief €750 – €1.500. Aanvragen kan online.",
+        "answer": "De Quick Scan kost vanaf €350. Fase 1 kost vanaf €950. Aanvragen kan online.",
         "body": "<p>Na je aanvraag plannen we de inspectie meestal binnen enkele werkdagen. Een overzicht van de kosten vind je bij <a href=\"/prijzen/\">prijzen</a>. Klaar om te starten? <a href=\"/funderingsscan-aanvragen/\">Vraag de funderingsscan aan</a> of stel eerst je vraag via <a href=\"/contact/\">contact</a>.</p>\n<ul class=\"town-chips\"><li><a href=\"/funderingsonderzoek-groningen-stad/\">Groningen stad</a></li><li><a href=\"/funderingsonderzoek-veendam/\">Veendam</a></li><li>Zuidhorn</li><li>Winsum</li></ul>\n<p>Alle plaatsen waar we werken vind je op de pagina <a href=\"/werkgebied/\">werkgebied</a>.</p>"
       }
     ],
@@ -241,7 +241,7 @@
         "a": "<p>Bij MV Funderingsscan. We werken in de hele provincie Groningen, dus ook in Haren, en plannen de inspectie meestal binnen enkele werkdagen.</p>"
       },
       {
-        "q": "Is een woning op de Hondsrug altijd veilig?",
+        "q": "Is een woning in Haren op de Hondsrug altijd veilig?",
         "a": "<p>Nee, zand is meestal stabieler, maar geen garantie. Verbouwingen, aanbouwen en overgangen naar lager gelegen grond kunnen ook op de Hondsrug voor signalen zorgen.</p>"
       },
       {
@@ -314,15 +314,15 @@
       },
       {
         "label": "Quick Scan",
-        "value": "vanaf ca. €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Fase 1",
-        "value": "indicatief €750 – €1.500"
+        "value": "vanaf €950"
       },
       {
         "label": "Rapport",
-        "value": "meestal binnen 5 werkdagen"
+        "value": "meestal binnen 2 werkdagen"
       }
     ],
     "services": [
@@ -358,12 +358,12 @@
         "id": "onderzoek-veendam",
         "h2": "Hoe onderzoeken we een woning in Veendam?",
         "answer": "Met fase 0, de Quick Scan: archief- en bodemonderzoek, een visuele inspectie ter plaatse en een rapport met risico-inschatting en advies. Fase 1 volgt alleen als dat nodig is.",
-        "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Archief en bodem\"><h3>Archief en bodem</h3><p>We zoeken bouwjaar, beschikbare tekeningen en het vermoedelijke funderingstype op, en kijken naar bodemopbouw, grondwater en bodemdaling.</p></section><section class=\"tab-panel\" data-tab=\"Inspectie\"><h3>Inspectie</h3><p>Ter plaatse bekijken we gevels, metselwerk, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, kozijnen, vloeren en scheefstand, en de kruipruimte voor zover die toegankelijk is.</p></section><section class=\"tab-panel\" data-tab=\"Rapport\"><h3>Rapport</h3><p>Normaal gesproken binnen 5 werkdagen na de inspectie ontvang je een rapport met foto's, conclusie en advies over een eventuele vervolgstap.</p></section></div>\n<p>De inhoud van de scan staat uitgebreid bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>. Geeft de scan aanleiding, dan meten we in <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a> onder meer de lintvoeg en de vloervelden, zonder graafwerk. Hoe het hele traject loopt, lees je bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
+        "body": "<div class=\"tabs\"><section class=\"tab-panel\" data-tab=\"Archief en bodem\"><h3>Archief en bodem</h3><p>We zoeken bouwjaar, beschikbare tekeningen en het vermoedelijke funderingstype op, en kijken naar bodemopbouw, grondwater en bodemdaling.</p></section><section class=\"tab-panel\" data-tab=\"Inspectie\"><h3>Inspectie</h3><p>Ter plaatse bekijken we gevels, metselwerk, <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a>, kozijnen, vloeren en scheefstand, en de kruipruimte voor zover die toegankelijk is.</p></section><section class=\"tab-panel\" data-tab=\"Rapport\"><h3>Rapport</h3><p>Normaal gesproken binnen 2 werkdagen na de inspectie ontvang je een rapport met foto's, conclusie en advies over een eventuele vervolgstap.</p></section></div>\n<p>De inhoud van de scan staat uitgebreid bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>. Geeft de scan aanleiding, dan meten we in <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a> onder meer de lintvoeg en de vloervelden, zonder graafwerk. Hoe het hele traject loopt, lees je bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
       },
       {
         "id": "kosten-veendam",
         "h2": "Wat kost funderingsonderzoek in Veendam?",
-        "answer": "De Quick Scan kost vanaf circa €350 en bij grotere of complexere woningen indicatief tot circa €550. Fase 1 kost indicatief €750 – €1.500.",
+        "answer": "De Quick Scan kost vanaf €350. Fase 1 kost vanaf €950.",
         "body": "<p>De definitieve prijs hoor je vooraf. Wij voeren zelf geen funderingsherstel uit, zodat ons advies onafhankelijk blijft. Herstel kan tienduizenden euro's kosten; daarvoor heb je een offerte van een herstelspecialist nodig. Zie ook onze <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
@@ -444,7 +444,7 @@
     ],
     "eyebrow": "Werkgebied · Winschoten (Oldambt)",
     "h1": "Funderingsonderzoek in Winschoten",
-    "lead": "Winschoten is een stad in Oost-Groningen, in de gemeente Oldambt, een streek die bekendstaat om <strong>zware kleigronden</strong>. Twijfel je over de fundering van je woning, dan begint <strong>funderingsonderzoek in Winschoten</strong> met een onafhankelijke <a href=\"/funderingsscan/\">funderingsscan</a>: archief, bodem en inspectie, met een rapport normaal gesproken binnen 5 werkdagen.",
+    "lead": "Winschoten is een stad in Oost-Groningen, in de gemeente Oldambt, een streek die bekendstaat om <strong>zware kleigronden</strong>. Twijfel je over de fundering van je woning, dan begint <strong>funderingsonderzoek in Winschoten</strong> met een onafhankelijke <a href=\"/funderingsscan/\">funderingsscan</a>: archief, bodem en inspectie, met een rapport normaal gesproken binnen 2 werkdagen.",
     "hero_image": {
       "name": "metselwerk-gevel-detail",
       "alt": "Close-up van metselwerk en voegen van een bakstenen gevel"
@@ -460,11 +460,11 @@
       },
       {
         "label": "Quick Scan",
-        "value": "vanaf ca. €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Rapport",
-        "value": "meestal binnen 5 werkdagen"
+        "value": "meestal binnen 2 werkdagen"
       }
     ],
     "services": [
@@ -506,12 +506,12 @@
         "id": "verloop-winschoten",
         "h2": "Hoe verloopt funderingsonderzoek in Winschoten?",
         "answer": "In twee fasen. Fase 0 is de Quick Scan met archief, bodem, inspectie en advies. Fase 1 met metingen volgt in de regel na fase 0, als daar aanleiding voor is.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Aanvragen</strong><span>Je geeft je adres en vraag door en krijgt de prijs vooraf.</span></li><li><strong>Vooronderzoek</strong><span>Bouwjaar, tekeningen, funderingstype, bodemopbouw, grondwater en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>.</span></li><li><strong>Inspectie</strong><span>Meestal binnen enkele werkdagen gepland; gevels, scheuren, kozijnen, vloeren en de kruipruimte voor zover toegankelijk.</span></li><li><strong>Rapport en advies</strong><span>Normaal gesproken binnen 5 werkdagen na de inspectie, met foto's en een duidelijke vervolgstap.</span></li></ol>\n<p>Bij woningen op klei kan in fase 1 een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a> laten zien of de gevel ongelijk is gezakt. Meer over de eerste stap lees je bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>; het hele traject staat bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
+        "body": "<ol class=\"mini-steps\"><li><strong>Aanvragen</strong><span>Je geeft je adres en vraag door en krijgt de prijs vooraf.</span></li><li><strong>Vooronderzoek</strong><span>Bouwjaar, tekeningen, funderingstype, bodemopbouw, grondwater en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>.</span></li><li><strong>Inspectie</strong><span>Meestal binnen enkele werkdagen gepland; gevels, scheuren, kozijnen, vloeren en de kruipruimte voor zover toegankelijk.</span></li><li><strong>Rapport en advies</strong><span>Normaal gesproken binnen 2 werkdagen na de inspectie, met foto's en een duidelijke vervolgstap.</span></li></ol>\n<p>Bij woningen op klei kan in fase 1 een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a> laten zien of de gevel ongelijk is gezakt. Meer over de eerste stap lees je bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0 funderingsonderzoek</a>; het hele traject staat bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
       },
       {
         "id": "prijs-en-omgeving-winschoten",
         "h2": "Wat kost het en werken jullie ook rond Winschoten?",
-        "answer": "De Quick Scan kost vanaf circa €350, indicatief tot circa €550 bij grotere of complexere woningen; fase 1 kost indicatief €750 – €1.500. We werken in de hele provincie Groningen.",
+        "answer": "De Quick Scan kost vanaf €350; fase 1 kost vanaf €950. We werken in de hele provincie Groningen.",
         "body": "<p>Je weet de definitieve prijs vooraf; zie ook onze <a href=\"/prijzen/\">prijzen</a>. We voeren zelf geen herstel uit, dus het advies is onafhankelijk.</p>\n<ul class=\"town-chips\"><li><a href=\"/funderingsonderzoek-veendam/\">Veendam</a></li><li><a href=\"/funderingsonderzoek-groningen-stad/\">Groningen stad</a></li><li><a href=\"/funderingsonderzoek-appingedam/\">Appingedam</a></li><li><a href=\"/funderingsonderzoek-delfzijl/\">Delfzijl</a></li></ul>\n<p>Bekijk alle plaatsen op de pagina <a href=\"/werkgebied/\">werkgebied</a>. <a href=\"/funderingsscan-aanvragen/\">Vraag de funderingsscan aan</a> of neem <a href=\"/contact/\">contact</a> op als je eerst wilt overleggen.</p>"
       }
     ],
@@ -582,7 +582,7 @@
     ],
     "eyebrow": "Funderingsscan · Leeuwarden",
     "h1": "Funderingsscan in Leeuwarden: de Quick Scan vanuit de stad",
-    "lead": "Een <strong>funderingsscan in Leeuwarden</strong> is de Quick Scan (fase 0): een niet-destructief vooronderzoek van je fundering met archief- en bodemonderzoek, inspectie en een rapport met advies. Ons kantoor staat in Leeuwarden, de inspectie plannen we meestal binnen enkele werkdagen en de prijs is <strong>vanaf circa €350</strong>.",
+    "lead": "Een <strong>funderingsscan in Leeuwarden</strong> is de Quick Scan (fase 0): een niet-destructief vooronderzoek van je fundering met archief- en bodemonderzoek, inspectie en een rapport met advies. Ons kantoor staat in Leeuwarden, de inspectie plannen we meestal binnen enkele werkdagen en de prijs is <strong>vanaf €350</strong>.",
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
       "alt": "Persoon met een waterpas bij de gevel van een woning"
@@ -594,7 +594,7 @@
       },
       {
         "label": "Prijs",
-        "value": "vanaf ca. €350"
+        "value": "vanaf €350"
       },
       {
         "label": "Inspectie",
@@ -602,7 +602,7 @@
       },
       {
         "label": "Rapport",
-        "value": "meestal binnen 5 werkdagen na inspectie"
+        "value": "meestal binnen 2 werkdagen na inspectie"
       }
     ],
     "services": [
@@ -637,8 +637,8 @@
       {
         "id": "prijs-scan-leeuwarden",
         "h2": "Wat kost een funderingsscan in Leeuwarden?",
-        "answer": "De scan kost vanaf circa €350. Bij een grotere of complexere woning kan de prijs indicatief oplopen tot circa €550. De definitieve prijs hoor je vooraf.",
-        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Wat</th><th>Indicatieve prijs</th></tr></thead><tbody><tr><td>Funderingsscan (fase 0)</td><td>vanaf ca. €350</td></tr><tr><td>Funderingsscan bij een grotere of complexere woning</td><td>tot ca. €550</td></tr><tr><td>Vervolgonderzoek fase 1, alleen indien geadviseerd</td><td>€750 – €1.500</td></tr></tbody></table></div>\n<p>Er is geen verplichting om na de scan verder te gaan. Wij voeren zelf geen herstel uit, dus we hebben geen belang bij een bepaalde uitkomst. Alle bedragen staan ook op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "answer": "De scan kost vanaf €350. De definitieve prijs hoor je vooraf.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Wat</th><th>Indicatieve prijs</th></tr></thead><tbody><tr><td>Funderingsscan (fase 0)</td><td>vanaf €350</td></tr><tr><td>Vervolgonderzoek fase 1, alleen indien geadviseerd</td><td>vanaf €950</td></tr></tbody></table></div>\n<p>Er is geen verplichting om na de scan verder te gaan. Wij voeren zelf geen herstel uit, dus we hebben geen belang bij een bepaalde uitkomst. Alle bedragen staan ook op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
         "id": "voorbereiden-leeuwarden",
@@ -649,8 +649,8 @@
       {
         "id": "aanvragen-leeuwarden",
         "h2": "Hoe vraag je een funderingsscan in Leeuwarden aan?",
-        "answer": "Je vraagt de scan online aan of neemt contact met ons op. We spreken een moment af voor de inspectie en sturen het rapport normaal gesproken binnen 5 werkdagen daarna.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Via het aanvraagformulier, telefoon of e-mail, met je adres en je vraag.</span></li><li><strong>Prijs en planning</strong><span>Je hoort de prijs vooraf; de inspectie plannen we meestal binnen enkele werkdagen.</span></li><li><strong>Inspectie</strong><span>We bekijken de woning binnen en buiten, na het archief- en bodemonderzoek.</span></li><li><strong>Rapport</strong><span>Normaal gesproken binnen 5 werkdagen na de inspectie in je mailbox.</span></li></ol>\n<p><a href=\"/funderingsscan-aanvragen/\">Vraag de funderingsscan aan</a> of stel je vraag via <a href=\"/contact/\">contact</a>. Het volledige proces staat bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
+        "answer": "Je vraagt de scan online aan of neemt contact met ons op. We spreken een moment af voor de inspectie en sturen het rapport normaal gesproken binnen 2 werkdagen daarna.",
+        "body": "<ol class=\"mini-steps\"><li><strong>Aanvraag</strong><span>Via het aanvraagformulier, telefoon of e-mail, met je adres en je vraag.</span></li><li><strong>Prijs en planning</strong><span>Je hoort de prijs vooraf; de inspectie plannen we meestal binnen enkele werkdagen.</span></li><li><strong>Inspectie</strong><span>We bekijken de woning binnen en buiten, na het archief- en bodemonderzoek.</span></li><li><strong>Rapport</strong><span>Normaal gesproken binnen 2 werkdagen na de inspectie in je mailbox.</span></li></ol>\n<p><a href=\"/funderingsscan-aanvragen/\">Vraag de funderingsscan aan</a> of stel je vraag via <a href=\"/contact/\">contact</a>. Het volledige proces staat bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
       },
       {
         "id": "wat-de-scan-niet-is",
@@ -661,12 +661,12 @@
     ],
     "faqs": [
       {
-        "q": "Waar kan ik funderingsonderzoek laten uitvoeren in Leeuwarden?",
+        "q": "Waar vraag ik een funderingsscan aan in Leeuwarden?",
         "a": "<p>Bij MV Funderingsscan, gevestigd aan de Mr. P. J. Troelstraweg 149 in Leeuwarden. We beginnen met de funderingsscan (fase 0) en plannen de inspectie meestal binnen enkele werkdagen.</p>"
       },
       {
         "q": "Hoe snel heb ik de uitslag van de scan?",
-        "a": "<p>Het rapport ontvang je normaal gesproken binnen 5 werkdagen na de inspectie. De inspectie zelf plannen we meestal binnen enkele werkdagen na je aanvraag.</p>"
+        "a": "<p>Het rapport ontvang je normaal gesproken binnen 2 werkdagen na de inspectie. De inspectie zelf plannen we meestal binnen enkele werkdagen na je aanvraag.</p>"
       },
       {
         "q": "Heb ik de scan nodig voor mijn taxatie?",

@@ -87,6 +87,11 @@
       "source": "/verkopers/",
       "destination": "/funderingsonderzoek-bij-verkoop/",
       "permanent": true
+    },
+    {
+      "source": "/funderingsscan-check/",
+      "destination": "/gratis-funderingscheck/",
+      "permanent": true
     }
   ],
   "headers": [

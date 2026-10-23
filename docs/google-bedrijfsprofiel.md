@@ -25,15 +25,15 @@ https://business.google.com. Controleer alles nog één keer voordat je publicee
 ## 2. Bedrijfsomschrijving (max. 750 tekens)
 
 ```
-MV Funderingsscan voert onafhankelijk funderingsonderzoek uit voor woningen in Friesland en Groningen. We beginnen met een Quick Scan (fase 0): archief- en bodemonderzoek en een visuele inspectie van gevels, binnenzijde en kruipruimte, met een helder rapport en advies over de vervolgstap. Alleen als daar aanleiding voor is, volgt fase 1 met metingen zoals lintvoegwaterpassing, loodmeting en vloerveldwaterpassing. Je krijgt vooraf een vaste prijs en het rapport binnen vijf werkdagen na de inspectie. Wij voeren zelf geen funderingsherstel uit, zodat ons advies onafhankelijk blijft. Voor kopers, verkopers, woningeigenaren, makelaars en taxateurs.
+MV Funderingsscan voert onafhankelijk funderingsonderzoek uit voor woningen in Friesland en Groningen. We beginnen met een Quick Scan (fase 0): archief- en bodemonderzoek en een visuele inspectie van gevels, binnenzijde en kruipruimte, met een helder rapport en advies over de vervolgstap. Alleen als daar aanleiding voor is, volgt fase 1 met metingen zoals lintvoegwaterpassing, loodmeting en vloerveldwaterpassing. Je hoort vooraf de prijs (fase 0 vanaf €350) en ontvangt het rapport normaal gesproken binnen twee werkdagen na de inspectie. Wij voeren zelf geen funderingsherstel uit, zodat ons advies onafhankelijk blijft. Voor kopers, verkopers, woningeigenaren, makelaars en taxateurs.
 ```
 
 ## 3. Diensten (met korte omschrijving)
 
 | Dienst | Omschrijving (max. 300 tekens) |
 |---|---|
-| Funderingsscan (Quick Scan, fase 0) | Niet-destructief vooronderzoek: archief- en bodemonderzoek plus visuele inspectie, met risico-inschatting en rapport. Indicatief vanaf ca. €350. |
-| Funderingsonderzoek fase 1 | Vervolgonderzoek met metingen (lintvoegwaterpassing, loodmeting, vloerveldwaterpassing, scheurpatronen). Indicatief €750 – €1.500. |
+| Funderingsscan (Quick Scan, fase 0) | Niet-destructief vooronderzoek: archief- en bodemonderzoek plus visuele inspectie, met risico-inschatting en rapport. Indicatief vanaf €350. |
+| Funderingsonderzoek fase 1 | Vervolgonderzoek met metingen (lintvoegwaterpassing, loodmeting, vloerveldwaterpassing, scheurpatronen). Vanaf €950. |
 | Funderingsonderzoek bij aankoop | Quick Scan vóór of tijdens een aankoop, afgestemd op je voorbehoud. |
 | Funderingsonderzoek bij verkoop | Onafhankelijk funderingsrapport voor verkopers. |
 | Funderingsonderzoek voor taxatie | Aanvullend onderzoek wanneer de taxateur daarom vraagt (bijv. bij risicoklasse D of E). |
@@ -62,8 +62,8 @@ Plaats ongeveer twee keer per maand een bericht met een link naar een pagina op 
 
 Als de vraag-en-antwoordfunctie in je profiel beschikbaar is, kun je deze vragen zelf toevoegen en beantwoorden (antwoorden staan ook op de site):
 
-- Wat kost een funderingsscan? → Indicatief vanaf ca. €350 voor fase 0; vooraf vaste prijs.
-- Hoe snel krijg ik het rapport? → Binnen vijf werkdagen na de inspectie.
+- Wat kost een funderingsscan? → Indicatief vanaf €350 voor fase 0; vooraf vaste prijs.
+- Hoe snel krijg ik het rapport? → Normaal gesproken binnen twee werkdagen na de inspectie.
 - Werken jullie in mijn dorp? → In heel Friesland en Groningen; zie https://www.mvfunderingsscan.nl/werkgebied/
 - Wat is het verschil tussen fase 0 en fase 1? → https://www.mvfunderingsscan.nl/kennisbank/verschil-fase-0-en-fase-1/
 - Doen jullie ook funderingsherstel? → Nee, we zijn onafhankelijk en voeren geen herstel uit.

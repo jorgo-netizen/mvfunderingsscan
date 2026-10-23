@@ -19,7 +19,7 @@ const IMAGES = ['funderingsinspectie-woning-gevel', 'jaren-dertig-woningen-straa
 const SERVICES = ['funderingsscan', 'fase0', 'fase1'];
 const NAV = ['/funderingsscan/', '/funderingsonderzoek-woning/', '/funderingsproblemen/', '/werkgebied/', '/kennisbank/', '/werkwijze/', '/contact/'];
 const EXTERNAL_OK = ['https://www.kcaf.nl/', 'https://www.nrvt.nl/', 'https://www.schadedoormijnbouw.nl/', 'https://www.nhg.nl/', 'https://www.rijksoverheid.nl/', 'https://veenweidefryslan.frl/', 'https://www.veenweidefryslan.frl/', 'https://lokaleregelgeving.overheid.nl/', 'https://historischcentrumleeuwarden.nl/'];
-const ALLOWED_EURO = new Set(['350', '550', '750', '1.500']);
+const ALLOWED_EURO = new Set(['350', '950']); // fase 0 vanaf €350, fase 1 vanaf €950 (oktober 2026)
 const FORBIDDEN = [/lorem/i, /ipsum/i, /coming soon/i, /hier komt/i, /\bTODO\b/, /binnenkort beschikbaar/i,
   /\b100\s?%/, /nummer\s?1\b/i, /fundexa/i, /recensie/i, /\bwe garanderen\b/i];
 

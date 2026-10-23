@@ -136,7 +136,7 @@ function sideHtml(links, sections, path) {
         ${tocHtml(sections)}
         <div class="side-card side-card-navy">
           <p class="side-title">Direct duidelijkheid</p>
-          <p>Quick Scan vanaf ca. €350, prijs vooraf bekend en rapport normaal gesproken binnen 5 werkdagen na de inspectie.</p>
+          <p>Quick Scan vanaf €350, prijs vooraf bekend en rapport normaal gesproken binnen 2 werkdagen na de inspectie.</p>
           <a class="btn btn-gold btn-block" href="/funderingsscan-aanvragen/">Scan aanvragen <span aria-hidden="true">→</span></a>
           <a class="side-phone" href="${NAP.phone_href}">Of bel ${NAP.phone_display}</a>
         </div>

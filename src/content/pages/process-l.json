@@ -61,7 +61,7 @@
         "id": "meetmethoden-fase-1",
         "h2": "Welke meetmethoden horen bij fase 1?",
         "answer": "In fase 1 wordt gemeten hoe de woning er nu bij staat, zoals scheefstand en hoogteverschillen, onder meer met lintvoegwaterpassing, loodmeting en vloerveldwaterpassing, aangevuld met het vastleggen van scheurpatronen.",
-        "body": "<dl class=\"def-list\"><div><dt><a href=\"/kennisbank/lintvoegwaterpassing/\">Lintvoegwaterpassing</a></dt><dd>Hoogtemeting langs een doorlopende horizontale metselvoeg, die laat zien of delen van een gevel ongelijk zijn gezakt.</dd></div><div><dt><a href=\"/kennisbank/loodmeting/\">Loodmeting</a></dt><dd>Meting van de afwijking van gevels, wanden of kozijnstijlen ten opzichte van de verticaal.</dd></div><div><dt><a href=\"/kennisbank/vloerveldwaterpassing/\">Vloerveldwaterpassing</a></dt><dd>Een raster van hoogtemetingen over de begane grondvloer, vaak weergegeven als hoogtekaart.</dd></div><div><dt><a href=\"/kennisbank/scheurpatronen/\">Scheurpatronen</a></dt><dd>Het vastleggen van locatie, richting, lengte en breedte van scheuren en hoe ze zich ontwikkelen.</dd></div></dl><p>Losse meetmethoden hebben geen eigen prijs: ze maken deel uit van fase 1, die indicatief tussen €750 en €1.500 kost, afhankelijk van welke metingen nodig zijn. Meer over de dienst lees je op <a href=\"/funderingsmetingen/\">funderingsmetingen</a>.</p>"
+        "body": "<dl class=\"def-list\"><div><dt><a href=\"/kennisbank/lintvoegwaterpassing/\">Lintvoegwaterpassing</a></dt><dd>Hoogtemeting langs een doorlopende horizontale metselvoeg, die laat zien of delen van een gevel ongelijk zijn gezakt.</dd></div><div><dt><a href=\"/kennisbank/loodmeting/\">Loodmeting</a></dt><dd>Meting van de afwijking van gevels, wanden of kozijnstijlen ten opzichte van de verticaal.</dd></div><div><dt><a href=\"/kennisbank/vloerveldwaterpassing/\">Vloerveldwaterpassing</a></dt><dd>Een raster van hoogtemetingen over de begane grondvloer, vaak weergegeven als hoogtekaart.</dd></div><div><dt><a href=\"/kennisbank/scheurpatronen/\">Scheurpatronen</a></dt><dd>Het vastleggen van locatie, richting, lengte en breedte van scheuren en hoe ze zich ontwikkelen.</dd></div></dl><p>Losse meetmethoden hebben geen eigen prijs: ze maken deel uit van fase 1, die vanaf €950 kost, afhankelijk van welke metingen nodig zijn. Meer over de dienst lees je op <a href=\"/funderingsmetingen/\">funderingsmetingen</a>.</p>"
       },
       {
         "id": "wie-voert-het-uit",
@@ -79,7 +79,7 @@
         "id": "juiste-stap-kiezen",
         "h2": "Hoe kies je de juiste stap?",
         "answer": "In de meeste situaties begint het onderzoek met fase 0; fase 1 en nader onderzoek volgen in de regel alleen als het vooronderzoek daar aanleiding voor geeft.",
-        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Jouw situatie</th><th>Passende eerste stap</th></tr></thead><tbody><tr><td>Je weet nog weinig van de woning</td><td>Fase 0</td></tr><tr><td>Je ziet scheuren of scheefstand en wilt weten wat ze betekenen</td><td>Fase 0, met eventueel fase 1 als vervolg</td></tr><tr><td>Een eerder rapport adviseert metingen</td><td>Fase 1</td></tr><tr><td>Metingen tonen duidelijke vervorming</td><td>Nader onderzoek, bijvoorbeeld een inspectieput</td></tr><tr><td>Herstel is nodig gebleken</td><td>Herstelplan door een specialist</td></tr></tbody></table></div><div class=\"callout callout-tip\"><strong>Twijfel je?</strong><p>Doe eerst de online <a href=\"/funderingsscan-check/\">funderingscheck</a> of <a href=\"/contact/\">stel je vraag</a>. Weet je al genoeg, dan kun je direct <a href=\"/funderingsscan-aanvragen/\">een fase 0 funderingsscan aanvragen</a>.</p></div>"
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Jouw situatie</th><th>Passende eerste stap</th></tr></thead><tbody><tr><td>Je weet nog weinig van de woning</td><td>Fase 0</td></tr><tr><td>Je ziet scheuren of scheefstand en wilt weten wat ze betekenen</td><td>Fase 0, met eventueel fase 1 als vervolg</td></tr><tr><td>Een eerder rapport adviseert metingen</td><td>Fase 1</td></tr><tr><td>Metingen tonen duidelijke vervorming</td><td>Nader onderzoek, bijvoorbeeld een inspectieput</td></tr><tr><td>Herstel is nodig gebleken</td><td>Herstelplan door een specialist</td></tr></tbody></table></div><div class=\"callout callout-tip\"><strong>Twijfel je?</strong><p>Doe eerst de online <a href=\"/gratis-funderingscheck/\">funderingscheck</a> of <a href=\"/contact/\">stel je vraag</a>. Weet je al genoeg, dan kun je direct <a href=\"/funderingsscan-aanvragen/\">een fase 0 funderingsscan aanvragen</a>.</p></div>"
       },
       {
         "id": "wat-funderingsonderzoek-niet-is",
@@ -103,14 +103,14 @@
       },
       {
         "q": "Wat kost funderingsonderzoek?",
-        "a": "<p>Dat hangt af van de fase. Fase 0 kost vanaf circa €350 (bij grotere of complexere woningen indicatief tot circa €550) en fase 1 indicatief €750 – €1.500. Meer staat op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "a": "<p>Dat hangt af van de fase. Fase 0 kost vanaf €350 en fase 1 vanaf €950. Meer staat op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
         "q": "Hoe snel heb ik de uitkomst van fase 0?",
-        "a": "<p>Het rapport volgt normaal gesproken binnen 5 werkdagen na de inspectie. De inspectie zelf wordt meestal binnen enkele werkdagen ingepland.</p>"
+        "a": "<p>Het rapport volgt normaal gesproken binnen 2 werkdagen na de inspectie. De inspectie zelf wordt meestal binnen enkele werkdagen ingepland.</p>"
       },
       {
-        "q": "Voert MV Funderingsscan ook funderingsherstel uit?",
+        "q": "Doet MV Funderingsscan na het onderzoek ook het herstel?",
         "a": "<p>Nee, MV Funderingsscan voert zelf geen herstel uit. Voor een herstelplan en offerte heb je een gespecialiseerde partij nodig; meer achtergrond lees je bij <a href=\"/kennisbank/funderingsherstel/\">funderingsherstel</a>.</p>"
       },
       {
@@ -137,7 +137,7 @@
     ],
     "cta": [
       "Vraag een fase 0 funderingsscan aan",
-      "Begin met een niet-destructief vooronderzoek en krijg normaal gesproken binnen 5 werkdagen na de inspectie een rapport met advies."
+      "Begin met een niet-destructief vooronderzoek en krijg normaal gesproken binnen 2 werkdagen na de inspectie een rapport met advies."
     ]
   },
   {
@@ -264,7 +264,7 @@
       },
       {
         "q": "Is archiefonderzoek een apart te bestellen dienst?",
-        "a": "<p>Nee, het is een vast onderdeel van <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>, samen met de visuele inspectie en de risico-inschatting. Fase 0 kost vanaf circa €350.</p>"
+        "a": "<p>Nee, het is een vast onderdeel van <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>, samen met de visuele inspectie en de risico-inschatting. Fase 0 kost vanaf €350.</p>"
       },
       {
         "q": "Zegt archiefonderzoek iets over de staat van de fundering?",
@@ -298,7 +298,7 @@
     ],
     "cta": [
       "Vraag een fase 0 funderingsscan aan",
-      "Archiefonderzoek, visuele inspectie en risico-inschatting in één vooronderzoek, vanaf circa €350."
+      "Archiefonderzoek, visuele inspectie en risico-inschatting in één vooronderzoek, vanaf €350."
     ]
   },
   {
@@ -389,7 +389,7 @@
         "id": "zelf-voorbereiden",
         "h2": "Wat kun je zelf doen voor de inspectie?",
         "answer": "Je helpt de inspectie door de kruipruimte en zolder bereikbaar te maken, bekende scheuren en klachten te noteren en eventuele tekeningen of eerdere rapporten klaar te leggen.",
-        "body": "<ul class=\"check-interactive\"><li>Maak het kruipluik vrij en zorg dat het open kan</li><li>Noteer welke deuren of ramen klemmen en sinds wanneer</li><li>Maak een lijstje van scheuren die je zelf hebt gezien</li><li>Zoek bouwtekeningen, verbouwingsgegevens of oude rapporten op</li><li>Zorg dat alle gevels en de tuin bereikbaar zijn</li></ul><p>Wil je eerst zelf inschatten of onderzoek zinvol is, doe dan de online <a href=\"/funderingsscan-check/\">funderingscheck</a>.</p>"
+        "body": "<ul class=\"check-interactive\"><li>Maak het kruipluik vrij en zorg dat het open kan</li><li>Noteer welke deuren of ramen klemmen en sinds wanneer</li><li>Maak een lijstje van scheuren die je zelf hebt gezien</li><li>Zoek bouwtekeningen, verbouwingsgegevens of oude rapporten op</li><li>Zorg dat alle gevels en de tuin bereikbaar zijn</li></ul><p>Wil je eerst zelf inschatten of onderzoek zinvol is, doe dan de online <a href=\"/gratis-funderingscheck/\">funderingscheck</a>.</p>"
       },
       {
         "id": "wat-gebeurt-met-waarnemingen",
@@ -409,7 +409,7 @@
       },
       {
         "q": "Hoe lang duurt een visuele funderingsinspectie?",
-        "a": "<p>Daar is geen vaste duur voor te geven; het hangt af van de woning. Wel wordt de inspectie meestal binnen enkele werkdagen ingepland en volgt het rapport normaal gesproken binnen 5 werkdagen na de inspectie.</p>"
+        "a": "<p>Daar is geen vaste duur voor te geven; het hangt af van de woning. Wel wordt de inspectie meestal binnen enkele werkdagen ingepland en volgt het rapport normaal gesproken binnen 2 werkdagen na de inspectie.</p>"
       },
       {
         "q": "Moet ik thuis zijn bij de inspectie?",
@@ -530,7 +530,7 @@
         "id": "opbouw-rapport",
         "h2": "Hoe wordt het rapport opgebouwd?",
         "answer": "Het rapport volgt de lijn van het onderzoek: eerst de gegevens over woning en ondergrond, dan de waarnemingen met foto's, vervolgens de risico-inschatting en tot slot de conclusie en het advies.",
-        "body": "<ol class=\"mini-steps\"><li><strong>Gegevens</strong><span>Bouwjaar, verbouwingen, vermoedelijk funderingstype, bodemopbouw, grondwater en bodemdaling.</span></li><li><strong>Waarnemingen</strong><span>Een fotoverslag van gevels, binnenruimten en, voor zover toegankelijk, de kruipruimte.</span></li><li><strong>Inschatting</strong><span>Hoe de gegevens en waarnemingen samen worden gewogen, inclusief de beperkingen.</span></li><li><strong>Conclusie en advies</strong><span>Een heldere conclusie en een concrete vervolgstap.</span></li></ol><p>Je ontvangt het rapport normaal gesproken binnen 5 werkdagen na de inspectie. Hoe het rapport als product eruitziet, staat op <a href=\"/funderingsrapport/\">funderingsrapport</a>; tips om het goed te lezen vind je in <a href=\"/kennisbank/funderingsrapport-lezen/\">funderingsrapport lezen</a>.</p>"
+        "body": "<ol class=\"mini-steps\"><li><strong>Gegevens</strong><span>Bouwjaar, verbouwingen, vermoedelijk funderingstype, bodemopbouw, grondwater en bodemdaling.</span></li><li><strong>Waarnemingen</strong><span>Een fotoverslag van gevels, binnenruimten en, voor zover toegankelijk, de kruipruimte.</span></li><li><strong>Inschatting</strong><span>Hoe de gegevens en waarnemingen samen worden gewogen, inclusief de beperkingen.</span></li><li><strong>Conclusie en advies</strong><span>Een heldere conclusie en een concrete vervolgstap.</span></li></ol><p>Je ontvangt het rapport normaal gesproken binnen 2 werkdagen na de inspectie. Hoe het rapport als product eruitziet, staat op <a href=\"/funderingsrapport/\">funderingsrapport</a>; tips om het goed te lezen vind je in <a href=\"/kennisbank/funderingsrapport-lezen/\">funderingsrapport lezen</a>.</p>"
       },
       {
         "id": "mogelijke-vervolgstappen",
@@ -542,7 +542,7 @@
         "id": "inschatting-laten-maken",
         "h2": "Hoe laat je een risico-inschatting maken?",
         "answer": "Een risico-inschatting maak je niet los, maar als onderdeel van een fase 0 funderingsscan, waarin ook het archiefonderzoek en de visuele inspectie zitten.",
-        "body": "<p>Fase 0 kost vanaf circa €350; bij grotere of complexere woningen kan dat indicatief oplopen tot circa €550. De definitieve prijs is vooraf bekend. Je kunt direct <a href=\"/funderingsscan-aanvragen/\">een fase 0 funderingsscan aanvragen</a> of eerst <a href=\"/contact/\">je vraag stellen</a> als je niet zeker weet welke stap je nodig hebt.</p>"
+        "body": "<p>Fase 0 kost vanaf €350. De definitieve prijs is vooraf bekend. Je kunt direct <a href=\"/funderingsscan-aanvragen/\">een fase 0 funderingsscan aanvragen</a> of eerst <a href=\"/contact/\">je vraag stellen</a> als je niet zeker weet welke stap je nodig hebt.</p>"
       }
     ],
     "faqs": [

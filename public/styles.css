@@ -1872,3 +1872,17 @@ html:not(.js) .sim-lvm .sim-points, html:not(.js) .sim-lvm [data-lvm-reset], htm
   .main-nav { gap: 13px; }
   .header-inner { gap: 20px; }
 }
+
+/* Werkgebied-menu: Friesland links, Groningen rechts (toegevoegd) */
+.nav-mega { display: grid; grid-template-columns: repeat(2, minmax(220px, 1fr)); gap: 4px 18px; min-width: 520px; padding: 16px 16px 12px; columns: auto; }
+.nav-mega-col ul { list-style: none; margin: 0; padding: 0; }
+.prose .nav-mega-title, .nav-mega-title { margin: 0 0 6px; padding: 0 0 6px; border-bottom: 1px solid var(--line); }
+.nav-mega-title a { font-size: 12.5px !important; letter-spacing: .1em; text-transform: uppercase; color: var(--gold) !important; }
+.nav-mega li a { padding: 7px 12px; font-size: 14px; }
+.nav-mega-all { grid-column: 1 / -1; margin: 6px 0 0; padding-top: 8px; border-top: 1px solid var(--line); }
+.nav-mega-all a { color: var(--navy); }
+@media (max-width: 1420px) {
+  .nav-mega { min-width: 0; padding: 0 0 12px 8px; grid-template-columns: 1fr; }
+  .nav-item.is-open .nav-mega { display: grid; }
+  .nav-mega-col { margin-top: 8px; }
+}
