@@ -5,13 +5,23 @@ import {
   breadcrumbSchema, faqSchema, GEMEENTEN, gemeenteArea,
 } from './layout.mjs';
 import { widgetHtml } from './widgets.mjs';
-import { expertSection, reviewsSection, personSchema, bylineHtml, EXPERT_OK, PERSON_ID_SUFFIX } from './eeat.mjs';
+import { expertSection, reviewsSection, rapportvoorbeeldSection, personSchema, bylineHtml, EXPERT_OK, PERSON_ID_SUFFIX } from './eeat.mjs';
 
 const MAANDEN = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
 const dateNl = (iso) => { const [y, m, d] = iso.split('-').map(Number); return `${d} ${MAANDEN[m - 1]} ${y}`; };
 
-/** Voegt op /over-ons/ de deskundige en echte reviews toe (alleen als ze zijn ingevuld in eeat.json). */
+/** Voegt op /over-ons/ de deskundige en echte reviews toe en op de rapportpagina's het voorbeeldrapport (alleen als ze zijn ingevuld in eeat.json). */
+// Pagina's waar het voorbeeldrapport komt, met de sectie waarna het verschijnt.
+const RAPPORT_NA = { '/funderingsrapport/': 'wat-staat-erin', '/kennisbank/funderingsrapport-lezen/': 'onderdelen' };
+
 function withEeat(p) {
+  if (RAPPORT_NA[p.path]) {
+    const rv = rapportvoorbeeldSection();
+    if (!rv) return p;
+    const sections = [...p.sections];
+    sections.splice(sections.findIndex((s) => s.id === RAPPORT_NA[p.path]) + 1, 0, rv);
+    return { ...p, sections };
+  }
   if (p.path !== '/over-ons/') return p;
   const sections = [...p.sections];
   const exp = expertSection();

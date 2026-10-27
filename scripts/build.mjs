@@ -18,7 +18,7 @@ import {
 } from '../src/lib/layout.mjs';
 import { render, relatedHtml } from '../src/lib/template.mjs';
 import { aanvraagForm, contactForm } from '../src/lib/forms.mjs';
-import { openPlaceholders, SHOW_PLACEHOLDERS } from '../src/lib/eeat.mjs';
+import { openPlaceholders, SHOW_PLACEHOLDERS, rapportvoorbeeldCard } from '../src/lib/eeat.mjs';
 import { statusPage, beheerPage } from '../src/lib/portal.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -308,6 +308,7 @@ function buildKbIndex() {
       <p class="facts-title">Uitgebreide gidsen</p>
       <ul class="town-chips">${guides.map(([h, l]) => `<li><a href="${h}">${l}</a></li>`).join('')}</ul>
     </div>
+    ${rapportvoorbeeldCard()}
 ${blocks}
   </div>
 </section>

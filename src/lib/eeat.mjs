@@ -5,7 +5,7 @@
  * - Productie (`npm run build`): blokken met placeholders worden overgeslagen; er komt niets verzonnens online.
  * - Ontwikkeling (`npm run dev`, MVFS_PLACEHOLDERS=1): placeholders worden als gele gestippelde vakken getoond.
  */
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -88,6 +88,49 @@ export function reviewsSection() {
   }
   const items = real.map((r) => `<figure class="review"><blockquote><p>${esc(r.tekst)}</p></blockquote><figcaption>${esc(r.naam)}${filled(r.plaats) ? `, ${esc(r.plaats)}` : ''}${filled(r.datum) ? ` · ${esc(r.datum)}` : ''} · ${filled(r.bron_url) ? `<a href="${esc(r.bron_url)}" rel="noopener" target="_blank">${esc(r.bron)}</a>` : esc(r.bron)}</figcaption></figure>`).join('');
   return { id: 'ervaringen', h2: 'Ervaringen van klanten', answer: `Hieronder staan ${real.length === 1 ? 'een echte review' : 'echte reviews'} van opdrachtgevers, met de bron waar ze zijn geplaatst.`, body: `<div class="reviews">${items}</div>` };
+}
+
+/**
+ * Geanonimiseerd voorbeeldrapport (pdf), pad of URL in eeat.json → "rapportvoorbeeld".
+ * Een lokaal pad (bijv. /assets/voorbeeldrapport.pdf) moet in public/ bestaan, anders stopt de build:
+ * zo staat er nooit een kapotte downloadlink online.
+ */
+export const RAPPORTVOORBEELD = (() => {
+  const v = EEAT.rapportvoorbeeld;
+  if (!filled(v)) return null;
+  if (/^https:\/\//.test(v)) return { href: v, size: '' };
+  if (!/^\/[\w/.-]+\.pdf$/i.test(v)) throw new Error(`eeat.json rapportvoorbeeld: gebruik een pad als /assets/voorbeeldrapport.pdf of een https-URL (nu: ${v})`);
+  const file = join(ROOT, 'public', v);
+  if (!existsSync(file)) throw new Error(`eeat.json rapportvoorbeeld: ${v} bestaat niet. Zet de pdf in public${v}.`);
+  const mb = statSync(file).size / 1048576;
+  return { href: v, size: mb < 1 ? `${Math.max(1, Math.round(mb * 1024))} kB` : `${mb.toFixed(1).replace('.', ',')} MB` };
+})();
+
+const RV_ANSWER = 'Wil je zien wat je krijgt? Bekijk een geanonimiseerd rapport van MV Funderingsscan. Namen, adres en andere gegevens waaraan de woning of de opdrachtgever te herkennen is, zijn weggelaten.';
+const rvButton = () => `<a class="btn btn-navy" href="${esc(RAPPORTVOORBEELD.href)}" target="_blank" rel="noopener" type="application/pdf">Voorbeeldrapport openen <span class="rv-meta">(pdf${RAPPORTVOORBEELD.size ? `, ${RAPPORTVOORBEELD.size}` : ''})</span></a>`;
+const RV_NOTE = '<p class="rv-note">Elke woning is anders. De bevindingen en het advies in dit voorbeeld gelden alleen voor die ene woning.</p>';
+
+/** Sectie "Bekijk een voorbeeldrapport" voor rapportpagina's. Null in productie zolang er geen pdf is. */
+export function rapportvoorbeeldSection() {
+  const base = { id: 'voorbeeldrapport', h2: 'Bekijk een voorbeeldrapport' };
+  if (!RAPPORTVOORBEELD) {
+    if (!SHOW_PLACEHOLDERS) return null;
+    return { ...base, answer: '', body: phBox('Zet een geanonimiseerd rapport (pdf) in public/assets/ en vul het pad in bij "rapportvoorbeeld" in src/content/eeat.json. Zolang dat ontbreekt, staat deze sectie niet op de live site.', []) };
+  }
+  return { ...base, answer: RV_ANSWER, body: `<div class="rv-card"><span class="rv-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span><div>${rvButton()}${RV_NOTE}</div></div>` };
+}
+
+/** Blok voor het kennisbank-overzicht. Leeg in productie zolang er geen pdf is. */
+export function rapportvoorbeeldCard() {
+  const s = rapportvoorbeeldSection();
+  if (!s) return '';
+  if (!RAPPORTVOORBEELD) return `<div class="kb-guides reveal">${s.body}</div>`;
+  return `<div class="kb-guides kb-rapport reveal">
+      <p class="facts-title">Voorbeeldrapport</p>
+      <p>${RV_ANSWER}</p>
+      ${rvButton()}
+      ${RV_NOTE}
+    </div>`;
 }
 
 /** Regel onder kennisartikelen: wie heeft het gecontroleerd en wanneer bijgewerkt. */

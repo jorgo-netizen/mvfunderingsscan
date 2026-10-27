@@ -5,7 +5,8 @@
     "Placeholders verschijnen NOOIT op de live site: blokken met een placeholder worden in productie overgeslagen.",
     "Met `npm run dev` zie je ze wel (gestippelde gele vakken), zodat je weet wat nog ontbreekt.",
     "Vul alleen gegevens in die aantoonbaar kloppen. Laat een veld staan als placeholder als je het niet zeker weet.",
-    "`npm run build` en `npm run audit` tonen een lijst van alle open placeholders."
+    "`npm run build` en `npm run audit` tonen een lijst van alle open placeholders.",
+    "Voorbeeldrapport: zet de pdf in public/assets/ en vul het pad in bij rapportvoorbeeld. Zie docs/voorbeeldrapport.md voor de anonimiseringschecklist."
   ],
   "expert": {
     "naam": "[NAAM DESKUNDIGE INVULLEN]",
@@ -36,7 +37,7 @@
       "[URL FACEBOOK-PAGINA INVULLEN]"
     ]
   },
-  "rapportvoorbeeld": "[URL OF PAD NAAR GEANONIMISEERD VOORBEELDRAPPORT (PDF) INVULLEN]",
+  "rapportvoorbeeld": "[PAD NAAR GEANONIMISEERD VOORBEELDRAPPORT INVULLEN, bijv. /assets/voorbeeldrapport.pdf (bestand in public/assets/ zetten)]",
   "reviews": [
     {
       "tekst": "[LETTERLIJKE REVIEWTEKST INVULLEN – alleen echte reviews met toestemming]",

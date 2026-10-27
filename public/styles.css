@@ -1917,3 +1917,12 @@ html:not(.js) .sim-lvm .sim-points, html:not(.js) .sim-lvm [data-lvm-reset], htm
 @media (max-width: 900px) { .brand-logo { height: 30px; } .site-header.is-scrolled .brand-logo { height: 28px; } }
 @media (max-width: 380px) { .brand-logo { height: 24px; } .site-header.is-scrolled .brand-logo { height: 24px; } }
 @media (min-width: 1421px) and (max-width: 1500px) { .brand-logo, .site-header.is-scrolled .brand-logo { height: 32px; } .header-inner { gap: 16px; } }
+/* Voorbeeldrapport (pdf) */
+.rv-card { display: flex; gap: 16px; align-items: flex-start; padding: 20px 22px; border: 1px solid var(--line); border-radius: 16px; background: var(--light); }
+.rv-icon { flex: none; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 12px; background: #fff; color: var(--gold); border: 1px solid var(--line); }
+.prose .rv-card .btn, .kb-rapport .btn { color: #fff; text-decoration: none; }
+.rv-meta { font-weight: 500; opacity: .8; }
+.rv-note { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
+.prose .rv-note { font-size: 14px; }
+.kb-rapport > p:not(.facts-title):not(.rv-note) { margin: 0 0 16px; max-width: 62ch; }
+@media (max-width: 520px) { .rv-card { flex-direction: column; } .rv-card .btn, .kb-rapport .btn { width: 100%; justify-content: center; white-space: normal; text-align: center; } }
