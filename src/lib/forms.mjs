@@ -43,7 +43,7 @@ const typeOptions = `
 const privacy = (id) => `
           <div class="consent field-full">
             <input type="checkbox" id="${id}" name="privacy" required>
-            <label for="${id}">Ik ga ermee akkoord dat MV Funderingsscan mijn gegevens gebruikt om contact met mij op te nemen over deze aanvraag.</label>
+            <label for="${id}">Ik ga ermee akkoord dat MV Funderingsscan mijn gegevens gebruikt om contact met mij op te nemen over deze aanvraag (zie de <a href="/privacyverklaring/">privacyverklaring</a>).</label>
             <span class="field-error">Geef toestemming om je aanvraag te kunnen behandelen</span>
           </div>`;
 
@@ -58,7 +58,7 @@ const success = (id, title, text) => `
         </div>
       </div>`;
 
-export const PRIVACY_TEXT = `<p class="form-privacy"><strong>Privacy:</strong> we gebruiken je gegevens alleen om je aanvraag te behandelen en contact met je op te nemen. We verkopen of verhuren je gegevens niet aan derden. Vragen hierover? Mail naar <a href="mailto:${NAP.email}">${NAP.email}</a>.</p>`;
+export const PRIVACY_TEXT = `<p class="form-privacy"><strong>Privacy:</strong> we gebruiken je gegevens alleen om je aanvraag te behandelen en contact met je op te nemen. We verkopen of verhuren je gegevens niet aan derden. Lees meer in onze <a href="/privacyverklaring/">privacyverklaring</a> of mail naar <a href="mailto:${NAP.email}">${NAP.email}</a>.</p>`;
 
 export function aanvraagForm() {
   return `<div class="apply-card apply-card-wide reveal">

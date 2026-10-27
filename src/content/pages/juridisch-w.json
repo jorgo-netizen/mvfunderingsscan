@@ -1,0 +1,328 @@
+[
+  {
+    "path": "/privacyverklaring/",
+    "title": "Privacyverklaring | MV Funderingsscan (MV-Adviseurs)",
+    "description": "Hoe MV Funderingsscan (Midea Vastgoed Adviseurs) omgaat met je persoonsgegevens: welke gegevens, waarvoor, hoe lang, met wie en welke rechten je hebt.",
+    "keyword": "privacyverklaring mv funderingsscan",
+    "intent": "informatief",
+    "nav_active": "/contact/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/privacyverklaring/",
+        "name": "Privacyverklaring"
+      }
+    ],
+    "eyebrow": "Juridisch",
+    "h1": "Privacyverklaring",
+    "lead": "Voor een funderingsonderzoek heb je ons gegevens over jezelf en je woning nodig. Hier lees je welke persoonsgegevens we verwerken, waarom, hoe lang we ze bewaren, met wie we ze delen en welke rechten je hebt. Deze verklaring is opgesteld volgens de Algemene verordening gegevensbescherming (AVG).",
+    "facts": [
+      {
+        "label": "Verantwoordelijke",
+        "value": "Midea Vastgoed Adviseurs (MV-Adviseurs)"
+      },
+      {
+        "label": "Laatst bijgewerkt",
+        "value": "26 oktober 2026"
+      },
+      {
+        "label": "Vragen over privacy",
+        "value": "<a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>"
+      }
+    ],
+    "sections": [
+      {
+        "id": "wie-zijn-wij",
+        "h2": "Wie is verantwoordelijk voor je gegevens?",
+        "answer": "Midea Vastgoed Adviseurs (MV-Adviseurs) in Leeuwarden is verantwoordelijk voor de verwerking van je persoonsgegevens. MV Funderingsscan is de naam waaronder we funderingsonderzoek aanbieden.",
+        "body": "<p>Heb je een vraag over deze privacyverklaring of over wat we met je gegevens doen? Neem dan contact met ons op via onderstaande gegevens.</p><div class=\"table-wrap\"><table class=\"data-table\"><tbody>\n<tr><th scope=\"row\">Onderneming</th><td>Midea Vastgoed Adviseurs (MV-Adviseurs), handelend onder de naam MV Funderingsscan</td></tr>\n<tr><th scope=\"row\">KvK-nummer</th><td>92396674</td></tr>\n<tr><th scope=\"row\">Adres</th><td>Mr. P.J. Troelstraweg 149 unit 29, 8919 AA Leeuwarden</td></tr>\n<tr><th scope=\"row\">E-mail</th><td><a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a></td></tr>\n<tr><th scope=\"row\">Telefoon</th><td><a href=\"tel:+31582037172\">+31 (0) 58 203 7172</a></td></tr>\n<tr><th scope=\"row\">Website</th><td>www.mvfunderingsscan.nl</td></tr>\n</tbody></table></div>"
+      },
+      {
+        "id": "wanneer",
+        "h2": "Wanneer verwerken we persoonsgegevens?",
+        "answer": "We verwerken persoonsgegevens als je contact met ons opneemt, een aanvraag doet, een opdracht geeft of op een andere manier bij een onderzoek betrokken bent.",
+        "body": "<p>Dat gebeurt bijvoorbeeld als je:</p><ul><li>het <a href=\"/contact/\">contactformulier</a> of het <a href=\"/funderingsscan-aanvragen/\">aanvraagformulier</a> invult, of ons mailt of belt;</li><li>een Fase 0 funderingsrisico-onderzoek (QuickScan) of een Fase 1 funderingsonderzoek bij ons aanvraagt;</li><li>een van onze hulpmiddelen gebruikt en daarbij vraagt om contact of een uitslag per e-mail;</li><li>als eigenaar, koper, bewoner, makelaar, taxateur of adviseur betrokken bent bij een onderzoek;</li><li>ons toegang geeft tot een woning of pand voor een inspectie;</li><li>de voortgang van je aanvraag volgt via je persoonlijke Track &amp; Trace-link;</li><li>een factuur van ons ontvangt of aan ons betaalt.</li></ul><p>De <a href=\"/gratis-funderingscheck/\">gratis funderingscheck</a> en andere online hulpmiddelen kun je gebruiken zonder persoonsgegevens in te vullen. Alleen als je zelf contactgegevens achterlaat, verwerken we die.</p>"
+      },
+      {
+        "id": "welke-gegevens",
+        "h2": "Welke persoonsgegevens verwerken we?",
+        "answer": "We verwerken contactgegevens, gegevens over het pand en de opdracht, financiële gegevens en een beperkt aantal technische gegevens. We vragen niet meer dan nodig is.",
+        "body": "<ul><li><strong>Contactgegevens:</strong> naam, adres, postcode, woonplaats, telefoonnummer en e-mailadres. Bij een zakelijke opdracht ook bedrijfsnaam en contactpersoon.</li><li><strong>Gegevens over het pand en de opdracht:</strong> adres van het pand, woningtype, bouwjaar, je situatie (bijvoorbeeld aankoop of verkoop), wat je zelf hebt waargenomen, en je rol bij het pand.</li><li><strong>Onderzoeksgegevens:</strong> foto’s, meetgegevens, archief- en bodemgegevens, bevindingen en het rapport. Die gaan over het pand, maar zijn via het adres te koppelen aan de eigenaar of bewoner.</li><li><strong>Correspondentie:</strong> e-mails, berichten en notities over je aanvraag of opdracht.</li><li><strong>Financiële gegevens:</strong> factuurgegevens en betalingen.</li><li><strong>Technische gegevens:</strong> bij het gebruik van de website worden gegevens zoals het IP-adres kortstondig verwerkt om de site te laten werken en te beveiligen (zie hieronder).</li></ul><p>We vragen niet om bijzondere persoonsgegevens, zoals gegevens over gezondheid of geloof. Wil je die ook niet ongevraagd met ons delen?</p>"
+      },
+      {
+        "id": "doelen-en-grondslagen",
+        "h2": "Waarvoor gebruiken we je gegevens en op welke grondslag?",
+        "answer": "We gebruiken je gegevens alleen voor duidelijke doelen, zoals het behandelen van je aanvraag, het uitvoeren van het onderzoek en de facturatie. Voor elk doel hebben we een grondslag uit de AVG.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Doel</th><th>Grondslag</th></tr></thead><tbody><tr><td>Je vraag of aanvraag behandelen en een offerte of prijsopgave geven</td><td>Maatregelen op jouw verzoek voorafgaand aan een overeenkomst</td></tr><tr><td>Het onderzoek plannen en uitvoeren, het rapport opstellen en aan je leveren</td><td>Uitvoering van de overeenkomst</td></tr><tr><td>Je op de hoogte houden van de voortgang (Track &amp; Trace en e-mail)</td><td>Uitvoering van de overeenkomst</td></tr><tr><td>Facturatie en administratie</td><td>Uitvoering van de overeenkomst en wettelijke verplichting</td></tr><tr><td>Voldoen aan de fiscale bewaarplicht</td><td>Wettelijke verplichting</td></tr><tr><td>De website en onze systemen beveiligen en misbruik tegengaan</td><td>Gerechtvaardigd belang</td></tr><tr><td>Klachten afhandelen en onze positie bij een geschil onderbouwen</td><td>Gerechtvaardigd belang</td></tr></tbody></table></div><p>We sturen geen nieuwsbrieven of reclame. We nemen geen besluiten over jou die alleen door een computer worden genomen: de risicobeoordeling in een rapport wordt altijd door een adviseur gemaakt en bevestigd.</p>"
+      },
+      {
+        "id": "delen",
+        "h2": "Met wie delen we je gegevens?",
+        "answer": "We verkopen of verhuren je gegevens nooit. We delen ze alleen als dat nodig is voor ons werk, als jij daarom vraagt of als de wet ons dat verplicht.",
+        "body": "<p>We werken met dienstverleners die gegevens in onze opdracht verwerken. Met hen maken we afspraken over beveiliging en geheimhouding, zoals de AVG vereist. Op dit moment zijn dat:</p><div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Dienstverlener</th><th>Waarvoor</th></tr></thead><tbody><tr><td>Vercel</td><td>Hosting van de website en de formulieren</td></tr><tr><td>Supabase (servers in de EU)</td><td>Database en beveiligde opslag van aanvragen, rapporten en foto’s</td></tr><tr><td>Resend</td><td>Versturen van e-mails, zoals bevestigingen, de Track &amp; Trace-link en rapporten</td></tr></tbody></table></div><p>Daarnaast kunnen we gegevens delen met partijen die ons helpen met onze administratie, met partijen die jij zelf bij de opdracht betrekt (zoals je makelaar, taxateur of financier, als je daarom vraagt) en met instanties als we daartoe wettelijk verplicht zijn, zoals de Belastingdienst.</p>"
+      },
+      {
+        "id": "buiten-de-eu",
+        "h2": "Worden gegevens buiten de EU verwerkt?",
+        "answer": "Onze database staat in de EU. Sommige dienstverleners, zoals voor hosting en e-mail, zijn Amerikaanse bedrijven. Dan zorgen we voor de waarborgen die de AVG voorschrijft.",
+        "body": "<p>Als gegevens buiten de Europese Economische Ruimte worden verwerkt, gebeurt dat alleen op basis van een passende waarborg uit de AVG, zoals het EU-VS Data Privacy Framework of de standaardcontractbepalingen van de Europese Commissie. Wil je weten welke waarborg voor een dienstverlener geldt? Vraag het ons gerust.</p>"
+      },
+      {
+        "id": "bewaartermijnen",
+        "h2": "Hoe lang bewaren we je gegevens?",
+        "answer": "We bewaren gegevens niet langer dan nodig is voor het doel waarvoor we ze hebben gekregen, of zo lang de wet ons verplicht. Daarna verwijderen of anonimiseren we ze.",
+        "body": "<ul><li><strong>Vragen en aanvragen zonder opdracht:</strong> zo lang als nodig is om je vraag af te handelen en eventuele vervolgvragen te beantwoorden. Daarna verwijderen we ze.</li><li><strong>Opdrachten en rapporten:</strong> tijdens de opdracht en daarna zo lang als redelijkerwijs nodig is om vragen over het rapport te beantwoorden en onze positie bij een eventuele klacht of aansprakelijkheidsvraag te kunnen onderbouwen.</li><li><strong>Facturen en administratie:</strong> zeven jaar, vanwege de wettelijke fiscale bewaarplicht.</li><li><strong>Track &amp; Trace-link:</strong> de link blijft werken tot we hem intrekken of het dossier verwijderen. Je kunt ons altijd vragen de link in te trekken.</li><li><strong>Beveiligingsgegevens:</strong> gegevens om misbruik van formulieren tegen te gaan, bewaren we kort en alleen in versleutelde vorm.</li></ul>"
+      },
+      {
+        "id": "beveiliging",
+        "h2": "Hoe beveiligen we je gegevens?",
+        "answer": "We nemen passende technische en organisatorische maatregelen om je gegevens te beschermen tegen verlies, misbruik en toegang door onbevoegden.",
+        "body": "<ul><li>De website en alle formulieren gebruiken een beveiligde verbinding (https).</li><li>Alleen medewerkers met een persoonlijk account hebben toegang tot aanvragen en rapporten. Wachtwoorden slaan we niet leesbaar op.</li><li>Rapporten en foto’s staan in afgeschermde opslag en zijn alleen bereikbaar via links die na korte tijd verlopen.</li><li>Je Track &amp; Trace-pagina toont alleen je dossiernummer en de status, geen naam of adres.</li><li>IP-adressen die we gebruiken om misbruik te voorkomen, slaan we alleen versleuteld op.</li></ul><p>Gaat er toch iets mis met je gegevens (een datalek), dan handelen we volgens de wettelijke meldplicht.</p>"
+      },
+      {
+        "id": "cookies",
+        "h2": "Gebruikt deze website cookies?",
+        "answer": "Nee, de openbare website plaatst geen tracking-, advertentie- of analytische cookies. Je hoeft daarom ook geen cookiemelding weg te klikken.",
+        "body": "<p>Alleen in het afgeschermde beheerportaal voor onze medewerkers wordt een functionele cookie gebruikt om ingelogd te blijven. Dat is technisch noodzakelijk en heeft niets met jouw bezoek aan de website te maken. Gaan we in de toekomst wel cookies gebruiken waarvoor toestemming nodig is, dan vragen we die eerst en passen we deze verklaring aan.</p>"
+      },
+      {
+        "id": "jouw-rechten",
+        "h2": "Welke rechten heb je?",
+        "answer": "Je hebt het recht om je gegevens in te zien, te laten corrigeren of verwijderen, de verwerking te laten beperken, bezwaar te maken en je gegevens over te laten dragen.",
+        "body": "<ul><li><strong>Inzage:</strong> je kunt opvragen welke gegevens we van je hebben.</li><li><strong>Correctie:</strong> je kunt onjuiste of onvolledige gegevens laten aanpassen.</li><li><strong>Verwijdering:</strong> je kunt vragen je gegevens te verwijderen, voor zover we ze niet wettelijk moeten bewaren.</li><li><strong>Beperking:</strong> je kunt vragen de verwerking tijdelijk te beperken.</li><li><strong>Bezwaar:</strong> je kunt bezwaar maken tegen verwerking op basis van ons gerechtvaardigd belang.</li><li><strong>Overdraagbaarheid:</strong> je kunt vragen de gegevens die je ons zelf gaf in een gangbaar formaat te ontvangen.</li></ul><p>Stuur je verzoek naar <a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>. We kunnen je vragen te laten zien dat het verzoek echt van jou komt. We reageren binnen een maand.</p>"
+      },
+      {
+        "id": "klacht",
+        "h2": "Ben je het niet eens met hoe we met je gegevens omgaan?",
+        "answer": "Neem dan eerst contact met ons op, dan zoeken we samen naar een oplossing. Je hebt daarnaast altijd het recht een klacht in te dienen bij de Autoriteit Persoonsgegevens.",
+        "body": "<p>De Autoriteit Persoonsgegevens is de Nederlandse toezichthouder voor privacy. Op <a href=\"https://www.autoriteitpersoonsgegevens.nl/\" rel=\"noopener\" target=\"_blank\">autoriteitpersoonsgegevens.nl</a> lees je hoe je een klacht indient.</p>"
+      },
+      {
+        "id": "wijzigingen",
+        "h2": "Kan deze privacyverklaring veranderen?",
+        "answer": "Ja. Als onze werkwijze of de wet verandert, passen we deze verklaring aan. Bovenaan zie je wanneer ze voor het laatst is bijgewerkt.",
+        "body": "<p>Lees ook onze <a href=\"/algemene-voorwaarden/\">algemene voorwaarden</a>. Daarin staat wat je van ons onderzoek kunt verwachten en welke afspraken gelden.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Verkopen jullie mijn gegevens?",
+        "a": "<p>Nee. We verkopen of verhuren persoonsgegevens nooit. We delen ze alleen met dienstverleners die we nodig hebben voor ons werk, met partijen die jij zelf bij de opdracht betrekt, of als de wet dat verplicht.</p>"
+      },
+      {
+        "q": "Kan ik de gratis funderingscheck anoniem doen?",
+        "a": "<p>Ja. Voor de online check hoef je geen naam, adres of e-mailadres in te vullen. Alleen als je zelf vraagt om contact, verwerken we de gegevens die je dan achterlaat.</p>"
+      },
+      {
+        "q": "Hoe vraag ik mijn gegevens op of laat ik ze verwijderen?",
+        "a": "<p>Stuur een e-mail naar info@mideavastgoed.nl. We reageren binnen een maand. Gegevens die we wettelijk moeten bewaren, zoals facturen, verwijderen we pas na afloop van de wettelijke termijn.</p>"
+      },
+      {
+        "q": "Wie kan mijn Track &amp; Trace-pagina zien?",
+        "a": "<p>Iedereen die je persoonlijke link heeft, kan de status van je dossier zien. Op die pagina staan geen naam of adres. Deel de link daarom niet, en vraag ons de link in te trekken als je denkt dat iemand anders hem heeft.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/algemene-voorwaarden/",
+        "label": "Algemene voorwaarden",
+        "text": "De afspraken die gelden voor onze offertes en opdrachten."
+      },
+      {
+        "href": "/contact/",
+        "label": "Contact",
+        "text": "Vragen over je gegevens? Neem contact met ons op."
+      },
+      {
+        "href": "/over-ons/",
+        "label": "Over MV Funderingsscan",
+        "text": "Wie we zijn en hoe we werken."
+      }
+    ],
+    "cta": [
+      "Vragen over je gegevens?",
+      "Mail ons via info@mideavastgoed.nl of bel ons. We leggen graag uit wat we met je gegevens doen."
+    ]
+  },
+  {
+    "path": "/algemene-voorwaarden/",
+    "title": "Algemene voorwaarden | MV Funderingsscan (MV-Adviseurs)",
+    "description": "De algemene voorwaarden van MV Funderingsscan (Midea Vastgoed Adviseurs) voor offertes, Fase 0 QuickScan, Fase 1 funderingsonderzoek en rapporten.",
+    "keyword": "algemene voorwaarden mv funderingsscan",
+    "intent": "informatief",
+    "nav_active": "/contact/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/algemene-voorwaarden/",
+        "name": "Algemene voorwaarden"
+      }
+    ],
+    "eyebrow": "Juridisch",
+    "h1": "Algemene voorwaarden",
+    "lead": "Deze voorwaarden gelden voor alle offertes, opdrachten en diensten van MV Funderingsscan. Ze beschrijven wat je van ons onderzoek kunt verwachten, wat we van jou nodig hebben en welke afspraken gelden over betaling, het rapport en aansprakelijkheid.",
+    "facts": [
+      {
+        "label": "Onderneming",
+        "value": "Midea Vastgoed Adviseurs (MV-Adviseurs)"
+      },
+      {
+        "label": "Versie",
+        "value": "1.0 · 26 oktober 2026"
+      },
+      {
+        "label": "Vragen",
+        "value": "<a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>"
+      }
+    ],
+    "sections": [
+      {
+        "id": "gegevens",
+        "h2": "Wie zijn wij?",
+        "answer": "MV Funderingsscan is de naam waaronder Midea Vastgoed Adviseurs (MV-Adviseurs) funderingsonderzoek aanbiedt. In deze voorwaarden noemen we ons “MV-Adviseurs” of “wij”.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><tbody>\n<tr><th scope=\"row\">Onderneming</th><td>Midea Vastgoed Adviseurs (MV-Adviseurs), handelend onder de naam MV Funderingsscan</td></tr>\n<tr><th scope=\"row\">KvK-nummer</th><td>92396674</td></tr>\n<tr><th scope=\"row\">Adres</th><td>Mr. P.J. Troelstraweg 149 unit 29, 8919 AA Leeuwarden</td></tr>\n<tr><th scope=\"row\">E-mail</th><td><a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a></td></tr>\n<tr><th scope=\"row\">Telefoon</th><td><a href=\"tel:+31582037172\">+31 (0) 58 203 7172</a></td></tr>\n<tr><th scope=\"row\">Website</th><td>www.mvfunderingsscan.nl</td></tr>\n</tbody></table></div>"
+      },
+      {
+        "id": "artikel-1-definities",
+        "h2": "Artikel 1 – Definities",
+        "answer": "In deze voorwaarden hebben de volgende begrippen een vaste betekenis.",
+        "body": "<ul><li><strong>Opdrachtgever:</strong> iedere persoon of organisatie die ons om een offerte vraagt of een opdracht geeft.</li><li><strong>Consument:</strong> een opdrachtgever die als privépersoon handelt, dus niet voor een beroep of bedrijf.</li><li><strong>Opdracht:</strong> de afspraak dat wij voor de opdrachtgever een dienst uitvoeren.</li><li><strong>Fase 0 funderingsrisico-onderzoek (QuickScan):</strong> een beperkt onderzoek naar het funderingsrisico, op basis van archief- en bodemgegevens, een visuele inspectie en eenvoudige metingen, zoals beschreven op de pagina <a href=\"/fase-0-funderingsonderzoek/\">Fase 0 funderingsonderzoek</a>.</li><li><strong>Fase 1 funderingsonderzoek:</strong> een uitgebreider, niet-destructief onderzoek met meer metingen, zoals beschreven op de pagina <a href=\"/fase-1-funderingsonderzoek/\">Fase 1 funderingsonderzoek</a>.</li><li><strong>Online check:</strong> de gratis vragenlijst en hulpmiddelen op de website. Dat is geen onderzoek en geen advies.</li><li><strong>Rapport:</strong> het schriftelijke verslag van onze bevindingen, beoordeling en advies.</li><li><strong>Pand:</strong> de woning of het gebouw waarop de opdracht betrekking heeft.</li></ul>"
+      },
+      {
+        "id": "artikel-2-toepasselijkheid",
+        "h2": "Artikel 2 – Wanneer gelden deze voorwaarden?",
+        "answer": "Deze voorwaarden gelden voor al onze offertes, opdrachten en diensten. Afwijkende afspraken gelden alleen als we die schriftelijk hebben gemaakt.",
+        "body": "<ol><li>Voorwaarden van de opdrachtgever gelden niet, tenzij we daar schriftelijk mee hebben ingestemd.</li><li>Is een bepaling ongeldig, dan blijven de andere bepalingen gelden. We vervangen de ongeldige bepaling dan door een geldige die er zo dicht mogelijk bij komt.</li><li>Ben je consument, dan gaan de wettelijke regels die jou beschermen altijd voor als deze voorwaarden daarvan in jouw nadeel afwijken.</li></ol>"
+      },
+      {
+        "id": "artikel-3-offertes-en-prijzen",
+        "h2": "Artikel 3 – Offertes en prijzen",
+        "answer": "De prijzen op de website zijn vanafprijzen. De prijs voor jouw opdracht staat in de offerte of opdrachtbevestiging.",
+        "body": "<ol><li>Onze offertes zijn vrijblijvend en gelden zo lang als in de offerte staat.</li><li>Op de <a href=\"/prijzen/\">prijzenpagina</a> staan vanafprijzen. De uiteindelijke prijs hangt af van het pand en de situatie en staat in de offerte of opdrachtbevestiging.</li><li>Prijzen voor consumenten zijn inclusief btw. Eventuele extra kosten, zoals reiskosten, noemen we vooraf.</li><li>Een duidelijke vergissing of verschrijving in een offerte of op de website bindt ons niet.</li></ol>"
+      },
+      {
+        "id": "artikel-4-opdracht",
+        "h2": "Artikel 4 – Hoe komt een opdracht tot stand?",
+        "answer": "De opdracht komt tot stand als je onze offerte of opdrachtbevestiging aanvaardt, per e-mail, via de website of mondeling, of als we met jouw instemming met het werk beginnen.",
+        "body": "<p>Een aanvraag via de website is nog geen opdracht. Na je aanvraag nemen we contact met je op om de situatie en de prijs te bespreken. Pas als je daarmee akkoord gaat, is er een opdracht. We mogen een opdracht weigeren, bijvoorbeeld als het pand buiten ons werkgebied ligt of als het gevraagde onderzoek niet bij de situatie past.</p>"
+      },
+      {
+        "id": "artikel-5-uitvoering",
+        "h2": "Artikel 5 – Uitvoering van de opdracht",
+        "answer": "We voeren de opdracht zorgvuldig en vakkundig uit, volgens onze werkwijze en de richtlijnen die daarvoor gelden. We doen ons best om tot een goed resultaat te komen, maar kunnen geen uitkomst garanderen.",
+        "body": "<ol><li>Wij hebben een inspanningsverplichting, geen resultaatsverplichting.</li><li>Het onderzoek wordt uitgevoerd door een gecertificeerde adviseur, volgens de werkwijze op de pagina <a href=\"/werkwijze/\">werkwijze</a>.</li><li>Het rapport sturen we normaal gesproken binnen 2 werkdagen na de inspectie. Termijnen zijn een indicatie en geen fatale termijnen, tenzij we schriftelijk iets anders hebben afgesproken.</li><li>We mogen voor onderdelen van de opdracht andere deskundigen inschakelen. We blijven dan verantwoordelijk voor de opdracht.</li></ol>"
+      },
+      {
+        "id": "artikel-6-grenzen-van-het-onderzoek",
+        "h2": "Artikel 6 – Wat het onderzoek wel en niet is",
+        "answer": "Een Fase 0 funderingsrisico-onderzoek is een beperkt onderzoek dat een inschatting geeft van het funderingsrisico. Het is geen volledig funderingsonderzoek en geeft geen zekerheid over de werkelijke staat van de fundering.",
+        "body": "<ol><li>Bij een Fase 0-onderzoek wordt de fundering niet ontgraven of van dichtbij bekeken. De beoordeling is gebaseerd op beschikbare gegevens, een visuele inspectie boven het maaiveld en eenvoudige metingen.</li><li>De uitkomst is een momentopname. Je kunt er geen garantie aan ontlenen over de staat, de resterende levensduur of het ontbreken van gebreken van de fundering. In het rapport staat hoe lang de uitkomst geldig is (in de regel zes maanden).</li><li>Een Fase 0-onderzoek vervangt geen Fase 1- of Fase 2-onderzoek. Adviseren we vervolgonderzoek, dan beslis jij of je dat laat doen.</li><li>De uitkomst hangt mede af van gegevens die jij of anderen aanleveren en van openbare bronnen. We hoeven die niet zelf te controleren, maar melden het als we twijfelen aan de juistheid.</li><li>Onderdelen die niet zichtbaar of niet bereikbaar zijn, vallen buiten het onderzoek. We doen geen destructief onderzoek, tenzij we dat uitdrukkelijk afspreken.</li><li>De <a href=\"/gratis-funderingscheck/\">online check</a> en andere hulpmiddelen op de website geven alleen een eerste indruk. Daaraan kun je geen rechten ontlenen.</li></ol>"
+      },
+      {
+        "id": "artikel-7-medewerking",
+        "h2": "Artikel 7 – Wat we van jou nodig hebben",
+        "answer": "Je zorgt dat we op tijd de gegevens en toegang krijgen die we nodig hebben, en dat de informatie die je geeft juist en volledig is.",
+        "body": "<ol><li>Je geeft ons op het afgesproken moment toegang tot het pand en zorgt voor een veilige werkplek. Ruimtes die we moeten inspecteren, zoals een kruipruimte, moeten bereikbaar zijn.</li><li>Ben je niet de eigenaar van het pand, dan zorg je dat de eigenaar en de bewoners akkoord zijn met het onderzoek.</li><li>Krijgen we niet op tijd de gegevens of toegang die nodig zijn, dan mogen we de uitvoering uitstellen en de extra kosten in rekening brengen, zoals een vergeefse rit.</li></ol>"
+      },
+      {
+        "id": "artikel-8-betaling",
+        "h2": "Artikel 8 – Betaling",
+        "answer": "Je betaalt binnen de termijn die op de factuur staat. Betaal je niet op tijd, dan kunnen we rente en incassokosten in rekening brengen volgens de wet.",
+        "body": "<ol><li>De betalingstermijn en de manier van betalen staan op de factuur of in de opdrachtbevestiging.</li><li>Betaal je niet op tijd, dan ben je in verzuim. We mogen dan de wettelijke rente in rekening brengen en, na een aanmaning, de buitengerechtelijke incassokosten volgens de wettelijke regeling. Ben je consument, dan sturen we eerst een kosteloze aanmaning met een betalingstermijn van 14 dagen.</li><li>We mogen het rapport pas leveren als de factuur is betaald, tenzij dat tegenover een consument onredelijk is.</li></ol>"
+      },
+      {
+        "id": "artikel-9-annuleren",
+        "h2": "Artikel 9 – Wijzigen of annuleren",
+        "answer": "Wil je de opdracht wijzigen of annuleren, laat het ons dan zo snel mogelijk schriftelijk weten. Wat annuleren kost, staat in de opdrachtbevestiging.",
+        "body": "<ol><li>Een wijziging van de opdracht voeren we uit nadat we er samen afspraken over hebben gemaakt. Dat kan gevolgen hebben voor de prijs en de planning.</li><li>Annuleer je na de termijn die in de opdrachtbevestiging staat, of ben je niet aanwezig op de afspraak, dan mogen we de kosten die we al hebben gemaakt in rekening brengen.</li><li>Ben je consument, dan blijft je wettelijke herroepingsrecht (artikel 10) altijd gelden.</li></ol>"
+      },
+      {
+        "id": "artikel-10-herroepingsrecht",
+        "h2": "Artikel 10 – Herroepingsrecht voor consumenten",
+        "answer": "Geef je als consument een opdracht op afstand (via de website, e-mail of telefoon) of buiten ons kantoor, dan kun je die binnen 14 dagen zonder opgaaf van redenen ontbinden.",
+        "body": "<ol><li>De bedenktijd van 14 dagen begint op de dag nadat de opdracht tot stand is gekomen.</li><li>Je maakt gebruik van je herroepingsrecht door ons dat binnen de bedenktijd duidelijk te laten weten, bijvoorbeeld per e-mail naar info@mideavastgoed.nl.</li><li>Heb je ons uitdrukkelijk gevraagd binnen de bedenktijd met het onderzoek te beginnen, en herroep je daarna, dan betaal je een evenredig deel van de prijs voor wat we al hebben gedaan.</li><li>Is het onderzoek met jouw uitdrukkelijke instemming binnen de bedenktijd volledig uitgevoerd, en heb je verklaard dat je dan je herroepingsrecht verliest, dan kun je niet meer herroepen.</li></ol>"
+      },
+      {
+        "id": "artikel-11-rapport",
+        "h2": "Artikel 11 – Het rapport en het gebruik ervan",
+        "answer": "Het rapport is bedoeld voor de opdrachtgever en voor het doel waarvoor het is gemaakt. Je mag het delen met bijvoorbeeld je makelaar, taxateur of financier, maar niet aanpassen.",
+        "body": "<ol><li>Je mag het rapport alleen in zijn geheel en ongewijzigd delen. Delen met partijen die bij de aankoop, verkoop of financiering betrokken zijn, mag zonder onze toestemming.</li><li>Het auteursrecht op rapporten, werkwijzen en documenten blijft bij ons, tenzij we schriftelijk iets anders afspreken.</li><li>Anderen dan de opdrachtgever kunnen geen rechten aan het rapport ontlenen.</li><li>Hoe we met persoonsgegevens omgaan, lees je in onze <a href=\"/privacyverklaring/\">privacyverklaring</a>.</li></ol>"
+      },
+      {
+        "id": "artikel-12-aansprakelijkheid",
+        "h2": "Artikel 12 – Aansprakelijkheid",
+        "answer": "Maken we een fout, dan zijn we aansprakelijk voor de directe schade die daardoor ontstaat, tot het factuurbedrag van de opdracht. Voor schade door opzet of bewuste roekeloosheid geldt die grens niet.",
+        "body": "<ol><li>We zijn alleen aansprakelijk voor directe schade die het gevolg is van een tekortkoming die ons kan worden toegerekend.</li><li>Onze aansprakelijkheid is beperkt tot het bedrag dat we voor de opdracht hebben gefactureerd (exclusief btw). Hebben we een verzekering die de schade dekt, dan is de aansprakelijkheid beperkt tot het bedrag dat die verzekering uitkeert, als dat hoger is.</li><li>We zijn niet aansprakelijk voor indirecte schade, zoals gevolgschade, gederfde winst of waardedaling van het pand.</li><li>We zijn niet aansprakelijk voor schade die ontstaat doordat: het onderzoek de grenzen heeft die in artikel 6 staan; gegevens van de opdrachtgever of anderen onjuist of onvolledig waren; gebreken niet zichtbaar of niet bereikbaar waren; of op basis van het rapport beslissingen zijn genomen zonder het geadviseerde vervolgonderzoek.</li><li>Meld schade zo snel mogelijk schriftelijk bij ons nadat je die hebt ontdekt, zodat we de oorzaak kunnen onderzoeken en de schade kunnen beperken.</li><li>Deze beperkingen gelden niet bij opzet of bewuste roekeloosheid, en niet voor zover de wet ze tegenover consumenten niet toestaat.</li></ol>"
+      },
+      {
+        "id": "artikel-13-overmacht",
+        "h2": "Artikel 13 – Overmacht",
+        "answer": "Kunnen we door overmacht niet doen wat we hebben afgesproken, dan schuiven onze verplichtingen op. Duurt dat te lang, dan mogen we allebei de opdracht beëindigen.",
+        "body": "<p>Onder overmacht vallen onder meer extreme weersomstandigheden, ziekte van de adviseur, geen toegang tot het pand en storingen bij leveranciers. Duurt de overmacht zo lang dat redelijkerwijs niet van een van ons kan worden gevraagd de opdracht voort te zetten, dan mogen beide partijen de opdracht kosteloos ontbinden. Wat al is uitgevoerd, wordt naar verhouding afgerekend.</p>"
+      },
+      {
+        "id": "artikel-14-klachten",
+        "h2": "Artikel 14 – Klachten",
+        "answer": "Ben je niet tevreden over onze dienst of het rapport, laat het ons dan zo snel mogelijk weten. We nemen elke klacht serieus en zoeken samen naar een oplossing.",
+        "body": "<ol><li>Meld een klacht binnen bekwame tijd nadat je het probleem hebt ontdekt, het liefst per e-mail naar <a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>, met een duidelijke omschrijving.</li><li>We reageren zo snel mogelijk inhoudelijk op je klacht en laten je weten wanneer je een oplossing kunt verwachten.</li><li>Een klacht schort je betalingsverplichting niet op, tenzij we samen iets anders afspreken.</li></ol>"
+      },
+      {
+        "id": "artikel-15-recht",
+        "h2": "Artikel 15 – Toepasselijk recht en geschillen",
+        "answer": "Op onze opdrachten en deze voorwaarden is Nederlands recht van toepassing. Komen we er samen niet uit, dan beslist de bevoegde rechter.",
+        "body": "<p>Geschillen leggen we voor aan de rechtbank Noord-Nederland, tenzij de wet een andere rechter aanwijst. Ben je consument, dan mag je binnen een maand nadat we ons schriftelijk op deze bepaling hebben beroepen, kiezen voor de rechter die volgens de wet bevoegd is.</p>"
+      },
+      {
+        "id": "artikel-16-wijzigingen",
+        "h2": "Artikel 16 – Wijziging van deze voorwaarden",
+        "answer": "We kunnen deze voorwaarden wijzigen. De nieuwe versie geldt voor opdrachten die daarna tot stand komen. De actuele versie staat altijd op deze pagina.",
+        "body": "<p>Voor een opdracht gelden de voorwaarden die van toepassing waren op het moment dat de opdracht tot stand kwam. Wil je de voorwaarden als pdf of op papier ontvangen? Vraag het ons, dan sturen we ze kosteloos toe.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Gelden deze voorwaarden ook voor de gratis online check?",
+        "a": "<p>De online check is geen onderzoek en geen advies, maar een eerste indruk. Je kunt er geen rechten aan ontlenen. Voor een betrouwbare beoordeling is een onderzoek op locatie nodig.</p>"
+      },
+      {
+        "q": "Krijg ik met een Fase 0-onderzoek zekerheid over mijn fundering?",
+        "a": "<p>Nee. Een Fase 0-onderzoek geeft een onderbouwde inschatting van het funderingsrisico, geen zekerheid over de werkelijke staat. Is het risico verhoogd, dan adviseren we in het rapport welk vervolgonderzoek zinvol is.</p>"
+      },
+      {
+        "q": "Mag ik het rapport aan mijn makelaar of taxateur geven?",
+        "a": "<p>Ja. Je mag het rapport in zijn geheel en ongewijzigd delen met partijen die bij de aankoop, verkoop of financiering betrokken zijn.</p>"
+      },
+      {
+        "q": "Kan ik een opdracht kosteloos annuleren?",
+        "a": "<p>Als consument heb je bij een opdracht op afstand 14 dagen bedenktijd. Daarnaast staat in de opdrachtbevestiging tot wanneer je kosteloos kunt annuleren.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/privacyverklaring/",
+        "label": "Privacyverklaring",
+        "text": "Hoe we met je persoonsgegevens omgaan."
+      },
+      {
+        "href": "/prijzen/",
+        "label": "Prijzen",
+        "text": "Wat een funderingsonderzoek kost."
+      },
+      {
+        "href": "/werkwijze/",
+        "label": "Werkwijze",
+        "text": "Hoe een onderzoek verloopt, stap voor stap."
+      }
+    ],
+    "cta": [
+      "Vragen over de voorwaarden?",
+      "Neem gerust contact met ons op. We leggen graag uit wat de afspraken voor jouw situatie betekenen."
+    ]
+  }
+]

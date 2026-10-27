@@ -1258,5 +1258,23 @@
     "minWords": 250,
     "keyword": "funderingsquiz",
     "intent": "informatief"
+  },
+  {
+    "path": "/privacyverklaring/",
+    "label": "Privacyverklaring",
+    "group": "over",
+    "file": "juridisch-w.json",
+    "minWords": 0,
+    "keyword": "privacyverklaring mv funderingsscan",
+    "intent": "informatief"
+  },
+  {
+    "path": "/algemene-voorwaarden/",
+    "label": "Algemene voorwaarden",
+    "group": "over",
+    "file": "juridisch-w.json",
+    "minWords": 0,
+    "keyword": "algemene voorwaarden mv funderingsscan",
+    "intent": "informatief"
   }
 ]
