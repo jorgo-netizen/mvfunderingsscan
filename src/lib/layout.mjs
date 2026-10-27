@@ -350,6 +350,8 @@ ${cols}
   </div>
 </footer>
 
+<button class="lang-toggle" type="button" data-lang-toggle hidden aria-pressed="false" aria-label="Translate this page into English" title="English (translated with DeepL)"><svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span data-lang-label>EN</span></button>
+
 <div class="mobile-cta" id="mobileCta">
   <a class="btn btn-outline-light" href="${NAP.phone_href}" aria-label="Bel ${NAP.phone_display}">Bellen</a>
   <a class="btn btn-gold" href="/funderingsscan-aanvragen/">Vraag scan aan <span aria-hidden="true">→</span></a>

@@ -22,6 +22,8 @@ const aanvraag = (await import('../api/aanvraag.js')).default;
 const status = (await import('../api/status.js')).default;
 const beheer = (await import('../api/beheer.js')).default;
 const nieuws = (await import('../api/nieuws.js')).default;
+const adresApi = (await import('../api/adres.js')).default;
+const vertaalApi = (await import('../api/vertaal.js')).default;
 
 // ---------------------------------------------------------------- hulpmiddelen
 let mails = []; let resendFails = false;
@@ -32,8 +34,11 @@ globalThis.fetch = async (url, opts = {}) => {
     if (resendFails) return new Response(JSON.stringify({ message: 'testfout' }), { status: 500 });
     return new Response(JSON.stringify({ id: `re_${mails.length}` }), { status: 200 });
   }
+  for (const [prefix, fn] of extraFetch) if (String(url).startsWith(prefix)) return fn(String(url), opts);
   throw new Error(`Onverwachte fetch in test: ${url}`);
 };
+let extraFetch = []; // per test: [[url-begin, handler]] voor PDOK, DeepL enz.
+const jsonResp = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } });
 
 let ipCounter = 0;
 async function call(handler, { method = 'GET', url = '/', body, cookie = '', csrf, ip, origin } = {}) {
@@ -70,7 +75,8 @@ const tokenFromMail = (m) => (m.text.match(/#t=([A-Za-z0-9_-]{43})/) || [])[1];
 beforeEach(() => {
   for (const k of Object.keys(globalThis)) if (k.startsWith('__mvfsMemoryDb')) delete globalThis[k];
   resetDbForTests();
-  mails = []; resendFails = false;
+  mails = []; resendFails = false; extraFetch = [];
+  delete process.env.DEEPL_API_KEY; delete process.env.MVFS_VERTAAL_TEST;
   process.env.RESEND_API_KEY = 're_test';
 });
 
@@ -548,6 +554,78 @@ test('rapporten: PDF vastleggen, versturen met adrescontrole, geen dubbele verze
   assert.equal((await admin(s, 'rapport-verwijderen', { method: 'POST', body: { id, bevestig: 'fout' } })).status, 422);
   assert.equal((await admin(s, 'rapport-verwijderen', { method: 'POST', body: { id, bevestig: nieuw.json.report_nr } })).status, 200);
   assert.equal((await admin(s, 'rapport', { query: `&id=${id}` })).status, 404);
+});
+
+// ---------------------------------------------------------------- adres opzoeken en vertalen
+const PDOK = 'https://api.pdok.nl/';
+function pdokMock(calls) {
+  return [PDOK, (url) => {
+    calls.push(url);
+    if (url.includes('/locatieserver/')) {
+      if (url.includes('9999ZZ')) return jsonResp({ response: { docs: [] } });
+      return jsonResp({ response: { docs: [
+        { straatnaam: 'Teststraat', huisnummer: 12, postcode: '8911AA', woonplaatsnaam: 'Leeuwarden', gemeentenaam: 'Leeuwarden', provincienaam: 'Fryslân', centroide_ll: 'POINT(5.8 53.2)', adresseerbaarobject_id: '0080010000000001', weergavenaam: 'Teststraat 12, 8911AA Leeuwarden' },
+        { straatnaam: 'Teststraat', huisnummer: 12, huisletter: 'a', postcode: '8911AA', woonplaatsnaam: 'Leeuwarden', gemeentenaam: 'Leeuwarden', provincienaam: 'Fryslân', centroide_ll: 'POINT(5.8 53.2)', adresseerbaarobject_id: '0080010000000002', weergavenaam: 'Teststraat 12a, 8911AA Leeuwarden' },
+      ] } });
+    }
+    if (url.includes('/verblijfsobject/items')) return jsonResp({ features: [{ properties: { gebruiksdoel: 'woonfunctie', 'pand.href': ['https://api.pdok.nl/kadaster/bag/ogc/v2/collections/pand/items/abc'] } }] });
+    if (url.includes('/pand/items/abc')) return jsonResp({ properties: { bouwjaar: 1932 } });
+    return jsonResp({}, 404);
+  }];
+}
+
+test('adres: postcode + huisnummer geeft straat, plaats en bouwjaar (BAG); ongeldige invoer en onbekend adres netjes afgehandeld', async () => {
+  const calls = []; extraFetch = [pdokMock(calls)];
+  let r = await call(adresApi, { url: '/api/adres/?postcode=8911%20aa&huisnummer=12' });
+  assert.equal(r.status, 200, r.body);
+  assert.deepEqual([r.json.adres.straat_huisnummer, r.json.adres.postcode, r.json.adres.plaats, r.json.adres.bouwjaar], ['Teststraat 12', '8911 AA', 'Leeuwarden', 1932]);
+  assert.equal(r.json.adres.lat, undefined, 'geen ligging naar de browser');
+  assert.match(r.headers['cache-control'], /s-maxage/);
+  r = await call(adresApi, { url: '/api/adres/?postcode=8911AA&huisnummer=12a' });
+  assert.equal(r.json.adres.straat_huisnummer, 'Teststraat 12a');
+  assert.equal((await call(adresApi, { url: '/api/adres/?postcode=8911AA&huisnummer=12b' })).status, 409, 'onbekende toevoeging: kiezen we niet zelf');
+  assert.equal((await call(adresApi, { url: '/api/adres/?postcode=9999ZZ&huisnummer=1' })).status, 404);
+  assert.equal((await call(adresApi, { url: '/api/adres/?postcode=abc&huisnummer=1' })).status, 422);
+  assert.equal((await call(adresApi, { url: '/api/adres/?postcode=8911AA&huisnummer=' })).status, 422);
+  assert.ok(calls.every((u) => u.startsWith(PDOK)), 'alleen PDOK');
+  extraFetch = [[PDOK, () => { throw new Error('storing'); }]];
+  assert.equal((await call(adresApi, { url: '/api/adres/?postcode=8911AA&huisnummer=14' })).status, 503);
+});
+
+test('vertalen: knop verborgen zonder sleutel; DeepL alleen voor nieuwe tekst; merknaam blijft; andere sites geweigerd; maandlimiet', async () => {
+  let r = await call(vertaalApi, { url: '/api/vertaal/' });
+  assert.equal(r.json.beschikbaar, false);
+  assert.equal((await call(vertaalApi, { method: 'POST', url: '/api/vertaal/', body: { segmenten: ['Hallo'] } })).status, 503);
+
+  process.env.DEEPL_API_KEY = 'test-sleutel:fx';
+  const verzoeken = [];
+  extraFetch = [['https://api-free.deepl.com/', (url, opts) => {
+    const b = JSON.parse(opts.body); verzoeken.push(b);
+    assert.equal(opts.headers.Authorization, 'DeepL-Auth-Key test-sleutel:fx');
+    return jsonResp({ translations: b.text.map((t) => ({ text: t.replace('Funderingsonderzoek', 'Foundation survey').replace('<x-keep>MV Funderingsscan</x-keep>', '<x-keep>MV Funderingsscan</x-keep>') })) });
+  }]];
+  assert.equal((await call(vertaalApi, { url: '/api/vertaal/' })).json.beschikbaar, true);
+  const seg = ['Funderingsonderzoek door <a data-k="0">MV Funderingsscan</a>', 'Funderingsonderzoek'];
+  r = await call(vertaalApi, { method: 'POST', url: '/api/vertaal/', body: { segmenten: seg } });
+  assert.equal(r.status, 200, r.body);
+  assert.deepEqual(r.json.vertalingen, ['Foundation survey door <a data-k="0">MV Funderingsscan</a>', 'Foundation survey']);
+  assert.equal(verzoeken.length, 1);
+  assert.equal(verzoeken[0].target_lang, 'EN-GB'); assert.equal(verzoeken[0].tag_handling, 'html');
+  assert.ok(verzoeken[0].text[0].includes('<x-keep>MV Funderingsscan</x-keep>'), 'merknaam beschermd');
+  // tweede keer: uit de cache, geen DeepL-aanroep
+  r = await call(vertaalApi, { method: 'POST', url: '/api/vertaal/', body: { segmenten: [seg[1], seg[0]] } });
+  assert.deepEqual(r.json.vertalingen, ['Foundation survey', 'Foundation survey door <a data-k="0">MV Funderingsscan</a>']);
+  assert.equal(verzoeken.length, 1, 'niet opnieuw naar DeepL');
+  // andere website, te veel of ongeldige segmenten
+  assert.equal((await call(vertaalApi, { method: 'POST', url: '/api/vertaal/', origin: 'https://evil.example', body: { segmenten: ['Nieuw'] } })).status, 403);
+  assert.equal((await call(vertaalApi, { method: 'POST', url: '/api/vertaal/', body: { segmenten: Array(51).fill('x') } })).status, 422);
+  assert.equal((await call(vertaalApi, { method: 'POST', url: '/api/vertaal/', body: { segmenten: [{ x: 1 }] } })).status, 422);
+  // maandlimiet
+  process.env.DEEPL_MAAND_LIMIET = '20';
+  try {
+    assert.equal((await call(vertaalApi, { method: 'POST', url: '/api/vertaal/', body: { segmenten: ['Een heel nieuwe zin die nog niet vertaald is'] } })).status, 503);
+    assert.equal(verzoeken.length, 1);
+  } finally { delete process.env.DEEPL_MAAND_LIMIET; }
 });
 
 test('trackingpagina en beheer: noindex, geen externe scripts, niet in de sitemap', () => {

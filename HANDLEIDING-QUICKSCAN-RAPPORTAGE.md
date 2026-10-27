@@ -41,6 +41,10 @@ Het rapport opent als stappenformulier in de volgorde van het rapport:
 | I. Schietloodmeting | meetpunten, meetregels, 1 tot 4 foto's, of "niet uitgevoerd" met motivatie | hoofdstuk Schietloodmeting |
 | Uitkomst en afronden | controle, voorbeeld, Word, definitief, PDF, versturen, versies | – |
 
+- **Automatisch aanvullen.**
+  - *Adres opzoeken* (voorblad en A. Opdracht / opname): vul postcode en huisnummer in; straat en plaats worden ingevuld via open data van de overheid (PDOK). Bij het object wordt ook het bouwjaar uit de BAG ingevuld als dat nog leeg is.
+  - *Zelfde adres als het object* kopieert het objectadres naar de opdrachtgever.
+  - *Weergegevens ophalen* (B. Object) vult weertype, temperatuur en luchtvochtigheid in voor de inspectiedatum en -tijd (Open-Meteo, modelgegevens). Controleer ze en pas aan als je ter plaatse iets anders hebt gemeten.
 - **Opslaan.**
   - Klik op **Opslaan**, of ga naar een andere stap; dan wordt automatisch opgeslagen.
   - Valt de verbinding weg, dan blijft je invoer in de browser bewaard. Bij het opnieuw openen vraagt het portaal of je die wilt terugzetten.

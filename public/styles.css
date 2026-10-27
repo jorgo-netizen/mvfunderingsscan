@@ -201,6 +201,26 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 .header-phone svg { width: 18px; height: 18px; fill: var(--gold); }
 .header-phone:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
 .header-cta { white-space: nowrap; }
+.lang-toggle {
+  position: fixed; left: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 41;
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-width: 44px; height: 40px; padding: 0 12px;
+  border: 1.5px solid var(--line); border-radius: 999px; background: rgba(255, 255, 255, .96); color: var(--navy);
+  box-shadow: var(--shadow-sm); font: inherit; font-weight: 700; font-size: 13px; letter-spacing: .04em; cursor: pointer;
+  transition: border-color .25s ease, transform .25s var(--ease), bottom .35s var(--ease);
+}
+.lang-toggle svg { color: var(--gold); }
+body:has(.mobile-cta.is-visible) .lang-toggle { bottom: calc(84px + env(safe-area-inset-bottom)); }
+@media print { .lang-toggle { display: none !important; } }
+.lang-toggle[hidden] { display: none; }
+.lang-toggle:hover { border-color: var(--gold); transform: translateY(-2px); }
+.lang-toggle:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.is-translating .lang-toggle { opacity: .6; cursor: progress; }
+.is-translating body::after { content: ""; position: fixed; top: 0; left: 0; height: 3px; width: 100%; background: linear-gradient(90deg, transparent, var(--gold), transparent); background-size: 50% 100%; animation: mvfs-vertaal 1s linear infinite; z-index: 9999; }
+@keyframes mvfs-vertaal { from { background-position: -50% 0; } to { background-position: 150% 0; } }
+@media (prefers-reduced-motion: reduce) { .is-translating body::after { animation: none; background: var(--gold); opacity: .6; } }
+.address-lookup { grid-column: 1 / -1; margin: -4px 0 4px; font-size: 14px; color: var(--muted); }
+.address-lookup.is-ok { color: #1d5b33; }
+.address-lookup.is-warn { color: #8a2a1c; }
 
 .nav-toggle {
   display: none; width: 48px; height: 48px; border-radius: 10px;

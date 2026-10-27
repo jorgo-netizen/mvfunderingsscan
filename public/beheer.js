@@ -345,7 +345,7 @@
     field('QuickScan-aanvraag', sel), msg, h('div', { class: 'portal-actions' }, btn, h('a', { class: 'btn btn-ghost-dark', href: '#/rapporten', text: 'Annuleren' }))));
   }
 
-  async function editReport(id, stap) {
+  async function editReport(id, stap, melding) {
     stap = STAPPEN.some(([k]) => k === stap) ? stap : 'voorblad';
     const d = await api('rapport', { params: { id } });
     const r = d.report;
@@ -534,13 +534,53 @@
     const zin = () => { const q = data.vraagstelling || {}; const a = data.algemeen || {}; const v = data.voorblad || {}; const x = (t, ph) => t || `[ ${ph} ]`; const dNl = (iso) => (/^\d{4}-\d{2}-\d{2}$/.test(iso || '') ? new Date(`${iso}T12:00:00`).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' }) : iso);
       vsZin.textContent = `Op ${x(dNl(q.datum || a.inspectie_datum), 'datum')} heeft Midea Vastgoed Adviseurs in opdracht van ${x(a.opdrachtgever_naam, 'naam opdrachtgever')} een funderingsrisico Fase 0 (QuickScan) uitgevoerd in verband met ${x(q.reden, 'reden')} van het pand ${x(v.object_straat, 'adres')} te ${x(v.object_plaats, 'plaats')}. Het omvat een bestaand pand met een ${x(q.bestemming, 'bestemming')}. Met betrekking tot de fundering dient te worden aangetoond dat de fundering geen risico heeft op funderingsproblemen.`; };
 
+    // Adres aanvullen op postcode + huisnummer (open data: PDOK/BAG). Vult alleen in; de adviseur controleert.
+    const nrUit = (straat) => (/(\d+\s*[A-Za-z]?(?:-\s*\w{1,4})?)\s*$/.exec(String(straat || '')) || [])[1] || '';
+    const adresZoeker = (sectie, velden) => {
+      const hn = h('input', { type: 'text', id: `hn-${sectie}`, maxlength: 12, placeholder: 'bijv. 12a', value: nrUit(data[sectie][velden.straat]), disabled: !kanBewerken });
+      const zmsg = flashEl();
+      const knop = h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: 'Adres opzoeken', disabled: !kanBewerken, onclick: async () => {
+        const pc = data[sectie][velden.postcode] || '';
+        if (!pc.trim() || !hn.value.trim()) { flash(zmsg, 'Vul eerst de postcode en het huisnummer in.', 'error'); return; }
+        busy(knop, true);
+        try {
+          const antw = await fetch(`/api/adres/?postcode=${encodeURIComponent(pc)}&huisnummer=${encodeURIComponent(hn.value)}`, { headers: { Accept: 'application/json' } });
+          const b = await antw.json();
+          if (!b.ok) { flash(zmsg, b.error || 'Adres niet gevonden.', 'error'); return; }
+          const a = b.adres;
+          data[sectie][velden.straat] = a.straat_huisnummer; data[sectie][velden.postcode] = a.postcode; data[sectie][velden.plaats] = a.plaats;
+          const extra = [];
+          if (velden.bouwjaar && a.bouwjaar && !data.object.bouwjaar) { data.object.bouwjaar = String(a.bouwjaar); extra.push(`bouwjaar ${a.bouwjaar} (BAG) bij B. Object ingevuld`); }
+          markeer(); await opslaan(true);
+          await editReport(r.id, stap, `Adres ingevuld: ${a.straat_huisnummer}, ${a.postcode} ${a.plaats}${extra.length ? `; ${extra.join('; ')}` : ''}. Controleer de gegevens.`);
+        } catch { flash(zmsg, 'Adres opzoeken lukt nu niet. Vul het adres zelf in.', 'error'); } finally { busy(knop, false); }
+      } });
+      return h('div', { class: 'portal-lookup' }, field('Huisnummer (om op te zoeken)', hn), knop, zmsg);
+    };
+    const weerKnop = () => {
+      const wmsg = flashEl();
+      const knop = h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: 'Weergegevens ophalen', disabled: !kanBewerken, onclick: async () => {
+        busy(knop, true);
+        try {
+          await opslaan(true);
+          const w = await api('rapport-weer', { params: { id: r.id } });
+          data.object.weertype = w.weer.weertype || data.object.weertype; data.object.temperatuur = w.weer.temperatuur; data.object.luchtvochtigheid = w.weer.luchtvochtigheid;
+          markeer(); await opslaan(true);
+          await editReport(r.id, 'object', `Weergegevens ingevuld voor ${w.weer.uur}:00 uur (${w.bron}). Dit zijn modelgegevens voor de omgeving: controleer ze en pas aan als je ter plaatse iets anders hebt gemeten.`);
+        } catch (err) { flash(wmsg, err.message, 'error'); } finally { busy(knop, false); }
+      } });
+      return h('div', { class: 'portal-lookup' }, knop, h('p', { class: 'portal-hint', text: 'Haalt weertype, temperatuur en luchtvochtigheid op voor de inspectiedatum en -tijd bij het objectadres (Open-Meteo).' }), wmsg);
+    };
+
     const STAP = {
       voorblad: () => [
         h('h2', { class: 'portal-h2', text: 'Voorblad' }),
         d.aanvraag ? h('p', { class: 'portal-note' }, `Gekoppeld aan QuickScan-aanvraag ${d.aanvraag.dossier_nr}. Gegevens uit de aanvraag zijn overgenomen.`) : null,
         h('div', { class: 'portal-grid-form' },
           inp('voorblad', 'object_straat', 'Straat en huisnummer (object)'), inp('voorblad', 'object_postcode', 'Postcode (object)', { max: 10, placeholder: '8919 AA' }),
-          inp('voorblad', 'object_plaats', 'Plaats (object)'), inp('voorblad', 'uitgebracht_op', 'Uitgebracht op', { type: 'date' }),
+          inp('voorblad', 'object_plaats', 'Plaats (object)'), inp('voorblad', 'uitgebracht_op', 'Uitgebracht op', { type: 'date' })),
+        adresZoeker('voorblad', { straat: 'object_straat', postcode: 'object_postcode', plaats: 'object_plaats', bouwjaar: true }),
+        h('div', { class: 'portal-grid-form' },
           field('Naam adviseur', adviseurSel), h('div', {}, certTekst), field('Status van het rapport', statusSel)),
         fotoVak('voorblad', 1, 'Foto voorblad'),
       ],
@@ -551,6 +591,11 @@
           inp('algemeen', 'opdrachtgever_naam', 'Naam opdrachtgever'), inp('algemeen', 'opdrachtgever_straat', 'Straat en huisnummer opdrachtgever'),
           inp('algemeen', 'opdrachtgever_postcode', 'Postcode opdrachtgever', { max: 10 }), inp('algemeen', 'opdrachtgever_plaats', 'Plaats opdrachtgever'),
           inp('algemeen', 'opdrachtgever_email', 'E-mailadres opdrachtgever', { type: 'email', hint: 'Alleen om het rapport te versturen; staat niet in het rapport.' })),
+        h('div', { class: 'portal-actions' }, adresZoeker('algemeen', { straat: 'opdrachtgever_straat', postcode: 'opdrachtgever_postcode', plaats: 'opdrachtgever_plaats' }),
+          kanBewerken ? h('button', { type: 'button', class: 'btn btn-link portal-link-plain', text: 'Zelfde adres als het object', onclick: async () => {
+            Object.assign(data.algemeen, { opdrachtgever_straat: data.voorblad.object_straat || '', opdrachtgever_postcode: data.voorblad.object_postcode || '', opdrachtgever_plaats: data.voorblad.object_plaats || '' });
+            markeer(); await opslaan(true); await editReport(r.id, 'algemeen');
+          } }) : null),
         h('p', { class: 'portal-label', text: 'Vaste gegevens in het rapport' }),
         vast([['Onderzoeksmethode', 'Fase 0 Funderingsrisico-onderzoek'], ['Toegepaste richtlijn', 'KCAF (Quickscan)'], ['Afmeldorganisatie', 'Midea Vastgoed Adviseurs (MV-Adviseurs)'], ['Naam kantoor', 'Midea Vastgoed Adviseurs'], ['Adres kantoor', 'Mr. P.J. Troelstraweg 149 unit 29 8919 AA Leeuwarden'], ['Telefoon kantoor', '058 – 2037 172']]),
       ],
@@ -561,6 +606,7 @@
           kies('object', 'type', 'Type woning / object', 'object.type'), inp('object', 'bouwjaar', 'Bouwjaar', { max: 10, inputmode: 'numeric', placeholder: 'jaartal of "onbekend"' }),
           kies('object', 'weertype', 'Weertype', 'object.weertype'), inp('object', 'temperatuur', 'Temperatuur (°C)', { max: 6, inputmode: 'decimal' }),
           inp('object', 'luchtvochtigheid', 'Luchtvochtigheid (%)', { max: 6, inputmode: 'decimal' })),
+        kanBewerken ? weerKnop() : null,
       ],
       vraagstelling: () => { zin(); return [
         h('h2', { class: 'portal-h2', text: 'C. Vraagstelling' }),
@@ -739,6 +785,7 @@
             idx < STAPPEN.length - 1 ? h('button', { type: 'button', class: 'btn btn-gold', text: `${STAPPEN[idx + 1][1]} →`, onclick: () => naar(idx + 1) }) : null))),
     );
     if (stap === 'conclusie') bevestig = document.getElementById('v-conclusie-risico_bevestigd') || bevestig;
+    if (melding) flash(msg, melding);
   }
 
   async function advisorsPage() {

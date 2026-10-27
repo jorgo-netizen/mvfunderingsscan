@@ -36,6 +36,8 @@ Zie `.env.example`. Stel in onder Vercel → Project → Settings → Environmen
 | `AANVRAAG_TO` | nee | Standaard info@mideavastgoed.nl |
 | `MVFS_SITE_URL` | nee | Standaard `https://www.mvfunderingsscan.nl`. Zet dit op `https://mvfunderingsscan.vercel.app` zolang het domein nog niet gekoppeld is, anders verwijzen de trackinglinks naar een domein dat nog niet werkt. |
 | `MVFS_PEPPER` | aanbevolen | Willekeurige geheime tekst (32+ tekens) voor het hashen van IP-adressen bij rate limiting |
+| `DEEPL_API_KEY` | nee | Sleutel van de DeepL API. Zonder deze sleutel blijft de vertaalknop verborgen. Zie hoofdstuk 10. |
+| `DEEPL_MAAND_LIMIET` | nee | Maximaal aantal tekens per maand dat naar DeepL gaat (standaard 450000). Daarboven stopt de vertaalknop tot de volgende maand. |
 
 Na het instellen: opnieuw deployen.
 
@@ -118,3 +120,26 @@ Met `MVFS_DB=memory` werkt alles lokaal zonder Supabase. Zonder `RESEND_API_KEY`
    - nieuwsbericht publiceren.
 5. **Resend:** afzenderdomein `mvfunderingsscan.nl` verifiëren (SPF/DKIM).
 6. **Statusteksten:** de teksten in `api/_lib/tracking.js` beschrijven de stappen algemeen. Controleer of ze aansluiten op de echte werkwijze.
+
+## 10. Automatisch invullen en de vertaalknop
+
+**Adres automatisch invullen (geen instellingen nodig).** In het aanvraagformulier, het formulier op de homepage en in het rapport in het beheerportaal worden straat, plaats en (indien bekend) het bouwjaar opgezocht zodra postcode en huisnummer zijn ingevuld. De gegevens komen uit open data van de overheid (PDOK: Locatieserver en BAG van het Kadaster) via `api/adres.js`. Er is geen sleutel of account nodig. Bezoekers kunnen het ingevulde adres altijd zelf aanpassen.
+
+**Weergegevens in het rapport (geen instellingen nodig).** In stap B. Object haalt de knop *Weergegevens ophalen* weertype, temperatuur en luchtvochtigheid op bij de inspectiedatum en -tijd, via Open-Meteo. Dit zijn modelgegevens voor de omgeving; de adviseur controleert ze.
+
+**Vertaalknop (DeepL).** Links onderaan elke pagina staat een knop *EN*. Die vertaalt de pagina met DeepL naar het Engels; volgende pagina's worden ook in het Engels getoond tot de bezoeker op *NL* klikt. Elke zin gaat maar één keer naar DeepL: vertalingen worden bewaard in de database (tabel `mvfs_translations`).
+
+Aanzetten:
+
+1. Maak op deepl.com een account voor de **DeepL API** (niet het gewone DeepL Pro-abonnement voor de app). *API Free* is gratis tot 500.000 tekens per maand; *API Pro* rekent per teken. Controleer de actuele prijzen op de site van DeepL.
+2. Kopieer onder *Account → API Keys* de sleutel. Een gratis sleutel eindigt op `:fx`; de site herkent dat automatisch.
+3. Voer in Supabase (SQL Editor) `supabase/migrations/003_mvfs_vertalingen.sql` uit.
+4. Zet in Vercel `DEEPL_API_KEY` (Production) en deploy opnieuw. Optioneel: `DEEPL_MAAND_LIMIET`.
+
+Kosten: de hele site in één keer vertalen is ongeveer 2 miljoen tekens (inclusief menu en footer, die maar één keer worden vertaald). Met *API Free* lukt dat in een paar maanden, doordat alleen bezochte pagina's worden vertaald en elke zin maar één keer. Met *API Pro* is het een eenmalig bedrag; daarna vertaal je alleen nog nieuwe of gewijzigde teksten.
+
+Goed om te weten:
+- Vertaald wordt wat de bezoeker ziet. Ingevulde formuliergegevens gaan nooit naar DeepL.
+- De merknaam *MV Funderingsscan* en *Midea Vastgoed Adviseurs* worden niet vertaald.
+- De vertaling is niet zichtbaar voor zoekmachines (die zien de Nederlandse pagina). Wil je later ook in Google gevonden worden op Engelse zoekwoorden, dan zijn aparte Engelse pagina's nodig.
+- Lokaal testen zonder DeepL: start de server met `MVFS_VERTAAL_TEST=1` (dan wordt tekst in hoofdletters gezet in plaats van vertaald). Dit werkt nooit in productie.

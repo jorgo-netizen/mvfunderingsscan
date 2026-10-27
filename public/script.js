@@ -859,6 +859,198 @@
   });
 
   /* ---------- Jaartal in footer ---------- */
+  /* ---------- Adres automatisch aanvullen (postcode + huisnummer, via /api/adres/ en PDOK) ---------- */
+  $$('form').forEach((form) => {
+    const pc = $('input[name="postcode"]', form);
+    const hn = $('input[name="huisnummer"]', form);
+    if (!pc || !hn) return;
+    const adres = $('input[name="adres"]', form);
+    const plaats = $('input[name="plaats"]', form);
+    const bouwjaar = $('input[name="bouwjaar"]', form);
+    // Formulieren zonder adresvelden (homepage): verborgen velden zodat kantoor het volledige adres krijgt
+    const verborgen = (name) => { const el = document.createElement('input'); el.type = 'hidden'; el.name = name; form.appendChild(el); return el; };
+    const adresEl = adres || verborgen('adres');
+    const plaatsEl = plaats || verborgen('plaats');
+    const melding = document.createElement('p');
+    melding.className = 'address-lookup';
+    melding.setAttribute('aria-live', 'polite');
+    melding.hidden = true;
+    (hn.closest('.field') || hn.parentElement).after(melding);
+    const auto = new WeakSet(); // velden die wij hebben ingevuld (die mogen we overschrijven)
+    const zet = (el, v) => {
+      if (!el || !v || (el.value.trim() && !auto.has(el))) return;
+      el.value = v; auto.add(el);
+      const holder = el.closest('.field'); if (holder) holder.classList.remove('has-error');
+      el.dispatchEvent(new Event('input', { bubbles: true }));
+    };
+    [adres, plaats, bouwjaar].forEach((el) => el && el.addEventListener('input', (e) => { if (e.isTrusted) auto.delete(el); }));
+    let timer = null; let laatste = '';
+    const zoek = () => {
+      const p = pc.value.replace(/\s+/g, '').toUpperCase(); const n = hn.value.trim();
+      if (!/^[1-9][0-9]{3}[A-Z]{2}$/.test(p) || !/^\d/.test(n)) { melding.hidden = true; return; }
+      const sleutel = `${p}|${n}`;
+      if (sleutel === laatste) return;
+      laatste = sleutel;
+      melding.hidden = false; melding.className = 'address-lookup is-busy'; melding.textContent = 'Adres opzoeken…';
+      fetch(`/api/adres/?postcode=${encodeURIComponent(p)}&huisnummer=${encodeURIComponent(n)}`, { headers: { Accept: 'application/json' } })
+        .then((r) => r.json().then((b) => ({ status: r.status, b })))
+        .then(({ status, b }) => {
+          if (sleutel !== laatste) return;
+          if (!b.ok) {
+            melding.className = 'address-lookup is-warn';
+            melding.textContent = status === 409 ? b.error : (adres ? 'Adres niet gevonden. Vul straat en plaats zelf in.' : 'Adres niet gevonden. Controleer postcode en huisnummer.');
+            return;
+          }
+          const a = b.adres;
+          zet(adresEl, a.straat_huisnummer); zet(plaatsEl, a.plaats);
+          if (a.bouwjaar) zet(bouwjaar, String(a.bouwjaar));
+          melding.className = 'address-lookup is-ok';
+          melding.textContent = `✓ ${a.straat_huisnummer}, ${a.postcode} ${a.plaats}${a.bouwjaar && bouwjaar ? ` · bouwjaar ${a.bouwjaar} (BAG)` : ''}`;
+        })
+        .catch(() => { if (sleutel === laatste) { melding.hidden = true; laatste = ''; } });
+    };
+    [pc, hn].forEach((el) => el.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(zoek, 450); }));
+    form.addEventListener('reset', () => { laatste = ''; melding.hidden = true; });
+  });
+
+  /* ---------- Vertaalknop NL → EN (DeepL via /api/vertaal/) ---------- */
+  const langBtn = $('[data-lang-toggle]');
+  if (langBtn) {
+    const KEY = 'mvfs-taal';
+    const opslag = { get: () => { try { return localStorage.getItem(KEY); } catch { return null; } }, set: (v) => { try { if (v) localStorage.setItem(KEY, v); else localStorage.removeItem(KEY); } catch { /* */ } } };
+    const SKIP = 'script,style,noscript,svg,textarea,code,pre,select,template,iframe,[data-no-translate],[translate="no"]';
+    const INTERACTIEF = 'input,select,textarea,button,svg,iframe,video,canvas';
+    const gedaan = new WeakSet();
+    let actief = false; let observer = null; let bezig = 0; let dynamisch = 0;
+    const MAX_DYNAMISCH = 300; // plafond voor tekst die na het laden verschijnt (bijv. uitslagen van hulpmiddelen)
+    const heeftWoorden = (h) => /[A-Za-zÀ-ÿ]{2,}/.test(h.replace(/<[^>]+>/g, ' '));
+    const isInline = (el) => { const d = getComputedStyle(el).display; return d === 'inline' || d === 'contents'; };
+    const blokVan = (node) => { let el = node.parentElement; while (el && el !== document.body && isInline(el)) el = el.parentElement; return el; };
+    const tekstUit = (html) => { const t = document.createElement('template'); t.innerHTML = html; return t.content.textContent; };
+    const escTekst = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+    // Verzamelt vertaalklussen: per blok de HTML (met genummerde elementen), anders losse tekst.
+    function verzamel(root) {
+      const klussen = []; const blokken = new Set(); const losse = [];
+      const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+        acceptNode: (n) => (!n.nodeValue.trim() || gedaan.has(n) || !n.parentElement || n.parentElement.closest(SKIP) || n.parentElement.closest('[data-lang-toggle]') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT),
+      });
+      for (let n = w.nextNode(); n; n = w.nextNode()) { const b = blokVan(n); if (b) blokken.add(b); else losse.push(n); }
+      for (const b of blokken) {
+        // Bevat het blok zelf weer blokken met tekst (bijv. een lijst in een lijst)? Dan alleen de eigen tekstdelen los.
+        const genest = Array.from(b.querySelectorAll('*')).some((el) => !el.closest(SKIP) && !isInline(el) && !el.matches(INTERACTIEF) && Array.from(el.childNodes).some((c) => c.nodeType === 3 && c.nodeValue.trim()));
+        if (genest) { Array.from(b.childNodes).forEach((c) => { if (c.nodeType === 3 && c.nodeValue.trim() && !gedaan.has(c)) losse.push(c); }); continue; }
+        const orig = Array.from(b.querySelectorAll('*'));
+        const kloon = b.cloneNode(true);
+        Array.from(kloon.querySelectorAll('*')).forEach((el, i) => {
+          if (el.matches(SKIP) || el.matches(INTERACTIEF)) { const k = document.createElement('x-keep'); k.setAttribute('data-k', i); el.replaceWith(k); return; }
+          for (const a of Array.from(el.attributes)) el.removeAttribute(a.name);
+          el.setAttribute('data-k', i);
+        });
+        // Elementen binnen vervangen x-keep zijn uit de kloon verdwenen; de nummering blijft gelijk aan 'orig'.
+        klussen.push({ soort: 'blok', el: b, orig, html: kloon.innerHTML.trim() });
+      }
+      for (const n of losse) klussen.push({ soort: 'tekst', node: n, html: escTekst(n.nodeValue.trim()) });
+      // attributen die bezoekers zien of horen
+      Array.from(root.querySelectorAll ? root.querySelectorAll('[placeholder],[title],[aria-label],img[alt],input[type="submit"][value],input[type="button"][value]') : []).forEach((el) => {
+        if (el.closest('[data-no-translate],[translate="no"],[data-lang-toggle]')) return;
+        ['placeholder', 'title', 'aria-label', 'alt', 'value'].forEach((a) => {
+          if (a === 'value' && !/^(submit|button)$/.test(el.type)) return;
+          const v = el.getAttribute(a); if (!v || !v.trim() || gedaan.has(el.attributes[a])) return;
+          klussen.push({ soort: 'attr', el, attr: a, html: escTekst(v.trim()) });
+        });
+      });
+      if (root.querySelectorAll) Array.from(root.querySelectorAll('select option')).forEach((o) => { if (o.text.trim() && !gedaan.has(o)) klussen.push({ soort: 'optie', el: o, html: escTekst(o.text.trim()) }); });
+      return klussen;
+    }
+
+    function pasToe(k, vertaald) {
+      if (k.soort === 'tekst') {
+        const v = k.node.nodeValue; const lead = v.match(/^\s*/)[0]; const trail = v.match(/\s*$/)[0];
+        k.node.nodeValue = lead + tekstUit(vertaald) + trail; gedaan.add(k.node); return;
+      }
+      if (k.soort === 'attr') { k.el.setAttribute(k.attr, tekstUit(vertaald)); gedaan.add(k.el.attributes[k.attr]); return; }
+      if (k.soort === 'optie') { k.el.text = tekstUit(vertaald); gedaan.add(k.el); return; }
+      // blok: vertaalde structuur opnieuw opbouwen met de ORIGINELE elementen (attributen, links en knoppen blijven werken)
+      const t = document.createElement('template'); t.innerHTML = vertaald;
+      const bronK = (k.html.match(/data-k="\d+"/g) || []).length;
+      const uitK = t.content.querySelectorAll('[data-k]').length;
+      if (bronK !== uitK) { // structuur niet herkenbaar: dan alleen de losse teksten
+        const w = document.createTreeWalker(k.el, NodeFilter.SHOW_TEXT);
+        for (let n = w.nextNode(); n; n = w.nextNode()) if (n.nodeValue.trim()) gedaan.add(n);
+        return;
+      }
+      const bouw = (node) => {
+        if (node.nodeType === 3) { const tn = document.createTextNode(node.nodeValue); gedaan.add(tn); return tn; }
+        if (node.nodeType !== 1) return null;
+        const el = k.orig[Number(node.getAttribute('data-k'))];
+        if (!el) { const tn = document.createTextNode(node.textContent); gedaan.add(tn); return tn; }
+        if (node.localName === 'x-keep') return el; // svg, knop of invoerveld: ongewijzigd terugzetten
+        el.replaceChildren(...Array.from(node.childNodes).map(bouw).filter(Boolean));
+        return el;
+      };
+      k.el.replaceChildren(...Array.from(t.content.childNodes).map(bouw).filter(Boolean));
+    }
+
+    async function vertaal(root, { na = false } = {}) {
+      let klussen = verzamel(root).filter((k) => heeftWoorden(k.html));
+      if (na) { klussen = klussen.slice(0, Math.max(0, MAX_DYNAMISCH - dynamisch)); dynamisch += klussen.length; }
+      if (!klussen.length) return;
+      bezig++; document.documentElement.classList.add('is-translating');
+      if (observer) observer.disconnect();
+      try {
+        const sessie = (() => { try { return JSON.parse(sessionStorage.getItem('mvfs-vt') || '{}'); } catch { return {}; } })();
+        const open = klussen.filter((k) => !(k.html in sessie));
+        const uniek = [...new Set(open.map((k) => k.html))];
+        const pakketten = [];
+        for (let i = 0, p = [], n = 0; i < uniek.length; i++) {
+          p.push(uniek[i]); n += uniek[i].length;
+          if (p.length === 40 || n > 40000 || i === uniek.length - 1) { pakketten.push(p); p = []; n = 0; }
+        }
+        for (let i = 0; i < pakketten.length; i += 3) {
+          await Promise.all(pakketten.slice(i, i + 3).map((p) => fetch('/api/vertaal/', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ segmenten: p }) })
+            .then((r) => r.json()).then((b) => { if (!b.ok) throw new Error(b.error); p.forEach((h, j) => { sessie[h] = b.vertalingen[j]; }); })));
+        }
+        try { sessionStorage.setItem('mvfs-vt', JSON.stringify(sessie)); } catch { /* vol: niet erg */ }
+        for (const k of klussen) if (k.html in sessie) pasToe(k, sessie[k.html]);
+      } finally {
+        bezig--; if (!bezig) document.documentElement.classList.remove('is-translating');
+        if (actief && observer) observer.observe(document.body, { childList: true, subtree: true, characterData: true });
+      }
+    }
+
+    async function zetEngels() {
+      actief = true;
+      document.documentElement.lang = 'en';
+      (langBtn.querySelector('[data-lang-label]') || langBtn).textContent = 'NL'; langBtn.setAttribute('aria-label', 'Terug naar Nederlands'); langBtn.title = 'Terug naar Nederlands'; langBtn.setAttribute('aria-pressed', 'true');
+      // Titel van de pagina
+      try {
+        const r = await fetch('/api/vertaal/', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ segmenten: [escTekst(document.title)] }) });
+        const b = await r.json(); if (b.ok) document.title = tekstUit(b.vertalingen[0]);
+      } catch { /* titel blijft Nederlands */ }
+      // Nieuwe tekst op de pagina (meldingen, uitslagen van hulpmiddelen) ook vertalen
+      let wacht = null; const nieuw = new Set();
+      observer = new MutationObserver((muts) => {
+        for (const m of muts) {
+          const t = m.type === 'characterData' ? m.target.parentElement : m.target;
+          if (t && !(m.type === 'characterData' && gedaan.has(m.target))) nieuw.add(t);
+        }
+        clearTimeout(wacht);
+        wacht = setTimeout(() => { const roots = [...nieuw].filter((n) => n.isConnected); nieuw.clear(); roots.forEach((r) => vertaal(r, { na: true }).catch(() => {})); }, 300);
+      });
+      try { await vertaal(document.body); } catch {
+        langBtn.title = 'Vertalen lukt nu niet.';
+      }
+    }
+
+    langBtn.addEventListener('click', () => {
+      if (actief) { opslag.set(null); location.reload(); return; }
+      opslag.set('en'); zetEngels();
+    });
+    const toon = () => { langBtn.hidden = false; if (opslag.get() === 'en') zetEngels(); };
+    fetch('/api/vertaal/').then((r) => r.json()).then((b) => { if (b.ok && b.beschikbaar) toon(); }).catch(() => {});
+  }
+
   const year = $('#year');
   if (year) year.textContent = new Date().getFullYear();
 

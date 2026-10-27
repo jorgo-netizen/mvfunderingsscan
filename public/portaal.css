@@ -191,3 +191,7 @@
   .portal-steps { grid-auto-flow: column; grid-auto-columns: max-content; overflow-x: auto; }
   .portal-grid-form { grid-template-columns: 1fr; }
 }
+.portal-lookup { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 10px 14px; margin: 0 0 16px; }
+.portal-lookup .portal-field { margin: 0; min-width: 180px; }
+.portal-lookup .portal-flash, .portal-lookup .portal-hint { flex-basis: 100%; margin: 0; }
+.portal-link-plain { color: var(--navy); align-self: center; }

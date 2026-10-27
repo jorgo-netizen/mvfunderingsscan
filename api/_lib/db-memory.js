@@ -17,7 +17,7 @@ export function memoryDb() {
   const STORE_DIR = resolve(process.env.MVFS_DEV_STORAGE || 'tmp/dev-storage');
   const key = `__mvfsMemoryDb:${FILE}`;
   if (!globalThis[key]) {
-    let data = { users: [], sessions: [], attempts: [], news: [], requests: [], history: [], notes: [], emails: [], advisors: [], reports: [], reportImages: [], versions: [], seq: 0, reportSeq: 0, ids: 0 };
+    let data = { users: [], sessions: [], attempts: [], news: [], requests: [], history: [], notes: [], emails: [], advisors: [], reports: [], reportImages: [], versions: [], translations: {}, translationUsage: {}, seq: 0, reportSeq: 0, ids: 0 };
     if (FILE && existsSync(FILE)) data = { ...data, ...JSON.parse(readFileSync(FILE, 'utf8')) };
     if (!data.advisors.length) data.advisors = [['Melvin Krikke', 'CE240260817-02'], ['Rutger Fopma', 'CE240260817-03']].map(([name, certificate]) => ({ id: randomUUID(), name, certificate, user_id: null, active: true, created_at: now(), updated_at: now() }));
     globalThis[key] = data;
@@ -150,6 +150,10 @@ export function memoryDb() {
       if (f.name && D.advisors.some((x) => x.name === f.name && x.id !== id)) throw conflict();
       Object.assign(a, f, { updated_at: now() }); save(); return clone(a);
     },
+    translationsGet: async (keys) => keys.filter((k) => D.translations[k]).map((k) => ({ key: k, html: D.translations[k] })),
+    translationsPut: async (rows) => { for (const r of rows) if (!D.translations[r.key]) D.translations[r.key] = r.html; save(); },
+    translationUsage: async (month) => D.translationUsage[month] || 0,
+    translationUsageAdd: async (month, chars) => { D.translationUsage[month] = (D.translationUsage[month] || 0) + chars; save(); return D.translationUsage[month]; },
     nextReportNr: async () => { D.reportSeq += 1; save(); return `QS-${new Date().getFullYear()}-${String(D.reportSeq).padStart(4, '0')}`; },
     reportCreate: async (row) => {
       if (D.reports.some((r) => r.report_nr === row.report_nr)) throw conflict();

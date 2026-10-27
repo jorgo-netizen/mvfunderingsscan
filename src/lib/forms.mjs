@@ -68,7 +68,7 @@ export function aanvraagForm() {
         </div>
 
         <h2 class="form-step-title"><span>2</span>De woning</h2>
-        <div class="form-grid">${field('a-adres', 'adres', 'Straat en huisnummer', { auto: 'street-address', error: 'Vul het adres van de woning in', full: true })}${field('a-postcode', 'postcode', 'Postcode', { auto: 'postal-code', pattern: '\\s*[1-9][0-9]{3}\\s?[A-Za-z]{2}\\s*', error: 'Bijv. 8919 AA' })}${field('a-plaats', 'plaats', 'Plaats', { auto: 'address-level2', error: 'Vul de plaats in' })}${select('a-woningtype', 'woningtype', 'Type woning', ['Tussenwoning', 'Hoekwoning', 'Twee-onder-een-kap', 'Vrijstaande woning', 'Boven- of benedenwoning', 'Boerderij', 'Bedrijfspand', 'Anders'])}${field('a-bouwjaar', 'bouwjaar', 'Bouwjaar (ongeveer)', { required: false, inputmode: 'numeric' })}
+        <div class="form-grid">${field('a-postcode', 'postcode', 'Postcode', { auto: 'postal-code', pattern: '\\s*[1-9][0-9]{3}\\s?[A-Za-z]{2}\\s*', error: 'Bijv. 8919 AA' })}${field('a-huisnummer', 'huisnummer', 'Huisnummer en toevoeging', { error: 'Vul het huisnummer in, bijv. 12 of 12a' })}${field('a-adres', 'adres', 'Straat en huisnummer', { auto: 'street-address', error: 'Vul het adres van de woning in' })}${field('a-plaats', 'plaats', 'Plaats', { auto: 'address-level2', error: 'Vul de plaats in' })}${select('a-woningtype', 'woningtype', 'Type woning', ['Tussenwoning', 'Hoekwoning', 'Twee-onder-een-kap', 'Vrijstaande woning', 'Boven- of benedenwoning', 'Boerderij', 'Bedrijfspand', 'Anders'])}${field('a-bouwjaar', 'bouwjaar', 'Bouwjaar (ongeveer)', { required: false, inputmode: 'numeric' })}
         </div>
 
         <h2 class="form-step-title"><span>3</span>Je situatie</h2>

@@ -130,6 +130,11 @@ function supabaseDb(URL, KEY) {
     advisorCreate: async (row) => one(await rest('POST', 'mvfs_advisors', { body: row, prefer: 'return=representation' })),
     advisorUpdate: async (id, f) => one(await rest('PATCH', `mvfs_advisors?id=eq.${q(id)}`, { body: { ...f, updated_at: nowIso() }, prefer: 'return=representation' })),
     nextReportNr: async () => rest('POST', 'rpc/mvfs_next_report_nr', { body: {} }),
+    // vertaalcache (vertaalknop)
+    translationsGet: async (keys) => (keys.length ? rest('GET', `mvfs_translations?key=in.(${keys.map(q).join(',')})&select=key,html`) : []),
+    translationsPut: async (rows) => { await rest('POST', 'mvfs_translations?on_conflict=key', { body: rows, prefer: 'resolution=ignore-duplicates' }); },
+    translationUsage: async (month) => Number(one(await rest('GET', `mvfs_translation_usage?month=eq.${q(month)}&select=chars`))?.chars || 0),
+    translationUsageAdd: async (month, chars) => rest('POST', 'rpc/mvfs_add_translation_usage', { body: { p_month: month, p_chars: chars } }),
     reportCreate: async (row) => one(await rest('POST', 'mvfs_reports', { body: row, prefer: 'return=representation' })),
     reportsList: async ({ status, search } = {}) => {
       let path = 'mvfs_reports?select=id,report_nr,status,risk,version,request_id,updated_at,created_at,data,advisor:mvfs_advisors(name)&order=updated_at.desc&limit=200';

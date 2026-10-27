@@ -9,6 +9,7 @@
 import { randomToken, isUuid, isEmail, sha256, logError, esc } from './http.js';
 import { STATUSES, EDIT_STATUSES, RISKS, SLOTS, KEUZES, TEMPLATE_VERSION, controle, maakDocx, docxNaarHtml, imageSize, waarden } from './rapport.js';
 import { resendSend } from './mail.js';
+import { zoekLigging, weerOp } from './adres.js';
 
 const BUCKET = 'rapport-bestanden';
 const DOCX = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
@@ -94,6 +95,19 @@ export async function rapportActies(db, req, res, actie, user, url, { json, fail
       mag_afronden: magAfronden(user, advisor), slots: SLOTS, keuzes: KEUZES,
       aanvraag: request ? { id: request.id, dossier_nr: request.dossier_nr, status: request.status, email: request.email } : null,
     });
+  }
+  if (actie === 'rapport-weer') {
+    const r = await laad(id); if (!r) return fail(res, 404, 'Rapport niet gevonden.');
+    const v = r.data?.voorblad || {}; const a = r.data?.algemeen || {};
+    if (!v.object_straat || !v.object_postcode) return fail(res, 422, 'Vul eerst het adres van het object in (voorblad).');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(a.inspectie_datum || '')) return fail(res, 422, 'Vul eerst de inspectiedatum in (A. Opdracht / opname).');
+    try {
+      const plek = await zoekLigging(`${v.object_straat} ${v.object_postcode} ${v.object_plaats || ''}`);
+      if (!plek) return fail(res, 404, 'De ligging van het adres is niet gevonden.');
+      const weer = await weerOp({ lat: plek.lat, lon: plek.lon, datum: a.inspectie_datum, tijd: a.inspectie_tijd });
+      if (!weer) return fail(res, 404, 'Voor deze datum zijn (nog) geen weergegevens beschikbaar.');
+      return json(res, 200, { ok: true, weer, bron: 'Open-Meteo' });
+    } catch (err) { logError('rapport-weer', err); return fail(res, 503, 'Weergegevens ophalen lukt nu niet.'); }
   }
   if (actie === 'rapport-word' || actie === 'rapport-voorbeeld') {
     const r = await laad(id); if (!r) return fail(res, 404, 'Rapport niet gevonden.');

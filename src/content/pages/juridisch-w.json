@@ -26,7 +26,7 @@
       },
       {
         "label": "Laatst bijgewerkt",
-        "value": "26 oktober 2026"
+        "value": "27 oktober 2026"
       },
       {
         "label": "Vragen over privacy",
@@ -44,7 +44,7 @@
         "id": "wanneer",
         "h2": "Wanneer verwerken we persoonsgegevens?",
         "answer": "We verwerken persoonsgegevens als je contact met ons opneemt, een aanvraag doet, een opdracht geeft of op een andere manier bij een onderzoek betrokken bent.",
-        "body": "<p>Dat gebeurt bijvoorbeeld als je:</p><ul><li>het <a href=\"/contact/\">contactformulier</a> of het <a href=\"/funderingsscan-aanvragen/\">aanvraagformulier</a> invult, of ons mailt of belt;</li><li>een Fase 0 funderingsrisico-onderzoek (QuickScan) of een Fase 1 funderingsonderzoek bij ons aanvraagt;</li><li>een van onze hulpmiddelen gebruikt en daarbij vraagt om contact of een uitslag per e-mail;</li><li>als eigenaar, koper, bewoner, makelaar, taxateur of adviseur betrokken bent bij een onderzoek;</li><li>ons toegang geeft tot een woning of pand voor een inspectie;</li><li>de voortgang van je aanvraag volgt via je persoonlijke Track &amp; Trace-link;</li><li>een factuur van ons ontvangt of aan ons betaalt.</li></ul><p>De <a href=\"/gratis-funderingscheck/\">gratis funderingscheck</a> en andere online hulpmiddelen kun je gebruiken zonder persoonsgegevens in te vullen. Alleen als je zelf contactgegevens achterlaat, verwerken we die.</p>"
+        "body": "<p>Dat gebeurt bijvoorbeeld als je:</p><ul><li>het <a href=\"/contact/\">contactformulier</a> of het <a href=\"/funderingsscan-aanvragen/\">aanvraagformulier</a> invult, of ons mailt of belt;</li><li>een Fase 0 funderingsrisico-onderzoek (QuickScan) of een Fase 1 funderingsonderzoek bij ons aanvraagt;</li><li>een van onze hulpmiddelen gebruikt en daarbij vraagt om contact of een uitslag per e-mail;</li><li>als eigenaar, koper, bewoner, makelaar, taxateur of adviseur betrokken bent bij een onderzoek;</li><li>ons toegang geeft tot een woning of pand voor een inspectie;</li><li>de voortgang van je aanvraag volgt via je persoonlijke Track &amp; Trace-link;</li><li>in een formulier je postcode en huisnummer invult: we zoeken dan automatisch straat, plaats en bouwjaar op;</li><li>een factuur van ons ontvangt of aan ons betaalt.</li></ul><p>De <a href=\"/gratis-funderingscheck/\">gratis funderingscheck</a> en andere online hulpmiddelen kun je gebruiken zonder persoonsgegevens in te vullen. Alleen als je zelf contactgegevens achterlaat, verwerken we die.</p>"
       },
       {
         "id": "welke-gegevens",
@@ -62,7 +62,7 @@
         "id": "delen",
         "h2": "Met wie delen we je gegevens?",
         "answer": "We verkopen of verhuren je gegevens nooit. We delen ze alleen als dat nodig is voor ons werk, als jij daarom vraagt of als de wet ons dat verplicht.",
-        "body": "<p>We werken met dienstverleners die gegevens in onze opdracht verwerken. Met hen maken we afspraken over beveiliging en geheimhouding, zoals de AVG vereist. Op dit moment zijn dat:</p><div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Dienstverlener</th><th>Waarvoor</th></tr></thead><tbody><tr><td>Vercel</td><td>Hosting van de website en de formulieren</td></tr><tr><td>Supabase (servers in de EU)</td><td>Database en beveiligde opslag van aanvragen, rapporten en foto’s</td></tr><tr><td>Resend</td><td>Versturen van e-mails, zoals bevestigingen, de Track &amp; Trace-link en rapporten</td></tr></tbody></table></div><p>Daarnaast kunnen we gegevens delen met partijen die ons helpen met onze administratie, met partijen die jij zelf bij de opdracht betrekt (zoals je makelaar, taxateur of financier, als je daarom vraagt) en met instanties als we daartoe wettelijk verplicht zijn, zoals de Belastingdienst.</p>"
+        "body": "<p>We werken met dienstverleners die gegevens in onze opdracht verwerken. Met hen maken we afspraken over beveiliging en geheimhouding, zoals de AVG vereist. Op dit moment zijn dat:</p><div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Dienstverlener</th><th>Waarvoor</th></tr></thead><tbody><tr><td>Vercel</td><td>Hosting van de website en de formulieren</td></tr><tr><td>Supabase (servers in de EU)</td><td>Database en beveiligde opslag van aanvragen, rapporten en foto’s</td></tr><tr><td>Resend</td><td>Versturen van e-mails, zoals bevestigingen, de Track &amp; Trace-link en rapporten</td></tr><tr><td>DeepL (Duitsland)</td><td>Vertalen van de teksten van de website naar het Engels als je op de taalknop klikt. Er gaan alleen teksten van de website naar DeepL, geen gegevens die je invult.</td></tr><tr><td>PDOK / Kadaster (overheid)</td><td>Opzoeken van straat, plaats en bouwjaar bij een postcode en huisnummer die je invult. Het verzoek loopt via onze server; we bewaren de zoekopdracht niet.</td></tr><tr><td>Open-Meteo</td><td>Weergegevens van de inspectiedag voor het rapport. We sturen alleen een afgeronde ligging (ca. 1 km) en de datum, geen adres of naam.</td></tr></tbody></table></div><p>Daarnaast kunnen we gegevens delen met partijen die ons helpen met onze administratie, met partijen die jij zelf bij de opdracht betrekt (zoals je makelaar, taxateur of financier, als je daarom vraagt) en met instanties als we daartoe wettelijk verplicht zijn, zoals de Belastingdienst.</p>"
       },
       {
         "id": "buiten-de-eu",
@@ -86,7 +86,7 @@
         "id": "cookies",
         "h2": "Gebruikt deze website cookies?",
         "answer": "Nee, de openbare website plaatst geen tracking-, advertentie- of analytische cookies. Je hoeft daarom ook geen cookiemelding weg te klikken.",
-        "body": "<p>Alleen in het afgeschermde beheerportaal voor onze medewerkers wordt een functionele cookie gebruikt om ingelogd te blijven. Dat is technisch noodzakelijk en heeft niets met jouw bezoek aan de website te maken. Gaan we in de toekomst wel cookies gebruiken waarvoor toestemming nodig is, dan vragen we die eerst en passen we deze verklaring aan.</p>"
+        "body": "<p>Kies je voor de Engelse vertaling, dan onthoudt je browser die keuze in de lokale opslag van je browser, zodat volgende pagina's ook in het Engels worden getoond. Dat is functioneel, wordt niet naar ons gestuurd en verdwijnt als je terugschakelt naar Nederlands. In het afgeschermde beheerportaal voor onze medewerkers wordt een functionele cookie gebruikt om ingelogd te blijven. Gaan we in de toekomst wel cookies gebruiken waarvoor toestemming nodig is, dan vragen we die eerst en passen we deze verklaring aan.</p>"
       },
       {
         "id": "jouw-rechten",
