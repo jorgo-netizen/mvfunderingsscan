@@ -16,7 +16,7 @@ const MAX_SEGMENTEN = 50;
 const MAX_SEGMENT = 6000;
 const MAX_TOTAAL = 60000;
 const MAX_AANROEPEN_PER_UUR = 200; // aanroepen die DeepL nodig hebben, per IP-adres
-const MERKEN = ['MV Funderingsscan', 'Midea Vastgoed Adviseurs', 'MV-Adviseurs', 'Track &amp; Trace', 'Track & Trace'];
+const MERKEN = ['MV Funderingsscan B.V.', 'MV Funderingsscan', 'Track &amp; Trace', 'Track & Trace'];
 const geheugen = new Map(); // fallback-cache zonder database (per serverinstantie)
 
 const maand = () => new Date().toISOString().slice(0, 7);

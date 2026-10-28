@@ -1,9 +1,9 @@
 /**
  * Medewerkersaccount aanmaken of een wachtwoord opnieuw instellen (er is bewust geen publieke registratie).
  *
- *   node scripts/beheer-gebruiker.mjs --email naam@mideavastgoed.nl --naam "Voornaam Achternaam" --rol beheerder
- *   node scripts/beheer-gebruiker.mjs --email naam@mideavastgoed.nl --nieuw-wachtwoord
- *   node scripts/beheer-gebruiker.mjs --email naam@mideavastgoed.nl --uitschakelen
+ *   node scripts/beheer-gebruiker.mjs --email naam@mvadviseurs.nl --naam "Voornaam Achternaam" --rol beheerder
+ *   node scripts/beheer-gebruiker.mjs --email naam@mvadviseurs.nl --nieuw-wachtwoord
+ *   node scripts/beheer-gebruiker.mjs --email naam@mvadviseurs.nl --uitschakelen
  *
  * Het wachtwoord wordt gevraagd in de terminal (minimaal 12 tekens) of gelezen uit MVFS_NIEUW_WACHTWOORD
  * (handig in scripts; zet die variabele daarna weer leeg). Opgeslagen wordt alleen een scrypt-hash.

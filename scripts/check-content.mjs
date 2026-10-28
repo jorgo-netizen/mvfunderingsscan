@@ -101,7 +101,7 @@ function checkPage(p) {
   let internal = 0;
   for (const h of hrefs) {
     if (h === '' || h.startsWith('#')) { E(`lege of #-link: "${h}"`); continue; }
-    if (/^(tel:\+31582037172|mailto:info@mideavastgoed\.nl)/.test(h)) continue;
+    if (/^(tel:\+31582037172|mailto:info@mvadviseurs.nl)/.test(h)) continue;
     if (/^https?:/.test(h)) { if (!EXTERNAL_OK.some((x) => h.startsWith(x))) E(`externe link niet toegestaan: ${h}`); continue; }
     const base = h.split('#')[0];
     if (!urlMap.has(base)) E(`interne link naar onbekend pad: ${h}`);

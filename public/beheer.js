@@ -532,7 +532,7 @@
 
     const vsZin = h('p', { class: 'portal-preview-zin' });
     const zin = () => { const q = data.vraagstelling || {}; const a = data.algemeen || {}; const v = data.voorblad || {}; const x = (t, ph) => t || `[ ${ph} ]`; const dNl = (iso) => (/^\d{4}-\d{2}-\d{2}$/.test(iso || '') ? new Date(`${iso}T12:00:00`).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' }) : iso);
-      vsZin.textContent = `Op ${x(dNl(q.datum || a.inspectie_datum), 'datum')} heeft Midea Vastgoed Adviseurs in opdracht van ${x(a.opdrachtgever_naam, 'naam opdrachtgever')} een funderingsrisico Fase 0 (QuickScan) uitgevoerd in verband met ${x(q.reden, 'reden')} van het pand ${x(v.object_straat, 'adres')} te ${x(v.object_plaats, 'plaats')}. Het omvat een bestaand pand met een ${x(q.bestemming, 'bestemming')}. Met betrekking tot de fundering dient te worden aangetoond dat de fundering geen risico heeft op funderingsproblemen.`; };
+      vsZin.textContent = `Op ${x(dNl(q.datum || a.inspectie_datum), 'datum')} heeft MV Funderingsscan B.V. in opdracht van ${x(a.opdrachtgever_naam, 'naam opdrachtgever')} een funderingsrisico Fase 0 (QuickScan) uitgevoerd in verband met ${x(q.reden, 'reden')} van het pand ${x(v.object_straat, 'adres')} te ${x(v.object_plaats, 'plaats')}. Het omvat een bestaand pand met een ${x(q.bestemming, 'bestemming')}. Met betrekking tot de fundering dient te worden aangetoond dat de fundering geen risico heeft op funderingsproblemen.`; };
 
     // Adres aanvullen op postcode + huisnummer (open data: PDOK/BAG). Vult alleen in; de adviseur controleert.
     const nrUit = (straat) => (/(\d+\s*[A-Za-z]?(?:-\s*\w{1,4})?)\s*$/.exec(String(straat || '')) || [])[1] || '';
@@ -597,7 +597,7 @@
             markeer(); await opslaan(true); await editReport(r.id, 'algemeen');
           } }) : null),
         h('p', { class: 'portal-label', text: 'Vaste gegevens in het rapport' }),
-        vast([['Onderzoeksmethode', 'Fase 0 Funderingsrisico-onderzoek'], ['Toegepaste richtlijn', 'KCAF (Quickscan)'], ['Afmeldorganisatie', 'Midea Vastgoed Adviseurs (MV-Adviseurs)'], ['Naam kantoor', 'Midea Vastgoed Adviseurs'], ['Adres kantoor', 'Mr. P.J. Troelstraweg 149 unit 29 8919 AA Leeuwarden'], ['Telefoon kantoor', '058 – 2037 172']]),
+        vast([['Onderzoeksmethode', 'Fase 0 Funderingsrisico-onderzoek'], ['Toegepaste richtlijn', 'KCAF (Quickscan)'], ['Afmeldorganisatie', 'MV Funderingsscan B.V.'], ['Naam kantoor', 'MV Funderingsscan B.V.'], ['Adres kantoor', 'Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden'], ['Telefoon kantoor', '058 – 2037 172']]),
       ],
       object: () => [
         h('h2', { class: 'portal-h2', text: 'B. Object' }),

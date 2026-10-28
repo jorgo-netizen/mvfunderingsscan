@@ -3,7 +3,9 @@
   "today": "2026-10-07",
   "nap": {
     "name": "MV Funderingsscan",
-    "street": "Mr. P. J. Troelstraweg 149",
+    "legal_name": "MV Funderingsscan B.V.",
+    "kvk": "42204729",
+    "street": "Mr. P.J. Troelstraweg 149 unit 23",
     "postal": "8919 AA",
     "city": "Leeuwarden",
     "region": "Friesland",
@@ -11,7 +13,7 @@
     "phone_display": "+31 (0) 582037172",
     "phone_href": "tel:+31582037172",
     "phone_intl": "+31 58 203 7172",
-    "email": "info@mideavastgoed.nl",
+    "email": "info@mvadviseurs.nl",
     "hours_display": "Ma – vr 09:00 – 17:00",
     "brand": "MV Funderingsscan"
   },

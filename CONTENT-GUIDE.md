@@ -21,9 +21,9 @@ Het script moet zonder FOUT eindigen. WAARSCHUWINGEN over woordaantal moet je oo
 ## 2. Feiten die je MAG gebruiken (en verder NIETS verzinnen)
 
 Bedrijf
-- Adres: Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden · Telefoon +31 (0) 582037172 (link `tel:+31582037172`) · E-mail info@mideavastgoed.nl (link `mailto:info@mideavastgoed.nl`) · Bereikbaar ma–vr 09:00–17:00.
+- Adres: Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden · Telefoon +31 (0) 582037172 (link `tel:+31582037172`) · E-mail info@mvadviseurs.nl (link `mailto:info@mvadviseurs.nl`) · Bereikbaar ma–vr 09:00–17:00.
 - Werkgebied: heel Friesland en de hele provincie Groningen.
-- Bedrijfsnaam: **MV Funderingsscan** (sinds oktober 2026 overal; niet meer "MV Adviseurs" of "Midea Vastgoed Adviseurs"). Logo: `/assets/logo-mvfunderingsscan.png` (wit: `-wit`). Het e-mailadres blijft info@mideavastgoed.nl.
+- Bedrijfsnaam: **MV Funderingsscan**; juridische naam **MV Funderingsscan B.V.**, KvK 42204729 (sinds oktober 2026 een zelfstandige B.V.). Noem nergens een andere onderneming als moeder- of zusterbedrijf. Logo: `/assets/logo-mvfunderingsscan.png` (wit: `-wit`). Het e-mailadres is info@mvadviseurs.nl.
 - Deskundige, opleiding, certificaten, lidmaatschappen, KvK, reviews en voorbeeldrapport: ALLEEN via `src/content/eeat.json` (placeholders tussen [vierkante haken] verschijnen niet op de live site). Zet zulke gegevens nooit los in een pagina.
 
 Diensten en prijzen (ALTIJD als indicatief presenteren)
@@ -184,7 +184,7 @@ Gebruik voor tijdelijke scripts een eigen map buiten `src/` (bijv. `tmp/<jouwnaa
 - Haren: sinds 2019 onderdeel van de gemeente Groningen; ligt op de Hondsrug (zandrug), met in de omgeving ook lager gelegen gebieden; veel vrijstaande en oudere woningen.
 - Veendam: ligt in de Veenkoloniën en is ontstaan door vervening (veenontginning); ondergrond in de omgeving van oorsprong veen op zand.
 - Winschoten: stad in Oost-Groningen, gemeente Oldambt; het Oldambt staat bekend om zware kleigronden.
-- Leeuwarden (funderingsscan-pagina): zie de eerdere feiten in sectie 2; kantoor van MV Funderingsscan staat in Leeuwarden (Mr. P. J. Troelstraweg 149).
+- Leeuwarden (funderingsscan-pagina): zie de eerdere feiten in sectie 2; kantoor van MV Funderingsscan staat in Leeuwarden (Mr. P.J. Troelstraweg 149 unit 23).
 
 ### 7.7 Gemeentepagina's – toegestane feiten (formuleer voorzichtig: "in grote delen", "kan per kern verschillen")
 - De kernen per gemeente staan in `src/content/site.json` onder `gemeenten`. Noem ALLEEN die kernen (geen andere dorpen verzinnen). Onder de pagina wordt automatisch een blok "Kernen in de gemeente" getoond; jouw tekst noemt de kernen ook natuurlijk in de lopende tekst.

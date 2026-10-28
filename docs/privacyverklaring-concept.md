@@ -3,7 +3,7 @@
 > **Let op:** dit is een werkdocument met invulvelden en géén juridisch advies. Laat de tekst beoordelen voordat je hem publiceert. Alles tussen [HAKEN] moet nog worden ingevuld of gecontroleerd. Dit document staat bewust niet op de website.
 
 ## Wie is verantwoordelijk?
-MV Funderingsscan, Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden, info@mideavastgoed.nl, +31 (0) 582037172. KvK-nummer: [KVK-NUMMER INVULLEN].
+MV Funderingsscan B.V., Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden, info@mvadviseurs.nl, +31 (0) 582037172. KvK-nummer: 42204729.
 
 ## Welke gegevens verwerken we en waarom?
 | Situatie | Gegevens | Doel | Grondslag |
@@ -29,7 +29,7 @@ Met verwerkers die we nodig hebben voor de website en communicatie:
 [BEWAARTERMIJNEN VASTSTELLEN, bijv. aanvragen zonder opdracht, afgeronde dossiers, rapporten, e-maillog.]
 
 ## Jouw rechten
-Inzage, correctie, verwijdering, beperking, bezwaar en overdraagbaarheid: mail naar info@mideavastgoed.nl. Je kunt een klacht indienen bij de Autoriteit Persoonsgegevens.
+Inzage, correctie, verwijdering, beperking, bezwaar en overdraagbaarheid: mail naar info@mvadviseurs.nl. Je kunt een klacht indienen bij de Autoriteit Persoonsgegevens.
 
 ## Cookies
 Het beheerportaal gebruikt één functionele cookie om ingelogde medewerkers te herkennen. Op de rest van de website worden [CONTROLEREN: geen tracking- of analysecookies] gebruikt.

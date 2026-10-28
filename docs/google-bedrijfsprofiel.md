@@ -5,7 +5,7 @@ https://business.google.com. Controleer alles nog één keer voordat je publicee
 
 > **Belangrijkste regel: NAP exact gelijk houden.**
 > Naam, adres en telefoon moeten overal letterlijk hetzelfde zijn als op de website
-> (`src/content/site.json`): **MV Funderingsscan · Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden · +31 (0) 582037172 · https://www.mvfunderingsscan.nl/**
+> (`src/content/site.json`): **MV Funderingsscan · Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden · +31 (0) 582037172 · https://www.mvfunderingsscan.nl/**
 
 ---
 

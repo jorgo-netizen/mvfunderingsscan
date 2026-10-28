@@ -16,6 +16,15 @@ import { readZip, writeZip } from '../api/_lib/zip.js';
 const SRC = new URL('../rapport-sjabloon/origineel/fase0-rapport-origineel.docx', import.meta.url);
 const OUT = new URL('../rapport-sjabloon/fase0-rapport.docx', import.meta.url);
 const NAVY = '0A2F41'; // kleur van de vaste gegevens in het rapport
+const BEDRIJF = {
+  naam: 'MV Funderingsscan B.V.',
+  adres: 'Mr. P.J. Troelstraweg 149 unit 23',
+  postcode_plaats: '8919 AA Leeuwarden',
+  email: 'info@mvadviseurs.nl',
+  kvk: '42204729',
+  website: 'www.mvfunderingsscan.nl',
+};
+const LOGO = new URL('../public/assets/logo-mvfunderingsscan.png', import.meta.url);
 
 const zip = readZip(readFileSync(SRC));
 let doc = zip.get('word/document.xml').toString('utf8');
@@ -109,6 +118,34 @@ veld(191, '[ gevel(s) invullen waar gemeten is ]', 'lv_meetpunten');
 veld(237, '[ gevel invullen ]', 'sl_meetpunten');
 fotovak(240, 'schietlood', 1);
 
+// ---------------------------------------------------------------- bedrijfsgegevens (MV Funderingsscan B.V.)
+// Het origineel is van Midea Vastgoed Adviseurs; het rapport komt nu van de eigen B.V.
+/** Vervangt in alinea i vaste tekst die exact één keer voorkomt. */
+function vast(i, oud, nieuw) {
+  const n = paras[i].split(oud).length - 1;
+  if (n !== 1) throw new Error(`Alinea ${i}: "${oud}" komt ${n} keer voor (gevonden: "${text(paras[i])}")`);
+  paras[i] = paras[i].replace(oud, nieuw);
+}
+vast(53, '>Naam MV-Adviseur:<', '>Naam adviseur:<');
+vast(11, '>Midea Vastgoed Adviseurs<', `>${BEDRIJF.naam}<`);
+vast(12, '>Mr. P.J. Troelstraweg 149 unit 29, 8919 AA Leeuwarden<', `>${BEDRIJF.adres}, ${BEDRIJF.postcode_plaats}<`);
+vast(13, '>E-mail. info@mideavastgoed.nl<', `>E-mail. ${BEDRIJF.email}<`);
+vast(16, '>92396674<', `>${BEDRIJF.kvk}<`);
+vast(63, '>Midea Vastgoed Adviseurs (MV-Adviseurs)<', `>${BEDRIJF.naam}<`);
+vast(65, '>Midea Vastgoed Adviseurs<', `>${BEDRIJF.naam}<`);
+vast(67, '>Mr. P.J. Troelstraweg 149 unit 29 8919 AA Leeuwarden<', `>${BEDRIJF.adres}, ${BEDRIJF.postcode_plaats}<`);
+vast(90, ' heeft Midea Vastgoed Adviseurs in opdracht van ', ` heeft ${BEDRIJF.naam} in opdracht van `);
+vast(116, 'Directie van Midea Vastgoed Adviseurs', `Directie van ${BEDRIJF.naam}`);
+// J. Diensten: alleen wat MV Funderingsscan zelf aanbiedt
+vast(254, '>Midea Vastgoed Adviseurs biedt verschillende diensten aan;<', `>${BEDRIJF.naam} biedt de volgende diensten aan:<`);
+vast(255, '>Keuring<', '>Funderingsonderzoek<');
+vast(256, '>- Bouwkundig onderzoeken zoals vochtproblemen, scheurvorming, hout borende insect soorten, etc<', '>- Fase 0 funderingsrisico-onderzoek (QuickScan)<');
+vast(257, '>- Digitale plattegronden woning of bedrijfspanden<', '>- Fase 1 funderingsonderzoek<');
+vast(258, '>- NEN2580 meetrapport<', '>- Funderingsmetingen, zoals lintvoegwaterpassing, loodmeting en vloerveldwaterpassing<');
+if (text(paras[259]) !== 'Energie' || !text(paras[263]).includes('maatwerkadvies')) throw new Error('Dienstenblok Energie niet gevonden');
+for (let i = 259; i <= 263; i++) paras[i] = '';
+vast(265, 'kijk op website www.mideavastgoed.nl of neem', `kijk op ${BEDRIJF.website} of neem`);
+
 // meettabellen: eerste lege rij wordt de sjabloonrij, overige lege rijen vervallen (de generator kloont per meting)
 function meetrij(eersteAlinea, aantalRijen, prefix) {
   const cellen = ['omschrijving', 'meting', 'afstand', 'typering'];
@@ -144,6 +181,19 @@ for (const [oud, nieuw] of [['>[ adres invullen ]<', '>{{object_adres_volledig}}
 foot = foot.replace(/(\{\{[a-z_]+\}\}<\/w:t>)/g, '$1'); // tekst blijft in dezelfde opmaak
 zip.set('word/footer1.xml', foot);
 
+// koptekst: logo van MV Funderingsscan in plaats van het Midea-logo (de naam staat in het logo zelf)
+{
+  let hdr = zip.get('word/header1.xml').toString('utf8');
+  const rels = zip.get('word/_rels/header1.xml.rels').toString('utf8');
+  if (!rels.includes('Target="media/image13.png"') || hdr.split('cx="438150" cy="390525"').length !== 3 || !hdr.includes('>   MIDEA Vastgoed Adviseurs<')) throw new Error('Koptekst: logo of naam niet gevonden');
+  const png = readFileSync(LOGO);
+  const breedte = 1620000; // ca. 4,5 cm
+  const hoogte = Math.round(breedte * png.readUInt32BE(20) / png.readUInt32BE(16));
+  hdr = hdr.replaceAll('cx="438150" cy="390525"', `cx="${breedte}" cy="${hoogte}"`).replace('>   MIDEA Vastgoed Adviseurs<', '><');
+  zip.set('word/header1.xml', hdr);
+  zip.set('word/media/image13.png', png);
+}
+
 // Word vraagt bij openen om velden (inhoudsopgave, paginanummers) bij te werken
 let settings = zip.get('word/settings.xml').toString('utf8');
 if (!settings.includes('<w:updateFields')) settings = settings.replace(/(<w:settings[^>]*>)/, '$1<w:updateFields w:val="true"/>');
@@ -151,6 +201,6 @@ zip.set('word/settings.xml', settings);
 
 const out = writeZip(zip);
 writeFileSync(OUT, out);
-const versie = createHash('sha256').update(readFileSync(SRC)).digest('hex').slice(0, 12);
+const versie = createHash('sha256').update(readFileSync(SRC)).update(readFileSync(new URL(import.meta.url))).update(readFileSync(LOGO)).digest('hex').slice(0, 12);
 writeFileSync(new URL('../rapport-sjabloon/sjabloon-versie.json', import.meta.url), JSON.stringify({ versie: `fase0-${versie}`, bron: 'origineel/fase0-rapport-origineel.docx', gemaakt: new Date().toISOString().slice(0, 10) }, null, 2) + '\n');
 console.log(`✔ Sjabloon gemaakt: rapport-sjabloon/fase0-rapport.docx (versie fase0-${versie})`);

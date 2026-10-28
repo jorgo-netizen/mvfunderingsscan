@@ -5,7 +5,7 @@
  */
 import { esc, siteUrl, logError } from './http.js';
 
-const NAP = { phone: '+31 (0) 582037172', phoneHref: 'tel:+31582037172', email: 'info@mideavastgoed.nl' };
+const NAP = { phone: '+31 (0) 582037172', phoneHref: 'tel:+31582037172', email: 'info@mvadviseurs.nl' };
 
 export async function resendSend(payload, idempotencyKey) {
   const key = process.env.RESEND_API_KEY;
@@ -47,7 +47,7 @@ const wrap = (title, inner) => `<!doctype html><html lang="nl"><body style="marg
 ${inner}
 </td></tr>
 <tr><td style="padding:18px 28px;background:#f4f6f8;font-size:13px;color:#5f7286;line-height:1.5">
-MV Funderingsscan · Mr. P. J. Troelstraweg 149, 8919 AA Leeuwarden<br>
+MV Funderingsscan B.V. · Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden<br>
 <a href="${NAP.phoneHref}" style="color:#102945">${NAP.phone}</a> · <a href="mailto:${NAP.email}" style="color:#102945">${NAP.email}</a> · <a href="${siteUrl()}/" style="color:#102945">mvfunderingsscan.nl</a>
 </td></tr></table></td></tr></table></body></html>`;
 

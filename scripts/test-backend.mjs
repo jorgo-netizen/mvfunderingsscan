@@ -216,7 +216,7 @@ test('aanvraag: Fase 0 wordt geregistreerd, klant krijgt trackinglink, dubbele i
   assert.match(r.json.tracking.dossier, /^MV-\d{4}-0001$/);
   assert.equal(r.json.tracking.mail, 'verzonden');
   const customer = mails.find((m) => m.to[0] === 'jan@example.com');
-  const office = mails.find((m) => m.to[0] === 'info@mideavastgoed.nl');
+  const office = mails.find((m) => m.to[0] === 'info@mvadviseurs.nl');
   assert.ok(customer && office, 'klantmail en kantoormail');
   assert.ok(customer.idem && office.idem, 'Idempotency-Key bij beide mails');
   assert.ok(office.text.includes(r.json.tracking.dossier));
@@ -440,7 +440,7 @@ test('rapporten: risicocategorie komt alleen van de adviseur en moet worden beve
   const docx = readZip(await db.getObject('rapport-bestanden', d.json.versions[0].docx_path));
   const xml = [...docx.entries()].filter(([k]) => /^word\/(document|footer\d*)\.xml$/.test(k)).map(([, v]) => v.toString('utf8')).join('');
   assert.ok(!xml.includes('{{'), 'geen open sjabloonvelden');
-  for (const t of ['Melvin Krikke', 'CE240260817-02', 'Voorbeeldstraat 1', nr, 'Midea Vastgoed Adviseurs', 'Testadvies voor dit fictieve testrapport.']) assert.ok(xml.includes(t), `ontbreekt: ${t}`);
+  for (const t of ['Melvin Krikke', 'CE240260817-02', 'Voorbeeldstraat 1', nr, 'MV Funderingsscan B.V.', '42204729', 'Testadvies voor dit fictieve testrapport.']) assert.ok(xml.includes(t), `ontbreekt: ${t}`);
   assert.ok(xml.includes('mvfs-pijl'), 'pijl op het voorblad');
   // definitief = niet meer te wijzigen
   assert.equal((await admin(s, 'rapport-opslaan', { method: 'POST', body: { id, data: volledig() } })).status, 409);

@@ -33,7 +33,7 @@ Zie `.env.example`. Stel in onder Vercel → Project → Settings → Environmen
 | `SUPABASE_SERVICE_KEY` | ja | Geheime server-sleutel |
 | `RESEND_API_KEY` | ja (bestaat al) | Ook gebruikt voor klantmails |
 | `AANVRAAG_FROM` | ja | Afzender op een in Resend **geverifieerd domein**. Met het standaardadres `onboarding@resend.dev` kunnen géén mails naar klanten worden gestuurd. |
-| `AANVRAAG_TO` | nee | Standaard info@mideavastgoed.nl |
+| `AANVRAAG_TO` | nee | Standaard info@mvadviseurs.nl |
 | `MVFS_SITE_URL` | nee | Standaard `https://www.mvfunderingsscan.nl`. Zet dit op `https://mvfunderingsscan.vercel.app` zolang het domein nog niet gekoppeld is, anders verwijzen de trackinglinks naar een domein dat nog niet werkt. |
 | `MVFS_PEPPER` | aanbevolen | Willekeurige geheime tekst (32+ tekens) voor het hashen van IP-adressen bij rate limiting |
 | `DEEPL_API_KEY` | nee | Sleutel van de DeepL API. Zonder deze sleutel blijft de vertaalknop verborgen. Zie hoofdstuk 10. |
@@ -46,9 +46,9 @@ Na het instellen: opnieuw deployen.
 Er is geen publieke registratie. Accounts maak je op je eigen computer, met de variabelen `SUPABASE_URL` en `SUPABASE_SERVICE_KEY` alleen in je terminal (niet in een bestand dat in Git komt):
 
 ```
-npm run beheer:gebruiker -- --email naam@mideavastgoed.nl --naam "Voornaam Achternaam" --rol beheerder
-npm run beheer:gebruiker -- --email naam@mideavastgoed.nl --nieuw-wachtwoord
-npm run beheer:gebruiker -- --email naam@mideavastgoed.nl --uitschakelen
+npm run beheer:gebruiker -- --email naam@mvadviseurs.nl --naam "Voornaam Achternaam" --rol beheerder
+npm run beheer:gebruiker -- --email naam@mvadviseurs.nl --nieuw-wachtwoord
+npm run beheer:gebruiker -- --email naam@mvadviseurs.nl --uitschakelen
 ```
 
 - **Rollen:** `beheerder` mag alles, ook aanvragen definitief verwijderen. `medewerker` mag alles behalve dat.
@@ -140,6 +140,6 @@ Kosten: de hele site in één keer vertalen is ongeveer 2 miljoen tekens (inclus
 
 Goed om te weten:
 - Vertaald wordt wat de bezoeker ziet. Ingevulde formuliergegevens gaan nooit naar DeepL.
-- De merknaam *MV Funderingsscan* en *Midea Vastgoed Adviseurs* worden niet vertaald.
+- De merknaam *MV Funderingsscan* wordt niet vertaald.
 - De vertaling is niet zichtbaar voor zoekmachines (die zien de Nederlandse pagina). Wil je later ook in Google gevonden worden op Engelse zoekwoorden, dan zijn aparte Engelse pagina's nodig.
 - Lokaal testen zonder DeepL: start de server met `MVFS_VERTAAL_TEST=1` (dan wordt tekst in hoofdletters gezet in plaats van vertaald). Dit werkt nooit in productie.

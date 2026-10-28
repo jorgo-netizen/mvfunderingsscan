@@ -29,8 +29,8 @@
     "linkedin": "[LINKEDIN-PROFIEL-URL INVULLEN]"
   },
   "bedrijf": {
-    "kvk": "[KVK-NUMMER INVULLEN]",
-    "juridische_naam": "[JURIDISCHE NAAM VOLGENS KVK INVULLEN]",
+    "kvk": "42204729",
+    "juridische_naam": "MV Funderingsscan B.V.",
     "sameAs": [
       "[URL LINKEDIN-BEDRIJFSPAGINA INVULLEN]",
       "[URL GOOGLE BEDRIJFSPROFIEL INVULLEN]",

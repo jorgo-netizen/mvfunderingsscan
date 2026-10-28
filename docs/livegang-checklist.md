@@ -10,7 +10,7 @@ binnenkomen, daarna pas verkeer genereren.
 - [ ] Maak een API-sleutel aan.
 - [ ] Vercel → project → Settings → Environment Variables:
   - `RESEND_API_KEY` = de sleutel
-  - `AANVRAAG_TO` = het adres dat de aanvragen moet ontvangen (standaard `info@mideavastgoed.nl`)
+  - `AANVRAAG_TO` = het adres dat de aanvragen moet ontvangen (standaard `info@mvadviseurs.nl`)
   - `AANVRAAG_FROM` = `MV Funderingsscan <aanvraag@mvfunderingsscan.nl>`
 - [ ] Opnieuw deployen en een testaanvraag doen via `/funderingsscan-aanvragen/`, `/contact/` en de homepage.
 
