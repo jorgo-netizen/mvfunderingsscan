@@ -798,18 +798,44 @@
       const acc = h('select', { 'aria-label': 'Gekoppeld account' }, h('option', { value: '', text: '– geen –' }), u.items.map((x) => h('option', { value: x.id, text: `${x.name} (${x.email})` })));
       acc.value = a.user_id || '';
       const actief = h('input', { type: 'checkbox', checked: a.active !== false, 'aria-label': 'Actief' });
-      return h('tr', {}, h('td', {}, naam), h('td', {}, cert), h('td', {}, acc), h('td', {}, actief),
+      const foto = a.id ? fotoCel(a) : h('span', { class: 'portal-muted', text: 'Eerst toevoegen' });
+      return h('tr', {}, h('td', {}, naam), h('td', {}, cert), h('td', {}, acc), h('td', {}, actief), h('td', {}, foto),
         h('td', {}, h('button', { type: 'button', class: 'btn btn-gold btn-sm', text: a.id ? 'Opslaan' : 'Toevoegen', onclick: async () => {
           if (a.id && (cert.value !== a.certificate || naam.value !== a.name) && !window.confirm('Naam of certificaatnummer wijzigen? Dit wordt gebruikt in nieuwe rapporten.')) return;
           try { await api('rapport-adviseur-opslaan', { method: 'POST', body: { id: a.id, name: naam.value, certificate: cert.value, user_id: acc.value || null, active: actief.checked } }); await advisorsPage(); }
           catch (err) { flash(msg, err.message, 'error'); }
         } })));
     };
+    // Portretfoto voor de website (/over-ons/). Wordt verkleind tot max. 640 px en opnieuw als JPEG opgeslagen.
+    const fotoCel = (a) => {
+      const box = h('div', { class: 'portal-foto' });
+      const toon = (url) => {
+        box.replaceChildren(url ? h('img', { src: url, alt: `Foto van ${a.name}`, width: 56, height: 56 }) : h('span', { class: 'portal-muted', text: 'Geen foto' }));
+        if (url) box.append(h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: 'Verwijderen', onclick: async () => {
+          if (!window.confirm(`Foto van ${a.name} verwijderen? Op de website verschijnen dan de initialen.`)) return;
+          try { await api('rapport-adviseur-foto', { method: 'POST', body: { id: a.id, verwijderen: true } }); toon(null); flash(msg, 'Foto verwijderd. Binnen enkele minuten ook van de website.', 'ok'); }
+          catch (err) { flash(msg, err.message, 'error'); }
+        } }));
+      };
+      const kies = h('input', { type: 'file', accept: 'image/jpeg,image/png,image/webp', 'aria-label': `Foto van ${a.name} kiezen`, class: 'portal-foto-input' });
+      kies.addEventListener('change', async () => {
+        const file = kies.files[0]; if (!file) return;
+        try {
+          const data = await resizeImage(file, 640);
+          const r = await api('rapport-adviseur-foto', { method: 'POST', body: { id: a.id, type: 'image/jpeg', data } });
+          toon(r.foto_url); flash(msg, `Foto van ${a.name} opgeslagen. Binnen enkele minuten zichtbaar op de website.`, 'ok');
+        } catch (err) { flash(msg, err.message, 'error'); }
+        kies.value = '';
+      });
+      toon(a.foto_url);
+      return h('div', {}, box, kies);
+    };
     render(h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'Adviseurs en certificaatnummers' })),
       h('p', {}, h('a', { href: '#/rapporten', text: '← Rapporten' })),
       h('div', { class: 'portal-card' },
         h('p', { class: 'portal-hint', text: 'Het certificaatnummer wordt automatisch in het rapport gezet bij de gekozen adviseur. Koppel een adviseur aan een account: dat account mag rapporten van deze adviseur definitief maken en versturen.' }),
-        msg, h('div', { class: 'portal-table-wrap' }, h('table', { class: 'portal-table' }, h('thead', {}, h('tr', {}, ['Naam', 'Certificaatnummer', 'Gekoppeld account', 'Actief', ''].map((t) => h('th', { scope: 'col', text: t })))),
+        h('p', { class: 'portal-hint', text: 'Foto op website: een portretfoto voor de pagina Over ons. Zonder foto staan daar de initialen. Gebruik een recente foto van de adviseur zelf, geen stockfoto.' }),
+        msg, h('div', { class: 'portal-table-wrap' }, h('table', { class: 'portal-table' }, h('thead', {}, h('tr', {}, ['Naam', 'Certificaatnummer', 'Gekoppeld account', 'Actief', 'Foto op website', ''].map((t) => h('th', { scope: 'col', text: t })))),
           h('tbody', {}, d.items.map((a) => rij(a)), rij())))));
   }
 

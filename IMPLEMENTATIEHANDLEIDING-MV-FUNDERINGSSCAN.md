@@ -143,3 +143,11 @@ Goed om te weten:
 - De merknaam *MV Funderingsscan* wordt niet vertaald.
 - De vertaling is niet zichtbaar voor zoekmachines (die zien de Nederlandse pagina). Wil je later ook in Google gevonden worden op Engelse zoekwoorden, dan zijn aparte Engelse pagina's nodig.
 - Lokaal testen zonder DeepL: start de server met `MVFS_VERTAAL_TEST=1` (dan wordt tekst in hoofdletters gezet in plaats van vertaald). Dit werkt nooit in productie.
+
+## 11. Adviseurs op de website en hun foto
+
+Op `/over-ons/` staan de adviseurs uit `src/content/eeat.json` (`experts`): naam en functie verplicht, opleiding, ervaring, certificaten en LinkedIn optioneel. Alleen ingevulde velden (zonder [vierkante haken]) komen online.
+
+De portretfoto beheer je in het beheerportaal: *Rapporten → Adviseurs → Foto op website*. Eenmalig nodig: voer in Supabase (SQL Editor) `supabase/migrations/004_mvfs_adviseur_foto.sql` uit. De foto wordt verkleind tot 640 px, zonder EXIF-gegevens opgeslagen en is binnen enkele minuten zichtbaar. Zonder foto toont de site de initialen.
+
+De koppeling gaat op naam: de naam in het portaal moet gelijk zijn aan de naam in `eeat.json`.

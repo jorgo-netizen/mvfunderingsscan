@@ -29,27 +29,35 @@ export function openPlaceholders(obj = EEAT, path = '') {
   return out;
 }
 
-const E = EEAT.expert || {};
-export const EXPERT_OK = filled(E.naam) && filled(E.functie);
+/** Adviseurs uit eeat.json → "experts". Alleen wie naam en functie echt ingevuld heeft, telt mee. */
+const slug = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const ALL = EEAT.experts || (EEAT.expert ? [EEAT.expert] : []);
+export const EXPERTS = ALL.filter((e) => filled(e.naam) && filled(e.functie)).map((e) => ({ ...e, slug: slug(e.naam) }));
+export const EXPERT_OK = EXPERTS.length > 0;
 export const PERSON_ID_SUFFIX = '/over-ons/#deskundige';
+const personId = (domain, e) => `${domain}/over-ons/#${e.slug}`;
+/** Portretfoto: beheerd in het beheerportaal (Adviseurs). /teamfoto/<slug>/ stuurt door naar de foto of geeft 404. */
+export const teamFotoUrl = (e) => `/teamfoto/${e.slug}/`;
 
-/** Person-schema, alleen als naam en functie echt zijn ingevuld. */
-export function personSchema(domain, orgId) {
-  if (!EXPERT_OK) return null;
-  const sameAs = filled(E.linkedin) ? [E.linkedin] : [];
-  return {
-    '@type': 'Person',
-    '@id': domain + PERSON_ID_SUFFIX,
-    name: E.naam,
-    jobTitle: E.functie,
-    worksFor: { '@id': orgId },
-    url: domain + '/over-ons/#deskundige',
-    ...(filled(E.foto) ? { image: E.foto.startsWith('http') ? E.foto : domain + E.foto } : {}),
-    ...(filledList(E.specialisaties).length ? { knowsAbout: filledList(E.specialisaties) } : {}),
-    ...(filledList(E.certificaten).length ? { hasCredential: filledList(E.certificaten).map((c) => ({ '@type': 'EducationalOccupationalCredential', name: c })) } : {}),
-    ...(filledList(E.lidmaatschappen).length ? { memberOf: filledList(E.lidmaatschappen).map((m) => ({ '@type': 'Organization', name: m })) } : {}),
-    ...(sameAs.length ? { sameAs } : {}),
-  };
+const naamLijst = (items) => (items.length < 2 ? items.join('') : `${items.slice(0, -1).join(', ')} en ${items[items.length - 1]}`);
+
+/** Person-schema per adviseur, alleen als naam en functie echt zijn ingevuld. */
+export function personSchemas(domain, orgId) {
+  return EXPERTS.map((E) => {
+    const sameAs = filled(E.linkedin) ? [E.linkedin] : [];
+    return {
+      '@type': 'Person',
+      '@id': personId(domain, E),
+      name: E.naam,
+      jobTitle: E.functie,
+      worksFor: { '@id': orgId },
+      url: personId(domain, E),
+      ...(filledList(E.specialisaties).length ? { knowsAbout: filledList(E.specialisaties) } : {}),
+      ...(filledList(E.certificaten).length ? { hasCredential: filledList(E.certificaten).map((c) => ({ '@type': 'EducationalOccupationalCredential', name: c })) } : {}),
+      ...(filledList(E.lidmaatschappen).length ? { memberOf: filledList(E.lidmaatschappen).map((m) => ({ '@type': 'Organization', name: m })) } : {}),
+      ...(sameAs.length ? { sameAs } : {}),
+    };
+  });
 }
 
 /** sameAs-profielen van het bedrijf: alleen echte URL's. */
@@ -60,23 +68,32 @@ export function expertSection() {
   const base = { id: 'deskundige', h2: 'Wie voert het onderzoek uit?' };
   if (!EXPERT_OK) {
     if (!SHOW_PLACEHOLDERS) return null;
-    return { ...base, answer: '', body: phBox('Vul in src/content/eeat.json de gegevens van de deskundige in. Zolang die ontbreken, staat deze sectie niet op de live site.', openPlaceholders(E, 'expert')) };
+    return { ...base, answer: '', body: phBox('Vul in src/content/eeat.json de gegevens van de adviseurs in. Zolang die ontbreken, staat deze sectie niet op de live site.', openPlaceholders(ALL, 'experts')) };
   }
-  const rows = [
-    ['Opleiding', filledList(E.opleiding)],
-    ['Ervaring', filled(E.ervaring) ? [E.ervaring] : []],
-    ['Specialisaties', filledList(E.specialisaties)],
-    ['Certificaten en erkenningen', filledList(E.certificaten)],
-    ['Lidmaatschappen', filledList(E.lidmaatschappen)],
-  ].filter(([, v]) => v.length);
-  const photo = filled(E.foto) ? `<img class="expert-photo" src="${esc(E.foto)}" alt="Portret van ${esc(E.naam)}" width="160" height="160" loading="lazy">` : '';
-  const body = `<div class="expert-card">${photo}<div>
+  const card = (E) => {
+    const rows = [
+      ['Opleiding', filledList(E.opleiding)],
+      ['Ervaring', filled(E.ervaring) ? [E.ervaring] : []],
+      ['Specialisaties', filledList(E.specialisaties)],
+      ['Certificaten en erkenningen', filledList(E.certificaten)],
+      ['Lidmaatschappen', filledList(E.lidmaatschappen)],
+    ].filter(([, v]) => v.length);
+    const initialen = E.naam.split(/\s+/).filter(Boolean).map((w) => w[0]).filter((c) => /[A-Z]/.test(c)).slice(0, 2).join('');
+    const open = SHOW_PLACEHOLDERS ? openPlaceholders(E) : [];
+    return `<div class="expert-card" id="${E.slug}"><span class="expert-avatar" aria-hidden="true">${esc(initialen)}<img class="expert-photo" src="${teamFotoUrl(E)}" alt="" width="120" height="120" loading="lazy" decoding="async"></span><div>
 <p class="expert-name"><strong>${esc(E.naam)}</strong><br><span>${esc(E.functie)}</span></p>
 ${filled(E.introductie) ? `<p>${esc(E.introductie)}</p>` : ''}
 ${rows.length ? `<dl class="def-list">${rows.map(([k, v]) => `<div><dt>${k}</dt><dd>${v.map(esc).join('<br>')}</dd></div>`).join('')}</dl>` : ''}
 ${filled(E.linkedin) ? `<p><a href="${esc(E.linkedin)}" rel="me noopener" target="_blank">Profiel van ${esc(E.naam)} op LinkedIn</a></p>` : ''}
+${open.length ? phBox(`Nog in te vullen voor ${E.naam} (optioneel):`, open) : ''}
 </div></div>`;
-  return { ...base, answer: `Het onderzoek wordt uitgevoerd door ${esc(E.naam)}, ${esc(E.functie)} bij MV Funderingsscan.`, body };
+  };
+  const wie = naamLijst(EXPERTS.map((E) => esc(E.naam)));
+  const functies = [...new Set(EXPERTS.map((E) => E.functie.toLowerCase()))];
+  const answer = EXPERTS.length === 1
+    ? `Het onderzoek wordt uitgevoerd door ${wie}, ${esc(functies[0])} bij MV Funderingsscan.`
+    : `Het onderzoek wordt uitgevoerd door ${wie}${functies.length === 1 ? `, ${esc(functies[0].replace(/adviseur$/, 'adviseurs'))}` : ''} bij MV Funderingsscan.`;
+  return { ...base, answer, body: `<div class="expert-list">${EXPERTS.map(card).join('')}</div>` };
 }
 
 /** Echte reviews (alleen volledig ingevulde). Geen AggregateRating-schema: eigen reviews komen daar niet voor in aanmerking. */
@@ -133,10 +150,10 @@ export function rapportvoorbeeldCard() {
     </div>`;
 }
 
-/** Regel onder kennisartikelen: wie heeft het gecontroleerd en wanneer bijgewerkt. */
+/** Regel onder kennisartikelen: wie het onderzoek doen en wanneer bijgewerkt. */
 export function bylineHtml(dateNl) {
   const who = EXPERT_OK
-    ? `Inhoud gecontroleerd door <a href="/over-ons/#deskundige">${esc(E.naam)}</a>, ${esc(E.functie)}. `
-    : (SHOW_PLACEHOLDERS ? '<span class="placeholder-inline">[Gecontroleerd door: NAAM DESKUNDIGE INVULLEN in eeat.json]</span> ' : '');
+    ? `Funderingsonderzoek door ${naamLijst(EXPERTS.map((E) => `<a href="/over-ons/#${E.slug}">${esc(E.naam)}</a>`))}${EXPERTS.length > 1 && new Set(EXPERTS.map((E) => E.functie)).size === 1 ? `, ${esc(EXPERTS[0].functie.toLowerCase().replace(/adviseur$/, 'adviseurs'))}` : EXPERTS.length === 1 ? `, ${esc(EXPERTS[0].functie.toLowerCase())}` : ''}. `
+    : (SHOW_PLACEHOLDERS ? '<span class="placeholder-inline">[ADVISEURS INVULLEN in eeat.json]</span> ' : '');
   return `<p class="byline">${who}Laatst inhoudelijk bijgewerkt: <time>${dateNl}</time>. <a href="/bronnen-en-richtlijnen/">Bronnen en werkwijze</a></p>`;
 }

@@ -14,6 +14,7 @@ import { zoekLigging, weerOp } from './adres.js';
 const BUCKET = 'rapport-bestanden';
 const DOCX = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
 const str = (v, max) => String(v ?? '').trim().slice(0, max);
+const FOTO_TYPES = { 'image/jpeg': [0xff, 0xd8, 0xff], 'image/png': [0x89, 0x50, 0x4e, 0x47], 'image/webp': [0x52, 0x49, 0x46, 0x46] };
 const STATUS_KEYS = STATUSES.map(([k]) => k);
 
 /** Alleen bekende velden met beperkte lengte bewaren (geen willekeurige JSON). */
@@ -78,7 +79,7 @@ export async function rapportActies(db, req, res, actie, user, url, { json, fail
     const items = await db.reportsList({ status, search: str(url.searchParams.get('q'), 80) });
     return json(res, 200, { ok: true, items: items.map(lijstItem), statussen: STATUSES });
   }
-  if (actie === 'rapport-adviseurs') return json(res, 200, { ok: true, items: await db.advisorsList() });
+  if (actie === 'rapport-adviseurs') return json(res, 200, { ok: true, items: (await db.advisorsList()).map((a) => ({ ...a, foto_url: a.photo_path ? db.publicUrl('nieuws', a.photo_path) : null })) });
   if (actie === 'rapport-gebruikers') {
     if (user.role !== 'beheerder') return fail(res, 403, 'Alleen een beheerder kan accounts aan adviseurs koppelen.');
     return json(res, 200, { ok: true, items: (await db.usersList()).filter((u) => u.active).map(({ id, name, email }) => ({ id, name, email })) });
@@ -150,6 +151,27 @@ export async function rapportActies(db, req, res, actie, user, url, { json, fail
       return json(res, 200, { ok: true, item: a });
     } catch (err) { if (err.status === 409) return fail(res, 409, 'Deze adviseur bestaat al.'); throw err; }
   }
+  // Portretfoto voor /over-ons/ (openbaar, bucket 'nieuws' onder team/)
+  if (actie === 'rapport-adviseur-foto') {
+    if (user.role !== 'beheerder') return fail(res, 403, 'Alleen een beheerder kan foto\'s van adviseurs wijzigen.');
+    const a = isUuid(body.id) ? await db.advisorById(body.id) : null;
+    if (!a) return fail(res, 404, 'Adviseur niet gevonden.');
+    if (body.verwijderen === true) {
+      if (a.photo_path) await db.removeObject('nieuws', a.photo_path).catch((e) => logError('adviseur-foto', e));
+      await db.advisorUpdate(a.id, { photo_path: null });
+      return json(res, 200, { ok: true, foto_url: null });
+    }
+    const type = String(body.type || '');
+    if (!FOTO_TYPES[type]) return fail(res, 422, 'Alleen JPEG, PNG of WebP is toegestaan.');
+    const bytes = Buffer.from(String(body.data || ''), 'base64');
+    if (!bytes.length || bytes.length > 2 * 1024 * 1024) return fail(res, 422, 'De foto is leeg of groter dan 2 MB.');
+    if (!FOTO_TYPES[type].every((b, i) => bytes[i] === b)) return fail(res, 422, 'Het bestand is geen geldige afbeelding.');
+    const path = `team/${randomToken(12)}.${type.split('/')[1].replace('jpeg', 'jpg')}`;
+    await db.putObject('nieuws', path, bytes, type);
+    if (a.photo_path) await db.removeObject('nieuws', a.photo_path).catch((e) => logError('adviseur-foto', e));
+    await db.advisorUpdate(a.id, { photo_path: path });
+    return json(res, 200, { ok: true, foto_url: db.publicUrl('nieuws', path) });
+  }
 
   // ------------------------------------------------------------ nieuw rapport
   if (actie === 'rapport-nieuw') {
@@ -189,7 +211,7 @@ export async function rapportActies(db, req, res, actie, user, url, { json, fail
     const slot = String(body.slot || ''); const position = Number(body.position);
     if (!SLOTS[slot] || !(position >= 1 && position <= SLOTS[slot])) return fail(res, 422, 'Onbekend fotovak.');
     const buf = Buffer.from(String(body.data || ''), 'base64');
-    if (!buf.length || buf.length > 2.5 * 1024 * 1024) return fail(res, 422, 'De foto is leeg of groter dan 2,5 MB.');
+    if (!buf.length || buf.length > 2 * 1024 * 1024) return fail(res, 422, 'De foto is leeg of groter dan 2 MB.');
     const info = imageSize(buf);
     if (!info || info.width < 50 || info.height < 50) return fail(res, 422, 'Het bestand is geen geldige JPEG- of PNG-afbeelding.');
     const path = `${r.id}/fotos/${randomToken(12)}.${info.mime === 'image/png' ? 'png' : 'jpg'}`;

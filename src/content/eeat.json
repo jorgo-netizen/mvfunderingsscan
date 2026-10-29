@@ -1,6 +1,6 @@
 {
   "_uitleg": [
-    "Alle E-E-A-T-gegevens (wie, opleiding, certificaten, reviews, profielen) staan ALLEEN in dit bestand.",
+    "Alle E-E-A-T-gegevens (adviseurs, opleiding, certificaten, reviews, profielen) staan ALLEEN in dit bestand. Portretfoto's beheer je in het beheerportaal onder Adviseurs.",
     "Een waarde tussen vierkante haken, zoals [NAAM DESKUNDIGE INVULLEN], is een placeholder.",
     "Placeholders verschijnen NOOIT op de live site: blokken met een placeholder worden in productie overgeslagen.",
     "Met `npm run dev` zie je ze wel (gestippelde gele vakken), zodat je weet wat nog ontbreekt.",
@@ -8,26 +8,46 @@
     "`npm run build` en `npm run audit` tonen een lijst van alle open placeholders.",
     "Voorbeeldrapport: zet de pdf in public/assets/ en vul het pad in bij rapportvoorbeeld. Zie docs/voorbeeldrapport.md voor de anonimiseringschecklist."
   ],
-  "expert": {
-    "naam": "[NAAM DESKUNDIGE INVULLEN]",
-    "functie": "[FUNCTIE INVULLEN, bijv. funderingsonderzoeker]",
-    "foto": "[PAD NAAR PORTRETFOTO INVULLEN, bijv. /assets/img/team-naam.jpg]",
-    "introductie": "[KORTE INTRODUCTIE IN 2-3 ZINNEN INVULLEN – alleen feiten]",
-    "opleiding": [
-      "[OPLEIDING INVULLEN]"
-    ],
-    "ervaring": "[RELEVANTE WERKERVARING INVULLEN – alleen feiten, geen schattingen]",
-    "specialisaties": [
-      "[SPECIALISATIE INVULLEN]"
-    ],
-    "certificaten": [
-      "[CERTIFICAAT OF ERKENNING INVULLEN – alleen als je het echt hebt, met naam van de uitgevende organisatie]"
-    ],
-    "lidmaatschappen": [
-      "[LIDMAATSCHAP VAKORGANISATIE INVULLEN]"
-    ],
-    "linkedin": "[LINKEDIN-PROFIEL-URL INVULLEN]"
-  },
+  "experts": [
+    {
+      "naam": "Melvin Krikke",
+      "functie": "Bouwkundig adviseur",
+      "introductie": "[KORTE INTRODUCTIE IN 2-3 ZINNEN INVULLEN – alleen feiten]",
+      "opleiding": [
+        "[OPLEIDING INVULLEN]"
+      ],
+      "ervaring": "[RELEVANTE WERKERVARING INVULLEN – alleen feiten, geen schattingen]",
+      "specialisaties": [
+        "[SPECIALISATIE INVULLEN]"
+      ],
+      "certificaten": [
+        "[CERTIFICAAT OF ERKENNING INVULLEN – alleen als je het echt hebt, met naam van de uitgevende organisatie]"
+      ],
+      "lidmaatschappen": [
+        "[LIDMAATSCHAP VAKORGANISATIE INVULLEN]"
+      ],
+      "linkedin": "[LINKEDIN-PROFIEL-URL INVULLEN]"
+    },
+    {
+      "naam": "Rutger Fopma",
+      "functie": "Bouwkundig adviseur",
+      "introductie": "[KORTE INTRODUCTIE IN 2-3 ZINNEN INVULLEN – alleen feiten]",
+      "opleiding": [
+        "[OPLEIDING INVULLEN]"
+      ],
+      "ervaring": "[RELEVANTE WERKERVARING INVULLEN – alleen feiten, geen schattingen]",
+      "specialisaties": [
+        "[SPECIALISATIE INVULLEN]"
+      ],
+      "certificaten": [
+        "[CERTIFICAAT OF ERKENNING INVULLEN – alleen als je het echt hebt, met naam van de uitgevende organisatie]"
+      ],
+      "lidmaatschappen": [
+        "[LIDMAATSCHAP VAKORGANISATIE INVULLEN]"
+      ],
+      "linkedin": "[LINKEDIN-PROFIEL-URL INVULLEN]"
+    }
+  ],
   "bedrijf": {
     "kvk": "42204729",
     "juridische_naam": "MV Funderingsscan B.V.",

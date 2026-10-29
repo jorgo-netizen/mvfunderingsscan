@@ -195,3 +195,6 @@
 .portal-lookup .portal-field { margin: 0; min-width: 180px; }
 .portal-lookup .portal-flash, .portal-lookup .portal-hint { flex-basis: 100%; margin: 0; }
 .portal-link-plain { color: var(--navy); align-self: center; }
+.portal-foto { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.portal-foto img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; }
+.portal-foto-input { max-width: 220px; font-size: 13px; }

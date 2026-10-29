@@ -1054,5 +1054,11 @@
   const year = $('#year');
   if (year) year.textContent = new Date().getFullYear();
 
+  /* ---------- Portretfoto's adviseurs: geen foto in het portaal → initialen blijven zichtbaar ---------- */
+  $$('img.expert-photo').forEach((img) => {
+    const weg = () => img.remove();
+    if (img.complete && !img.naturalWidth) weg(); else img.addEventListener('error', weg);
+  });
+
   onScroll();
 })();

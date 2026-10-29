@@ -5,7 +5,7 @@ import {
   breadcrumbSchema, faqSchema, GEMEENTEN, gemeenteArea,
 } from './layout.mjs';
 import { widgetHtml } from './widgets.mjs';
-import { expertSection, reviewsSection, rapportvoorbeeldSection, personSchema, bylineHtml, EXPERT_OK, PERSON_ID_SUFFIX } from './eeat.mjs';
+import { expertSection, reviewsSection, rapportvoorbeeldSection, personSchemas, bylineHtml } from './eeat.mjs';
 
 const MAANDEN = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
 const dateNl = (iso) => { const [y, m, d] = iso.split('-').map(Number); return `${d} ${MAANDEN[m - 1]} ${y}`; };
@@ -168,10 +168,8 @@ export function render(page0) {
     about: { '@id': ORG_ID },
     breadcrumb: { '@id': url + '#breadcrumb' },
     dateModified: TODAY,
-    ...(EXPERT_OK && p.article ? { reviewedBy: { '@id': DOMAIN + PERSON_ID_SUFFIX }, lastReviewed: TODAY } : {}),
   }, breadcrumbSchema(url, p.crumbs)];
-  const person = personSchema(DOMAIN, ORG_ID);
-  if (person && (p.path === '/over-ons/' || p.article)) graph.push(person);
+  if (p.path === '/over-ons/') graph.push(...personSchemas(DOMAIN, ORG_ID));
   const gemeente = GEMEENTEN.find((g) => g.href === p.path);
   for (const key of p.services || []) graph.push(serviceSchema(key, gemeente ? gemeenteArea(gemeente) : null));
   if (p.article) {

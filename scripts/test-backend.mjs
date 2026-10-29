@@ -490,6 +490,14 @@ test('rapporten: definitief maken alleen door gekoppelde adviseur of beheerder; 
   assert.equal((await admin(m, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } })).status, 403, 'andere medewerker nog steeds niet');
   assert.equal((await admin(mk, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } })).status, 200);
   assert.equal((await admin(m, 'rapport-verwijderen', { method: 'POST', body: { id, bevestig: 'x' } })).status, 403);
+  // portretfoto voor de website: alleen beheerder, alleen echte afbeeldingen
+  const jpeg = Buffer.from([0xff, 0xd8, 0xff, 0xe0, 0, 0x10]).toString('base64');
+  assert.equal((await admin(m, 'rapport-adviseur-foto', { method: 'POST', body: { id: adv[0].id, type: 'image/jpeg', data: jpeg } })).status, 403);
+  assert.equal((await admin(s, 'rapport-adviseur-foto', { method: 'POST', body: { id: adv[0].id, type: 'image/jpeg', data: Buffer.from('<svg>').toString('base64') } })).status, 422);
+  const foto = await admin(s, 'rapport-adviseur-foto', { method: 'POST', body: { id: adv[0].id, type: 'image/jpeg', data: jpeg } });
+  assert.equal(foto.status, 200); assert.match(foto.json.foto_url, /team\/[\w-]+\.jpg$/);
+  assert.ok((await admin(s, 'rapport-adviseurs')).json.items.find((a) => a.id === adv[0].id).foto_url);
+  assert.equal((await admin(s, 'rapport-adviseur-foto', { method: 'POST', body: { id: adv[0].id, verwijderen: true } })).json.foto_url, null);
 });
 
 test('rapporten: PDF vastleggen, versturen met adrescontrole, geen dubbele verzending, nieuwe versie overschrijft niets, uitkomst op trackingpagina', async () => {
