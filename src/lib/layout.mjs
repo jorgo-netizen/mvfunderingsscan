@@ -1,5 +1,5 @@
 /**
- * Gedeelde layout, metadata en structured data voor mvfunderingsscan.nl.
+ * Gedeelde layout, metadata en structured data voor mvfunderingsquickscan.nl.
  *
  * Alle bedrijfsgegevens (NAP) komen uit src/content/site.json, zodat ze op
  * elke pagina, in de JSON-LD en in het Google Bedrijfsprofiel exact gelijk zijn.
@@ -346,7 +346,7 @@ ${links.map(([h, l]) => `        <li><a href="${h}">${l}</a></li>`).join('\n')}
 ${cols}
   </div>
   <div class="container footer-bottom">
-    <span>© <span id="year">2026</span> ${NAP.legal_name || NAP.name}${NAP.kvk ? ` · KvK ${NAP.kvk}` : ''} · mvfunderingsscan.nl</span>
+    <span>© <span id="year">2026</span> ${NAP.legal_name || NAP.name}${NAP.kvk ? ` · KvK ${NAP.kvk}` : ''} · mvfunderingsquickscan.nl</span>
     <nav class="footer-meta" aria-label="Overige pagina's"><a href="/over-ons/">Over ons</a><a href="/werkwijze/">Werkwijze</a><a href="/kennisbank/">Kennisbank</a><a href="/nieuws/">Nieuws</a><a href="/contact/">Contact</a><a href="/funderingsscan-aanvragen/">Aanvragen</a><a href="/privacyverklaring/">Privacy</a><a href="/algemene-voorwaarden/">Voorwaarden</a><a class="footer-login" href="/beheer/" rel="nofollow"><svg aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Inloggen</a></nav>
   </div>
 </footer>

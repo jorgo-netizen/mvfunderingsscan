@@ -1,4 +1,4 @@
-# SEO/GEO-audit mvfunderingsscan.nl
+# SEO/GEO-audit mvfunderingsquickscan.nl
 
 Gegenereerd door `npm run audit` op 2026-10-23 – 140 indexeerbare pagina's, 212.204 woorden in totaal.
 

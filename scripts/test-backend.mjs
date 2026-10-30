@@ -12,7 +12,7 @@ import { join } from 'node:path';
 
 process.env.MVFS_DB = 'memory';
 process.env.MVFS_DEV_STORAGE = mkdtempSync(join(tmpdir(), 'mvfs-test-'));
-process.env.MVFS_SITE_URL = 'https://www.mvfunderingsscan.nl';
+process.env.MVFS_SITE_URL = 'https://www.mvfunderingsquickscan.nl';
 delete process.env.SUPABASE_URL; delete process.env.SUPABASE_SERVICE_KEY; delete process.env.VERCEL_ENV;
 
 const { getDb, resetDbForTests } = await import('../api/_lib/db.js');
@@ -172,7 +172,7 @@ test('nieuws: concept, unieke slug, publiceren, aanpassen, depubliceren, verwijd
   assert.ok(page.body.includes('Nieuwe regels &lt;b&gt;funderingsonderzoek&lt;/b&gt;'), 'titel ge-escaped');
   assert.ok(!page.body.includes('<b>funderingsonderzoek</b>'), 'ook niet onge-escaped in JSON-LD');
   assert.ok(page.body.includes('"@type":"NewsArticle"') || page.body.includes('"@type": "NewsArticle"'));
-  assert.ok(page.body.includes('<link rel="canonical" href="https://www.mvfunderingsscan.nl/nieuws/nieuwe-regels-funderingsonderzoek/">'));
+  assert.ok(page.body.includes('<link rel="canonical" href="https://www.mvfunderingsquickscan.nl/nieuws/nieuwe-regels-funderingsonderzoek/">'));
   assert.ok(page.body.includes('href="/fase-0-funderingsonderzoek/"'));
   const index = await call(nieuws, { url: '/api/nieuws' });
   assert.ok(index.body.includes('/nieuws/nieuwe-regels-funderingsonderzoek/') && !index.body.includes('noindex'));
@@ -222,7 +222,7 @@ test('aanvraag: Fase 0 wordt geregistreerd, klant krijgt trackinglink, dubbele i
   assert.ok(office.text.includes(r.json.tracking.dossier));
   const token = tokenFromMail(customer);
   assert.ok(token, 'link met token in de mail');
-  assert.ok(customer.text.includes(`https://www.mvfunderingsscan.nl/status/#t=${token}`), 'token in #-fragment, niet in querystring');
+  assert.ok(customer.text.includes(`https://www.mvfunderingsquickscan.nl/status/#t=${token}`), 'token in #-fragment, niet in querystring');
   // token staat alleen gehasht in de database
   const db = getDb();
   const raw = JSON.stringify(db._data);

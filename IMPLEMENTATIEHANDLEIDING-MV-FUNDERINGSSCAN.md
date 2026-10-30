@@ -34,7 +34,7 @@ Zie `.env.example`. Stel in onder Vercel → Project → Settings → Environmen
 | `RESEND_API_KEY` | ja (bestaat al) | Ook gebruikt voor klantmails |
 | `AANVRAAG_FROM` | ja | Afzender op een in Resend **geverifieerd domein**. Met het standaardadres `onboarding@resend.dev` kunnen géén mails naar klanten worden gestuurd. |
 | `AANVRAAG_TO` | nee | Standaard info@mvadviseurs.nl |
-| `MVFS_SITE_URL` | nee | Standaard `https://www.mvfunderingsscan.nl`. Zet dit op `https://mvfunderingsscan.vercel.app` zolang het domein nog niet gekoppeld is, anders verwijzen de trackinglinks naar een domein dat nog niet werkt. |
+| `MVFS_SITE_URL` | nee | Standaard `https://www.mvfunderingsquickscan.nl`. Zet dit op `https://mvfunderingsscan.vercel.app` zolang het domein nog niet gekoppeld is, anders verwijzen de trackinglinks naar een domein dat nog niet werkt. |
 | `MVFS_PEPPER` | aanbevolen | Willekeurige geheime tekst (32+ tekens) voor het hashen van IP-adressen bij rate limiting |
 | `DEEPL_API_KEY` | nee | Sleutel van de DeepL API. Zonder deze sleutel blijft de vertaalknop verborgen. Zie hoofdstuk 10. |
 | `DEEPL_MAAND_LIMIET` | nee | Maximaal aantal tekens per maand dat naar DeepL gaat (standaard 450000). Daarboven stopt de vertaalknop tot de volgende maand. |
@@ -55,13 +55,13 @@ npm run beheer:gebruiker -- --email naam@mvadviseurs.nl --uitschakelen
 - **Wachtwoorden:** minimaal 12 tekens. Het script vraagt het wachtwoord zonder het te tonen.
 - **Nieuw wachtwoord of uitschakelen:** daarmee eindigen ook alle bestaande sessies van dat account.
 
-Inloggen gaat via `https://www.mvfunderingsscan.nl/beheer/`.
+Inloggen gaat via `https://www.mvfunderingsquickscan.nl/beheer/`.
 
 ## 5. Hoe Track & Trace werkt
 
 1. Een klant vraagt via het aanvraagformulier of het formulier op de homepage een **Fase 0 Quick Scan** aan.
 2. `api/aanvraag.js` registreert de aanvraag. Elk ingevuld formulier heeft een eigen sleutel (`formulier_id`), zodat dubbel versturen geen tweede dossier oplevert. De aanvraag krijgt een dossiernummer (`MV-2026-0001`) en een willekeurig trackingtoken van 256 bits. In de database staat alleen `sha256(token)`.
-3. De klant krijgt een e-mail met `https://www.mvfunderingsscan.nl/status/#t=<token>`. Het token staat achter `#` en wordt daardoor **niet naar de server gestuurd**: het komt niet in serverlogs, analytics of Referer-headers. De statuspagina stuurt het token in de body van een POST naar `/api/status/`.
+3. De klant krijgt een e-mail met `https://www.mvfunderingsquickscan.nl/status/#t=<token>`. Het token staat achter `#` en wordt daardoor **niet naar de server gestuurd**: het komt niet in serverlogs, analytics of Referer-headers. De statuspagina stuurt het token in de body van een POST naar `/api/status/`.
 4. De klant ziet alleen het dossiernummer, de status, de data, het bericht voor de klant en (bij "Rapport afgerond") een downloadknop. Naam, adres, e-mail, interne notities en medewerkersnamen worden nooit getoond.
 5. Medewerkers wijzigen de status in `/beheer/`. Een **bericht voor de klant** is zichtbaar op de statuspagina. **Interne notities** staan in een aparte tabel en zijn nooit zichtbaar voor de klant.
 6. **Rapport:** de medewerker uploadt de PDF rechtstreeks naar de privé-bucket, via een eenmalige ondertekende uploadlink. De klant krijgt pas bij de status "Rapport afgerond" een downloadlink, die **60 seconden** geldig is.
@@ -118,7 +118,7 @@ Met `MVFS_DB=memory` werkt alles lokaal zonder Supabase. Zonder `RESEND_API_KEY`
    - status wijzigen;
    - rapport uploaden en downloaden;
    - nieuwsbericht publiceren.
-5. **Resend:** afzenderdomein `mvfunderingsscan.nl` verifiëren (SPF/DKIM).
+5. **Resend:** afzenderdomein `mvfunderingsquickscan.nl` verifiëren (SPF/DKIM).
 6. **Statusteksten:** de teksten in `api/_lib/tracking.js` beschrijven de stappen algemeen. Controleer of ze aansluiten op de echte werkwijze.
 
 ## 10. Automatisch invullen en de vertaalknop

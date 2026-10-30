@@ -5,8 +5,8 @@ toestemming; dat is een keuze voor de eigenaar. Hieronder staat wat je kunt mete
 
 ## 1. Google Search Console (zonder cookies, aanbevolen)
 
-1. Voeg `https://www.mvfunderingsscan.nl` toe als **domeineigendom** (DNS-verificatie).
-2. Dien `https://www.mvfunderingsscan.nl/sitemap.xml` in.
+1. Voeg `https://www.mvfunderingsquickscan.nl` toe als **domeineigendom** (DNS-verificatie).
+2. Dien `https://www.mvfunderingsquickscan.nl/sitemap.xml` in.
 3. Bekijk maandelijks:
    - **Prestaties** → klikken, vertoningen, CTR en positie per zoekopdracht en per pagina;
    - filter op plaatsnamen (Leeuwarden, Sneek, Groningen …) en op vragen ("wat is", "wat kost");

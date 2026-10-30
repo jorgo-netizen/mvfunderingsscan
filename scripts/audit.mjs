@@ -174,7 +174,7 @@ for (const [path, p] of Object.entries(pages).sort((a, b) => a[0].localeCompare(
   rows.push({ path, title: p.title, h1, keyword: urlMeta[path]?.keyword || '', intent: urlMeta[path]?.intent || '', internal, schema: [...types].join(', '), indexable, words });
 }
 const cell = (s) => String(s).replace(/\|/g, '\\|');
-const report = `# SEO/GEO-audit mvfunderingsscan.nl
+const report = `# SEO/GEO-audit mvfunderingsquickscan.nl
 
 Gegenereerd door \`npm run audit\` op ${new Date().toISOString().slice(0, 10)} – ${rows.length} indexeerbare pagina's, ${rows.reduce((a, r) => a + r.words, 0).toLocaleString('nl-NL')} woorden in totaal.
 

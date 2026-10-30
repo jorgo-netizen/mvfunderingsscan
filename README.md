@@ -1,4 +1,4 @@
-# MV Funderingsscan – mvfunderingsscan.nl
+# MV Funderingsscan – mvfunderingsquickscan.nl
 
 Specialistische website en kennisplatform over funderingsonderzoek: de funderingsscan,
 de quickscan (fase 0), fase 1, funderingsproblemen en het werkgebied Friesland en Groningen.
@@ -78,9 +78,9 @@ vercel.json             build-instellingen, nette URL's, redirects en headers
 
 1. Vercel → **Add New Project** → kies de GitHub-repo.
 2. **Root Directory:** leeg laten (de site staat in de root van de repository). Build command en output staan al in `vercel.json`.
-3. **Domains:** voeg `mvfunderingsscan.nl` en `www.mvfunderingsscan.nl` toe. De www-variant
+3. **Domains:** voeg `mvfunderingsquickscan.nl` en `www.mvfunderingsquickscan.nl` toe. De www-variant
    wordt naar het hoofddomein doorgestuurd.
-4. Meld `https://www.mvfunderingsscan.nl/sitemap.xml` aan in Google Search Console en Bing
+4. Meld `https://www.mvfunderingsquickscan.nl/sitemap.xml` aan in Google Search Console en Bing
    Webmaster Tools.
 
 ## Formulieren

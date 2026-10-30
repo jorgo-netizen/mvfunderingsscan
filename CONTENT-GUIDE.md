@@ -10,7 +10,7 @@ Het script moet zonder FOUT eindigen. WAARSCHUWINGEN over woordaantal moet je oo
 ---------------------------------------------------------------------
 ## 1. Merk en toon
 
-- Bedrijf: **MV Funderingsscan** (website mvfunderingsscan.nl). Specialist in funderingsonderzoek voor woningen in **Friesland en Groningen**, gevestigd in **Leeuwarden**.
+- Bedrijf: **MV Funderingsscan** (website mvfunderingsquickscan.nl). Specialist in funderingsonderzoek voor woningen in **Friesland en Groningen**, gevestigd in **Leeuwarden**.
 - Taal: Nederlands, je-vorm, helder, deskundig, rustig. Niet schreeuwerig, geen superlatieven ("de beste", "nummer 1").
 - Schrijf voor mensen. Natuurlijk zoekwoordgebruik, NOOIT keyword stuffing. Varieer formuleringen.
 - **Answer-first:** elke H2 is bij voorkeur een vraag of duidelijk onderwerp. Het veld `answer` geeft direct een zelfstandig begrijpelijk antwoord in 1–2 zinnen (zo dat een AI-zoekmachine alleen dat stuk kan citeren). Daarna volgt in `body` de verdieping.

@@ -91,7 +91,7 @@ export const isUuid = (s) => /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[
 
 /** Basis-URL van de site voor links in e-mails. */
 export function siteUrl() {
-  return (process.env.MVFS_SITE_URL || 'https://www.mvfunderingsscan.nl').replace(/\/$/, '');
+  return (process.env.MVFS_SITE_URL || 'https://www.mvfunderingsquickscan.nl').replace(/\/$/, '');
 }
 
 /** Foutmelding loggen zonder persoonsgegevens: alleen een korte code en de technische melding. */

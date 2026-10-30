@@ -14,7 +14,7 @@ function safeHref(raw) {
   try {
     const u = new URL(href);
     if (u.protocol === 'https:' || u.protocol === 'http:') {
-      const internal = /(^|\.)mvfunderingsscan\.nl$/i.test(u.hostname);
+      const internal = /(^|\.)mvfunderingsquickscan\.nl$/i.test(u.hostname);
       return { href: u.href, external: !internal };
     }
   } catch { /* ongeldig */ }

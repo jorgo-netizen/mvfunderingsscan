@@ -399,7 +399,7 @@ ${footer()}`);
 
 // =================================================================== crawler-bestanden
 function buildMetaFiles(paths) {
-  write('/robots.txt', `# robots.txt – mvfunderingsscan.nl
+  write('/robots.txt', `# robots.txt – mvfunderingsquickscan.nl
 # Alle zoekmachines en AI-zoekdiensten zijn welkom.
 
 User-agent: *

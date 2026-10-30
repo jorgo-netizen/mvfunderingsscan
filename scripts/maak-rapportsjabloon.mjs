@@ -22,7 +22,7 @@ const BEDRIJF = {
   postcode_plaats: '8919 AA Leeuwarden',
   email: 'info@mvadviseurs.nl',
   kvk: '42204729',
-  website: 'www.mvfunderingsscan.nl',
+  website: 'www.mvfunderingsquickscan.nl',
 };
 const LOGO = new URL('../public/assets/logo-mvfunderingsscan.png', import.meta.url);
 

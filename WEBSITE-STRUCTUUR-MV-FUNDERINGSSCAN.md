@@ -9,7 +9,7 @@ Opnieuw maken: zie "Dit overzicht bijwerken" onderaan.
 - **nieuw (lokaal, nog niet live)** – pagina is in deze ronde gemaakt; live na een push.
 - **voorstel** – mogelijke uitbreiding; bestaat niet.
 
-Let op: het domein www.mvfunderingsscan.nl is (nog) niet actief; "live" verwijst naar mvfunderingsscan.vercel.app. Indexering door Google of AI-zoekmachines is niet gecontroleerd.
+Let op: het domein www.mvfunderingsquickscan.nl is (nog) niet actief; "live" verwijst naar mvfunderingsscan.vercel.app. Indexering door Google of AI-zoekmachines is niet gecontroleerd.
 
 **Totaal:** 141 pagina's · 129 bestaand en ongewijzigd · 10 bestaand en aangepast · 2 nieuw.
 
@@ -253,7 +253,7 @@ Let op: het domein www.mvfunderingsscan.nl is (nog) niet actief; "live" verwijst
 | `/kennisbank/wat-kost-een-funderingsonderzoek/` | `/kennisbank/wat-kost-een-funderingsscan/` | bestaand |
 | `/kennisbank/funderingsonderzoek-bij-aankoop/` | `/kennisbank/funderingsscan-bij-aankoop/` | bestaand |
 | `/kennisbank/scheuren-in-de-gevel-en-fundering/` | `/kennisbank/scheuren-in-gevel/` | bestaand |
-| `mvfunderingsscan.nl` (kaal domein) | `www.mvfunderingsscan.nl` | bestaand, actief zodra het domein is gekoppeld |
+| `mvfunderingsquickscan.nl` (kaal domein) | `www.mvfunderingsquickscan.nl` | bestaand, actief zodra het domein is gekoppeld |
 
 ## Voorstellen (bestaan niet)
 

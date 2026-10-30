@@ -5,7 +5,7 @@
  *   RESEND_API_KEY   API-sleutel van https://resend.com (verplicht in productie)
  *   AANVRAAG_TO      ontvanger, standaard info@mvadviseurs.nl
  *   AANVRAAG_FROM    afzender op een in Resend geverifieerd domein,
- *                    bijv. "MV Funderingsscan <aanvraag@mvfunderingsscan.nl>"
+ *                    bijv. "MV Funderingsscan <aanvraag@mvfunderingsquickscan.nl>"
  *
  * QuickScan Track & Trace (alleen als de database is ingesteld, zie IMPLEMENTATIEHANDLEIDING-MV-FUNDERINGSSCAN.md):
  *   Een aanvraag voor een Fase 0 Quick Scan (formulier "aanvraag" of "home", type fase0) wordt geregistreerd
@@ -137,7 +137,7 @@ export default async function handler(req, res) {
 <table style="font-family:Arial,sans-serif;font-size:14px;border-collapse:collapse">
 ${rows.map(([l, v]) => `<tr><td style="padding:6px 14px 6px 0;color:#5f7286;vertical-align:top"><strong>${esc(l)}</strong></td><td style="padding:6px 0;white-space:pre-wrap">${esc(v)}</td></tr>`).join('\n')}
 </table>
-<p style="font-family:Arial,sans-serif;font-size:12px;color:#8a97a5">Verstuurd via mvfunderingsscan.nl · toestemming privacy: ja</p>`;
+<p style="font-family:Arial,sans-serif;font-size:12px;color:#8a97a5">Verstuurd via mvfunderingsquickscan.nl · toestemming privacy: ja</p>`;
   const text = rows.map(([l, v]) => `${l}: ${v}`).join('\n');
   const trackingOut = tracking ? { dossier: tracking.dossier, mail: tracking.mail } : undefined;
 

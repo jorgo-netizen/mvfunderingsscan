@@ -48,7 +48,7 @@ ${inner}
 </td></tr>
 <tr><td style="padding:18px 28px;background:#f4f6f8;font-size:13px;color:#5f7286;line-height:1.5">
 MV Funderingsscan B.V. · Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden<br>
-<a href="${NAP.phoneHref}" style="color:#102945">${NAP.phone}</a> · <a href="mailto:${NAP.email}" style="color:#102945">${NAP.email}</a> · <a href="${siteUrl()}/" style="color:#102945">mvfunderingsscan.nl</a>
+<a href="${NAP.phoneHref}" style="color:#102945">${NAP.phone}</a> · <a href="mailto:${NAP.email}" style="color:#102945">${NAP.email}</a> · <a href="${siteUrl()}/" style="color:#102945">mvfunderingsquickscan.nl</a>
 </td></tr></table></td></tr></table></body></html>`;
 
 const p = (t) => `<p style="margin:0 0 14px;font-size:15px;line-height:1.6">${t}</p>`;

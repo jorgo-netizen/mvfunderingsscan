@@ -2,7 +2,7 @@
   "name": "mvfunderingsscan",
   "version": "1.0.0",
   "private": true,
-  "description": "Website en kennisplatform MV Funderingsscan (mvfunderingsscan.nl) – statische site, gegenereerd met Node, zonder dependencies.",
+  "description": "Website en kennisplatform MV Funderingsscan (mvfunderingsquickscan.nl) – statische site, gegenereerd met Node, zonder dependencies.",
   "type": "module",
   "engines": {
     "node": ">=20"

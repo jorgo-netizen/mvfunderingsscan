@@ -1,5 +1,5 @@
 {
-  "domain": "https://www.mvfunderingsscan.nl",
+  "domain": "https://www.mvfunderingsquickscan.nl",
   "today": "2026-10-07",
   "nap": {
     "name": "MV Funderingsscan",
@@ -357,13 +357,13 @@
     "funderingsscan": {
       "name": "Funderingsscan",
       "serviceType": "Funderingsonderzoek",
-      "url": "https://www.mvfunderingsscan.nl/funderingsscan/",
+      "url": "https://www.mvfunderingsquickscan.nl/funderingsscan/",
       "description": "Onafhankelijk onderzoek naar de staat en de risico's van de fundering van een woning, beginnend met een Quick Scan en waar nodig gevolgd door metingen."
     },
     "fase0": {
       "name": "Fase 0 funderingsonderzoek (Quick Scan)",
       "serviceType": "Quick Scan fundering",
-      "url": "https://www.mvfunderingsscan.nl/fase-0-funderingsonderzoek/",
+      "url": "https://www.mvfunderingsquickscan.nl/fase-0-funderingsonderzoek/",
       "description": "Niet-destructief vooronderzoek: archief- en bodemonderzoek, visuele inspectie van woning en kruipruimte, risico-inschatting en rapport met vervolgadvies.",
       "offers": {
         "minPrice": 350
@@ -376,7 +376,7 @@
     "fase1": {
       "name": "Fase 1 funderingsonderzoek",
       "serviceType": "Funderingsonderzoek met metingen",
-      "url": "https://www.mvfunderingsscan.nl/fase-1-funderingsonderzoek/",
+      "url": "https://www.mvfunderingsquickscan.nl/fase-1-funderingsonderzoek/",
       "description": "Vervolgonderzoek met lintvoegwaterpassing, loodmetingen, vloerveldwaterpassing en het vastleggen van scheurpatronen, om scheefstand en hoogteverschillen in beeld te brengen en te beoordelen of er aanwijzingen zijn voor ongelijkmatige zetting.",
       "offers": {
         "minPrice": 950
