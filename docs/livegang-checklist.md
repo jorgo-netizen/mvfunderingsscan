@@ -11,7 +11,7 @@ binnenkomen, daarna pas verkeer genereren.
 - [ ] Vercel → project → Settings → Environment Variables:
   - `RESEND_API_KEY` = de sleutel
   - `AANVRAAG_TO` = het adres dat de aanvragen moet ontvangen (standaard `info@mvadviseurs.nl`)
-  - `AANVRAAG_FROM` = `MV Funderingsscan <aanvraag@mvfunderingsquickscan.nl>`
+  - `AANVRAAG_FROM` = `MV Funderingsscan <noreply@mvfunderingsquickscan.nl>` (een mailbox voor dit adres is niet nodig; antwoorden gaan naar info@mvadviseurs.nl)
 - [ ] Opnieuw deployen en een testaanvraag doen via `/funderingsscan-aanvragen/`, `/contact/` en de homepage.
 
 Zolang de sleutel ontbreekt, toont het formulier in productie een melding met telefoonnummer en

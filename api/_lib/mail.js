@@ -14,7 +14,8 @@ export async function resendSend(payload, idempotencyKey) {
     const r = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json', ...(idempotencyKey ? { 'Idempotency-Key': idempotencyKey } : {}) },
-      body: JSON.stringify({ from: process.env.AANVRAAG_FROM || 'MV Funderingsscan <onboarding@resend.dev>', ...payload }),
+      // Antwoorden van klanten komen altijd bij info@mvadviseurs.nl, ook als de afzender een noreply-adres is.
+      body: JSON.stringify({ from: process.env.AANVRAAG_FROM || 'MV Funderingsscan <onboarding@resend.dev>', reply_to: process.env.AANVRAAG_REPLY_TO || NAP.email, ...payload }),
     });
     const body = await r.json().catch(() => ({}));
     if (!r.ok) return { ok: false, error: `Resend ${r.status}: ${String(body.message || body.name || '').slice(0, 200)}` };

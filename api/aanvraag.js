@@ -5,7 +5,7 @@
  *   RESEND_API_KEY   API-sleutel van https://resend.com (verplicht in productie)
  *   AANVRAAG_TO      ontvanger, standaard info@mvadviseurs.nl
  *   AANVRAAG_FROM    afzender op een in Resend geverifieerd domein,
- *                    bijv. "MV Funderingsscan <aanvraag@mvfunderingsquickscan.nl>"
+ *                    bijv. "MV Funderingsscan <noreply@mvfunderingsquickscan.nl>"
  *
  * QuickScan Track & Trace (alleen als de database is ingesteld, zie IMPLEMENTATIEHANDLEIDING-MV-FUNDERINGSSCAN.md):
  *   Een aanvraag voor een Fase 0 Quick Scan (formulier "aanvraag" of "home", type fase0) wordt geregistreerd

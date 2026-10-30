@@ -34,6 +34,7 @@ Zie `.env.example`. Stel in onder Vercel → Project → Settings → Environmen
 | `RESEND_API_KEY` | ja (bestaat al) | Ook gebruikt voor klantmails |
 | `AANVRAAG_FROM` | ja | Afzender op een in Resend **geverifieerd domein**. Met het standaardadres `onboarding@resend.dev` kunnen géén mails naar klanten worden gestuurd. |
 | `AANVRAAG_TO` | nee | Standaard info@mvadviseurs.nl |
+| `AANVRAAG_REPLY_TO` | nee | Waar antwoorden van klanten op klantmails heen gaan. Standaard info@mvadviseurs.nl |
 | `MVFS_SITE_URL` | nee | Standaard `https://www.mvfunderingsquickscan.nl`. Zet dit op `https://mvfunderingsscan.vercel.app` zolang het domein nog niet gekoppeld is, anders verwijzen de trackinglinks naar een domein dat nog niet werkt. |
 | `MVFS_PEPPER` | aanbevolen | Willekeurige geheime tekst (32+ tekens) voor het hashen van IP-adressen bij rate limiting |
 | `DEEPL_API_KEY` | nee | Sleutel van de DeepL API. Zonder deze sleutel blijft de vertaalknop verborgen. Zie hoofdstuk 10. |
