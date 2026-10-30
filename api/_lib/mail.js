@@ -5,7 +5,7 @@
  */
 import { esc, siteUrl, logError } from './http.js';
 
-const NAP = { phone: '+31 (0) 582037172', phoneHref: 'tel:+31582037172', email: 'info@mvadviseurs.nl' };
+const NAP = { phone: '+31 (0) 582037172', phoneHref: 'tel:+31582037172', email: 'info@mideavastgoed.nl' };
 
 export async function resendSend(payload, idempotencyKey) {
   const key = process.env.RESEND_API_KEY;
@@ -14,7 +14,7 @@ export async function resendSend(payload, idempotencyKey) {
     const r = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json', ...(idempotencyKey ? { 'Idempotency-Key': idempotencyKey } : {}) },
-      // Antwoorden van klanten komen altijd bij info@mvadviseurs.nl, ook als de afzender een noreply-adres is.
+      // Antwoorden van klanten komen altijd bij info@mideavastgoed.nl, ook als de afzender een noreply-adres is.
       body: JSON.stringify({ from: process.env.AANVRAAG_FROM || 'MV Funderingsscan <onboarding@resend.dev>', reply_to: process.env.AANVRAAG_REPLY_TO || NAP.email, ...payload }),
     });
     const body = await r.json().catch(() => ({}));

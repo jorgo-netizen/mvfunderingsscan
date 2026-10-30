@@ -104,7 +104,7 @@ De vaste teksten zijn letterlijk overgenomen uit het aangeleverde rapport. Laat 
    - Het stroomschema hanteert 0–2 / 2–4 / >4 mm/jaar.
 3. **Rotatieklassen.** De tabel van hoofdstuk H en I (F3O) wordt alleen gebruikt om een afwijkende schadetypering te signaleren. De applicatie kiest de typering niet.
 4. **Bouwtekeningen.** De vaste tekst van hoofdstuk E gaat ervan uit dat tekeningen zijn ontvangen.
-5. **Bedrijfsgegevens.** Het rapport staat op naam van MV Funderingsscan B.V. (KvK 42204729, Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden, info@mvadviseurs.nl) met het logo van MV Funderingsscan in de koptekst. Deze gegevens staan in `scripts/maak-rapportsjabloon.mjs` (BEDRIJF); na een wijziging draai je `node scripts/maak-rapportsjabloon.mjs`.
+5. **Bedrijfsgegevens.** Het rapport staat op naam van MV Funderingsscan B.V. (KvK 42204729, Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden, info@mideavastgoed.nl) met het logo van MV Funderingsscan in de koptekst. Deze gegevens staan in `scripts/maak-rapportsjabloon.mjs` (BEDRIJF); na een wijziging draai je `node scripts/maak-rapportsjabloon.mjs`.
 
 ## 8. Sjabloon aanpassen
 

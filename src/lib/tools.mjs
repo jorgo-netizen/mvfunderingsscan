@@ -15,7 +15,7 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 const opt = (name, value, label, type = 'radio') => `<label class="tq-opt"><input type="${type}" name="${name}" value="${value}"><span>${label}</span></label>`;
 
 // ---------------------------------------------------------------- gedeeld leadformulier
-const PRIVACY = `<p class="form-privacy tool-privacy"><strong>Privacy:</strong> we gebruiken je gegevens en eventuele foto's alleen om je vraag te beantwoorden en contact met je op te nemen. Ze worden per e-mail naar MV Funderingsscan verstuurd (via een e-maildienst) en niet op deze website opgeslagen. Foto's worden vóór verzending verkleind; daarbij worden locatie- en cameragegevens (EXIF) verwijderd. We verkopen of verhuren je gegevens niet aan derden. Vragen? Mail naar <a href="mailto:info@mvadviseurs.nl">info@mvadviseurs.nl</a>.</p>`;
+const PRIVACY = `<p class="form-privacy tool-privacy"><strong>Privacy:</strong> we gebruiken je gegevens en eventuele foto's alleen om je vraag te beantwoorden en contact met je op te nemen. Ze worden per e-mail naar MV Funderingsscan verstuurd (via een e-maildienst) en niet op deze website opgeslagen. Foto's worden vóór verzending verkleind; daarbij worden locatie- en cameragegevens (EXIF) verwijderd. We verkopen of verhuren je gegevens niet aan derden. Vragen? Mail naar <a href="mailto:info@mideavastgoed.nl">info@mideavastgoed.nl</a>.</p>`;
 
 function leadForm(tool, { title = 'Bespreek mijn situatie', intro = 'Laat je gegevens achter, dan nemen we contact met je op. Je antwoorden uit deze tool sturen we automatisch mee.', button = 'Verstuur', copy = true, hidden = true } = {}) {
   const id = `lf-${tool}`;

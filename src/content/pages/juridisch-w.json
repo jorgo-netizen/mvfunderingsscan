@@ -30,7 +30,7 @@
       },
       {
         "label": "Vragen over privacy",
-        "value": "<a href=\"mailto:info@mvadviseurs.nl\">info@mvadviseurs.nl</a>"
+        "value": "<a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>"
       }
     ],
     "sections": [
@@ -38,7 +38,7 @@
         "id": "wie-zijn-wij",
         "h2": "Wie is verantwoordelijk voor je gegevens?",
         "answer": "MV Funderingsscan B.V. in Leeuwarden is verantwoordelijk voor de verwerking van je persoonsgegevens.",
-        "body": "<p>Heb je een vraag over deze privacyverklaring of over wat we met je gegevens doen? Neem dan contact met ons op via onderstaande gegevens.</p><div class=\"table-wrap\"><table class=\"data-table\"><tbody>\n<tr><th scope=\"row\">Onderneming</th><td>MV Funderingsscan B.V.</td></tr>\n<tr><th scope=\"row\">KvK-nummer</th><td>42204729</td></tr>\n<tr><th scope=\"row\">Adres</th><td>Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden</td></tr>\n<tr><th scope=\"row\">E-mail</th><td><a href=\"mailto:info@mvadviseurs.nl\">info@mvadviseurs.nl</a></td></tr>\n<tr><th scope=\"row\">Telefoon</th><td><a href=\"tel:+31582037172\">+31 (0) 58 203 7172</a></td></tr>\n<tr><th scope=\"row\">Website</th><td>www.mvfunderingsquickscan.nl</td></tr>\n</tbody></table></div>"
+        "body": "<p>Heb je een vraag over deze privacyverklaring of over wat we met je gegevens doen? Neem dan contact met ons op via onderstaande gegevens.</p><div class=\"table-wrap\"><table class=\"data-table\"><tbody>\n<tr><th scope=\"row\">Onderneming</th><td>MV Funderingsscan B.V.</td></tr>\n<tr><th scope=\"row\">KvK-nummer</th><td>42204729</td></tr>\n<tr><th scope=\"row\">Adres</th><td>Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden</td></tr>\n<tr><th scope=\"row\">E-mail</th><td><a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a></td></tr>\n<tr><th scope=\"row\">Telefoon</th><td><a href=\"tel:+31582037172\">+31 (0) 58 203 7172</a></td></tr>\n<tr><th scope=\"row\">Website</th><td>www.mvfunderingsquickscan.nl</td></tr>\n</tbody></table></div>"
       },
       {
         "id": "wanneer",
@@ -92,7 +92,7 @@
         "id": "jouw-rechten",
         "h2": "Welke rechten heb je?",
         "answer": "Je hebt het recht om je gegevens in te zien, te laten corrigeren of verwijderen, de verwerking te laten beperken, bezwaar te maken en je gegevens over te laten dragen.",
-        "body": "<ul><li><strong>Inzage:</strong> je kunt opvragen welke gegevens we van je hebben.</li><li><strong>Correctie:</strong> je kunt onjuiste of onvolledige gegevens laten aanpassen.</li><li><strong>Verwijdering:</strong> je kunt vragen je gegevens te verwijderen, voor zover we ze niet wettelijk moeten bewaren.</li><li><strong>Beperking:</strong> je kunt vragen de verwerking tijdelijk te beperken.</li><li><strong>Bezwaar:</strong> je kunt bezwaar maken tegen verwerking op basis van ons gerechtvaardigd belang.</li><li><strong>Overdraagbaarheid:</strong> je kunt vragen de gegevens die je ons zelf gaf in een gangbaar formaat te ontvangen.</li></ul><p>Stuur je verzoek naar <a href=\"mailto:info@mvadviseurs.nl\">info@mvadviseurs.nl</a>. We kunnen je vragen te laten zien dat het verzoek echt van jou komt. We reageren binnen een maand.</p>"
+        "body": "<ul><li><strong>Inzage:</strong> je kunt opvragen welke gegevens we van je hebben.</li><li><strong>Correctie:</strong> je kunt onjuiste of onvolledige gegevens laten aanpassen.</li><li><strong>Verwijdering:</strong> je kunt vragen je gegevens te verwijderen, voor zover we ze niet wettelijk moeten bewaren.</li><li><strong>Beperking:</strong> je kunt vragen de verwerking tijdelijk te beperken.</li><li><strong>Bezwaar:</strong> je kunt bezwaar maken tegen verwerking op basis van ons gerechtvaardigd belang.</li><li><strong>Overdraagbaarheid:</strong> je kunt vragen de gegevens die je ons zelf gaf in een gangbaar formaat te ontvangen.</li></ul><p>Stuur je verzoek naar <a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>. We kunnen je vragen te laten zien dat het verzoek echt van jou komt. We reageren binnen een maand.</p>"
       },
       {
         "id": "klacht",
@@ -118,7 +118,7 @@
       },
       {
         "q": "Hoe vraag ik mijn gegevens op of laat ik ze verwijderen?",
-        "a": "<p>Stuur een e-mail naar info@mvadviseurs.nl. We reageren binnen een maand. Gegevens die we wettelijk moeten bewaren, zoals facturen, verwijderen we pas na afloop van de wettelijke termijn.</p>"
+        "a": "<p>Stuur een e-mail naar info@mideavastgoed.nl. We reageren binnen een maand. Gegevens die we wettelijk moeten bewaren, zoals facturen, verwijderen we pas na afloop van de wettelijke termijn.</p>"
       },
       {
         "q": "Wie kan mijn Track &amp; Trace-pagina zien?",
@@ -144,7 +144,7 @@
     ],
     "cta": [
       "Vragen over je gegevens?",
-      "Mail ons via info@mvadviseurs.nl of bel ons. We leggen graag uit wat we met je gegevens doen."
+      "Mail ons via info@mideavastgoed.nl of bel ons. We leggen graag uit wat we met je gegevens doen."
     ]
   },
   {
@@ -178,7 +178,7 @@
       },
       {
         "label": "Vragen",
-        "value": "<a href=\"mailto:info@mvadviseurs.nl\">info@mvadviseurs.nl</a>"
+        "value": "<a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>"
       }
     ],
     "sections": [
@@ -186,7 +186,7 @@
         "id": "gegevens",
         "h2": "Wie zijn wij?",
         "answer": "Deze voorwaarden zijn van MV Funderingsscan B.V. In deze voorwaarden noemen we ons “MV Funderingsscan” of “wij”.",
-        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><tbody>\n<tr><th scope=\"row\">Onderneming</th><td>MV Funderingsscan B.V.</td></tr>\n<tr><th scope=\"row\">KvK-nummer</th><td>42204729</td></tr>\n<tr><th scope=\"row\">Adres</th><td>Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden</td></tr>\n<tr><th scope=\"row\">E-mail</th><td><a href=\"mailto:info@mvadviseurs.nl\">info@mvadviseurs.nl</a></td></tr>\n<tr><th scope=\"row\">Telefoon</th><td><a href=\"tel:+31582037172\">+31 (0) 58 203 7172</a></td></tr>\n<tr><th scope=\"row\">Website</th><td>www.mvfunderingsquickscan.nl</td></tr>\n</tbody></table></div>"
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><tbody>\n<tr><th scope=\"row\">Onderneming</th><td>MV Funderingsscan B.V.</td></tr>\n<tr><th scope=\"row\">KvK-nummer</th><td>42204729</td></tr>\n<tr><th scope=\"row\">Adres</th><td>Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden</td></tr>\n<tr><th scope=\"row\">E-mail</th><td><a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a></td></tr>\n<tr><th scope=\"row\">Telefoon</th><td><a href=\"tel:+31582037172\">+31 (0) 58 203 7172</a></td></tr>\n<tr><th scope=\"row\">Website</th><td>www.mvfunderingsquickscan.nl</td></tr>\n</tbody></table></div>"
       },
       {
         "id": "artikel-1-definities",
@@ -246,7 +246,7 @@
         "id": "artikel-10-herroepingsrecht",
         "h2": "Artikel 10 – Herroepingsrecht voor consumenten",
         "answer": "Geef je als consument een opdracht op afstand (via de website, e-mail of telefoon) of buiten ons kantoor, dan kun je die binnen 14 dagen zonder opgaaf van redenen ontbinden.",
-        "body": "<ol><li>De bedenktijd van 14 dagen begint op de dag nadat de opdracht tot stand is gekomen.</li><li>Je maakt gebruik van je herroepingsrecht door ons dat binnen de bedenktijd duidelijk te laten weten, bijvoorbeeld per e-mail naar info@mvadviseurs.nl.</li><li>Heb je ons uitdrukkelijk gevraagd binnen de bedenktijd met het onderzoek te beginnen, en herroep je daarna, dan betaal je een evenredig deel van de prijs voor wat we al hebben gedaan.</li><li>Is het onderzoek met jouw uitdrukkelijke instemming binnen de bedenktijd volledig uitgevoerd, en heb je verklaard dat je dan je herroepingsrecht verliest, dan kun je niet meer herroepen.</li></ol>"
+        "body": "<ol><li>De bedenktijd van 14 dagen begint op de dag nadat de opdracht tot stand is gekomen.</li><li>Je maakt gebruik van je herroepingsrecht door ons dat binnen de bedenktijd duidelijk te laten weten, bijvoorbeeld per e-mail naar info@mideavastgoed.nl.</li><li>Heb je ons uitdrukkelijk gevraagd binnen de bedenktijd met het onderzoek te beginnen, en herroep je daarna, dan betaal je een evenredig deel van de prijs voor wat we al hebben gedaan.</li><li>Is het onderzoek met jouw uitdrukkelijke instemming binnen de bedenktijd volledig uitgevoerd, en heb je verklaard dat je dan je herroepingsrecht verliest, dan kun je niet meer herroepen.</li></ol>"
       },
       {
         "id": "artikel-11-rapport",
@@ -270,7 +270,7 @@
         "id": "artikel-14-klachten",
         "h2": "Artikel 14 – Klachten",
         "answer": "Ben je niet tevreden over onze dienst of het rapport, laat het ons dan zo snel mogelijk weten. We nemen elke klacht serieus en zoeken samen naar een oplossing.",
-        "body": "<ol><li>Meld een klacht binnen bekwame tijd nadat je het probleem hebt ontdekt, het liefst per e-mail naar <a href=\"mailto:info@mvadviseurs.nl\">info@mvadviseurs.nl</a>, met een duidelijke omschrijving.</li><li>We reageren zo snel mogelijk inhoudelijk op je klacht en laten je weten wanneer je een oplossing kunt verwachten.</li><li>Een klacht schort je betalingsverplichting niet op, tenzij we samen iets anders afspreken.</li></ol>"
+        "body": "<ol><li>Meld een klacht binnen bekwame tijd nadat je het probleem hebt ontdekt, het liefst per e-mail naar <a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>, met een duidelijke omschrijving.</li><li>We reageren zo snel mogelijk inhoudelijk op je klacht en laten je weten wanneer je een oplossing kunt verwachten.</li><li>Een klacht schort je betalingsverplichting niet op, tenzij we samen iets anders afspreken.</li></ol>"
       },
       {
         "id": "artikel-15-recht",

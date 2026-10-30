@@ -21,9 +21,9 @@ Het script moet zonder FOUT eindigen. WAARSCHUWINGEN over woordaantal moet je oo
 ## 2. Feiten die je MAG gebruiken (en verder NIETS verzinnen)
 
 Bedrijf
-- Adres: Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden · Telefoon +31 (0) 582037172 (link `tel:+31582037172`) · E-mail info@mvadviseurs.nl (link `mailto:info@mvadviseurs.nl`) · Bereikbaar ma–vr 09:00–17:00.
+- Adres: Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden · Telefoon +31 (0) 582037172 (link `tel:+31582037172`) · E-mail info@mideavastgoed.nl (link `mailto:info@mideavastgoed.nl`) · Bereikbaar ma–vr 09:00–17:00.
 - Werkgebied: heel Friesland en de hele provincie Groningen.
-- Bedrijfsnaam: **MV Funderingsscan**; juridische naam **MV Funderingsscan B.V.**, KvK 42204729 (sinds oktober 2026 een zelfstandige B.V.). Noem nergens een andere onderneming als moeder- of zusterbedrijf. Logo: `/assets/logo-mvfunderingsscan.png` (wit: `-wit`). Het e-mailadres is info@mvadviseurs.nl.
+- Bedrijfsnaam: **MV Funderingsscan**; juridische naam **MV Funderingsscan B.V.**, KvK 42204729 (sinds oktober 2026 een zelfstandige B.V.). Noem nergens een andere onderneming als moeder- of zusterbedrijf. Logo: `/assets/logo-mvfunderingsscan.png` (wit: `-wit`). Het e-mailadres is info@mideavastgoed.nl.
 - Deskundige, opleiding, certificaten, lidmaatschappen, KvK, reviews en voorbeeldrapport: ALLEEN via `src/content/eeat.json` (placeholders tussen [vierkante haken] verschijnen niet op de live site). Zet zulke gegevens nooit los in een pagina.
 
 Diensten en prijzen (ALTIJD als indicatief presenteren)

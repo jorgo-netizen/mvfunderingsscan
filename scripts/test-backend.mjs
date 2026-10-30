@@ -216,7 +216,7 @@ test('aanvraag: Fase 0 wordt geregistreerd, klant krijgt trackinglink, dubbele i
   assert.match(r.json.tracking.dossier, /^MV-\d{4}-0001$/);
   assert.equal(r.json.tracking.mail, 'verzonden');
   const customer = mails.find((m) => m.to[0] === 'jan@example.com');
-  const office = mails.find((m) => m.to[0] === 'info@mvadviseurs.nl');
+  const office = mails.find((m) => m.to[0] === 'info@mideavastgoed.nl');
   assert.ok(customer && office, 'klantmail en kantoormail');
   assert.ok(customer.idem && office.idem, 'Idempotency-Key bij beide mails');
   assert.ok(office.text.includes(r.json.tracking.dossier));

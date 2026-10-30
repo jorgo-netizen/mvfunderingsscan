@@ -258,7 +258,7 @@
         track('lead_form_completed', { tool, photos: photos.length });
       } catch (err) {
         status.classList.add('is-error');
-        status.innerHTML = `${err.message && err.name !== 'AbortError' ? err.message : 'Er ging iets mis bij het versturen.'} Probeer het opnieuw, of bel <a href="tel:+31582037172">+31 (0) 582037172</a> of mail naar <a href="mailto:info@mvadviseurs.nl">info@mvadviseurs.nl</a>.`;
+        status.innerHTML = `${err.message && err.name !== 'AbortError' ? err.message : 'Er ging iets mis bij het versturen.'} Probeer het opnieuw, of bel <a href="tel:+31582037172">+31 (0) 582037172</a> of mail naar <a href="mailto:info@mideavastgoed.nl">info@mideavastgoed.nl</a>.`;
       } finally {
         btn.disabled = false; btn.classList.remove('is-loading');
       }

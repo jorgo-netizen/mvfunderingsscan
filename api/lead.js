@@ -99,7 +99,7 @@ ${samenvatting ? `<h3 style="font-family:Arial,sans-serif;color:#102945">Antwoor
 
   const from = process.env.AANVRAAG_FROM || 'MV Funderingsscan <onboarding@resend.dev>';
   try {
-    await resend(key, { from, to: [process.env.AANVRAAG_TO || 'info@mvadviseurs.nl'], reply_to: clean.email, subject, html, text, attachments });
+    await resend(key, { from, to: [process.env.AANVRAAG_TO || 'info@mideavastgoed.nl'], reply_to: clean.email, subject, html, text, attachments });
   } catch (err) {
     console.error(err);
     return send(res, 502, { ok: false, error: 'Verzenden lukt nu niet.' });

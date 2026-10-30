@@ -33,8 +33,8 @@ Zie `.env.example`. Stel in onder Vercel → Project → Settings → Environmen
 | `SUPABASE_SERVICE_KEY` | ja | Geheime server-sleutel |
 | `RESEND_API_KEY` | ja (bestaat al) | Ook gebruikt voor klantmails |
 | `AANVRAAG_FROM` | ja | Afzender op een in Resend **geverifieerd domein**. Met het standaardadres `onboarding@resend.dev` kunnen géén mails naar klanten worden gestuurd. |
-| `AANVRAAG_TO` | nee | Standaard info@mvadviseurs.nl |
-| `AANVRAAG_REPLY_TO` | nee | Waar antwoorden van klanten op klantmails heen gaan. Standaard info@mvadviseurs.nl |
+| `AANVRAAG_TO` | nee | Standaard info@mideavastgoed.nl |
+| `AANVRAAG_REPLY_TO` | nee | Waar antwoorden van klanten op klantmails heen gaan. Standaard info@mideavastgoed.nl |
 | `MVFS_SITE_URL` | nee | Standaard `https://www.mvfunderingsquickscan.nl`. Zet dit op `https://mvfunderingsscan.vercel.app` zolang het domein nog niet gekoppeld is, anders verwijzen de trackinglinks naar een domein dat nog niet werkt. |
 | `MVFS_PEPPER` | aanbevolen | Willekeurige geheime tekst (32+ tekens) voor het hashen van IP-adressen bij rate limiting |
 | `DEEPL_API_KEY` | nee | Sleutel van de DeepL API. Zonder deze sleutel blijft de vertaalknop verborgen. Zie hoofdstuk 10. |
@@ -167,5 +167,5 @@ Foto's worden verkleind tot 640 px, zonder EXIF-gegevens opgeslagen in de openba
 Het portaal werkt met één gedeeld account. Iedereen die inlogt mag rapporten definitief maken, de PDF vastleggen en versturen; bij het rapport kies je zelf welke adviseur het is. Maak het gedeelde account aan met de rol `beheerder` (zie hoofdstuk 4), zodat ook het verwijderen van aanvragen en rapporten mogelijk is. Gebruik een sterk wachtwoord (minimaal 12 tekens) en wijzig het als iemand uit dienst gaat:
 
 ```
-npm run beheer:gebruiker -- --email info@mvadviseurs.nl --nieuw-wachtwoord
+npm run beheer:gebruiker -- --email info@mideavastgoed.nl --nieuw-wachtwoord
 ```

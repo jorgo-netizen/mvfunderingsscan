@@ -3,7 +3,7 @@
  *
  * Omgevingsvariabelen (Vercel → Project → Settings → Environment Variables):
  *   RESEND_API_KEY   API-sleutel van https://resend.com (verplicht in productie)
- *   AANVRAAG_TO      ontvanger, standaard info@mvadviseurs.nl
+ *   AANVRAAG_TO      ontvanger, standaard info@mideavastgoed.nl
  *   AANVRAAG_FROM    afzender op een in Resend geverifieerd domein,
  *                    bijv. "MV Funderingsscan <noreply@mvfunderingsquickscan.nl>"
  *
@@ -153,7 +153,7 @@ ${rows.map(([l, v]) => `<tr><td style="padding:6px 14px 6px 0;color:#5f7286;vert
   }
 
   const r = await resendSend({
-    to: [process.env.AANVRAAG_TO || 'info@mvadviseurs.nl'],
+    to: [process.env.AANVRAAG_TO || 'info@mideavastgoed.nl'],
     reply_to: clean.email,
     subject,
     html,

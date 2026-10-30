@@ -465,7 +465,7 @@ Sitemap: ${DOMAIN}/nieuws-sitemap.xml
 - Onafhankelijk: MV Funderingsscan doet uitsluitend onderzoek en voert geen funderingsherstel uit.
 - Werkgebied: heel Friesland, de hele provincie Groningen en Noord-Drenthe (gemeenten Assen, Tynaarlo, Noordenveld en Aa en Hunze), vanuit Leeuwarden.
 - Prijs: fase 0 vanaf €350, fase 1 vanaf €950, beide inclusief btw; de definitieve prijs hoor je vooraf.
-- Contact: na een aanvraag bellen we dezelfde dag terug. Het onderzoek wordt uitgevoerd door de bouwkundig adviseurs Melvin Krikke en Rutger Fopma. Telefoon +31 (0) 582037172, e-mail info@mvadviseurs.nl.
+- Contact: na een aanvraag bellen we dezelfde dag terug. Het onderzoek wordt uitgevoerd door de bouwkundig adviseurs Melvin Krikke en Rutger Fopma. Telefoon +31 (0) 582037172, e-mail info@mideavastgoed.nl.
 - Fase 0 (Quick Scan): archief- en bodemonderzoek, visuele inspectie (kruipruimte voor zover toegankelijk) en een risico-inschatting met advies. Zonder graafwerk. Kan niet vaststellen: de exacte conditie van houten palen, verborgen gebreken, constructieve capaciteit, resterende levensduur of exacte herstelkosten.
 - Fase 1: metingen zoals lintvoegwaterpassing, loodmeting en vloerveldwaterpassing. Brengt de huidige scheefstand en hoogteverschillen in beeld; of een woning nog beweegt, blijkt pas uit herhaalde metingen (monitoring). Een inspectieput (graven) is een aparte, verdergaande stap.
 - Fasenamen verschillen per bron: de KCAF-richtlijn spreekt van onderdelen; deze site gebruikt de indeling van MV Funderingsscan.

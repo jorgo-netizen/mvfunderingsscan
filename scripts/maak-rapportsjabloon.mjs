@@ -20,7 +20,7 @@ const BEDRIJF = {
   naam: 'MV Funderingsscan B.V.',
   adres: 'Mr. P.J. Troelstraweg 149 unit 23',
   postcode_plaats: '8919 AA Leeuwarden',
-  email: 'info@mvadviseurs.nl',
+  email: 'info@mideavastgoed.nl',
   kvk: '42204729',
   website: 'www.mvfunderingsquickscan.nl',
 };

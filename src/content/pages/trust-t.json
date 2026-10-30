@@ -34,7 +34,7 @@
       },
       {
         "label": "Fout gezien?",
-        "value": "<a href=\"mailto:info@mvadviseurs.nl\">info@mvadviseurs.nl</a>"
+        "value": "<a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>"
       }
     ],
     "sections": [
@@ -84,7 +84,7 @@
         "id": "hoe-we-controleren",
         "h2": "Hoe controleren en actualiseren we onze teksten?",
         "answer": "We toetsen technische en regelgevende uitspraken aan de primaire bron, formuleren voorzichtig waar een bron ruimte laat, en controleren de pagina's opnieuw wanneer regels rond taxatie, NHG of richtlijnen veranderen.",
-        "body": "<ul class=\"checklist\">\n<li><strong>Bron eerst</strong> – een uitspraak over regels of techniek moet terug te voeren zijn op een officiële publicatie.</li>\n<li><strong>Geen absolute beloftes</strong> – waar een bron \"in principe\" of \"kan\" zegt, schrijven wij dat ook.</li>\n<li><strong>Datum</strong> – kennisartikelen tonen wanneer ze voor het laatst inhoudelijk zijn bijgewerkt.</li>\n<li><strong>Niets verzinnen</strong> – we noemen alleen erkenningen, opleidingen, reviews en praktijkvoorbeelden die aantoonbaar kloppen.</li>\n<li><strong>Correcties</strong> – zie je een fout of een verouderde regel, mail dan naar <a href=\"mailto:info@mvadviseurs.nl\">info@mvadviseurs.nl</a>.</li>\n</ul>\n<p>Begrippen die op deze site terugkomen, staan uitgelegd in de <a href=\"/kennisbank/begrippenlijst/\">begrippenlijst</a>.</p>"
+        "body": "<ul class=\"checklist\">\n<li><strong>Bron eerst</strong> – een uitspraak over regels of techniek moet terug te voeren zijn op een officiële publicatie.</li>\n<li><strong>Geen absolute beloftes</strong> – waar een bron \"in principe\" of \"kan\" zegt, schrijven wij dat ook.</li>\n<li><strong>Datum</strong> – kennisartikelen tonen wanneer ze voor het laatst inhoudelijk zijn bijgewerkt.</li>\n<li><strong>Niets verzinnen</strong> – we noemen alleen erkenningen, opleidingen, reviews en praktijkvoorbeelden die aantoonbaar kloppen.</li>\n<li><strong>Correcties</strong> – zie je een fout of een verouderde regel, mail dan naar <a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>.</li>\n</ul>\n<p>Begrippen die op deze site terugkomen, staan uitgelegd in de <a href=\"/kennisbank/begrippenlijst/\">begrippenlijst</a>.</p>"
       }
     ],
     "faqs": [
