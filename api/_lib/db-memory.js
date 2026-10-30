@@ -19,7 +19,7 @@ export function memoryDb() {
   if (!globalThis[key]) {
     let data = { users: [], sessions: [], attempts: [], news: [], requests: [], history: [], notes: [], emails: [], advisors: [], reports: [], reportImages: [], versions: [], translations: {}, translationUsage: {}, seq: 0, reportSeq: 0, ids: 0 };
     if (FILE && existsSync(FILE)) data = { ...data, ...JSON.parse(readFileSync(FILE, 'utf8')) };
-    if (!data.advisors.length) data.advisors = [['Melvin Krikke', 'CE240260817-02'], ['Rutger Fopma', 'CE240260817-03']].map(([name, certificate]) => ({ id: randomUUID(), name, certificate, user_id: null, active: true, created_at: now(), updated_at: now() }));
+    if (!data.advisors.length) data.advisors = [['Melvin Krikke', 'CE240260817-02'], ['Rutger Fopma', 'CE240260817-03']].map(([name, certificate]) => ({ id: randomUUID(), name, certificate, user_id: null, active: true, functie: 'Bouwkundig adviseur', introductie: null, op_site: true, volgorde: 0, photo_path: null, created_at: now(), updated_at: now() }));
     globalThis[key] = data;
   }
   const D = globalThis[key];
@@ -143,7 +143,7 @@ export function memoryDb() {
     advisorById: async (id) => clone(D.advisors.find((a) => a.id === id) || null),
     advisorCreate: async (row) => {
       if (D.advisors.some((a) => a.name === row.name)) throw conflict();
-      const a = { id: randomUUID(), user_id: null, active: true, created_at: now(), updated_at: now(), ...row }; D.advisors.push(a); save(); return clone(a);
+      const a = { id: randomUUID(), user_id: null, active: true, functie: 'Bouwkundig adviseur', introductie: null, op_site: true, volgorde: 0, photo_path: null, created_at: now(), updated_at: now(), ...row }; D.advisors.push(a); save(); return clone(a);
     },
     advisorUpdate: async (id, f) => {
       const a = D.advisors.find((x) => x.id === id); if (!a) return null;

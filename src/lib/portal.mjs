@@ -98,6 +98,7 @@ export function beheerPage() {
       <a href="#/nieuws" data-nav-link="nieuws">Nieuws</a>
       <a href="#/aanvragen" data-nav-link="aanvragen">Aanvragen</a>
       <a href="#/rapporten" data-nav-link="rapporten">Rapporten</a>
+      <a href="#/medewerkers" data-nav-link="medewerkers">Medewerkers</a>
     </nav>
     <div class="portal-user" data-user hidden><span data-user-name></span><button type="button" class="btn btn-outline-light btn-sm" data-uitloggen>Uitloggen</button></div>
   </div>

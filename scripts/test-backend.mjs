@@ -476,28 +476,32 @@ test('rapporten: keuzelijsten verplicht, 1 tot 4 foto\'s per onderdeel, extra fo
   assert.equal(new Set(ids).size, ids.length, 'unieke tekening-id\'s');
 });
 
-test('rapporten: definitief maken alleen door gekoppelde adviseur of beheerder; adviseurs alleen door beheerder', async () => {
-  await newUser('beheerder'); await newUser('medewerker'); await newUser('medewerker', 'melvin@test.nl');
-  const s = await loginAs('beheerder@test.nl'); const m = await loginAs('medewerker@test.nl'); const mk = await loginAs('melvin@test.nl');
+test('medewerkers: één gedeelde inlog beheert medewerkers en rondt rapporten af; certificaat nodig bij afronden', async () => {
+  await newUser('medewerker'); await newUser('beheerder');
+  const m = await loginAs('medewerker@test.nl'); const s = await loginAs('beheerder@test.nl');
   const { id, adv } = await rapportKlaar(m);
-  assert.equal((await admin(m, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } })).status, 403);
-  assert.equal((await admin(m, 'rapport-adviseur-opslaan', { method: 'POST', body: { id: adv[0].id, name: 'X', certificate: 'Y-123' } })).status, 403);
-  assert.equal((await admin(m, 'rapport-gebruikers')).status, 403);
-  const users = (await admin(s, 'rapport-gebruikers')).json.items;
-  const melvinUser = users.find((u) => u.email === 'melvin@test.nl');
-  assert.ok(melvinUser && !('password_hash' in melvinUser));
-  assert.equal((await admin(s, 'rapport-adviseur-opslaan', { method: 'POST', body: { id: adv[0].id, name: adv[0].name, certificate: adv[0].certificate, user_id: melvinUser.id } })).status, 200);
-  assert.equal((await admin(m, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } })).status, 403, 'andere medewerker nog steeds niet');
-  assert.equal((await admin(mk, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } })).status, 200);
-  assert.equal((await admin(m, 'rapport-verwijderen', { method: 'POST', body: { id, bevestig: 'x' } })).status, 403);
-  // portretfoto voor de website: alleen beheerder, alleen echte afbeeldingen
+  // medewerker toevoegen en aanpassen (functie, introductie, op site, volgorde); certificaat is optioneel
+  const nieuw = await admin(m, 'rapport-adviseur-opslaan', { method: 'POST', body: { name: 'Nieuwe Collega', functie: 'Funderingsadviseur', introductie: 'Korte introductie.', op_site: false, volgorde: '3' } });
+  assert.equal(nieuw.status, 200);
+  assert.equal(nieuw.json.website, 'niet_ingesteld', 'zonder deploy hook wordt de site niet herbouwd');
+  assert.deepEqual([nieuw.json.item.functie, nieuw.json.item.op_site, nieuw.json.item.volgorde, nieuw.json.item.certificate], ['Funderingsadviseur', false, 3, null]);
+  assert.equal((await admin(m, 'rapport-adviseur-opslaan', { method: 'POST', body: { name: 'X' } })).status, 422, 'naam te kort');
+  assert.equal((await admin(m, 'rapport-adviseur-opslaan', { method: 'POST', body: { name: 'Nieuwe Collega' } })).status, 409, 'dubbele naam');
+  // zonder certificaatnummer kan een rapport niet definitief worden
+  await admin(m, 'rapport-adviseur-opslaan', { method: 'POST', body: { id: adv[0].id, name: adv[0].name, certificate: '' } });
+  const zonder = await admin(m, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } });
+  assert.equal(zonder.status, 422);
+  await admin(m, 'rapport-adviseur-opslaan', { method: 'POST', body: { id: adv[0].id, name: adv[0].name, certificate: adv[0].certificate } });
+  // iedereen die inlogt mag afronden (geen gekoppeld account meer nodig)
+  assert.equal((await admin(m, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } })).status, 200);
+  assert.equal((await admin(m, 'rapport-verwijderen', { method: 'POST', body: { id, bevestig: 'x' } })).status, 403, 'verwijderen blijft voor de beheerder');
+  // portretfoto: alleen echte afbeeldingen
   const jpeg = Buffer.from([0xff, 0xd8, 0xff, 0xe0, 0, 0x10]).toString('base64');
-  assert.equal((await admin(m, 'rapport-adviseur-foto', { method: 'POST', body: { id: adv[0].id, type: 'image/jpeg', data: jpeg } })).status, 403);
-  assert.equal((await admin(s, 'rapport-adviseur-foto', { method: 'POST', body: { id: adv[0].id, type: 'image/jpeg', data: Buffer.from('<svg>').toString('base64') } })).status, 422);
-  const foto = await admin(s, 'rapport-adviseur-foto', { method: 'POST', body: { id: adv[0].id, type: 'image/jpeg', data: jpeg } });
+  assert.equal((await admin(m, 'rapport-adviseur-foto', { method: 'POST', body: { id: adv[0].id, type: 'image/jpeg', data: Buffer.from('<svg>').toString('base64') } })).status, 422);
+  const foto = await admin(m, 'rapport-adviseur-foto', { method: 'POST', body: { id: adv[0].id, type: 'image/jpeg', data: jpeg } });
   assert.equal(foto.status, 200); assert.match(foto.json.foto_url, /team\/[\w-]+\.jpg$/);
   assert.ok((await admin(s, 'rapport-adviseurs')).json.items.find((a) => a.id === adv[0].id).foto_url);
-  assert.equal((await admin(s, 'rapport-adviseur-foto', { method: 'POST', body: { id: adv[0].id, verwijderen: true } })).json.foto_url, null);
+  assert.equal((await admin(m, 'rapport-adviseur-foto', { method: 'POST', body: { id: adv[0].id, verwijderen: true } })).json.foto_url, null);
 });
 
 test('rapporten: PDF vastleggen, versturen met adrescontrole, geen dubbele verzending, nieuwe versie overschrijft niets, uitkomst op trackingpagina', async () => {

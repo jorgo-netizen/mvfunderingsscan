@@ -89,6 +89,7 @@ export function controle(data, { advisor, images = [] } = {}) {
   eis('voorblad', 'object_plaats', s(v.object_plaats), 'Vul de plaats van het object in.');
   eis('voorblad', 'uitgebracht_op', /^\d{4}-\d{2}-\d{2}$/.test(s(v.uitgebracht_op)), 'Vul de datum in waarop het rapport wordt uitgebracht.');
   eis('voorblad', 'advisor_id', !!advisor, 'Kies de adviseur.');
+  if (advisor) eis('voorblad', 'advisor_id', !!advisor.certificate, `Vul bij Medewerkers het certificaatnummer van ${advisor.name} in.`);
   eis('voorblad', 'foto', foto('voorblad') >= 1, 'Voeg de foto voor het voorblad toe.');
 
   eis('algemeen', 'inspectie_datum', /^\d{4}-\d{2}-\d{2}$/.test(s(a.inspectie_datum)), 'Vul de inspectiedatum in.');

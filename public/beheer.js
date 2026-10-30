@@ -99,7 +99,7 @@
     const go = parts[0] === 'nieuws' ? (parts[1] ? editNews(parts[1]) : listNews())
       : parts[0] === 'aanvragen' ? (parts[1] ? showRequest(parts[1]) : listRequests())
         : parts[0] === 'rapporten' ? (parts[1] === 'nieuw' ? newReportDialog() : parts[1] ? editReport(parts[1].split('?')[0], parts[2]) : listReports())
-          : parts[0] === 'adviseurs' ? advisorsPage()
+          : parts[0] === 'medewerkers' || parts[0] === 'adviseurs' ? medewerkersPage()
             : dashboard();
     Promise.resolve(go).then(() => main.focus({ preventScroll: true })).catch((err) => { if (err.message !== 'niet ingelogd') render(h('div', { class: 'portal-card' }, h('p', { class: 'portal-error', text: err.message }))); });
   }
@@ -321,7 +321,7 @@
     render(
       h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'QuickScan-rapporten' }),
         h('div', { class: 'portal-actions' },
-          me.role === 'beheerder' ? h('a', { class: 'btn btn-ghost-dark', href: '#/adviseurs', text: 'Adviseurs' }) : null,
+          h('a', { class: 'btn btn-ghost-dark', href: '#/medewerkers', text: 'Medewerkers' }),
           h('a', { class: 'btn btn-gold', href: '#/rapporten/nieuw', text: 'Nieuw rapport' }))),
       h('div', { class: 'portal-card' }, form, msg), results);
     await load();
@@ -432,7 +432,7 @@
     // --- fotovakken
     const fotos = d.fotos;
     const fotoVak = (slot, position, label, naWijziging) => {
-      const box = h('div', { class: 'portal-foto' });
+      const box = h('div', { class: 'portal-avatar' });
       const teken = () => {
         box.textContent = '';
         const f = fotos.find((x) => x.slot === slot && x.position === position);
@@ -679,7 +679,7 @@
       const acties = h('div', { class: 'portal-actions' },
         h('a', { class: 'btn btn-ghost-dark', href: `${API}?actie=rapport-voorbeeld&id=${encodeURIComponent(r.id)}`, target: '_blank', rel: 'noopener', text: 'Voorbeeld rapport bekijken' }),
         kanBewerken ? h('button', { type: 'button', class: 'btn btn-ghost-dark', text: 'Download Word (concept)', onclick: async () => { await opslaan(); download(); } }) : null,
-        kanBewerken ? h('button', { type: 'button', class: 'btn btn-gold', text: 'Definitief maken', disabled: !!fout.length || !d.mag_afronden, title: !d.mag_afronden ? 'Alleen de gekozen adviseur of een beheerder' : null, onclick: async (e) => {
+        kanBewerken ? h('button', { type: 'button', class: 'btn btn-gold', text: 'Definitief maken', disabled: !!fout.length, onclick: async (e) => {
           if (!(await opslaan())) return;
           const keus = data.conclusie.risico;
           if (!window.confirm(`Rapport ${r.report_nr} definitief maken met uitkomst "${RISICO[keus] || '?'}"?\n\nDaarna kun je het niet meer wijzigen zonder een nieuwe versie te starten.`)) return;
@@ -687,7 +687,6 @@
           try { await api('rapport-definitief', { method: 'POST', body: { id: r.id, bevestig_risico: keus } }); dirty = false; await editReport(r.id, 'afronden'); }
           catch (err) { flash(amsg, err.message, 'error'); busy(e.target, false); }
         } }) : null);
-      if (kanBewerken && !d.mag_afronden) ctl.append(h('p', { class: 'portal-hint', text: 'Definitief maken, PDF vastleggen en versturen kan alleen de gekozen adviseur (met gekoppeld account) of een beheerder.' }));
 
       // versies, PDF en versturen
       const versies = h('section', { class: 'portal-card' }, h('h2', { class: 'portal-h2', text: 'Definitieve versies' }));
@@ -726,18 +725,18 @@
             h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: 'Download Word', onclick: () => download(v.version) }),
             h('a', { class: 'btn btn-ghost-dark btn-sm', href: `${API}?actie=rapport-voorbeeld&id=${encodeURIComponent(r.id)}&versie=${v.version}`, target: '_blank', rel: 'noopener', text: 'Voorbeeld' }),
             v.pdf_path ? h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: 'Download PDF', onclick: async () => { try { const x = await api('rapport-pdf-bekijken', { method: 'POST', body: { id: r.id, versie: v.version } }); window.location.assign(x.url); } catch (err) { flash(vmsg, err.message, 'error'); } } }) : null),
-          huidig && d.mag_afronden && !v.sent_at ? h('div', { class: 'portal-field' },
+          huidig && !v.sent_at ? h('div', { class: 'portal-field' },
             h('p', { class: 'portal-label', text: v.pdf_path ? `PDF geüpload op ${fmt(v.pdf_uploaded_at)}. Ander PDF-bestand uploaden:` : 'PDF uploaden' }),
             h('p', { class: 'portal-hint', text: 'Open het Word-bestand van deze versie in Word, controleer het en kies Bestand → Opslaan als → PDF. Upload die PDF hier.' }),
             pdfIn) : null,
-          huidig && d.mag_afronden && v.pdf_path ? h('div', { class: 'portal-send' },
+          huidig && v.pdf_path ? h('div', { class: 'portal-send' },
             h('p', { class: 'portal-label', text: 'Versturen naar de klant' }),
             h('div', { class: 'portal-grid-form' }, field('E-mailadres ontvanger', email), field('Typ het e-mailadres nogmaals ter controle', email2)),
             d.aanvraag ? h('div', { class: 'portal-check' }, koppel, h('label', { for: koppel.id, text: `Rapport ook beschikbaar maken op de trackingpagina van aanvraag ${d.aanvraag.dossier_nr} en de status op "Rapport afgerond" zetten` })) : null,
             stuur) : null,
           vmsg));
       });
-      if (!kanBewerken && d.mag_afronden) versies.append(h('div', { class: 'portal-actions' }, h('button', { type: 'button', class: 'btn btn-ghost-dark', text: 'Nieuwe versie starten', onclick: async () => {
+      if (!kanBewerken) versies.append(h('div', { class: 'portal-actions' }, h('button', { type: 'button', class: 'btn btn-ghost-dark', text: 'Nieuwe versie starten', onclick: async () => {
         if (!window.confirm('Een nieuwe versie starten? De huidige definitieve versie blijft bewaard en ongewijzigd.')) return;
         try { await api('rapport-nieuwe-versie', { method: 'POST', body: { id: r.id } }); await editReport(r.id, 'voorblad'); } catch (err) { flash(amsg, err.message, 'error'); }
       } })));
@@ -788,55 +787,73 @@
     if (melding) flash(msg, melding);
   }
 
-  async function advisorsPage() {
-    if (me.role !== 'beheerder') { render(h('div', { class: 'portal-card' }, h('p', { text: 'Alleen een beheerder kan adviseurs beheren.' }))); return; }
-    const [d, u] = await Promise.all([api('rapport-adviseurs'), api('rapport-gebruikers')]);
+  // ---------------------------------------------------------------- medewerkers (ook op /over-ons/)
+  const WEBSITE_MELDING = {
+    gestart: 'Opgeslagen. De website wordt bijgewerkt; over 1 à 2 minuten staat het op de pagina Over ons.',
+    niet_ingesteld: 'Opgeslagen. Let op: automatisch bijwerken van de website is nog niet ingesteld (VERCEL_DEPLOY_HOOK), dus de pagina Over ons verandert pas bij de volgende deploy.',
+    mislukt: 'Opgeslagen, maar het bijwerken van de website kon niet worden gestart. Probeer het later nog eens of start in Vercel een nieuwe deploy.',
+  };
+  async function medewerkersPage() {
+    const d = await api('rapport-adviseurs');
     const msg = flashEl();
-    const rij = (a = {}) => {
-      const naam = h('input', { type: 'text', value: a.name || '', 'aria-label': 'Naam adviseur', maxlength: 120 });
-      const cert = h('input', { type: 'text', value: a.certificate || '', 'aria-label': 'Certificaatnummer', maxlength: 60 });
-      const acc = h('select', { 'aria-label': 'Gekoppeld account' }, h('option', { value: '', text: '– geen –' }), u.items.map((x) => h('option', { value: x.id, text: `${x.name} (${x.email})` })));
-      acc.value = a.user_id || '';
-      const actief = h('input', { type: 'checkbox', checked: a.active !== false, 'aria-label': 'Actief' });
-      const foto = a.id ? fotoCel(a) : h('span', { class: 'portal-muted', text: 'Eerst toevoegen' });
-      return h('tr', {}, h('td', {}, naam), h('td', {}, cert), h('td', {}, acc), h('td', {}, actief), h('td', {}, foto),
-        h('td', {}, h('button', { type: 'button', class: 'btn btn-gold btn-sm', text: a.id ? 'Opslaan' : 'Toevoegen', onclick: async () => {
-          if (a.id && (cert.value !== a.certificate || naam.value !== a.name) && !window.confirm('Naam of certificaatnummer wijzigen? Dit wordt gebruikt in nieuwe rapporten.')) return;
-          try { await api('rapport-adviseur-opslaan', { method: 'POST', body: { id: a.id, name: naam.value, certificate: cert.value, user_id: acc.value || null, active: actief.checked } }); await advisorsPage(); }
-          catch (err) { flash(msg, err.message, 'error'); }
-        } })));
-    };
-    // Portretfoto voor de website (/over-ons/). Wordt verkleind tot max. 640 px en opnieuw als JPEG opgeslagen.
-    const fotoCel = (a) => {
-      const box = h('div', { class: 'portal-foto' });
+    const items = [...d.items].sort((a, b) => (a.volgorde ?? 0) - (b.volgorde ?? 0) || a.name.localeCompare(b.name));
+    const foto = (a) => {
+      const box = h('div', { class: 'portal-avatar' });
       const toon = (url) => {
-        box.replaceChildren(url ? h('img', { src: url, alt: `Foto van ${a.name}`, width: 56, height: 56 }) : h('span', { class: 'portal-muted', text: 'Geen foto' }));
-        if (url) box.append(h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: 'Verwijderen', onclick: async () => {
+        box.replaceChildren(url ? h('img', { src: url, alt: `Foto van ${a.name}`, width: 72, height: 72 }) : h('span', { class: 'portal-avatar-leeg', text: a.name.split(/\s+/).map((w) => w[0]).filter((c) => /[A-Z]/.test(c)).slice(0, 2).join('') || '?' }));
+        if (url) box.append(h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: 'Foto verwijderen', onclick: async () => {
           if (!window.confirm(`Foto van ${a.name} verwijderen? Op de website verschijnen dan de initialen.`)) return;
-          try { await api('rapport-adviseur-foto', { method: 'POST', body: { id: a.id, verwijderen: true } }); toon(null); flash(msg, 'Foto verwijderd. Binnen enkele minuten ook van de website.', 'ok'); }
+          try { const r = await api('rapport-adviseur-foto', { method: 'POST', body: { id: a.id, verwijderen: true } }); toon(null); flash(msg, WEBSITE_MELDING[r.website] || 'Foto verwijderd.', 'ok'); }
           catch (err) { flash(msg, err.message, 'error'); }
         } }));
       };
-      const kies = h('input', { type: 'file', accept: 'image/jpeg,image/png,image/webp', 'aria-label': `Foto van ${a.name} kiezen`, class: 'portal-foto-input' });
+      const kies = h('input', { type: 'file', accept: 'image/jpeg,image/png,image/webp', id: `foto-mw-${a.id}`, class: 'portal-avatar-input' });
       kies.addEventListener('change', async () => {
         const file = kies.files[0]; if (!file) return;
         try {
           const data = await resizeImage(file, 640);
           const r = await api('rapport-adviseur-foto', { method: 'POST', body: { id: a.id, type: 'image/jpeg', data } });
-          toon(r.foto_url); flash(msg, `Foto van ${a.name} opgeslagen. Binnen enkele minuten zichtbaar op de website.`, 'ok');
+          toon(r.foto_url); flash(msg, WEBSITE_MELDING[r.website] || 'Foto opgeslagen.', 'ok');
         } catch (err) { flash(msg, err.message, 'error'); }
         kies.value = '';
       });
       toon(a.foto_url);
-      return h('div', {}, box, kies);
+      return h('div', { class: 'portal-field' }, h('label', { for: kies.id, text: 'Portretfoto (wordt verkleind, zonder locatiegegevens opgeslagen)' }), box, kies);
     };
-    render(h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'Adviseurs en certificaatnummers' })),
-      h('p', {}, h('a', { href: '#/rapporten', text: '← Rapporten' })),
+    const kaart = (a = {}) => {
+      const key = a.id || 'nieuw';
+      const naam = h('input', { id: `mw-naam-${key}`, type: 'text', value: a.name || '', maxlength: 120, required: true });
+      const functie = h('input', { id: `mw-functie-${key}`, type: 'text', value: a.functie || 'Bouwkundig adviseur', maxlength: 80 });
+      const intro = h('textarea', { id: `mw-intro-${key}`, rows: 3, maxlength: 600 }); intro.value = a.introductie || '';
+      const cert = h('input', { id: `mw-cert-${key}`, type: 'text', value: a.certificate || '', maxlength: 60 });
+      const volgorde = h('input', { id: `mw-volgorde-${key}`, type: 'number', min: 0, max: 99, value: a.volgorde ?? 0 });
+      const opSite = h('input', { id: `mw-site-${key}`, type: 'checkbox', checked: a.op_site !== false });
+      const actief = h('input', { id: `mw-actief-${key}`, type: 'checkbox', checked: a.active !== false });
+      const opslaan = h('button', { type: 'button', class: 'btn btn-gold', text: a.id ? 'Opslaan' : 'Medewerker toevoegen', onclick: async (e) => {
+        if (a.id && cert.value.trim() !== (a.certificate || '') && !window.confirm('Certificaatnummer wijzigen? Het nieuwe nummer komt in nieuwe rapporten van deze medewerker.')) return;
+        busy(e.target, true);
+        try {
+          const r = await api('rapport-adviseur-opslaan', { method: 'POST', body: { id: a.id, name: naam.value, functie: functie.value, introductie: intro.value, certificate: cert.value, volgorde: volgorde.value, op_site: opSite.checked, active: actief.checked } });
+          await medewerkersPage(); flash(document.querySelector('.portal-flash'), WEBSITE_MELDING[r.website] || 'Opgeslagen.', 'ok');
+        } catch (err) { flash(msg, err.message, 'error'); busy(e.target, false); }
+      } });
+      return h('section', { class: 'portal-card' },
+        h('h2', { class: 'portal-h2', text: a.id ? a.name : 'Nieuwe medewerker' }),
+        h('div', { class: 'portal-grid-form' },
+          field('Naam', naam), field('Functie', functie, 'Zo staat het op de website, bijvoorbeeld "Bouwkundig adviseur".'),
+          field('Certificaatnummer', cert, 'Komt in het rapport bij deze adviseur. Nodig om een rapport definitief te maken.'),
+          field('Volgorde op de website', volgorde, 'Lager nummer staat eerder.')),
+        field('Korte introductie (optioneel)', intro, 'Twee of drie zinnen, alleen feiten. Verschijnt op de pagina Over ons.'),
+        h('div', { class: 'portal-check' }, opSite, h('label', { for: opSite.id, text: 'Tonen op de website (pagina Over ons)' })),
+        h('div', { class: 'portal-check' }, actief, h('label', { for: actief.id, text: 'Actief: te kiezen bij een nieuw rapport' })),
+        a.id ? foto(a) : h('p', { class: 'portal-hint', text: 'Na het toevoegen kun je een foto uploaden.' }),
+        h('div', { class: 'portal-actions' }, opslaan));
+    };
+    render(h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'Medewerkers' })),
       h('div', { class: 'portal-card' },
-        h('p', { class: 'portal-hint', text: 'Het certificaatnummer wordt automatisch in het rapport gezet bij de gekozen adviseur. Koppel een adviseur aan een account: dat account mag rapporten van deze adviseur definitief maken en versturen.' }),
-        h('p', { class: 'portal-hint', text: 'Foto op website: een portretfoto voor de pagina Over ons. Zonder foto staan daar de initialen. Gebruik een recente foto van de adviseur zelf, geen stockfoto.' }),
-        msg, h('div', { class: 'portal-table-wrap' }, h('table', { class: 'portal-table' }, h('thead', {}, h('tr', {}, ['Naam', 'Certificaatnummer', 'Gekoppeld account', 'Actief', 'Foto op website', ''].map((t) => h('th', { scope: 'col', text: t })))),
-          h('tbody', {}, d.items.map((a) => rij(a)), rij())))));
+        h('p', { class: 'portal-hint', text: 'Medewerkers met "Tonen op de website" staan op de pagina Over ons, met naam, functie, foto en introductie. Actieve medewerkers kies je bij een rapport als adviseur; hun certificaatnummer komt dan in het rapport. Iemand die uit dienst gaat: zet beide vinkjes uit. Oude rapporten blijven dan ongewijzigd.' }),
+        msg),
+      ...items.map((a) => kaart(a)), kaart());
   }
 
   // ---------------------------------------------------------------- aanvragen
@@ -923,7 +940,7 @@
           h('div', { class: 'portal-actions' },
             h('button', { type: 'button', class: 'btn btn-ghost-dark', text: 'Bekijken', onclick: async () => { try { const x = await api('aanvraag-rapport-bekijken', { method: 'POST', body: { id: r.id } }); window.open(x.url, '_blank', 'noopener'); } catch (err) { flash(repMsg, err.message, 'error'); } } }),
             h('button', { type: 'button', class: 'btn btn-danger', text: 'Rapport verwijderen', onclick: async () => { if (!window.confirm('Het rapport verwijderen? De klant kan het dan niet meer downloaden.')) return; try { await api('aanvraag-rapport-verwijderen', { method: 'POST', body: { id: r.id } }); await reload(); } catch (err) { flash(repMsg, err.message, 'error'); } } })))
-        : h('p', { class: 'portal-muted', text: 'Nog geen rapport geüpload. Zonder rapport ziet de klant bij "Rapport afgerond" dat hij het rapport op de afgesproken manier ontvangt.' }),
+        : h('p', { class: 'portal-muted', text: 'Nog geen rapport geüpload. Zonder rapport ziet de klant bij "Rapport afgerond" dat het rapport op de afgesproken manier wordt bezorgd.' }),
       field(r.report_path ? 'Ander rapport uploaden (vervangt het huidige)' : 'Rapport uploaden (PDF, max. 50 MB)', pdf), repMsg);
     pdf.addEventListener('change', async () => {
       const f = pdf.files[0]; if (!f) return;

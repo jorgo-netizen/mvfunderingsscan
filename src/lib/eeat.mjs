@@ -29,15 +29,23 @@ export function openPlaceholders(obj = EEAT, path = '') {
   return out;
 }
 
-/** Adviseurs uit eeat.json → "experts". Alleen wie naam en functie echt ingevuld heeft, telt mee. */
+/**
+ * Adviseurs. Bron: de medewerkers uit het beheerportaal (zie setMedewerkers, aangeroepen door de build),
+ * anders eeat.json → "experts". Alleen wie naam en functie echt ingevuld heeft, telt mee.
+ */
 const slug = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const ALL = EEAT.experts || (EEAT.expert ? [EEAT.expert] : []);
-export const EXPERTS = ALL.filter((e) => filled(e.naam) && filled(e.functie)).map((e) => ({ ...e, slug: slug(e.naam) }));
-export const EXPERT_OK = EXPERTS.length > 0;
+let ALL = EEAT.experts || (EEAT.expert ? [EEAT.expert] : []);
+const maak = (lijst) => lijst.filter((e) => filled(e.naam) && filled(e.functie)).map((e) => ({ ...e, slug: slug(e.naam) }));
+export let EXPERTS = maak(ALL);
+export let EXPERT_OK = EXPERTS.length > 0;
+/** Vervangt de adviseurs door de medewerkers uit het portaal: [{ naam, functie, introductie, foto }]. */
+export function setMedewerkers(lijst) {
+  ALL = lijst;
+  EXPERTS = maak(lijst);
+  EXPERT_OK = EXPERTS.length > 0;
+}
 export const PERSON_ID_SUFFIX = '/over-ons/#deskundige';
 const personId = (domain, e) => `${domain}/over-ons/#${e.slug}`;
-/** Portretfoto: beheerd in het beheerportaal (Adviseurs). /teamfoto/<slug>/ stuurt door naar de foto of geeft 404. */
-export const teamFotoUrl = (e) => `/teamfoto/${e.slug}/`;
 
 const naamLijst = (items) => (items.length < 2 ? items.join('') : `${items.slice(0, -1).join(', ')} en ${items[items.length - 1]}`);
 
@@ -52,6 +60,7 @@ export function personSchemas(domain, orgId) {
       jobTitle: E.functie,
       worksFor: { '@id': orgId },
       url: personId(domain, E),
+      ...(filled(E.foto) ? { image: E.foto } : {}),
       ...(filledList(E.specialisaties).length ? { knowsAbout: filledList(E.specialisaties) } : {}),
       ...(filledList(E.certificaten).length ? { hasCredential: filledList(E.certificaten).map((c) => ({ '@type': 'EducationalOccupationalCredential', name: c })) } : {}),
       ...(filledList(E.lidmaatschappen).length ? { memberOf: filledList(E.lidmaatschappen).map((m) => ({ '@type': 'Organization', name: m })) } : {}),
@@ -80,7 +89,7 @@ export function expertSection() {
     ].filter(([, v]) => v.length);
     const initialen = E.naam.split(/\s+/).filter(Boolean).map((w) => w[0]).filter((c) => /[A-Z]/.test(c)).slice(0, 2).join('');
     const open = SHOW_PLACEHOLDERS ? openPlaceholders(E) : [];
-    return `<div class="expert-card" id="${E.slug}"><span class="expert-avatar" aria-hidden="true">${esc(initialen)}<img class="expert-photo" src="${teamFotoUrl(E)}" alt="" width="120" height="120" loading="lazy" decoding="async"></span><div>
+    return `<div class="expert-card" id="${E.slug}"><span class="expert-avatar" aria-hidden="true">${esc(initialen)}${filled(E.foto) ? `<img class="expert-photo" src="${esc(E.foto)}" alt="" width="120" height="120" loading="lazy" decoding="async">` : ''}</span><div>
 <p class="expert-name"><strong>${esc(E.naam)}</strong><br><span>${esc(E.functie)}</span></p>
 ${filled(E.introductie) ? `<p>${esc(E.introductie)}</p>` : ''}
 ${rows.length ? `<dl class="def-list">${rows.map(([k, v]) => `<div><dt>${k}</dt><dd>${v.map(esc).join('<br>')}</dd></div>`).join('')}</dl>` : ''}

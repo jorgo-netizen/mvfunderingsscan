@@ -109,7 +109,7 @@ Met `MVFS_DB=memory` werkt alles lokaal zonder Supabase. Zonder `RESEND_API_KEY`
 
 ## 9. Nog te doen vóór productiegebruik
 
-1. **Privacyverklaring publiceren.** Er is nu geen privacyverklaring op de site, terwijl er nu persoonsgegevens en woninggegevens worden opgeslagen. Zie `docs/privacyverklaring-concept.md`. Laat die beoordelen en vul hem aan; neem daarin onder meer bewaartermijnen en verwerkers (Supabase, Resend, Vercel) op.
+1. **Privacyverklaring controleren.** De privacyverklaring staat op `/privacyverklaring/`. Laat die beoordelen en vul bewaartermijnen en verwerkers (Supabase, Resend, Vercel) aan waar nodig.
 2. **Verwerkersovereenkomsten (DPA)** afsluiten met Supabase, Resend en Vercel.
 3. **Bewaartermijn** vaststellen. Verwijderen kan nu handmatig per aanvraag (rol beheerder). Automatisch opschonen is nog **niet** gebouwd.
 4. **Supabase-koppeling na livegang controleren.** De logica is getest tegen een nagebootste database, niet tegen een echte Supabase-omgeving. Doe na het instellen één keer de volledige ronde op een Preview-omgeving met een testdatabase:
@@ -145,10 +145,27 @@ Goed om te weten:
 - De vertaling is niet zichtbaar voor zoekmachines (die zien de Nederlandse pagina). Wil je later ook in Google gevonden worden op Engelse zoekwoorden, dan zijn aparte Engelse pagina's nodig.
 - Lokaal testen zonder DeepL: start de server met `MVFS_VERTAAL_TEST=1` (dan wordt tekst in hoofdletters gezet in plaats van vertaald). Dit werkt nooit in productie.
 
-## 11. Adviseurs op de website en hun foto
+## 11. Medewerkers (portaal → pagina Over ons)
 
-Op `/over-ons/` staan de adviseurs uit `src/content/eeat.json` (`experts`): naam en functie verplicht, opleiding, ervaring, certificaten en LinkedIn optioneel. Alleen ingevulde velden (zonder [vierkante haken]) komen online.
+Medewerkers beheer je in het portaal onder **Medewerkers**: naam, functie, korte introductie, certificaatnummer, volgorde, portretfoto en twee vinkjes:
+- **Tonen op de website:** de medewerker staat op `/over-ons/` (en in de regel onder kennisartikelen).
+- **Actief:** de medewerker is te kiezen als adviseur bij een nieuw rapport. Het certificaatnummer komt dan in het rapport en is nodig om het rapport definitief te maken.
 
-De portretfoto beheer je in het beheerportaal: *Rapporten → Adviseurs → Foto op website*. Eenmalig nodig: voer in Supabase (SQL Editor) `supabase/migrations/004_mvfs_adviseur_foto.sql` uit. De foto wordt verkleind tot 640 px, zonder EXIF-gegevens opgeslagen en is binnen enkele minuten zichtbaar. Zonder foto toont de site de initialen.
+Iemand uit dienst: zet beide vinkjes uit. Oude rapporten blijven ongewijzigd.
 
-De koppeling gaat op naam: de naam in het portaal moet gelijk zijn aan de naam in `eeat.json`.
+**Eenmalig inrichten**
+1. Supabase → SQL Editor: voer `supabase/migrations/005_mvfs_medewerkers.sql` uit (dit bevat ook de fotokolom uit 004).
+2. Vercel → Settings → Git → **Deploy Hooks**: maak een hook (naam bijv. `portaal-medewerkers`, branch `main`) en kopieer de URL.
+3. Vercel → Environment Variables: `VERCEL_DEPLOY_HOOK` = die URL (Production). Daarna opnieuw deployen.
+
+**Hoe het werkt:** na elke wijziging of foto start het portaal via de deploy hook een nieuwe build. De build haalt de medewerkers uit Supabase en zet ze als gewone HTML (met Person-gegevens voor Google) op `/over-ons/`. Na ongeveer 1 à 2 minuten is het zichtbaar. Zonder `VERCEL_DEPLOY_HOOK` wordt alles opgeslagen, maar verandert de site pas bij de volgende deploy. Kan de build de database niet bereiken, dan gebruikt hij `src/content/eeat.json` (`experts`) als reserve.
+
+Foto's worden verkleind tot 640 px, zonder EXIF-gegevens opgeslagen in de openbare bucket `nieuws` (map `team/`).
+
+## 12. Eén gedeelde inlog
+
+Het portaal werkt met één gedeeld account. Iedereen die inlogt mag rapporten definitief maken, de PDF vastleggen en versturen; bij het rapport kies je zelf welke adviseur het is. Maak het gedeelde account aan met de rol `beheerder` (zie hoofdstuk 4), zodat ook het verwijderen van aanvragen en rapporten mogelijk is. Gebruik een sterk wachtwoord (minimaal 12 tekens) en wijzig het als iemand uit dienst gaat:
+
+```
+npm run beheer:gebruiker -- --email info@mvadviseurs.nl --nieuw-wachtwoord
+```

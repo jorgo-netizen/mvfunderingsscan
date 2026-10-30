@@ -15,9 +15,9 @@ Met deze module stel je in het beheerportaal (`/beheer/` → **Rapporten**) het 
 
    De adviseurs Melvin Krikke (CE240260817-02) en Rutger Fopma (CE240260817-03) worden er direct in gezet.
 2. **Vercel.** Er zijn geen nieuwe omgevingsvariabelen nodig. Je gebruikt dezelfde `SUPABASE_URL`, `SUPABASE_SERVICE_KEY` en `RESEND_API_KEY` als bij Track & Trace. In `vercel.json` krijgt de beheerfunctie het rapportsjabloon mee (`includeFiles`).
-3. **Adviseur koppelen aan een account.** Ga naar **Rapporten → Adviseurs** (alleen beheerder) en kies bij elke adviseur het bijbehorende medewerkersaccount. Maak het account eerst aan met `npm run beheer:gebruiker` (zie de implementatiehandleiding).
-   - Alleen het gekoppelde account of een beheerder mag een rapport van die adviseur **definitief maken**, de **PDF vastleggen**, **versturen** en een **nieuwe versie** starten.
-   - Iedere medewerker mag rapporten aanmaken en invullen.
+3. **Medewerkers en certificaatnummers.** Onder **Medewerkers** beheer je de adviseurs: naam, functie, certificaatnummer en of ze actief zijn. Bij een rapport kies je zelf welke adviseur het is; zijn certificaatnummer komt automatisch in het rapport. Zonder certificaatnummer kan het rapport niet definitief worden.
+   - Het portaal werkt met één gedeelde inlog. Wie inlogt, mag rapporten aanmaken, invullen, **definitief maken**, de **PDF vastleggen**, **versturen** en een **nieuwe versie** starten.
+   - Verwijderen van rapporten kan alleen met een account met de rol beheerder.
 
 ## 2. Een rapport maken
 

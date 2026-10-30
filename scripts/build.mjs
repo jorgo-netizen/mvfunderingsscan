@@ -18,7 +18,7 @@ import {
 } from '../src/lib/layout.mjs';
 import { render, relatedHtml } from '../src/lib/template.mjs';
 import { aanvraagForm, contactForm } from '../src/lib/forms.mjs';
-import { openPlaceholders, SHOW_PLACEHOLDERS, rapportvoorbeeldCard } from '../src/lib/eeat.mjs';
+import { openPlaceholders, SHOW_PLACEHOLDERS, rapportvoorbeeldCard, setMedewerkers } from '../src/lib/eeat.mjs';
 import { statusPage, beheerPage } from '../src/lib/portal.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -452,7 +452,7 @@ Sitemap: ${DOMAIN}/nieuws-sitemap.xml
     if (g === 'regio' || g === 'problemen') return '0.7';
     return '0.6';
   };
-  const urlsXml = paths.map((path) => `  <url>\n    <loc>${DOMAIN}${path}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <priority>${priority(path)}</priority>\n  </url>`);
+  const urlsXml = [...new Set(paths)].map((path) => `  <url>\n    <loc>${DOMAIN}${path}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <priority>${priority(path)}</priority>\n  </url>`);
   write('/sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urlsXml.join('\n') + '\n</urlset>\n');
 
   const line = (p) => `- [${p.h1}](${DOMAIN}${p.path}): ${p.description}`;
@@ -564,4 +564,30 @@ export function build({ quiet = false } = {}) {
   return paths;
 }
 
-if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) build();
+/**
+ * Medewerkers uit het beheerportaal (Supabase) voor /over-ons/. Alleen als SUPABASE_URL en SUPABASE_SERVICE_KEY
+ * bij de build beschikbaar zijn (op Vercel wel, lokaal meestal niet). Lukt het niet, dan blijft eeat.json de bron.
+ */
+export async function laadMedewerkers({ quiet = false } = {}) {
+  const url = (process.env.SUPABASE_URL || '').replace(/\/$/, ''); const key = process.env.SUPABASE_SERVICE_KEY;
+  if (!url || !key) return false;
+  try {
+    const r = await fetch(`${url}/rest/v1/mvfs_advisors?select=name,functie,introductie,photo_path,op_site,volgorde,active&op_site=is.true`, { headers: { apikey: key, Authorization: `Bearer ${key}` } });
+    if (!r.ok) throw new Error(`database ${r.status}`);
+    const rows = (await r.json()).sort((a, b) => (a.volgorde ?? 0) - (b.volgorde ?? 0) || a.name.localeCompare(b.name));
+    setMedewerkers(rows.map((m) => ({
+      naam: m.name, functie: m.functie || 'Bouwkundig adviseur', introductie: m.introductie || '',
+      foto: m.photo_path ? `${url}/storage/v1/object/public/nieuws/${m.photo_path}` : '',
+    })));
+    if (!quiet) console.log(`ℹ ${rows.length} medewerker(s) uit het beheerportaal op /over-ons/`);
+    return true;
+  } catch (err) {
+    console.warn(`⚠ Medewerkers uit het portaal niet geladen (${err.message}); eeat.json wordt gebruikt.`);
+    return false;
+  }
+}
+
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  await laadMedewerkers();
+  build();
+}

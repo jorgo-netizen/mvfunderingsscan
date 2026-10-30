@@ -225,10 +225,6 @@
     {
       "source": "/nieuws-sitemap.xml",
       "destination": "/api/nieuws?sitemap=1"
-    },
-    {
-      "source": "/teamfoto/:naam/",
-      "destination": "/api/team-foto?naam=:naam"
     }
   ],
   "functions": {

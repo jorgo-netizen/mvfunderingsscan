@@ -14,6 +14,16 @@ import { zoekLigging, weerOp } from './adres.js';
 const BUCKET = 'rapport-bestanden';
 const DOCX = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
 const str = (v, max) => String(v ?? '').trim().slice(0, max);
+/**
+ * Laat Vercel de site opnieuw bouwen, zodat gewijzigde medewerkers op /over-ons/ komen.
+ * Vereist VERCEL_DEPLOY_HOOK (Vercel → Settings → Git → Deploy Hooks). Zonder die variabele gebeurt er niets.
+ */
+async function herbouwSite() {
+  const hook = process.env.VERCEL_DEPLOY_HOOK;
+  if (!hook || !/^https:\/\/api\.vercel\.com\//.test(hook)) return 'niet_ingesteld';
+  try { const r = await fetch(hook, { method: 'POST' }); return r.ok ? 'gestart' : 'mislukt'; }
+  catch (err) { logError('deploy-hook', err); return 'mislukt'; }
+}
 const FOTO_TYPES = { 'image/jpeg': [0xff, 0xd8, 0xff], 'image/png': [0x89, 0x50, 0x4e, 0x47], 'image/webp': [0x52, 0x49, 0x46, 0x46] };
 const STATUS_KEYS = STATUSES.map(([k]) => k);
 
@@ -67,7 +77,6 @@ function vanAanvraag(req) {
   };
 }
 
-const magAfronden = (user, advisor) => user.role === 'beheerder' || (!!advisor?.user_id && advisor.user_id === user.id);
 
 export async function rapportActies(db, req, res, actie, user, url, { json, fail, readJson, sendHtml, NOINDEX }) {
   const id = url.searchParams.get('id');
@@ -80,10 +89,6 @@ export async function rapportActies(db, req, res, actie, user, url, { json, fail
     return json(res, 200, { ok: true, items: items.map(lijstItem), statussen: STATUSES });
   }
   if (actie === 'rapport-adviseurs') return json(res, 200, { ok: true, items: (await db.advisorsList()).map((a) => ({ ...a, foto_url: a.photo_path ? db.publicUrl('nieuws', a.photo_path) : null })) });
-  if (actie === 'rapport-gebruikers') {
-    if (user.role !== 'beheerder') return fail(res, 403, 'Alleen een beheerder kan accounts aan adviseurs koppelen.');
-    return json(res, 200, { ok: true, items: (await db.usersList()).filter((u) => u.active).map(({ id, name, email }) => ({ id, name, email })) });
-  }
   if (actie === 'rapport') {
     const r = await laad(id); if (!r) return fail(res, 404, 'Rapport niet gevonden.');
     const [advisors, images, versions, emails] = await Promise.all([db.advisorsList(), db.reportImages(r.id), db.versionsList(r.id), db.reportEmails(r.id)]);
@@ -93,7 +98,7 @@ export async function rapportActies(db, req, res, actie, user, url, { json, fail
     return json(res, 200, {
       ok: true, report: { ...r, data: r.data }, advisors: advisors.filter((a) => a.active || a.id === r.advisor_id), fotos, versions, emails,
       controle: controle(r.data, { advisor, images }), statussen: STATUSES, bewerkbaar: EDIT_STATUSES.includes(r.status),
-      mag_afronden: magAfronden(user, advisor), slots: SLOTS, keuzes: KEUZES,
+      slots: SLOTS, keuzes: KEUZES,
       aanvraag: request ? { id: request.id, dossier_nr: request.dossier_nr, status: request.status, email: request.email } : null,
     });
   }
@@ -141,25 +146,29 @@ export async function rapportActies(db, req, res, actie, user, url, { json, fail
   if (req.method !== 'POST') return fail(res, 405, 'Alleen POST is toegestaan.');
   const body = await readJson(req, 3 * 1024 * 1024);
 
-  // ------------------------------------------------------------ adviseurs (alleen beheerder)
+  // ------------------------------------------------------------ medewerkers (ook getoond op /over-ons/)
   if (actie === 'rapport-adviseur-opslaan') {
-    if (user.role !== 'beheerder') return fail(res, 403, 'Alleen een beheerder kan adviseurs en certificaatnummers wijzigen.');
-    const row = { name: str(body.name, 120), certificate: str(body.certificate, 60), active: body.active !== false, user_id: isUuid(body.user_id) ? body.user_id : null };
-    if (row.name.length < 2 || row.certificate.length < 3) return fail(res, 422, 'Vul naam en certificaatnummer in.');
+    const cert = str(body.certificate, 60);
+    const row = {
+      name: str(body.name, 120), functie: str(body.functie, 80) || 'Bouwkundig adviseur', introductie: str(body.introductie, 600) || null,
+      certificate: cert || null, active: body.active !== false, op_site: body.op_site !== false,
+      volgorde: Math.max(0, Math.min(99, parseInt(body.volgorde, 10) || 0)),
+    };
+    if (row.name.length < 2) return fail(res, 422, 'Vul de naam in.');
+    if (cert && cert.length < 3) return fail(res, 422, 'Het certificaatnummer is te kort.');
     try {
       const a = isUuid(body.id) ? await db.advisorUpdate(body.id, row) : await db.advisorCreate(row);
-      return json(res, 200, { ok: true, item: a });
-    } catch (err) { if (err.status === 409) return fail(res, 409, 'Deze adviseur bestaat al.'); throw err; }
+      return json(res, 200, { ok: true, item: a, website: await herbouwSite() });
+    } catch (err) { if (err.status === 409) return fail(res, 409, 'Deze medewerker bestaat al.'); throw err; }
   }
   // Portretfoto voor /over-ons/ (openbaar, bucket 'nieuws' onder team/)
   if (actie === 'rapport-adviseur-foto') {
-    if (user.role !== 'beheerder') return fail(res, 403, 'Alleen een beheerder kan foto\'s van adviseurs wijzigen.');
     const a = isUuid(body.id) ? await db.advisorById(body.id) : null;
-    if (!a) return fail(res, 404, 'Adviseur niet gevonden.');
+    if (!a) return fail(res, 404, 'Medewerker niet gevonden.');
     if (body.verwijderen === true) {
       if (a.photo_path) await db.removeObject('nieuws', a.photo_path).catch((e) => logError('adviseur-foto', e));
       await db.advisorUpdate(a.id, { photo_path: null });
-      return json(res, 200, { ok: true, foto_url: null });
+      return json(res, 200, { ok: true, foto_url: null, website: await herbouwSite() });
     }
     const type = String(body.type || '');
     if (!FOTO_TYPES[type]) return fail(res, 422, 'Alleen JPEG, PNG of WebP is toegestaan.');
@@ -170,7 +179,7 @@ export async function rapportActies(db, req, res, actie, user, url, { json, fail
     await db.putObject('nieuws', path, bytes, type);
     if (a.photo_path) await db.removeObject('nieuws', a.photo_path).catch((e) => logError('adviseur-foto', e));
     await db.advisorUpdate(a.id, { photo_path: path });
-    return json(res, 200, { ok: true, foto_url: db.publicUrl('nieuws', path) });
+    return json(res, 200, { ok: true, foto_url: db.publicUrl('nieuws', path), website: await herbouwSite() });
   }
 
   // ------------------------------------------------------------ nieuw rapport
@@ -233,7 +242,6 @@ export async function rapportActies(db, req, res, actie, user, url, { json, fail
 
   if (actie === 'rapport-definitief') {
     if (!bewerkbaar) return fail(res, 409, 'Dit rapport is al definitief.');
-    if (!magAfronden(user, advisor)) return fail(res, 403, 'Alleen de gekozen adviseur of een beheerder kan het rapport definitief maken.');
     const images = await db.reportImages(r.id);
     const chk = controle(r.data, { advisor, images });
     if (chk.fouten.length) return json(res, 422, { ok: false, error: 'Het rapport is nog niet compleet.', controle: chk });
@@ -251,14 +259,12 @@ export async function rapportActies(db, req, res, actie, user, url, { json, fail
 
   if (actie === 'rapport-nieuwe-versie') {
     if (bewerkbaar) return fail(res, 409, 'Dit rapport is nog niet definitief.');
-    if (!magAfronden(user, advisor)) return fail(res, 403, 'Alleen de gekozen adviseur of een beheerder kan een nieuwe versie starten.');
     await db.reportUpdate(r.id, { status: 'concept', version: r.version + 1, updated_by: user.id });
     return json(res, 200, { ok: true, version: r.version + 1 });
   }
 
   if (actie === 'rapport-pdf-upload' || actie === 'rapport-pdf-bevestig') {
     if (bewerkbaar) return fail(res, 409, 'Maak het rapport eerst definitief; de PDF hoort bij de definitieve versie.');
-    if (!magAfronden(user, advisor)) return fail(res, 403, 'Alleen de gekozen adviseur of een beheerder kan de PDF vastleggen.');
     const v = await db.versionGet(r.id, r.version);
     if (!v) return fail(res, 404, 'Definitieve versie niet gevonden.');
     if (v.sent_at) return fail(res, 409, 'Deze versie is al verstuurd. Start een nieuwe versie om de PDF te vervangen.');
@@ -285,7 +291,6 @@ export async function rapportActies(db, req, res, actie, user, url, { json, fail
 
   if (actie === 'rapport-versturen') {
     if (!['definitief', 'verzonden'].includes(r.status)) return fail(res, 409, 'Alleen een definitief rapport kan worden verstuurd.');
-    if (!magAfronden(user, advisor)) return fail(res, 403, 'Alleen de gekozen adviseur of een beheerder kan het rapport versturen.');
     const v = await db.versionGet(r.id, r.version);
     if (!v?.pdf_path) return fail(res, 422, 'Upload eerst de PDF van dit rapport.');
     const to = str(body.email, 160).toLowerCase();
