@@ -55,7 +55,10 @@ export const ICON_MAIL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M
 // ---------------------------------------------------------------- structured data
 
 const PROVINCE = (name) => ({ '@type': 'AdministrativeArea', name, containedInPlace: { '@type': 'Country', name: 'Nederland' } });
-const AREA = () => [PROVINCE('Friesland'), PROVINCE('Groningen')];
+// Noord-Drenthe: alleen deze gemeenten, niet heel Drenthe.
+export const NOORD_DRENTHE = ['Assen', 'Tynaarlo', 'Noordenveld', 'Aa en Hunze'];
+const AREA = () => [PROVINCE('Friesland'), PROVINCE('Groningen'),
+  ...NOORD_DRENTHE.map((n) => ({ '@type': 'AdministrativeArea', name: `Gemeente ${n}`, containedInPlace: { '@type': 'AdministrativeArea', name: 'Drenthe' } }))];
 
 /** Werkgebied op gemeenteniveau (voor de organisatie). */
 const AREA_DETAILED = () => [
@@ -83,7 +86,7 @@ export function orgSchema() {
     url: `${DOMAIN}/`,
     logo: { '@type': 'ImageObject', url: `${DOMAIN}/assets/logo-mvfunderingsscan.png`, width: 694, height: 96 },
     image: `${DOMAIN}/assets/img/og-mv-funderingsscan.jpg`,
-    description: 'MV Funderingsscan voert onafhankelijk funderingsonderzoek uit voor woningen in Friesland en Groningen: een Quick Scan (fase 0) en, waar nodig, vervolgonderzoek met metingen (fase 1).',
+    description: 'MV Funderingsscan voert onafhankelijk funderingsonderzoek uit voor woningen in Friesland, Groningen en Noord-Drenthe: een Quick Scan (fase 0) en, waar nodig, vervolgonderzoek met metingen (fase 1).',
     telephone: NAP.phone_intl,
     email: NAP.email,
     address: {
@@ -106,7 +109,7 @@ export function orgSchema() {
       'Funderingsonderzoek fase 1', 'Lintvoegwaterpassing', 'Loodmeting',
       'Vloerveldwaterpassing', 'Scheurpatronen in gevels', 'Funderingsrisico bij taxatie',
     ],
-    priceRange: 'Vanaf €350',
+    priceRange: 'Vanaf €350 incl. btw',
   };
 }
 
@@ -135,7 +138,7 @@ export function serviceSchema(key, area = null) {
     areaServed: area || AREA(),
   };
   if (s.offers) {
-    const spec = { '@type': 'PriceSpecification', priceCurrency: 'EUR', ...s.offers };
+    const spec = { '@type': 'PriceSpecification', priceCurrency: 'EUR', valueAddedTaxIncluded: true, ...s.offers };
     out.offers = { '@type': 'Offer', priceCurrency: 'EUR', priceSpecification: spec, url: s.url };
   }
   return out;
@@ -333,7 +336,7 @@ ${links.map(([h, l]) => `        <li><a href="${h}">${l}</a></li>`).join('\n')}
         <source srcset="/assets/logo-mvfunderingsscan-wit.webp" type="image/webp">
         <img src="/assets/logo-mvfunderingsscan-wit.png" width="694" height="96" loading="lazy" alt="MV Funderingsscan">
       </picture>
-      <p>MV Funderingsscan voert onafhankelijk funderingsonderzoek uit voor woningen in Friesland en Groningen – van Quick Scan tot onderzoek met metingen.</p>
+      <p>MV Funderingsscan voert onafhankelijk funderingsonderzoek uit voor woningen in Friesland, Groningen en Noord-Drenthe – van Quick Scan tot onderzoek met metingen.</p>
       <address>
         <strong>${NAP.name}</strong><br>
         ${NAP.street}<br>

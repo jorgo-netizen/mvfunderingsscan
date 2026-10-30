@@ -106,7 +106,7 @@
       },
       {
         "q": "Wat kost een Quick Scan in Achtkarspelen?",
-        "a": "<p>De Quick Scan kost vanaf €350. Je weet de prijs vooraf; zie ook <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "a": "<p>De Quick Scan kost vanaf €350 inclusief btw. Je weet de prijs vooraf; zie ook <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
         "q": "Moet de kruipruimte toegankelijk zijn?",
@@ -236,7 +236,7 @@
       },
       {
         "q": "Wat gebeurt er als de Quick Scan zorgen oplevert?",
-        "a": "<p>Dan krijg je een concreet advies over de vervolgstap. Dat kan monitoren zijn, aanvullend onderzoek of fase 1 met metingen. Fase 1 kost vanaf €950, afhankelijk van welke metingen nodig zijn.</p>"
+        "a": "<p>Dan krijg je een concreet advies over de vervolgstap. Dat kan monitoren zijn, aanvullend onderzoek of fase 1 met metingen. Fase 1 kost vanaf €950 inclusief btw, afhankelijk van welke metingen nodig zijn.</p>"
       },
       {
         "q": "Wat kan ik zelf doen voordat de inspectie plaatsvindt?",
@@ -615,7 +615,7 @@
       {
         "id": "kosten-ooststellingwerf",
         "h2": "Wat kost funderingsonderzoek in Ooststellingwerf?",
-        "answer": "De Quick Scan kost vanaf €350. Fase 1 kost vanaf €950, afhankelijk van welke metingen nodig zijn.",
+        "answer": "De Quick Scan kost vanaf €350 inclusief btw. Fase 1 kost vanaf €950 inclusief btw, afhankelijk van welke metingen nodig zijn.",
         "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Onderdeel</th><th>Indicatieve prijs</th><th>Doorlooptijd</th></tr></thead><tbody><tr><td>Fase 0 – Quick Scan</td><td>vanaf €350</td><td>Rapport normaal gesproken binnen 2 werkdagen na de inspectie</td></tr><tr><td>Fase 1 – metingen</td><td>vanaf €950</td><td>Afgestemd bij de offerte</td></tr></tbody></table></div><p>De prijs hangt niet af van het dorp waar je woont, maar van de woning en de vraag. Je weet de definitieve prijs vooraf. Een volledig overzicht staat op de pagina <a href=\"/prijzen/\">prijzen</a>. Houd er rekening mee dat een funderingsscan geen herstelofferte is: als herstel nodig blijkt, heb je daarvoor een offerte van een herstelspecialist nodig.</p>"
       }
     ],

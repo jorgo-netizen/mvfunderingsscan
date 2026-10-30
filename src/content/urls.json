@@ -104,7 +104,7 @@
     "group": "diensten",
     "file": "services-c.json",
     "minWords": 1000,
-    "keyword": "kosten funderingsscan",
+    "keyword": "prijzen funderingsscan",
     "intent": "commercieel"
   },
   {
@@ -509,7 +509,7 @@
     "group": "kennisbank",
     "file": "kennisbank-g.json",
     "minWords": 800,
-    "keyword": "funderingsscan en taxatie",
+    "keyword": "funderingsparagraaf taxatierapport",
     "intent": "informatief"
   },
   {
@@ -563,7 +563,7 @@
     "group": "kennisbank",
     "file": "kennisbank-h.json",
     "minWords": 800,
-    "keyword": "scheuren in gevel",
+    "keyword": "scheur in gevel monitoren",
     "intent": "informatief"
   },
   {
@@ -1229,7 +1229,7 @@
     "group": "hulpmiddelen",
     "file": "tools-u.json",
     "minWords": 250,
-    "keyword": "funderingsrisicoklasse",
+    "keyword": "funderingsrisicoklasse funderingslabel",
     "intent": "informatief"
   },
   {

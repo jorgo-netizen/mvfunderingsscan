@@ -112,7 +112,7 @@
       },
       {
         "q": "Wat kost funderingsonderzoek in Midden-Groningen?",
-        "a": "<p>De Quick Scan kost vanaf €350. Fase 1 kost vanaf €950. Bekijk ook onze <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "a": "<p>De Quick Scan kost vanaf €350 inclusief btw. Fase 1 kost vanaf €950 inclusief btw. Bekijk ook onze <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
         "q": "Kunnen jullie de houten palen onder mijn woning beoordelen?",
@@ -400,7 +400,7 @@
       },
       {
         "q": "Wat kost funderingsonderzoek in Stadskanaal?",
-        "a": "<p>De Quick Scan kost vanaf €350. Fase 1 kost vanaf €950. Zie ook onze <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "a": "<p>De Quick Scan kost vanaf €350 inclusief btw. Fase 1 kost vanaf €950 inclusief btw. Zie ook onze <a href=\"/prijzen/\">prijzen</a>.</p>"
       }
     ],
     "related": [
@@ -504,7 +504,7 @@
         "id": "onderzoek-westerkwartier",
         "h2": "Hoe verloopt funderingsonderzoek in het Westerkwartier?",
         "answer": "Je start met fase 0: archief- en bodemonderzoek, een visuele inspectie en een rapport met risico-inschatting en advies. Fase 1 met metingen kan volgen als fase 0 daar aanleiding voor geeft.",
-        "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Vooronderzoek en inspectie, rapport normaal gesproken binnen 2 werkdagen na de inspectie.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Lintvoeg-, lood- en vloerveldmetingen, zonder graafwerk.</span></a></div>\n<p>De inspectie wordt meestal binnen enkele werkdagen ingepland. De Quick Scan kost vanaf €350; fase 1 kost vanaf €950. Na de scan kan het advies zijn om niets te doen, te monitoren, iets aanvullend te onderzoeken of fase 1 te laten uitvoeren. Hoe alles samenhangt, lees je bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
+        "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Vooronderzoek en inspectie, rapport normaal gesproken binnen 2 werkdagen na de inspectie.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Lintvoeg-, lood- en vloerveldmetingen, zonder graafwerk.</span></a></div>\n<p>De inspectie wordt meestal binnen enkele werkdagen ingepland. De Quick Scan kost vanaf €350 inclusief btw; fase 1 kost vanaf €950 inclusief btw. Na de scan kan het advies zijn om niets te doen, te monitoren, iets aanvullend te onderzoeken of fase 1 te laten uitvoeren. Hoe alles samenhangt, lees je bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
       },
       {
         "id": "kernen-westerkwartier",

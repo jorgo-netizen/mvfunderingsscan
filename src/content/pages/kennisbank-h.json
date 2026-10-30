@@ -98,7 +98,7 @@
   },
   {
     "path": "/kennisbank/scheuren-in-gevel/",
-    "title": "Wat betekent een scheur in de gevel? | MV Funderingsscan",
+    "title": "Gevelscheur zelf beoordelen en monitoren | MV Funderingsscan",
     "description": "Een scheur in je gevel gezien? Kort antwoord op wat zo'n scheur kan betekenen, plus een eenvoudige methode om de scheur zelf te monitoren.",
     "keyword": "scheuren in gevel",
     "intent": "informatief",
@@ -118,7 +118,7 @@
       }
     ],
     "eyebrow": "Kennisbank",
-    "h1": "Wat betekent een scheur in de gevel?",
+    "h1": "Scheur in de gevel: wat betekent het en hoe monitor je hem?",
     "lead": "Een scheur in de gevel betekent <strong>niet automatisch</strong> dat de fundering faalt. Gevelscheuren kunnen ontstaan door temperatuurwerking, roestende lateien, krimp van metselwerk of een aanbouw met een eigen fundering. Ze kunnen ook wijzen op ongelijke zakking. Of een scheur onschuldig is, hangt af van patroon, verloop in de tijd en andere signalen. Zelf monitoren is een goede eerste stap.",
     "hero_image": {
       "name": "metselwerk-gevel-detail",

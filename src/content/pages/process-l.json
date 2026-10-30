@@ -103,7 +103,7 @@
       },
       {
         "q": "Wat kost funderingsonderzoek?",
-        "a": "<p>Dat hangt af van de fase. Fase 0 kost vanaf €350 en fase 1 vanaf €950. Meer staat op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "a": "<p>Dat hangt af van de fase. Fase 0 kost vanaf €350 inclusief btw en fase 1 vanaf €950. Meer staat op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
         "q": "Hoe snel heb ik de uitkomst van fase 0?",
@@ -264,7 +264,7 @@
       },
       {
         "q": "Is archiefonderzoek een apart te bestellen dienst?",
-        "a": "<p>Nee, het is een vast onderdeel van <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>, samen met de visuele inspectie en de risico-inschatting. Fase 0 kost vanaf €350.</p>"
+        "a": "<p>Nee, het is een vast onderdeel van <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>, samen met de visuele inspectie en de risico-inschatting. Fase 0 kost vanaf €350 inclusief btw.</p>"
       },
       {
         "q": "Zegt archiefonderzoek iets over de staat van de fundering?",
@@ -542,7 +542,7 @@
         "id": "inschatting-laten-maken",
         "h2": "Hoe laat je een risico-inschatting maken?",
         "answer": "Een risico-inschatting maak je niet los, maar als onderdeel van een fase 0 funderingsscan, waarin ook het archiefonderzoek en de visuele inspectie zitten.",
-        "body": "<p>Fase 0 kost vanaf €350. De definitieve prijs is vooraf bekend. Je kunt direct <a href=\"/funderingsscan-aanvragen/\">een fase 0 funderingsscan aanvragen</a> of eerst <a href=\"/contact/\">je vraag stellen</a> als je niet zeker weet welke stap je nodig hebt.</p>"
+        "body": "<p>Fase 0 kost vanaf €350 inclusief btw. De definitieve prijs is vooraf bekend. Je kunt direct <a href=\"/funderingsscan-aanvragen/\">een fase 0 funderingsscan aanvragen</a> of eerst <a href=\"/contact/\">je vraag stellen</a> als je niet zeker weet welke stap je nodig hebt.</p>"
       }
     ],
     "faqs": [

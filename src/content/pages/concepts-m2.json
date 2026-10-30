@@ -220,7 +220,7 @@
       },
       {
         "q": "Wat kost een vooronderzoek naar zulke scheuren?",
-        "a": "<p>Een quickscan (fase 0) kost vanaf €350. De definitieve prijs hoor je vooraf. Zie ook de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "a": "<p>Een quickscan (fase 0) kost vanaf €350 inclusief btw. De definitieve prijs hoor je vooraf. Zie ook de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
       }
     ],
     "related": [
@@ -454,7 +454,7 @@
       },
       {
         "q": "Wat kost een vooronderzoek bij klemmende ramen en scheuren?",
-        "a": "<p>Een quickscan kost vanaf €350. Je weet de prijs vooraf. Zie ook <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "a": "<p>Een quickscan kost vanaf €350 inclusief btw. Je weet de prijs vooraf. Zie ook <a href=\"/prijzen/\">prijzen</a>.</p>"
       }
     ],
     "related": [

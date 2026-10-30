@@ -1928,3 +1928,7 @@ html:not(.js) .sim-lvm .sim-points, html:not(.js) .sim-lvm [data-lvm-reset], htm
 .prose .rv-note { font-size: 14px; }
 .kb-rapport > p:not(.facts-title):not(.rv-note) { margin: 0 0 16px; max-width: 62ch; }
 @media (max-width: 520px) { .rv-card { flex-direction: column; } .rv-card .btn, .kb-rapport .btn { width: 100%; justify-content: center; white-space: normal; text-align: center; } }
+.audience-grid.audience-grid-5 { grid-template-columns: repeat(5, 1fr); gap: 18px; }
+@media (max-width: 1180px) { .audience-grid.audience-grid-5 { grid-template-columns: 1fr 1fr 1fr; } }
+@media (max-width: 900px) { .audience-grid.audience-grid-5 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .audience-grid.audience-grid-5 { grid-template-columns: 1fr; } }

@@ -105,7 +105,7 @@ const HOME_ABOUT = `<!-- ============ OVER ONS ============ -->
     <div class="reveal">
       <p class="eyebrow">Over MV Funderingsscan</p>
       <h2 class="section-title" id="about-title">Wie is MV Funderingsscan?</h2>
-      <p class="answer-first">MV Funderingsscan is een gespecialiseerde aanbieder van funderingsonderzoek voor woningen in Friesland en Groningen, gevestigd in Leeuwarden.</p>
+      <p class="answer-first">MV Funderingsscan is een gespecialiseerde aanbieder van funderingsonderzoek voor woningen in Friesland, Groningen en Noord-Drenthe, gevestigd in Leeuwarden.</p>
       <p>We richten ons uitsluitend op funderingen: van de eerste Quick Scan tot onderzoek met metingen. Elk onderzoek volgt dezelfde vaste opbouw – vooronderzoek in archieven en bodemgegevens, een inspectie op locatie en een rapport met een duidelijke conclusie. We voeren zelf geen funderingsherstel uit, zodat ons advies onafhankelijk blijft.</p>
       <p><a class="text-link" href="/over-ons/">Meer over MV Funderingsscan</a></p>
     </div>
@@ -117,7 +117,7 @@ const HOME_ABOUT = `<!-- ============ OVER ONS ============ -->
         <div><dt>Telefoon</dt><dd><a href="${NAP.phone_href}">${NAP.phone_display}</a></dd></div>
         <div><dt>E-mail</dt><dd><a href="mailto:${NAP.email}">${NAP.email}</a></dd></div>
         <div><dt>Openingstijden</dt><dd>${NAP.hours_display}</dd></div>
-        <div><dt>Werkgebied</dt><dd><a href="/werkgebied/">Friesland en Groningen</a></dd></div>
+        <div><dt>Werkgebied</dt><dd><a href="/werkgebied/">Friesland, Groningen en Noord-Drenthe</a></dd></div>
       </dl>
     </aside>
   </div>
@@ -198,11 +198,11 @@ function buildAanvragen() {
   specialPage({
     path: '/funderingsscan-aanvragen/',
     title: 'Funderingsscan aanvragen | Prijs vooraf bekend | MV Funderingsscan',
-    description: 'Vraag online een funderingsscan aan voor je woning in Friesland of Groningen. Vul de gegevens in; je hoort vooraf wat fase 0 of fase 1 kost.',
+    description: 'Vraag online een funderingsscan aan voor je woning in Friesland, Groningen of Noord-Drenthe. We bellen je dezelfde dag terug en noemen vooraf de prijs.',
     crumbs: [{ href: '/', name: 'Home' }, { href: '/funderingsscan-aanvragen/', name: 'Funderingsscan aanvragen' }],
     eyebrow: 'Aanvragen',
     h1: 'Funderingsscan aanvragen',
-    lead: 'Vraag hier een funderingsscan aan voor een woning in Friesland of Groningen. Hoe meer je vertelt over de woning en je situatie, hoe beter we je kunnen adviseren. Je hoort altijd eerst wat het onderzoek kost.',
+    lead: 'Vraag hier een funderingsscan aan voor een woning in Friesland, Groningen of Noord-Drenthe. Het invullen duurt een paar minuten en we bellen je dezelfde dag terug. Hoe meer je vertelt over de woning en je situatie, hoe beter we je kunnen adviseren. Je hoort altijd eerst wat het onderzoek kost.',
     navActive: '',
     body: `<section class="section section-navy apply" id="aanvragen" aria-labelledby="apply-title">
   <div class="container apply-layout apply-layout-wide">
@@ -210,9 +210,9 @@ function buildAanvragen() {
       <h2 class="section-title" id="apply-title">Zo werkt je aanvraag</h2>
       <ol class="mini-steps mini-steps-dark">
         <li><strong>Formulier invullen</strong><span>Gegevens van jou en de woning, en wat je ziet.</span></li>
-        <li><strong>Persoonlijk contact</strong><span>We bespreken je situatie en adviseren welke fase past.</span></li>
+        <li><strong>Persoonlijk contact</strong><span>We bellen je dezelfde dag terug, bespreken je situatie en adviseren welke fase past.</span></li>
         <li><strong>Prijs vooraf bekend</strong><span>Pas na jouw akkoord plannen we de inspectie, meestal binnen enkele werkdagen.</span></li>
-        <li><strong>Rapport</strong><span>Normaal gesproken binnen 2 werkdagen na de inspectie, met conclusie en advies.</span></li>
+        <li><strong>Rapport</strong><span>Binnen 2 werkdagen na de opname, met conclusie en advies.</span></li>
       </ol>
       <p>Liever eerst overleggen? Bel <a href="${NAP.phone_href}">${NAP.phone_display}</a> of <a href="/contact/">stel je vraag via het contactformulier</a>.</p>
       <p>Twijfel je of onderzoek nodig is? <a href="/gratis-funderingscheck/">Doe eerst de online funderingscheck</a> of lees <a href="/quickscan-fundering/">wat een quickscan fundering inhoudt</a> en <a href="/prijzen/">wat het kost</a>.</p>
@@ -221,10 +221,10 @@ function buildAanvragen() {
   </div>
 </section>`,
     faqs: [
-      { q: 'Wat gebeurt er nadat ik de aanvraag heb verstuurd?', a: '<p>We nemen contact met je op om je situatie te bespreken. Daarna hoor je wat het onderzoek kost. Pas als je akkoord bent, plannen we het onderzoek in – meestal binnen enkele werkdagen.</p>' },
+      { q: 'Wat gebeurt er nadat ik de aanvraag heb verstuurd?', a: '<p>We bellen je dezelfde dag terug om je situatie te bespreken. Je spreekt Melvin Krikke of Rutger Fopma, de bouwkundig adviseurs die het onderzoek ook uitvoeren. Daarna hoor je wat het onderzoek kost. Pas als je akkoord bent, plannen we het onderzoek in – meestal binnen enkele werkdagen.</p>' },
       { q: 'Zit ik ergens aan vast als ik dit formulier invul?', a: '<p>Nee. Het formulier is een aanvraag, geen opdracht. Je beslist pas nadat je de prijs weet.</p>' },
       { q: 'Wat als ik niet weet welke fase ik nodig heb?', a: '<p>Kies dan "Weet ik nog niet". We adviseren je op basis van je situatie. In de meeste gevallen begint het onderzoek met <a href="/fase-0-funderingsonderzoek/">fase 0, de Quick Scan</a>.</p>' },
-      { q: 'Wat kost het onderzoek dat ik hier aanvraag?', a: '<p>Een fase 0 funderingsscan begint vanaf €350; fase 1 kost vanaf €950. Zie <a href="/prijzen/">prijzen</a>.</p>' },
+      { q: 'Wat kost het onderzoek dat ik hier aanvraag?', a: '<p>Een fase 0 funderingsscan begint vanaf €350; fase 1 kost vanaf €950. Beide prijzen zijn inclusief btw. Zie <a href="/prijzen/">prijzen</a>.</p>' },
     ],
   });
 }
@@ -234,11 +234,11 @@ function buildContact() {
   specialPage({
     path: '/contact/',
     title: 'Contact | MV Funderingsscan Leeuwarden | +31 (0) 582037172',
-    description: 'Neem contact op met MV Funderingsscan in Leeuwarden voor funderingsonderzoek in Friesland en Groningen. Bel +31 (0) 582037172 of stel je vraag online.',
+    description: 'Neem contact op met MV Funderingsscan in Leeuwarden. Bel +31 (0) 582037172: je spreekt Melvin of Rutger, en via het formulier bellen we dezelfde dag terug.',
     crumbs: [{ href: '/', name: 'Home' }, { href: '/contact/', name: 'Contact' }],
     eyebrow: 'Contact',
     h1: 'Contact met MV Funderingsscan',
-    lead: 'Heb je een vraag over funderingsonderzoek, weet je niet welke fase je nodig hebt of wil je een prijs? Bel, mail of stuur je vraag via het formulier. MV Funderingsscan werkt in heel Friesland en Groningen.',
+    lead: 'Heb je een vraag over funderingsonderzoek, weet je niet welke fase je nodig hebt of wil je een prijs? Bel, mail of stuur je vraag via het formulier. Je spreekt Melvin Krikke of Rutger Fopma, de bouwkundig adviseurs die het onderzoek ook uitvoeren. MV Funderingsscan werkt in Friesland, Groningen en Noord-Drenthe.',
     type: 'ContactPage',
     navActive: '/contact/',
     body: `<section class="section section-navy apply" id="contact-formulier" aria-labelledby="apply-title">
@@ -254,8 +254,8 @@ function buildContact() {
         <a href="${NAP.phone_href}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1z"/></svg>${NAP.phone_display}</a>
         <a href="mailto:${NAP.email}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>${NAP.email}</a>
       </div>
-      <p class="nap-hours">Bereikbaar: ${NAP.hours_display}</p>
-      <p><strong>Werkgebied:</strong> <a href="/funderingsonderzoek-friesland/">Friesland</a> en <a href="/funderingsonderzoek-groningen/">Groningen</a> – zie <a href="/werkgebied/">ons werkgebied</a>.</p>
+      <p class="nap-hours">Bereikbaar: ${NAP.hours_display}. Laat je via het formulier je gegevens achter, dan bellen we je dezelfde dag terug.</p>
+      <p><strong>Werkgebied:</strong> <a href="/funderingsonderzoek-friesland/">Friesland</a>, <a href="/funderingsonderzoek-groningen/">Groningen</a> en <a href="/werkgebied/#noord-drenthe">Noord-Drenthe</a> – zie <a href="/werkgebied/">ons werkgebied</a>.</p>
       <p>Direct een onderzoek aanvragen? Gebruik het <a href="/funderingsscan-aanvragen/">uitgebreide aanvraagformulier</a>.</p>
     </div>
     ${contactForm()}
@@ -459,18 +459,20 @@ Sitemap: ${DOMAIN}/nieuws-sitemap.xml
   const groupLines = (g) => pages.filter((p) => meta[p.path]?.group === g).map(line).join('\n');
   write('/llms.txt', `# MV Funderingsscan
 
-> MV Funderingsscan (Leeuwarden) voert onafhankelijk funderingsonderzoek uit aan woningen in Friesland en Groningen. Het onderzoek begint in de regel met een Quick Scan (fase 0, vanaf €350, rapport normaal gesproken binnen 2 werkdagen na inspectie). Geeft die daar aanleiding toe, dan volgt fase 1 met metingen (vanaf €950). MV Funderingsscan voert zelf geen funderingsherstel uit.
+> MV Funderingsscan B.V. (Leeuwarden) voert onafhankelijk funderingsonderzoek uit aan woningen in Friesland, Groningen en Noord-Drenthe. Het onderzoek begint in de regel met een Quick Scan (fase 0, vanaf €350 incl. btw, rapport binnen 2 werkdagen na de opname). Geeft die daar aanleiding toe, dan volgt fase 1 met metingen (vanaf €950 incl. btw). Beide fases voert MV Funderingsscan zelf uit; funderingsherstel doet het niet.
 
 ## Kernfeiten (gecontroleerd ${TODAY}; bronnen: ${DOMAIN}/bronnen-en-richtlijnen/)
 - Onafhankelijk: MV Funderingsscan doet uitsluitend onderzoek en voert geen funderingsherstel uit.
-- Werkgebied: heel Friesland en de hele provincie Groningen, vanuit Leeuwarden.
-- Prijs: fase 0 vanaf €350, fase 1 vanaf €950; de definitieve prijs hoor je vooraf.
+- Werkgebied: heel Friesland, de hele provincie Groningen en Noord-Drenthe (gemeenten Assen, Tynaarlo, Noordenveld en Aa en Hunze), vanuit Leeuwarden.
+- Prijs: fase 0 vanaf €350, fase 1 vanaf €950, beide inclusief btw; de definitieve prijs hoor je vooraf.
+- Contact: na een aanvraag bellen we dezelfde dag terug. Het onderzoek wordt uitgevoerd door de bouwkundig adviseurs Melvin Krikke en Rutger Fopma. Telefoon +31 (0) 582037172, e-mail info@mvadviseurs.nl.
 - Fase 0 (Quick Scan): archief- en bodemonderzoek, visuele inspectie (kruipruimte voor zover toegankelijk) en een risico-inschatting met advies. Zonder graafwerk. Kan niet vaststellen: de exacte conditie van houten palen, verborgen gebreken, constructieve capaciteit, resterende levensduur of exacte herstelkosten.
 - Fase 1: metingen zoals lintvoegwaterpassing, loodmeting en vloerveldwaterpassing. Brengt de huidige scheefstand en hoogteverschillen in beeld; of een woning nog beweegt, blijkt pas uit herhaalde metingen (monitoring). Een inspectieput (graven) is een aparte, verdergaande stap.
 - Fasenamen verschillen per bron: de KCAF-richtlijn spreekt van onderdelen; deze site gebruikt de indeling van MV Funderingsscan.
 - KCAF-risicoklassen: A geen risico, B licht risico, C verhoogd risico of onzekerheid, D hoog risico (nader onderzoek passend), E vastgesteld funderingsprobleem. Een modelmatige inschatting, geen vaststelling van de staat van de fundering.
 - Taxatie (NRVT, sinds 1 april 2026): de taxateur neemt de KCAF-risicoklasse op; bij klasse D of E moet in principe eerst een aanvullend (beperkt) funderingsonderzoek plaatsvinden voordat de taxatie wordt afgerond, met uitzonderingen.
-- NHG heeft aangekondigd dat vanaf 1 januari 2027 bij klasse D of E een verkennend funderingsonderzoek verplicht is voor een lening met NHG.
+- NHG heeft aangekondigd dat vanaf 1 januari 2027 bij klasse D of E een verkennend funderingsonderzoek verplicht is voor een lening met NHG, en dat geldverstrekkers bij een hoog funderingsrisico de verwachte herstelkosten meewegen bij de maximale hypotheek.
+- "Funderingslabel" is de gangbare term voor de funderingsrisicoklasse A-E. Gratis indicaties per postcode op internet beschrijven een gebied, niet een pand; de KCAF-klasse in het taxatierapport is een modelmatige inschatting per pand; alleen onderzoek ter plaatse (fase 0, fase 1) kijkt naar de woning zelf.
 - Er is geen algemene wettelijke plicht tot funderingsonderzoek bij koop of verkoop; de verkoper heeft een mededelingsplicht en de koper een onderzoeksplicht.
 
 Contact: ${NAP.name}, ${NAP.street}, ${NAP.postal} ${NAP.city}. Telefoon ${NAP.phone_display}. E-mail ${NAP.email}. Bereikbaar ${NAP.hours_display}.

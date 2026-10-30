@@ -420,7 +420,7 @@
     ],
     "eyebrow": "Kostenwijzer",
     "h1": "Kostenwijzer: welk onderzoek past en wat kost het?",
-    "lead": "Kies wat je wilt laten onderzoeken en zie welke dienst daarbij past, met de indicatieve prijs. Een Quick Scan (fase 0) kost vanaf €350; fase 1 met metingen vanaf €950. De definitieve prijs hoor je altijd vooraf.",
+    "lead": "Kies wat je wilt laten onderzoeken en zie welke dienst daarbij past, met de indicatieve prijs. Een Quick Scan (fase 0) kost vanaf €350 inclusief btw; fase 1 met metingen vanaf €950. De definitieve prijs hoor je altijd vooraf.",
     "tools": true,
     "facts": [
       {
@@ -440,7 +440,7 @@
       {
         "id": "kostenwijzer",
         "h2": "Wat kost funderingsonderzoek?",
-        "answer": "Een Quick Scan (fase 0) kost vanaf €350. Fase 1 met metingen kost vanaf €950. Voor een vraag van de taxateur is vooraf een prijsinschatting nodig.",
+        "answer": "Een Quick Scan (fase 0) kost vanaf €350 inclusief btw. Fase 1 met metingen kost vanaf €950. Voor een vraag van de taxateur is vooraf een prijsinschatting nodig.",
         "widget": "kostenwijzer",
         "widget_position": "after",
         "body": "<p>Alle bedragen zijn indicatief. De definitieve prijs hangt af van de woning en wat er onderzocht moet worden; je hoort hem vooraf. Zie ook de pagina <a href=\"/prijzen/\">prijzen</a> en <a href=\"/kennisbank/wat-kost-een-funderingsscan/\">wat een funderingsscan kost</a>.</p>"
@@ -578,8 +578,8 @@
   },
   {
     "path": "/funderingsrisicoklasse-uitgelegd/",
-    "title": "Funderingsrisicoklasse A tot en met E uitgelegd",
-    "description": "Wat betekent funderingsrisicoklasse A, B, C, D of E? Klik op een klasse voor de officiële KCAF-omschrijving, wat het wel en niet betekent en de vervolgstap.",
+    "title": "Funderingsrisicoklasse (funderingslabel) A tot en met E uitgelegd",
+    "description": "Wat betekent funderingsrisicoklasse (funderingslabel) A, B, C, D of E? Klik op een klasse voor de KCAF-omschrijving, wat het betekent en de vervolgstap.",
     "keyword": "funderingsrisicoklasse",
     "intent": "informatief",
     "nav_active": "/kennisbank/",
@@ -598,8 +598,8 @@
       }
     ],
     "eyebrow": "Risicoklassen A–E",
-    "h1": "Funderingsrisicoklasse A tot en met E: wat betekent jouw klasse?",
-    "lead": "Het KCAF-funderingsrisicorapport deelt het funderingsrisico van een woning in klassen A tot en met E in. Sinds 1 april 2026 staat die klasse in het taxatierapport. Klik op een klasse voor de officiële omschrijving en wat die wel en niet betekent.",
+    "h1": "Funderingsrisicoklasse A tot en met E: wat betekent jouw funderingslabel?",
+    "lead": "In de volksmond heet het vaak het <strong>funderingslabel</strong>: het KCAF-funderingsrisicorapport deelt het funderingsrisico van een woning in klassen A tot en met E in. Sinds 1 april 2026 staat die klasse in het taxatierapport. Klik op een klasse voor de officiële omschrijving en wat die wel en niet betekent.",
     "tools": true,
     "sections": [
       {
@@ -615,6 +615,12 @@
         "h2": "Wat betekent de klasse voor een taxatie?",
         "answer": "Sinds 1 april 2026 neemt de taxateur de KCAF-risicoklasse op in het taxatierapport. Bij klasse D of E moet volgens het NRVT in principe eerst een aanvullend (beperkt) funderingsonderzoek plaatsvinden voordat het taxatierapport wordt afgerond.",
         "body": "<p>In sommige situaties kan dat onderzoek achterwege blijven, bijvoorbeeld als er bewijsstukken zijn dat het risico niet aanwezig is; de taxateur legt dat dan vast. NHG heeft aangekondigd dat vanaf 1 januari 2027 bij klasse D of E een verkennend funderingsonderzoek verplicht is voor een lening met NHG. Meer daarover lees je bij <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek en taxatie</a>, <a href=\"/kennisbank/funderingsscan-en-hypotheek/\">funderingsscan en hypotheek</a> en <a href=\"/kennisbank/funderingsrisico/\">funderingsrisico</a>.</p>"
+      },
+      {
+        "id": "label-postcode-of-onderzoek",
+        "h2": "Funderingslabel, KCAF-klasse of onderzoek: wat is het verschil?",
+        "answer": "Een gratis funderingslabel per postcode beschrijft een gebied, de KCAF-klasse in het taxatierapport is een modelmatige inschatting per woning, en alleen onderzoek ter plaatse kijkt echt naar jouw fundering.",
+        "body": "<p>Je komt de letters A tot en met E op verschillende plekken tegen. Ze lijken op elkaar, maar ze zeggen niet hetzelfde.</p>\n<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th scope=\"col\">Bron</th><th scope=\"col\">Waar gaat het over?</th><th scope=\"col\">Waar is het op gebaseerd?</th><th scope=\"col\">Waarvoor bruikbaar?</th></tr></thead><tbody>\n<tr><td>Indicatie per postcode (gratis checks en kaarten op internet)</td><td>Een buurt of postcodegebied</td><td>Openbare gegevens, zoals bouwjaren, bodemsoort en de kaart met indicatieve aandachtsgebieden</td><td>Een eerste oriëntatie; niet voor een taxatie of aankoopbeslissing</td></tr>\n<tr><td>KCAF-risicoklasse in het taxatierapport</td><td>De woning zelf</td><td>De landelijke gegevens van het <a href=\"https://www.kcaf.nl/\" rel=\"noopener\" target=\"_blank\">KCAF</a>: funderingstype, bodem, grondwater, zakkingsmetingen en archiefgegevens</td><td>De taxatie; bij klasse D of E volgt in principe aanvullend onderzoek</td></tr>\n<tr><td>Onderzoek ter plaatse (fase 0 en fase 1)</td><td>De woning zelf</td><td>Archief- en bodemonderzoek, inspectie van woning en kruipruimte en zo nodig metingen</td><td>Een onderbouwd beeld van jouw woning en advies over de vervolgstap</td></tr>\n</tbody></table></div>\n<p>Zag je op internet een D of E voor jouw postcode, dan zegt dat nog niets over je eigen huis. Gaat het om een taxatie, kijk dan welke klasse de taxateur in het rapport heeft opgenomen. Wil je weten hoe het met je eigen woning zit, dan is een <a href=\"/fase-0-funderingsonderzoek/\">Quick Scan (fase 0)</a> de eerste stap. Zie ook <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek bij taxatie</a> of <a href=\"/funderingsscan-aanvragen/\">vraag direct een scan aan</a>.</p>"
       }
     ],
     "faqs": [
@@ -629,6 +635,10 @@
       {
         "q": "Kan ik mijn risicoklasse laten aanpassen?",
         "a": "<p>Volgens het NRVT kan de taxateur onjuistheden in de KCAF-informatie melden en een duidelijk verschil met de eigen waarneming toelichten. Onderzoek aan de woning kan meer duidelijkheid geven dan de klasse alleen.</p>"
+      },
+      {
+        "q": "Ik zag funderingslabel D op een kaart op internet. Wat moet ik nu doen?",
+        "a": "<p>Niet schrikken: zo’n label beschrijft meestal het postcodegebied, niet je woning. Kijk bij een taxatie welke klasse in het taxatierapport staat. Wil je zekerheid over je eigen huis, laat dan een <a href=\"/fase-0-funderingsonderzoek/\">Quick Scan</a> doen.</p>"
       }
     ],
     "related": [
@@ -843,6 +853,12 @@
         "widget": "funderingsquiz",
         "widget_position": "after",
         "body": "<p>Wil je een begrip nalezen? Kijk in de <a href=\"/kennisbank/begrippenlijst/\">begrippenlijst</a>, reken een meetwaarde om met <a href=\"/meetwaarden-uitgelegd/\">meetwaarden uitgelegd</a>, lees over <a href=\"/kennisbank/paalrot/\">paalrot</a> en <a href=\"/kennisbank/zetting/\">zetting</a>, of bekijk de <a href=\"/bronnen-en-richtlijnen/\">bronnen</a>.</p>"
+      },
+      {
+        "id": "hoe-werkt-de-quiz",
+        "h2": "Hoe werkt de funderingsquiz?",
+        "answer": "Je beantwoordt tien meerkeuzevragen. Na elk antwoord zie je direct of het klopt, met een korte uitleg en de bron waar die uitleg op is gebaseerd.",
+        "body": "<p>De vragen gaan over begrippen die je tegenkomt in een funderingsrapport, een taxatierapport of een gesprek met je makelaar. Denk aan <a href=\"/kennisbank/paalrot/\">paalrot</a> en droogstand bij houten palen, <a href=\"/kennisbank/zetting/\">zetting</a> van de bodem, negatieve kleef en de KCAF-risicoklassen A tot en met E. Je kunt de quiz zo vaak doen als je wilt; je antwoorden worden niet opgeslagen en niet naar ons verstuurd.</p>\n<p>De quiz is bedoeld om de taal van funderingsonderzoek beter te begrijpen. Hij zegt niets over je eigen woning en is geen vervanging voor onderzoek. Wil je weten of er bij jouw huis iets speelt? Doe dan de <a href=\"/gratis-funderingscheck/\">online funderingscheck</a> als eerste oriëntatie, of vraag een <a href=\"/fase-0-funderingsonderzoek/\">Quick Scan (fase 0)</a> aan. Dan kijkt een bouwkundig adviseur naar de woning zelf, en heb je binnen twee werkdagen na de opname het rapport.</p>"
       }
     ],
     "faqs": [

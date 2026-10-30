@@ -69,7 +69,7 @@
         "id": "kosten-en-afweging",
         "h2": "Is betalen voor onderzoek vóór het bod het waard?",
         "answer": "Dat is een persoonlijke afweging: je betaalt voor meer inzicht op een moment dat de koop nog niet vaststaat. Tegenover de kosten van eventueel funderingsherstel, die tienduizenden euro's kunnen bedragen, vinden veel kopers dat redelijk.",
-        "body": "<p>Een quickscan kost vanaf €350; de actuele bedragen staan op de pagina <a href=\"/prijzen/\">prijzen</a>. Of je dat vóór of na het bod uitgeeft, hangt vooral af van hoe serieus je bent over deze woning en van de signalen die je al hebt gezien. Twijfel je welke stap past, stel dan je vraag via <a href=\"/contact/\">contact</a>.</p>"
+        "body": "<p>Een quickscan kost vanaf €350 inclusief btw; de actuele bedragen staan op de pagina <a href=\"/prijzen/\">prijzen</a>. Of je dat vóór of na het bod uitgeeft, hangt vooral af van hoe serieus je bent over deze woning en van de signalen die je al hebt gezien. Twijfel je welke stap past, stel dan je vraag via <a href=\"/contact/\">contact</a>.</p>"
       }
     ],
     "faqs": [
@@ -208,7 +208,7 @@
       },
       {
         "q": "Wat kost het om het risico te laten onderzoeken?",
-        "a": "<p>Een fase 0 onderzoek kost vanaf €350. Zie de pagina <a href=\"/prijzen/\">prijzen</a> voor de actuele indicaties.</p>"
+        "a": "<p>Een fase 0 onderzoek kost vanaf €350 inclusief btw. Zie de pagina <a href=\"/prijzen/\">prijzen</a> voor de actuele indicaties.</p>"
       }
     ],
     "related": [
@@ -325,7 +325,7 @@
       },
       {
         "q": "Wat kost een funderingsrapport voor de verkoop?",
-        "a": "<p>Een fase 0 onderzoek kost vanaf €350; bij grotere of complexere woningen kan het hoger uitvallen. De definitieve prijs hoor je vooraf.</p>"
+        "a": "<p>Een fase 0 onderzoek kost vanaf €350 inclusief btw; bij grotere of complexere woningen kan het hoger uitvallen. De definitieve prijs hoor je vooraf.</p>"
       }
     ],
     "related": [
@@ -389,7 +389,7 @@
       {
         "id": "wat-kost-fase-1",
         "h2": "Wat kost fase 1 funderingsonderzoek?",
-        "answer": "Fase 1 kost vanaf €950 voor het totale onderzoek. Waar je binnen die bandbreedte uitkomt, hangt af van de woning en van de metingen die nodig zijn.",
+        "answer": "Fase 1 kost vanaf €950 inclusief btw voor het totale onderzoek. Waar je binnen die bandbreedte uitkomt, hangt af van de woning en van de metingen die nodig zijn.",
         "body": "<p>Fase 1 is het vervolgonderzoek met metingen. Het doel is om vervorming en zakking van de woning in kaart te brengen, zodat duidelijk wordt of en welk vervolg nodig is. Wat er precies in fase 1 gebeurt, lees je op de pagina <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>. Een overzicht van alle indicatieve tarieven staat op <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
@@ -568,7 +568,7 @@
       {
         "id": "prijs",
         "h2": "Wat kost fase 0 bij aankoop?",
-        "answer": "Fase 0 bij aankoop kost vanaf €350. De definitieve prijs hoor je vooraf.",
+        "answer": "Fase 0 bij aankoop kost vanaf €350 inclusief btw. De definitieve prijs hoor je vooraf.",
         "body": "<p>De prijs hangt onder meer af van de omvang en complexiteit van de woning. Je hoort vooraf wat het onderzoek kost, ook als je het onderzoek onder tijdsdruk aanvraagt. Tegenover de kosten van eventueel funderingsherstel, die tienduizenden euro's kunnen bedragen, is dat voor veel kopers een overzichtelijke investering. Alle indicaties staan op <a href=\"/prijzen/\">prijzen</a> en de opbouw van de prijs lees je in <a href=\"/kennisbank/wat-kost-fase-0/\">wat kost fase 0</a>.</p>"
       },
       {

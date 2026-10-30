@@ -91,7 +91,7 @@
       },
       {
         "q": "Wat kost een funderingsscan ongeveer?",
-        "a": "<p>Een funderingsscan kost vanaf €350, en bij grotere of complexere woningen kan dat hoger uitvallen. De definitieve prijs hoor je altijd vooraf.</p>"
+        "a": "<p>Een funderingsscan kost vanaf €350 inclusief btw, en bij grotere of complexere woningen kan dat hoger uitvallen. De definitieve prijs hoor je altijd vooraf.</p>"
       },
       {
         "q": "Krijg ik na een funderingsscan zekerheid?",
@@ -190,7 +190,7 @@
       },
       {
         "q": "Wat zijn de kosten van een quickscan?",
-        "a": "<p>Een quickscan kost vanaf €350. Je hoort vooraf wat het onderzoek kost.</p>"
+        "a": "<p>Een quickscan kost vanaf €350 inclusief btw. Je hoort vooraf wat het onderzoek kost.</p>"
       },
       {
         "q": "Kan ik na een quickscan direct laten herstellen?",
@@ -436,7 +436,7 @@
       },
       {
         "q": "Wat kost fase 1?",
-        "a": "<p>Fase 1 kost vanaf €950, afhankelijk van de woning en het aantal benodigde metingen.</p>"
+        "a": "<p>Fase 1 kost vanaf €950 inclusief btw, afhankelijk van de woning en het aantal benodigde metingen.</p>"
       }
     ],
     "related": [
@@ -539,7 +539,7 @@
       },
       {
         "q": "Welke fase is goedkoper?",
-        "a": "<p>Fase 0 is de goedkopere stap, vanaf €350 per woning. Fase 1 kost vanaf €950, omdat er meer wordt gemeten en uitgewerkt.</p>"
+        "a": "<p>Fase 0 is de goedkopere stap, vanaf €350 per woning. Fase 1 kost vanaf €950 inclusief btw, omdat er meer wordt gemeten en uitgewerkt.</p>"
       }
     ],
     "related": [
@@ -562,8 +562,8 @@
   },
   {
     "path": "/kennisbank/wat-kost-een-funderingsscan/",
-    "title": "Wat kost een funderingsscan? | MV Funderingsscan",
-    "description": "Wat kost een funderingsscan? Indicatieve prijzen voor fase 0 en fase 1, wat de prijs bepaalt en waarom je de definitieve prijs vooraf hoort.",
+    "title": "Wat kost een funderingsscan en wat levert het op?",
+    "description": "Wat kost een funderingsscan en wat levert het op? Prijzen inclusief btw voor fase 0 en fase 1, wat de prijs bepaalt en hoe het zich verhoudt tot herstel.",
     "keyword": "wat kost een funderingsscan",
     "intent": "informatief",
     "nav_active": "/kennisbank/",
@@ -582,8 +582,8 @@
       }
     ],
     "eyebrow": "Kennisbank",
-    "h1": "Wat kost een funderingsscan?",
-    "lead": "Een <strong>funderingsscan (fase 0)</strong> kost vanaf €350 per woning. Geeft de scan aanleiding voor vervolgonderzoek met metingen (fase 1), dan begint de prijs bij €950. De definitieve prijs hoor je altijd vooraf.",
+    "h1": "Wat kost een funderingsscan en wat levert het op?",
+    "lead": "Een <strong>funderingsscan (fase 0)</strong> kost vanaf €350 inclusief btw per woning. Geeft de scan aanleiding voor vervolgonderzoek met metingen (fase 1), dan begint de prijs bij €950. De definitieve prijs hoor je altijd vooraf.",
     "facts": [
       {
         "label": "Fase 0",
@@ -603,8 +603,8 @@
       {
         "id": "prijzen-overzicht",
         "h2": "Wat kosten fase 0 en fase 1 indicatief?",
-        "answer": "Fase 0 kost vanaf €350 en fase 1 vanaf €950, afhankelijk van de woning. Fase 1 volgt in de regel alleen als fase 0 daar aanleiding voor geeft.",
-        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Onderzoek</th><th>Indicatieve prijs</th><th>Wanneer</th></tr></thead><tbody>\n<tr><td>Fase 0 (funderingsscan, quickscan)</td><td>Vanaf €350</td><td>Meestal de eerste stap</td></tr>\n<tr><td>Fase 1 (metingen)</td><td>vanaf €950</td><td>In de regel na een fase 0 die daar aanleiding voor geeft</td></tr>\n</tbody></table></div>\n<p>Omdat fase 1 niet automatisch volgt, betaal je in veel gevallen alleen voor fase 0. Het volledige prijsoverzicht staat op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "answer": "Fase 0 kost vanaf €350 inclusief btw en fase 1 vanaf €950, afhankelijk van de woning. Fase 1 volgt in de regel alleen als fase 0 daar aanleiding voor geeft.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Onderzoek</th><th>Indicatieve prijs</th><th>Wanneer</th></tr></thead><tbody>\n<tr><td>Fase 0 (funderingsscan, quickscan)</td><td>Vanaf €350</td><td>Meestal de eerste stap</td></tr>\n<tr><td>Fase 1 (metingen)</td><td>vanaf €950</td><td>In de regel na een fase 0 die daar aanleiding voor geeft</td></tr>\n</tbody></table></div>\n<p>Omdat fase 1 niet automatisch volgt, betaal je in veel gevallen alleen voor fase 0. Het volledige prijsoverzicht staat op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>\n<p>Wil je per situatie zien welk onderzoek past? Gebruik de <a href=\"/kosten-funderingsonderzoek-berekenen/\">kostenwijzer</a>. Alle prijzen op een rij staan op <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
         "id": "wat-bepaalt-prijs",
@@ -675,7 +675,7 @@
   },
   {
     "path": "/kennisbank/wat-kost-fase-0/",
-    "title": "Wat kost fase 0 funderingsonderzoek? | MV Funderingsscan",
+    "title": "Wat kost fase 0? Prijs en inhoud van de Quick Scan",
     "description": "Wat kost fase 0 funderingsonderzoek? Lees wat je krijgt voor de indicatieve prijs vanaf €350 en waarom de prijs per woning kan verschillen.",
     "keyword": "wat kost fase 0",
     "intent": "informatief",
@@ -695,8 +695,8 @@
       }
     ],
     "eyebrow": "Kennisbank",
-    "h1": "Wat kost fase 0 funderingsonderzoek?",
-    "lead": "<strong>Fase 0</strong> kost vanaf €350 per woning. Daarvoor krijg je archief- en bodemonderzoek, een visuele inspectie, een risico-inschatting en een rapport met foto's, conclusie en advies. De definitieve prijs hoor je altijd vooraf.",
+    "h1": "Wat kost fase 0 funderingsonderzoek en wat zit erin?",
+    "lead": "<strong>Fase 0</strong> kost vanaf €350 inclusief btw per woning. Daarvoor krijg je archief- en bodemonderzoek, een visuele inspectie, een risico-inschatting en een rapport met foto's, conclusie en advies. De definitieve prijs hoor je altijd vooraf.",
     "facts": [
       {
         "label": "Prijs",
@@ -717,7 +717,7 @@
         "id": "prijs-fase-0",
         "h2": "Wat is de prijs van fase 0?",
         "answer": "De prijs van fase 0 begint bij €350.",
-        "body": "<p>Het vanaf-bedrag past bij een gangbare woning zonder bijzonderheden in de opbouw. Hoe meer er te inspecteren en uit te werken valt, hoe meer tijd het onderzoek vraagt. Dat zie je terug in de prijs. Belangrijk is dat je vooraf weet wat het kost: de definitieve prijs wordt altijd vooraf met je gedeeld, voordat het onderzoek start.</p>\n<p>Wil je de prijzen van fase 0 en fase 1 naast elkaar zien? Lees dan het artikel <a href=\"/kennisbank/wat-kost-een-funderingsscan/\">wat kost een funderingsscan</a> of bekijk de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "body": "<p>Het vanaf-bedrag past bij een gangbare woning zonder bijzonderheden in de opbouw. Hoe meer er te inspecteren en uit te werken valt, hoe meer tijd het onderzoek vraagt. Dat zie je terug in de prijs. Belangrijk is dat je vooraf weet wat het kost: de definitieve prijs wordt altijd vooraf met je gedeeld, voordat het onderzoek start.</p>\n<p>Wil je de prijzen van fase 0 en fase 1 naast elkaar zien? Lees dan het artikel <a href=\"/kennisbank/wat-kost-een-funderingsscan/\">wat kost een funderingsscan</a> of bekijk de pagina <a href=\"/prijzen/\">prijzen</a>.</p>\n<p>Twijfel je of fase 0 of fase 1 bij je situatie past? De <a href=\"/kosten-funderingsonderzoek-berekenen/\">kostenwijzer</a> helpt je kiezen.</p>"
       },
       {
         "id": "wat-zit-erin",
@@ -1169,7 +1169,7 @@
         "id": "wat-scan-oplevert",
         "h2": "Wat levert een funderingsscan je op?",
         "answer": "Een funderingsscan levert een rapport met foto's, een conclusie over het risico en een concreet advies op, zodat je beter kunt bepalen of verdere stappen nodig zijn.",
-        "body": "<p>Het advies is één van vier uitkomsten: geen directe aanleiding voor vervolgonderzoek, monitoren, aanvullend onderzoek, of fase 1 met metingen. De scan kost vanaf €350 en het rapport ontvang je normaal gesproken binnen 2 werkdagen na de inspectie. Lees meer over de <a href=\"/funderingsscan/\">funderingsscan</a>.</p>"
+        "body": "<p>Het advies is één van vier uitkomsten: geen directe aanleiding voor vervolgonderzoek, monitoren, aanvullend onderzoek, of fase 1 met metingen. De scan kost vanaf €350 inclusief btw en het rapport ontvang je normaal gesproken binnen 2 werkdagen na de inspectie. Lees meer over de <a href=\"/funderingsscan/\">funderingsscan</a>.</p>"
       },
       {
         "id": "voorbereiden",
@@ -1381,7 +1381,7 @@
         "id": "uitkomst-niet-gunstig",
         "h2": "Wat als de uitkomst niet gunstig is?",
         "answer": "Dan weet je in elk geval waar je staat, en kun je samen met je makelaar bepalen hoe je daarmee omgaat in de verkoop.",
-        "body": "<p>Een advies om te monitoren of aanvullend onderzoek te doen hoeft een verkoop niet in de weg te staan. Het geeft juist een eerlijk beeld. Adviseert het rapport fase 1, dan kun je overwegen dat vóór de verkoop te laten uitvoeren, zodat kopers een completer beeld krijgen. Fase 1 kost vanaf €950, afhankelijk van de woning. Lees verder bij <a href=\"/kennisbank/wat-na-een-quickscan/\">wat na een quickscan</a>.</p>"
+        "body": "<p>Een advies om te monitoren of aanvullend onderzoek te doen hoeft een verkoop niet in de weg te staan. Het geeft juist een eerlijk beeld. Adviseert het rapport fase 1, dan kun je overwegen dat vóór de verkoop te laten uitvoeren, zodat kopers een completer beeld krijgen. Fase 1 kost vanaf €950 inclusief btw, afhankelijk van de woning. Lees verder bij <a href=\"/kennisbank/wat-na-een-quickscan/\">wat na een quickscan</a>.</p>"
       },
       {
         "id": "voorbeeld",
@@ -1399,7 +1399,7 @@
         "id": "wanneer-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
         "answer": "Voor verkopers is een scan vooral verstandig bij een woning van vóór circa 1970, een woning op veen of klei, of als er zichtbare signalen zijn waar kopers naar zullen vragen.",
-        "body": "<p>Bekijk de <a href=\"/prijzen/\">indicatieve prijzen</a>: fase 0 kost vanaf €350 per woning. Klaar om te starten? <a href=\"/funderingsscan-aanvragen/\">Vraag een funderingsscan aan</a> of <a href=\"/contact/\">stel eerst je vraag</a>.</p><p>Meer praktische tips: <a href=\"/kennisbank/funderingsrapport-voor-verkoper/\">het funderingsrapport voor verkopers</a>.</p>"
+        "body": "<p>Bekijk de <a href=\"/prijzen/\">indicatieve prijzen</a>: fase 0 kost vanaf €350 inclusief btw per woning. Klaar om te starten? <a href=\"/funderingsscan-aanvragen/\">Vraag een funderingsscan aan</a> of <a href=\"/contact/\">stel eerst je vraag</a>.</p><p>Meer praktische tips: <a href=\"/kennisbank/funderingsrapport-voor-verkoper/\">het funderingsrapport voor verkopers</a>.</p>"
       }
     ],
     "faqs": [
@@ -1440,8 +1440,8 @@
   },
   {
     "path": "/kennisbank/funderingsscan-en-taxatie/",
-    "title": "Funderingsscan en taxatie: zo zit het | MV Funderingsscan",
-    "description": "Hoe hangen funderingsscan en taxatie samen? Over de funderingsparagraaf in het taxatierapport, risicoklassen A tot en met E en wanneer onderzoek nodig is.",
+    "title": "Funderingsparagraaf taxatierapport uitgelegd | MV Funderingsscan",
+    "description": "Wat staat er in de funderingsparagraaf van het taxatierapport? Over de KCAF-risicoklasse A tot en met E, het funderingslabel en de rol van een funderingsscan.",
     "keyword": "funderingsscan en taxatie",
     "intent": "informatief",
     "nav_active": "/kennisbank/",
@@ -1460,7 +1460,7 @@
       }
     ],
     "eyebrow": "Kennisbank",
-    "h1": "Funderingsscan en taxatie: hoe hangt het samen?",
+    "h1": "De funderingsparagraaf in het taxatierapport: zo werkt het",
     "lead": "Sinds 1 april 2026 is de <strong>funderingsparagraaf</strong> in het taxatierapport voor woningen gebaseerd op de KCAF-risicoklasse A (laag) tot en met E (hoog). Bij klasse D of E moet volgens het NRVT in principe eerst een aanvullend (beperkt) funderingsonderzoek plaatsvinden voordat de taxatie kan worden afgerond. Een funderingsscan kan dan de eerste stap zijn. Stem dit altijd af met je taxateur.",
     "article": true,
     "sections": [
@@ -1474,7 +1474,7 @@
         "id": "risicoklassen",
         "h2": "Wat betekenen de risicoklassen A tot en met E?",
         "answer": "De risicoklassen lopen van A (geen risico) tot en met E (vastgesteld funderingsprobleem). Bij klasse D of E moet volgens het NRVT in principe eerst een aanvullend (beperkt) funderingsonderzoek plaatsvinden voordat de taxatie kan worden afgerond.",
-        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Risicoklasse</th><th>Betekenis</th><th>Gevolg voor de taxatie (NRVT)</th></tr></thead><tbody>\n<tr><td>A – C</td><td>Geen, licht of verhoogd risico (of onzekerheid)</td><td>Aanvullend onderzoek is in de regel vrijwillig</td></tr>\n<tr><td>D – E</td><td>Hoog risico of vastgesteld funderingsprobleem</td><td>In principe eerst aanvullend (beperkt) funderingsonderzoek (NRVT)</td></tr>\n</tbody></table></div>\n<p>De risicoklasse is een modelmatige inschatting op basis van gegevens zoals funderingstype, bodem, grondwater, archief en eerder onderzoek. Het zegt dus iets over de kans op problemen, niet over de feitelijke staat van jouw fundering. Juist daarom kan onderzoek ter plaatse waardevol zijn.</p><p>In sommige situaties kan het aanvullende onderzoek bij D of E achterwege blijven, bijvoorbeeld als er bewijsstukken zijn dat het risico er niet is; de taxateur legt dat dan vast. Voor hypotheken met NHG is bovendien aangekondigd dat vanaf 1 januari 2027 bij klasse D of E een verkennend funderingsonderzoek verplicht wordt; die regel is nog niet definitief.</p>"
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Risicoklasse</th><th>Betekenis</th><th>Gevolg voor de taxatie (NRVT)</th></tr></thead><tbody>\n<tr><td>A – C</td><td>Geen, licht of verhoogd risico (of onzekerheid)</td><td>Aanvullend onderzoek is in de regel vrijwillig</td></tr>\n<tr><td>D – E</td><td>Hoog risico of vastgesteld funderingsprobleem</td><td>In principe eerst aanvullend (beperkt) funderingsonderzoek (NRVT)</td></tr>\n</tbody></table></div>\n<p>De risicoklasse is een modelmatige inschatting op basis van gegevens zoals funderingstype, bodem, grondwater, archief en eerder onderzoek. Het zegt dus iets over de kans op problemen, niet over de feitelijke staat van jouw fundering. Juist daarom kan onderzoek ter plaatse waardevol zijn.</p><p>In sommige situaties kan het aanvullende onderzoek bij D of E achterwege blijven, bijvoorbeeld als er bewijsstukken zijn dat het risico er niet is; de taxateur legt dat dan vast. Voor hypotheken met NHG is bovendien aangekondigd dat vanaf 1 januari 2027 bij klasse D of E een verkennend funderingsonderzoek verplicht wordt; die regel is nog niet definitief.</p>\n<p>In het dagelijks spraakgebruik heet de risicoklasse ook wel het <strong>funderingslabel</strong>. Een overzicht per klasse, met wat die wel en niet betekent, staat op <a href=\"/funderingsrisicoklasse-uitgelegd/\">funderingsrisicoklasse A tot en met E</a>. Moet je voor een taxatie snel onderzoek regelen, lees dan <a href=\"/funderingsonderzoek-taxatie/\">funderingsonderzoek bij taxatie</a>.</p>"
       },
       {
         "id": "rol-scan",
@@ -1523,6 +1523,10 @@
       {
         "q": "Is een funderingsscan altijd voldoende voor de taxateur?",
         "a": "<p>Dat verschilt per situatie. Overleg vooraf met je taxateur welke vorm van onderzoek nodig is.</p>"
+      },
+      {
+        "q": "Is een funderingslabel van een postcodecheck hetzelfde als de klasse in het taxatierapport?",
+        "a": "<p>Nee. Gratis checks op internet geven een indicatie per postcode of buurt op basis van openbare gegevens. De klasse in het taxatierapport komt uit het KCAF-funderingsrisicorapport en gaat over het pand zelf, maar is ook een modelmatige inschatting. Alleen onderzoek ter plaatse, zoals een <a href=\"/fase-0-funderingsonderzoek/\">Quick Scan</a>, kijkt naar je eigen woning.</p>"
       }
     ],
     "related": [
@@ -1806,7 +1810,7 @@
       {
         "id": "fase-1",
         "h2": "Wat doe je bij het advies fase 1?",
-        "answer": "Laat fase 1 uitvoeren: vervolgonderzoek met metingen dat de huidige scheefstand en hoogteverschillen in beeld brengt en laat beoordelen of er aanwijzingen zijn voor ongelijkmatige zetting. Fase 1 kost vanaf €950, afhankelijk van de woning.",
+        "answer": "Laat fase 1 uitvoeren: vervolgonderzoek met metingen dat de huidige scheefstand en hoogteverschillen in beeld brengt en laat beoordelen of er aanwijzingen zijn voor ongelijkmatige zetting. Fase 1 kost vanaf €950 inclusief btw, afhankelijk van de woning.",
         "body": "<p>In fase 1 worden onder meer een <a href=\"/kennisbank/lintvoegwaterpassing/\">lintvoegwaterpassing</a>, een <a href=\"/kennisbank/loodmeting/\">loodmeting</a> en een <a href=\"/kennisbank/vloerveldwaterpassing/\">vloerveldwaterpassing</a> uitgevoerd, en worden <a href=\"/kennisbank/scheurpatronen/\">scheurpatronen</a> vastgelegd en geduid. De doorlooptijd wordt bij de offerte afgestemd. Lees meer bij <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a> of in het artikel <a href=\"/kennisbank/wanneer-fase-1/\">wanneer fase 1</a>.</p>\n<p>Na fase 1 kan het advies zijn om te monitoren, nader onderzoek te laten doen zoals een inspectieput, of een herstelplan te laten uitwerken door een gespecialiseerde partij. MV Funderingsscan voert zelf geen herstel uit.</p>"
       },
       {
@@ -1843,7 +1847,7 @@
       },
       {
         "q": "Wat kost de vervolgstap?",
-        "a": "<p>Dat hangt af van het advies. Fase 1 kost vanaf €950, afhankelijk van de woning. Voor aanvullend onderzoek bespreek je de kosten vooraf.</p>"
+        "a": "<p>Dat hangt af van het advies. Fase 1 kost vanaf €950 inclusief btw, afhankelijk van de woning. Voor aanvullend onderzoek bespreek je de kosten vooraf.</p>"
       }
     ],
     "related": [

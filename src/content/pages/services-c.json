@@ -100,7 +100,7 @@
       {
         "id": "kosten-fase-1",
         "h2": "Wat kost fase 1 funderingsonderzoek?",
-        "answer": "Fase 1 kost vanaf €950, afhankelijk van de woning en de metingen die nodig zijn. Je krijgt vooraf een offerte, zodat de prijs bekend is voordat het onderzoek start.",
+        "answer": "Fase 1 kost vanaf €950 inclusief btw, afhankelijk van de woning en de metingen die nodig zijn. Je krijgt vooraf een offerte, zodat de prijs bekend is voordat het onderzoek start.",
         "body": "<p>De spreiding in prijs heeft vooral te maken met de omvang en complexiteit van de woning en met welke metingen in jouw situatie zinvol zijn. Een vrijstaande woning met meerdere gevels en een aanbouw vraagt bijvoorbeeld om meer meetpunten dan een eenvoudige tussenwoning. Ook de doorlooptijd hangt af van de woning en wordt bij de offerte afgestemd.</p>\n<p>Omdat fase 1 in de regel volgt op fase 0, ken je de bevindingen en het advies al voordat je beslist. Je kiest dus bewust, op basis van een onderbouwd advies. Een volledig overzicht van de indicatieve tarieven staat op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>\n<div class=\"callout callout-tip\"><strong>Weet je niet welke fase je nodig hebt?</strong><p>Begin met de Quick Scan via <a href=\"/funderingsscan-aanvragen/\">funderingsscan aanvragen</a>, of stel je vraag eerst via <a href=\"/contact/\">contact</a>. Je kunt ook bellen naar <a href=\"tel:+31582037172\">+31 (0) 582037172</a>, op werkdagen tussen 09:00 en 17:00.</p></div>"
       }
     ],
@@ -143,7 +143,7 @@
       },
       {
         "q": "Wat kost een fase 1-onderzoek bij MV Funderingsscan?",
-        "a": "<p>Fase 1 kost vanaf €950.</p><p>De prijs hangt af van welke metingen nodig zijn en wordt vooraf met je afgestemd; de losse meetmethoden hebben geen eigen prijs. Zie ook <a href=\"/kennisbank/kosten-fase-1/\">kosten van fase 1</a> en het overzicht op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "a": "<p>Fase 1 kost vanaf €950 inclusief btw.</p><p>De prijs hangt af van welke metingen nodig zijn en wordt vooraf met je afgestemd; de losse meetmethoden hebben geen eigen prijs. Zie ook <a href=\"/kennisbank/kosten-fase-1/\">kosten van fase 1</a> en het overzicht op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
         "q": "Laat fase 1 zien of de fundering nog beweegt?",
@@ -513,7 +513,7 @@
         "id": "wanneer-is-aanvullend-funderingsonderzoek-nodig",
         "h2": "Wanneer is aanvullend funderingsonderzoek nodig?",
         "answer": "Aanvullend funderingsonderzoek is meestal zinvol wanneer de Quick Scan (fase 0) wijst op een verhoogd risico, bijvoorbeeld door duidelijke scheurpatronen, merkbare scheefstand of een combinatie van risicovolle bouw- en bodemkenmerken. Dan volgen in fase 1 gerichte metingen.",
-        "body": "<p>De volgorde is bewust. Metingen zonder voorafgaand onderzoek zijn lastig te duiden: je weet dan niet welk funderingstype er onder de woning zit, hoe de bodem is opgebouwd en welke signalen al bekend zijn. Daarom begint het onderzoek in de regel met de <a href=\"/quickscan-fundering/\">quickscan fundering</a>. Heb je al een recent rapport, dan bespreken we of direct metingen zinvol zijn.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus een visuele inspectie, met advies over de vervolgstap.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Lintvoegwaterpassing, loodmeting en vloerveldwaterpassing als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Fase 1 kost vanaf €950; je ontvangt vooraf een offerte. Koop je een woning, lees dan ook <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>. Een overzicht van signalen en oorzaken vind je op <a href=\"/funderingsproblemen/\">funderingsproblemen</a>.</p>"
+        "body": "<p>De volgorde is bewust. Metingen zonder voorafgaand onderzoek zijn lastig te duiden: je weet dan niet welk funderingstype er onder de woning zit, hoe de bodem is opgebouwd en welke signalen al bekend zijn. Daarom begint het onderzoek in de regel met de <a href=\"/quickscan-fundering/\">quickscan fundering</a>. Heb je al een recent rapport, dan bespreken we of direct metingen zinvol zijn.</p>\n<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief- en bodemonderzoek plus een visuele inspectie, met advies over de vervolgstap.</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Lintvoegwaterpassing, loodmeting en vloerveldwaterpassing als fase 0 daar aanleiding voor geeft.</span></a></div>\n<p>Fase 1 kost vanaf €950 inclusief btw; je ontvangt vooraf een offerte. Koop je een woning, lees dan ook <a href=\"/funderingsonderzoek-bij-aankoop/\">funderingsonderzoek bij aankoop</a>. Een overzicht van signalen en oorzaken vind je op <a href=\"/funderingsproblemen/\">funderingsproblemen</a>.</p>"
       },
       {
         "id": "metingen-in-de-praktijk",
@@ -696,7 +696,7 @@
         "id": "rapport-aanvragen",
         "h2": "Hoe kom je aan een funderingsrapport?",
         "answer": "Je vraagt een Quick Scan aan; na archief- en bodemonderzoek en de inspectie ontvang je het rapport normaal gesproken binnen 2 werkdagen. Als fase 1 volgt, ontvang je daarvan een aanvullend rapport met de meetresultaten.",
-        "body": "<p>De Quick Scan kost vanaf €350, afhankelijk van de woning, en de prijs is vooraf bekend. Fase 1 kost vanaf €950, afhankelijk van de woning. Een overzicht van wat er bij elke fase hoort, vind je bij <a href=\"/prijzen/\">prijzen</a>.</p>\n<p>Klaar om te starten? Ga naar <a href=\"/funderingsscan-aanvragen/\">funderingsscan aanvragen</a>. Heb je eerst een vraag over een bestaand rapport of over welke fase je nodig hebt, neem dan <a href=\"/contact/\">contact</a> op.</p>"
+        "body": "<p>De Quick Scan kost vanaf €350 inclusief btw, afhankelijk van de woning, en de prijs is vooraf bekend. Fase 1 kost vanaf €950 inclusief btw, afhankelijk van de woning. Een overzicht van wat er bij elke fase hoort, vind je bij <a href=\"/prijzen/\">prijzen</a>.</p>\n<p>Klaar om te starten? Ga naar <a href=\"/funderingsscan-aanvragen/\">funderingsscan aanvragen</a>. Heb je eerst een vraag over een bestaand rapport of over welke fase je nodig hebt, neem dan <a href=\"/contact/\">contact</a> op.</p>"
       }
     ],
     "faqs": [
@@ -745,8 +745,8 @@
   },
   {
     "path": "/prijzen/",
-    "title": "Kosten funderingsscan: prijzen fase 0 en 1 | MV Funderingsscan",
-    "description": "Wat kost een funderingsscan? Fase 0 vanaf €350, fase 1 vanaf €950. Lees wat er bij de prijs inbegrepen is en waar de exacte prijs van afhangt.",
+    "title": "Prijzen funderingsscan fase 0 en 1, incl. btw | MV Funderingsscan",
+    "description": "Prijzen funderingsscan: fase 0 vanaf €350 en fase 1 vanaf €950, inclusief btw. Lees wat er bij de prijs inbegrepen is en waar de exacte prijs van afhangt.",
     "keyword": "kosten funderingsscan",
     "intent": "commercieel",
     "nav_active": "/funderingsscan/",
@@ -765,8 +765,8 @@
       }
     ],
     "eyebrow": "Dienst · Prijzen",
-    "h1": "Kosten funderingsscan: indicatieve prijzen per fase",
-    "lead": "De <strong>kosten van een funderingsscan</strong> bij MV Funderingsscan beginnen bij €350 voor de <a href=\"/fase-0-funderingsonderzoek/\">Quick Scan (fase 0)</a>. Geeft die aanleiding tot metingen, dan kost fase 1 vanaf €950, afhankelijk van de woning. Je hoort vooraf wat het onderzoek kost, voor woningen in heel Friesland en Groningen.",
+    "h1": "Prijzen funderingsscan: fase 0 en fase 1, inclusief btw",
+    "lead": "De <strong>kosten van een funderingsscan</strong> bij MV Funderingsscan beginnen bij €350 voor de <a href=\"/fase-0-funderingsonderzoek/\">Quick Scan (fase 0)</a>. Geeft die aanleiding tot metingen, dan kost fase 1 vanaf €950, afhankelijk van de woning. Alle genoemde prijzen zijn inclusief btw. Je hoort vooraf wat het onderzoek kost, voor woningen in heel Friesland en Groningen.",
     "hero_image": {
       "name": "jaren-dertig-woningen-straat",
       "alt": "Rij jaren-dertigwoningen in een groene straat"
@@ -793,7 +793,7 @@
       {
         "id": "prijzen-per-fase",
         "h2": "Wat kost een funderingsscan per fase?",
-        "answer": "Fase 0 (Quick Scan) kost vanaf €350; fase 1 kost vanaf €950, afhankelijk van de woning.",
+        "answer": "Fase 0 (Quick Scan) kost vanaf €350 inclusief btw; fase 1 kost vanaf €950 inclusief btw, afhankelijk van de woning.",
         "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Fase</th><th>Wat het is</th><th>Indicatieve prijs</th></tr></thead><tbody>\n<tr><td>Fase 0 – Quick Scan</td><td>Archief- en bodemonderzoek, <a href=\"/kennisbank/visuele-funderingsinspectie/\">visuele inspectie</a>, <a href=\"/kennisbank/funderingsrisico-inschatting/\">risico-inschatting</a> en rapport</td><td>Vanaf €350</td></tr>\n<tr><td>Fase 1 – Metingen</td><td>Vervolgonderzoek met metingen, in de regel na advies uit fase 0</td><td>vanaf €950</td></tr>\n</tbody></table></div>\n<div class=\"callout callout-note\"><strong>Indicatieve prijzen</strong><p>Indicatieve prijzen. De definitieve prijs hangt af van de woning en werkzaamheden.</p></div>\n<p>Bij MV Funderingsscan begint het onderzoek in de regel met fase 0. Fase 1 volgt meestal alleen als de Quick Scan daar aanleiding voor geeft, dus lang niet iedereen heeft met beide bedragen te maken.</p>"
       },
       {
@@ -836,7 +836,7 @@
     "faqs": [
       {
         "q": "Wat kost een funderingsscan?",
-        "a": "<p>Een Quick Scan (fase 0) kost vanaf €350.</p><p>Als fase 1 nodig is, kost die vanaf €950, en de definitieve prijs hoor je vooraf.</p>"
+        "a": "<p>Een Quick Scan (fase 0) kost vanaf €350 inclusief btw.</p><p>Als fase 1 nodig is, kost die vanaf €950, en de definitieve prijs hoor je vooraf.</p>"
       },
       {
         "q": "Moet ik altijd fase 0 en fase 1 betalen?",

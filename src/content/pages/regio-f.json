@@ -1,8 +1,8 @@
 [
   {
     "path": "/werkgebied/",
-    "title": "Werkgebied funderingsonderzoek | MV Funderingsscan",
-    "description": "Waar voert MV Funderingsscan funderingsonderzoek uit? In heel Friesland en de hele provincie Groningen, vanuit ons kantoor in Leeuwarden. Bekijk de plaatsen.",
+    "title": "Werkgebied: Friesland, Groningen, Noord-Drenthe | MV Funderingsscan",
+    "description": "Waar voert MV Funderingsscan funderingsonderzoek uit? In heel Friesland, de hele provincie Groningen en Noord-Drenthe, vanuit Leeuwarden. Bekijk de plaatsen.",
     "keyword": "werkgebied funderingsonderzoek",
     "intent": "lokaal-commercieel",
     "nav_active": "/werkgebied/",
@@ -16,9 +16,9 @@
         "name": "Werkgebied"
       }
     ],
-    "eyebrow": "Werkgebied · Friesland en Groningen",
-    "h1": "Ons werkgebied voor funderingsonderzoek in Friesland en Groningen",
-    "lead": "MV Funderingsscan voert funderingsonderzoek uit in <strong>heel Friesland en de hele provincie Groningen</strong>. Vanuit ons kantoor in Leeuwarden komen we bij woningen in steden, dorpen en het buitengebied, voor een <a href=\"/funderingsscan/\">funderingsscan</a> (fase 0) en, als daar aanleiding voor is, een vervolgonderzoek met metingen.",
+    "eyebrow": "Werkgebied · Friesland, Groningen en Noord-Drenthe",
+    "h1": "Ons werkgebied: Friesland, Groningen en Noord-Drenthe",
+    "lead": "MV Funderingsscan voert funderingsonderzoek uit in <strong>heel Friesland, de hele provincie Groningen en Noord-Drenthe</strong>. Vanuit ons kantoor in Leeuwarden komen we bij woningen in steden, dorpen en het buitengebied, voor een <a href=\"/funderingsscan/\">funderingsscan</a> (fase 0) en, als daar aanleiding voor is, een vervolgonderzoek met metingen.",
     "hero_image": {
       "name": "jaren-dertig-woningen-straat",
       "alt": "Rij jaren-dertigwoningen in een groene straat"
@@ -45,8 +45,14 @@
       {
         "id": "waar-werken-we",
         "h2": "In welke regio voert MV Funderingsscan onderzoek uit?",
-        "answer": "We werken in heel Friesland en in de hele provincie Groningen. Je woning hoeft dus niet in een van de grotere steden te staan: ook dorpen en het buitengebied vallen binnen ons werkgebied.",
+        "answer": "We werken in heel Friesland, in de hele provincie Groningen en in Noord-Drenthe. Je woning hoeft dus niet in een van de grotere steden te staan: ook dorpen en het buitengebied vallen binnen ons werkgebied.",
         "body": "<p>Het Noorden is ons werkgebied. De ondergrond wisselt hier sterk: kleigronden langs de kust, veengebieden in het binnenland en zandruggen die hier en daar boven de omgeving uitsteken. Bij elke woning kijken we daarom naar de bodem op die plek, of het huis nu in een binnenstad aan de gracht staat of in een naoorlogse wijk aan de rand van een dorp.</p>\n<p>Op deze pagina vind je een overzicht van de plaatsen waarvoor we een eigen regiopagina hebben. Staat jouw woonplaats er niet tussen? Dan kun je ons gewoon benaderen. Het overzicht is bedoeld als hulpmiddel, niet als grens van ons werkgebied.</p>\n<div class=\"info-cards\"><div class=\"info-card\"><h3>Friesland</h3><p>Van de kleigebieden in het noorden en westen tot de veengronden in het midden en zuidoosten. Lees meer op de pagina over <a href=\"/funderingsonderzoek-friesland/\">funderingsonderzoek in Friesland</a>.</p></div><div class=\"info-card\"><h3>Groningen</h3><p>Zware zeeklei op het Hogeland, veen in de Veenkoloniën en zand op de Hondsrug, met daarbij de gevolgen van gaswinning. Meer op de pagina over <a href=\"/funderingsonderzoek-groningen/\">funderingsonderzoek in Groningen</a>.</p></div></div>"
+      },
+      {
+        "id": "noord-drenthe",
+        "h2": "Werken jullie ook in Drenthe?",
+        "answer": "Ja, in Noord-Drenthe: de gemeenten Assen, Tynaarlo, Noordenveld en Aa en Hunze. Daar voeren we dezelfde Quick Scan (fase 0) en hetzelfde onderzoek met metingen (fase 1) uit als in Friesland en Groningen.",
+        "body": "<p>Noord-Drenthe sluit direct aan op ons werkgebied in Groningen. We komen onder meer in Assen, Roden, Peize, Eelde, Paterswolde, Zuidlaren, Vries, Gieten en Annen, en in de dorpen daaromheen. Voor de rest van Drenthe kun je ons altijd bellen; dan bekijken we samen of we je kunnen helpen.</p>\n<p>De ondergrond is hier anders dan in de kleigebieden van Friesland en Groningen. Een groot deel van Noord-Drenthe ligt op zand en keileem, onder meer op de Hondsrug, waar de bodem doorgaans minder zettingsgevoelig is. In de beekdalen, zoals dat van de Drentsche Aa, en in de lage gebieden aan de grens met Groningen ligt plaatselijk veen. Juist daar kan een woning ongelijk zakken. Daarom kijken we bij elke woning naar de bodem op die plek, net als elders. Lees meer over <a href=\"/kennisbank/zetting/\">zetting</a> en over <a href=\"/fase-0-funderingsonderzoek/\">wat een Quick Scan onderzoekt</a>, of <a href=\"/funderingsscan-aanvragen/\">vraag direct een scan aan</a>.</p>"
       },
       {
         "id": "waarom-bodem-noorden",
@@ -89,6 +95,10 @@
       {
         "q": "Is het onderzoek in Groningen hetzelfde als in Friesland?",
         "a": "<p>De opzet is hetzelfde: we beginnen met fase 0 en adviseren alleen fase 1 als daar aanleiding voor is. Wel kijken we per regio naar de lokale bodem en omstandigheden, zoals de gevolgen van de gaswinning in Groningen of veen in het midden van Friesland.</p>"
+      },
+      {
+        "q": "Komen jullie ook naar Assen en de rest van Noord-Drenthe?",
+        "a": "<p>Ja. We werken in de gemeenten Assen, Tynaarlo, Noordenveld en Aa en Hunze. Woon je elders in Drenthe, bel ons dan gerust; dan kijken we of we je kunnen helpen.</p>"
       }
     ],
     "related": [
@@ -319,7 +329,7 @@
       {
         "id": "kosten-scan-friesland",
         "h2": "Wat kost een funderingsscan in Friesland?",
-        "answer": "De Quick Scan kost vanaf €350; bij een grotere of complexere woning kan de prijs hoger uitvallen. Je weet de definitieve prijs vooraf.",
+        "answer": "De Quick Scan kost vanaf €350 inclusief btw; bij een grotere of complexere woning kan de prijs hoger uitvallen. Je weet de definitieve prijs vooraf.",
         "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Onderzoek</th><th>Indicatieve prijs</th><th>Wanneer</th></tr></thead><tbody><tr><td>Fase 0 – Quick Scan</td><td>vanaf €350</td><td>Meestal de eerste stap</td></tr><tr><td>Fase 1 – metingen</td><td>vanaf €950</td><td>In de regel na fase 0, als die daar aanleiding voor geeft</td></tr></tbody></table></div>\n<p>Of een woning groter of complexer is, hangt bijvoorbeeld af van de omvang, het aantal bouwdelen of aanbouwen en de toegankelijkheid. Een uitgebreid overzicht vind je op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
@@ -381,7 +391,7 @@
   },
   {
     "path": "/funderingsonderzoek-groningen/",
-    "title": "Funderingsonderzoek in Groningen | MV Funderingsscan",
+    "title": "Funderingsonderzoek provincie Groningen | MV Funderingsscan",
     "description": "Funderingsonderzoek in de provincie Groningen: klei op het Hogeland, veen in de Veenkoloniën, zand op de Hondsrug en gaswinning. Lees hoe we werken.",
     "keyword": "funderingsonderzoek groningen",
     "intent": "lokaal-commercieel",
@@ -597,7 +607,7 @@
       {
         "id": "prijs-en-uitkomst",
         "h2": "Wat kost de scan en wat kan eruit komen?",
-        "answer": "De Quick Scan kost vanaf €350. Het advies is één van vier uitkomsten, van geen directe aanleiding tot fase 1.",
+        "answer": "De Quick Scan kost vanaf €350 inclusief btw. Het advies is één van vier uitkomsten, van geen directe aanleiding tot fase 1.",
         "body": "<div class=\"mini-outcomes\"><div class=\"mini-outcome mini-ok\"><strong>Geen directe aanleiding</strong><span>Op dit moment geen reden voor vervolgonderzoek.</span></div><div class=\"mini-outcome mini-watch\"><strong>Monitoren</strong><span>Signalen een tijd volgen, bijvoorbeeld met foto’s en data.</span></div><div class=\"mini-outcome mini-extra\"><strong>Gericht aanvullend onderzoek</strong><span>Op één onderdeel, of na het toegankelijk maken van de kruipruimte.</span></div><div class=\"mini-outcome mini-next\"><strong>Fase 1</strong><span>Metingen, vanaf €950</span></div></div>\n<p>Komt fase 1 in beeld, dan lees je op de pagina <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a> wat er wordt gemeten. Alle bedragen staan ook op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
@@ -735,7 +745,7 @@
       {
         "id": "kosten-leeuwarden",
         "h2": "Wat kost funderingsonderzoek in Leeuwarden?",
-        "answer": "De Quick Scan kost vanaf €350. Een fase 1 onderzoek met metingen kost vanaf €950.",
+        "answer": "De Quick Scan kost vanaf €350 inclusief btw. Een fase 1 onderzoek met metingen kost vanaf €950.",
         "body": "<p>Een groot grachtenpand met meerdere bouwlagen en aanbouwen vraagt meer tijd dan een rijwoning in een vooroorlogse wijk. Daarom kan de prijs per woning verschillen. Je hoort vooraf wat het onderzoek kost. Fase 1 offreren we in de regel na de Quick Scan; heb je al een recent rapport, dan bespreken we of direct fase 1 zinvol is. Bedenk dat eventueel funderingsherstel een heel andere orde van grootte is: dat kan tienduizenden euro’s kosten, afhankelijk van type en omvang. Een overzicht vind je op de pagina <a href=\"/prijzen/\">prijzen</a>.</p>"
       },
       {
@@ -898,7 +908,7 @@
       },
       {
         "q": "Wat kost funderingsonderzoek in Sneek?",
-        "a": "<p>De Quick Scan begint vanaf €350 en kan bij grotere of complexere woningen hoger uitvallen. Fase 1 kost vanaf €950. Zie de <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "a": "<p>De Quick Scan begint vanaf €350 en kan bij grotere of complexere woningen hoger uitvallen. Fase 1 kost vanaf €950 inclusief btw. Zie de <a href=\"/prijzen/\">prijzen</a>.</p>"
       }
     ],
     "related": [
@@ -1005,7 +1015,7 @@
       {
         "id": "kosten-harlingen",
         "h2": "Wat kost funderingsonderzoek in Harlingen?",
-        "answer": "De Quick Scan kost vanaf €350. Fase 1 kost vanaf €950 en volgt in de regel na fase 0, als die daar aanleiding voor geeft.",
+        "answer": "De Quick Scan kost vanaf €350 inclusief btw. Fase 1 kost vanaf €950 inclusief btw en volgt in de regel na fase 0, als die daar aanleiding voor geeft.",
         "body": "<p>Een groot pand in de binnenstad met meerdere bouwdelen vraagt meer werk dan een eenvoudige woning, en dat zie je terug in de prijs. Je hoort de definitieve prijs vooraf. Meer informatie vind je op de pagina <a href=\"/prijzen/\">prijzen</a>. Wij voeren zelf geen herstel uit; voor de kosten van eventueel herstel heb je een offerte van een herstelspecialist nodig.</p>"
       },
       {
@@ -1174,7 +1184,7 @@
       },
       {
         "q": "Wat kost een funderingsscan in Drachten?",
-        "a": "<p>De Quick Scan kost vanaf €350 en kan bij grotere of complexere woningen hoger uitvallen. De prijs hoor je vooraf. Zie ook de <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "a": "<p>De Quick Scan kost vanaf €350 inclusief btw en kan bij grotere of complexere woningen hoger uitvallen. De prijs hoor je vooraf. Zie ook de <a href=\"/prijzen/\">prijzen</a>.</p>"
       }
     ],
     "related": [
@@ -1288,7 +1298,7 @@
         "id": "onderzoek-heerenveen",
         "h2": "Hoe werkt funderingsonderzoek in Heerenveen?",
         "answer": "We beginnen met fase 0: archief, bodem en een visuele inspectie, met een rapport normaal gesproken binnen 2 werkdagen na de inspectie. Geeft dat aanleiding, dan volgt fase 1 met metingen.",
-        "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Met extra aandacht voor veen, grondwater en bodemdaling</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Lintvoeg, scheefstand en vloerveld in kaart</span></a></div>\n<div class=\"mini-outcomes\"><div class=\"mini-outcome mini-ok\"><strong>Geen directe aanleiding</strong><span>Op dit moment geen reden voor vervolgonderzoek.</span></div><div class=\"mini-outcome mini-watch\"><strong>Monitoren</strong><span>Signalen een tijd volgen.</span></div><div class=\"mini-outcome mini-extra\"><strong>Aanvullend onderzoek</strong><span>Bijvoorbeeld de kruipruimte toegankelijk maken.</span></div><div class=\"mini-outcome mini-next\"><strong>Fase 1</strong><span>Metingen voor een beter beeld.</span></div></div>\n<p>De Quick Scan kost vanaf €350 en fase 1 vanaf €950. Voor meer zekerheid over houten palen kan na fase 1 een inspectieput worden geadviseerd, waarbij de fundering plaatselijk wordt vrijgegraven. Het hele verloop lees je bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
+        "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Met extra aandacht voor veen, grondwater en bodemdaling</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Lintvoeg, scheefstand en vloerveld in kaart</span></a></div>\n<div class=\"mini-outcomes\"><div class=\"mini-outcome mini-ok\"><strong>Geen directe aanleiding</strong><span>Op dit moment geen reden voor vervolgonderzoek.</span></div><div class=\"mini-outcome mini-watch\"><strong>Monitoren</strong><span>Signalen een tijd volgen.</span></div><div class=\"mini-outcome mini-extra\"><strong>Aanvullend onderzoek</strong><span>Bijvoorbeeld de kruipruimte toegankelijk maken.</span></div><div class=\"mini-outcome mini-next\"><strong>Fase 1</strong><span>Metingen voor een beter beeld.</span></div></div>\n<p>De Quick Scan kost vanaf €350 inclusief btw en fase 1 vanaf €950. Voor meer zekerheid over houten palen kan na fase 1 een inspectieput worden geadviseerd, waarbij de fundering plaatselijk wordt vrijgegraven. Het hele verloop lees je bij onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
       },
       {
         "id": "omgeving-heerenveen",
@@ -1564,7 +1574,7 @@
         "id": "stappen-appingedam",
         "h2": "Hoe verloopt het onderzoek in Appingedam?",
         "answer": "We beginnen met de Quick Scan (fase 0), plannen de inspectie meestal binnen enkele werkdagen en leveren het rapport normaal gesproken binnen 2 werkdagen na de inspectie. Fase 1 volgt alleen als dat nodig is.",
-        "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief, kleibodem, inspectie en advies</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Lintvoegwaterpassing, loodmeting, vloerveldwaterpassing</span></a></div>\n<div class=\"mini-outcomes\"><div class=\"mini-outcome mini-ok\"><strong>Geen directe aanleiding</strong><span>Geen reden voor vervolgonderzoek.</span></div><div class=\"mini-outcome mini-watch\"><strong>Monitoren</strong><span>Signalen een tijd volgen.</span></div><div class=\"mini-outcome mini-extra\"><strong>Aanvullend onderzoek</strong><span>Gericht op één onderdeel.</span></div><div class=\"mini-outcome mini-next\"><strong>Fase 1</strong><span>Metingen voor meer duidelijkheid.</span></div></div>\n<p>De Quick Scan kost vanaf €350; bij grotere of complexere panden kan de prijs hoger uitvallen. Fase 1 kost vanaf €950. Meer over de opzet lees je bij de <a href=\"/funderingsscan/\">funderingsscan</a> en onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
+        "body": "<div class=\"phase-mini\"><a href=\"/fase-0-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag\">Fase 0</span><strong>Quick Scan</strong><span>Archief, kleibodem, inspectie en advies</span></a><a href=\"/fase-1-funderingsonderzoek/\" class=\"phase-mini-card\"><span class=\"phase-tag phase-tag-navy\">Fase 1</span><strong>Metingen</strong><span>Lintvoegwaterpassing, loodmeting, vloerveldwaterpassing</span></a></div>\n<div class=\"mini-outcomes\"><div class=\"mini-outcome mini-ok\"><strong>Geen directe aanleiding</strong><span>Geen reden voor vervolgonderzoek.</span></div><div class=\"mini-outcome mini-watch\"><strong>Monitoren</strong><span>Signalen een tijd volgen.</span></div><div class=\"mini-outcome mini-extra\"><strong>Aanvullend onderzoek</strong><span>Gericht op één onderdeel.</span></div><div class=\"mini-outcome mini-next\"><strong>Fase 1</strong><span>Metingen voor meer duidelijkheid.</span></div></div>\n<p>De Quick Scan kost vanaf €350 inclusief btw; bij grotere of complexere panden kan de prijs hoger uitvallen. Fase 1 kost vanaf €950 inclusief btw. Meer over de opzet lees je bij de <a href=\"/funderingsscan/\">funderingsscan</a> en onze <a href=\"/werkwijze/\">werkwijze</a>.</p>"
       },
       {
         "id": "omgeving-appingedam",
@@ -1726,7 +1736,7 @@
       },
       {
         "q": "Wat kost funderingsonderzoek in Delfzijl?",
-        "a": "<p>De Quick Scan kost vanaf €350 en kan bij grotere of complexere woningen hoger uitvallen. Fase 1 kost vanaf €950. Zie de <a href=\"/prijzen/\">prijzen</a>.</p>"
+        "a": "<p>De Quick Scan kost vanaf €350 inclusief btw en kan bij grotere of complexere woningen hoger uitvallen. Fase 1 kost vanaf €950 inclusief btw. Zie de <a href=\"/prijzen/\">prijzen</a>.</p>"
       }
     ],
     "related": [
