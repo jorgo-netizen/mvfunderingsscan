@@ -15,7 +15,15 @@
     "phone_intl": "+31 58 203 7172",
     "email": "info@mideavastgoed.nl",
     "hours_display": "Ma – vr 09:00 – 17:00",
-    "brand": "MV Funderingsscan"
+    "brand": "MV Funderingsscan",
+    "geo": {
+      "latitude": 53.2152,
+      "longitude": 5.7799
+    }
+  },
+  "analytics": {
+    "_uitleg": "Google Analytics 4: vul de meet-ID in (begint met G-). Leeg = geen GA4 en geen cookiemelding. GA4 laadt pas na toestemming van de bezoeker. Vercel Web Analytics (zonder cookies) staat los hiervan altijd aan.",
+    "ga4_id": ""
   },
   "images": {
     "funderingsinspectie-woning-gevel": {

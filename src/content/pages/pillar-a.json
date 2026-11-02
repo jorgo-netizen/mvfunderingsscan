@@ -215,7 +215,7 @@
   {
     "path": "/quickscan-fundering/",
     "title": "Quickscan fundering in Friesland en Groningen | MV Funderingsscan",
-    "description": "Wanneer is een quickscan fundering zinvol? Lees wat wel en niet wordt onderzocht, wat het oplevert en wat het kost (vanaf €350).",
+    "description": "Wat is een quickscan fundering (funderingsquickscan)? Lees wat wel en niet wordt onderzocht, wat het oplevert en wat het kost: vanaf €350 incl. btw.",
     "keyword": "quickscan fundering",
     "intent": "commercieel",
     "nav_active": "/funderingsscan/",
@@ -235,7 +235,7 @@
     ],
     "eyebrow": "Dienst · Quickscan fundering",
     "h1": "Quickscan fundering",
-    "lead": "Een <strong>quickscan fundering</strong> is een compact, niet-destructief onderzoek dat in korte tijd laat zien of er reden is tot zorg over de fundering van een woning. Het is dezelfde stap als het <a href=\"/fase-0-funderingsonderzoek/\">fase 0-onderzoek</a>: archief- en bodemgegevens plus een visuele inspectie, afgerond met een advies. MV Funderingsscan voert de quickscan uit in Friesland en Groningen.",
+    "lead": "Een <strong>quickscan fundering</strong> (ook wel funderingsquickscan genoemd) is een compact, niet-destructief onderzoek dat in korte tijd laat zien of er reden is tot zorg over de fundering van een woning. Het is dezelfde stap als het <a href=\"/fase-0-funderingsonderzoek/\">fase 0-onderzoek</a>: archief- en bodemgegevens plus een visuele inspectie, afgerond met een advies. MV Funderingsscan voert de quickscan uit in Friesland en Groningen.",
     "hero_image": {
       "name": "metselwerk-gevel-detail",
       "alt": "Close-up van metselwerk en voegen in een bakstenen gevel"

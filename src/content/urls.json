@@ -5,7 +5,7 @@
     "group": "home",
     "file": "(handgebouwd)",
     "minWords": 0,
-    "keyword": "funderingsscan friesland groningen",
+    "keyword": "funderingsonderzoek",
     "intent": "commercieel"
   },
   {
@@ -50,7 +50,7 @@
     "group": "diensten",
     "file": "pillar-a.json",
     "minWords": 2800,
-    "keyword": "quickscan fundering",
+    "keyword": "quickscan fundering (funderingsquickscan)",
     "intent": "commercieel"
   },
   {
@@ -194,7 +194,7 @@
     "group": "problemen",
     "file": "problems-e.json",
     "minWords": 1800,
-    "keyword": "funderingsproblemen",
+    "keyword": "funderingsproblemen woning",
     "intent": "informatief"
   },
   {
@@ -581,7 +581,7 @@
     "group": "kennisbank",
     "file": "kennisbank-h.json",
     "minWords": 800,
-    "keyword": "verzakking woning",
+    "keyword": "is mijn huis aan het verzakken",
     "intent": "informatief"
   },
   {
@@ -626,7 +626,7 @@
     "group": "kennisbank",
     "file": "kennisbank-h.json",
     "minWords": 800,
-    "keyword": "fundering op staal",
+    "keyword": "wat is fundering op staal",
     "intent": "informatief"
   },
   {
@@ -1112,7 +1112,7 @@
     "group": "regio",
     "file": "gemeenten-r.json",
     "minWords": 950,
-    "keyword": "funderingsonderzoek appingedam",
+    "keyword": "funderingsonderzoek eemsdelta",
     "intent": "lokaal-commercieel"
   },
   {
@@ -1202,7 +1202,7 @@
     "group": "hulpmiddelen",
     "file": "tools-u.json",
     "minWords": 250,
-    "keyword": "wanneer funderingsonderzoek",
+    "keyword": "stappenhulp funderingsonderzoek",
     "intent": "informatief"
   },
   {

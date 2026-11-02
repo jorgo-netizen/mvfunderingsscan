@@ -1,0 +1,722 @@
+{
+ "/": {
+  "hash": "53d98a15373d234f",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/algemene-voorwaarden/": {
+  "hash": "18e5fbab765c69be",
+  "datum": "2026-11-02",
+  "eerste": "2026-10-27"
+ },
+ "/beheer/": {
+  "hash": "2c020affb33e1528",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/bronnen-en-richtlijnen/": {
+  "hash": "2002ac01be457e4c",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-07"
+ },
+ "/contact/": {
+  "hash": "ea8a80b6f566b608",
+  "datum": "2026-11-02",
+  "eerste": "2026-11-02"
+ },
+ "/fase-0-funderingsonderzoek-aankoop/": {
+  "hash": "599b5496bce4fce6",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/fase-0-funderingsonderzoek/": {
+  "hash": "381c360933af18df",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/fase-1-funderingsonderzoek/": {
+  "hash": "133f9862dd8a5d20",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/fundering-op-staal/": {
+  "hash": "f2ded728131d984c",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsinspectie/": {
+  "hash": "aa976e088aeb366d",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsmetingen/": {
+  "hash": "530e73496dc26711",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-achtkarspelen/": {
+  "hash": "e93ac1afb06de2a1",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-appingedam/": {
+  "hash": "6ef5df386ccdbf22",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-bij-aankoop/": {
+  "hash": "98ec6d8f22e4ec5f",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-bij-verkoop/": {
+  "hash": "6bd396ed8674982d",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-dantumadiel/": {
+  "hash": "ac8dc0ce6f45f38a",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-de-fryske-marren/": {
+  "hash": "f08e7a51dcc96249",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-delfzijl/": {
+  "hash": "475714cab6c3bd2f",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-drachten/": {
+  "hash": "fa7faf35c236951e",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-eemsdelta/": {
+  "hash": "93511df5b6dbd6ac",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-franeker/": {
+  "hash": "099dbaa611fdfa5e",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-friesland/": {
+  "hash": "68bae8ec7986505b",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-groningen-stad/": {
+  "hash": "ac911ff9f251dd4c",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-groningen/": {
+  "hash": "9bba6351c2b5da34",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-haren/": {
+  "hash": "4f14711ae31b1722",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-harlingen/": {
+  "hash": "551b5960bcaddf4e",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-heerenveen/": {
+  "hash": "54ac5230abc1cdef",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-het-hogeland/": {
+  "hash": "01f685125423f3ce",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-leeuwarden/": {
+  "hash": "408bef174dd508ce",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-midden-groningen/": {
+  "hash": "8661beb18f9c55af",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-noardeast-fryslan/": {
+  "hash": "9e4635c4ceed6fe5",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-ooststellingwerf/": {
+  "hash": "fbcf24c8ab102cdc",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-opsterland/": {
+  "hash": "4d3c07cbcca4c8a7",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-pekela/": {
+  "hash": "f33bcf26bb93f791",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-sneek/": {
+  "hash": "c9e1f4f733b7a798",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-stadskanaal/": {
+  "hash": "a672423404505490",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-taxatie/": {
+  "hash": "6d25a6d9f3df1412",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-tytsjerksteradiel/": {
+  "hash": "e4fc35ac17e735fa",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-veendam/": {
+  "hash": "f232c7c1aae0d91f",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-westerkwartier/": {
+  "hash": "a6c3026d2a013c73",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-westerwolde/": {
+  "hash": "4d635b1b4c05b030",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-weststellingwerf/": {
+  "hash": "71d91160ffdd65ba",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-winschoten/": {
+  "hash": "5611c1824f36d8a8",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-woning/": {
+  "hash": "d0c9d4ca71d495b8",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsproblemen-klei/": {
+  "hash": "f087952b32b94908",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsproblemen-veen/": {
+  "hash": "f2c22b9ddcfe559d",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsproblemen/": {
+  "hash": "d1421db2c7152bf3",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsquiz/": {
+  "hash": "aa7ae8d363a503b6",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-08"
+ },
+ "/funderingsrapport/": {
+  "hash": "0fab2fdbf0411645",
+  "datum": "2026-11-02",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsrisicoklasse-uitgelegd/": {
+  "hash": "58f3f3f0f6b59573",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-08"
+ },
+ "/funderingsscan-aanvragen/": {
+  "hash": "428a0a624d6caff5",
+  "datum": "2026-11-02",
+  "eerste": "2026-11-02"
+ },
+ "/funderingsscan-friesland/": {
+  "hash": "4f4dfebbd5481966",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsscan-groningen/": {
+  "hash": "bbca301b4ddb5581",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsscan-leeuwarden/": {
+  "hash": "bb05f4abb16c3722",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/funderingsscan/": {
+  "hash": "afe5546d6ca4133f",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/gratis-funderingscheck/": {
+  "hash": "c8353c60c423f3ca",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-08"
+ },
+ "/huis-kopen-funderingscheck/": {
+  "hash": "5804ba14a7452cfc",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-08"
+ },
+ "/hulpmiddelen/": {
+  "hash": "24603369bab16d12",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-08"
+ },
+ "/kennisbank/": {
+  "hash": "1ab8d58338910af5",
+  "datum": "2026-11-02",
+  "eerste": "2026-11-02"
+ },
+ "/kennisbank/archiefonderzoek-fundering/": {
+  "hash": "95e1c7eaf3c6c4d9",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/begrippenlijst/": {
+  "hash": "161a1d7c2571b6ce",
+  "datum": "2026-11-02",
+  "eerste": "2026-11-02"
+ },
+ "/kennisbank/bodemdaling/": {
+  "hash": "50f602af802fd71f",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/fundering-op-staal/": {
+  "hash": "aa6ec80ce6a33cb6",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/funderingsherstel/": {
+  "hash": "15d70bb4e5c412e3",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/funderingsonderzoek-voor-bod/": {
+  "hash": "c3ef8cb4a47b5f33",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/funderingsproblemen-friesland/": {
+  "hash": "b4b20e8f8c76401b",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/funderingsproblemen-groningen/": {
+  "hash": "e116a40c0c287b8b",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/funderingsrapport-lezen/": {
+  "hash": "af5f55a5c86098ac",
+  "datum": "2026-11-02",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/funderingsrapport-voor-verkoper/": {
+  "hash": "8fa424e5ac8d4b2b",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/funderingsrisico-bij-aankoop/": {
+  "hash": "09fde2b32e378460",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/funderingsrisico-inschatting/": {
+  "hash": "d9f33b9cca782f83",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/funderingsrisico/": {
+  "hash": "912cc6d2a6c2a778",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/funderingsscan-bij-aankoop/": {
+  "hash": "52dfd7d87a067614",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/funderingsscan-bij-verkoop/": {
+  "hash": "4723ccc96a8b8e82",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/funderingsscan-en-hypotheek/": {
+  "hash": "97b0720904bf0ede",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/funderingsscan-en-taxatie/": {
+  "hash": "c16db190e6589b97",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/grondwater-en-fundering/": {
+  "hash": "544a12b51584243f",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/grondwatermeting/": {
+  "hash": "7db929534b316371",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/heb-ik-een-funderingsscan-nodig/": {
+  "hash": "649625036c7a450a",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/helling-in-vloer/": {
+  "hash": "5a07860ab0b4f57a",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/hoe-lang-duurt-funderingsonderzoek/": {
+  "hash": "67702d2e0f1035ef",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/hoogtemeting/": {
+  "hash": "04cb136653dd7d49",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/houten-paalfundering/": {
+  "hash": "817bf1a9fa0593a4",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/kleibodem/": {
+  "hash": "ee4727ee752358d6",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/klemmende-deuren/": {
+  "hash": "73877376df953057",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/klemmende-ramen/": {
+  "hash": "2f29293d4c9849e4",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/kosten-fase-1/": {
+  "hash": "099d934ab034bfc6",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/kosten-funderingsherstel/": {
+  "hash": "640497761a41c02d",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/kruipruimte-inspectie/": {
+  "hash": "764adef8940e7b41",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/lintvoegwaterpassing/": {
+  "hash": "e8362182e54e5f7c",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/loodmeting/": {
+  "hash": "c178d25118ae9545",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/maaiveldhoogte/": {
+  "hash": "ad96835b6eac3074",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/monitoring-scheuren/": {
+  "hash": "937cdfaab3d05bad",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/ongelijke-zetting/": {
+  "hash": "aae744e86233a5f7",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/paalfundering/": {
+  "hash": "702f68d99fbd409a",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/paalrot/": {
+  "hash": "d69519ff4657a7d4",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/peilverschillen/": {
+  "hash": "5ac26337c0326870",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/scheefstand/": {
+  "hash": "e1fc7c75ed8a04ea",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/scheefstandsmeting/": {
+  "hash": "f5064d910e5bcca2",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/scheuren-bij-aanbouw/": {
+  "hash": "c6bc4d57c1ce9cd7",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/scheuren-boven-kozijnen/": {
+  "hash": "7b1c075dba8b8011",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/scheuren-in-gevel/": {
+  "hash": "f7b761798e3edd53",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/scheuren-in-metselwerk/": {
+  "hash": "4d015590645815da",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/scheuren-in-woning/": {
+  "hash": "ed5972cbf0fe4f32",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/scheurmeting/": {
+  "hash": "447eb9861a2002b7",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/scheurpatronen/": {
+  "hash": "de05d6b6b232b9e0",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/veenbodem/": {
+  "hash": "5e40db414eb26c84",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/verschil-fase-0-en-fase-1/": {
+  "hash": "edd7d5015ffbb711",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/verzakking-woning/": {
+  "hash": "96a0e74ce613b3c5",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/visuele-funderingsinspectie/": {
+  "hash": "534bf9199a01e72d",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/vloerveldwaterpassing/": {
+  "hash": "3a453386244b713d",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/wanneer-fase-1/": {
+  "hash": "bfcba557c8682399",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/wanneer-funderingsonderzoek/": {
+  "hash": "efdc3a48709f7950",
+  "datum": "2026-11-02",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/wat-is-een-funderingsscan/": {
+  "hash": "18c6ba1b9d20e782",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/wat-is-een-quickscan-fundering/": {
+  "hash": "25b4f95e13d5bf50",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/wat-is-fase-0/": {
+  "hash": "7392d6a8e5162d7a",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/wat-is-fase-1/": {
+  "hash": "b6b61174cfd85259",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/wat-is-funderingsonderzoek/": {
+  "hash": "7a56e4211f48bd6d",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/wat-kost-een-funderingsscan/": {
+  "hash": "0278a6d75e586124",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/wat-kost-fase-0/": {
+  "hash": "89e8a72eb9fd88d4",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/wat-na-een-quickscan/": {
+  "hash": "998683a7a97ab681",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/wat-wordt-onderzocht/": {
+  "hash": "c2c76f143033519e",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/zandbodem/": {
+  "hash": "1aa18ffb3525b0d7",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/zetting/": {
+  "hash": "aace3017f70f29c2",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kennisbank/zettingsmeting/": {
+  "hash": "922f76c8d4848523",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/klemmende-deuren-en-ramen/": {
+  "hash": "d5e5193efa4d9d00",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/kosten-funderingsonderzoek-berekenen/": {
+  "hash": "e88089b0b7df19d5",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-08"
+ },
+ "/makelaars-en-taxateurs/": {
+  "hash": "76b374e543729d87",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-09"
+ },
+ "/meetwaarden-uitgelegd/": {
+  "hash": "003042c7e0221c5a",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-08"
+ },
+ "/over-ons/": {
+  "hash": "453ddf2298f03ddb",
+  "datum": "2026-11-02",
+  "eerste": "2026-10-06"
+ },
+ "/prijzen/": {
+  "hash": "f70958660f988b46",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/privacyverklaring/": {
+  "hash": "52d58869731901ac",
+  "datum": "2026-11-02",
+  "eerste": "2026-10-27"
+ },
+ "/problemen-met-houten-palen/": {
+  "hash": "93995104aaaef766",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/quickscan-fundering/": {
+  "hash": "5d1929e8769f3d82",
+  "datum": "2026-11-02",
+  "eerste": "2026-10-06"
+ },
+ "/scheefstand-woning/": {
+  "hash": "1c3804146a506074",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/scheuren-in-gevel/": {
+  "hash": "27c009868bd242ff",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/status/": {
+  "hash": "3a8ad9f4b4f47c3d",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/vertel-wat-je-ziet/": {
+  "hash": "dc8db684661259a4",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-08"
+ },
+ "/verzakking-woning/": {
+  "hash": "769452653af8b4fe",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/welke-fundering-heeft-mijn-woning/": {
+  "hash": "b987c84a4e541e0d",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-08"
+ },
+ "/welke-stap-past-bij-mij/": {
+  "hash": "116a3ee35156b2f5",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-08"
+ },
+ "/werkgebied/": {
+  "hash": "0717de5662d59f96",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/werkwijze/": {
+  "hash": "3a300f7e802c2f35",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-06"
+ },
+ "/woningeigenaren/": {
+  "hash": "8fdbc0840e64e6ce",
+  "datum": "2026-10-30",
+  "eerste": "2026-10-09"
+ }
+}

@@ -10,10 +10,11 @@
  *   (nieuwe pagina's komen automatisch in sitemap en llms.txt)
  */
 import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, existsSync, readdirSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
-  DOMAIN, TODAY, NAP, ORG_ID, SITE_ID, esc, img, head, header, footer, breadcrumbsHtml,
+  DOMAIN, TODAY, NAP, GA4_ID, ORG_ID, SITE_ID, esc, img, head, header, footer, breadcrumbsHtml,
   faqItems, faqHtml, ctaBand, jsonld, orgSchema, websiteSchema, serviceSchema, breadcrumbSchema, faqSchema,
 } from '../src/lib/layout.mjs';
 import { render, relatedHtml } from '../src/lib/template.mjs';
@@ -34,6 +35,11 @@ const pages = readdirSync(join(CONTENT, 'pages'))
   .sort()
   .flatMap((f) => readJson(join('pages', f)));
 const byPath = Object.fromEntries(pages.map((p) => [p.path, p]));
+// Staat GA4 aan (site.json → analytics.ga4_id), dan vermeldt de privacyverklaring dat, inclusief de toestemming.
+if (GA4_ID && byPath['/privacyverklaring/']) {
+  const c = byPath['/privacyverklaring/'].sections.find((s) => s.id === 'cookies');
+  if (c) c.body += '<p>Geef je via de cookiemelding toestemming, dan gebruiken we ook <strong>Google Analytics 4</strong>. Dat plaatst analytische cookies om te meten hoe de website wordt gebruikt, bijvoorbeeld welke pagina\u2019s worden bekeken en of een aanvraagformulier is verstuurd (zonder de ingevulde gegevens). IP-adressen worden ingekort, gegevens worden niet gedeeld voor advertenties en Google Signals staat uit. Zonder toestemming laden we Google Analytics niet. Je keuze wijzig je via \u201cCookievoorkeuren\u201d onderaan elke pagina.</p>';
+}
 // Praktijkvoorbeelden: alleen echte cases in src/content/cases/*.json (bestanden met _ worden genegeerd).
 const CASES_DIR = join(CONTENT, 'cases');
 const cases = existsSync(CASES_DIR)
@@ -52,7 +58,33 @@ const cases = existsSync(CASES_DIR)
   : [];
 const homeTemplate = readFileSync(join(ROOT, 'src', 'templates', 'home-main.html'), 'utf8').replace(/\r\n/g, '\n');
 
+// ---------------------------------------------------------------- wijzigingsdatum per pagina
+// src/content/lastmod.json bewaart per pagina een vingerafdruk van de inhoud (<main>) en de datum waarop die
+// voor het laatst veranderde. Alleen een inhoudelijke wijziging geeft een nieuwe datum (niet menu, footer of
+// versienummers van bestanden). Die datum komt in de sitemap, dateModified en "Laatst inhoudelijk bijgewerkt".
+const LASTMOD_FILE = join(CONTENT, 'lastmod.json');
+const LASTMOD = existsSync(LASTMOD_FILE) ? JSON.parse(readFileSync(LASTMOD_FILE, 'utf8')) : {};
+const BOUWDATUM = new Date().toISOString().slice(0, 10);
+const MAANDEN_NL = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
+const datumNl = (iso) => { const [y, m, d] = iso.split('-').map(Number); return `${d} ${MAANDEN_NL[m - 1]} ${y}`; };
+let lastmodGewijzigd = false;
+const paginaDatum = {};
+function metDatum(path, html) {
+  const main = (html.match(/<main[\s\S]*<\/main>/) || [''])[0]
+    .replace(/<time[^>]*>[^<]*<\/time>/g, '').replace(/\?v=[\w-]+/g, '').replace(/"date(Modified|Published)": "[^"]*"/g, '');
+  if (!main) return html;
+  const hash = createHash('sha256').update(main).digest('hex').slice(0, 16);
+  const oud = LASTMOD[path];
+  const datum = oud && oud.hash === hash ? oud.datum : BOUWDATUM;
+  if (!oud || oud.hash !== hash) { LASTMOD[path] = { hash, datum, eerste: oud?.eerste || datum }; lastmodGewijzigd = true; }
+  paginaDatum[path] = datum;
+  return html.split(`"dateModified": "${TODAY}"`).join(`"dateModified": "${datum}"`)
+    .split(`"datePublished": "${TODAY}"`).join(`"datePublished": "${LASTMOD[path].eerste}"`)
+    .split(`<time>${datumNl(TODAY)}</time>`).join(`<time datetime="${datum}">${datumNl(datum)}</time>`);
+}
+
 function write(path, content) {
+  if (path.endsWith('/') && content.includes('<main')) content = metDatum(path, content);
   const target = path.endsWith('/') ? join(OUT, path, 'index.html') : join(OUT, path);
   mkdirSync(dirname(target), { recursive: true });
   writeFileSync(target, content, 'utf8');
@@ -179,7 +211,7 @@ function buildHome() {
   if (s.includes('{{')) throw new Error('Onvervangen placeholder in home-main.html');
 
   const url = DOMAIN + '/';
-  const title = 'Funderingsscan & funderingsonderzoek | Friesland & Groningen | MV Funderingsscan';
+  const title = 'Funderingsonderzoek in Friesland & Groningen | MV Funderingsscan';
   const graph = [orgSchema(), websiteSchema(), {
     '@type': 'WebPage', '@id': url + '#webpagina', url, name: title,
     inLanguage: 'nl-NL', isPartOf: { '@id': SITE_ID }, about: { '@id': ORG_ID },
@@ -187,7 +219,7 @@ function buildHome() {
   }, serviceSchema('funderingsscan'), serviceSchema('fase0'), serviceSchema('fase1'), faqSchema(url, home.faqs)];
   write('/', head({
     path: '/', title,
-    description: 'Funderingsscan en funderingsonderzoek in Friesland en Groningen. Onafhankelijk onderzoek naar het funderingsrisico van je woning. Vraag een scan aan.',
+    description: 'Onafhankelijk funderingsonderzoek in Friesland, Groningen en Noord-Drenthe. Quick Scan vanaf €350 incl. btw, rapport binnen 2 werkdagen. Vraag een scan aan.',
     schema: jsonld(graph),
     preload: '<link rel="preload" as="image" type="image/webp" fetchpriority="high" imagesrcset="/assets/img/funderingsmeting-laser-tablet-640.webp 640w, /assets/img/funderingsmeting-laser-tablet-1024.webp 1024w, /assets/img/funderingsmeting-laser-tablet-1536.webp 1536w" imagesizes="(min-width: 1181px) 80vw, 100vw">\n  ',
   }) + '\n' + header('/') + s + footer());
@@ -452,7 +484,7 @@ Sitemap: ${DOMAIN}/nieuws-sitemap.xml
     if (g === 'regio' || g === 'problemen') return '0.7';
     return '0.6';
   };
-  const urlsXml = [...new Set(paths)].map((path) => `  <url>\n    <loc>${DOMAIN}${path}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <priority>${priority(path)}</priority>\n  </url>`);
+  const urlsXml = [...new Set(paths)].map((path) => `  <url>\n    <loc>${DOMAIN}${path}</loc>\n    <lastmod>${paginaDatum[path] || TODAY}</lastmod>\n    <priority>${priority(path)}</priority>\n  </url>`);
   write('/sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urlsXml.join('\n') + '\n</urlset>\n');
 
   const line = (p) => `- [${p.h1}](${DOMAIN}${p.path}): ${p.description}`;
@@ -555,6 +587,7 @@ export function build({ quiet = false } = {}) {
   // veilige Markdown-weergave ook in de browser (live voorbeeld in de nieuwseditor)
   write('/beheer-markdown.js', readFileSync(join(ROOT, 'api', '_lib', 'markdown.js'), 'utf8'));
   buildMetaFiles(paths);
+  if (lastmodGewijzigd && !process.env.VERCEL) writeFileSync(LASTMOD_FILE, JSON.stringify(Object.fromEntries(Object.entries(LASTMOD).sort()), null, 1) + '\n');
   if (!quiet) console.log(`✔ ${paths.length} pagina's gebouwd in dist/ (${Date.now() - t0} ms)`);
   const open = openPlaceholders();
   if (!quiet && open.length) {

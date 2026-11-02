@@ -1932,3 +1932,9 @@ html:not(.js) .sim-lvm .sim-points, html:not(.js) .sim-lvm [data-lvm-reset], htm
 @media (max-width: 1180px) { .audience-grid.audience-grid-5 { grid-template-columns: 1fr 1fr 1fr; } }
 @media (max-width: 900px) { .audience-grid.audience-grid-5 { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 640px) { .audience-grid.audience-grid-5 { grid-template-columns: 1fr; } }
+
+/* Cookiemelding (alleen actief als GA4 is ingesteld) */
+.cookie-melding { position: fixed; z-index: 90; left: 16px; right: 16px; bottom: 16px; max-width: 560px; margin: 0 auto; padding: 18px 20px; background: #fff; color: var(--navy); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 18px 50px rgba(10, 29, 51, .22); }
+.cookie-melding p { margin: 0 0 12px; font-size: 15px; line-height: 1.5; }
+.cookie-knoppen { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end; }
+.cookie-voorkeur { background: none; border: 0; padding: 0; margin-left: 12px; color: inherit; font: inherit; font-size: 13px; text-decoration: underline; cursor: pointer; opacity: .8; }

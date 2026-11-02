@@ -12,6 +12,8 @@ import { ORG_SAME_AS } from './eeat.mjs';
 export const DOMAIN = site.domain;
 export const TODAY = site.today;
 export const NAP = site.nap;
+/** GA4-meet-ID uit site.json; leeg of ongeldig = geen GA4 en geen cookiemelding. */
+export const GA4_ID = /^G-[A-Z0-9]{4,15}$/.test(site.analytics?.ga4_id || '') ? site.analytics.ga4_id : '';
 export const IMAGES = site.images;
 export const NAV = site.nav;
 export const SERVICES = site.services;
@@ -97,6 +99,7 @@ export function orgSchema() {
       addressRegion: NAP.region,
       addressCountry: NAP.country,
     },
+    ...(NAP.geo ? { geo: { '@type': 'GeoCoordinates', latitude: NAP.geo.latitude, longitude: NAP.geo.longitude } } : {}),
     openingHoursSpecification: [{
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
@@ -222,7 +225,9 @@ export function head(page) {
   ${(page.styles || []).map((href) => `<link rel="stylesheet" href="${asset(href)}">
   `).join('')}${page.tools ? TOOLS_ASSETS : ''}${(page.scripts || []).map((src) => `<script src="${asset(src)}" defer></script>
   `).join('')}<script>document.documentElement.classList.add('js');</script>
-  ${page.analytics === false ? '' : '<script defer src="/_vercel/insights/script.js"></script>\n  '}${page.schema}
+  ${page.analytics === false ? '' : `<script defer src="/_vercel/insights/script.js"></script>
+  ${GA4_ID ? `<script defer src="${asset('/consent.js')}" data-ga="${GA4_ID}"></script>
+  ` : ''}`}${page.schema}
 </head>`;
 }
 

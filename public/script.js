@@ -433,6 +433,8 @@
           }
           form.hidden = true;
           success.hidden = false;
+          // signaal voor analytics (alleen soort formulier en aanvraag, geen persoonsgegevens)
+          document.dispatchEvent(new CustomEvent('mvfs:event', { detail: { event: 'aanvraag_verzonden', formulier: form.dataset.formName || 'aanvraag', soort: fields.type || '' } }));
           success.focus({ preventScroll: true });
           success.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
         })
