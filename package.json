@@ -16,6 +16,7 @@
     "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\"",
     "autolink": "node scripts/autolink.mjs",
     "test": "node --test scripts/test-demos.mjs scripts/test-backend.mjs",
-    "beheer:gebruiker": "node scripts/beheer-gebruiker.mjs"
+    "beheer:gebruiker": "node scripts/beheer-gebruiker.mjs",
+    "redactie": "node scripts/redactie/run.mjs"
   }
 }

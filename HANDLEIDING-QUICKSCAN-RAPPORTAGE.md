@@ -30,15 +30,15 @@ Het rapport opent als stappenformulier in de volgorde van het rapport:
 | Stap | Wat je invult | Komt in het rapport op |
 |---|---|---|
 | Voorblad | objectadres, postcode, plaats, datum uitgebracht, adviseur (certificaatnummer volgt automatisch), status, foto voorblad | voorblad, kop- en voettekst, ondertekening |
-| A. Opdracht / opname | inspectiedatum en -tijd, gegevens opdrachtgever, e-mailadres (alleen voor verzending) | hoofdstuk Algemeen |
+| A. Opdracht / opname | inspectiedatum en -tijd, gegevens opdrachtgever | hoofdstuk Algemeen |
 | B. Object | type woning (keuzelijst), bouwjaar, weertype (keuzelijst), temperatuur, luchtvochtigheid | hoofdstuk Object |
 | C. Vraagstelling | datum (leeg = inspectiedatum), reden en bestemming (keuzelijsten). Je ziet direct hoe de zin wordt. | hoofdstuk Vraagstelling |
-| D. Conclusie | risicocategorie laag / midden / hoog **plus bevestiging**, advies, plaats en datum van opmaak, 1 tot 4 foto's | hoofdstuk Conclusie, pijltje op het voorblad |
-| E. Bouwtekeningen | ontvangen ja/nee, fysiek/digitaal, jaartal, soort fundering (keuzelijst), 1 tot 4 afbeeldingen | hoofdstuk Archief – bouwtekeningen |
-| F. Bodemdalingskaart | mm per jaar en typering (keuzelijst), of "niet beschikbaar" met toelichting; bron en datum (intern), 1 tot 4 afbeeldingen | hoofdstuk Archief – bodemdalingskaart |
-| G. Omgevingsfactoren | resultaat, 1 tot 4 afbeeldingen | hoofdstuk Omgevingsfactoren |
-| H. Lintvoegmeting | meetpunten, meetregels, 1 tot 4 foto's, of "niet uitgevoerd" met motivatie | hoofdstuk Lintvoegmeting |
-| I. Schietloodmeting | meetpunten, meetregels, 1 tot 4 foto's, of "niet uitgevoerd" met motivatie | hoofdstuk Schietloodmeting |
+| D. Conclusie | risicocategorie laag / midden / hoog **plus bevestiging**, advies, plaats en datum van opmaak | hoofdstuk Conclusie, pijltje op het voorblad |
+| E. Bouwtekeningen | ontvangen ja/nee, fysiek/digitaal, jaartal, soort fundering (keuzelijst), 1 tot 3 afbeeldingen | hoofdstuk Archief – bouwtekeningen |
+| F. Bodemdalingskaart | mm per jaar en typering (keuzelijst), of "niet beschikbaar"; bron en datum (intern), 1 tot 3 afbeeldingen | hoofdstuk Archief – bodemdalingskaart |
+| G. Omgevingsfactoren | resultaat, 1 tot 3 afbeeldingen | hoofdstuk Omgevingsfactoren |
+| H. Lintvoegmeting | meetpunten, meetregels, 1 tot 3 foto's, of "niet uitgevoerd" | hoofdstuk Lintvoegmeting |
+| I. Schietloodmeting | meetpunten, meetregels, 1 tot 3 foto's, of "niet uitgevoerd" met motivatie | hoofdstuk Schietloodmeting |
 | Uitkomst en afronden | controle, voorbeeld, Word, definitief, PDF, versturen, versies | – |
 
 - **Automatisch aanvullen.**
@@ -50,7 +50,7 @@ Het rapport opent als stappenformulier in de volgorde van het rapport:
   - Valt de verbinding weg, dan blijft je invoer in de browser bewaard. Bij het opnieuw openen vraagt het portaal of je die wilt terugzetten.
 - **Keuzelijsten.** Type woning, weertype, reden, bestemming, soort fundering, typering bodemdaling en schadetypering kies je uit een vaste lijst; vrije tekst is daar niet mogelijk. De lijsten staan op één plek in `api/_lib/rapport.js` (`KEUZES`). Moet er een optie bij, dan pas je die lijst aan.
 - **Foto's.**
-  - Bij elk hoofdstuk met foto's voeg je er minimaal 1 en maximaal 4 toe (het voorblad heeft één vaste foto). Na elke foto verschijnt een nieuw leeg vak tot het maximum is bereikt.
+  - Bij elk hoofdstuk met foto's voeg je er minimaal 1 en maximaal 3 toe (het voorblad heeft één vaste foto; bij de conclusie geen foto). In het rapport komen de foto's naast elkaar, even groot, onderaan het hoofdstuk. Na elke foto verschijnt een nieuw leeg vak tot het maximum is bereikt.
   - Per vak kies je een foto. Die wordt in de browser verkleind (max. 2000 px) en zonder EXIF-gegevens (zoals GPS-locatie) als JPEG opgeslagen.
   - Je kunt een bijschrift toevoegen; dat komt cursief onder de foto in het rapport.
   - In Word komt de eerste foto passend in het originele fotovak, met behoud van de verhouding. Extra foto's komen direct eronder, twee naast elkaar (ca. 8 × 6 cm), met de bijschriften als "Foto 2: …" eronder. Bij de lintvoegmeting staan de vier vakken al in het sjabloon.

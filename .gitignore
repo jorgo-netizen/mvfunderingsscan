@@ -14,3 +14,4 @@ push-commands.txt
 # Lokale geheimen en testdata
 .env
 .env.local
+redactie.env

@@ -100,6 +100,7 @@
       : parts[0] === 'aanvragen' ? (parts[1] ? showRequest(parts[1]) : listRequests())
         : parts[0] === 'rapporten' ? (parts[1] === 'nieuw' ? newReportDialog() : parts[1] ? editReport(parts[1].split('?')[0], parts[2]) : listReports())
           : parts[0] === 'medewerkers' || parts[0] === 'adviseurs' ? medewerkersPage()
+          : parts[0] === 'redactie' ? redactie(parts)
             : dashboard();
     Promise.resolve(go).then(() => main.focus({ preventScroll: true })).catch((err) => { if (err.message !== 'niet ingelogd') render(h('div', { class: 'portal-card' }, h('p', { class: 'portal-error', text: err.message }))); });
   }
@@ -477,11 +478,11 @@
         const lijst = fotos.filter((x) => x.slot === slot).sort((a, b) => a.position - b.position);
         const rij = h('div', { class: 'portal-foto-rij' }, lijst.map((f, i) => fotoVak(slot, f.position, `${label} ${i + 1}`, teken)));
         if (lijst.length < max && kanBewerken) {
-          const vrij = [1, 2, 3, 4].find((n) => n <= max && !lijst.some((x) => x.position === n));
+          const vrij = [1, 2, 3].find((n) => n <= max && !lijst.some((x) => x.position === n));
           rij.append(fotoVak(slot, vrij, lijst.length ? `${label} ${lijst.length + 1} (optioneel)` : `${label} 1 (verplicht)`, teken));
         }
         box.append(h('p', { class: 'portal-label', text: label === 'Foto' ? 'Foto\'s' : 'Afbeeldingen' }),
-          h('p', { class: 'portal-hint', text: `Minimaal 1, maximaal ${max} (${lijst.length} van ${max} toegevoegd).` }), rij);
+          h('p', { class: 'portal-hint', text: `Minimaal 1, maximaal ${max} (${lijst.length} van ${max} toegevoegd). In het rapport komen ze naast elkaar onderaan dit hoofdstuk.` }), rij);
       };
       teken();
       return box;
@@ -589,8 +590,7 @@
         h('div', { class: 'portal-grid-form' },
           inp('algemeen', 'inspectie_datum', 'Inspectiedatum', { type: 'date', onInput: zin }), inp('algemeen', 'inspectie_tijd', 'Inspectietijd', { type: 'time' }),
           inp('algemeen', 'opdrachtgever_naam', 'Naam opdrachtgever'), inp('algemeen', 'opdrachtgever_straat', 'Straat en huisnummer opdrachtgever'),
-          inp('algemeen', 'opdrachtgever_postcode', 'Postcode opdrachtgever', { max: 10 }), inp('algemeen', 'opdrachtgever_plaats', 'Plaats opdrachtgever'),
-          inp('algemeen', 'opdrachtgever_email', 'E-mailadres opdrachtgever', { type: 'email', hint: 'Alleen om het rapport te versturen; staat niet in het rapport.' })),
+          inp('algemeen', 'opdrachtgever_postcode', 'Postcode opdrachtgever', { max: 10 }), inp('algemeen', 'opdrachtgever_plaats', 'Plaats opdrachtgever')),
         h('div', { class: 'portal-actions' }, adresZoeker('algemeen', { straat: 'opdrachtgever_straat', postcode: 'opdrachtgever_postcode', plaats: 'opdrachtgever_plaats' }),
           kanBewerken ? h('button', { type: 'button', class: 'btn btn-link portal-link-plain', text: 'Zelfde adres als het object', onclick: async () => {
             Object.assign(data.algemeen, { opdrachtgever_straat: data.voorblad.object_straat || '', opdrachtgever_postcode: data.voorblad.object_postcode || '', opdrachtgever_plaats: data.voorblad.object_plaats || '' });
@@ -624,7 +624,6 @@
         inp('conclusie', 'advies', 'Advies', { textarea: true, rows: 6, max: 4000 }),
         h('div', { class: 'portal-grid-form' }, inp('conclusie', 'opmaak_plaats', 'Plaats van opmaak'), inp('conclusie', 'opmaak_datum', 'Datum van opmaak', { type: 'date' })),
         h('p', { class: 'portal-hint', text: 'De vaste teksten (beperkingen, geldigheidsduur van 6 maanden, klimaatverandering en ondertekening) komen ongewijzigd uit het rapportsjabloon. Het pijltje op het voorblad volgt de gekozen categorie.' }),
-        fotoReeks('conclusie', 'Foto'),
       ],
       bouwtekeningen: () => [
         h('h2', { class: 'portal-h2', text: 'E. Archief – bouwtekeningen' }),
@@ -636,7 +635,6 @@
       bodem: () => [
         h('h2', { class: 'portal-h2', text: 'F. Archief – bodemdalingskaart' }),
         vinkje('bodem', 'niet_beschikbaar', 'Er zijn geen bodemdalingsgegevens beschikbaar'),
-        inp('bodem', 'motivatie', 'Toelichting (alleen bij niet beschikbaar)', { max: 400 }),
         h('div', { class: 'portal-grid-form' }, inp('bodem', 'mm_per_jaar', 'Bodemdaling (mm per jaar)', { max: 8, inputmode: 'decimal' }), kies('bodem', 'typering', 'Typering', 'bodem.typering', { hint: 'Rapporttekst: tot 2 mm/jaar klein, meer dan 3 mm/jaar groot. Voor 2–3 mm geeft de tekst geen typering: beoordeel zelf.' }),
           inp('bodem', 'bron', 'Bron van de gegevens (intern)', { max: 200 }), inp('bodem', 'peildatum', 'Datum van de gegevens (intern)', { type: 'date' })),
         h('p', { class: 'portal-hint', text: 'Bron en datum worden bij het dossier bewaard; ze staan niet in het rapportsjabloon. Vul alleen gegevens in die echt bij dit object horen.' }),
@@ -650,7 +648,7 @@
       ],
       lintvoeg: () => [
         h('h2', { class: 'portal-h2', text: 'H. Lintvoegmeting' }),
-        vinkje('lintvoeg', 'nvt', 'Niet uitgevoerd / niet van toepassing'), inp('lintvoeg', 'nvt_motivatie', 'Motivatie (alleen bij niet van toepassing)', { max: 400 }),
+        vinkje('lintvoeg', 'nvt', 'Niet uitgevoerd / niet van toepassing'),
         inp('lintvoeg', 'meetpunten', 'Meetpunten (locaties)', { placeholder: 'gevel(s) waar gemeten is', max: 300 }),
         meettabel('lintvoeg', 3),
         fotoReeks('lintvoeg', 'Foto'),
@@ -973,6 +971,21 @@
         try { await api('aanvraag-verwijderen', { method: 'POST', body: { id: r.id, bevestig: answer.trim() } }); location.hash = '#/aanvragen'; } catch (err) { flash(msg, err.message, 'error'); }
       } })) : null;
 
+    // QuickScan-rapport bij deze aanvraag: openen als het er al is, anders aanmaken met de gegevens uit de aanvraag
+    const qsMsg = flashEl();
+    const bestaand = await api('rapporten').then((x) => x.items.filter((i) => i.request_id === r.id)).catch(() => []);
+    const qsKnop = h('button', { type: 'button', class: 'btn btn-gold', text: bestaand.length ? 'Nog een rapport maken' : 'QuickScan-rapport maken', onclick: async (e) => {
+      if (bestaand.length && !window.confirm('Er is al een rapport bij deze aanvraag. Toch een nieuw rapport maken?')) return;
+      busy(e.target, true);
+      try { const x = await api('rapport-nieuw', { method: 'POST', body: { request_id: r.id } }); location.hash = `#/rapporten/${x.id}/voorblad`; }
+      catch (err) { flash(qsMsg, err.message, 'error'); busy(e.target, false); }
+    } });
+    const qsRapport = h('section', { class: 'portal-card' }, h('h2', { class: 'portal-h2', text: 'QuickScan-rapport' }),
+      bestaand.length
+        ? h('ul', {}, bestaand.map((x) => h('li', {}, h('a', { href: `#/rapporten/${x.id}/voorblad`, text: `${x.report_nr}` }), ` · ${RSTATUS[x.status] || x.status}`)))
+        : h('p', { class: 'portal-hint', text: 'Naam, e-mail, adres, type woning, bouwjaar en reden worden uit deze aanvraag overgenomen in het rapport.' }),
+      qsMsg, h('div', { class: 'portal-actions' }, qsKnop));
+
     render(
       h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: `Dossier ${r.dossier_nr}` }), badge(r.status)),
       h('p', {}, h('a', { href: '#/aanvragen', text: '← Alle aanvragen' })), msg,
@@ -985,8 +998,329 @@
               row('Ontvangen', fmt(r.created_at)), row('Status bijgewerkt', fmt(r.status_updated_at)),
               ...Object.entries(details).map(([k, v]) => row(k.charAt(0).toUpperCase() + k.slice(1), v)))),
           statusForm, history),
-        h('div', {}, linkBox, report, mails, notes, del)),
+        h('div', {}, qsRapport, linkBox, report, mails, notes, del)),
     );
+  }
+
+  // ---------------------------------------------------------------- AI-redactie
+  // De bot op de pc levert alleen concepten aan. Hier keurt een medewerker goed (= overzetten naar Nieuws als concept);
+  // publiceren gebeurt daarna apart in Nieuws.
+  const RTYPE = { nieuws: 'Nieuws', weetje: 'Wist je dat', kennis: 'Kennisartikel', zelftest: 'Zelftest', regionaal: 'Regionaal', praktijk: 'Praktijkvoorbeeld (fictief)' };
+  const RSTAT = { concept: 'Concept', afgekeurd: 'Afgekeurd', goedgekeurd: 'Goedgekeurd', overgezet: 'In Nieuws (concept)' };
+  const rBadge = (st) => h('span', { class: `portal-badge portal-badge-red-${st}`, text: RSTAT[st] || st });
+  const rNav = (actief) => h('nav', { class: 'portal-subnav', 'aria-label': 'Redactie' },
+    [['', 'Overzicht'], ['concepten', 'Concepten'], ['items', 'Nieuwsitems'], ['bronnen', 'Bronnen'], ['instellingen', 'Instellingen en planning'], ['logboek', 'Logboek en fouten']]
+      .map(([p, t]) => h('a', { href: `#/redactie${p ? `/${p}` : ''}`, class: actief === p ? 'is-active' : null, text: t })));
+  const controleTelling = (c) => {
+    const k = c.controle || {};
+    const f = (k.fouten || []).length; const w = (k.waarschuwingen || []).length + (k.taal || []).length;
+    return h('span', { class: f ? 'portal-red-fout' : w ? 'portal-red-let' : 'portal-red-ok', text: f ? `${f} fout${f > 1 ? 'en' : ''}` : w ? `${w} aandachtspunt${w > 1 ? 'en' : ''}` : 'in orde' });
+  };
+
+  async function redactie(parts) {
+    const sub = (parts[1] || '').split('?')[0];
+    if (sub === 'concept' && parts[2]) return redactieConcept(parts[2]);
+    if (sub === 'concepten') return redactieConcepten();
+    if (sub === 'items') return redactieItems();
+    if (sub === 'bronnen') return redactieBronnen();
+    if (sub === 'instellingen') return redactieInstellingen();
+    if (sub === 'logboek') return redactieLogboek();
+    return redactieOverzicht();
+  }
+
+  async function redactieOverzicht() {
+    const d = await api('redactie-overzicht');
+    const kaart = (titel, waarde, href) => h('a', { class: 'portal-stat', href }, h('strong', { text: String(waarde) }), h('span', { text: titel }));
+    const lr = d.laatste_run;
+    render(h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'AI-redactie' })), rNav(''),
+      h('p', { class: 'portal-note' }, 'De redactiebot op de pc verzamelt nieuws en schrijft concepten. Hij kan niets publiceren. Jij keurt goed (het concept gaat dan als concept naar Nieuws) en publiceert daarna zelf in Nieuws.'),
+      d.instellingen.actief === false ? h('p', { class: 'portal-note portal-note-warn' }, 'De redactie staat uit. Zet hem aan bij Instellingen en planning.') : null,
+      h('div', { class: 'portal-stats red-stats' },
+        Object.entries(RTYPE).map(([t, l]) => kaart(`${l} – concepten`, d.per_type[t] || 0, `#/redactie/concepten?type=${t}&status=concept`)),
+        kaart('Nieuwe nieuwsitems', d.nieuwe_items, '#/redactie/items'),
+        kaart('Wacht op nieuwe versie', d.regenereren, '#/redactie/concepten?status=concept')),
+      h('section', { class: 'portal-card' }, h('h2', { class: 'portal-h2', text: 'Laatste run van de bot' }),
+        lr ? h('p', {}, `${fmt(lr.gestart_op)} · ${lr.taak} · `, h('strong', { text: lr.status }), ` · ${Object.entries(lr.aantallen || {}).map(([k, v]) => `${k}: ${v}`).join(', ')}`)
+          : h('p', { class: 'portal-hint', text: 'De bot heeft nog niet gedraaid. Zie Instellingen en planning voor het installeren.' }),
+        d.fouten.length ? h('div', {}, h('p', { class: 'portal-label', text: 'Recente fouten en waarschuwingen' }), h('ul', {}, d.fouten.map((r) => h('li', { text: `${fmt(r.gestart_op)} – ${r.status}: ${r.melding || '–'}` })))) : null),
+      h('section', { class: 'portal-card' }, h('h2', { class: 'portal-h2', text: 'Concepten per status' }),
+        h('ul', {}, Object.entries(RSTAT).map(([s, l]) => h('li', {}, h('a', { href: `#/redactie/concepten?status=${s}`, text: `${l}: ${d.per_status[s] || 0}` }))))));
+  }
+
+  async function redactieConcepten() {
+    const params = new URLSearchParams(location.hash.split('?')[1] || '');
+    const type = h('select', { id: 'rc-type' }, h('option', { value: '', text: 'Alle soorten' }), Object.entries(RTYPE).map(([k, v]) => h('option', { value: k, text: v })));
+    const status = h('select', { id: 'rc-status' }, h('option', { value: '', text: 'Alle statussen' }), Object.entries(RSTAT).map(([k, v]) => h('option', { value: k, text: v })));
+    type.value = params.get('type') || ''; status.value = params.get('status') || '';
+    const zoek = () => { location.hash = `#/redactie/concepten?${new URLSearchParams({ type: type.value, status: status.value })}`; };
+    type.addEventListener('change', zoek); status.addEventListener('change', zoek);
+    const d = await api('redactie-concepten', { params: { type: type.value, status: status.value } });
+    render(h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'Concepten' })), rNav('concepten'),
+      h('div', { class: 'portal-card portal-filters' }, field('Soort', type), field('Status', status)),
+      h('div', { class: 'portal-card' }, d.items.length ? h('div', { class: 'portal-table-wrap' }, h('table', { class: 'portal-table' },
+        h('thead', {}, h('tr', {}, ['Soort', 'Titel', 'Status', 'Controle', 'Gemaakt'].map((t) => h('th', { scope: 'col', text: t })))),
+        h('tbody', {}, d.items.map((c) => h('tr', {},
+          h('td', { text: RTYPE[c.type] || c.type }),
+          h('td', {}, h('a', { href: `#/redactie/concept/${c.id}`, text: c.titel }), c.regenereren ? h('span', { class: 'portal-muted', text: ' · nieuwe versie gevraagd' }) : null),
+          h('td', {}, rBadge(c.status)), h('td', {}, controleTelling(c)), h('td', { text: fmt(c.created_at) }))))))
+        : h('p', { class: 'portal-muted', text: 'Geen concepten gevonden.' })));
+  }
+
+  function zelftestVoorbeeld(z) {
+    if (!z || !z.vragen) return h('p', { class: 'portal-muted', text: 'Geen vragen.' });
+    const keuzes = {};
+    const uitslag = h('div', { class: 'portal-note', hidden: true });
+    const box = h('div', { class: 'red-zelftest' }, z.vragen.map((v, i) => h('fieldset', { class: 'portal-card' },
+      h('legend', { text: `${i + 1}. ${v.vraag}` }),
+      v.opties.map((o, j) => h('label', { class: 'portal-check' }, h('input', { type: 'radio', name: `zt-${i}`, value: String(j), onchange: () => { keuzes[i] = o.punten; } }), ` ${o.tekst} `, h('span', { class: 'portal-muted', text: `(${o.punten} pt)` }))),
+      h('p', { class: 'portal-hint', text: `Uitleg: ${v.uitleg}` }))),
+    h('button', { type: 'button', class: 'btn btn-ghost-dark', text: 'Bekijk uitslag', onclick: () => {
+      const tot = Object.values(keuzes).reduce((a, b) => a + b, 0);
+      const u = (z.uitslagen || []).find((x) => tot >= x.min && tot <= x.max);
+      uitslag.hidden = false; uitslag.textContent = `${tot} punten – ${u ? `${u.titel}: ${u.tekst}` : 'geen uitslag voor deze score (pas de grenzen aan)'}`;
+    } }), uitslag, h('p', { class: 'portal-hint', text: z.disclaimer || '' }));
+    return box;
+  }
+
+  async function redactieConcept(id) {
+    const d = await api('redactie-concept', { params: { id } });
+    const c = d.concept;
+    const msg = flashEl();
+    const bewerkbaar = c.status === 'concept' || c.status === 'afgekeurd';
+    const inp = (key, label, opts = {}) => {
+      const el = h(opts.textarea ? 'textarea' : 'input', { id: `rc-${key}`, type: opts.textarea ? undefined : 'text', maxlength: opts.max || 200, rows: opts.rows, disabled: !bewerkbaar });
+      el.value = c[key] || '';
+      const teller = opts.teller ? h('span', { class: 'portal-hint', text: `${el.value.length} tekens` }) : null;
+      if (teller) el.addEventListener('input', () => { teller.textContent = `${el.value.length} tekens${opts.teller ? ` (doel ${opts.teller})` : ''}`; });
+      return { el, veld: h('div', {}, field(label, el, opts.hint), teller) };
+    };
+    const titel = inp('titel', 'Titel (H1)', { max: 140 });
+    const slug = inp('slug', 'URL (slug)', { max: 90, hint: 'Wordt /nieuws/<slug>/' });
+    const seo = inp('seo_titel', 'SEO-titel', { max: 80, teller: 'max. 60' });
+    const meta = inp('meta_description', 'Meta description', { max: 170, teller: '120–160', textarea: true, rows: 2 });
+    const kw = inp('hoofdzoekwoord', 'Hoofdzoekwoord', { max: 80 });
+    const zw = h('input', { id: 'rc-zw', type: 'text', value: (c.zoekwoorden || []).join(', '), disabled: !bewerkbaar });
+    const intro = inp('intro', 'Introductie (direct antwoord, komt bovenaan)', { max: 600, textarea: true, rows: 3 });
+    const inhoud = inp('inhoud', 'Tekst (Markdown: ## kop, ### subkop, - opsomming, > uitgelicht blok, [tekst](/pagina/))', { max: 60000, textarea: true, rows: 22 });
+    // FAQ, bronnen, interne links als bewerkbare rijen
+    const rijen = (lijst, velden, leeg) => {
+      const box = h('div', { class: 'red-rijen' });
+      const teken = () => {
+        box.replaceChildren(...lijst.map((r, i) => h('div', { class: 'red-rij' },
+          velden.map(([k, l, max, area]) => { const e = h(area ? 'textarea' : 'input', { 'aria-label': l, placeholder: l, maxlength: max, rows: area ? 3 : undefined, disabled: !bewerkbaar }); e.value = r[k] || ''; e.addEventListener('input', () => { r[k] = e.value; }); return e; }),
+          bewerkbaar ? h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: 'Weg', onclick: () => { lijst.splice(i, 1); teken(); } }) : null)),
+        bewerkbaar ? h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: '+ Toevoegen', onclick: () => { lijst.push({ ...leeg }); teken(); } }) : null);
+      };
+      teken(); return box;
+    };
+    const faqs = JSON.parse(JSON.stringify(c.faqs || [])); const bronnen = JSON.parse(JSON.stringify(c.bronnen || [])); const links = JSON.parse(JSON.stringify(c.interne_links || []));
+    const paginaLijst = h('datalist', { id: 'rc-paginas' }, (d.interne_paginas || []).map((p) => h('option', { value: p.url, text: p.titel })));
+    const afb = h('select', { id: 'rc-afb', disabled: !bewerkbaar }, h('option', { value: '', text: 'Geen afbeelding' }), d.beeldbank.map((b) => h('option', { value: b.naam, text: b.alt })));
+    afb.value = c.afbeelding || '';
+    const afbImg = h('img', { class: 'red-afb', alt: '', width: 320, height: 180 });
+    const toonAfb = () => { afbImg.hidden = !afb.value; if (afb.value) afbImg.src = `/assets/img/${afb.value}-640.webp`; };
+    const alt = inp('afbeelding_alt', 'Alt-tekst van de afbeelding', { max: 200 });
+    afb.addEventListener('change', () => { toonAfb(); const b = d.beeldbank.find((x) => x.naam === afb.value); if (b) alt.el.value = b.alt; });
+    toonAfb();
+    let zelftestTekst = null;
+    if (c.type === 'zelftest') { zelftestTekst = h('textarea', { id: 'rc-zt', rows: 14, disabled: !bewerkbaar }); zelftestTekst.value = JSON.stringify(c.zelftest || {}, null, 2); }
+
+    const verzamel = () => {
+      const out = {
+        titel: titel.el.value, slug: slug.el.value, seo_titel: seo.el.value, meta_description: meta.el.value, hoofdzoekwoord: kw.el.value,
+        zoekwoorden: zw.value.split(',').map((x) => x.trim()).filter(Boolean), intro: intro.el.value, inhoud: inhoud.el.value,
+        faqs, bronnen, interne_links: links, afbeelding: afb.value, afbeelding_alt: alt.el.value,
+      };
+      if (zelftestTekst) out.zelftest = JSON.parse(zelftestTekst.value);
+      return out;
+    };
+    const opslaan = async (stil) => {
+      try { const r = await api('redactie-concept-opslaan', { method: 'POST', body: { id: c.id, concept: verzamel() } }); if (!stil) await redactieConcept(c.id); return r; }
+      catch (err) { flash(msg, err.message, 'error'); return null; }
+    };
+
+    // controlepaneel
+    const k = c.controle || {};
+    const blok = (titelTekst, lijst, cls) => (lijst && lijst.length ? h('div', { class: `red-controle ${cls}` }, h('p', { class: 'portal-label', text: `${titelTekst} (${lijst.length})` }), h('ul', {}, lijst.map((x) => h('li', { text: x })))) : null);
+    const controle = h('section', { class: 'portal-card' }, h('h2', { class: 'portal-h2', text: 'Kwaliteitscontrole' }),
+      h('p', { class: 'portal-hint', text: `${k.woorden ?? '?'} woorden · gecontroleerd ${fmt(k.gecontroleerd_op)} · model: ${c.model || '–'}. Controleer altijd zelf de feiten en de bronnen; de bot kan zich vergissen.` }),
+      blok('Moet opgelost of bewust geaccepteerd worden', k.fouten, 'is-fout'),
+      blok('Nakijken', k.waarschuwingen, 'is-let'),
+      blok('Spelling en grammatica (LanguageTool)', k.taal, 'is-let'),
+      blok('SEO', k.seo, 'is-info'), blok('GEO (gevonden worden door AI-diensten)', k.geo, 'is-info'),
+      !((k.fouten || []).length + (k.waarschuwingen || []).length + (k.taal || []).length + (k.seo || []).length + (k.geo || []).length) ? h('p', { class: 'portal-red-ok', text: 'Geen bevindingen.' }) : null);
+
+    const bronItems = (d.items || []).length ? h('section', { class: 'portal-card' }, h('h2', { class: 'portal-h2', text: 'Gebruikte nieuwsitems' }),
+      h('ul', {}, d.items.map((i) => h('li', {}, h('a', { href: i.url, target: '_blank', rel: 'noopener noreferrer', text: i.titel }), ` · ${i.bron_naam} · ${fmt(i.gepubliceerd_op)}`, h('p', { class: 'portal-hint', text: i.samenvatting }))))) : null;
+
+    // acties
+    const akkoord = h('input', { type: 'checkbox', id: 'rc-akkoord' });
+    const knoppen = h('div', { class: 'portal-actions' },
+      bewerkbaar ? h('button', { type: 'button', class: 'btn btn-gold', text: 'Opslaan en opnieuw controleren', onclick: async (e) => { busy(e.target, true); await opslaan(false); } }) : null,
+      c.type !== 'zelftest' ? h('a', { class: 'btn btn-ghost-dark', href: `${API}?actie=redactie-voorbeeld&id=${encodeURIComponent(c.id)}`, target: '_blank', rel: 'noopener', text: 'Voorbeeld op de site bekijken' }) : null,
+      c.status === 'concept' ? h('button', { type: 'button', class: 'btn btn-ghost-dark', text: 'Opnieuw laten schrijven', onclick: async () => {
+        const notitie = window.prompt('Wat moet er anders in de nieuwe versie? (optioneel, bijv. "korter", "meer over grondwater")', '');
+        if (notitie === null) return;
+        try { await api('redactie-regenereren', { method: 'POST', body: { id: c.id, notitie } }); flash(msg, 'De bot maakt bij de volgende run een nieuwe versie van dit concept.', 'ok'); } catch (err) { flash(msg, err.message, 'error'); }
+      } }) : null,
+      c.status === 'concept' ? h('button', { type: 'button', class: 'btn btn-ghost-dark', text: 'Afkeuren', onclick: async () => { try { await api('redactie-afkeuren', { method: 'POST', body: { id: c.id } }); await redactieConcept(c.id); } catch (err) { flash(msg, err.message, 'error'); } } }) : null,
+      c.status === 'afgekeurd' ? h('button', { type: 'button', class: 'btn btn-ghost-dark', text: 'Terugzetten naar concept', onclick: async () => { try { await api('redactie-afkeuren', { method: 'POST', body: { id: c.id, terug: true } }); await redactieConcept(c.id); } catch (err) { flash(msg, err.message, 'error'); } } }) : null,
+      c.status !== 'overgezet' ? h('button', { type: 'button', class: 'btn btn-danger', text: 'Verwijderen', onclick: async () => {
+        if (!window.confirm('Dit concept definitief verwijderen?')) return;
+        try { await api('redactie-verwijderen', { method: 'POST', body: { id: c.id, bevestig: true } }); location.hash = '#/redactie/concepten'; } catch (err) { flash(msg, err.message, 'error'); }
+      } }) : null);
+    const goedkeuren = c.status === 'concept' ? h('section', { class: 'portal-card portal-red-goedkeuren' },
+      h('h2', { class: 'portal-h2', text: 'Goedkeuren' }),
+      h('p', { text: c.type === 'zelftest'
+        ? 'Goedkeuren markeert deze zelftest als goedgekeurd. Zelftests worden nog niet op de site getoond.'
+        : 'Goedkeuren zet dit artikel over naar Nieuws, als concept. Het staat dan nog NIET op de site. Publiceren doe je daarna apart in Nieuws.' }),
+      (k.fouten || []).length ? h('div', { class: 'portal-check' }, akkoord, h('label', { for: 'rc-akkoord', text: 'Ik heb de openstaande punten uit de controle zelf gecontroleerd en akkoord bevonden.' })) : null,
+      h('button', { type: 'button', class: 'btn btn-navy', text: c.type === 'zelftest' ? 'Zelftest goedkeuren' : 'Goedkeuren en naar Nieuws (als concept)', onclick: async (e) => {
+        if (bewerkbaar && !(await opslaan(true))) return;
+        if (!window.confirm(c.type === 'zelftest' ? 'Deze zelftest goedkeuren?' : 'Dit artikel als concept naar Nieuws zetten? Het wordt nog niet gepubliceerd.')) return;
+        busy(e.target, true);
+        try {
+          const r = await api('redactie-goedkeuren', { method: 'POST', body: { id: c.id, fouten_gecontroleerd: akkoord.checked } });
+          if (r.nieuws_id) location.hash = `#/nieuws/${r.nieuws_id}`; else await redactieConcept(c.id);
+        } catch (err) { flash(msg, err.message, 'error'); busy(e.target, false); }
+      } })) : null;
+
+    render(h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: `${RTYPE[c.type] || c.type}: ${c.titel}` }), rBadge(c.status)),
+      rNav('concepten'), h('p', {}, h('a', { href: '#/redactie/concepten', text: '← Alle concepten' })),
+      c.regenereren ? h('p', { class: 'portal-note' }, `Nieuwe versie gevraagd${c.regenereer_notitie ? `: "${c.regenereer_notitie}"` : ''}. De bot maakt die bij de volgende run.`) : null,
+      c.status === 'overgezet' && c.nieuws_id ? h('p', { class: 'portal-note' }, 'Dit artikel staat als concept in Nieuws. ', h('a', { href: `#/nieuws/${c.nieuws_id}`, text: 'Open het in Nieuws om het na te lezen en te publiceren.' })) : null,
+      c.type === 'praktijk' ? h('p', { class: 'portal-note portal-note-warn' }, 'Praktijkvoorbeeld: dit is een fictieve situatie en moet ook zo heten. Presenteer het nooit als echte klantcase.') : null,
+      msg, controle,
+      h('div', { class: 'portal-grid-editor' },
+        h('section', { class: 'portal-card' },
+          titel.veld, slug.veld, intro.veld, inhoud.veld,
+          c.type === 'zelftest' ? h('div', {}, h('h2', { class: 'portal-h2', text: 'Zelftest' }), zelftestVoorbeeld(c.zelftest), field('Vragen en uitslagen (geavanceerd, JSON)', zelftestTekst, 'Pas hier vragen, punten en uitslagen aan. Een uitslag mag nooit een risicoklasse noemen.')) : null,
+          h('h2', { class: 'portal-h2', text: 'Veelgestelde vragen' }), rijen(faqs, [['vraag', 'Vraag', 200], ['antwoord', 'Antwoord', 1200, true]], { vraag: '', antwoord: '' }),
+          h('h2', { class: 'portal-h2', text: 'Bronnen' }), h('p', { class: 'portal-hint', text: 'Controleer of elke link werkt en de bron zegt wat in het artikel staat.' }),
+          rijen(bronnen, [['titel', 'Titel', 200], ['url', 'https://…', 1000], ['uitgever', 'Uitgever', 120], ['datum', 'Datum', 30]], { titel: '', url: '', uitgever: '', datum: '' }),
+          h('h2', { class: 'portal-h2', text: 'Interne links (Lees ook)' }), paginaLijst,
+          rijen(links, [['url', '/pagina/', 200], ['tekst', 'Linktekst', 120]], { url: '', tekst: '' })),
+        h('section', { class: 'portal-card' },
+          h('h2', { class: 'portal-h2', text: 'SEO' }), seo.veld, meta.veld, kw.veld, field('Gerelateerde zoekwoorden (komma-gescheiden)', zw),
+          h('h2', { class: 'portal-h2', text: 'Afbeelding' }), field('Uit de beeldbank van de site', afb), afbImg, alt.veld,
+          h('p', { class: 'portal-hint', text: 'Alleen echte foto\'s van de site. Een andere foto? Upload die na het goedkeuren in Nieuws.' }), bronItems)),
+      knoppen, goedkeuren);
+    // datalist koppelen aan de url-velden van de interne links
+    view.querySelectorAll('.red-rijen input[placeholder="/pagina/"]').forEach((e) => e.setAttribute('list', 'rc-paginas'));
+  }
+
+  async function redactieItems() {
+    const params = new URLSearchParams(location.hash.split('?')[1] || '');
+    const st = params.get('status') || 'nieuw';
+    const d = await api('redactie-items', { params: { status: st } });
+    const msg = flashEl();
+    const keuze = h('select', { id: 'ri-status' }, [['nieuw', 'Nieuw'], ['gebruikt', 'Gebruikt in een concept'], ['genegeerd', 'Genegeerd']].map(([k, v]) => h('option', { value: k, text: v })));
+    keuze.value = st; keuze.addEventListener('change', () => { location.hash = `#/redactie/items?status=${keuze.value}`; });
+    render(h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'Verzamelde nieuwsitems' })), rNav('items'),
+      h('p', { class: 'portal-hint', text: 'De bot bewaart alleen titel, link en een korte samenvatting. Relevantie: 0–100 op basis van vakwoorden, regio, actualiteit en betrouwbaarheid van de bron. Negeer items die niet bruikbaar zijn; de bot slaat ze dan over.' }),
+      h('div', { class: 'portal-card portal-filters' }, field('Status', keuze)), msg,
+      h('div', { class: 'portal-card' }, d.items.length ? h('div', { class: 'portal-table-wrap' }, h('table', { class: 'portal-table' },
+        h('thead', {}, h('tr', {}, ['Relevantie', 'Titel', 'Bron', 'Datum', 'Onderwerp / regio', ''].map((t) => h('th', { scope: 'col', text: t })))),
+        h('tbody', {}, d.items.map((i) => h('tr', {},
+          h('td', { text: String(i.relevantie) }),
+          h('td', {}, h('a', { href: i.url, target: '_blank', rel: 'noopener noreferrer', text: i.titel })),
+          h('td', { text: `${i.bron_naam} (${'★'.repeat(i.betrouwbaarheid)})` }), h('td', { text: fmt(i.gepubliceerd_op || i.verzameld_op) }),
+          h('td', { text: [i.onderwerp, i.regio].filter(Boolean).join(' · ') || '–' }),
+          h('td', {}, i.status !== 'gebruikt' ? h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: i.status === 'genegeerd' ? 'Terugzetten' : 'Negeren', onclick: async () => {
+            try { await api('redactie-item-status', { method: 'POST', body: { id: i.id, status: i.status === 'genegeerd' ? 'nieuw' : 'genegeerd' } }); await redactieItems(); } catch (err) { flash(msg, err.message, 'error'); }
+          } }) : null))))))
+        : h('p', { class: 'portal-muted', text: 'Geen items.' })));
+  }
+
+  async function redactieBronnen() {
+    const d = await api('redactie-bronnen');
+    const msg = flashEl();
+    const rij = (b = {}) => {
+      const naam = h('input', { type: 'text', value: b.naam || '', maxlength: 120, 'aria-label': 'Naam' });
+      const url = h('input', { type: 'url', value: b.url || '', maxlength: 500, 'aria-label': 'Feed-adres', placeholder: 'https://…/rss' });
+      const cat = h('select', { 'aria-label': 'Categorie' }, d.categorieen.map((x) => h('option', { value: x, text: x }))); cat.value = b.categorie || 'algemeen';
+      const betr = h('select', { 'aria-label': 'Betrouwbaarheid' }, [1, 2, 3, 4, 5].map((n) => h('option', { value: String(n), text: `${n} ${'★'.repeat(n)}` }))); betr.value = String(b.betrouwbaarheid || 3);
+      const regio = h('input', { type: 'text', value: b.regio || '', maxlength: 60, 'aria-label': 'Regio' });
+      const pagina = h('input', { type: 'checkbox', checked: !!b.pagina_ophalen, 'aria-label': 'Volledige pagina lezen' });
+      const actief = h('input', { type: 'checkbox', checked: b.actief !== false, 'aria-label': 'Actief' });
+      return h('tr', {}, h('td', {}, naam), h('td', {}, url, b.laatste_fout ? h('p', { class: 'portal-red-fout', text: `Fout: ${b.laatste_fout}` }) : b.laatste_check ? h('p', { class: 'portal-hint', text: `Gelezen ${fmt(b.laatste_check)}` }) : null),
+        h('td', {}, cat), h('td', {}, betr), h('td', {}, regio), h('td', {}, pagina), h('td', {}, actief),
+        h('td', {}, h('button', { type: 'button', class: 'btn btn-gold btn-sm', text: b.id ? 'Opslaan' : 'Toevoegen', onclick: async () => {
+          try { await api('redactie-bron-opslaan', { method: 'POST', body: { id: b.id, naam: naam.value, url: url.value, categorie: cat.value, betrouwbaarheid: betr.value, regio: regio.value, pagina_ophalen: pagina.checked, actief: actief.checked } }); await redactieBronnen(); }
+          catch (err) { flash(msg, err.message, 'error'); }
+        } }), b.id ? h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: 'Verwijderen', onclick: async () => {
+          if (!window.confirm(`Bron "${b.naam}" verwijderen?`)) return;
+          try { await api('redactie-bron-verwijderen', { method: 'POST', body: { id: b.id } }); await redactieBronnen(); } catch (err) { flash(msg, err.message, 'error'); }
+        } }) : null));
+    };
+    render(h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'Bronnen' })), rNav('bronnen'),
+      h('p', { class: 'portal-hint', text: 'RSS- of Atom-feeds die de bot elke run leest. "Volledige pagina" alleen aanzetten bij open bronnen (zoals KCAF), niet bij nieuwssites met een betaalmuur. Betrouwbaarheid telt mee in de relevantie.' }),
+      msg, h('div', { class: 'portal-card' }, h('div', { class: 'portal-table-wrap' }, h('table', { class: 'portal-table' },
+        h('thead', {}, h('tr', {}, ['Naam', 'Feed-adres', 'Categorie', 'Betrouwbaarheid', 'Regio', 'Volledige pagina', 'Actief', ''].map((t) => h('th', { scope: 'col', text: t })))),
+        h('tbody', {}, d.items.map((b) => rij(b)), rij())))));
+  }
+
+  async function redactieInstellingen() {
+    const d = await api('redactie-instellingen');
+    const s = d.instellingen;
+    const msg = flashEl();
+    const actief = h('input', { type: 'checkbox', id: 'ri-actief', checked: s.actief !== false });
+    const taal = h('input', { type: 'checkbox', id: 'ri-taal', checked: s.taalcontrole !== false });
+    const model = h('input', { type: 'text', id: 'ri-model', value: s.model, maxlength: 80 });
+    const ollama = h('input', { type: 'text', id: 'ri-ollama', value: s.ollama_url, maxlength: 200 });
+    const minRel = h('input', { type: 'number', id: 'ri-minrel', min: 0, max: 100, value: s.min_relevantie });
+    const bewaar = h('input', { type: 'number', id: 'ri-bewaar', min: 14, max: 365, value: s.bewaar_dagen });
+    const freq = {};
+    const freqRijen = Object.entries(RTYPE).map(([t, l]) => {
+      const aantal = h('input', { type: 'number', min: 0, max: 14, value: s.frequentie[t]?.aantal ?? 0, 'aria-label': `${l} aantal` });
+      const per = h('select', { 'aria-label': `${l} per` }, h('option', { value: 'week', text: 'per week' }), h('option', { value: 'maand', text: 'per maand' })); per.value = s.frequentie[t]?.per || 'week';
+      freq[t] = { aantal, per };
+      return h('tr', {}, h('td', { text: l }), h('td', {}, aantal), h('td', {}, per));
+    });
+    const onderwerpen = {};
+    const ondVelden = ['weetje', 'kennis', 'zelftest', 'praktijk'].map((t) => {
+      const ta = h('textarea', { id: `ri-ond-${t}`, rows: 6 }); ta.value = (s.onderwerpen[t] || []).join('\n'); onderwerpen[t] = ta;
+      return field(`Onderwerpen ${RTYPE[t]} (één per regel; de bot neemt het eerste onderwerp dat nog niet bestaat)`, ta);
+    });
+    render(h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'Instellingen en planning' })), rNav('instellingen'), msg,
+      h('section', { class: 'portal-card' }, h('h2', { class: 'portal-h2', text: 'Algemeen' }),
+        h('div', { class: 'portal-check' }, actief, h('label', { for: 'ri-actief', text: 'Redactie actief (uit = de bot slaat geplande runs over)' })),
+        h('div', { class: 'portal-check' }, taal, h('label', { for: 'ri-taal', text: 'Spelling- en grammaticacontrole via LanguageTool (alleen de concepttekst wordt verstuurd)' })),
+        h('div', { class: 'portal-grid-form' },
+          field('AI-model in Ollama', model, 'Bijvoorbeeld qwen2.5:14b of gemma3:12b. Eerst installeren met: ollama pull <model>'),
+          field('Adres van Ollama', ollama, 'Op deze pc: http://localhost:11434'),
+          field('Minimale relevantie voor een nieuwsartikel (0–100)', minRel), field('Ongebruikte nieuwsitems bewaren (dagen)', bewaar))),
+      h('section', { class: 'portal-card' }, h('h2', { class: 'portal-h2', text: 'Planning: hoeveel concepten' }),
+        h('p', { class: 'portal-hint', text: 'De bot maakt per run hoogstens één concept per soort en maximaal 4 per run, tot het aantal voor de week of maand is bereikt. Zo komen er geen stapels oppervlakkige artikelen.' }),
+        h('table', { class: 'portal-table' }, h('tbody', {}, freqRijen))),
+      h('section', { class: 'portal-card' }, h('h2', { class: 'portal-h2', text: 'Onderwerpen' }), ondVelden),
+      h('div', { class: 'portal-actions' }, h('button', { type: 'button', class: 'btn btn-gold', text: 'Instellingen opslaan', onclick: async (e) => {
+        busy(e.target, true);
+        try {
+          await api('redactie-instellingen-opslaan', { method: 'POST', body: { instellingen: {
+            actief: actief.checked, taalcontrole: taal.checked, model: model.value, ollama_url: ollama.value, min_relevantie: minRel.value, bewaar_dagen: bewaar.value,
+            frequentie: Object.fromEntries(Object.entries(freq).map(([t, x]) => [t, { aantal: x.aantal.value, per: x.per.value }])),
+            onderwerpen: Object.fromEntries(Object.entries(onderwerpen).map(([t, ta]) => [t, ta.value.split('\n').map((x) => x.trim()).filter(Boolean)])),
+          } } });
+          flash(msg, 'Opgeslagen. De bot gebruikt dit bij de volgende run.', 'ok');
+        } catch (err) { flash(msg, err.message, 'error'); }
+        busy(e.target, false);
+      } })),
+      h('section', { class: 'portal-card' }, h('h2', { class: 'portal-h2', text: 'De bot op de pc' }),
+        h('p', { text: 'De bot draait op de pc met Ollama, elke ochtend via Windows Taakplanner. Installatie en het commando voor Taakplanner staan in docs/redactie.md in de projectmap. Handmatig starten (in de projectmap):' }),
+        h('pre', { class: 'portal-code', text: 'npm run redactie' }),
+        h('p', { class: 'portal-hint', text: 'Alleen verzamelen: npm run redactie -- --verzamelen · Eén weetje maken: npm run redactie -- --type weetje' })));
+  }
+
+  async function redactieLogboek() {
+    const d = await api('redactie-runs');
+    render(h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'Logboek en fouten' })), rNav('logboek'),
+      h('div', { class: 'portal-card' }, d.items.length ? h('div', { class: 'portal-table-wrap' }, h('table', { class: 'portal-table' },
+        h('thead', {}, h('tr', {}, ['Gestart', 'Taak', 'Status', 'Aantallen', 'Melding'].map((t) => h('th', { scope: 'col', text: t })))),
+        h('tbody', {}, d.items.map((r) => h('tr', {}, h('td', { text: fmt(r.gestart_op) }), h('td', { text: r.taak }),
+          h('td', {}, h('span', { class: r.status === 'ok' ? 'portal-red-ok' : r.status === 'fout' ? 'portal-red-fout' : 'portal-red-let', text: r.status })),
+          h('td', { text: Object.entries(r.aantallen || {}).map(([k, v]) => `${k}: ${v}`).join(', ') || '–' }), h('td', { class: 'red-melding', text: r.melding || '–' }))))))
+        : h('p', { class: 'portal-muted', text: 'Nog geen runs.' })));
   }
 
   // ---------------------------------------------------------------- start

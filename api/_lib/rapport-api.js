@@ -64,16 +64,29 @@ function lijstItem(r) {
   };
 }
 
-/** Gegevens uit een QuickScan-aanvraag overnemen (geen dubbele invoer). */
+/**
+ * Gegevens uit een QuickScan-aanvraag overnemen (geen dubbele invoer). Alleen wat de klant zelf heeft opgegeven;
+ * het adres van de opdrachtgever alleen als het object zijn eigen woning is (bij een aankoop woont hij elders).
+ */
 function vanAanvraag(req) {
   const det = req.details || {};
   const sit = String(det.situatie || '').toLowerCase();
-  const straat = [req.adres, !req.adres && req.huisnummer ? req.huisnummer : ''].filter(Boolean).join(' ');
+  const straat = req.adres || req.huisnummer || ''; // "adres" is straat + huisnummer
+  const koper = sit.includes('kopen'); const zakelijk = sit.includes('zakelijk');
+  const type = KEUZES['object.type'].includes(det.woningtype) ? det.woningtype : '';
+  const jaar = (String(det.bouwjaar || '').match(/\b(1[4-9]\d\d|20\d\d)\b/) || [])[1] || '';
+  const eigenAdres = !koper && !zakelijk;
   return {
     voorblad: { object_straat: straat, object_postcode: req.postcode || '', object_plaats: req.plaats || '' },
-    algemeen: { opdrachtgever_naam: req.naam || '', opdrachtgever_straat: straat, opdrachtgever_postcode: req.postcode || '', opdrachtgever_plaats: req.plaats || '', opdrachtgever_email: req.email || '' },
-    object: { type: KEUZES['object.type'].includes(det.woningtype) ? det.woningtype : '', bouwjaar: /^\d{4}$/.test(String(det.bouwjaar || '')) ? String(det.bouwjaar) : '' },
-    vraagstelling: { reden: sit.includes('verkoop') ? 'verkoop' : sit.includes('kopen') ? 'aankoop' : '' },
+    algemeen: {
+      opdrachtgever_naam: req.naam || '', opdrachtgever_email: req.email || '',
+      ...(eigenAdres ? { opdrachtgever_straat: straat, opdrachtgever_postcode: req.postcode || '', opdrachtgever_plaats: req.plaats || '' } : {}),
+    },
+    object: { type, bouwjaar: jaar },
+    vraagstelling: {
+      reden: sit.includes('verkoop') ? 'verkoop' : koper ? 'aankoop' : '',
+      bestemming: type === 'Bedrijfspand' ? 'bedrijfsfunctie' : (type && !zakelijk ? 'woonfunctie' : ''),
+    },
   };
 }
 

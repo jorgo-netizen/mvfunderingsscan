@@ -169,3 +169,7 @@ Het portaal werkt met één gedeeld account. Iedereen die inlogt mag rapporten d
 ```
 npm run beheer:gebruiker -- --email info@mideavastgoed.nl --nieuw-wachtwoord
 ```
+
+## 13. AI-redactie
+
+De AI-redactie (concepten voor de nieuwspagina, gemaakt door een bot op de pc met Ollama) staat beschreven in `docs/redactie.md`: installatie, Taakplanner, instellingen, beveiliging en kosten. Eenmalig nodig: migratie `006_mvfs_redactie.sql` en `REDACTIE_TOKEN` in Vercel. De bot publiceert nooit; goedkeuren zet een artikel als concept in Nieuws.

@@ -199,3 +199,28 @@
 .portal-avatar img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; }
 .portal-avatar-leeg { width: 72px; height: 72px; border-radius: 50%; display: grid; place-items: center; background: #102945; color: #fff; font-weight: 700; font-size: 22px; }
 .portal-avatar-input { max-width: 260px; font-size: 13px; }
+
+/* AI-redactie */
+.portal-subnav { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 16px; }
+.portal-subnav a { padding: 6px 12px; border-radius: 999px; background: var(--light); color: var(--navy); text-decoration: none; font-size: 14px; font-weight: 600; }
+.portal-subnav a.is-active, .portal-subnav a:hover { background: var(--navy); color: #fff; }
+.portal-stats.red-stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.portal-red-fout { color: #b42318; font-weight: 700; }
+.portal-red-let { color: #9a6700; font-weight: 600; }
+.portal-red-ok { color: #1a7f37; font-weight: 600; }
+.red-controle { border-left: 4px solid #c9d3dc; padding: 4px 12px; margin: 10px 0; }
+.red-controle.is-fout { border-color: #b42318; background: #fef3f2; }
+.red-controle.is-let { border-color: #d4a72c; background: #fff8e6; }
+.red-controle.is-info { border-color: #8aa4bf; background: #f4f7fa; }
+.red-controle ul { margin: 4px 0 6px; padding-left: 18px; font-size: 14px; }
+.red-rijen { display: grid; gap: 8px; margin-bottom: 12px; }
+.red-rij { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) auto; gap: 6px; align-items: start; padding: 8px; border: 1px solid #e3e8ee; border-radius: 8px; }
+.red-rij input, .red-rij textarea { width: 100%; padding: 7px 9px; border: 1.5px solid #c9d3dc; border-radius: 8px; font: inherit; font-size: 14px; }
+.red-afb { display: block; width: 100%; max-width: 320px; height: auto; border-radius: 8px; margin: 8px 0; }
+.red-zelftest fieldset { margin-bottom: 10px; }
+.red-melding { white-space: pre-wrap; font-size: 13px; }
+.portal-red-goedkeuren { border: 2px solid var(--navy); }
+.portal-code { background: #0f2238; color: #e7eef6; padding: 10px 12px; border-radius: 8px; font-size: 13px; overflow-x: auto; }
+.portal-badge-red-concept { background: #e8eef5; color: #102945; }
+.portal-badge-red-afgekeurd { background: #fde7e7; color: #8a1c1c; }
+.portal-badge-red-goedgekeurd, .portal-badge-red-overgezet { background: #e3f4e8; color: #1a5d2e; }

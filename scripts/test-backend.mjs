@@ -24,6 +24,8 @@ const beheer = (await import('../api/beheer.js')).default;
 const nieuws = (await import('../api/nieuws.js')).default;
 const adresApi = (await import('../api/adres.js')).default;
 const vertaalApi = (await import('../api/vertaal.js')).default;
+const redactieApi = (await import('../api/redactie.js')).default;
+const { schoonConcept, controleer, naarNieuwsRij } = await import('../api/_lib/redactie.js');
 
 // ---------------------------------------------------------------- hulpmiddelen
 let mails = []; let resendFails = false;
@@ -41,8 +43,9 @@ let extraFetch = []; // per test: [[url-begin, handler]] voor PDOK, DeepL enz.
 const jsonResp = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } });
 
 let ipCounter = 0;
-async function call(handler, { method = 'GET', url = '/', body, cookie = '', csrf, ip, origin } = {}) {
+async function call(handler, { method = 'GET', url = '/', body, cookie = '', csrf, ip, origin, auth } = {}) {
   const headers = { host: 'localhost:3000', 'x-forwarded-for': ip || `10.0.0.${++ipCounter % 250}` };
+  if (auth) headers.authorization = auth;
   if (cookie) headers.cookie = cookie;
   if (csrf) headers['x-mvfs-csrf'] = csrf;
   if (origin) headers.origin = origin;
@@ -360,7 +363,7 @@ function testPng(w = 80, hgt = 60) {
   const raw = Buffer.alloc((w * 3 + 1) * hgt, 0x80); for (let y = 0; y < hgt; y++) raw[y * (w * 3 + 1)] = 0;
   return Buffer.concat([Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]), chunk('IHDR', ihdr), chunk('IDAT', deflateSync(raw)), chunk('IEND', Buffer.alloc(0))]);
 }
-const FOTOVAKKEN = [['voorblad', 1], ['conclusie', 1], ['bouwtekening', 1], ['bodemdaling', 1], ['omgeving', 1], ['lintvoeg', 1]];
+const FOTOVAKKEN = [['voorblad', 1], ['bouwtekening', 1], ['bodemdaling', 1], ['omgeving', 1], ['lintvoeg', 1]];
 const volledig = () => ({
   voorblad: { object_straat: 'Voorbeeldstraat 1', object_postcode: '8911 AA', object_plaats: 'Leeuwarden', uitgebracht_op: '2026-10-20' },
   algemeen: { inspectie_datum: '2026-10-15', inspectie_tijd: '10:30', opdrachtgever_naam: 'Testpersoon', opdrachtgever_straat: 'Teststraat 2', opdrachtgever_postcode: '8911 AB', opdrachtgever_plaats: 'Leeuwarden', opdrachtgever_email: 'klant@example.com' },
@@ -451,7 +454,7 @@ test('rapporten: risicocategorie komt alleen van de adviseur en moet worden beve
   assert.ok(vb.headers['content-security-policy'].includes("default-src 'none'"));
 });
 
-test('rapporten: keuzelijsten verplicht, 1 tot 4 foto\'s per onderdeel, extra foto\'s in Word', async () => {
+test('rapporten: keuzelijsten verplicht, max. 3 foto\'s per hoofdstuk, onderaan het hoofdstuk naast elkaar in Word', async () => {
   await newUser('beheerder'); const s = await loginAs('beheerder@test.nl');
   const db = getDb();
   const { id } = await rapportKlaar(s);
@@ -462,18 +465,46 @@ test('rapporten: keuzelijsten verplicht, 1 tot 4 foto\'s per onderdeel, extra fo
   const o = await admin(s, 'rapport-opslaan', { method: 'POST', body: { id, data: vrij } });
   for (const [stap, veld] of [['object', 'type'], ['object', 'weertype'], ['lintvoeg', 'rij0']]) assert.ok(o.json.controle.fouten.some((f) => f.stap === stap && f.veld === veld), `${stap}.${veld}`);
   await admin(s, 'rapport-opslaan', { method: 'POST', body: { id, data: volledig() } });
-  // maximaal 4 foto's per onderdeel, voorblad 1
-  for (const position of [2, 3, 4]) assert.equal((await admin(s, 'rapport-foto', { method: 'POST', body: { id, slot: 'conclusie', position, data: testPng(120 + position, 90).toString('base64'), caption: `bijschrift ${position}` } })).status, 200);
-  assert.equal((await admin(s, 'rapport-foto', { method: 'POST', body: { id, slot: 'conclusie', position: 5, data: testPng().toString('base64') } })).status, 422);
+  // maximaal 3 foto's per hoofdstuk, voorblad 1, conclusie geen
+  for (const position of [2, 3]) assert.equal((await admin(s, 'rapport-foto', { method: 'POST', body: { id, slot: 'omgeving', position, data: testPng(120 + position, 90).toString('base64'), caption: `bijschrift ${position}` } })).status, 200);
+  assert.equal((await admin(s, 'rapport-foto', { method: 'POST', body: { id, slot: 'omgeving', position: 4, data: testPng().toString('base64') } })).status, 422);
   assert.equal((await admin(s, 'rapport-foto', { method: 'POST', body: { id, slot: 'voorblad', position: 2, data: testPng().toString('base64') } })).status, 422);
+  assert.equal((await admin(s, 'rapport-foto', { method: 'POST', body: { id, slot: 'conclusie', position: 1, data: testPng().toString('base64') } })).status, 422);
   assert.equal((await admin(s, 'rapport-definitief', { method: 'POST', body: { id, bevestig_risico: 'midden' } })).status, 200);
   const d = await admin(s, 'rapport', { query: `&id=${id}` });
   const docx = readZip(await db.getObject('rapport-bestanden', d.json.versions[0].docx_path));
   const xml = docx.get('word/document.xml').toString('utf8');
-  for (const p of [1, 2, 3, 4]) assert.ok(docx.get(`word/media/mvfs_conclusie_${p}.png`), `conclusiefoto ${p}`);
-  assert.ok(xml.includes('Foto 3: bijschrift 3'), 'bijschriften extra foto\'s');
+  for (const p of [1, 2, 3]) assert.ok(docx.get(`word/media/mvfs_omgeving_${p}.png`), `omgevingsfoto ${p}`);
+  assert.ok(!xml.includes('mvfs-slot:'), 'geen fotovakken uit het sjabloon meer');
+  assert.ok(xml.includes('bijschrift 3'), 'bijschriften onder de foto\'s');
+  // G: de drie foto's in één rij (tabel met drie kolommen) onderaan het hoofdstuk, na het resultaat en vóór de paginawissel
+  const gStart = xml.indexOf('Testresultaat omgeving.'); const g = xml.slice(gStart, xml.indexOf('LINTVOEGMETING', gStart));
+  const blok = (g.match(/<w:tbl>[\s\S]*?<\/w:tbl>/g) || []).find((t) => /<wp:inline/.test(t));
+  assert.ok(blok, 'fotoblok in hoofdstuk G'); assert.equal((blok.match(/<w:gridCol /g) || []).length, 3);
+  assert.ok(g.indexOf('<wp:inline') < g.indexOf('w:type="page"'), 'foto\'s vóór de paginawissel');
+  assert.ok(!/<wp:anchor(?:(?!<\/wp:anchor>)[\s\S])*name="Foto /.test(xml), 'foto\'s staan in de tekstregel, niet zwevend over de tekst');
+  // D: geen foto bij de conclusie
+  const dStart = xml.indexOf('Testadvies voor dit fictieve testrapport.'); const dz = xml.slice(dStart, xml.indexOf('BOUWTEKENINGEN', dStart));
+  assert.ok(!/<wp:inline/.test(dz.slice(0, dz.indexOf('w:type="page"'))), 'geen foto bij de conclusie');
   const ids = [...xml.matchAll(/<wp:docPr id="(\d+)"/g)].map((m) => m[1]);
   assert.equal(new Set(ids).size, ids.length, 'unieke tekening-id\'s');
+});
+
+test('rapporten: rapport vanuit een aanvraag is vooraf ingevuld; adres opdrachtgever alleen bij eigen woning', async () => {
+  await newUser('beheerder'); const s = await loginAs('beheerder@test.nl');
+  const db = getDb();
+  await call(aanvraag, { method: 'POST', url: '/api/aanvraag/', body: { form: 'aanvraag', fields: formFields({ woningtype: 'Hoekwoning', bouwjaar: 'ca. 1932', situatie: 'Een woning die ik verkoop' }) } });
+  await call(aanvraag, { method: 'POST', url: '/api/aanvraag/', body: { form: 'aanvraag', fields: formFields({ naam: 'Kees Koper', email: 'kees@example.com', situatie: 'Een woning die ik wil kopen' }) } });
+  const [verkoop, koop] = db._data.requests;
+  const data = async (req) => { const n = await admin(s, 'rapport-nieuw', { method: 'POST', body: { request_id: req.id } }); return (await admin(s, 'rapport', { query: `&id=${n.json.id}` })).json.report.data; };
+  const v = await data(verkoop);
+  assert.deepEqual([v.voorblad.object_straat, v.voorblad.object_postcode, v.voorblad.object_plaats], ['Voorbeeldstraat 1', '8911 AA', 'Leeuwarden']);
+  assert.deepEqual([v.algemeen.opdrachtgever_naam, v.algemeen.opdrachtgever_straat, v.algemeen.opdrachtgever_email], ['Jan de Vries', 'Voorbeeldstraat 1', 'jan@example.com']);
+  assert.deepEqual([v.object.type, v.object.bouwjaar, v.vraagstelling.reden, v.vraagstelling.bestemming], ['Hoekwoning', '1932', 'verkoop', 'woonfunctie']);
+  const k = await data(koop);
+  assert.equal(k.vraagstelling.reden, 'aankoop');
+  assert.equal(k.algemeen.opdrachtgever_naam, 'Kees Koper');
+  assert.equal(k.algemeen.opdrachtgever_straat, '', 'een koper woont (nog) niet op het adres van het object');
 });
 
 test('medewerkers: één gedeelde inlog beheert medewerkers en rondt rapporten af; certificaat nodig bij afronden', async () => {
@@ -652,4 +683,93 @@ test('trackingpagina en beheer: noindex, geen externe scripts, niet in de sitema
   assert.ok(!sitemap.includes('/status/') && !sitemap.includes('/beheer/'));
   const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
   assert.ok(robots.includes('Disallow: /beheer/') && robots.includes('nieuws-sitemap.xml'));
+});
+
+// ---------------------------------------------------------------- AI-redactie
+const BOT_TOKEN = 'test-redactie-token-'.padEnd(48, 'x');
+const bot = (actie, data = {}, token = BOT_TOKEN) => call(redactieApi, { method: 'POST', url: '/api/redactie', body: { actie, ...data }, auth: token ? `Bearer ${token}` : '' });
+const testConcept = (extra = {}) => ({
+  type: 'nieuws', titel: 'Testbericht over funderingsherstel in Friesland', seo_titel: 'Funderingsherstel in Friesland: wat er speelt',
+  meta_description: 'Wat betekent het nieuws over funderingsherstel voor woningeigenaren in Friesland? Een kort overzicht met bron en advies voor de volgende stap.',
+  hoofdzoekwoord: 'funderingsherstel', intro: 'Funderingsherstel staat weer in de belangstelling. In dit testbericht lees je wat er speelt en wat het betekent voor eigenaren van oudere woningen in Friesland, Groningen en Noord-Drenthe.',
+  inhoud: `## Wat speelt er\n\n${'Dit is testtekst over funderingen en onderzoek. '.repeat(40)}\n\n## Wat kun je doen\n\nLees over de [Quick Scan](/fase-0-funderingsonderzoek/) en de [prijzen](/prijzen/).`,
+  faqs: [{ vraag: 'Vraag 1?', antwoord: 'Antwoord 1.' }, { vraag: 'Vraag 2?', antwoord: 'Antwoord 2.' }, { vraag: 'Vraag 3?', antwoord: 'Antwoord 3.' }],
+  bronnen: [{ titel: 'Bronbericht', url: 'https://www.kcaf.nl/test/', uitgever: 'KCAF', datum: '2026-10-30' }],
+  interne_links: [{ url: '/werkgebied/', tekst: 'Ons werkgebied' }], afbeelding: 'funderingsinspectie-woning-gevel', ...extra,
+});
+
+test('redactie: bot-koppeling vereist een geldig token en kan alleen concepten aanleveren, nooit publiceren', async () => {
+  delete process.env.REDACTIE_TOKEN;
+  assert.equal((await bot('context')).status, 503, 'zonder ingesteld token is de koppeling dicht');
+  process.env.REDACTIE_TOKEN = BOT_TOKEN;
+  try {
+    assert.equal((await bot('context', {}, '')).status, 401);
+    assert.equal((await bot('context', {}, 'fout-token')).status, 401);
+    const ctx = await bot('context');
+    assert.equal(ctx.status, 200); assert.ok(ctx.json.bronnen.length >= 10, 'startbronnen'); assert.ok(ctx.json.tellingen.nieuws);
+    // de bot probeert een gepubliceerd of beoordeeld concept aan te leveren: het blijft een gewoon concept
+    const r = await bot('concept', { concept: { ...testConcept(), status: 'gepubliceerd', nieuws_id: '00000000-0000-0000-0000-000000000000', beoordeeld_door: 'x' } });
+    assert.equal(r.status, 200); assert.equal(r.json.status, 'concept');
+    const db = getDb();
+    const c = await db.redConceptGet(r.json.id);
+    assert.equal(c.status, 'concept'); assert.equal(c.nieuws_id, null); assert.equal(c.beoordeeld_door, null);
+    assert.equal(db._data.news.length, 0, 'de bot maakt geen nieuwsberichten');
+    // er bestaat geen actie om te publiceren of nieuws te wijzigen
+    for (const actie of ['publiceren', 'nieuws-status', 'goedkeuren', 'redactie-goedkeuren', 'nieuws-opslaan']) assert.equal((await bot(actie, { id: r.json.id, status: 'gepubliceerd' })).status, 404, actie);
+    // opnieuw genereren alleen na een verzoek van een medewerker
+    assert.equal((await bot('concept', { concept: testConcept(), vervangt: r.json.id })).status, 409);
+    // items: een dubbele url wordt niet opnieuw opgeslagen
+    const items = [{ titel: 'Funderingsnieuws', url: 'https://example.com/a', relevantie: 80 }, { titel: 'Funderingsnieuws', url: 'https://example.com/a', relevantie: 80 }];
+    assert.equal((await bot('items', { items })).json.opgeslagen, 1);
+    assert.equal((await bot('run', { taak: 'test', status: 'ok' })).status, 200);
+  } finally { delete process.env.REDACTIE_TOKEN; }
+});
+
+test('redactie: goedkeuren zet een concept als CONCEPT in Nieuws; publiceren is een aparte handeling van een medewerker', async () => {
+  process.env.REDACTIE_TOKEN = BOT_TOKEN;
+  extraFetch = [['https://www.mvfunderingsquickscan.nl/assets/img/', async () => new Response(Buffer.from('RIFF0000WEBPVP8 '), { status: 200, headers: { 'Content-Type': 'image/webp' } })]];
+  try {
+    await newUser('medewerker'); const s = await loginAs('medewerker@test.nl');
+    const db = getDb();
+    const { json: { id } } = await bot('concept', { concept: testConcept() });
+    // zonder sessie geen toegang tot de portaalacties
+    assert.equal((await call(beheer, { method: 'POST', url: '/api/beheer/?actie=redactie-goedkeuren', body: { id } })).status, 401);
+    assert.equal((await admin(s, 'redactie-concepten')).json.items.length, 1);
+    const voorbeeld = await admin(s, 'redactie-voorbeeld', { query: `&id=${id}` });
+    assert.equal(voorbeeld.status, 200); assert.ok(voorbeeld.body.includes('noindex')); assert.ok(voorbeeld.body.includes('Veelgestelde vragen'));
+    // een concept met een openstaande fout kan pas na bevestiging worden goedgekeurd
+    await admin(s, 'redactie-concept-opslaan', { method: 'POST', body: { id, concept: { inhoud: `${testConcept().inhoud}\n\nKost €499.` } } });
+    assert.equal((await admin(s, 'redactie-goedkeuren', { method: 'POST', body: { id } })).status, 422, 'bedrag dat niet in de prijzen staat');
+    await admin(s, 'redactie-concept-opslaan', { method: 'POST', body: { id, concept: { inhoud: testConcept().inhoud } } });
+    const ok = await admin(s, 'redactie-goedkeuren', { method: 'POST', body: { id } });
+    assert.equal(ok.status, 200, ok.body);
+    const n = await db.newsById(ok.json.nieuws_id);
+    assert.equal(n.status, 'concept', 'na goedkeuren staat het bericht nog NIET online'); assert.equal(n.published_at ?? null, null);
+    assert.ok(n.content.includes('## Bronnen') && n.content.includes('## Veelgestelde vragen') && n.content.includes('/funderingsscan-aanvragen/'));
+    assert.ok(n.featured_image, 'afbeelding uit de beeldbank overgenomen');
+    assert.equal((await call(nieuws, { url: `/nieuws/${n.slug}/` })).status, 404, 'niet openbaar');
+    assert.equal((await db.redConceptGet(id)).status, 'overgezet');
+    assert.equal((await admin(s, 'redactie-goedkeuren', { method: 'POST', body: { id } })).status, 409, 'niet twee keer');
+    // publiceren: alleen via Nieuws door een ingelogde medewerker
+    const pub = await admin(s, 'nieuws-status', { method: 'POST', body: { id: n.id, status: 'gepubliceerd' } });
+    assert.equal(pub.status, 200, pub.body);
+    assert.equal((await call(nieuws, { url: `/nieuws/${n.slug}/` })).status, 200);
+  } finally { delete process.env.REDACTIE_TOKEN; }
+});
+
+test('redactie: kwaliteitscontrole, zelftest en opschonen van invoer', async () => {
+  const c = schoonConcept({ ...testConcept(), interne_links: [{ url: 'https://evil.example/', tekst: 'x' }, { url: '/prijzen/', tekst: 'Prijzen' }], afbeelding: '../../etc/passwd' });
+  assert.deepEqual(c.interne_links.map((l) => l.url), ['/prijzen/']); assert.equal(c.afbeelding, '');
+  assert.equal('status' in c, false, 'status komt nooit uit de invoer');
+  const urls = new Set(['/prijzen/', '/fase-0-funderingsonderzoek/', '/werkgebied/']);
+  const k = controleer(schoonConcept(testConcept({ inhoud: `${testConcept().inhoud}\n\nWij geven garantie. Zie [x](/bestaat-niet/). Kost €1.200.`, bronnen: [] })), { interneUrls: urls });
+  assert.ok(k.fouten.some((f) => f.includes('Geen bron'))); assert.ok(k.fouten.some((f) => f.includes('/bestaat-niet/'))); assert.ok(k.fouten.some((f) => f.includes('€1.200')));
+  assert.ok(k.waarschuwingen.some((w) => /garantie/i.test(w)));
+  const praktijk = controleer(schoonConcept(testConcept({ type: 'praktijk', titel: 'Een woning in Sneek' })), { interneUrls: urls });
+  assert.ok(praktijk.fouten.some((f) => f.includes('fictief')));
+  const zt = schoonConcept({ type: 'zelftest', titel: 'Herken jij signalen?', zelftest: { vragen: [{ vraag: 'V', opties: [{ tekst: 'a', punten: 9 }, { tekst: 'b', punten: 0 }], uitleg: 'u' }], uitslagen: [{ min: 0, max: 3, titel: 'Risicoklasse D', tekst: 'Je woning heeft risicoklasse D.' }] } });
+  assert.equal(zt.zelftest.vragen[0].opties[0].punten, 3, 'punten begrensd');
+  const zk = controleer(zt, { interneUrls: urls });
+  assert.ok(zk.fouten.some((f) => f.includes('minimaal 5 vragen'))); assert.ok(zk.fouten.some((f) => f.includes('risicoklasse')));
+  assert.equal(naarNieuwsRij(schoonConcept(testConcept())).status, 'concept');
 });

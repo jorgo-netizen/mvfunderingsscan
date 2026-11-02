@@ -19,10 +19,9 @@ export const STATUSES = [
 ];
 export const EDIT_STATUSES = ['concept', 'in_uitvoering', 'wacht_op_info', 'gereed_voor_controle'];
 export const RISKS = { laag: 'Laag funderingsrisico', midden: 'Midden funderingsrisico', hoog: 'Hoog funderingsrisico' };
-// Maximaal aantal foto's per fotovak (minimaal 1 is verplicht, zie controle). Het voorblad heeft één vaste foto.
-export const SLOTS = { voorblad: 1, conclusie: 4, bouwtekening: 4, bodemdaling: 4, omgeving: 4, lintvoeg: 4, schietlood: 4 };
-// Aantal fotovakken dat in het Word-sjabloon zelf staat; extra foto's komen in een alinea direct eronder.
-const SJABLOON_VAKKEN = { lintvoeg: 4 };
+// Maximaal aantal foto's per hoofdstuk (minimaal 1 is verplicht, zie controle). Het voorblad heeft één vaste foto.
+// In Word komen de foto's van een hoofdstuk naast elkaar onderaan dat hoofdstuk (zie fotoBlok).
+export const SLOTS = { voorblad: 1, bouwtekening: 3, bodemdaling: 3, omgeving: 3, lintvoeg: 3, schietlood: 3 };
 
 /** Vaste keuzelijsten (geen vrije invoer). De waarde komt letterlijk in het rapport. */
 export const KEUZES = {
@@ -115,32 +114,33 @@ export function controle(data, { advisor, images = [] } = {}) {
   eis('conclusie', 'advies', s(c.advies).length >= 10, 'Vul het advies in.');
   eis('conclusie', 'opmaak_plaats', s(c.opmaak_plaats), 'Vul de plaats van opmaak in.');
   eis('conclusie', 'opmaak_datum', /^\d{4}-\d{2}-\d{2}$/.test(s(c.opmaak_datum)), 'Vul de datum van opmaak in.');
-  eis('conclusie', 'foto', foto('conclusie') >= 1, 'Voeg minimaal één foto (maximaal 4) bij de conclusie toe.');
 
   eis('bouwtekeningen', 'ontvangen', ['ja', 'nee'].includes(b.ontvangen), 'Geef aan of de bouwtekeningen zijn ontvangen.');
   if (b.ontvangen === 'ja') eis('bouwtekeningen', 'vorm', ['fysiek', 'digitaal'].includes(b.vorm), 'Geef aan of de bouwtekeningen fysiek of digitaal beschikbaar zijn gesteld.');
   if (b.ontvangen === 'nee') aandacht.push({ stap: 'bouwtekeningen', melding: 'De vaste tekst van hoofdstuk E zegt dat de bouwtekeningen zijn ontvangen. Bouwtekeningen zijn als "niet ontvangen" gemarkeerd: controleer of de tekst inhoudelijk klopt voordat je het rapport verstuurt.' });
   eis('bouwtekeningen', 'jaartal', /^\d{4}$/.test(s(b.jaartal)) || /^n\.?v\.?t\.?$/i.test(s(b.jaartal)), 'Vul het jaartal van de bouwtekeningen in, of N.V.T.');
   eis('bouwtekeningen', 'fundering', inLijst('bouwtekeningen.fundering', b.fundering), 'Kies de soort fundering.');
-  eis('bouwtekeningen', 'foto', foto('bouwtekening') >= 1, 'Voeg minimaal één afbeelding (maximaal 4) van de bouwtekening toe.');
+  eis('bouwtekeningen', 'foto', foto('bouwtekening') >= 1, 'Voeg minimaal één afbeelding (maximaal 3) van de bouwtekening toe.');
 
-  if (bd.niet_beschikbaar === true) {
-    eis('bodem', 'motivatie', s(bd.motivatie).length >= 5, 'Licht toe waarom er geen bodemdalingsgegevens beschikbaar zijn.');
-  } else {
+  if (bd.niet_beschikbaar !== true) {
     eis('bodem', 'mm_per_jaar', isNum(bd.mm_per_jaar), 'Vul de bodemdaling in mm per jaar in, of markeer de gegevens als niet beschikbaar.');
     eis('bodem', 'typering', inLijst('bodem.typering', bd.typering), 'Kies de typering van de bodemdaling.');
-    eis('bodem', 'foto', foto('bodemdaling') >= 1, 'Voeg minimaal één afbeelding (maximaal 4) van de bodemdalingskaart toe.');
+    eis('bodem', 'foto', foto('bodemdaling') >= 1, 'Voeg minimaal één afbeelding (maximaal 3) van de bodemdalingskaart toe.');
     const mm = Math.abs(parseFloat(s(bd.mm_per_jaar).replace(',', '.')));
     if (mm > 2 && mm <= 3) aandacht.push({ stap: 'bodem', melding: 'De rapporttekst noemt tot 2 mm/jaar "klein" en meer dan 3 mm/jaar "groot"; voor 2–3 mm/jaar geeft de tekst geen typering. Controleer de ingevulde typering inhoudelijk.' });
     aandacht.push({ stap: 'bodem', melding: 'Let op: het vaste stroomschema op pagina 8 hanteert 0–2 / 2–4 / >4 mm per jaar, de tekst van hoofdstuk F "tot 2 mm klein, > 3 mm groot". Laat dit verschil inhoudelijk afstemmen.' });
   }
 
   eis('omgeving', 'resultaat', s(g.resultaat).length >= 3, 'Vul het resultaat van de omgevingsfactoren in.');
-  eis('omgeving', 'foto', foto('omgeving') >= 1, 'Voeg minimaal één afbeelding (maximaal 4) bij de omgevingsfactoren toe.');
+  eis('omgeving', 'foto', foto('omgeving') >= 1, 'Voeg minimaal één afbeelding (maximaal 3) bij de omgevingsfactoren toe.');
 
   for (const [stap, key, naam, slot] of [['lintvoeg', 'lintvoeg', 'lintvoegmeting', 'lintvoeg'], ['schietlood', 'schietlood', 'schietloodmeting', 'schietlood']]) {
     const m = d[key] || {};
-    if (m.nvt === true) { eis(stap, 'motivatie', s(m.nvt_motivatie).length >= 5, `Licht toe waarom de ${naam} niet van toepassing is.`); continue; }
+    if (m.nvt === true) {
+      // H. Lintvoegmeting: zonder motivatie; I. Schietloodmeting: met motivatie
+      if (key === 'schietlood') eis(stap, 'motivatie', s(m.nvt_motivatie).length >= 5, `Licht toe waarom de ${naam} niet van toepassing is.`);
+      continue;
+    }
     eis(stap, 'meetpunten', s(m.meetpunten), `Vul de meetpunten (locaties) van de ${naam} in.`);
     const rijen = (m.rijen || []).filter((r) => s(r.omschrijving) || s(r.meting) || s(r.afstand) || s(r.typering));
     eis(stap, 'rijen', rijen.length >= 1, `Vul minimaal één meetregel van de ${naam} in.`);
@@ -149,7 +149,7 @@ export function controle(data, { advisor, images = [] } = {}) {
       const rot = rotatie(s(r.meting).replace(',', '.'), s(r.afstand).replace(',', '.'));
       if (rot && s(r.typering) && s(r.typering).toLowerCase() !== rot.naam.toLowerCase()) aandacht.push({ stap, melding: `Meetregel ${i + 1} van de ${naam}: ${s(r.meting)} mm over ${s(r.afstand)} mm is ${rot.tekst}, volgens de tabel in het rapport "${rot.naam}". Ingevuld is "${s(r.typering)}". Controleer dit.` });
     });
-    eis(stap, 'foto', foto(slot) >= 1, `Voeg minimaal één foto (maximaal 4) bij de ${naam} toe.`);
+    eis(stap, 'foto', foto(slot) >= 1, `Voeg minimaal één foto (maximaal 3) bij de ${naam} toe.`);
   }
   return { fouten, aandacht };
 }
@@ -160,7 +160,7 @@ export function waarden(data, { advisor, report }) {
   const c = d.conclusie || {}; const b = d.bouwtekeningen || {}; const bd = d.bodem || {}; const g = d.omgeving || {};
   const pcPlaats = (pc, pl) => [s(pc).toUpperCase().replace(/\s*(\d{4})\s*([A-Z]{2})\s*/, '$1 $2'), s(pl)].filter(Boolean).join(' ');
   const objAdres = [s(v.object_straat), pcPlaats(v.object_postcode, v.object_plaats)].filter(Boolean).join(', ');
-  const nvt = (m, naam) => (m.nvt === true ? `N.v.t. – ${s(m.nvt_motivatie)}` : s(m.meetpunten));
+  const nvt = (m) => (m.nvt === true ? ['N.v.t.', s(m.nvt_motivatie)].filter(Boolean).join(' – ') : s(m.meetpunten));
   return {
     object_adres_volledig: objAdres,
     rapportnummer: report.report_nr,
@@ -189,11 +189,11 @@ export function waarden(data, { advisor, report }) {
     bt_vorm: b.ontvangen === 'ja' && ['fysiek', 'digitaal'].includes(b.vorm) ? b.vorm : (b.ontvangen === 'nee' ? 'niet' : 'fysiek / digitaal'),
     bt_jaartal: /^n\.?v\.?t\.?$/i.test(s(b.jaartal)) ? 'N.V.T.' : s(b.jaartal),
     bt_fundering: s(b.fundering),
-    bodemdaling: bd.niet_beschikbaar === true ? `Niet beschikbaar – ${s(bd.motivatie)}` : (isNum(bd.mm_per_jaar) ? `${getal(bd.mm_per_jaar)} mm per jaar` : ''),
+    bodemdaling: bd.niet_beschikbaar === true ? 'Niet beschikbaar' : (isNum(bd.mm_per_jaar) ? `${getal(bd.mm_per_jaar)} mm per jaar` : ''),
     bodem_typering: bd.niet_beschikbaar === true ? 'N.v.t.' : s(bd.typering),
     omgeving_resultaat: s(g.resultaat),
-    lv_meetpunten: nvt(d.lintvoeg || {}, 'lintvoegmeting'),
-    sl_meetpunten: nvt(d.schietlood || {}, 'schietloodmeting'),
+    lv_meetpunten: nvt({ ...(d.lintvoeg || {}), nvt_motivatie: '' }),
+    sl_meetpunten: nvt(d.schietlood || {}),
   };
 }
 
@@ -206,6 +206,8 @@ function runRond(doc, i, sluit) {
   if (a < 0 || b < '</w:r>'.length) throw new Error('Run niet gevonden in sjabloon');
   return [a, b];
 }
+// Breedte van de tekstkolom in twips (A4 min de marges uit het sjabloon).
+const TEKSTBREEDTE = 11906 - 2000;
 const xmlEsc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 // Meerregelige tekst: regels met een regeleinde binnen dezelfde run (opmaak blijft gelijk).
 const tekstXml = (t) => xmlEsc(t).split(/\r?\n/).join('</w:t><w:br/><w:t xml:space="preserve">');
@@ -268,7 +270,6 @@ export function maakDocx({ data, advisor, report, images = [], concept = false }
     + '<pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:nvPicPr><pic:cNvPr id="0" name="foto"/><pic:cNvPicPr/></pic:nvPicPr>'
     + '<pic:blipFill><a:blip r:embed="rIdLeeg"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill>'
     + '<pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="1" cy="1"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r>';
-  const EXTRA_VAK = [2880000, 2160000]; // ca. 8 x 6 cm: twee foto's naast elkaar
   const plaatsFoto = (run, img, { vak, bijschrift = true } = {}) => {
     n++;
     const ext = img.mime === 'image/png' ? 'png' : 'jpeg';
@@ -289,26 +290,64 @@ export function maakDocx({ data, advisor, report, images = [], concept = false }
     if (bijschrift && s(img.caption)) out += `<w:r><w:br/></w:r><w:r><w:rPr><w:i/><w:sz w:val="16"/></w:rPr><w:t xml:space="preserve">${xmlEsc(img.caption)}</w:t></w:r>`;
     return out;
   };
-  for (let i = doc.indexOf('name="mvfs-slot:'); i >= 0; i = doc.indexOf('name="mvfs-slot:', i + 1)) {
-    const [, slot, pos] = doc.slice(i).match(/^name="mvfs-slot:([a-z]+):(\d)"/);
-    const lijst = perVak(slot);
-    const img = lijst[Number(pos) - 1];
+
+  // voorblad: één vaste foto op zijn plek in het sjabloon
+  {
+    const i = doc.indexOf('name="mvfs-slot:voorblad:1"');
     const [a, b] = runRond(doc, i, '</w:drawing>');
-    const nieuw = img ? plaatsFoto(doc.slice(a, b), img) : (concept && pos === '1' ? doc.slice(a, b) : ''); // leeg vak: in concept het eerste vak zichtbaar laten
+    const img = perVak('voorblad')[0];
+    const nieuw = img ? plaatsFoto(doc.slice(a, b), img) : (concept ? doc.slice(a, b) : '');
     doc = doc.slice(0, a) + nieuw + doc.slice(b);
-    i = a + Math.max(0, nieuw.length - 1);
-    const vakken = SJABLOON_VAKKEN[slot] || 1;
-    if (pos === String(vakken) && lijst.length > vakken) {
-      // extra foto's in een eigen alinea direct onder het fotovak, met de bijschriften eronder
-      const extra = lijst.slice(vakken);
-      const runs = extra.map((x) => plaatsFoto(inlineBasis, x, { vak: EXTRA_VAK, bijschrift: false })).join('<w:r><w:t xml:space="preserve">   </w:t></w:r>');
-      const onderschriften = extra.map((x, k) => (s(x.caption) ? `Foto ${vakken + k + 1}: ${s(x.caption)}` : '')).filter(Boolean);
-      let invoeg = `<w:p><w:pPr><w:spacing w:before="120" w:after="60"/><w:jc w:val="center"/></w:pPr>${runs}</w:p>`;
-      if (onderschriften.length) invoeg += `<w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:i/><w:sz w:val="16"/></w:rPr><w:t xml:space="preserve">${tekstXml(onderschriften.join('\n'))}</w:t></w:r></w:p>`;
-      const pe = doc.indexOf('</w:p>', a + nieuw.length) + '</w:p>'.length;
-      doc = doc.slice(0, pe) + invoeg + doc.slice(pe);
-      i = pe + invoeg.length - 1;
+  }
+
+  // Overige hoofdstukken: de fotovakken uit het sjabloon vervallen. De foto's (max. 3) komen naast elkaar,
+  // even groot, onderaan het hoofdstuk (vlak voor de paginawissel), zodat ze nooit over de tekst vallen.
+  const pStart = (i) => Math.max(doc.lastIndexOf('<w:p>', i), doc.lastIndexOf('<w:p ', i));
+  const tekst = (xml) => [...xml.matchAll(/<w:t[^>]*>([^<]*)<\/w:t>/g)].map((m) => m[1]).join('').trim();
+  const labelMatch = doc.match(/<w:p[ >](?:(?!<\/w:p>)[\s\S])*?<w:t[^>]*>Afbeeldingen<\/w:t>(?:(?!<\/w:p>)[\s\S])*?<\/w:p>/);
+  const labelXml = labelMatch ? labelMatch[0] : '<w:p><w:r><w:rPr><w:b/></w:rPr><w:t>Afbeeldingen</w:t></w:r></w:p>';
+  // label bij de foto's: blijft bij de foto's (keepNext) en krijgt wat ruimte boven zich
+  const metPPr = /<w:pPr>/.test(labelXml) ? labelXml : labelXml.replace(/^(<w:p[^>]*>)/, '$1<w:pPr></w:pPr>');
+  const label = metPPr.replace(/<w:pPr>/, `<w:pPr>${/<w:keepNext\/>/.test(metPPr) ? '' : '<w:keepNext/>'}`).replace(/<w:spacing [^>]*\/>/, '').replace(/<\/w:pPr>/, '<w:spacing w:before="240" w:after="80"/></w:pPr>');
+  const fotoBlok = (slot) => {
+    const lijst = perVak(slot).slice(0, SLOTS[slot]);
+    if (!lijst.length) return concept ? `${label}<w:p><w:r><w:rPr><w:b/><w:color w:val="C00000"/></w:rPr><w:t xml:space="preserve">[ foto's ${slot} ]</w:t></w:r></w:p>` : '';
+    const k = lijst.length; const marge = 80; // twips links en rechts in elke cel
+    const kolom = Math.floor(TEKSTBREEDTE / k);
+    const maxHoog = [0, 3240000, 2520000, 1980000][k]; // ca. 9 / 7 / 5,5 cm
+    const vak = [Math.min((kolom - 2 * marge) * 635, 5400000), maxHoog];
+    const cel = (img) => {
+      const foto = plaatsFoto(inlineBasis, img, { vak, bijschrift: false });
+      const onder = s(img.caption) ? `<w:p><w:pPr><w:spacing w:before="40" w:after="0"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:i/><w:sz w:val="16"/></w:rPr><w:t xml:space="preserve">${xmlEsc(img.caption)}</w:t></w:r></w:p>` : '';
+      return `<w:tc><w:tcPr><w:tcW w:w="${kolom}" w:type="dxa"/><w:vAlign w:val="top"/></w:tcPr><w:p><w:pPr><w:spacing w:before="0" w:after="0"/><w:jc w:val="center"/></w:pPr>${foto}</w:p>${onder}</w:tc>`;
+    };
+    const geen = '<w:top w:val="nil"/><w:left w:val="nil"/><w:bottom w:val="nil"/><w:right w:val="nil"/><w:insideH w:val="nil"/><w:insideV w:val="nil"/>';
+    return `${label}<w:tbl><w:tblPr><w:tblW w:w="${kolom * k}" w:type="dxa"/><w:jc w:val="center"/><w:tblBorders>${geen}</w:tblBorders><w:tblLayout w:type="fixed"/>`
+      + `<w:tblCellMar><w:left w:w="${marge}" w:type="dxa"/><w:right w:w="${marge}" w:type="dxa"/></w:tblCellMar></w:tblPr>`
+      + `<w:tblGrid>${lijst.map(() => `<w:gridCol w:w="${kolom}"/>`).join('')}</w:tblGrid>`
+      + `<w:tr><w:trPr><w:cantSplit/></w:trPr>${lijst.map(cel).join('')}</w:tr></w:tbl><w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr></w:p>`;
+  };
+  for (const slot of ['conclusie', ...Object.keys(SLOTS).filter((x) => x !== 'voorblad')]) {
+    const i = doc.indexOf(`name="mvfs-slot:${slot}:1"`);
+    if (i < 0) continue;
+    // 1. fotovak(ken) uit het sjabloon weghalen, met het label "Afbeeldingen" erboven
+    let weg;
+    const tbl = doc.lastIndexOf('<w:tbl>', i);
+    if (tbl > doc.lastIndexOf('</w:tbl>', i)) weg = [tbl, doc.indexOf('</w:tbl>', i) + '</w:tbl>'.length]; // vakken in een tabel
+    else {
+      const p = pStart(i); const pe = doc.indexOf('</w:p>', i) + '</w:p>'.length;
+      if (/w:type="page"/.test(doc.slice(p, pe))) { const [a, b] = runRond(doc, i, '</w:drawing>'); weg = [a, b]; } // paginawissel blijft staan
+      else weg = [p, pe];
     }
+    const vorige = doc.lastIndexOf('</w:p>', weg[0] - 1) + '</w:p>'.length;
+    const vp = pStart(vorige - 1);
+    if (vorige === weg[0] && tekst(doc.slice(vp, vorige)) === 'Afbeeldingen') weg[0] = vp;
+    doc = doc.slice(0, weg[0]) + doc.slice(weg[1]);
+    // 2. fotoblok onderaan het hoofdstuk: vlak voor de eerstvolgende paginawissel (conclusie: geen foto's meer)
+    if (slot === 'conclusie') continue;
+    const pb = doc.indexOf('w:type="page"', weg[0]);
+    const plek = pb < 0 ? doc.lastIndexOf('<w:sectPr') : pStart(pb);
+    doc = doc.slice(0, plek) + fotoBlok(slot) + doc.slice(plek);
   }
 
   doc = vul(doc);

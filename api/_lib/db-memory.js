@@ -7,6 +7,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync, rmSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { randomUUID } from 'node:crypto';
+import { START_BRONNEN } from './redactie-bronnen.js';
 
 const conflict = () => Object.assign(new Error('bestaat al'), { status: 409, code: '23505' });
 const now = () => new Date().toISOString();
@@ -17,8 +18,9 @@ export function memoryDb() {
   const STORE_DIR = resolve(process.env.MVFS_DEV_STORAGE || 'tmp/dev-storage');
   const key = `__mvfsMemoryDb:${FILE}`;
   if (!globalThis[key]) {
-    let data = { users: [], sessions: [], attempts: [], news: [], requests: [], history: [], notes: [], emails: [], advisors: [], reports: [], reportImages: [], versions: [], translations: {}, translationUsage: {}, seq: 0, reportSeq: 0, ids: 0 };
+    let data = { users: [], sessions: [], attempts: [], news: [], requests: [], history: [], notes: [], emails: [], advisors: [], reports: [], reportImages: [], versions: [], translations: {}, translationUsage: {}, redBronnen: [], redItems: [], redConcepten: [], redRuns: [], redInstellingen: {}, seq: 0, reportSeq: 0, ids: 0 };
     if (FILE && existsSync(FILE)) data = { ...data, ...JSON.parse(readFileSync(FILE, 'utf8')) };
+    if (!data.redBronnen.length) data.redBronnen = START_BRONNEN.map((b) => ({ id: randomUUID(), laatste_check: null, laatste_fout: null, created_at: now(), ...b }));
     if (!data.advisors.length) data.advisors = [['Melvin Krikke', 'CE240260817-02'], ['Rutger Fopma', 'CE240260817-03']].map(([name, certificate]) => ({ id: randomUUID(), name, certificate, user_id: null, active: true, functie: 'Bouwkundig adviseur', introductie: null, op_site: true, volgorde: 0, photo_path: null, created_at: now(), updated_at: now() }));
     globalThis[key] = data;
   }
@@ -153,6 +155,34 @@ export function memoryDb() {
     translationsGet: async (keys) => keys.filter((k) => D.translations[k]).map((k) => ({ key: k, html: D.translations[k] })),
     translationsPut: async (rows) => { for (const r of rows) if (!D.translations[r.key]) D.translations[r.key] = r.html; save(); },
     translationUsage: async (month) => D.translationUsage[month] || 0,
+    // AI-redactie
+    redBronnen: async () => clone([...D.redBronnen].sort((a, b) => a.categorie.localeCompare(b.categorie) || a.naam.localeCompare(b.naam))),
+    redBronCreate: async (row) => { if (D.redBronnen.some((b) => b.url === row.url)) throw conflict(); const b = { id: randomUUID(), regio: '', pagina_ophalen: false, actief: true, laatste_check: null, laatste_fout: null, created_at: now(), ...row }; D.redBronnen.push(b); save(); return clone(b); },
+    redBronUpdate: async (id, f) => { const b = D.redBronnen.find((x) => x.id === id); if (!b) return null; Object.assign(b, f); save(); return clone(b); },
+    redBronDelete: async (id) => { D.redBronnen = D.redBronnen.filter((x) => x.id !== id); save(); },
+    redItemsList: async ({ status, limit = 200 } = {}) => clone(D.redItems.filter((i) => !status || i.status === status).sort((a, b) => b.verzameld_op.localeCompare(a.verzameld_op) || b.relevantie - a.relevantie).slice(0, limit)),
+    redItemsByIds: async (ids) => clone(D.redItems.filter((i) => ids.includes(i.id))),
+    redItemsInsert: async (rows) => {
+      const out = [];
+      for (const r of rows) { if (D.redItems.some((i) => i.url === r.url)) continue; const it = { id: randomUUID(), status: 'nieuw', verzameld_op: now(), ...r }; D.redItems.push(it); out.push(it); }
+      save(); return clone(out);
+    },
+    redItemUpdate: async (id, f) => { const i = D.redItems.find((x) => x.id === id); if (!i) return null; Object.assign(i, f); save(); return clone(i); },
+    redItemsDeleteBefore: async (iso) => { D.redItems = D.redItems.filter((i) => i.status === 'gebruikt' || i.verzameld_op >= iso); save(); },
+    redConceptenList: async ({ status, type } = {}) => clone(D.redConcepten.filter((c) => (!status || c.status === status) && (!type || c.type === type)).sort((a, b) => b.created_at.localeCompare(a.created_at))
+      .map(({ id, type: t, status: st, titel, slug, hoofdzoekwoord, controle, regenereren, nieuws_id, model, created_at, updated_at }) => ({ id, type: t, status: st, titel, slug, hoofdzoekwoord, controle, regenereren, nieuws_id, model, created_at, updated_at }))),
+    redConceptGet: async (id) => clone(D.redConcepten.find((c) => c.id === id) || null),
+    redConceptCreate: async (row) => {
+      const c = { id: randomUUID(), status: 'concept', slug: '', seo_titel: '', meta_description: '', hoofdzoekwoord: '', zoekwoorden: [], intro: '', inhoud: '', faqs: [], bronnen: [], interne_links: [], afbeelding: '', afbeelding_alt: '', zelftest: null, controle: {}, onderwerp: '', item_ids: [], model: '', regenereren: false, regenereer_notitie: '', nieuws_id: null, beoordeeld_door: null, beoordeeld_op: null, created_at: now(), updated_at: now(), ...row };
+      if (!['concept', 'afgekeurd', 'goedgekeurd', 'overgezet'].includes(c.status)) throw new Error('ongeldige status');
+      D.redConcepten.push(c); save(); return clone(c);
+    },
+    redConceptUpdate: async (id, f) => { const c = D.redConcepten.find((x) => x.id === id); if (!c) return null; Object.assign(c, f, { updated_at: now() }); save(); return clone(c); },
+    redConceptDelete: async (id) => { D.redConcepten = D.redConcepten.filter((x) => x.id !== id); save(); },
+    redRunsList: async (limit = 50) => clone([...D.redRuns].sort((a, b) => b.gestart_op.localeCompare(a.gestart_op)).slice(0, limit)),
+    redRunCreate: async (row) => { const r = { id: randomUUID(), melding: '', aantallen: {}, gestart_op: now(), klaar_op: null, ...row }; D.redRuns.push(r); save(); return clone(r); },
+    redInstellingen: async () => clone(D.redInstellingen),
+    redInstellingZet: async (sleutel, waarde) => { D.redInstellingen[sleutel] = clone(waarde); save(); },
     translationUsageAdd: async (month, chars) => { D.translationUsage[month] = (D.translationUsage[month] || 0) + chars; save(); return D.translationUsage[month]; },
     nextReportNr: async () => { D.reportSeq += 1; save(); return `QS-${new Date().getFullYear()}-${String(D.reportSeq).padStart(4, '0')}`; },
     reportCreate: async (row) => {
