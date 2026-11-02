@@ -15,8 +15,13 @@
     "audit": "node scripts/check-content.mjs && node scripts/build.mjs && node scripts/audit.mjs",
     "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\"",
     "autolink": "node scripts/autolink.mjs",
-    "test": "node --test scripts/test-demos.mjs scripts/test-backend.mjs",
+    "test": "node --test scripts/test-demos.mjs scripts/test-backend.mjs scripts/test-seo.mjs",
     "beheer:gebruiker": "node scripts/beheer-gebruiker.mjs",
-    "redactie": "node scripts/redactie/run.mjs"
+    "redactie": "node scripts/redactie/run.mjs",
+    "seo:regressie": "node scripts/seo-regressie.mjs",
+    "seo:nulmeting": "node scripts/seo-regressie.mjs --nulmeting",
+    "live-controle": "node scripts/live-controle.mjs",
+    "geheimen": "node scripts/geheimen-scan.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
   }
 }

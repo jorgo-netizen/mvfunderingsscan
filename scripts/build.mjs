@@ -21,6 +21,7 @@ import { render, relatedHtml } from '../src/lib/template.mjs';
 import { aanvraagForm, contactForm } from '../src/lib/forms.mjs';
 import { openPlaceholders, SHOW_PLACEHOLDERS, rapportvoorbeeldCard, setMedewerkers } from '../src/lib/eeat.mjs';
 import { statusPage, beheerPage } from '../src/lib/portal.mjs';
+import { isSleutel } from '../api/_lib/indexnow.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, 'dist');
@@ -578,6 +579,8 @@ export function build({ quiet = false } = {}) {
   // veilige Markdown-weergave ook in de browser (live voorbeeld in de nieuwseditor)
   write('/beheer-markdown.js', readFileSync(join(ROOT, 'api', '_lib', 'markdown.js'), 'utf8'));
   buildMetaFiles(paths);
+  // IndexNow-sleutelbestand (/<sleutel>.txt) alleen als INDEXNOW_KEY is ingesteld; zo staat de sleutel niet in Git
+  if (isSleutel(process.env.INDEXNOW_KEY)) write(`/${process.env.INDEXNOW_KEY}.txt`, process.env.INDEXNOW_KEY);
   if (lastmodGewijzigd && !process.env.VERCEL) writeFileSync(LASTMOD_FILE, JSON.stringify(Object.fromEntries(Object.entries(LASTMOD).sort()), null, 1) + '\n');
   if (!quiet) console.log(`✔ ${paths.length} pagina's gebouwd in dist/ (${Date.now() - t0} ms)`);
   const open = openPlaceholders();

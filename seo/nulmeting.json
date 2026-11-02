@@ -1,0 +1,4565 @@
+{
+ "gemaakt": "2026-11-02T15:17:54.567Z",
+ "urls": {
+  "/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek in Friesland & Groningen",
+   "description": "Onafhankelijk funderingsonderzoek in Friesland, Groningen en Noord-Drenthe. Quick Scan vanaf €350 incl. btw, rapport binnen 2 werkdagen. Vraag een scan aan.",
+   "h1": [
+    "Funderingsonderzoek in Friesland en Groningen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "c83e12e187028f1e58e5"
+  },
+  "/algemene-voorwaarden/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/algemene-voorwaarden/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Algemene voorwaarden | MV Funderingsscan B.V.",
+   "description": "De algemene voorwaarden van MV Funderingsscan B.V. voor offertes, Fase 0 QuickScan, Fase 1 funderingsonderzoek en rapporten.",
+   "h1": [
+    "Algemene voorwaarden"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "13d2c341c18647276d92"
+  },
+  "/beheer/": {
+   "canonical": "",
+   "robots": "noindex, nofollow",
+   "title": "Beheer | MV Funderingsscan",
+   "description": "Beheerportaal voor medewerkers van MV Funderingsscan.",
+   "h1": [],
+   "jsonld": [],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "2bd1d18ad9f07dbcb4f3"
+  },
+  "/bronnen-en-richtlijnen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/bronnen-en-richtlijnen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Bronnen en richtlijnen funderingsonderzoek",
+   "description": "Welke officiële bronnen MV Funderingsscan gebruikt (KCAF, NRVT, NHG, RVO) en wat de regels rond funderingsrisico A–E en taxatie in 2026 zijn.",
+   "h1": [
+    "Bronnen en richtlijnen achter onze informatie"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "39882395bbba75eae5d4"
+  },
+  "/contact/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/contact/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Contact | MV Funderingsscan Leeuwarden | +31 (0) 582037172",
+   "description": "Neem contact op met MV Funderingsscan in Leeuwarden. Bel +31 (0) 582037172: je spreekt Melvin of Rutger, en via het formulier bellen we dezelfde dag terug.",
+   "h1": [
+    "Contact met MV Funderingsscan"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "BreadcrumbList",
+    "ContactPage",
+    "Country",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "f0ff478ce9653b492aaf"
+  },
+  "/fase-0-funderingsonderzoek-aankoop/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/fase-0-funderingsonderzoek-aankoop/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Fase 0 funderingsonderzoek bij aankoop | MV Funderingsscan",
+   "description": "Fase 0 Quick Scan voor kopers in Friesland en Groningen: vanaf €350, gepland rond je voorbehoud, rapport meestal binnen 2 werkdagen na de inspectie.",
+   "h1": [
+    "Fase 0 funderingsonderzoek bij aankoop van een woning"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "ff88aac191840c4099ae"
+  },
+  "/fase-0-funderingsonderzoek/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/fase-0-funderingsonderzoek/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Fase 0 funderingsonderzoek: werkwijze | MV Funderingsscan",
+   "description": "Wat houdt fase 0 funderingsonderzoek in? Lees hoe archief, bodem en inspectie leiden tot één van vier adviezen. Vanaf €350 in Friesland en Groningen.",
+   "h1": [
+    "Fase 0 funderingsonderzoek"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "bd5a3442f588509e3f44"
+  },
+  "/fase-1-funderingsonderzoek/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/fase-1-funderingsonderzoek/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Fase 1 funderingsonderzoek met metingen | MV Funderingsscan",
+   "description": "Fase 1 funderingsonderzoek: metingen aan lintvoegen, scheefstand en vloeren als fase 0 daar aanleiding voor geeft. Lees wat het oplevert en kost.",
+   "h1": [
+    "Fase 1 funderingsonderzoek: meten wat je in fase 0 zag"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "82b4081237904b9a57db"
+  },
+  "/fundering-op-staal/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/fundering-op-staal/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Fundering op staal: werking en risico’s | MV Funderingsscan",
+   "description": "Wat is een fundering op staal, wanneer werd hij toegepast en hoe spelen bodem, zetting en leeftijd van de woning mee? Uitgebreide gids met advies.",
+   "h1": [
+    "Fundering op staal: hoe hij werkt en wanneer inspectie verstandig is"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "ce08856fc4dc6753fdc2"
+  },
+  "/funderingsinspectie/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsinspectie/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsinspectie ter plaatse | MV Funderingsscan",
+   "description": "Wat bekijkt de inspecteur bij een funderingsinspectie buiten, binnen en in de kruipruimte? Lees hoe je je voorbereidt en wat wel en niet zichtbaar is.",
+   "h1": [
+    "Funderingsinspectie: zo verloopt het bezoek aan je woning"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "9a555fe5b9c2030a56fa"
+  },
+  "/funderingsmetingen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsmetingen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsmetingen uitgelegd: zie hoe funderingsonderzoek werkt",
+   "description": "Interactief uitgelegd: lintvoegwaterpassing, loodmeting, scheurpatronen en vloerveldwaterpassing. Zie welke meting past bij jouw woning.",
+   "h1": [
+    "Funderingsmetingen uitgelegd: zie hoe funderingsonderzoek werkt"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "9620ca5886ce2bcabea1"
+  },
+  "/funderingsonderzoek-achtkarspelen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-achtkarspelen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Buitenpost en Surhuisterveen",
+   "description": "Funderingsonderzoek in de gemeente Achtkarspelen: Buitenpost, Surhuisterveen, Harkema en Twijzel. Onafhankelijke Quick Scan met rapport en helder advies.",
+   "h1": [
+    "Funderingsonderzoek in Achtkarspelen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "835c10de3f53d5af5a14"
+  },
+  "/funderingsonderzoek-appingedam/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-appingedam/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek in Appingedam | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Appingedam: historische stad aan het Damsterdiep, kleibodem en gaswinning. Onafhankelijke Quick Scan, los van een schademelding.",
+   "h1": [
+    "Funderingsonderzoek in Appingedam"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "a9a19999555709768b60"
+  },
+  "/funderingsonderzoek-bij-aankoop/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-bij-aankoop/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek bij aankoop woning | MV Funderingsscan",
+   "description": "Funderingsonderzoek bij aankoop: waar let je op tijdens de bezichtiging, hoe gebruik je het rapport bij je bod en wanneer plan je het onderzoek in?",
+   "h1": [
+    "Funderingsonderzoek bij aankoop van een woning"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "0f400c300bb8416175cd"
+  },
+  "/funderingsonderzoek-bij-verkoop/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-bij-verkoop/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek bij verkoop woning | MV Funderingsscan",
+   "description": "Funderingsonderzoek bij verkoop van je woning: kopers vooraf duidelijkheid geven, vragen voor zijn en onzekerheid in de onderhandeling verkleinen.",
+   "h1": [
+    "Funderingsonderzoek bij verkoop van je woning"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "45e92dd1e84bb4bee3de"
+  },
+  "/funderingsonderzoek-dantumadiel/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-dantumadiel/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Damwâld en Feanwâlden",
+   "description": "Funderingsonderzoek in Dantumadiel, van Damwâld en Feanwâlden tot Rinsumageast en Driezum. Start met een Quick Scan vanaf €350, rapport in 2 werkdagen.",
+   "h1": [
+    "Funderingsonderzoek in Dantumadiel"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "4d5a5069f83fca66cd7d"
+  },
+  "/funderingsonderzoek-de-fryske-marren/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-de-fryske-marren/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Joure, Lemmer en Balk",
+   "description": "Funderingsonderzoek in De Fryske Marren: Joure, Lemmer, Balk, Sloten en Woudsend. Onafhankelijke Quick Scan voor woningen op veen en klei in het merengebied.",
+   "h1": [
+    "Funderingsonderzoek in De Fryske Marren"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "8f00be74c2d8dc1d269f"
+  },
+  "/funderingsonderzoek-delfzijl/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-delfzijl/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek in Delfzijl | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Delfzijl, havenstad aan de Eems op klei in het aardbevingsgebied. Lees wat een Quick Scan je oplevert, ook na versterking.",
+   "h1": [
+    "Funderingsonderzoek in Delfzijl"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "56c96ca520a0c7738802"
+  },
+  "/funderingsonderzoek-drachten/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-drachten/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek in Drachten | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Drachten: veen- en zandgronden, oudere kernen en naoorlogse wijken. Lees wat er bij jouw woning speelt en hoe een Quick Scan werkt.",
+   "h1": [
+    "Funderingsonderzoek in Drachten"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "3659a1dfc090a6000d2e"
+  },
+  "/funderingsonderzoek-eemsdelta/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-eemsdelta/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Eemsdelta: Delfzijl, Appingedam, Loppersum",
+   "description": "Funderingsonderzoek in Eemsdelta: Loppersum, Farmsum, Termunten, &#x27;t Zandt, Wirdum, Appingedam en Delfzijl. Onafhankelijke scan op klei, los van IMG.",
+   "h1": [
+    "Funderingsonderzoek in Eemsdelta"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "47c5683647e18c018b41"
+  },
+  "/funderingsonderzoek-franeker/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-franeker/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek in Franeker | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Franeker: wat de zeeklei en oude panden in de binnenstad voor je fundering betekenen, en hoe een Quick Scan meer duidelijkheid geeft.",
+   "h1": [
+    "Funderingsonderzoek in Franeker"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "f3b6139bed26d15c2d0a"
+  },
+  "/funderingsonderzoek-friesland/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-friesland/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek in Friesland | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Friesland: van zeeklei in het noorden tot veen rond Heerenveen en Drachten. Lees wat er per streek speelt en hoe we te werk gaan.",
+   "h1": [
+    "Funderingsonderzoek in Friesland"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "bfadd3495469106eede3"
+  },
+  "/funderingsonderzoek-groningen-stad/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-groningen-stad/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Groningen stad | MV Funderingsscan",
+   "description": "Funderingsonderzoek in de stad Groningen en Haren. Zand op de Hondsrug, klei en veen in lagere delen: het risico verschilt per wijk. Lees hoe we onderzoeken.",
+   "h1": [
+    "Funderingsonderzoek in de stad Groningen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "12c35af74b47a99fa633"
+  },
+  "/funderingsonderzoek-groningen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-groningen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek provincie Groningen | MV Funderingsscan",
+   "description": "Funderingsonderzoek in de provincie Groningen: klei op het Hogeland, veen in de Veenkoloniën, zand op de Hondsrug en gaswinning. Lees hoe we werken.",
+   "h1": [
+    "Funderingsonderzoek in de provincie Groningen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "1c1e0d051d1c4245ddf8"
+  },
+  "/funderingsonderzoek-haren/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-haren/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek in Haren | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Haren: wonen op de Hondsrug of in een lager deel, vrijstaande en oudere woningen. Zo brengt een Quick Scan je fundering in beeld.",
+   "h1": [
+    "Funderingsonderzoek in Haren"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "ded227885e03d272c360"
+  },
+  "/funderingsonderzoek-harlingen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-harlingen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek in Harlingen | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Harlingen: zeeklei, bodemdaling door zoutwinning en historische grachtenpanden. Ontdek hoe we je woning aan de Waddenzee onderzoeken.",
+   "h1": [
+    "Funderingsonderzoek in Harlingen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "afa5622da937d16c9ba2"
+  },
+  "/funderingsonderzoek-heerenveen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-heerenveen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Heerenveen | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Heerenveen, een voormalige veenkolonie. Lees waarom veen in de ondergrond aandacht vraagt en hoe we je woning onderzoeken.",
+   "h1": [
+    "Funderingsonderzoek in Heerenveen: wonen op veen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "c0395d289559fa6cfcc8"
+  },
+  "/funderingsonderzoek-het-hogeland/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-het-hogeland/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Winsum, Uithuizen en Bedum",
+   "description": "Funderingsonderzoek in Het Hogeland: Winsum, Uithuizen, Bedum, Warffum, Leens en meer. Onafhankelijke Quick Scan voor woningen op zware zeeklei.",
+   "h1": [
+    "Funderingsonderzoek in Het Hogeland"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "35a6398dc17804e62ebb"
+  },
+  "/funderingsonderzoek-leeuwarden/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-leeuwarden/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Leeuwarden | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Leeuwarden, door een onafhankelijk bureau uit de stad. Terpen, zachte ondergrond en vooroorlogse wijken: lees waar we op letten.",
+   "h1": [
+    "Funderingsonderzoek in Leeuwarden"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "c139e72c497087fcf363"
+  },
+  "/funderingsonderzoek-midden-groningen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-midden-groningen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Hoogezand en Slochteren",
+   "description": "Funderingsonderzoek in Midden-Groningen: Hoogezand, Sappemeer, Slochteren en dorpen. Onafhankelijke Quick Scan op veen en klei, los van een IMG-melding.",
+   "h1": [
+    "Funderingsonderzoek in Midden-Groningen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "3e6cc3a94b256a2732a3"
+  },
+  "/funderingsonderzoek-noardeast-fryslan/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-noardeast-fryslan/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Dokkum, Kollum en Holwerd",
+   "description": "Funderingsonderzoek in Noardeast-Fryslân: Dokkum, Kollum, Holwerd, Ternaard en Anjum. Quick Scan voor woningen in het kleigebied langs de Waddenkust.",
+   "h1": [
+    "Funderingsonderzoek in Dokkum en Noardeast-Fryslân"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "fef6fa34c008cb1e9c52"
+  },
+  "/funderingsonderzoek-noord-drenthe/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-noord-drenthe/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Noord-Drenthe: Assen, Roden, Zuidlaren",
+   "description": "Funderingsonderzoek in Noord-Drenthe: Assen, Tynaarlo, Noordenveld en Aa en Hunze. Onafhankelijke Quick Scan vanaf €350 incl. btw, met oog voor zand en veen.",
+   "h1": [
+    "Funderingsonderzoek in Noord-Drenthe"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "54e13a6436eae537b638"
+  },
+  "/funderingsonderzoek-ooststellingwerf/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-ooststellingwerf/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Oosterwolde en Appelscha",
+   "description": "Funderingsonderzoek in Ooststellingwerf: Oosterwolde, Appelscha, Haulerwijk, Makkinga en Donkerbroek. Quick Scan vanaf €350 met rapport en advies.",
+   "h1": [
+    "Funderingsonderzoek in Oosterwolde en Ooststellingwerf"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "2509608ee68654a1cd8c"
+  },
+  "/funderingsonderzoek-opsterland/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-opsterland/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Gorredijk en Beetsterzwaag",
+   "description": "Funderingsonderzoek in Opsterland: Gorredijk, Beetsterzwaag, Ureterp, Bakkeveen en Lippenhuizen. Onafhankelijke Quick Scan op zand- en veengrond.",
+   "h1": [
+    "Funderingsonderzoek in Opsterland"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "7c3f0a656647f2763df3"
+  },
+  "/funderingsonderzoek-pekela/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-pekela/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Oude en Nieuwe Pekela",
+   "description": "Funderingsonderzoek in de gemeente Pekela, in Oude Pekela en Nieuwe Pekela. Lees hoe je scheuren in een lintwoning duidt en wanneer een Quick Scan helpt.",
+   "h1": [
+    "Funderingsonderzoek in Pekela"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "d343bbc83217e1e5bfea"
+  },
+  "/funderingsonderzoek-sneek/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-sneek/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek in Sneek | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Sneek: panden langs het water, grachten en een bodem van klei en veen. Lees wat dat betekent en hoe een Quick Scan je verder helpt.",
+   "h1": [
+    "Funderingsonderzoek in Sneek, de Friese waterstad"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "e2d81390f0768476e900"
+  },
+  "/funderingsonderzoek-stadskanaal/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-stadskanaal/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Stadskanaal, Musselkanaal",
+   "description": "Funderingsonderzoek in de gemeente Stadskanaal: Stadskanaal, Musselkanaal, Onstwedde en meer. Handig bij aankoop, taxatie of twijfel over je woning.",
+   "h1": [
+    "Funderingsonderzoek in Stadskanaal"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "dcff8f785d376e1f886c"
+  },
+  "/funderingsonderzoek-taxatie/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-taxatie/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek bij taxatie: klasse D of E?",
+   "description": "Klasse D of E in je taxatierapport? Zo regel je het aanvullende funderingsonderzoek: wat het taxatiemodel vraagt, wat het niet vraagt en hoe MV helpt.",
+   "h1": [
+    "Funderingsonderzoek voor je taxatie: wat doe je bij klasse D of E?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "f54dddd65151a6c52110"
+  },
+  "/funderingsonderzoek-tytsjerksteradiel/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-tytsjerksteradiel/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Burgum en Hurdegaryp | MV Funderingsscan",
+   "description": "Funderingsscan in Tytsjerksteradiel: Burgum, Hurdegaryp, Suameer, Garyp en meer. Onafhankelijk vooronderzoek op zand, veen en klei, met rapport en advies.",
+   "h1": [
+    "Funderingsonderzoek in Tytsjerksteradiel"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "a604ca7ac315a8085a43"
+  },
+  "/funderingsonderzoek-veendam/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-veendam/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek in Veendam | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Veendam: wonen in de Veenkoloniën, op veen boven zand. Ontdek wat vervening voor je fundering betekent en hoe een Quick Scan helpt.",
+   "h1": [
+    "Funderingsonderzoek in Veendam en de Veenkoloniën"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "c9f13392b90b8430307a"
+  },
+  "/funderingsonderzoek-westerkwartier/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-westerkwartier/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Zuidhorn, Leek en Grootegast",
+   "description": "Funderingsonderzoek in Westerkwartier: Zuidhorn, Leek, Grootegast, Marum en dorpen. Klei in het noorden, zand en veen in het zuiden. Start met een Quick Scan.",
+   "h1": [
+    "Funderingsonderzoek in Westerkwartier"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "b1e6e8f3ca5cd6a2454f"
+  },
+  "/funderingsonderzoek-westerwolde/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-westerwolde/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Ter Apel en Vlagtwedde",
+   "description": "Funderingsonderzoek in Westerwolde: Ter Apel, Vlagtwedde, Bellingwolde, Sellingen en Bourtange. Ook op zandgrond geeft een Quick Scan meer duidelijkheid.",
+   "h1": [
+    "Funderingsonderzoek in Westerwolde"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "4344572b5950201b84a8"
+  },
+  "/funderingsonderzoek-weststellingwerf/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-weststellingwerf/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Wolvega en Noordwolde",
+   "description": "Funderingsonderzoek in Weststellingwerf, zoals Wolvega, Noordwolde, Oldeberkoop en De Blesse. Quick Scan op zandgrond en in beekdalen, rapport in 2 werkdagen.",
+   "h1": [
+    "Funderingsonderzoek in Weststellingwerf"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "d1c44bd352e403cda83e"
+  },
+  "/funderingsonderzoek-winschoten/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-winschoten/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek in Winschoten | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Winschoten: wat de zware klei van het Oldambt met je fundering doet en hoe een onafhankelijke Quick Scan je woning in beeld brengt.",
+   "h1": [
+    "Funderingsonderzoek in Winschoten"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "723e03e8a3a287356cca"
+  },
+  "/funderingsonderzoek-woning/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-woning/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek voor je woning | MV Funderingsscan",
+   "description": "Funderingsonderzoek voor je woning bij aankoop, verkoop, taxatie of twijfel. Lees welk onderzoek past en wat je als eigenaar zelf al kunt signaleren.",
+   "h1": [
+    "Funderingsonderzoek woning: welk onderzoek past bij jouw situatie?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "12bc038a9026273a8c3c"
+  },
+  "/funderingsproblemen-klei/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsproblemen-klei/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsproblemen op klei: krimp en zwel",
+   "description": "Klei krimpt bij droogte en zwelt bij nat weer. Lees wat dat kan betekenen voor je fundering, hoe ongelijke zetting ontstaat en waar klei voorkomt.",
+   "h1": [
+    "Funderingsproblemen op klei: krimp, zwel en ongelijke zetting"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "52d2ca5f3e28348eeedc"
+  },
+  "/funderingsproblemen-veen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsproblemen-veen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsproblemen op veen en bodemdaling",
+   "description": "Hoe veen inklinkt, oxideert en de bodem laat dalen, wat dat kan betekenen voor je fundering en waar veengebieden liggen in Friesland en Groningen.",
+   "h1": [
+    "Funderingsproblemen op veen: hoe de bodem je woning kan beïnvloeden"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "c57364b2d10db1e5dbee"
+  },
+  "/funderingsproblemen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsproblemen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsproblemen woning: signalen en oorzaken",
+   "description": "Funderingsproblemen in Friesland en Groningen: welke signalen en combinaties aanleiding geven tot onderzoek, mogelijke oorzaken en wat je zelf kunt doen.",
+   "h1": [
+    "Funderingsproblemen: signalen, oorzaken en wat je kunt doen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "5cd817ed99996654601e"
+  },
+  "/funderingsquiz/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsquiz/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsquiz: hoeveel weet jij over funderingen?",
+   "description": "Test je kennis in tien vragen over droogstand, zetting, negatieve kleef, risicoklassen en meer. Bij elk antwoord krijg je direct een korte uitleg met bron.",
+   "h1": [
+    "Hoeveel weet jij over funderingen?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "6a6aa31cd785a2a3f81f"
+  },
+  "/funderingsrapport/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsrapport/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsrapport: inhoud en uitkomsten | MV Funderingsscan",
+   "description": "Wat staat er in een funderingsrapport, hoe lees je de conclusie en de vier uitkomsten, en wat doe je ermee bij aankoop, verkoop, taxatie of verbouwing?",
+   "h1": [
+    "Het funderingsrapport: wat erin staat en wat je ermee doet"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "d29615cdd947dcd5938b"
+  },
+  "/funderingsrisicoklasse-uitgelegd/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsrisicoklasse-uitgelegd/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsrisicoklasse (funderingslabel) A tot en met E uitgelegd",
+   "description": "Wat betekent funderingsrisicoklasse (funderingslabel) A, B, C, D of E? Klik op een klasse voor de KCAF-omschrijving, wat het betekent en de vervolgstap.",
+   "h1": [
+    "Funderingsrisicoklasse A tot en met E: wat betekent jouw funderingslabel?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "8f5a2d8c8e46e95af00a"
+  },
+  "/funderingsscan-aanvragen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsscan-aanvragen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsscan aanvragen | Prijs vooraf bekend",
+   "description": "Vraag online een funderingsscan aan voor je woning in Friesland, Groningen of Noord-Drenthe. We bellen je dezelfde dag terug en noemen vooraf de prijs.",
+   "h1": [
+    "Funderingsscan aanvragen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "9a6494c455584ee31594"
+  },
+  "/funderingsscan-friesland/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsscan-friesland/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsscan Friesland aanvragen | MV Funderingsscan",
+   "description": "Funderingsscan in Friesland: Quick Scan vanaf €350, inspectie meestal binnen enkele werkdagen en rapport meestal binnen 2 werkdagen. Zo vraag je hem aan.",
+   "h1": [
+    "Funderingsscan in Friesland: de Quick Scan voor je woning"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "8492c13d4798dfa9eb7e"
+  },
+  "/funderingsscan-groningen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsscan-groningen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsscan Groningen aanvragen | MV Funderingsscan",
+   "description": "Funderingsscan in Groningen: onafhankelijke Quick Scan vanaf €350, geen schademelding. Rapport meestal binnen 2 werkdagen na inspectie. Zo werkt het.",
+   "h1": [
+    "Funderingsscan in Groningen aanvragen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "8f1d4266fd45e0bae669"
+  },
+  "/funderingsscan-leeuwarden/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsscan-leeuwarden/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsscan Leeuwarden aanvragen | MV Funderingsscan",
+   "description": "Funderingsscan in Leeuwarden: de Quick Scan vanuit ons kantoor in de stad. Wat je krijgt, wat het kost, hoe je je voorbereidt en hoe snel je terechtkunt.",
+   "h1": [
+    "Funderingsscan in Leeuwarden: de Quick Scan vanuit de stad"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "441be35c8b5d582a4174"
+  },
+  "/funderingsscan/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsscan/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsscan voor je woning | MV Funderingsscan",
+   "description": "Onafhankelijke funderingsscan voor je woning in Friesland of Groningen: zonder graafwerk, vanaf €350 en het rapport normaal gesproken binnen 2 werkdagen.",
+   "h1": [
+    "Funderingsscan"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "b31a7e4e6999c42dbcec"
+  },
+  "/gratis-funderingscheck/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/gratis-funderingscheck/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Gratis Funderingscheck: indicatie in 11 vragen",
+   "description": "Doe de gratis Funderingscheck: beantwoord 11 vragen over je woning en krijg een voorzichtige indicatie met uitleg wat die wel en niet betekent. Geen diagnose.",
+   "h1": [
+    "Gratis Funderingscheck: zijn er signalen om verder te kijken?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "16d579500ddbdeb9ccc7"
+  },
+  "/huis-kopen-funderingscheck/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/huis-kopen-funderingscheck/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Huis kopen? Doe eerst de funderingscheck voor kopers",
+   "description": "Een huis kopen? Beantwoord zes vragen over bouwjaar, risicoklasse, signalen en je voorbehoud, en zie welke funderingsonderwerpen voor jou relevant zijn.",
+   "h1": [
+    "Een huis kopen? Doe eerst deze funderingscheck"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "59237c7f72ff658a6d28"
+  },
+  "/hulpmiddelen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/hulpmiddelen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Hulpmiddelen fundering: checks, keuzehulpen en uitleg",
+   "description": "Interactieve hulpmiddelen over funderingen: gratis Funderingscheck, signalen-checklist, kostenwijzer, risicoklassen A–E en meer. Indicatief, geen diagnose.",
+   "h1": [
+    "Hulpmiddelen: begrijp eerst wat er speelt"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "e18bc8db094584cb8844"
+  },
+  "/kennisbank/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Kennisbank funderingsonderzoek | Antwoorden",
+   "description": "66 heldere artikelen over funderingsscans, fase 0 en 1, metingen zoals lintvoegwaterpassing, scheuren, zetting, bodem en kosten.",
+   "h1": [
+    "Kennisbank funderingsonderzoek"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "BreadcrumbList",
+    "CollectionPage",
+    "Country",
+    "GeoCoordinates",
+    "ImageObject",
+    "ItemList",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "e4a10ddb49daf92797da"
+  },
+  "/kennisbank/archiefonderzoek-fundering/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/archiefonderzoek-fundering/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Archiefonderzoek fundering: wat zoeken we uit?",
+   "description": "Wat levert archiefonderzoek op bij funderingsonderzoek? Lees welke gegevens over bouwjaar, funderingstype, bodem en grondwater worden gezocht, en waarom.",
+   "h1": [
+    "Archiefonderzoek bij funderingsonderzoek: wat zoeken we uit?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "f1674ff8a9d3a983effa"
+  },
+  "/kennisbank/begrippenlijst/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/begrippenlijst/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Begrippenlijst funderingsonderzoek | MV Funderingsscan",
+   "description": "Alle vaktermen rond funderingsonderzoek helder uitgelegd: van lintvoegwaterpassing en loodmeting tot zetting, paalrot en fase 0. 33 begrippen met definitie.",
+   "h1": [
+    "Begrippenlijst funderingsonderzoek"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "BreadcrumbList",
+    "CollectionPage",
+    "Country",
+    "DefinedTerm",
+    "DefinedTermSet",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "ed941c9f30c791c821f1"
+  },
+  "/kennisbank/bodemdaling/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/bodemdaling/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Bodemdaling: oorzaken en gevolgen voor je woning",
+   "description": "Waardoor daalt de bodem en wat betekent bodemdaling voor je woning? Uitleg over veenoxidatie, inklinking en delfstofwinning, met de gevolgen voor funderingen.",
+   "h1": [
+    "Bodemdaling: oorzaken en gevolgen voor woningen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "e2ed464bce3ff3c7cb50"
+  },
+  "/kennisbank/fundering-op-staal/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/fundering-op-staal/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Wat is fundering op staal? Uitleg en herkenning",
+   "description": "Fundering op staal betekent: zonder palen, direct op de ondergrond. Lees wat dat inhoudt, hoe je het herkent en waarom de bodem eronder zo belangrijk is.",
+   "h1": [
+    "Wat is fundering op staal?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "7ac0aeba72a9bcb5839c"
+  },
+  "/kennisbank/funderingsherstel/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsherstel/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsherstel: wat houdt het globaal in?",
+   "description": "Wat is funderingsherstel, welke aanpakken bestaan er globaal en wie voert het uit? Lees waarom onderzoek vooraf de basis is voor een goed herstelplan.",
+   "h1": [
+    "Funderingsherstel: wat houdt het in en wie doet het?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "96f3ed1966d3d390c160"
+  },
+  "/kennisbank/funderingsonderzoek-voor-bod/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsonderzoek-voor-bod/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek vóór je bod: wat kan al?",
+   "description": "Wat kun je vóór je bod al uitzoeken over de fundering, en wat regel je pas na het bod met een voorbehoud? Met tijdlijn, vragen en praktische tips.",
+   "h1": [
+    "Funderingsonderzoek vóór je bod: wat kun je al doen?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "74a3eaad62a4f730e76a"
+  },
+  "/kennisbank/funderingsproblemen-friesland/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsproblemen-friesland/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsproblemen in Friesland: achtergrond",
+   "description": "Waarom spelen funderingsproblemen in Friesland? Achtergrond over klei, veen, peilbeheer, bodemdaling en zoutwinning, en wat dat betekent voor je woning.",
+   "h1": [
+    "Funderingsproblemen in Friesland: de achtergrond"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "7ddfc25fd2bef93c1686"
+  },
+  "/kennisbank/funderingsproblemen-groningen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsproblemen-groningen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsproblemen in Groningen: achtergrond",
+   "description": "Waarom spelen funderingsproblemen in Groningen? Achtergrond over zeeklei, veen, de Hondsrug en gaswinning, en waar je gaswinningsschade meldt (IMG).",
+   "h1": [
+    "Funderingsproblemen in Groningen: de achtergrond"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "cf392351c08246a3be42"
+  },
+  "/kennisbank/funderingsrapport-lezen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsrapport-lezen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Hoe lees je een funderingsrapport? | MV Funderingsscan",
+   "description": "Hoe lees je een funderingsrapport? Uitleg over de onderdelen, hoe je de conclusie en het advies interpreteert en welke vragen je daarna kunt stellen.",
+   "h1": [
+    "Hoe lees je een funderingsrapport?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "433c6f790273a6846008"
+  },
+  "/kennisbank/funderingsrapport-voor-verkoper/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsrapport-voor-verkoper/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsrapport als verkoper: wat doe je ermee?",
+   "description": "Wat doe je als verkoper met een funderingsrapport? Wanneer je het laat maken, hoe je het deelt met makelaar en kopers, en wat te doen als er iets in staat.",
+   "h1": [
+    "Funderingsrapport voor de verkoper: laten maken, delen en gebruiken"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "26dd003af91abd40d368"
+  },
+  "/kennisbank/funderingsrisico-bij-aankoop/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsrisico-bij-aankoop/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsrisico bij aankoop beoordelen | MV Funderingsscan",
+   "description": "Hoe beoordeel je als koper het funderingsrisico van een woning? Over signalen, bouwjaar, bodem, de KCAF-klasse in de taxatie en wat een rapport toevoegt.",
+   "h1": [
+    "Funderingsrisico bij aankoop: hoe beoordeel je het als koper?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "c1922f91364b8111265b"
+  },
+  "/kennisbank/funderingsrisico-inschatting/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsrisico-inschatting/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsrisico-inschatting: zo werkt het",
+   "description": "Hoe komt een funderingsrisico-inschatting tot stand? Lees hoe bodem, bouwjaar, funderingstype en zichtbare signalen samen worden gewogen tot een advies.",
+   "h1": [
+    "Funderingsrisico-inschatting: hoe komen we tot een oordeel?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "cc7a73d6c112967bb83a"
+  },
+  "/kennisbank/funderingsrisico/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsrisico/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsrisico: wat betekent het precies?",
+   "description": "Wat is funderingsrisico en wat is het verschil met funderingsschade? Uitleg over risico-inschatting, de KCAF-risicoklassen A t/m E en wat je ermee doet.",
+   "h1": [
+    "Funderingsrisico: wat betekent het en wat is het verschil met schade?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "d6e3c47c08a4bfeac1b6"
+  },
+  "/kennisbank/funderingsscan-bij-aankoop/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsscan-bij-aankoop/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsscan bij aankoop: timing en voorbehoud",
+   "description": "Een funderingsscan bij aankoop: wanneer plan je hem, hoe past hij in je termijnen en waarom een voorbehoud voor funderingsonderzoek het overwegen waard is.",
+   "h1": [
+    "Funderingsscan bij aankoop: wanneer en hoe?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "e43a323d64c199ead4df"
+  },
+  "/kennisbank/funderingsscan-bij-verkoop/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsscan-bij-verkoop/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsscan bij verkoop: de voordelen | MV Funderingsscan",
+   "description": "Waarom een funderingsscan bij verkoop zinvol kan zijn: duidelijkheid voor kopers, minder onzekerheid bij de onderhandeling en een goed voorbereide verkoop.",
+   "h1": [
+    "Funderingsscan bij verkoop: wat heb je eraan?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "a73dc1d4174b36bf42cb"
+  },
+  "/kennisbank/funderingsscan-en-hypotheek/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsscan-en-hypotheek/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsscan en hypotheek | MV Funderingsscan",
+   "description": "Wat heeft een funderingsscan met je hypotheek te maken? Uitleg over de route van taxatie naar financiering en waarom je dit afstemt met je geldverstrekker.",
+   "h1": [
+    "Funderingsscan en hypotheek: hoe hangt het samen?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "6a2dfc1084540811e8c4"
+  },
+  "/kennisbank/funderingsscan-en-taxatie/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsscan-en-taxatie/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsparagraaf taxatierapport uitgelegd",
+   "description": "Wat staat er in de funderingsparagraaf van het taxatierapport? Over de KCAF-risicoklasse A tot en met E, het funderingslabel en de rol van een funderingsscan.",
+   "h1": [
+    "De funderingsparagraaf in het taxatierapport: zo werkt het"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "14ed39d7125c9ae7dff8"
+  },
+  "/kennisbank/grondwater-en-fundering/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/grondwater-en-fundering/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Grondwater en fundering: waarom het peil telt",
+   "description": "Waarom is grondwater belangrijk voor je fundering? Uitleg over peilbeheer, droogte en houten palen, en wat een dalende grondwaterstand kan betekenen.",
+   "h1": [
+    "Grondwater en fundering: de rol van peil, droogte en houten palen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "a6a93ef58251dfde5a17"
+  },
+  "/kennisbank/grondwatermeting/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/grondwatermeting/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Grondwatermeting en je fundering: peilbuizen",
+   "description": "Hoe wordt de grondwaterstand gemeten? Over peilbuizen, meetnetten van overheden en waterschap, en waarom grondwater ertoe doet voor houten palen en zetting.",
+   "h1": [
+    "Grondwatermeting: hoe de grondwaterstand wordt gemeten en waarom dat telt"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "e74175610c4a961ade88"
+  },
+  "/kennisbank/heb-ik-een-funderingsscan-nodig/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/heb-ik-een-funderingsscan-nodig/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Heb ik een funderingsscan nodig? Zelftest",
+   "description": "Heb je een funderingsscan nodig? Loop deze vragen langs en vink af wat op jouw woning van toepassing is. Zo zie je snel of onderzoek zinvol kan zijn.",
+   "h1": [
+    "Heb ik een funderingsscan nodig?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "ffba8b6cf3353e393220"
+  },
+  "/kennisbank/helling-in-vloer/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/helling-in-vloer/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Scheve of hellende vloer: oorzaken | MV Funderingsscan",
+   "description": "Loopt je vloer af? Lees welke oorzaken een scheve vloer kan hebben, van balklaag tot fundering, hoe je het zelf bekijkt en hoe het wordt gemeten.",
+   "h1": [
+    "Scheve vloer: waar komt een helling in de vloer vandaan?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "35e7714d76adee36b639"
+  },
+  "/kennisbank/hoe-lang-duurt-funderingsonderzoek/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/hoe-lang-duurt-funderingsonderzoek/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Hoe lang duurt funderingsonderzoek? | MV Funderingsscan",
+   "description": "Hoe lang duurt funderingsonderzoek? De doorlooptijd van fase 0 en fase 1 op een rij, en welke factoren de planning van het onderzoek beïnvloeden.",
+   "h1": [
+    "Hoe lang duurt funderingsonderzoek?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "c594c78e628be3392b96"
+  },
+  "/kennisbank/hoogtemeting/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/hoogtemeting/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Hoogtemeting bij een woning: waterpassen | MV Funderingsscan",
+   "description": "Hoogtemeting bij een woning: wat waterpassen is, het verschil tussen relatief en NAP, het referentiepunt en de toepassing op lintvoeg, vloer en maaiveld.",
+   "h1": [
+    "Hoogtemeting bij een woning: het principe achter waterpassen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "7d8797faf62fc7ec963e"
+  },
+  "/kennisbank/houten-paalfundering/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/houten-paalfundering/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Houten paalfundering: hoe zit die in elkaar?",
+   "description": "Wat is een houten paalfundering en hoe is hij opgebouwd? Uitleg over palen, kespen, slieten en waarom het grondwater zo belangrijk is voor de constructie.",
+   "h1": [
+    "Houten paalfundering: wat het is en hoe het werkt"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "8f83ac9b21b381a0b447"
+  },
+  "/kennisbank/kleibodem/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/kleibodem/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Kleibodem: krimp en zwel uitgelegd | MV Funderingsscan",
+   "description": "Wat is klei en waarom krimpt en zwelt het? Uitleg over een kleibodem, het effect van droogte en nat weer en wat dat betekent voor de fundering van je woning.",
+   "h1": [
+    "Kleibodem: wat is klei en hoe werken krimp en zwel?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "f170958ff5afc75f0c3d"
+  },
+  "/kennisbank/klemmende-deuren/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/klemmende-deuren/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Klemmende deuren en je fundering | MV Funderingsscan",
+   "description": "Klemt je deur? Vaak is het vocht of een losse scharnier, soms de fundering. Lees hoe je het verschil herkent en wanneer verder kijken zinvol is.",
+   "h1": [
+    "Klemmende deuren: wanneer zegt het iets over de fundering?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "51cfc7e51182e4ba3ec1"
+  },
+  "/kennisbank/klemmende-ramen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/klemmende-ramen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Klemmende ramen: oorzaken en signalen | MV Funderingsscan",
+   "description": "Klemt je raam? Meestal komt het door vocht, verf of hang- en sluitwerk. Lees wanneer klemmende ramen een signaal van vervorming zijn en wat je dan doet.",
+   "h1": [
+    "Klemmende ramen: houtwerking, hang- en sluitwerk of vervorming?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "3e67fadaa273a351111c"
+  },
+  "/kennisbank/kosten-fase-1/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/kosten-fase-1/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Kosten fase 1 funderingsonderzoek | MV Funderingsscan",
+   "description": "Wat kost fase 1 funderingsonderzoek? Vanaf €950. Lees wat de prijs bepaalt, wat erin zit en waarom fase 0 er in de regel aan voorafgaat.",
+   "h1": [
+    "Kosten fase 1 funderingsonderzoek: wat betaal je en waarvoor?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "93fa97a41c1ecc22196c"
+  },
+  "/kennisbank/kosten-funderingsherstel/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/kosten-funderingsherstel/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Kosten funderingsherstel: wat bepaalt de prijs?",
+   "description": "Funderingsherstel kan tienduizenden euro&#x27;s kosten. Lees wat de kosten bepaalt, waarom eerst onderzoek verstandig is en hoe je tot een goede offerte komt.",
+   "h1": [
+    "Kosten funderingsherstel: wat bepaalt de prijs?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "d7281705bb4b46ab4159"
+  },
+  "/kennisbank/kruipruimte-inspectie/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/kruipruimte-inspectie/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Kruipruimte-inspectie: wat wordt er bekeken?",
+   "description": "Wat wordt er bij een kruipruimte-inspectie bekeken, wat als de kruipruimte niet toegankelijk is en hoe bereid je je voor? Praktische uitleg voor eigenaren.",
+   "h1": [
+    "Kruipruimte-inspectie: wat wordt er bekeken en hoe bereid je je voor?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "bef6fd40e21e28dabe8f"
+  },
+  "/kennisbank/lintvoegwaterpassing/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/lintvoegwaterpassing/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Lintvoegwaterpassing: uitleg en demo | MV Funderingsscan",
+   "description": "Wat is lintvoegwaterpassing? Uitleg in vier stappen, een interactieve gevel met voorbeeldwaarden en wat de meting wel en niet zegt, ook in Friesland.",
+   "h1": [
+    "Wat is een lintvoegwaterpassing?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "04a7474484e164acd91e"
+  },
+  "/kennisbank/loodmeting/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/loodmeting/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Wat is een loodmeting? Scheefstand gevel meten",
+   "description": "Een loodmeting laat zien of een gevel of wand afwijkt van de verticaal. Lees hoe scheefstand wordt gemeten, vastgelegd en wat het zegt over de fundering.",
+   "h1": [
+    "Wat is een loodmeting?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "1aa12dc91b5da2b095ec"
+  },
+  "/kennisbank/maaiveldhoogte/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/maaiveldhoogte/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Maaiveldhoogte rond je woning: wat zegt het?",
+   "description": "Wat is maaiveldhoogte en wat betekent een verzakt maaiveld rond je woning? Over bodemdaling, inklinking en wat het wel en niet zegt over je fundering.",
+   "h1": [
+    "Maaiveldhoogte: wat een verzakt terrein rond je woning wel en niet zegt"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "6c07d419cf4753d44e0c"
+  },
+  "/kennisbank/monitoring-scheuren/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/monitoring-scheuren/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Scheuren monitoren: zo volg je een scheur",
+   "description": "Scheuren monitoren? Met een stappenlijst, foto-logboek en meetmerkjes volg je zelf of een scheur groeit. Plus: wanneer je een specialist inschakelt.",
+   "h1": [
+    "Scheuren monitoren: een scheur in de tijd volgen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "55ef68b9eb5efc2d47b8"
+  },
+  "/kennisbank/ongelijke-zetting/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/ongelijke-zetting/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Ongelijke zetting: oorzaken en gevolgen | MV Funderingsscan",
+   "description": "Ongelijke zetting ontstaat als delen van een woning verschillend zakken. Lees welke oorzaken er zijn, welke schade het geeft en hoe je het laat vaststellen.",
+   "h1": [
+    "Ongelijke zetting: als delen van je woning verschillend zakken"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "4a7ba9f4d93787669f9c"
+  },
+  "/kennisbank/paalfundering/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/paalfundering/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Paalfundering: wat is het en welke soorten?",
+   "description": "Wat is een paalfundering, welke soorten palen zijn er en waarom wordt op palen gebouwd? Plus: zo achterhaal je welke fundering jouw woning heeft.",
+   "h1": [
+    "Paalfundering: hoe een woning op palen rust"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "20d30639c4a61971afc1"
+  },
+  "/kennisbank/paalrot/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/paalrot/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Paalrot: oorzaken, signalen en onderzoek | MV Funderingsscan",
+   "description": "Wat is paalrot, hoe ontstaat het en hoe wordt het onderzocht? Lees waarom houten palen niet automatisch problemen geven en wat een quickscan wel en niet zegt.",
+   "h1": [
+    "Paalrot: aantasting van houten funderingspalen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "6adce162bf625f42c153"
+  },
+  "/kennisbank/peilverschillen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/peilverschillen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Peilverschillen en grondwaterpeil | MV Funderingsscan",
+   "description": "Hoe grondwaterpeil, polderpeil en peilbeheer door het waterschap je fundering kunnen raken, wat dalende peilen doen en wat je als eigenaar zelf kunt doen.",
+   "h1": [
+    "Peilverschillen: wat het grondwaterpeil met je fundering doet"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "80c23ef7decea0c27a47"
+  },
+  "/kennisbank/scheefstand/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/scheefstand/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Scheefstand herkennen: wat kun je zelf zien?",
+   "description": "Hoe herken je scheefstand van een woning? Eenvoudige observaties die je zelf kunt doen, wat ze wel en niet zeggen en wanneer een meting zinvol is.",
+   "h1": [
+    "Scheefstand herkennen: eenvoudige observaties en wanneer meten"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "171fd7fe1ee7afb78d6e"
+  },
+  "/kennisbank/scheefstandsmeting/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/scheefstandsmeting/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Scheefstand van een gevel meten: zo werkt het",
+   "description": "Hoe meet je scheefstand van een gevel? Overzicht van observatie, loodmeting en afleiden uit hoogteverschillen, en wanneer welke methode zinvol is.",
+   "h1": [
+    "Hoe meet je scheefstand van een gevel?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "957953f861f9d3897c2b"
+  },
+  "/kennisbank/scheuren-bij-aanbouw/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/scheuren-bij-aanbouw/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Scheur bij aanbouw of uitbouw | MV Funderingsscan",
+   "description": "Scheur tussen huis en aanbouw? Vaak komt dat door een eigen, ondiepere fundering. Lees wanneer het normaal is en wanneer onderzoek verstandig is.",
+   "h1": [
+    "Scheur bij een aanbouw: normaal of reden tot zorg?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "00a3dbb1eea9b4645525"
+  },
+  "/kennisbank/scheuren-boven-kozijnen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/scheuren-boven-kozijnen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Scheuren boven kozijnen: oorzaken | MV Funderingsscan",
+   "description": "Een scheur boven een raam of deur? Lees waarom kozijnen een zwakke plek zijn, hoe een roestende latei verschilt van zetting en wanneer onderzoek zinvol is.",
+   "h1": [
+    "Scheuren boven kozijnen: waarom juist daar, en wat zegt het?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "0135d6c9067a45e7dcad"
+  },
+  "/kennisbank/scheuren-in-gevel/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/scheuren-in-gevel/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Gevelscheur zelf beoordelen en monitoren | MV Funderingsscan",
+   "description": "Een scheur in je gevel gezien? Kort antwoord op wat zo&#x27;n scheur kan betekenen, plus een eenvoudige methode om de scheur zelf te monitoren.",
+   "h1": [
+    "Scheur in de gevel: wat betekent het en hoe monitor je hem?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "77ca7bd3d0989e4287ab"
+  },
+  "/kennisbank/scheuren-in-metselwerk/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/scheuren-in-metselwerk/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Scheuren in metselwerk: voeg, steen en latei",
+   "description": "Scheurt de voeg of de steen zelf? Uitleg over scheuren in metselwerk door krimp, uitzetting en roestende lateien, en wanneer de fundering een rol speelt.",
+   "h1": [
+    "Scheuren in metselwerk: voeg, steen, krimp en lateien"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "a0ef075a2a2a75b127ae"
+  },
+  "/kennisbank/scheuren-in-woning/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/scheuren-in-woning/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Scheuren in je woning: binnenmuren en plafonds",
+   "description": "Scheuren in binnenmuren, plafonds of rond deuren? Lees wanneer een scheur in je woning vaak onschuldig is en wanneer het verstandig is om verder te kijken.",
+   "h1": [
+    "Scheuren in je woning: wanneer zorgwekkend, wanneer onschuldig?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "50a577ddc7c2878a2eb1"
+  },
+  "/kennisbank/scheurmeting/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/scheurmeting/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Scheurmeting: een scheur goed vastleggen | MV Funderingsscan",
+   "description": "Wat is een scheurmeting? Zo leg je locatie, richting, lengte, breedte en verloop van een scheur vast, met welke hulpmiddelen, en wat dat wel en niet zegt.",
+   "h1": [
+    "Scheurmeting: een scheur op één moment nauwkeurig vastleggen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "6347ca5e06e749f257c1"
+  },
+  "/kennisbank/scheurpatronen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/scheurpatronen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Scheurpatronen: wat zeggen scheuren? | MV Funderingsscan",
+   "description": "Horizontale, verticale, diagonale of trapsgewijze scheuren: lees wat scheurpatronen kunnen zeggen, welke oorzaken mogelijk zijn en hoe ze worden onderzocht.",
+   "h1": [
+    "Scheurpatronen in woningen: wat vertellen scheuren over de fundering?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "30c32a4fd3be39fb372a"
+  },
+  "/kennisbank/subsidie-funderingsonderzoek-friesland/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/subsidie-funderingsonderzoek-friesland/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Subsidie funderingsonderzoek Friesland: zo werkt het",
+   "description": "Subsidie voor funderingsonderzoek in het Friese veenweidegebied: wie komt in aanmerking, hoeveel (80% tot €4.000) en welke eisen gelden voor het onderzoek.",
+   "h1": [
+    "Subsidie voor funderingsonderzoek in Friesland: voorwaarden en bedragen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "2b40bd3b76b97735297b"
+  },
+  "/kennisbank/veenbodem/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/veenbodem/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Veenbodem: wat is veen en waarom telt het?",
+   "description": "Wat is veen, hoe ontstaat het en waarom is een veenbodem belangrijk voor bouwen? Uitleg over inklinking, oxidatie en wat het betekent voor je woning.",
+   "h1": [
+    "Veenbodem: wat is veen en waarom is het belangrijk voor bouwen?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "4b9c1f81587d86a62534"
+  },
+  "/kennisbank/verschil-fase-0-en-fase-1/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/verschil-fase-0-en-fase-1/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Verschil tussen fase 0 en fase 1 | MV Funderingsscan",
+   "description": "Fase 0 of fase 1: wat is het verschil? Een vergelijkingstabel van beide fasen van funderingsonderzoek plus een eenvoudige beslishulp voor jouw situatie.",
+   "h1": [
+    "Wat is het verschil tussen fase 0 en fase 1?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "1a34f090f39c146dbc09"
+  },
+  "/kennisbank/verzakking-woning/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/verzakking-woning/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Is mijn huis aan het verzakken? Signalen | MV Funderingsscan",
+   "description": "Vraag je je af of je huis verzakt? Lees welke signalen kunnen wijzen op verzakking, wat ook andere oorzaken kunnen zijn en wat een verstandige eerste stap is.",
+   "h1": [
+    "Is mijn huis aan het verzakken? Signalen en een eerste stap"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "e56a7e4502603d4cbe0c"
+  },
+  "/kennisbank/visuele-funderingsinspectie/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/visuele-funderingsinspectie/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Visuele funderingsinspectie: waar let je op?",
+   "description": "Wat wordt er bekeken bij een visuele funderingsinspectie? Van gevels en scheuren tot vloeren, kozijnen en kruipruimte, plus de grenzen van wat je ziet.",
+   "h1": [
+    "Visuele funderingsinspectie: wat wordt er buiten en binnen bekeken?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "c722c728df4982010534"
+  },
+  "/kennisbank/vloerveldwaterpassing/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/vloerveldwaterpassing/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Vloerveldwaterpassing: wat is het? | MV Funderingsscan",
+   "description": "Wat is een vloerveldwaterpassing en wat zeggen hoogteverschillen in je vloer over zakking van de woning? Uitleg over meetraster, hoogtekaart en beperkingen.",
+   "h1": [
+    "Wat is een vloerveldwaterpassing?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "3530327827ef196aad54"
+  },
+  "/kennisbank/wanneer-fase-1/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/wanneer-fase-1/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Wanneer is fase 1 funderingsonderzoek nodig?",
+   "description": "Wanneer wordt fase 1 funderingsonderzoek geadviseerd? De signalen en situaties die na een quickscan tot vervolgonderzoek met metingen kunnen leiden.",
+   "h1": [
+    "Wanneer is fase 1 funderingsonderzoek nodig?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "e033b9edfc85a2774a93"
+  },
+  "/kennisbank/wanneer-funderingsonderzoek/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/wanneer-funderingsonderzoek/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Wanneer is funderingsonderzoek nodig? | MV Funderingsscan",
+   "description": "Wanneer is funderingsonderzoek verstandig? Acht situaties op een rij, van aankoop en verkoop tot scheuren, scheefstand, bodemdaling en taxatie.",
+   "h1": [
+    "Wanneer is funderingsonderzoek verstandig?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "5ca81954a5c14b41a064"
+  },
+  "/kennisbank/wat-is-een-funderingsscan/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/wat-is-een-funderingsscan/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Wat is een funderingsscan? Heldere uitleg",
+   "description": "Wat is een funderingsscan precies? Lees in gewone taal wat er gebeurt, wat het oplevert en wanneer zo&#x27;n eerste onderzoek naar je fundering zinvol is.",
+   "h1": [
+    "Wat is een funderingsscan?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "eed72925efbf1d2e7be5"
+  },
+  "/kennisbank/wat-is-een-quickscan-fundering/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/wat-is-een-quickscan-fundering/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Wat is een quickscan fundering? | MV Funderingsscan",
+   "description": "Quickscan, funderingscheck of fase 0: wat betekenen deze termen en hoe hangen ze samen? Uitleg over de quickscan fundering en wat je ervan mag verwachten.",
+   "h1": [
+    "Wat is een quickscan fundering?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "c53207543d03ad4a6898"
+  },
+  "/kennisbank/wat-is-fase-0/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/wat-is-fase-0/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Wat is fase 0 bij funderingsonderzoek? | MV Funderingsscan",
+   "description": "Wat is fase 0 bij funderingsonderzoek? Een compacte definitie, de drie onderdelen van het vooronderzoek en wat het je oplevert als huiseigenaar of koper.",
+   "h1": [
+    "Wat is fase 0 bij funderingsonderzoek?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "5de63ef5d4dd89bbc1e8"
+  },
+  "/kennisbank/wat-is-fase-1/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/wat-is-fase-1/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Wat is fase 1 funderingsonderzoek? | MV Funderingsscan",
+   "description": "Fase 1 is het vervolgonderzoek met metingen na een quickscan. Lees welke metingen erbij horen, wat ze laten zien en wanneer fase 1 wordt geadviseerd.",
+   "h1": [
+    "Wat is fase 1 bij funderingsonderzoek?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "d4d5e2ccce79e3a75a6c"
+  },
+  "/kennisbank/wat-is-funderingsonderzoek/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/wat-is-funderingsonderzoek/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Wat is funderingsonderzoek? Fasen en keuzes",
+   "description": "Wat is funderingsonderzoek en welke stap past bij jouw woning? Uitleg over fase 0, fase 1, nader onderzoek en herstelplan, plus wie wat doet en wanneer.",
+   "h1": [
+    "Wat is funderingsonderzoek? Alle stappen op een rij"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "aa10be2229b873d50894"
+  },
+  "/kennisbank/wat-kost-een-funderingsscan/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/wat-kost-een-funderingsscan/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Wat kost een funderingsscan en wat levert het op?",
+   "description": "Wat kost een funderingsscan en wat levert het op? Prijzen inclusief btw voor fase 0 en fase 1, wat de prijs bepaalt en hoe het zich verhoudt tot herstel.",
+   "h1": [
+    "Wat kost een funderingsscan en wat levert het op?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "f90a94baf2b25721722f"
+  },
+  "/kennisbank/wat-kost-fase-0/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/wat-kost-fase-0/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Wat kost fase 0? Prijs en inhoud van de Quick Scan",
+   "description": "Wat kost fase 0 funderingsonderzoek? Lees wat je krijgt voor de indicatieve prijs vanaf €350 en waarom de prijs per woning kan verschillen.",
+   "h1": [
+    "Wat kost fase 0 funderingsonderzoek en wat zit erin?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "a6bbedbc26cb7576e72d"
+  },
+  "/kennisbank/wat-na-een-quickscan/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/wat-na-een-quickscan/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Wat na een quickscan fundering? | MV Funderingsscan",
+   "description": "Je hebt een quickscan laten doen, en nu? Per uitkomst lees je wat je doet: van geen directe aanleiding en monitoren tot aanvullend onderzoek of fase 1.",
+   "h1": [
+    "Wat doe je na een quickscan fundering?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "f3991eb4c9d6542684af"
+  },
+  "/kennisbank/wat-wordt-onderzocht/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/wat-wordt-onderzocht/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Wat wordt onderzocht bij funderingsonderzoek?",
+   "description": "Wat wordt er onderzocht bij funderingsonderzoek? Een volledige lijst van alle onderdelen in fase 0 en fase 1, van archief en bodem tot metingen en scheuren.",
+   "h1": [
+    "Wat wordt er onderzocht bij funderingsonderzoek?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "9bf99e31757470bee4e5"
+  },
+  "/kennisbank/zandbodem/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/zandbodem/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Zandbodem en fundering: wat moet je weten?",
+   "description": "Is een zandbodem stabiel voor je woning? Lees hoe zand verschilt van veen en klei, waarom ook op zand zakking mogelijk is en wat de Hondsrug betekent.",
+   "h1": [
+    "Zandbodem en fundering: stabiel, maar niet zonder aandachtspunten"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "70de3db7c4eb96d1ddc1"
+  },
+  "/kennisbank/zetting/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/zetting/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Zetting van een woning: wat is het? | MV Funderingsscan",
+   "description": "Wat is zetting, waarom zakt elke woning een beetje en wanneer wordt het een probleem? Heldere uitleg over gelijkmatige en ongelijke zetting van woningen.",
+   "h1": [
+    "Zetting van een woning: waarom elk huis een beetje zakt"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "DefinedTerm",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "4b49c63ee4e5f7645f8b"
+  },
+  "/kennisbank/zettingsmeting/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/zettingsmeting/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Zettingsmeting: zakking van je woning volgen",
+   "description": "Wat is een zettingsmeting? Waarom één meting een momentopname is en je pas met herhaalmetingen ziet of een woning nog zakt. Uitleg, aanpak en beperkingen.",
+   "h1": [
+    "Zettingsmeting: zien of een woning nog beweegt"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "c16061faefd7cea62228"
+  },
+  "/klemmende-deuren-en-ramen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/klemmende-deuren-en-ramen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Klemmende deuren en ramen: fundering of niet?",
+   "description": "Klemmen je deuren of ramen? Vaak ligt het aan vocht, scharnieren of houtwerking. Lees welke signalen op vervorming wijzen en doe zelf de check.",
+   "h1": [
+    "Klemmende deuren en ramen: onschuldig of een signaal van de fundering?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "ad5b9209eeac875bb226"
+  },
+  "/kosten-funderingsonderzoek-berekenen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/kosten-funderingsonderzoek-berekenen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Kostenwijzer funderingsonderzoek: welke dienst past?",
+   "description": "Kostenwijzer: kies wat je wilt laten onderzoeken en zie welke dienst past, met de indicatieve prijs. Plus een vergelijking van check, Quick Scan en fase 1.",
+   "h1": [
+    "Kostenwijzer: welk onderzoek past en wat kost het?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "fb283508d9c73ed2e8da"
+  },
+  "/makelaars-en-taxateurs/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/makelaars-en-taxateurs/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek voor makelaars en taxateurs",
+   "description": "Funderingsonderzoek voor makelaars en taxateurs in Friesland en Groningen: wat een Quick Scan oplevert, wat niet en hoe je het voor een klant regelt.",
+   "h1": [
+    "Funderingsonderzoek voor makelaars en taxateurs"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "3ec37908f71eff5b578e"
+  },
+  "/meetwaarden-uitgelegd/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/meetwaarden-uitgelegd/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Meetwaarden fundering uitgelegd: wat betekent 12 mm/m?",
+   "description": "Wat betekent een scheefstand van 12 mm/m? Reken meetwaarden om naar verhouding, procent en graden, en lees waarom context belangrijker is dan één getal.",
+   "h1": [
+    "Wat betekent mijn meetgegeven?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "11c643c1b74417b6903b"
+  },
+  "/over-ons/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/over-ons/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Over ons: onafhankelijk funderingsonderzoek",
+   "description": "MV Funderingsscan uit Leeuwarden doet uitsluitend funderingsonderzoek voor woningen in Friesland en Groningen, onafhankelijk en zonder eigen herstelwerk.",
+   "h1": [
+    "Over MV Funderingsscan"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "Person",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "2630d7b94f2450ea4400"
+  },
+  "/prijzen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/prijzen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Prijzen funderingsscan fase 0 en 1, incl. btw",
+   "description": "Prijzen funderingsscan: fase 0 vanaf €350 en fase 1 vanaf €950, inclusief btw. Lees wat er bij de prijs inbegrepen is en waar de exacte prijs van afhangt.",
+   "h1": [
+    "Prijzen funderingsscan: fase 0 en fase 1, inclusief btw"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "09cb182004f018ec36a4"
+  },
+  "/privacyverklaring/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/privacyverklaring/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Privacyverklaring | MV Funderingsscan B.V.",
+   "description": "Hoe MV Funderingsscan B.V. omgaat met je persoonsgegevens: welke gegevens, waarvoor, hoe lang, met wie en welke rechten je hebt.",
+   "h1": [
+    "Privacyverklaring"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "8690b9658a9de04748f3"
+  },
+  "/problemen-met-houten-palen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/problemen-met-houten-palen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Problemen met houten palen onder je woning",
+   "description": "Houten paalfundering en problemen: hoe grondwater, droogstand en paalrot samenhangen, wat fase 0 kan zeggen en wanneer een inspectieput nodig is.",
+   "h1": [
+    "Problemen met een houten paalfundering: oorzaken, risico’s en onderzoek"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "96ab9c7a375dc91aa4c2"
+  },
+  "/quickscan-fundering/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/quickscan-fundering/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Quickscan fundering in Friesland en Groningen",
+   "description": "Wat is een quickscan fundering (funderingsquickscan)? Lees wat wel en niet wordt onderzocht, wat het oplevert en wat het kost: vanaf €350 incl. btw.",
+   "h1": [
+    "Quickscan fundering"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "898f46182e05b7ee0c0c"
+  },
+  "/scheefstand-woning/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/scheefstand-woning/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Scheefstand woning: oorzaken en meting | MV Funderingsscan",
+   "description": "Staat je woning scheef? Lees waar je scheefstand ziet, welke oorzaken mogelijk zijn, waarom oude gevels soms nooit te lood stonden en hoe je het meet.",
+   "h1": [
+    "Scheefstand van een woning: wat het is en hoe je het laat beoordelen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "3be39441c2eb5879a49a"
+  },
+  "/scheuren-in-gevel/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/scheuren-in-gevel/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Scheuren in gevel: soorten, oorzaken en advies",
+   "description": "Scheuren in je gevel? Uitgebreide gids over verticale, horizontale, diagonale en trapvormige scheuren, mogelijke oorzaken en wanneer inspectie zinvol is.",
+   "h1": [
+    "Scheuren in de gevel: wat ze kunnen betekenen en wat je doet"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "81122b2c78e2ea80f1a6"
+  },
+  "/status/": {
+   "canonical": "",
+   "robots": "noindex, nofollow",
+   "title": "Voortgang van je QuickScan | MV Funderingsscan",
+   "description": "Bekijk met je persoonlijke link de voortgang van je QuickScan-aanvraag bij MV Funderingsscan.",
+   "h1": [
+    "Voortgang van je QuickScan"
+   ],
+   "jsonld": [],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "23cf24ad8c8e701465a5"
+  },
+  "/vertel-wat-je-ziet/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/vertel-wat-je-ziet/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Scheur of signaal? Vertel ons wat je ziet, met foto",
+   "description": "Vink aan welke signalen je herkent, zoals scheuren of klemmende deuren, en stuur je vraag met foto&#x27;s. We laten weten welke vervolgstap zinvol kan zijn.",
+   "h1": [
+    "Heb je een scheur of ander signaal? Vertel ons wat je ziet"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "5400001ffd37d13e9bf8"
+  },
+  "/verzakking-woning/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/verzakking-woning/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Verzakking woning: signalen en oorzaken | MV Funderingsscan",
+   "description": "Verzakt je woning? Lees het verschil tussen zetting en verzakking, welke signalen je ziet, mogelijke oorzaken en wat een quickscan je kan vertellen.",
+   "h1": [
+    "Verzakking van een woning: zetting, signalen en wanneer je laat onderzoeken"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "5bf661e7c5f5c769732a"
+  },
+  "/welke-fundering-heeft-mijn-woning/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/welke-fundering-heeft-mijn-woning/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Welke fundering heeft mijn woning? Bouwjaar-tijdlijn",
+   "description": "Welke funderingswijzen kunnen bij jouw bouwjaar voorkomen? Vul het bouwjaar in en lees waarom het bouwjaar alleen het funderingstype niet vaststelt.",
+   "h1": [
+    "Welke fundering heeft mijn woning?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "4b9a12a3567c84bc82c4"
+  },
+  "/welke-stap-past-bij-mij/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/welke-stap-past-bij-mij/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Stappenhulp funderingsonderzoek: welke stap past bij jou?",
+   "description": "Wanneer is funderingsonderzoek zinvol? Doorloop de stappenhulp voor kopen, verkopen, taxatie of signalen in je woning, en bekijk drie voorbeeldscenario&#x27;s.",
+   "h1": [
+    "Welke stap past bij jouw situatie?"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
+   "hash": "c708752828cc279d1a0b"
+  },
+  "/werkgebied/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/werkgebied/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Werkgebied: Friesland, Groningen, Noord-Drenthe",
+   "description": "Waar voert MV Funderingsscan funderingsonderzoek uit? In heel Friesland, de hele provincie Groningen en Noord-Drenthe, vanuit Leeuwarden. Bekijk de plaatsen.",
+   "h1": [
+    "Ons werkgebied: Friesland, Groningen en Noord-Drenthe"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "5ad22be5fc4163da9217"
+  },
+  "/werkwijze/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/werkwijze/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Werkwijze funderingsonderzoek in 7 stappen",
+   "description": "Zo verloopt funderingsonderzoek bij MV Funderingsscan: van aanvraag en archiefonderzoek tot inspectie, analyse, rapport en eventueel vervolgonderzoek.",
+   "h1": [
+    "Werkwijze: zo verloopt funderingsonderzoek bij MV Funderingsscan"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "5bff44775a7d8bd735b5"
+  },
+  "/woningeigenaren/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/woningeigenaren/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek voor woningeigenaren | MV Funderingsscan",
+   "description": "Woon je al in je huis en twijfel je over de fundering? Lees welke signalen ertoe doen, wat een Quick Scan onderzoekt en wanneer vervolgonderzoek past.",
+   "h1": [
+    "Funderingsonderzoek voor woningeigenaren"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "bcd7a96ccffd5e06329c"
+  }
+ },
+ "sitemap": [
+  "https://www.mvfunderingsquickscan.nl/",
+  "https://www.mvfunderingsquickscan.nl/algemene-voorwaarden/",
+  "https://www.mvfunderingsquickscan.nl/bronnen-en-richtlijnen/",
+  "https://www.mvfunderingsquickscan.nl/contact/",
+  "https://www.mvfunderingsquickscan.nl/fase-0-funderingsonderzoek-aankoop/",
+  "https://www.mvfunderingsquickscan.nl/fase-0-funderingsonderzoek/",
+  "https://www.mvfunderingsquickscan.nl/fase-1-funderingsonderzoek/",
+  "https://www.mvfunderingsquickscan.nl/fundering-op-staal/",
+  "https://www.mvfunderingsquickscan.nl/funderingsinspectie/",
+  "https://www.mvfunderingsquickscan.nl/funderingsmetingen/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-achtkarspelen/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-appingedam/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-bij-aankoop/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-bij-verkoop/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-dantumadiel/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-de-fryske-marren/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-delfzijl/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-drachten/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-eemsdelta/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-franeker/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-friesland/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-groningen-stad/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-groningen/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-haren/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-harlingen/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-heerenveen/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-het-hogeland/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-leeuwarden/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-midden-groningen/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-noardeast-fryslan/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-noord-drenthe/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-ooststellingwerf/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-opsterland/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-pekela/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-sneek/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-stadskanaal/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-taxatie/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-tytsjerksteradiel/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-veendam/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-westerkwartier/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-westerwolde/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-weststellingwerf/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-winschoten/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-woning/",
+  "https://www.mvfunderingsquickscan.nl/funderingsproblemen-klei/",
+  "https://www.mvfunderingsquickscan.nl/funderingsproblemen-veen/",
+  "https://www.mvfunderingsquickscan.nl/funderingsproblemen/",
+  "https://www.mvfunderingsquickscan.nl/funderingsquiz/",
+  "https://www.mvfunderingsquickscan.nl/funderingsrapport/",
+  "https://www.mvfunderingsquickscan.nl/funderingsrisicoklasse-uitgelegd/",
+  "https://www.mvfunderingsquickscan.nl/funderingsscan-aanvragen/",
+  "https://www.mvfunderingsquickscan.nl/funderingsscan-friesland/",
+  "https://www.mvfunderingsquickscan.nl/funderingsscan-groningen/",
+  "https://www.mvfunderingsquickscan.nl/funderingsscan-leeuwarden/",
+  "https://www.mvfunderingsquickscan.nl/funderingsscan/",
+  "https://www.mvfunderingsquickscan.nl/gratis-funderingscheck/",
+  "https://www.mvfunderingsquickscan.nl/huis-kopen-funderingscheck/",
+  "https://www.mvfunderingsquickscan.nl/hulpmiddelen/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/archiefonderzoek-fundering/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/begrippenlijst/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/bodemdaling/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/fundering-op-staal/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsherstel/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsonderzoek-voor-bod/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsproblemen-friesland/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsproblemen-groningen/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsrapport-lezen/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsrapport-voor-verkoper/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsrisico-bij-aankoop/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsrisico-inschatting/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsrisico/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsscan-bij-aankoop/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsscan-bij-verkoop/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsscan-en-hypotheek/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsscan-en-taxatie/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/grondwater-en-fundering/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/grondwatermeting/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/heb-ik-een-funderingsscan-nodig/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/helling-in-vloer/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/hoe-lang-duurt-funderingsonderzoek/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/hoogtemeting/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/houten-paalfundering/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/kleibodem/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/klemmende-deuren/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/klemmende-ramen/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/kosten-fase-1/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/kosten-funderingsherstel/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/kruipruimte-inspectie/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/lintvoegwaterpassing/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/loodmeting/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/maaiveldhoogte/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/monitoring-scheuren/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/ongelijke-zetting/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/paalfundering/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/paalrot/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/peilverschillen/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/scheefstand/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/scheefstandsmeting/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/scheuren-bij-aanbouw/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/scheuren-boven-kozijnen/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/scheuren-in-gevel/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/scheuren-in-metselwerk/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/scheuren-in-woning/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/scheurmeting/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/scheurpatronen/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/subsidie-funderingsonderzoek-friesland/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/veenbodem/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/verschil-fase-0-en-fase-1/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/verzakking-woning/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/visuele-funderingsinspectie/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/vloerveldwaterpassing/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/wanneer-fase-1/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/wanneer-funderingsonderzoek/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/wat-is-een-funderingsscan/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/wat-is-een-quickscan-fundering/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/wat-is-fase-0/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/wat-is-fase-1/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/wat-is-funderingsonderzoek/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/wat-kost-een-funderingsscan/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/wat-kost-fase-0/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/wat-na-een-quickscan/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/wat-wordt-onderzocht/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/zandbodem/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/zetting/",
+  "https://www.mvfunderingsquickscan.nl/kennisbank/zettingsmeting/",
+  "https://www.mvfunderingsquickscan.nl/klemmende-deuren-en-ramen/",
+  "https://www.mvfunderingsquickscan.nl/kosten-funderingsonderzoek-berekenen/",
+  "https://www.mvfunderingsquickscan.nl/makelaars-en-taxateurs/",
+  "https://www.mvfunderingsquickscan.nl/meetwaarden-uitgelegd/",
+  "https://www.mvfunderingsquickscan.nl/over-ons/",
+  "https://www.mvfunderingsquickscan.nl/prijzen/",
+  "https://www.mvfunderingsquickscan.nl/privacyverklaring/",
+  "https://www.mvfunderingsquickscan.nl/problemen-met-houten-palen/",
+  "https://www.mvfunderingsquickscan.nl/quickscan-fundering/",
+  "https://www.mvfunderingsquickscan.nl/scheefstand-woning/",
+  "https://www.mvfunderingsquickscan.nl/scheuren-in-gevel/",
+  "https://www.mvfunderingsquickscan.nl/vertel-wat-je-ziet/",
+  "https://www.mvfunderingsquickscan.nl/verzakking-woning/",
+  "https://www.mvfunderingsquickscan.nl/welke-fundering-heeft-mijn-woning/",
+  "https://www.mvfunderingsquickscan.nl/welke-stap-past-bij-mij/",
+  "https://www.mvfunderingsquickscan.nl/werkgebied/",
+  "https://www.mvfunderingsquickscan.nl/werkwijze/",
+  "https://www.mvfunderingsquickscan.nl/woningeigenaren/"
+ ],
+ "redirects": [
+  {
+   "source": "/:path*",
+   "destination": "https://www.mvfunderingsquickscan.nl/:path*",
+   "has": [
+    {
+     "type": "host",
+     "value": "mvfunderingsquickscan.nl"
+    }
+   ]
+  },
+  {
+   "source": "/index.html",
+   "destination": "/",
+   "has": null
+  },
+  {
+   "source": "/fase-0/",
+   "destination": "/fase-0-funderingsonderzoek/",
+   "has": null
+  },
+  {
+   "source": "/fase-1/",
+   "destination": "/fase-1-funderingsonderzoek/",
+   "has": null
+  },
+  {
+   "source": "/fase0/",
+   "destination": "/fase-0-funderingsonderzoek/",
+   "has": null
+  },
+  {
+   "source": "/fase1/",
+   "destination": "/fase-1-funderingsonderzoek/",
+   "has": null
+  },
+  {
+   "source": "/quickscan/",
+   "destination": "/quickscan-fundering/",
+   "has": null
+  },
+  {
+   "source": "/aanvragen/",
+   "destination": "/funderingsscan-aanvragen/",
+   "has": null
+  },
+  {
+   "source": "/kennisbank/wat-is-fase-0-funderingsonderzoek/",
+   "destination": "/kennisbank/wat-is-fase-0/",
+   "has": null
+  },
+  {
+   "source": "/kennisbank/wat-is-fase-1-funderingsonderzoek/",
+   "destination": "/kennisbank/wat-is-fase-1/",
+   "has": null
+  },
+  {
+   "source": "/kennisbank/wat-kost-een-funderingsonderzoek/",
+   "destination": "/kennisbank/wat-kost-een-funderingsscan/",
+   "has": null
+  },
+  {
+   "source": "/kennisbank/funderingsonderzoek-bij-aankoop/",
+   "destination": "/kennisbank/funderingsscan-bij-aankoop/",
+   "has": null
+  },
+  {
+   "source": "/kennisbank/scheuren-in-de-gevel-en-fundering/",
+   "destination": "/kennisbank/scheuren-in-gevel/",
+   "has": null
+  },
+  {
+   "source": "/woningkopers/",
+   "destination": "/funderingsonderzoek-bij-aankoop/",
+   "has": null
+  },
+  {
+   "source": "/verkopers/",
+   "destination": "/funderingsonderzoek-bij-verkoop/",
+   "has": null
+  },
+  {
+   "source": "/funderingsscan-check/",
+   "destination": "/gratis-funderingscheck/",
+   "has": null
+  }
+ ],
+ "robots": [
+  "User-agent: *",
+  "Allow: /",
+  "Disallow: /api/",
+  "User-agent: OAI-SearchBot",
+  "Allow: /",
+  "Disallow: /api/",
+  "User-agent: ChatGPT-User",
+  "Allow: /",
+  "Disallow: /api/",
+  "User-agent: PerplexityBot",
+  "Allow: /",
+  "Disallow: /api/",
+  "User-agent: Bingbot",
+  "Allow: /",
+  "Disallow: /api/",
+  "User-agent: Googlebot",
+  "Allow: /",
+  "Disallow: /api/",
+  "Sitemap: https://www.mvfunderingsquickscan.nl/sitemap.xml",
+  "Sitemap: https://www.mvfunderingsquickscan.nl/nieuws-sitemap.xml"
+ ]
+}

@@ -14,6 +14,7 @@ import { slugify, isSlug, plainText } from './_lib/markdown.js';
 import { renderNewsArticle } from './_lib/news-render.js';
 import { rapportActies } from './_lib/rapport-api.js';
 import { redactieActies } from './_lib/redactie-api.js';
+import { meldIndexNow, INDEXNOW_HOST } from './_lib/indexnow.js';
 
 const NOINDEX = { 'X-Robots-Tag': 'noindex, nofollow', 'Referrer-Policy': 'no-referrer' };
 const json = (res, status, body) => sendJson(res, status, body, NOINDEX);
@@ -47,6 +48,17 @@ function validateNews(input, { publishing }) {
   return { row, errors };
 }
 
+/**
+ * Meldt gewijzigde nieuws-URL's bij IndexNow. Alleen op productie, met een korte time-out; een fout blokkeert nooit het
+ * opslaan of publiceren (meldIndexNow gooit niet, en eventuele fouten worden alleen gelogd).
+ */
+async function meldNieuws(...slugs) {
+  if (process.env.VERCEL_ENV !== 'production') return;
+  const urls = [...slugs.filter(Boolean).map((s) => `https://${INDEXNOW_HOST}/nieuws/${s}/`), `https://${INDEXNOW_HOST}/nieuws/`];
+  const r = await meldIndexNow(urls, { timeoutMs: 4000 });
+  if (r.fout && !/ontbreekt/.test(r.fout)) logError('indexnow', new Error(r.fout));
+}
+
 const publicNews = (n) => n && ({ ...n, author: undefined, author_name: n.author?.name || null });
 
 async function newsActions(db, req, res, actie, user, url) {
@@ -71,6 +83,7 @@ async function newsActions(db, req, res, actie, user, url) {
     if (!existing) row.author_id = user.id;
     try {
       const saved = existing ? await db.newsUpdate(existing.id, row) : await db.newsCreate({ ...row, status: 'concept' });
+      if (existing?.status === 'gepubliceerd') await meldNieuws(saved.slug, existing.slug !== saved.slug ? existing.slug : null);
       return json(res, 200, { ok: true, item: publicNews(saved) });
     } catch (err) {
       if (err.status === 409) return fail(res, 409, 'Deze URL (slug) is al in gebruik door een ander bericht. Kies een andere.');
@@ -85,9 +98,14 @@ async function newsActions(db, req, res, actie, user, url) {
       if (n.featured_image && !n.featured_image_alt) errors.push('Vul een beschrijving (alt-tekst) van de afbeelding in.');
       if (errors.length) return json(res, 422, { ok: false, error: errors.join(' '), errors });
       const saved = await db.newsUpdate(n.id, { status: 'gepubliceerd', published_at: n.published_at || new Date().toISOString() });
+      await meldNieuws(saved.slug);
       return json(res, 200, { ok: true, item: publicNews(saved) });
     }
-    if (body.status === 'concept') return json(res, 200, { ok: true, item: publicNews(await db.newsUpdate(n.id, { status: 'concept' })) });
+    if (body.status === 'concept') {
+      const saved = await db.newsUpdate(n.id, { status: 'concept' });
+      if (n.status === 'gepubliceerd') await meldNieuws(n.slug); // de URL geeft nu 404
+      return json(res, 200, { ok: true, item: publicNews(saved) });
+    }
     return fail(res, 422, 'Onbekende status.');
   }
   if (actie === 'nieuws-verwijderen') {
@@ -96,6 +114,7 @@ async function newsActions(db, req, res, actie, user, url) {
     if (!n) return fail(res, 404, 'Bericht niet gevonden.');
     if (n.featured_image) await db.removeObject('nieuws', n.featured_image).catch((e) => logError('nieuws-afbeelding', e));
     await db.newsDelete(n.id);
+    if (n.status === 'gepubliceerd') await meldNieuws(n.slug);
     return json(res, 200, { ok: true });
   }
   if (actie === 'nieuws-afbeelding') {

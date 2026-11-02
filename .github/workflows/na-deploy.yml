@@ -1,0 +1,91 @@
+# Na elke Vercel-deploy (GitHub-deployment-status van Vercel):
+#  - Productie: live-controle (robots, sitemaps, redirects, sleutelbestand) en IndexNow voor alleen de pagina's die
+#    sinds de vorige productiedeploy nieuw, inhoudelijk gewijzigd of verwijderd zijn.
+#  - Preview: controle dat de preview noindex is.
+# IndexNow kan een deploy nooit blokkeren: de deploy is op dit moment al live, en de stap heeft continue-on-error.
+name: Na deploy
+
+on:
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "URL's om bij IndexNow te melden (gescheiden door spaties)"
+        required: true
+      droog:
+        description: 'Alleen controleren, niets versturen'
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  deployments: read
+
+concurrency:
+  group: na-deploy-${{ github.event.deployment.environment || 'handmatig' }}
+  cancel-in-progress: false
+
+jobs:
+  productie:
+    if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success' && startsWith(github.event.deployment.environment, 'Production')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      VERCEL: '1'
+      DEPLOY_SHA: ${{ github.event.deployment.sha }}
+      INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.deployment.sha }}
+          fetch-depth: 0 # nodig om de vorige productieversie te kunnen bouwen
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+      - name: Live-controle productie
+        run: node scripts/live-controle.mjs --ci
+      - name: Build (voor de vergelijking met de vorige productiedeploy)
+        run: npm run build
+      - name: IndexNow (alleen nieuwe, gewijzigde en verwijderde pagina's)
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/indexnow.mjs --vorige-deploy
+
+  preview:
+    if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success' && !startsWith(github.event.deployment.environment, 'Production')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.deployment.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+      - name: Preview is noindex
+        env:
+          PREVIEW_URL: ${{ github.event.deployment_status.environment_url || github.event.deployment_status.target_url }}
+        run: node scripts/live-controle.mjs --preview --basis "$PREVIEW_URL" --ci
+
+  handmatig:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+      - name: IndexNow handmatig
+        continue-on-error: true
+        env:
+          URLS: ${{ inputs.urls }}
+          DROOG: ${{ inputs.droog && '--droog' || '' }}
+        run: node scripts/indexnow.mjs --urls $URLS $DROOG

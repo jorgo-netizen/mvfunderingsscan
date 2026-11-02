@@ -1,0 +1,42 @@
+# Kwaliteitscontrole bij elke push en pull request: inhoud, build, audit, tests, SEO/GEO-regressie en geheimen.
+# Alleen lezen: deze workflow publiceert niets en heeft geen secrets nodig.
+name: Kwaliteit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kwaliteit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  controle:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      VERCEL: '1' # zelfde gedrag als de Vercel-build (lastmod.json niet herschrijven)
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+      - name: Geheimen-scan
+        run: node scripts/geheimen-scan.mjs
+      - name: Inhoudscontrole
+        run: npm run check
+      - name: Build
+        run: npm run build
+      - name: Audit
+        run: node scripts/audit.mjs
+      - name: Tests
+        run: npm test
+      - name: SEO/GEO-regressie tegen de nulmeting
+        run: node scripts/seo-regressie.mjs --ci
