@@ -222,7 +222,7 @@ export function head(page) {
   ${(page.styles || []).map((href) => `<link rel="stylesheet" href="${asset(href)}">
   `).join('')}${page.tools ? TOOLS_ASSETS : ''}${(page.scripts || []).map((src) => `<script src="${asset(src)}" defer></script>
   `).join('')}<script>document.documentElement.classList.add('js');</script>
-  ${page.schema}
+  ${page.analytics === false ? '' : '<script defer src="/_vercel/insights/script.js"></script>\n  '}${page.schema}
 </head>`;
 }
 

@@ -11,7 +11,7 @@ export function statusPage() {
     path: '/status/', title: 'Voortgang van je QuickScan | MV Funderingsscan',
     description: 'Bekijk met je persoonlijke link de voortgang van je QuickScan-aanvraag bij MV Funderingsscan.',
     robots: 'noindex, nofollow', canonical: false, schema: '',
-    preload: '<meta name="referrer" content="no-referrer">\n  ', styles: ['/portaal.css'], scripts: ['/status.js'],
+    preload: '<meta name="referrer" content="no-referrer">\n  ', styles: ['/portaal.css'], scripts: ['/status.js'], analytics: false,
   };
   return `${head(page)}
 ${header('')}
@@ -85,7 +85,7 @@ export function beheerPage() {
   const page = {
     path: '/beheer/', title: 'Beheer | MV Funderingsscan', description: 'Beheerportaal voor medewerkers van MV Funderingsscan.',
     robots: 'noindex, nofollow', canonical: false, schema: '',
-    preload: '<meta name="referrer" content="no-referrer">\n  ', styles: ['/portaal.css'], scripts: ['/beheer.js'],
+    preload: '<meta name="referrer" content="no-referrer">\n  ', styles: ['/portaal.css'], scripts: ['/beheer.js'], analytics: false,
   };
   return `${head(page)}
 <body class="portal-body">
