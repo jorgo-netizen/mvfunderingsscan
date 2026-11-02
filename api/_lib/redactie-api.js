@@ -180,6 +180,11 @@ export async function redactieActies(db, req, res, actie, user, url, { json, fai
     if (w.ollama_url !== undefined) { const u = str(w.ollama_url, 200); if (!/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(u)) return fail(res, 422, 'Ollama moet op deze pc draaien (http://localhost:11434).'); await zet('ollama_url', u); }
     if (w.min_relevantie !== undefined) await zet('min_relevantie', Math.max(0, Math.min(100, parseInt(w.min_relevantie, 10) || 0)));
     if (w.bewaar_dagen !== undefined) await zet('bewaar_dagen', Math.max(14, Math.min(365, parseInt(w.bewaar_dagen, 10) || 60)));
+    if (w.per_run !== undefined) await zet('per_run', Math.max(1, Math.min(8, parseInt(w.per_run, 10) || 4)));
+    if (w.voorraad && typeof w.voorraad === 'object') {
+      const v = {}; for (const t of TYPES) if (w.voorraad[t] !== undefined) v[t] = Math.max(0, Math.min(20, parseInt(w.voorraad[t], 10) || 0));
+      await zet('voorraad', v);
+    }
     if (w.frequentie && typeof w.frequentie === 'object') {
       const f = {};
       for (const t of TYPES) {

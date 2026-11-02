@@ -24,7 +24,6 @@ const args = process.argv.slice(2);
 const vlag = (n) => args.includes(`--${n}`);
 const waarde = (n) => { const i = args.indexOf(`--${n}`); return i >= 0 ? args[i + 1] : undefined; };
 const DROOG = vlag('droog');
-const MAX_PER_RUN = Number(waarde('max') || 4);
 const log = (...a) => console.log(new Date().toISOString().slice(11, 19), ...a);
 
 // ---------------------------------------------------------------- configuratie
@@ -76,7 +75,8 @@ function kiesTaken(ctx, alleenType) {
   const types = alleenType ? [alleenType] : ['nieuws', 'regionaal', 'weetje', 'kennis', 'zelftest', 'praktijk'];
   for (const type of types) {
     const t = ctx.tellingen[type] || { aantal: 0, doel: 0 };
-    if (!alleenType && t.aantal >= t.doel) continue;
+    // schrijven zolang de voorraad niet vol is én het maximum voor deze week/maand niet is bereikt
+    if (!alleenType && (t.aantal >= t.doel || (t.open ?? 0) >= (t.voorraad ?? t.doel))) continue;
     if (type === 'nieuws' || type === 'regionaal') {
       const item = vrij.find((i) => !gebruikt.has(i.id) && (type === 'regionaal' ? i.regio : true));
       if (!item) { log(`  ${type}: geen geschikt nieuwsitem (relevantie ≥ ${inst.min_relevantie})`); continue; }
@@ -118,7 +118,7 @@ async function main() {
   const taken = [
     ...ctx.regenereer.map((c) => ({ type: c.type, onderwerp: c.onderwerp || c.titel, vervangt: c.id, notitie: c.regenereer_notitie, items: c.items || [] })),
     ...kiesTaken(ctx, waarde('type')),
-  ].slice(0, MAX_PER_RUN);
+  ].slice(0, Number(waarde('max') || ctx.instellingen.per_run || 4));
   if (!taken.length) log('Niets te schrijven volgens de planning.');
 
   for (const taak of taken) {

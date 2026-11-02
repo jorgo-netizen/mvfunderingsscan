@@ -55,7 +55,10 @@ export default async function handler(req, res) {
       for (const t of TYPES) {
         const per = inst.frequentie[t]?.per === 'maand' ? 'maand' : 'week';
         const vanaf = periodeStart(per);
-        tellingen[t] = { per, aantal: concepten.filter((c) => c.type === t && c.created_at >= vanaf).length, doel: Math.max(0, parseInt(inst.frequentie[t]?.aantal, 10) || 0) };
+        tellingen[t] = {
+          per, aantal: concepten.filter((c) => c.type === t && c.created_at >= vanaf).length, doel: Math.max(0, parseInt(inst.frequentie[t]?.aantal, 10) || 0),
+          open: concepten.filter((c) => c.type === t && c.status === 'concept').length, voorraad: Math.max(0, parseInt(inst.voorraad[t], 10) || 0),
+        };
       }
       const regenereer = [];
       for (const c of concepten.filter((x) => x.regenereren && x.status === 'concept')) {

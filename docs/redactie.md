@@ -58,15 +58,15 @@ Open PowerShell en pas het pad aan als de projectmap ergens anders staat:
 ```
 $actie = New-ScheduledTaskAction -Execute "cmd.exe" -Argument "/c cd /d C:\Users\Gebruiker\Desktop\mvfunderingsscan\mvfunderingsscan && npm run redactie >> tmp\redactie.log 2>&1"
 $tijd = New-ScheduledTaskTrigger -Daily -At 7:30
-$inst = New-ScheduledTaskSettingsSet -StartWhenAvailable -ExecutionTimeLimit (New-TimeSpan -Hours 2)
+$inst = New-ScheduledTaskSettingsSet -StartWhenAvailable -WakeToRun -ExecutionTimeLimit (New-TimeSpan -Hours 2)
 Register-ScheduledTask -TaskName "MV Funderingsscan redactie" -Action $actie -Trigger $tijd -Settings $inst
 ```
-- **De pc staat om 7:30 uit?** Dankzij "StartWhenAvailable" draait de taak zodra de pc weer aanstaat.
+- **De pc staat om 7:30 in slaapstand?** Dankzij "WakeToRun" maakt Windows de pc wakker voor de taak (als dat in het energiebeheer is toegestaan). Is de pc helemaal uit, dan draait de taak zodra hij weer aangaat ("StartWhenAvailable"). Ben je langer weg: zet de pc in slaapstand in plaats van uit.
 - **Ollama:** moet draaien. Dat doet het standaard na installatie; het start mee met Windows.
 - **Uitzetten:** zet in het portaal "Redactie actief" uit, of verwijder de taak in Taakplanner.
 
 ## Instellen in het portaal (Redactie → Instellingen en planning)
-- **Planning:** hoeveel concepten per soort, per week of per maand. Standaard: 2 nieuws, 2 weetjes, 1 kennisartikel en 1 regionaal stuk per week, plus 1 zelftest per maand. De bot maakt per run hoogstens één concept per soort, en hoogstens 4 per run.
+- **Voorraad en planning:** per soort stel je in hoeveel concepten er altijd klaar moeten staan om na te lezen (voorraad) en hoeveel er hoogstens per week of maand bij komen. Elke run vult de bot de voorraad aan, met hoogstens één concept per soort en hoogstens het ingestelde aantal per run (standaard 4). Standaard: voorraad 4 nieuws, 4 weetjes, 2 kennisartikelen, 2 regionaal en 1 zelftest; maximaal 4 nieuws, 3 weetjes, 1 kennisartikel en 2 regionaal per week, plus 1 zelftest per maand.
 - **Minimale relevantie:** onder deze score (0–100) gebruikt de bot een nieuwsitem niet voor een artikel. Standaard is dat 55.
 - **Onderwerpen:** de lijsten voor weetjes, kennisartikelen, zelftests en praktijkvoorbeelden. De bot slaat onderwerpen over die al op de site of in een concept staan.
 - **Model en Ollama-adres.**

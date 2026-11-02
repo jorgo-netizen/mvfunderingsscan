@@ -707,6 +707,7 @@ test('redactie: bot-koppeling vereist een geldig token en kan alleen concepten a
     assert.equal((await bot('context', {}, 'fout-token')).status, 401);
     const ctx = await bot('context');
     assert.equal(ctx.status, 200); assert.ok(ctx.json.bronnen.length >= 10, 'startbronnen'); assert.ok(ctx.json.tellingen.nieuws);
+    assert.deepEqual([ctx.json.tellingen.nieuws.open, ctx.json.tellingen.nieuws.voorraad, ctx.json.instellingen.per_run], [0, 4, 4], 'voorraad en maximum per run');
     // de bot probeert een gepubliceerd of beoordeeld concept aan te leveren: het blijft een gewoon concept
     const r = await bot('concept', { concept: { ...testConcept(), status: 'gepubliceerd', nieuws_id: '00000000-0000-0000-0000-000000000000', beoordeeld_door: 'x' } });
     assert.equal(r.status, 200); assert.equal(r.json.status, 'concept');

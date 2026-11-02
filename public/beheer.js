@@ -1271,11 +1271,13 @@
     const minRel = h('input', { type: 'number', id: 'ri-minrel', min: 0, max: 100, value: s.min_relevantie });
     const bewaar = h('input', { type: 'number', id: 'ri-bewaar', min: 14, max: 365, value: s.bewaar_dagen });
     const freq = {};
+    const perRun = h('input', { type: 'number', id: 'ri-perrun', min: 1, max: 8, value: s.per_run ?? 4 });
     const freqRijen = Object.entries(RTYPE).map(([t, l]) => {
+      const voorraad = h('input', { type: 'number', min: 0, max: 20, value: s.voorraad?.[t] ?? 0, 'aria-label': `${l} voorraad` });
       const aantal = h('input', { type: 'number', min: 0, max: 14, value: s.frequentie[t]?.aantal ?? 0, 'aria-label': `${l} aantal` });
       const per = h('select', { 'aria-label': `${l} per` }, h('option', { value: 'week', text: 'per week' }), h('option', { value: 'maand', text: 'per maand' })); per.value = s.frequentie[t]?.per || 'week';
-      freq[t] = { aantal, per };
-      return h('tr', {}, h('td', { text: l }), h('td', {}, aantal), h('td', {}, per));
+      freq[t] = { aantal, per, voorraad };
+      return h('tr', {}, h('td', { text: l }), h('td', {}, voorraad), h('td', {}, aantal), h('td', {}, per));
     });
     const onderwerpen = {};
     const ondVelden = ['weetje', 'kennis', 'zelftest', 'praktijk'].map((t) => {
@@ -1291,8 +1293,9 @@
           field('Adres van Ollama', ollama, 'Op deze pc: http://localhost:11434'),
           field('Minimale relevantie voor een nieuwsartikel (0–100)', minRel), field('Ongebruikte nieuwsitems bewaren (dagen)', bewaar))),
       h('section', { class: 'portal-card' }, h('h2', { class: 'portal-h2', text: 'Planning: hoeveel concepten' }),
-        h('p', { class: 'portal-hint', text: 'De bot maakt per run hoogstens één concept per soort en maximaal 4 per run, tot het aantal voor de week of maand is bereikt. Zo komen er geen stapels oppervlakkige artikelen.' }),
-        h('table', { class: 'portal-table' }, h('tbody', {}, freqRijen))),
+        h('p', { class: 'portal-hint', text: 'Voorraad: zoveel concepten per soort staan altijd klaar om na te lezen. Elke run vult de bot aan (hoogstens één per soort), zolang het maximum voor de week of maand niet is bereikt. Zo staat er ook werk klaar als jij er niet bent, zonder stapels oppervlakkige artikelen.' }),
+        h('table', { class: 'portal-table' }, h('thead', {}, h('tr', {}, ['Soort', 'Voorraad klaarzetten', 'Maximaal nieuw', 'Per'].map((x) => h('th', { scope: 'col', text: x })))), h('tbody', {}, freqRijen)),
+        field('Maximaal aantal nieuwe concepten per run (per ochtend)', perRun)),
       h('section', { class: 'portal-card' }, h('h2', { class: 'portal-h2', text: 'Onderwerpen' }), ondVelden),
       h('div', { class: 'portal-actions' }, h('button', { type: 'button', class: 'btn btn-gold', text: 'Instellingen opslaan', onclick: async (e) => {
         busy(e.target, true);
@@ -1300,6 +1303,7 @@
           await api('redactie-instellingen-opslaan', { method: 'POST', body: { instellingen: {
             actief: actief.checked, taalcontrole: taal.checked, model: model.value, ollama_url: ollama.value, min_relevantie: minRel.value, bewaar_dagen: bewaar.value,
             frequentie: Object.fromEntries(Object.entries(freq).map(([t, x]) => [t, { aantal: x.aantal.value, per: x.per.value }])),
+            voorraad: Object.fromEntries(Object.entries(freq).map(([t, x]) => [t, x.voorraad.value])), per_run: perRun.value,
             onderwerpen: Object.fromEntries(Object.entries(onderwerpen).map(([t, ta]) => [t, ta.value.split('\n').map((x) => x.trim()).filter(Boolean)])),
           } } });
           flash(msg, 'Opgeslagen. De bot gebruikt dit bij de volgende run.', 'ok');

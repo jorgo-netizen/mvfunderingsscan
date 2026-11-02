@@ -20,7 +20,11 @@ export const STANDAARD = {
   min_relevantie: 55,
   bewaar_dagen: 60, // niet-gebruikte nieuwsitems worden daarna opgeruimd
   // aantal concepten per periode (week of maand); 0 = uit
-  frequentie: { nieuws: { aantal: 2, per: 'week' }, weetje: { aantal: 2, per: 'week' }, kennis: { aantal: 1, per: 'week' }, zelftest: { aantal: 1, per: 'maand' }, regionaal: { aantal: 1, per: 'week' }, praktijk: { aantal: 0, per: 'maand' } },
+  // maximum aantal nieuwe concepten per periode (week of maand); 0 = uit
+  frequentie: { nieuws: { aantal: 4, per: 'week' }, weetje: { aantal: 3, per: 'week' }, kennis: { aantal: 1, per: 'week' }, zelftest: { aantal: 1, per: 'maand' }, regionaal: { aantal: 2, per: 'week' }, praktijk: { aantal: 0, per: 'maand' } },
+  // voorraad: zoveel concepten per soort moeten klaarstaan om na te lezen; de bot vult elke run aan (binnen het maximum hierboven)
+  voorraad: { nieuws: 4, weetje: 4, kennis: 2, zelftest: 1, regionaal: 2, praktijk: 0 },
+  per_run: 4, // maximaal aantal nieuwe concepten per run
   // onderwerpen voor weetjes, kennisartikelen, zelftests en praktijkvoorbeelden (de bot slaat onderwerpen over die al bestaan)
   onderwerpen: {
     weetje: ['Waarom houten funderingspalen onder water blijven zitten', 'Wat negatieve kleef met paalfunderingen doet', 'Het verschil tussen zetting en bodemdaling', 'Waarom scheuren in gevels vaak schuin lopen', 'Wat een lintvoeg vertelt over zakking', 'Waarom droge zomers funderingen kunnen raken', 'Wat een kruipruimte zegt over de fundering', 'Waarom woningen van vóór 1970 extra aandacht krijgen', 'Wat inklinking van veen betekent', 'Waarom bomen dicht bij huis invloed kunnen hebben'],
@@ -32,6 +36,7 @@ export const STANDAARD = {
 export const instellingen = (opgeslagen = {}) => {
   const s = { ...STANDAARD, ...opgeslagen };
   s.frequentie = { ...STANDAARD.frequentie, ...(opgeslagen.frequentie || {}) };
+  s.voorraad = { ...STANDAARD.voorraad, ...(opgeslagen.voorraad || {}) };
   s.onderwerpen = { ...STANDAARD.onderwerpen, ...(opgeslagen.onderwerpen || {}) };
   return s;
 };
