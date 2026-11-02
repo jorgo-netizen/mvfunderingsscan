@@ -198,7 +198,11 @@ export function render(page0) {
     });
   }
   if (p.faqs && p.faqs.length) graph.push(faqSchema(url, p.faqs));
-  const page = { ...p, schema: jsonld(graph) };
+  const page = {
+    ...p, schema: jsonld(graph),
+    ...(p.article ? { og_type: 'article' } : {}),
+    ...(p.hero_image ? { og_image: { url: `/assets/og/${p.hero_image.name}.jpg`, alt: p.hero_image.alt } } : {}),
+  };
 
   const heroImg = p.hero_image
     ? `<div class="page-hero-media">${img(p.hero_image.name, p.hero_image.alt, '100vw', { lazy: false })}</div>`

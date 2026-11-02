@@ -1878,5 +1878,128 @@
         "text": "Achtergrond over bodem en water in Friesland."
       }
     ]
+  },
+  {
+    "path": "/kennisbank/subsidie-funderingsonderzoek-friesland/",
+    "title": "Subsidie funderingsonderzoek Friesland: zo werkt het",
+    "description": "Subsidie voor funderingsonderzoek in het Friese veenweidegebied: wie komt in aanmerking, hoeveel (80% tot €4.000) en welke eisen gelden voor het onderzoek.",
+    "keyword": "subsidie funderingsonderzoek friesland",
+    "intent": "informatief",
+    "nav_active": "/kennisbank/",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/kennisbank/",
+        "name": "Kennisbank"
+      },
+      {
+        "href": "/kennisbank/subsidie-funderingsonderzoek-friesland/",
+        "name": "Subsidie funderingsonderzoek Friesland"
+      }
+    ],
+    "eyebrow": "Kennisbank · Kosten en regelingen",
+    "h1": "Subsidie voor funderingsonderzoek in Friesland: voorwaarden en bedragen",
+    "lead": "Woon je in het <strong>Friese veenweidegebied</strong> in een woning met een bouwvergunning van 1972 of eerder? Dan kun je subsidie krijgen voor funderingsonderzoek: 80% van de geoffreerde kosten, tot €4.000 per woning. Het onderzoek moet worden uitgevoerd door een bureau op de erkenningslijst van het KCAF, volgens de KCAF-richtlijnen. Hieronder lees je de voorwaarden zoals ze in de regeling staan.",
+    "facts": [
+      {
+        "label": "Regeling",
+        "value": "Subsidieregeling Funderingsonderzoek Fries Veenweidegebied"
+      },
+      {
+        "label": "Bedrag",
+        "value": "80% tot €4.000 per woning"
+      },
+      {
+        "label": "Aanvragen",
+        "value": "tot en met 15 september 2029"
+      },
+      {
+        "label": "Eis",
+        "value": "bureau op de KCAF-erkenningslijst"
+      }
+    ],
+    "article": true,
+    "sections": [
+      {
+        "id": "wat-is-de-regeling",
+        "h2": "Welke subsidie bestaat er voor funderingsonderzoek in Friesland?",
+        "answer": "De provincie Fryslân heeft de Subsidieregeling Funderingsonderzoek Fries Veenweidegebied. Die vergoedt een deel van de kosten van onderzoek naar de staat van de fundering van een woning in het veenweidegebied.",
+        "body": "<p>Gedeputeerde Staten van Fryslân hebben de regeling vastgesteld op 19 december 2023. Hij geldt tot en met 2029 en is bedoeld voor eigenaren in het veenweidegebied, waar inklinking van veen en wisselende grondwaterstanden de fundering van oudere woningen kunnen raken. Lees meer over die achtergrond bij <a href=\"/funderingsproblemen-veen/\">funderingsproblemen op veen</a> en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>.</p>\n<p>De volledige tekst staat in de <a href=\"https://lokaleregelgeving.overheid.nl/CVDR713677\" rel=\"noopener\" target=\"_blank\">officiële regeling op lokaleregelgeving.overheid.nl</a>. Op deze pagina vatten we de belangrijkste regels samen in gewone taal. Bij twijfel geldt altijd de tekst van de provincie.</p>"
+      },
+      {
+        "id": "wie-komt-in-aanmerking",
+        "h2": "Wie komt in aanmerking voor de subsidie?",
+        "answer": "Eigenaar-bewoners van een woning in het Fries veenweidegebied, individueel of samen per bouwkundige eenheid, en een VvE namens de eigenaren. Woningcorporaties komen niet in aanmerking.",
+        "body": "<p>Of je adres in het gebied ligt, hangt af van de postcodes in de bijlage van de regeling. Je kunt dat nagaan met de postcodechecker op <a href=\"https://veenweidefryslan.frl/\" rel=\"noopener\" target=\"_blank\">veenweidefryslan.frl</a>. Daarnaast gelden onder meer deze voorwaarden:</p>\n<ul><li>Je bent eigenaar én bewoner van de woning (volgens het kadaster), of je vraagt aan als VvE.</li><li>De woning is gebouwd op basis van een bouwvergunning van 1972 of eerder. Een vergunning van ná 1972 is een reden om de subsidie te weigeren.</li><li>Voor dezelfde woning is nog geen subsidie voor funderingsonderzoek of -herstel verstrekt.</li><li>Het onderzoek is nog niet gestart op het moment dat de provincie je aanvraag ontvangt.</li></ul>\n<p>Bij een gezamenlijke aanvraag voor meerdere woningen in één bouwkundige eenheid, bijvoorbeeld een rij of twee-onder-een-kap, dient één hoofdaanvrager de aanvraag in.</p>"
+      },
+      {
+        "id": "hoeveel-subsidie",
+        "h2": "Hoeveel subsidie krijg je?",
+        "answer": "80% van de geoffreerde kosten, tot maximaal €4.000 per woning. Kom je in aanmerking voor kwijtschelding van gemeentelijke of waterschapsbelastingen, dan kan dat oplopen tot de volledige geoffreerde kosten, met een maximum van €7.500.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th scope=\"col\">Situatie</th><th scope=\"col\">Vergoeding volgens de regeling</th></tr></thead><tbody>\n<tr><td>Onderzoek voor één woning</td><td>80% van de geoffreerde kosten, maximaal €4.000</td></tr>\n<tr><td>Gezamenlijk onderzoek, meerdere woningen in één bouwkundige eenheid</td><td>80%, maximaal €4.000 per woning en in totaal maximaal €24.999</td></tr>\n<tr><td>Eigenaar-bewoner met recht op kwijtschelding van gemeentelijke of waterschapsbelastingen</td><td>de volledige geoffreerde kosten, maximaal €7.500</td></tr>\n</tbody></table></div>\n<p>De btw telt mee als subsidiabele kosten. De provincie verdeelt het geld op volgorde van binnenkomst van volledige aanvragen; per kalenderjaar is er een vast budget (subsidieplafond). Is dat op, dan moet je wachten tot het volgende jaar.</p>"
+      },
+      {
+        "id": "eisen-onderzoek",
+        "h2": "Aan welk onderzoek stelt de regeling eisen?",
+        "answer": "De subsidie geldt alleen voor funderingsonderzoek volgens de KCAF-richtlijnen, uitgevoerd door een onderzoeksbureau dat op de erkenningslijst van het KCAF staat.",
+        "body": "<p>De regeling vraagt een onderzoek naar de staat van de fundering, met een integrale beoordeling van de funderingsconstructie volgens de richtlijnen van het <a href=\"https://www.kcaf.nl/\" rel=\"noopener\" target=\"_blank\">KCAF</a>. Verder moet het onderzoek binnen 9 maanden na het subsidiebesluit klaar zijn (eenmalig met 9 maanden te verlengen bij een goede reden), en moet het rapport binnen twee weken naar het Fries Funderingsloket.</p>\n<p>Bij je aanvraag lever je onder meer een door het erkende bureau ondertekende offerte en een bewijs van eigendom aan. Kies dus eerst een bureau van de erkenningslijst en vraag een offerte die aansluit op de regeling.</p>\n<div class=\"callout callout-note\"><strong>Quick Scan en subsidie</strong><p>Een <a href=\"/fase-0-funderingsonderzoek/\">Quick Scan (fase 0)</a> is een vooronderzoek en geen volledig onderzoek naar de staat van de fundering. Of een bepaald onderzoek onder de regeling valt, beoordeelt de provincie. Twijfel je, vraag het dan vooraf na bij het Fries Funderingsloket, en start het onderzoek waarvoor je subsidie wilt pas na je aanvraag.</p></div>"
+      },
+      {
+        "id": "stappen",
+        "h2": "Hoe vraag je de subsidie aan?",
+        "answer": "Controleer je postcode, kies een erkend onderzoeksbureau, vraag een offerte aan en dien je aanvraag in met het aanvraagformulier van de provincie, vóórdat het onderzoek begint.",
+        "body": "<ol><li><strong>Postcode controleren</strong> met de postcodechecker op veenweidefryslan.frl.</li><li><strong>Bouwjaar nagaan:</strong> is de bouwvergunning van 1972 of eerder?</li><li><strong>Erkend bureau kiezen</strong> van de erkenningslijst van het KCAF en een ondertekende offerte vragen.</li><li><strong>Aanvraag indienen</strong> met het aanvraagformulier van Gedeputeerde Staten, met de offerte en het bewijs van eigendom. Aanvragen kan tot en met 15 september 2029.</li><li><strong>Na toekenning:</strong> laat het onderzoek uitvoeren en zorg dat het rapport binnen twee weken bij het Fries Funderingsloket is.</li></ol>\n<p>Wil je eerst weten of onderzoek bij jouw woning überhaupt nodig is? Lees <a href=\"/kennisbank/wanneer-funderingsonderzoek/\">wanneer funderingsonderzoek verstandig is</a> of doe de <a href=\"/gratis-funderingscheck/\">online funderingscheck</a>.</p>"
+      },
+      {
+        "id": "groningen-drenthe",
+        "h2": "Is er ook subsidie in Groningen en Drenthe?",
+        "answer": "Een vergelijkbare provinciale regeling voor funderingsonderzoek in Groningen of Drenthe is ons niet bekend. Gemeenten hebben soms een eigen regeling; kijk daarvoor op de website van je gemeente.",
+        "body": "<p>In delen van Groningen spelen daarnaast de regelingen rond mijnbouwschade en versterking. Die staan los van funderingsonderzoek naar bijvoorbeeld paalrot of zetting; informatie daarover vind je bij het <a href=\"https://www.schadedoormijnbouw.nl/\" rel=\"noopener\" target=\"_blank\">Instituut Mijnbouwschade Groningen</a>. Lees ook <a href=\"/funderingsonderzoek-groningen/\">funderingsonderzoek in Groningen</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Krijg ik subsidie voor een Quick Scan?",
+        "a": "<p>De regeling vraagt een onderzoek naar de staat van de fundering volgens de KCAF-richtlijnen, door een bureau op de KCAF-erkenningslijst. Een Quick Scan is een vooronderzoek. Vraag bij het Fries Funderingsloket na of een bepaald onderzoek in aanmerking komt.</p>"
+      },
+      {
+        "q": "Mag ik het onderzoek al laten uitvoeren voordat ik subsidie aanvraag?",
+        "a": "<p>Nee. Is het onderzoek al gestart voordat de provincie je aanvraag ontvangt, dan is dat een reden om de subsidie te weigeren.</p>"
+      },
+      {
+        "q": "Geldt de subsidie voor huurwoningen?",
+        "a": "<p>De regeling is voor eigenaar-bewoners en VvE's. Woningcorporaties zijn uitgesloten.</p>"
+      },
+      {
+        "q": "Waar staat de officiële tekst?",
+        "a": "<p>In de <a href=\"https://lokaleregelgeving.overheid.nl/CVDR713677\" rel=\"noopener\" target=\"_blank\">Subsidieregeling Funderingsonderzoek Fries Veenweidegebied</a> op lokaleregelgeving.overheid.nl.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/funderingsproblemen-veen/",
+        "label": "Funderingsproblemen op veen",
+        "text": "Waarom het veenweidegebied extra aandacht vraagt."
+      },
+      {
+        "href": "/funderingsonderzoek-friesland/",
+        "label": "Funderingsonderzoek in Friesland",
+        "text": "Bodem, woningen en aanpak per regio."
+      },
+      {
+        "href": "/kennisbank/wat-kost-een-funderingsscan/",
+        "label": "Wat kost een funderingsscan?",
+        "text": "Prijzen van fase 0 en fase 1, inclusief btw."
+      }
+    ],
+    "bron_bedragen": [
+      "4.000",
+      "7.500",
+      "24.999"
+    ],
+    "bron_url": "https://lokaleregelgeving.overheid.nl/CVDR713677"
   }
 ]

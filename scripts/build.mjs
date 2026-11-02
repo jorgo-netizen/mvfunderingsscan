@@ -80,7 +80,9 @@ function metDatum(path, html) {
   paginaDatum[path] = datum;
   return html.split(`"dateModified": "${TODAY}"`).join(`"dateModified": "${datum}"`)
     .split(`"datePublished": "${TODAY}"`).join(`"datePublished": "${LASTMOD[path].eerste}"`)
-    .split(`<time>${datumNl(TODAY)}</time>`).join(`<time datetime="${datum}">${datumNl(datum)}</time>`);
+    .split(`<time>${datumNl(TODAY)}</time>`).join(`<time datetime="${datum}">${datumNl(datum)}</time>`)
+    .split(`property="article:modified_time" content="${TODAY}"`).join(`property="article:modified_time" content="${datum}"`)
+    .split(`property="article:published_time" content="${TODAY}"`).join(`property="article:published_time" content="${LASTMOD[path].eerste}"`);
 }
 
 function write(path, content) {
@@ -433,43 +435,32 @@ ${footer()}`);
 function buildMetaFiles(paths) {
   write('/robots.txt', `# robots.txt – mvfunderingsquickscan.nl
 # Alle zoekmachines en AI-zoekdiensten zijn welkom.
+# /beheer/ en /status/ zijn bewust NIET geblokkeerd: ze hebben noindex (meta en X-Robots-Tag), en dat kan Google alleen lezen als hij de pagina mag ophalen.
 
 User-agent: *
 Allow: /
 Disallow: /api/
-Disallow: /beheer/
-Disallow: /status/
 
 # Expliciet: OpenAI zoekcrawler en gebruikersverzoeken vanuit ChatGPT
 User-agent: OAI-SearchBot
 Allow: /
 Disallow: /api/
-Disallow: /beheer/
-Disallow: /status/
 
 User-agent: ChatGPT-User
 Allow: /
 Disallow: /api/
-Disallow: /beheer/
-Disallow: /status/
 
 User-agent: PerplexityBot
 Allow: /
 Disallow: /api/
-Disallow: /beheer/
-Disallow: /status/
 
 User-agent: Bingbot
 Allow: /
 Disallow: /api/
-Disallow: /beheer/
-Disallow: /status/
 
 User-agent: Googlebot
 Allow: /
 Disallow: /api/
-Disallow: /beheer/
-Disallow: /status/
 
 Sitemap: ${DOMAIN}/sitemap.xml
 Sitemap: ${DOMAIN}/nieuws-sitemap.xml

@@ -681,8 +681,12 @@ test('trackingpagina en beheer: noindex, geen externe scripts, niet in de sitema
   }
   const sitemap = readFileSync(join(dist, 'sitemap.xml'), 'utf8');
   assert.ok(!sitemap.includes('/status/') && !sitemap.includes('/beheer/'));
+  // niet geblokkeerd in robots.txt, zodat Google de noindex (meta + X-Robots-Tag) kan lezen; alleen /api/ is dicht
   const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
-  assert.ok(robots.includes('Disallow: /beheer/') && robots.includes('nieuws-sitemap.xml'));
+  assert.ok(!/^Disallow: \/(beheer|status)\//m.test(robots) && robots.includes('Disallow: /api/') && robots.includes('nieuws-sitemap.xml'));
+  const vercel = JSON.parse(readFileSync(join(import.meta.dirname, '..', 'vercel.json'), 'utf8'));
+  for (const p of ['/beheer/(.*)', '/status/(.*)']) assert.ok(vercel.headers.find((h) => h.source === p)?.headers.some((x) => x.key === 'X-Robots-Tag' && /noindex/.test(x.value)), `${p} X-Robots-Tag`);
+  assert.ok(vercel.headers.some((h) => h.has?.[0]?.value?.includes('vercel\\.app') && h.headers.some((x) => x.value === 'noindex')), 'alle vercel.app-adressen noindex');
 });
 
 // ---------------------------------------------------------------- AI-redactie

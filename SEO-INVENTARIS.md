@@ -1,10 +1,10 @@
 # SEO-inventaris – mvfunderingsquickscan.nl
 
-*Opgesteld op 2 november 2026 op basis van de lokale projectcode (`C:\Users\Gebruiker\Desktop\mvfunderingsscan\mvfunderingsscan`, branch `main`, laatste commit `b48e18a`) en de lokaal gebouwde uitvoer in `dist/` (build van 2 november 2026, 13:22).*
+*Opgesteld op 2 november 2026 op basis van de lokale projectcode (`C:\Users\Gebruiker\Desktop\mvfunderingsscan\mvfunderingsscan`, branch `main`, laatste commit `7089de9`) en de werkmap zoals die er om 13:25 uitzag. Om die stand te meten is een kopie van de werkmap buiten het project gebouwd; die gaf dezelfde uitkomst als de `dist/` van 13:24 in het project.*
 
-> **Let op – momentopname van werk in uitvoering.** Tijdens deze analyse werd er tegelijk aan het project gewerkt. Tussen 13:18 en 13:22 zijn `src/lib/layout.mjs`, `src/content/site.json`, `public/script.js` en `public/styles.css` gewijzigd. Daarnaast verscheen het nieuwe bestand `public/consent.js` en is `dist/` opnieuw gebouwd. De werkmap bevat **niet-gecommitte wijzigingen** in `AUDIT.md`, `scripts/build.mjs`, `src/content/pages/kennisbank-g.json`, `src/content/pages/tools-u.json`, `src/content/site.json`, `src/content/urls.json`, `src/lib/layout.mjs`, `public/script.js` en `public/styles.css`, plus de nieuwe bestanden `public/consent.js` en `src/content/lastmod.json`. Dit rapport beschrijft de **lokale stand** inclusief die wijzigingen. De **live site** kan afwijken zolang die wijzigingen niet gecommit en gedeployd zijn. De live site zelf is voor dit rapport **niet** bezocht.
+> **Let op – momentopname van werk in uitvoering.** Tijdens deze analyse werd er tegelijk aan het project gewerkt. Om 13:25 verschenen ook `SEO-AUDIT.md`, `SEO-PAGINAS.md`, `SEO-WIJZIGINGEN.md`, `SEO-NA-CONTROLE.md` en `scripts/seo-rapport.mjs`, en zijn `src/content/pages/pillar-a.json` en `problems-e.json` gewijzigd. Die bestanden zijn niet door deze inventaris gemaakt en ook niet inhoudelijk beoordeeld. Tussen 13:18 en 13:25 zijn `src/lib/layout.mjs`, `src/content/site.json`, `public/script.js` en `public/styles.css` gewijzigd. Daarnaast verscheen het nieuwe bestand `public/consent.js` en is `dist/` opnieuw gebouwd. Om 13:26 zijn al die wijzigingen gecommit en naar `origin/main` gepusht in commit **`7089de9`** (“SEO: lastmod per pagina, … GA4 met toestemming klaargezet (uit tot ID), SEO-rapporten”). Die commit nam ook een eerdere versie van dit bestand mee. De commit is niet als onderdeel van deze inventaris gemaakt. Dit rapport beschrijft de stand van `7089de9`. Of Vercel die versie al heeft gedeployd, is niet gecontroleerd; de live site zelf is voor dit rapport **niet** bezocht.
 >
-> Voor deze inventaris is niets aan de website gewijzigd. Er is ook geen nieuwe build gedraaid; de bestaande `dist/` is alleen gelezen.
+> Voor deze inventaris is niets aan de website gewijzigd. In het project is geen build gedraaid; de bestaande `dist/` is alleen gelezen.
 
 ## Werkwijze en bronnen
 
@@ -31,7 +31,7 @@
 | `src/content/urls.json` | URL-register (142 regels) met groep, zoekwoord, intentie en minimum aantal woorden; bepaalt ook de volgorde in de sitemap. |
 | `src/content/home.json`, `eeat.json` | FAQ en kennisbank-highlights op de homepage; E-E-A-T-gegevens (grotendeels nog placeholders, zie §12). |
 | `src/content/cases/` | Praktijkvoorbeelden. Er staat alleen `_voorbeeld.json` (wordt genegeerd), dus er worden **geen** praktijkvoorbeeldpagina’s gebouwd. |
-| `src/content/lastmod.json` | *(nieuw, niet gecommit)* Vingerafdruk en wijzigingsdatum per pagina, gebruikt voor `<lastmod>` en `dateModified`. |
+| `src/content/lastmod.json` | *(nieuw sinds commit `7089de9`)* Vingerafdruk en wijzigingsdatum per pagina, gebruikt voor `<lastmod>` en `dateModified`. |
 | `public/` | Statische assets (CSS, JS, afbeeldingen), worden 1-op-1 naar `dist/` gekopieerd. |
 | `api/*.js` | Vercel serverless functies (aanvragen, leads, adres, nieuws, beheer, redactie, status, vertaling). |
 | `scripts/dev.mjs` | Lokale ontwikkelserver die de rewrites en headers uit `vercel.json` nabootst. |
@@ -1715,7 +1715,7 @@ Extern: <https://www.autoriteitpersoonsgegevens.nl/>
 - **142 URL’s.** Dat zijn precies alle indexeerbare statische pagina’s, zonder dubbele regels. Niet opgenomen: `/404.html`, `/status/`, `/beheer/` (correct).
 - Absolute URL’s met `https://www.` en een slash aan het eind, gelijk aan de canonicals.
 - `<priority>`: 1.0 (home), 0.9 (`/funderingsscan/`, `/quickscan-fundering/`, `/fase-0-funderingsonderzoek/`), 0.8 (diensten, aankoop, aanvragen), 0.7 (regio, problemen), 0.6 (overig). Google negeert `priority`.
-- `<lastmod>` komt sinds de **niet-gecommitte** wijziging in `build.mjs` uit `src/content/lastmod.json`: de datum wijzigt alleen als de inhoud van `<main>` wijzigt. In de huidige build hebben 132 URL’s `2026-10-30` en 10 URL’s `2026-11-02`.
+- `<lastmod>` komt sinds commit `7089de9` uit `src/content/lastmod.json`: de datum wijzigt alleen als de inhoud van `<main>` wijzigt. In de huidige build hebben 131 URL’s `2026-10-30` en 11 URL’s `2026-11-02`.
 - **Geen `<image:image>`-uitbreiding** en geen sitemap-index. De nieuws-sitemap is een apart bestand.
 - `/nieuws/` zelf staat **niet** in `sitemap.xml`. Het komt alleen in `/nieuws-sitemap.xml` als er minstens één gepubliceerd bericht is.
 
@@ -1746,7 +1746,7 @@ Elke openbare pagina heeft één `<script type="application/ld+json">` met een `
 
 | Type | Aantal pagina’s | Bron / opmerking |
 |---|---|---|
-| `ProfessionalService` (organisatie, `@id …/#organisatie`) | 142 | Naam, legalName, KvK-nummer, logo, image, telefoon, e-mail, adres, **geo** (nieuw, niet gecommit: 53.2152, 5.7799), openingstijden ma–vr 09–17, areaServed (provincies + Noord-Drentse gemeenten + alle gemeenten uit `site.json`), knowsAbout, priceRange. `sameAs` alleen als ingevuld; nu **leeg**, want `eeat.json` heeft alleen placeholders. |
+| `ProfessionalService` (organisatie, `@id …/#organisatie`) | 142 | Naam, legalName, KvK-nummer, logo, image, telefoon, e-mail, adres, **geo** (53.2152, 5.7799; nieuw sinds `7089de9`), openingstijden ma–vr 09–17, areaServed (provincies + Noord-Drentse gemeenten + alle gemeenten uit `site.json`), knowsAbout, priceRange. `sameAs` alleen als ingevuld; nu **leeg**, want `eeat.json` heeft alleen placeholders. |
 | `WebSite` | 142 | Naam, taal, publisher. **Geen `SearchAction`** (de site heeft geen zoekfunctie). |
 | `WebPage` / `ContactPage` / `CollectionPage` | 139 / 1 / 2 | Per pagina, met `dateModified`, breadcrumb-koppeling en `about`. |
 | `BreadcrumbList` | 141 | Alle pagina’s behalve de homepage. |
@@ -1936,7 +1936,7 @@ Niet aanwezig: `article:published_time`, `article:modified_time`, `article:autho
 
 | Integratie | Status in de lokale code |
 |---|---|
-| **Google Analytics 4** | **Niet actief.** Er is ondersteuning toegevoegd, maar die is **nog niet gecommit**: `public/consent.js` (cookiemelding + GA4) en een aanpassing in `head()` die `consent.js` met `data-ga="<ID>"` laadt **als** `site.json → analytics.ga4_id` een geldig `G-…`-ID bevat. Dat veld is nu **leeg** (`"ga4_id": ""`), dus de gebouwde pagina’s bevatten geen GA-code en geen cookiemelding. Volgens `consent.js` laadt GA4 pas na “Accepteren”, met `anonymize_ip`, zonder Google Signals en advertentiepersonalisatie, en stuurt het `generate_lead` bij verzonden formulieren. **Een meet-ID is nergens in de repository te vinden.** |
+| **Google Analytics 4** | **Niet actief.** Ondersteuning is klaargezet (commit `7089de9`): `public/consent.js` (cookiemelding + GA4) en een aanpassing in `head()` die `consent.js` met `data-ga="<ID>"` laadt **als** `site.json → analytics.ga4_id` een geldig `G-…`-ID bevat. Dat veld is nu **leeg** (`"ga4_id": ""`), dus de gebouwde pagina’s bevatten geen GA-code en geen cookiemelding. Volgens `consent.js` laadt GA4 pas na “Accepteren”, met `anonymize_ip`, zonder Google Signals en advertentiepersonalisatie, en stuurt het `generate_lead` bij verzonden formulieren. **Een meet-ID is nergens in de repository te vinden.** |
 | Universal Analytics / Google Tag Manager-container | Niet aanwezig. Er is geen `UA-…`- of `GTM-…`-ID gevonden. `googletagmanager.com/gtag/js` wordt alleen dynamisch geladen door `consent.js`, na toestemming. |
 | **Vercel Web Analytics** | **Actief** op alle openbare pagina’s (143 HTML-bestanden, waaronder `/404.html`): `<script defer src="/_vercel/insights/script.js">`. Cookieloos. Uitgeschakeld op `/status/` en `/beheer/` (`analytics: false`). Sinds commit `b48e18a`. |
 | Google Search Console-verificatie | **Geen** `google-site-verification`-metatag en geen verificatiebestand in `public/`. Verificatie kan via DNS lopen; dat is uit de code niet af te leiden. |
@@ -1949,7 +1949,7 @@ Niet aanwezig: `article:published_time`, `article:modified_time`, `article:autho
 
 Gesorteerd van meer naar minder relevant. Het zijn **bevindingen uit de code**; impact op de live ranking is niet gemeten.
 
-1. **Niet-gecommitte wijzigingen; `lastmod.json` staat niet in git.** `src/content/lastmod.json` is untracked. `build.mjs` schrijft dat bestand alleen buiten Vercel (`!process.env.VERCEL`). Als het niet wordt gecommit, bestaat het op Vercel niet en krijgt **elke pagina bij elke deploy de builddatum** als `<lastmod>` en `dateModified`. Juist dat moet het nieuwe mechanisme voorkomen. Ook de nieuwe titles en descriptions (o.a. homepage, `/welke-stap-past-bij-mij/`), de `geo`-coördinaten en GA4/consent staan nog niet live.
+1. **`lastmod.json` moet bij elke inhoudswijziging mee gecommit worden.** `build.mjs` schrijft `src/content/lastmod.json` alleen bij een lokale build (`!process.env.VERCEL`). Op Vercel krijgt een gewijzigde pagina waarvan de vingerafdruk niet in het gecommitte `lastmod.json` staat, de **builddatum van die deploy**. Bij elke volgende deploy wordt dat opnieuw de nieuwe builddatum, totdat iemand lokaal bouwt en `lastmod.json` commit. Sinds commit `7089de9` staat het bestand in git.
 2. **62 van de 145 titles zijn langer dan 60 tekens.** Google kort titles vaak af rond 580 px (circa 55–60 tekens), waardoor het merk “| MV Funderingsscan” of belangrijke woorden kunnen wegvallen. Lijst:
 
    | URL | Title | Tekens |

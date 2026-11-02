@@ -189,17 +189,21 @@ const TOOLS_ASSETS = `<link rel="stylesheet" href="${asset('/tools.css')}">
 
 export function head(page) {
   const url = DOMAIN + page.path;
-  const ogImg = `${DOMAIN}/assets/img/og-mv-funderingsscan.jpg`;
+  const ogImg = page.og_image ? `${DOMAIN}${page.og_image.url}` : `${DOMAIN}/assets/img/og-mv-funderingsscan.jpg`;
+  const ogAlt = page.og_image ? page.og_image.alt : 'Persoon met een waterpas bij de gevel van een woning';
+  // Google toont ongeveer 60 tekens: bij een langere titel valt de merknaam weg (die staat al in og:site_name en de site-naam van Google)
+  const SUFFIX = ' | MV Funderingsscan';
+  const titel = page.title.length > 60 && page.title.endsWith(SUFFIX) && page.title.length - SUFFIX.length >= 35 ? page.title.slice(0, -SUFFIX.length) : page.title;
   const preload = page.preload || '';
   const robots = page.robots || 'index, follow, max-image-preview:large, max-snippet:-1';
   const canonical = page.canonical !== false ? `<link rel="canonical" href="${url}">\n  ` : '';
-  const ogTitle = esc(page.og_title || page.title);
+  const ogTitle = esc(page.og_title || titel);
   return `<!doctype html>
 <html lang="nl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${esc(page.title)}</title>
+  <title>${esc(titel)}</title>
   <meta name="description" content="${esc(page.description)}">
   <meta name="robots" content="${robots}">
   ${canonical}<meta name="theme-color" content="#102945">
@@ -209,10 +213,12 @@ export function head(page) {
   <meta property="og:title" content="${ogTitle}">
   <meta property="og:description" content="${esc(page.description)}">
   <meta property="og:url" content="${url}">
-  <meta property="og:image" content="${ogImg}">
+  <meta property="og:image" content="${ogImg}">${page.og_type === 'article' ? `
+  <meta property="article:published_time" content="${TODAY}">
+  <meta property="article:modified_time" content="${TODAY}">` : ''}
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Persoon met een waterpas bij de gevel van een woning">
+  <meta property="og:image:alt" content="${esc(ogAlt)}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${ogTitle}">
   <meta name="twitter:description" content="${esc(page.description)}">
@@ -318,7 +324,7 @@ const FOOTER_COLS = [
     ['/kennisbank/vloerveldwaterpassing/', 'Vloerveldwaterpassing'], ['/kennisbank/scheurpatronen/', 'Scheurpatronen'], ['/kennisbank/begrippenlijst/', 'Begrippenlijst']]],
   ['Werkgebied', [
     ['/funderingsonderzoek-friesland/', 'Funderingsonderzoek Friesland'], ['/funderingsonderzoek-groningen/', 'Funderingsonderzoek Groningen'],
-    ['/funderingsonderzoek-leeuwarden/', 'Leeuwarden'], ['/funderingsonderzoek-sneek/', 'Sneek'],
+    ['/funderingsonderzoek-noord-drenthe/', 'Funderingsonderzoek Noord-Drenthe'], ['/funderingsonderzoek-leeuwarden/', 'Leeuwarden'], ['/funderingsonderzoek-sneek/', 'Sneek'],
     ['/funderingsonderzoek-harlingen/', 'Harlingen'], ['/funderingsonderzoek-drachten/', 'Drachten'],
     ['/funderingsonderzoek-heerenveen/', 'Heerenveen'], ['/funderingsonderzoek-groningen-stad/', 'Groningen stad'],
     ['/funderingsonderzoek-appingedam/', 'Appingedam'], ['/funderingsonderzoek-delfzijl/', 'Delfzijl'],

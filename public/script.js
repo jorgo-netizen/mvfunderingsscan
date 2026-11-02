@@ -379,6 +379,10 @@
     const wrap = form.parentElement;
     const success = $('[data-form-success], #formSuccess', wrap);
     const controls = $$('input[required], select[required], textarea[required]', form);
+    // signaal voor analytics: formulier gestart (eenmalig, zonder ingevulde gegevens)
+    form.addEventListener('input', () => {
+      document.dispatchEvent(new CustomEvent('mvfs:event', { detail: { event: 'aanvraag_gestart', formulier: form.dataset.formName || 'aanvraag' } }));
+    }, { once: true });
     const holder = (el) => el.closest('.field, .consent') || el.parentElement;
     const validate = (el) => {
       const ok = el.type === 'checkbox' ? el.checked : el.checkValidity() && el.value.trim() !== '';

@@ -95,7 +95,10 @@ function checkPage(p) {
   const text = [p.title, p.description, p.h1, p.eyebrow, ...(p.sections || []).map((s) => s.h2),
     ...(p.faqs || []).map((f) => f.q), ...(p.related || []).flatMap((r) => [r.label, r.text]), html].join('\n');
   for (const re of FORBIDDEN) if (re.test(strip(text))) E(`verboden/risicovolle tekst gevonden: ${re}`);
-  for (const m of strip(text).matchAll(/€\s?(\d{1,3}(?:\.\d{3})*)/g)) if (!ALLOWED_EURO.has(m[1])) E(`niet-toegestaan bedrag €${m[1]}`);
+  // Andere bedragen alleen als de pagina ze expliciet uit een bron overneemt (veld bron_bedragen, met bron_url).
+  const bronBedragen = new Set(Array.isArray(p.bron_bedragen) ? p.bron_bedragen : []);
+  if (bronBedragen.size && !/^https:\/\//.test(p.bron_url || '')) E('bron_bedragen zonder bron_url');
+  for (const m of strip(text).matchAll(/€\s?(\d{1,3}(?:\.\d{3})*)/g)) if (!ALLOWED_EURO.has(m[1]) && !bronBedragen.has(m[1])) E(`niet-toegestaan bedrag €${m[1]}`);
 
   const hrefs = [...html.matchAll(/href="([^"]*)"/g)].map((m) => m[1]).concat((p.related || []).map((r) => r.href));
   let internal = 0;

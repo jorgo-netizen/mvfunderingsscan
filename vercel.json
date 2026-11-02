@@ -131,7 +131,7 @@
       "has": [
         {
           "type": "host",
-          "value": "mvfunderingsscan.vercel.app"
+          "value": "(?<sub>.+)\\.vercel\\.app"
         }
       ],
       "headers": [

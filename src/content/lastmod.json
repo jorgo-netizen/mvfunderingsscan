@@ -1,7 +1,7 @@
 {
  "/": {
-  "hash": "53d98a15373d234f",
-  "datum": "2026-10-30",
+  "hash": "a6ffd3d5a1f23c2a",
+  "datum": "2026-11-02",
   "eerste": "2026-10-06"
  },
  "/algemene-voorwaarden/": {
@@ -65,8 +65,8 @@
   "eerste": "2026-10-06"
  },
  "/funderingsonderzoek-bij-aankoop/": {
-  "hash": "98ec6d8f22e4ec5f",
-  "datum": "2026-10-30",
+  "hash": "08c1bd796dcf2264",
+  "datum": "2026-11-02",
   "eerste": "2026-10-06"
  },
  "/funderingsonderzoek-bij-verkoop/": {
@@ -105,8 +105,8 @@
   "eerste": "2026-10-06"
  },
  "/funderingsonderzoek-friesland/": {
-  "hash": "68bae8ec7986505b",
-  "datum": "2026-10-30",
+  "hash": "1f6d81d75896a9b7",
+  "datum": "2026-11-02",
   "eerste": "2026-10-06"
  },
  "/funderingsonderzoek-groningen-stad/": {
@@ -115,8 +115,8 @@
   "eerste": "2026-10-06"
  },
  "/funderingsonderzoek-groningen/": {
-  "hash": "9bba6351c2b5da34",
-  "datum": "2026-10-30",
+  "hash": "e3c226f54f0e2501",
+  "datum": "2026-11-02",
   "eerste": "2026-10-06"
  },
  "/funderingsonderzoek-haren/": {
@@ -153,6 +153,11 @@
   "hash": "9e4635c4ceed6fe5",
   "datum": "2026-10-30",
   "eerste": "2026-10-06"
+ },
+ "/funderingsonderzoek-noord-drenthe/": {
+  "hash": "e04169597466addc",
+  "datum": "2026-11-02",
+  "eerste": "2026-11-02"
  },
  "/funderingsonderzoek-ooststellingwerf/": {
   "hash": "fbcf24c8ab102cdc",
@@ -225,8 +230,8 @@
   "eerste": "2026-10-06"
  },
  "/funderingsproblemen-veen/": {
-  "hash": "f2c22b9ddcfe559d",
-  "datum": "2026-10-30",
+  "hash": "97ba971ff1e4ccad",
+  "datum": "2026-11-02",
   "eerste": "2026-10-06"
  },
  "/funderingsproblemen/": {
@@ -255,8 +260,8 @@
   "eerste": "2026-11-02"
  },
  "/funderingsscan-friesland/": {
-  "hash": "4f4dfebbd5481966",
-  "datum": "2026-10-30",
+  "hash": "318ba5c3c803591f",
+  "datum": "2026-11-02",
   "eerste": "2026-10-06"
  },
  "/funderingsscan-groningen/": {
@@ -290,7 +295,7 @@
   "eerste": "2026-10-08"
  },
  "/kennisbank/": {
-  "hash": "1ab8d58338910af5",
+  "hash": "ede7754dc43f31e9",
   "datum": "2026-11-02",
   "eerste": "2026-11-02"
  },
@@ -375,8 +380,8 @@
   "eerste": "2026-10-06"
  },
  "/kennisbank/funderingsscan-en-taxatie/": {
-  "hash": "c16db190e6589b97",
-  "datum": "2026-10-30",
+  "hash": "77d14d4f3c110cf0",
+  "datum": "2026-11-02",
   "eerste": "2026-10-06"
  },
  "/kennisbank/grondwater-en-fundering/": {
@@ -529,6 +534,11 @@
   "datum": "2026-10-30",
   "eerste": "2026-10-06"
  },
+ "/kennisbank/subsidie-funderingsonderzoek-friesland/": {
+  "hash": "1072592117523f4c",
+  "datum": "2026-11-02",
+  "eerste": "2026-11-02"
+ },
  "/kennisbank/veenbodem/": {
   "hash": "5e40db414eb26c84",
   "datum": "2026-10-30",
@@ -560,7 +570,7 @@
   "eerste": "2026-10-06"
  },
  "/kennisbank/wanneer-funderingsonderzoek/": {
-  "hash": "efdc3a48709f7950",
+  "hash": "96eb64f3399750c1",
   "datum": "2026-11-02",
   "eerste": "2026-10-06"
  },
@@ -590,13 +600,13 @@
   "eerste": "2026-10-06"
  },
  "/kennisbank/wat-kost-een-funderingsscan/": {
-  "hash": "0278a6d75e586124",
-  "datum": "2026-10-30",
+  "hash": "47f7b7277e93c341",
+  "datum": "2026-11-02",
   "eerste": "2026-10-06"
  },
  "/kennisbank/wat-kost-fase-0/": {
-  "hash": "89e8a72eb9fd88d4",
-  "datum": "2026-10-30",
+  "hash": "206185e62a71152d",
+  "datum": "2026-11-02",
   "eerste": "2026-10-06"
  },
  "/kennisbank/wat-na-een-quickscan/": {
@@ -650,8 +660,8 @@
   "eerste": "2026-10-06"
  },
  "/prijzen/": {
-  "hash": "f70958660f988b46",
-  "datum": "2026-10-30",
+  "hash": "ddac34f6de38bb80",
+  "datum": "2026-11-02",
   "eerste": "2026-10-06"
  },
  "/privacyverklaring/": {
@@ -675,8 +685,8 @@
   "eerste": "2026-10-06"
  },
  "/scheuren-in-gevel/": {
-  "hash": "27c009868bd242ff",
-  "datum": "2026-10-30",
+  "hash": "9e9ac4838e317402",
+  "datum": "2026-11-02",
   "eerste": "2026-10-06"
  },
  "/status/": {
@@ -690,8 +700,8 @@
   "eerste": "2026-10-08"
  },
  "/verzakking-woning/": {
-  "hash": "769452653af8b4fe",
-  "datum": "2026-10-30",
+  "hash": "0bba2ff3aa7af229",
+  "datum": "2026-11-02",
   "eerste": "2026-10-06"
  },
  "/welke-fundering-heeft-mijn-woning/": {
@@ -705,8 +715,8 @@
   "eerste": "2026-10-08"
  },
  "/werkgebied/": {
-  "hash": "0717de5662d59f96",
-  "datum": "2026-10-30",
+  "hash": "01d85871460a6373",
+  "datum": "2026-11-02",
   "eerste": "2026-10-06"
  },
  "/werkwijze/": {

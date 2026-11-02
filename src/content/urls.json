@@ -279,6 +279,15 @@
     "intent": "lokaal-commercieel"
   },
   {
+    "path": "/funderingsonderzoek-noord-drenthe/",
+    "label": "Noord-Drenthe",
+    "group": "regio",
+    "file": "regio-f.json",
+    "minWords": 900,
+    "keyword": "funderingsonderzoek noord-drenthe",
+    "intent": "lokaal-commercieel"
+  },
+  {
     "path": "/funderingsonderzoek-friesland/",
     "label": "Funderingsonderzoek Friesland",
     "group": "regio",
@@ -1275,6 +1284,15 @@
     "file": "juridisch-w.json",
     "minWords": 0,
     "keyword": "algemene voorwaarden mv funderingsscan",
+    "intent": "informatief"
+  },
+  {
+    "path": "/kennisbank/subsidie-funderingsonderzoek-friesland/",
+    "label": "Subsidie funderingsonderzoek Friesland",
+    "group": "kennisbank",
+    "file": "kennisbank-h.json",
+    "minWords": 800,
+    "keyword": "subsidie funderingsonderzoek friesland",
     "intent": "informatief"
   }
 ]
