@@ -79,6 +79,7 @@ async function newsActions(db, req, res, actie, user, url) {
     const existing = body.id ? (isUuid(body.id) ? await db.newsById(body.id) : null) : null;
     if (body.id && !existing) return fail(res, 404, 'Bericht niet gevonden.');
     const { row, errors } = validateNews(body, { publishing: existing?.status === 'gepubliceerd' });
+    if (existing?.status === 'gepubliceerd' && existing.featured_image && !row.featured_image_alt) errors.push('Vul een beschrijving (alt-tekst) van de afbeelding in.');
     if (errors.length) return json(res, 422, { ok: false, error: errors.join(' '), errors });
     if (!existing) row.author_id = user.id;
     try {
@@ -126,6 +127,8 @@ async function newsActions(db, req, res, actie, user, url) {
       return json(res, 200, { ok: true });
     }
     const type = String(body.type || '');
+    // een gepubliceerd bericht mag niet live staan met een nieuwe afbeelding zonder (of met de oude) beschrijving
+    if (n.status === 'gepubliceerd' && !str(body.alt, 200)) return fail(res, 422, 'Vul eerst de beschrijving (alt-tekst) van de nieuwe afbeelding in; dit bericht is al gepubliceerd.');
     if (!IMAGE_TYPES[type]) return fail(res, 422, 'Alleen JPEG, PNG of WebP is toegestaan.');
     const bytes = Buffer.from(String(body.data || ''), 'base64');
     if (!bytes.length || bytes.length > MAX_IMAGE) return fail(res, 422, 'De afbeelding is leeg of groter dan 2,5 MB.');
