@@ -778,3 +778,37 @@ test('redactie: kwaliteitscontrole, zelftest en opschonen van invoer', async () 
   assert.ok(zk.fouten.some((f) => f.includes('minimaal 5 vragen'))); assert.ok(zk.fouten.some((f) => f.includes('risicoklasse')));
   assert.equal(naarNieuwsRij(schoonConcept(testConcept())).status, 'concept');
 });
+
+// ---------------------------------------------------------------- Doorsturen naar het Mideavastgoed-portaal
+const { signBody } = await import('../api/_lib/portaal.js');
+const PORTAAL_URL = 'https://portaal.test/api/intake/mvfunderingsscan';
+const PORTAAL_SECRET = 'x'.repeat(40);
+
+test('portaal: aanvraag wordt ondertekend doorgestuurd en het opdrachtnummer komt in de kantoormail', async () => {
+  process.env.PORTAAL_INTAKE_URL = PORTAAL_URL; process.env.PORTAAL_INTAKE_SECRET = PORTAAL_SECRET;
+  const ontvangen = [];
+  extraFetch = [[PORTAAL_URL, (url, opts) => { ontvangen.push(opts); return jsonResp({ ok: true, status: 'OPDRACHT', orderNumber: 'MV-2026-0099' }); }]];
+  try {
+    const r = await call(aanvraag, { method: 'POST', url: '/api/aanvraag/', body: { form: 'aanvraag', fields: formFields({ scheuren: 'ja, in de gevel' }) } });
+    assert.equal(r.status, 200);
+    assert.equal(ontvangen.length, 1);
+    const o = ontvangen[0]; const body = JSON.parse(o.body);
+    assert.equal(o.headers['X-Intake-Signature'], signBody(PORTAAL_SECRET, o.headers['X-Intake-Timestamp'], o.body), 'geldige handtekening');
+    assert.equal(body.naam, 'Jan de Vries'); assert.equal(body.type, 'fase0'); assert.equal(body.details.scheuren, 'ja, in de gevel');
+    assert.match(body.externalId, /^mvfs-test-/);
+    assert.ok(mails.some((m) => m.text.includes('opdracht MV-2026-0099 aangemaakt')), 'kantoormail noemt de opdracht');
+  } finally { delete process.env.PORTAAL_INTAKE_URL; delete process.env.PORTAAL_INTAKE_SECRET; }
+});
+
+test('portaal: niet bereikbaar → formulier werkt gewoon, kantoormail meldt het; contactformulier wordt niet doorgestuurd', async () => {
+  process.env.PORTAAL_INTAKE_URL = PORTAAL_URL; process.env.PORTAAL_INTAKE_SECRET = PORTAAL_SECRET;
+  let calls = 0;
+  extraFetch = [[PORTAAL_URL, () => { calls++; throw new Error('netwerkfout'); }]];
+  try {
+    const r = await call(aanvraag, { method: 'POST', url: '/api/aanvraag/', body: { form: 'aanvraag', fields: formFields() } });
+    assert.equal(r.status, 200); assert.equal(r.json.ok, true);
+    assert.ok(mails.some((m) => m.text.includes('doorsturen mislukt')));
+    await call(aanvraag, { method: 'POST', url: '/api/aanvraag/', body: { form: 'contact', fields: { naam: 'A', email: 'a@example.com', vraag: 'Vraag', privacy: 'on' } } });
+    assert.equal(calls, 1, 'contactformulier niet doorgestuurd');
+  } finally { delete process.env.PORTAAL_INTAKE_URL; delete process.env.PORTAAL_INTAKE_SECRET; }
+});

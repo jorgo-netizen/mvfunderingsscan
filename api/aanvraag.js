@@ -13,12 +13,17 @@
  *   Dubbele inzendingen (zelfde formulier-sleutel) leveren geen tweede dossier en geen tweede mail op.
  *   Zonder database werkt het formulier precies als voorheen.
  *
+ * Mideavastgoed-portaal (alleen als PORTAAL_INTAKE_URL en PORTAAL_INTAKE_SECRET zijn ingesteld, zie _lib/portaal.js):
+ *   Elke aanvraag (formulier "aanvraag" of "home") wordt ondertekend doorgestuurd naar het portaal, waar er
+ *   automatisch een opdracht van wordt gemaakt. Lukt dat niet, dan werkt het formulier gewoon en staat dat in de mail.
+ *
  * Lokaal (npm run dev) zonder RESEND_API_KEY wordt de aanvraag alleen in de terminal getoond.
  */
 import { getDb } from './_lib/db.js';
 import { newToken, hashToken, trackingUrl } from './_lib/tracking.js';
 import { resendSend, sendLogged, trackingMail } from './_lib/mail.js';
 import { logError, clientKey } from './_lib/http.js';
+import { forwardToPortaal } from './_lib/portaal.js';
 
 const MAX_REGISTRATIONS_PER_HOUR = 5; // per IP-adres; beperkt misbruik van de klantmail
 
@@ -125,12 +130,28 @@ export default async function handler(req, res) {
     ? await registerTracking(db, req, form, clean, idem)
     : null;
 
+  // Doorsturen naar het Mideavastgoed-portaal (opdracht wordt daar aangemaakt). Gooit nooit.
+  const portaal = form === 'aanvraag' || form === 'home'
+    ? await forwardToPortaal({
+      externalId: isIdem(idem) ? `mvfs-${idem}` : undefined,
+      form,
+      dossierNr: tracking?.dossier || null,
+      fields: clean,
+      details: Object.fromEntries(DETAIL_FIELDS.filter((k) => clean[k]).map((k) => [k, clean[k]])),
+    })
+    : null;
+
   const rows = Object.entries(clean)
     .filter(([k, v]) => k !== 'privacy' && v)
     .map(([k, v]) => [LABELS[k], k === 'type' ? (TYPE_LABELS[v] || v) : v]);
   if (tracking) {
     rows.unshift(['Dossiernummer', tracking.dossier]);
     rows.push(['Trackingmail aan klant', tracking.mail === 'verzonden' ? 'verzonden (door Resend geaccepteerd)' : tracking.mail]);
+  }
+  if (portaal && portaal.status !== 'niet ingesteld') {
+    rows.push(['Mideavastgoed-portaal', portaal.status === 'doorgestuurd'
+      ? (portaal.orderNumber ? `opdracht ${portaal.orderNumber} aangemaakt` : 'ontvangen — handmatig verwerken (zie Funderingsscan-aanvragen)')
+      : `doorsturen mislukt (${portaal.error || 'onbekend'}) — voer de aanvraag zelf in`]);
   }
   const subject = `${FORMS[form]}${tracking ? ` ${tracking.dossier}` : ''} – ${clean.naam}${clean.plaats ? ` (${clean.plaats})` : ''}`;
   const html = `<h2 style="font-family:Arial,sans-serif;color:#102945">${esc(FORMS[form])}</h2>
