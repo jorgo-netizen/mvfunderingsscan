@@ -1,5 +1,5 @@
 {
- "gemaakt": "2026-11-10T10:46:19.833Z",
+ "gemaakt": "2026-11-10T13:02:37.520Z",
  "urls": {
   "/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/",
@@ -713,7 +713,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
-   "hash": "19520c1a32431c7695bc"
+   "hash": "80afc084e38c76518b63"
   },
   "/funderingsonderzoek-groningen-stad/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-groningen-stad/",
@@ -1562,7 +1562,38 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
-   "hash": "c57364b2d10db1e5dbee"
+   "hash": "55e5f593bc416ec8f388"
+  },
+  "/funderingsproblemen-veenweidegebied-friesland/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsproblemen-veenweidegebied-friesland/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsproblemen in het Friese veenweidegebied",
+   "description": "Bodemdaling, veen en grondwater: wat betekent het Friese veenweidegebied voor je fundering? Signalen, Funderingsloket, subsidie en een Quick Scan.",
+   "h1": [
+    "Funderingsproblemen in het Friese veenweidegebied"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "5820359ee11c39441eb0"
   },
   "/funderingsproblemen/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsproblemen/",
@@ -4486,6 +4517,7 @@
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-woning/",
   "https://www.mvfunderingsquickscan.nl/funderingsproblemen-klei/",
   "https://www.mvfunderingsquickscan.nl/funderingsproblemen-veen/",
+  "https://www.mvfunderingsquickscan.nl/funderingsproblemen-veenweidegebied-friesland/",
   "https://www.mvfunderingsquickscan.nl/funderingsproblemen/",
   "https://www.mvfunderingsquickscan.nl/funderingsquiz/",
   "https://www.mvfunderingsquickscan.nl/funderingsrapport/",

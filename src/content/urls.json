@@ -261,6 +261,15 @@
     "intent": "informatief"
   },
   {
+    "path": "/funderingsproblemen-veenweidegebied-friesland/",
+    "label": "Funderingsproblemen Fries veenweidegebied",
+    "group": "problemen",
+    "file": "veenweide-y.json",
+    "minWords": 1200,
+    "keyword": "funderingsproblemen fries veenweidegebied",
+    "intent": "informatief"
+  },
+  {
     "path": "/funderingsproblemen-klei/",
     "label": "Funderingsproblemen klei",
     "group": "problemen",

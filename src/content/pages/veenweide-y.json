@@ -1,0 +1,128 @@
+[
+  {
+    "path": "/funderingsproblemen-veenweidegebied-friesland/",
+    "title": "Funderingsproblemen in het Friese veenweidegebied",
+    "description": "Bodemdaling, veen en grondwater: wat betekent het Friese veenweidegebied voor je fundering? Signalen, Funderingsloket, subsidie en een Quick Scan.",
+    "keyword": "funderingsproblemen fries veenweidegebied",
+    "intent": "informatief",
+    "nav_active": "/funderingsproblemen/",
+    "crumbs": [
+      { "href": "/", "name": "Home" },
+      { "href": "/funderingsproblemen/", "name": "Funderingsproblemen" },
+      { "href": "/funderingsproblemen-veenweidegebied-friesland/", "name": "Fries veenweidegebied" }
+    ],
+    "eyebrow": "Funderingsproblemen · Fries veenweidegebied",
+    "h1": "Funderingsproblemen in het Friese veenweidegebied",
+    "lead": "In het Friese veenweidegebied zijn <strong>bodemdaling, veeninklinking en veranderende grondwaterstanden</strong> belangrijke aandachtspunten voor de fundering van woningen. Vooral bij oudere huizen loont het om te weten welk type fundering er is en welke risico’s daarbij spelen. Hier lees je hoe funderingsproblemen ontstaan, op welke signalen je let, wat het <strong>Funderingsloket Fryslân</strong> doet en hoe een <a href=\"/fase-0-funderingsonderzoek/\">Quick Scan (fase 0)</a> je een eerste beeld geeft.",
+    "bron_bedragen": ["4.000", "7.500", "40.000"],
+    "bron_url": "https://veenweidefryslan.frl/funderingsloketfryslan/subsidies",
+    "hero_image": {
+      "name": "jaren-dertig-woningen-straat",
+      "alt": "Rij jaren-dertigwoningen in een groene straat"
+    },
+    "facts": [
+      { "label": "Gebied", "value": "Fries veenweidegebied" },
+      { "label": "Aandachtspunt", "value": "Woningen gebouwd vóór 1973" },
+      { "label": "Quick Scan", "value": "vanaf €350, zonder graafwerk" },
+      { "label": "Kantoor", "value": "Leeuwarden" }
+    ],
+    "services": ["fase0", "fase1"],
+    "sections": [
+      {
+        "id": "waarom-kwetsbaar",
+        "h2": "Waarom is het Friese veenweidegebied kwetsbaar?",
+        "answer": "In grote delen van het Friese veenweidegebied bestaat de bodem uit veen en klei. Als veen langdurig wordt ontwaterd, klinkt het in en oxideert het. Daardoor neemt het bodemvolume af en daalt het maaiveld.",
+        "body": "<p>Veen bestaat uit plantenresten die eeuwenlang onder water bewaard zijn gebleven. Zolang het nat is, blijft veen stabiel. Wordt het grondwater verlaagd, dan klinkt de bovenlaag in en komt er zuurstof bij. Het veen breekt dan langzaam af. Dat proces heet oxidatie. Samen zorgen inklinking en oxidatie voor <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>. Meer achtergrond lees je bij <a href=\"/funderingsproblemen-veen/\">funderingsproblemen op veen</a> en in het artikel over de <a href=\"/kennisbank/veenbodem/\">veenbodem</a>.</p>\n<p>Bodemdaling kan gevolgen hebben voor bebouwing, net als veranderingen in de grondwaterstand. De provincie, het waterschap en de gemeenten werken daarom samen in het <a href=\"https://veenweidefryslan.frl/\">Veenweideprogramma Fryslân</a>.</p>\n<div class=\"callout callout-note\"><strong>Niet iedere woning loopt hetzelfde risico</strong><p>De bodemopbouw, het bouwjaar, de funderingsconstructie en de plaatselijke grondwateromstandigheden bepalen samen of een woning kwetsbaar is. Twee huizen in dezelfde straat kunnen er heel anders voor staan.</p></div>"
+      },
+      {
+        "id": "welke-woningen",
+        "h2": "Welke woningen in het veenweidegebied verdienen extra aandacht?",
+        "answer": "Vooral woningen die vóór 1973 zijn gebouwd. Tot die tijd werden woningen in dit gebied vooral op houten palen gebouwd, en ook ondiepe funderingen op staal komen bij oudere woningen voor.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Type woning</th><th>Waarom aandacht</th></tr></thead><tbody><tr><td>Woning van vóór 1973 op <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a></td><td>De palen zijn gevoelig voor een dalende grondwaterstand en voor aantasting van het hout</td></tr><tr><td>Oudere woning op staal</td><td>Een ondiepe fundering beweegt mee met een zakkende of ongelijk zettende bodem</td></tr><tr><td>Woonboerderij of woning aan het water</td><td>Vaak meerdere bouwfasen met elk een eigen fundering en een onbekende bouwgeschiedenis</td></tr><tr><td>Woning met een aanbouw</td><td>Hoofdgebouw en aanbouw kunnen verschillend zakken; lees over <a href=\"/kennisbank/scheuren-bij-aanbouw/\">scheuren bij een aanbouw</a></td></tr></tbody></table></div>\n<p>Het bouwjaar zie je in de BAG-gegevens van het Kadaster. Het funderingstype is bij oudere woningen vaak niet zeker bekend. Bouwtekeningen ontbreken regelmatig of geven alleen een globaal beeld.</p>"
+      },
+      {
+        "id": "houten-palen-en-grondwater",
+        "h2": "Wat gebeurt er met houten funderingspalen als het grondwater verandert?",
+        "answer": "Komen houten paaldelen langdurig boven het grondwater te staan, dan kunnen schimmels het hout aantasten: paalrot. Daarnaast bestaat bacteriële aantasting, palenpest, die ook optreedt als de palen onder water staan.",
+        "body": "<p>Houten palen kunnen lang meegaan zolang ze volledig onder water blijven. Door bodemdaling, lage grondwaterstanden, palenpest of bouwkundige problemen kunnen paalkoppen deels droog komen te staan. Dat heet droogstand. Er komt dan zuurstof bij het hout en schimmels kunnen het hout aantasten. Lees meer over <a href=\"/kennisbank/paalrot/\">paalrot</a> en <a href=\"/problemen-met-houten-palen/\">problemen met houten palen</a>.</p>\n<p>Bacteriële aantasting werkt langzamer en heeft geen zuurstof nodig. Het hout kan daardoor ook onder water zwakker worden. Het gaat dus niet alleen om de grondwaterstand van vandaag. De omstandigheden over een langere periode tellen mee, zoals droge zomers, peilbesluiten en lekkende riolering. Wetterskip Fryslân beheert het waterpeil in het gebied. Hoe grondwater en fundering samenhangen, staat bij <a href=\"/kennisbank/grondwater-en-fundering/\">grondwater en fundering</a>.</p>"
+      },
+      {
+        "id": "signalen",
+        "h2": "Welke signalen kunnen wijzen op funderingsproblemen?",
+        "answer": "Let op nieuwe of groeiende scheuren, klemmende ramen en deuren, scheefstand van gevels of kozijnen, hoogteverschillen in de begane grondvloer en scheuren rond raam- en deuropeningen.",
+        "body": "<ul class=\"checklist\"><li>Nieuwe of groter wordende scheuren in gevels en binnenmuren</li><li>Klemmende ramen en deuren</li><li>Scheefstand van gevels of kozijnen</li><li>Hoogteverschillen in de begane grondvloer</li><li>Scheuren rondom raam- en deuropeningen</li></ul>\n<p>Deze signalen betekenen niet automatisch dat de fundering de oorzaak is. Krimp, temperatuurwerking, roestende lateien of een aanbouw met een eigen fundering kunnen vergelijkbare verschijnselen geven. Volg een scheur een tijd: maak een foto met een liniaal ernaast, noteer de datum en herhaal dat na enkele maanden. Meer uitleg vind je bij <a href=\"/scheuren-in-gevel/\">scheuren in de gevel</a> en <a href=\"/scheefstand-woning/\">scheefstand van een woning</a>.</p>"
+      },
+      {
+        "id": "funderingsloket-fryslan",
+        "h2": "Wat doet het Funderingsloket Fryslân?",
+        "answer": "Het Funderingsloket Fryslân ondersteunt woningeigenaren in het Friese veenweidegebied bij vragen over hun fundering. Het loket geeft informatie, helpt met advies, houdt spreekuren met experts en wijst de weg naar subsidies.",
+        "body": "<p>Op de website van het <a href=\"https://veenweidefryslan.frl/funderingsloket-fryslan\">Funderingsloket Fryslân</a> vind je veelgestelde vragen, een checklist om te zien of je in aanmerking komt voor advies, een postcodechecker voor het veenweidegebied en informatie over subsidie en financiering. Het loket is bereikbaar via 058-292 59 25 en info@funderingsloket.frl. Bij een vraag per mail helpt het als je je adres, het bouwjaar, foto’s van eventuele schade en een bouwtekening meestuurt.</p>\n<p>MV Funderingsscan is een onafhankelijk onderzoeksbureau en maakt geen deel uit van het loket. Je kunt het loket en een eigen onderzoek goed combineren: het loket helpt met de regelingen, een onderzoek geeft inzicht in jouw woning.</p>"
+      },
+      {
+        "id": "subsidie-veenweidegebied",
+        "h2": "Welke subsidies zijn er in het Friese veenweidegebied?",
+        "answer": "Voor funderingsonderzoek vergoedt de regeling 80% van de onderzoekskosten, tot €4.000 per woning. Voor funderingsherstel is er sinds 23 juni 2025 een regeling van provincie en waterschap die 40% vergoedt, tot €40.000 per woning.",
+        "body": "<div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th>Regeling</th><th>Vergoeding volgens het Funderingsloket</th><th>Belangrijkste voorwaarden</th></tr></thead><tbody><tr><td>Funderingsonderzoek (sinds 9 januari 2024)</td><td>80% van de onderzoekskosten, maximaal €4.000 per woning; met een kwijtscheldingsregeling van gemeente of waterschap de volledige kosten, maximaal €7.500</td><td>Eigenaar-bewoner of VvE, woning gebouwd vóór 1973 in het veenweidegebied, ondertekende offerte van een bureau op de KCAF-erkenningslijst</td></tr><tr><td>Funderingsherstel (sinds 23 juni 2025)</td><td>40% van de herstelkosten, maximaal €40.000 per woning, ook voor vervangende nieuwbouw als dat nodig is</td><td>Eigenaar én bewoner, woning gebouwd vóór 1973, aantoonbare schade uit onderzoek door een erkend bureau</td></tr></tbody></table></div>\n<p>Voor wie vanwege het inkomen geen gewone hypotheek kan afsluiten, is er sinds 1 juli 2025 ook het Fonds Duurzaam Funderingsherstel. Een uitgebreide uitleg van de onderzoeksregeling staat in ons artikel over <a href=\"/kennisbank/subsidie-funderingsonderzoek-friesland/\">subsidie voor funderingsonderzoek in Friesland</a>.</p>\n<div class=\"callout callout-note\"><strong>Controleer altijd de actuele voorwaarden</strong><p>Niet iedere woning komt automatisch in aanmerking en niet ieder type onderzoek voldoet aan de eisen. Bedragen en voorwaarden kunnen veranderen; bij twijfel gelden de regeling van de provincie en de informatie van het <a href=\"https://veenweidefryslan.frl/funderingsloket-fryslan\">Funderingsloket Fryslân</a>.</p></div>"
+      },
+      {
+        "id": "quick-scan-of-kcaf",
+        "h2": "Quick Scan of KCAF-onderzoek: wat past bij jouw situatie?",
+        "answer": "Een Quick Scan (fase 0) geeft snel en zonder graafwerk een eerste risico-inschatting. Voor de subsidie is een funderingsonderzoek volgens de KCAF-richtlijn nodig, door een bureau op de KCAF-erkenningslijst; dat is een uitgebreider onderzoek.",
+        "body": "<p>Bij de <a href=\"/fase-0-funderingsonderzoek/\">Quick Scan</a> combineren we beschikbare archief- en bodemgegevens met een inspectie van je woning. MV Funderingsscan doet dit zonder graafwerk. Je ontvangt een risico-inschatting en advies over eventuele vervolgstappen, meestal binnen 2 werkdagen na de inspectie. De Quick Scan kost vanaf €350. Is meer duidelijkheid nodig, dan bespreken we <a href=\"/fase-1-funderingsonderzoek/\">aanvullend onderzoek met metingen</a> vanaf €950, zoals lintvoegwaterpassing, loodmetingen en vloerveldwaterpassing.</p>\n<p>Een onderzoek volgens de <a href=\"https://www.kcaf.nl/\">KCAF-richtlijn</a> gaat verder. Bij houten palen worden één of meer palen vrijgegraven en geïnspecteerd, en gaan houtmonsters naar een laboratorium. Wil je subsidie aanvragen, kies dan een bureau van de KCAF-erkenningslijst en vraag eerst een ondertekende offerte. Een Quick Scan kan je helpen beslissen of zo’n uitgebreid onderzoek bij jouw woning nodig is. Op de <a href=\"/prijzen/\">prijzenpagina</a> zie je wat we doen en wat het kost.</p>"
+      },
+      {
+        "id": "werkgebied-veenweide",
+        "h2": "Waar in het veenweidegebied voert MV Funderingsscan onderzoek uit?",
+        "answer": "MV Funderingsscan is gevestigd in Leeuwarden en voert onafhankelijk funderingsonderzoek uit in heel Friesland, en daarnaast in Groningen en Noord-Drenthe. MV Funderingsscan voert zelf geen herstel uit.",
+        "body": "<p>Het veenweidegebied ligt grotendeels in het midden van Friesland. Op deze pagina’s lees je per plaats wat er lokaal speelt: <a href=\"/funderingsonderzoek-heerenveen/\">Heerenveen</a>, <a href=\"/funderingsonderzoek-sneek/\">Sneek en Súdwest-Fryslân</a>, <a href=\"/funderingsonderzoek-de-fryske-marren/\">Joure, Lemmer en Balk</a>, <a href=\"/funderingsonderzoek-drachten/\">Drachten</a> en <a href=\"/funderingsonderzoek-leeuwarden/\">Leeuwarden en Grou</a>. Een overzicht van de hele provincie staat bij <a href=\"/funderingsonderzoek-friesland/\">funderingsonderzoek in Friesland</a>.</p>\n<p>Twijfel je over de fundering van je woning? <a href=\"/funderingsscan-aanvragen/\">Vraag een Quick Scan aan</a> of bel <a href=\"tel:+31582037172\">+31 (0) 582037172</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Hoe weet ik of mijn woning in het Friese veenweidegebied ligt?",
+        "a": "<p>Gebruik de postcodechecker op de website van het Funderingsloket Fryslân (veenweidefryslan.frl). Daar zie je of je adres binnen het veenweidegebied valt waarvoor de Friese funderingsregelingen gelden.</p>"
+      },
+      {
+        "q": "Krijg ik subsidie voor een Quick Scan van MV Funderingsscan?",
+        "a": "<p>De Friese subsidie voor funderingsonderzoek geldt voor onderzoek volgens de KCAF-richtlijn door een bureau op de KCAF-erkenningslijst. Een Quick Scan van MV Funderingsscan is een eerste risico-inschatting zonder graafwerk en valt daar niet automatisch onder. Controleer de voorwaarden altijd bij het Funderingsloket Fryslân.</p>"
+      },
+      {
+        "q": "Wat is het verschil tussen paalrot en palenpest?",
+        "a": "<p>Paalrot is aantasting van houten funderingspalen door schimmels, wanneer het hout boven het grondwater komt te staan. Palenpest is bacteriële aantasting, die ook optreedt als de palen onder water staan. Beide kunnen het draagvermogen van een houten paalfundering verminderen.</p>"
+      },
+      {
+        "q": "Heeft iedere oude woning in het Friese veenweidegebied funderingsproblemen?",
+        "a": "<p>Nee. Of een woning in het Friese veenweidegebied problemen heeft, hangt af van de bodemopbouw, het bouwjaar, het funderingstype en de grondwaterstand ter plaatse. Veel oudere woningen staan er goed bij. Alleen onderzoek op het adres geeft uitsluitsel.</p>"
+      },
+      {
+        "q": "Wat kost een funderingsscan in het Friese veenweidegebied?",
+        "a": "<p>Een Quick Scan (fase 0) van MV Funderingsscan kost vanaf €350 inclusief btw, ook in het Friese veenweidegebied. Aanvullend onderzoek met metingen (fase 1) kost vanaf €950. Je hoort vooraf wat het onderzoek voor jouw woning kost.</p>"
+      },
+      {
+        "q": "Waar kan ik terecht met vragen over funderingsproblemen in het veenweidegebied?",
+        "a": "<p>Voor vragen over regelingen en advies kun je terecht bij het Funderingsloket Fryslân, via 058-292 59 25 of info@funderingsloket.frl. Voor een onafhankelijk onderzoek van je woning kun je contact opnemen met MV Funderingsscan in Leeuwarden via +31 (0) 582037172.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/kennisbank/subsidie-funderingsonderzoek-friesland/",
+        "label": "Subsidie funderingsonderzoek Friesland",
+        "text": "Voorwaarden en bedragen van de Friese onderzoeksregeling op een rij."
+      },
+      {
+        "href": "/funderingsproblemen-veen/",
+        "label": "Funderingsproblemen op veen",
+        "text": "Hoe inklinking, oxidatie en bodemdaling werken."
+      },
+      {
+        "href": "/fase-0-funderingsonderzoek/",
+        "label": "De Quick Scan (fase 0)",
+        "text": "Archief, bodem en inspectie, zonder graafwerk, vanaf €350."
+      }
+    ],
+    "cta": [
+      "Woon je in het Friese veenweidegebied?",
+      "Laat met een Quick Scan onafhankelijk in kaart brengen hoe het met je fundering staat."
+    ]
+  }
+]

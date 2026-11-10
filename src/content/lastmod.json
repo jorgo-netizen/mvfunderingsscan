@@ -115,7 +115,7 @@
   "eerste": "2026-10-06"
  },
  "/funderingsonderzoek-friesland/": {
-  "hash": "6f640113af27a219",
+  "hash": "ba6e1cb14dfb4b8f",
   "datum": "2026-11-10",
   "eerste": "2026-10-06"
  },
@@ -250,9 +250,14 @@
   "eerste": "2026-10-06"
  },
  "/funderingsproblemen-veen/": {
-  "hash": "97ba971ff1e4ccad",
-  "datum": "2026-11-02",
+  "hash": "98ec5190cd420adc",
+  "datum": "2026-11-10",
   "eerste": "2026-10-06"
+ },
+ "/funderingsproblemen-veenweidegebied-friesland/": {
+  "hash": "5e11043ca9b251da",
+  "datum": "2026-11-10",
+  "eerste": "2026-11-10"
  },
  "/funderingsproblemen/": {
   "hash": "d1421db2c7152bf3",

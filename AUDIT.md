@@ -1,6 +1,6 @@
 # SEO/GEO-audit mvfunderingsquickscan.nl
 
-Gegenereerd door `npm run audit` op 2026-11-10 – 148 indexeerbare pagina's, 239.725 woorden in totaal.
+Gegenereerd door `npm run audit` op 2026-11-10 – 149 indexeerbare pagina's, 241.494 woorden in totaal.
 
 | URL | Title | H1 | Primair zoekwoord | Zoekintentie | Interne links | Schema | Indexeerbaar | Woorden |
 |---|---|---|---|---|---|---|---|---|
@@ -26,7 +26,7 @@ Gegenereerd door `npm run audit` op 2026-11-10 – 148 indexeerbare pagina's, 23
 | /funderingsonderzoek-drachten/ | Funderingsonderzoek in Drachten \| MV Funderingsscan | Funderingsonderzoek in Drachten | funderingsonderzoek drachten | lokaal-commercieel | 81 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1715 |
 | /funderingsonderzoek-eemsdelta/ | Funderingsonderzoek Eemsdelta en Loppersum | Funderingsonderzoek in Eemsdelta | funderingsonderzoek eemsdelta | lokaal-commercieel | 84 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1821 |
 | /funderingsonderzoek-franeker/ | Funderingsonderzoek in Franeker \| MV Funderingsscan | Funderingsonderzoek in Franeker | funderingsonderzoek franeker | lokaal-commercieel | 81 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1691 |
-| /funderingsonderzoek-friesland/ | Funderingsonderzoek in Friesland \| MV Funderingsscan | Funderingsonderzoek in Friesland | funderingsonderzoek friesland | lokaal-commercieel | 81 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1961 |
+| /funderingsonderzoek-friesland/ | Funderingsonderzoek in Friesland \| MV Funderingsscan | Funderingsonderzoek in Friesland | funderingsonderzoek friesland | lokaal-commercieel | 82 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1976 |
 | /funderingsonderzoek-groningen-stad/ | Funderingsonderzoek Groningen stad \| MV Funderingsscan | Funderingsonderzoek in de stad Groningen | funderingsonderzoek groningen stad | lokaal-commercieel | 82 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1813 |
 | /funderingsonderzoek-groningen/ | Funderingsonderzoek provincie Groningen \| MV Funderingsscan | Funderingsonderzoek in de provincie Groningen | funderingsonderzoek groningen | lokaal-commercieel | 79 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1891 |
 | /funderingsonderzoek-haren/ | Funderingsonderzoek in Haren \| MV Funderingsscan | Funderingsonderzoek in Haren | funderingsonderzoek haren | lokaal-commercieel | 84 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1651 |
@@ -53,7 +53,8 @@ Gegenereerd door `npm run audit` op 2026-11-10 – 148 indexeerbare pagina's, 23
 | /funderingsonderzoek-winschoten/ | Funderingsonderzoek in Winschoten \| MV Funderingsscan | Funderingsonderzoek in Winschoten | funderingsonderzoek winschoten | lokaal-commercieel | 81 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1582 |
 | /funderingsonderzoek-woning/ | Funderingsonderzoek voor je woning \| MV Funderingsscan | Funderingsonderzoek woning: welk onderzoek past bij jouw situatie? | funderingsonderzoek woning | commercieel | 81 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1977 |
 | /funderingsproblemen-klei/ | Funderingsproblemen op klei: krimp en zwel | Funderingsproblemen op klei: krimp, zwel en ongelijke zetting | funderingsproblemen klei | informatief | 78 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 1404 |
-| /funderingsproblemen-veen/ | Funderingsproblemen op veen en bodemdaling | Funderingsproblemen op veen: hoe de bodem je woning kan beïnvloeden | funderingsproblemen veen | informatief | 81 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 1484 |
+| /funderingsproblemen-veen/ | Funderingsproblemen op veen en bodemdaling | Funderingsproblemen op veen: hoe de bodem je woning kan beïnvloeden | funderingsproblemen veen | informatief | 82 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 1504 |
+| /funderingsproblemen-veenweidegebied-friesland/ | Funderingsproblemen in het Friese veenweidegebied | Funderingsproblemen in het Friese veenweidegebied | funderingsproblemen fries veenweidegebied | informatief | 82 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1734 |
 | /funderingsproblemen/ | Funderingsproblemen woning: signalen en oorzaken | Funderingsproblemen: signalen, oorzaken en wat je kunt doen | funderingsproblemen woning | informatief | 82 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 2283 |
 | /funderingsquiz/ | Funderingsquiz: hoeveel weet jij over funderingen? | Hoeveel weet jij over funderingen? | funderingsquiz | informatief | 79 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 892 |
 | /funderingsrapport/ | Funderingsrapport: inhoud en uitkomsten \| MV Funderingsscan | Het funderingsrapport: wat erin staat en wat je ermee doet | funderingsrapport | commercieel | 79 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1602 |
