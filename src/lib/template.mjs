@@ -57,28 +57,31 @@ const KERN_LINKS = {
   Drachten: '/funderingsonderzoek-drachten/', Heerenveen: '/funderingsonderzoek-heerenveen/', Franeker: '/funderingsonderzoek-franeker/',
   Groningen: '/funderingsonderzoek-groningen-stad/', Haren: '/funderingsonderzoek-haren/', Appingedam: '/funderingsonderzoek-appingedam/',
   Delfzijl: '/funderingsonderzoek-delfzijl/', Veendam: '/funderingsonderzoek-veendam/', Winschoten: '/funderingsonderzoek-winschoten/',
+  Assen: '/funderingsonderzoek-assen/',
 };
+// Hub en naam per provincie; van Drenthe werken we alleen in het noorden.
+const PROV_HUB = { Friesland: ['/funderingsonderzoek-friesland/', 'Friesland'], Groningen: ['/funderingsonderzoek-groningen/', 'Groningen'], Drenthe: ['/funderingsonderzoek-noord-drenthe/', 'Noord-Drenthe'] };
 
 function kernenHtml(g, path) {
   const chips = g.kernen.map((k) => (KERN_LINKS[k] && KERN_LINKS[k] !== path ? `<li><a href="${KERN_LINKS[k]}">${esc(k)}</a></li>` : `<li>${esc(k)}</li>`)).join('');
-  const prov = g.provincie === 'Friesland' ? '/funderingsonderzoek-friesland/' : '/funderingsonderzoek-groningen/';
+  const [prov, provNaam] = PROV_HUB[g.provincie];
   return `
         <section class="prose-section reveal" id="kernen-gemeente">
           <h2>Kernen in de gemeente ${esc(g.naam)}</h2>
           <p class="answer-first">MV Funderingsscan voert funderingsonderzoek uit in alle kernen van de gemeente ${esc(g.naam)}, waaronder ${esc(g.kernen.slice(0, -1).join(', '))} en ${esc(g.kernen.at(-1))}.</p>
           <ul class="town-chips">${chips}</ul>
-          <p>Woon je in een andere plaats in de provincie ${g.provincie}? Bekijk <a href="${prov}">funderingsonderzoek in ${g.provincie}</a> of het <a href="/werkgebied/">volledige werkgebied</a>.</p>
+          <p>Woon je in een andere plaats in ${provNaam}? Bekijk <a href="${prov}">funderingsonderzoek in ${provNaam}</a> of het <a href="/werkgebied/">volledige werkgebied</a>.</p>
         </section>`;
 }
 
-const PROVINCIE_PAGES = { '/funderingsonderzoek-friesland/': 'Friesland', '/funderingsonderzoek-groningen/': 'Groningen' };
+const PROVINCIE_PAGES = { '/funderingsonderzoek-friesland/': 'Friesland', '/funderingsonderzoek-groningen/': 'Groningen', '/funderingsonderzoek-noord-drenthe/': 'Drenthe' };
 
 function gemeentenHtml(prov) {
   const list = GEMEENTEN.filter((g) => g.provincie === prov).sort((a, b) => a.naam.localeCompare(b.naam, 'nl'));
   return `
         <section class="prose-section reveal" id="gemeenten">
-          <h2>Funderingsonderzoek per gemeente in ${prov}</h2>
-          <p class="answer-first">MV Funderingsscan werkt in alle ${list.length} gemeenten van ${prov}${prov === 'Friesland' ? ' op het vasteland' : ''}. Kies je gemeente voor lokale informatie over bodem, woningen en de kernen waar we onderzoek doen.</p>
+          <h2>Funderingsonderzoek per gemeente in ${PROV_HUB[prov][1]}</h2>
+          <p class="answer-first">MV Funderingsscan werkt in alle ${list.length} gemeenten van ${PROV_HUB[prov][1]}${prov === 'Friesland' ? ' op het vasteland' : ''}. Kies je gemeente voor lokale informatie over bodem, woningen en de kernen waar we onderzoek doen.</p>
           <div class="place-index">
           ${list.map((g) => `<div class="place-index-item">
             <h3><a href="${g.href}">Gemeente ${esc(g.naam)}</a></h3>
@@ -96,7 +99,7 @@ function plaatsenIndexHtml() {
   return `
         <section class="prose-section reveal" id="plaatsenindex">
           <h2>Plaatsenindex: alle gemeenten en kernen</h2>
-          <p class="answer-first">MV Funderingsscan werkt in ${GEMEENTEN.length} gemeenten in Friesland en Groningen. Zoek je plaats op in de lijst en klik op de gemeente voor lokale informatie over bodem, woningen en funderingsonderzoek.</p>
+          <p class="answer-first">MV Funderingsscan werkt in ${GEMEENTEN.length} gemeenten in Friesland, Groningen en Noord-Drenthe. Zoek je plaats op in de lijst en klik op de gemeente voor lokale informatie over bodem, woningen en funderingsonderzoek.</p>
           <h3 class="place-index-title">Friesland</h3>
           <div class="place-index">
           ${block('Friesland')}
@@ -104,6 +107,10 @@ function plaatsenIndexHtml() {
           <h3 class="place-index-title">Groningen</h3>
           <div class="place-index">
           ${block('Groningen')}
+          </div>
+          <h3 class="place-index-title">Noord-Drenthe</h3>
+          <div class="place-index">
+          ${block('Drenthe')}
           </div>
           <p>Staat jouw plaats er niet bij? Neem <a href="/contact/">contact</a> op; we kijken graag of we je kunnen helpen.</p>
         </section>`;
@@ -172,6 +179,8 @@ export function render(page0) {
   if (p.path === '/over-ons/') graph.push(...personSchemas(DOMAIN, ORG_ID));
   const gemeente = GEMEENTEN.find((g) => g.href === p.path);
   for (const key of p.services || []) graph.push(serviceSchema(key, gemeente ? gemeenteArea(gemeente) : null));
+  // Lokale dienst per plaatspagina, zodat de plaatsnaam ook in de dienstnaam staat.
+  if (gemeente) graph.push({ '@type': 'Service', '@id': url + '#lokale-dienst', name: p.h1, serviceType: 'Funderingsonderzoek', url, provider: { '@id': ORG_ID }, areaServed: gemeenteArea(gemeente) });
   if (p.article) {
     graph.push({
       '@type': 'Article',

@@ -1,5 +1,5 @@
 {
- "gemaakt": "2026-11-02T15:17:54.567Z",
+ "gemaakt": "2026-11-10T10:46:19.833Z",
  "urls": {
   "/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/",
@@ -276,7 +276,7 @@
   "/funderingsmetingen/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsmetingen/",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
-   "title": "Funderingsmetingen uitgelegd: zie hoe funderingsonderzoek werkt",
+   "title": "Funderingsmetingen uitgelegd: zo werkt funderingsonderzoek",
    "description": "Interactief uitgelegd: lintvoegwaterpassing, loodmeting, scheurpatronen en vloerveldwaterpassing. Zie welke meting past bij jouw woning.",
    "h1": [
     "Funderingsmetingen uitgelegd: zie hoe funderingsonderzoek werkt"
@@ -302,7 +302,39 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "9620ca5886ce2bcabea1"
+   "hash": "b93f7490fc6278aaea57"
+  },
+  "/funderingsonderzoek-aa-en-hunze/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-aa-en-hunze/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Gieten | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Aa en Hunze: Gieten, Annen, Rolde en Gasselte. Onafhankelijke funderingsscan op Hondsrug of veengrond, met advies. Vanaf €350.",
+   "h1": [
+    "Funderingsonderzoek Gieten, Annen en Rolde"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
+   "hash": "c65928fe70aedd28643f"
   },
   "/funderingsonderzoek-achtkarspelen/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-achtkarspelen/",
@@ -334,7 +366,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "835c10de3f53d5af5a14"
+   "hash": "827a0925a70afc57c3c3"
   },
   "/funderingsonderzoek-appingedam/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-appingedam/",
@@ -365,7 +397,39 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
-   "hash": "a9a19999555709768b60"
+   "hash": "e207e67c95e47e292ef5"
+  },
+  "/funderingsonderzoek-assen/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-assen/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Assen | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Assen, Loon, Rhee en Ubbena: onafhankelijke funderingsscan op zand en keileem, met inspectie, rapport en advies. Vanaf €350.",
+   "h1": [
+    "Funderingsonderzoek Assen"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
+   "hash": "5d5b95d9916f29e8c920"
   },
   "/funderingsonderzoek-bij-aankoop/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-bij-aankoop/",
@@ -459,7 +523,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
-   "hash": "4d5a5069f83fca66cd7d"
+   "hash": "88db422729e5c1f72c6c"
   },
   "/funderingsonderzoek-de-fryske-marren/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-de-fryske-marren/",
@@ -491,7 +555,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
-   "hash": "8f00be74c2d8dc1d269f"
+   "hash": "354c8fd6bcbcf86cdc1a"
   },
   "/funderingsonderzoek-delfzijl/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-delfzijl/",
@@ -522,7 +586,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
-   "hash": "56c96ca520a0c7738802"
+   "hash": "e400e26772c7a3419160"
   },
   "/funderingsonderzoek-drachten/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-drachten/",
@@ -554,12 +618,12 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "3659a1dfc090a6000d2e"
+   "hash": "b7c8e7b9e1d0cd516454"
   },
   "/funderingsonderzoek-eemsdelta/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-eemsdelta/",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
-   "title": "Funderingsonderzoek Eemsdelta: Delfzijl, Appingedam, Loppersum",
+   "title": "Funderingsonderzoek Eemsdelta en Loppersum",
    "description": "Funderingsonderzoek in Eemsdelta: Loppersum, Farmsum, Termunten, &#x27;t Zandt, Wirdum, Appingedam en Delfzijl. Onafhankelijke scan op klei, los van IMG.",
    "h1": [
     "Funderingsonderzoek in Eemsdelta"
@@ -586,7 +650,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
-   "hash": "47c5683647e18c018b41"
+   "hash": "b85e784b28a606cb1491"
   },
   "/funderingsonderzoek-franeker/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-franeker/",
@@ -618,7 +682,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
-   "hash": "f3b6139bed26d15c2d0a"
+   "hash": "423f0265666840c0a140"
   },
   "/funderingsonderzoek-friesland/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-friesland/",
@@ -649,7 +713,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
-   "hash": "bfadd3495469106eede3"
+   "hash": "19520c1a32431c7695bc"
   },
   "/funderingsonderzoek-groningen-stad/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-groningen-stad/",
@@ -681,7 +745,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
-   "hash": "12c35af74b47a99fa633"
+   "hash": "ee85dcf4deb9c547d60c"
   },
   "/funderingsonderzoek-groningen/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-groningen/",
@@ -712,7 +776,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
-   "hash": "1c1e0d051d1c4245ddf8"
+   "hash": "420a04125ce4c834c044"
   },
   "/funderingsonderzoek-haren/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-haren/",
@@ -743,7 +807,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "ded227885e03d272c360"
+   "hash": "0a599785ab732fd46c85"
   },
   "/funderingsonderzoek-harlingen/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-harlingen/",
@@ -775,7 +839,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
-   "hash": "afa5622da937d16c9ba2"
+   "hash": "6be19b10d8e513f9ef4b"
   },
   "/funderingsonderzoek-heerenveen/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-heerenveen/",
@@ -807,7 +871,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
-   "hash": "c0395d289559fa6cfcc8"
+   "hash": "69344624df96d36fa69a"
   },
   "/funderingsonderzoek-het-hogeland/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-het-hogeland/",
@@ -839,7 +903,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "35a6398dc17804e62ebb"
+   "hash": "380c060cf72c96e35bbb"
   },
   "/funderingsonderzoek-leeuwarden/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-leeuwarden/",
@@ -871,7 +935,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
-   "hash": "c139e72c497087fcf363"
+   "hash": "b1046bb4a7a2fc00a092"
   },
   "/funderingsonderzoek-midden-groningen/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-midden-groningen/",
@@ -903,7 +967,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "3e6cc3a94b256a2732a3"
+   "hash": "9e47f27f95edab98d3d0"
   },
   "/funderingsonderzoek-noardeast-fryslan/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-noardeast-fryslan/",
@@ -935,7 +999,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
-   "hash": "fef6fa34c008cb1e9c52"
+   "hash": "c903df4b7c5d152f478b"
   },
   "/funderingsonderzoek-noord-drenthe/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-noord-drenthe/",
@@ -966,7 +1030,39 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "54e13a6436eae537b638"
+   "hash": "5eb0475871248ce2fb69"
+  },
+  "/funderingsonderzoek-noordenveld/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-noordenveld/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Roden | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Noordenveld: Roden, Peize, Norg en Veenhuizen. Onafhankelijke Quick Scan met archief, bodem, inspectie en advies. Vanaf €350.",
+   "h1": [
+    "Funderingsonderzoek Roden, Peize en Norg"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
+   "hash": "b71c6d1ff3a0e23a59bd"
   },
   "/funderingsonderzoek-ooststellingwerf/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-ooststellingwerf/",
@@ -998,7 +1094,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "2509608ee68654a1cd8c"
+   "hash": "fa66b0e382e96b3a2f9d"
   },
   "/funderingsonderzoek-opsterland/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-opsterland/",
@@ -1030,7 +1126,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "7c3f0a656647f2763df3"
+   "hash": "1941baa299824a03233f"
   },
   "/funderingsonderzoek-pekela/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-pekela/",
@@ -1062,7 +1158,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
-   "hash": "d343bbc83217e1e5bfea"
+   "hash": "da8fbd53b1a7cb705ea5"
   },
   "/funderingsonderzoek-sneek/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-sneek/",
@@ -1094,7 +1190,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
-   "hash": "e2d81390f0768476e900"
+   "hash": "074153b74af66e4382a6"
   },
   "/funderingsonderzoek-stadskanaal/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-stadskanaal/",
@@ -1126,7 +1222,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
-   "hash": "dcff8f785d376e1f886c"
+   "hash": "1ca89a35c44aa5a214d4"
   },
   "/funderingsonderzoek-taxatie/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-taxatie/",
@@ -1159,6 +1255,38 @@
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
    "hash": "f54dddd65151a6c52110"
   },
+  "/funderingsonderzoek-tynaarlo/": {
+   "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-tynaarlo/",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+   "title": "Funderingsonderzoek Zuidlaren | MV Funderingsscan",
+   "description": "Funderingsonderzoek in Tynaarlo: Zuidlaren, Vries, Eelde en Paterswolde. Onafhankelijke funderingsscan met inspectie, rapport en advies, vanaf €350.",
+   "h1": [
+    "Funderingsonderzoek Zuidlaren, Vries en Eelde"
+   ],
+   "jsonld": [
+    "AdministrativeArea",
+    "Answer",
+    "BreadcrumbList",
+    "Country",
+    "FAQPage",
+    "GeoCoordinates",
+    "ImageObject",
+    "ListItem",
+    "Offer",
+    "OpeningHoursSpecification",
+    "Place",
+    "PostalAddress",
+    "PriceSpecification",
+    "ProfessionalService",
+    "PropertyValue",
+    "Question",
+    "Service",
+    "WebPage",
+    "WebSite"
+   ],
+   "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
+   "hash": "0fce6ea27c095cb68fcf"
+  },
   "/funderingsonderzoek-tytsjerksteradiel/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-tytsjerksteradiel/",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
@@ -1189,7 +1317,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
-   "hash": "a604ca7ac315a8085a43"
+   "hash": "e2b1b0bb288987b48e8b"
   },
   "/funderingsonderzoek-veendam/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-veendam/",
@@ -1221,7 +1349,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
-   "hash": "c9f13392b90b8430307a"
+   "hash": "833712c3858b1b281d9f"
   },
   "/funderingsonderzoek-westerkwartier/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-westerkwartier/",
@@ -1253,7 +1381,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
-   "hash": "b1e6e8f3ca5cd6a2454f"
+   "hash": "84a47e2a3ea651fe64a5"
   },
   "/funderingsonderzoek-westerwolde/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-westerwolde/",
@@ -1285,7 +1413,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
-   "hash": "4344572b5950201b84a8"
+   "hash": "02934afe62471ae14b35"
   },
   "/funderingsonderzoek-weststellingwerf/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-weststellingwerf/",
@@ -1317,7 +1445,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
-   "hash": "d1c44bd352e403cda83e"
+   "hash": "eb95585ef38bd76a3da7"
   },
   "/funderingsonderzoek-winschoten/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-winschoten/",
@@ -1349,7 +1477,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
-   "hash": "723e03e8a3a287356cca"
+   "hash": "ffbf91005e69eace39b4"
   },
   "/funderingsonderzoek-woning/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-woning/",
@@ -1526,7 +1654,7 @@
   "/funderingsrisicoklasse-uitgelegd/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsrisicoklasse-uitgelegd/",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
-   "title": "Funderingsrisicoklasse (funderingslabel) A tot en met E uitgelegd",
+   "title": "Funderingsrisicoklasse en funderingslabel A–E uitgelegd",
    "description": "Wat betekent funderingsrisicoklasse (funderingslabel) A, B, C, D of E? Klik op een klasse voor de KCAF-omschrijving, wat het betekent en de vervolgstap.",
    "h1": [
     "Funderingsrisicoklasse A tot en met E: wat betekent jouw funderingslabel?"
@@ -1549,7 +1677,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
-   "hash": "8f5a2d8c8e46e95af00a"
+   "hash": "299748433ade3bf47155"
   },
   "/funderingsscan-aanvragen/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsscan-aanvragen/",
@@ -4245,7 +4373,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
-   "hash": "5ad22be5fc4163da9217"
+   "hash": "6d34ebd5d0822aafdc43"
   },
   "/werkwijze/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/werkwijze/",
@@ -4318,8 +4446,10 @@
   "https://www.mvfunderingsquickscan.nl/fundering-op-staal/",
   "https://www.mvfunderingsquickscan.nl/funderingsinspectie/",
   "https://www.mvfunderingsquickscan.nl/funderingsmetingen/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-aa-en-hunze/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-achtkarspelen/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-appingedam/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-assen/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-bij-aankoop/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-bij-verkoop/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-dantumadiel/",
@@ -4339,12 +4469,14 @@
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-midden-groningen/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-noardeast-fryslan/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-noord-drenthe/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-noordenveld/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-ooststellingwerf/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-opsterland/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-pekela/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-sneek/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-stadskanaal/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-taxatie/",
+  "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-tynaarlo/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-tytsjerksteradiel/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-veendam/",
   "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-westerkwartier/",

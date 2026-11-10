@@ -283,8 +283,44 @@
     "label": "Noord-Drenthe",
     "group": "regio",
     "file": "regio-f.json",
-    "minWords": 900,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek noord-drenthe",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-assen/",
+    "label": "Assen",
+    "group": "regio",
+    "file": "gemeenten-x.json",
+    "minWords": 1100,
+    "keyword": "funderingsonderzoek assen",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-tynaarlo/",
+    "label": "Tynaarlo",
+    "group": "regio",
+    "file": "gemeenten-x.json",
+    "minWords": 1100,
+    "keyword": "funderingsonderzoek zuidlaren",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-noordenveld/",
+    "label": "Noordenveld",
+    "group": "regio",
+    "file": "gemeenten-x.json",
+    "minWords": 1100,
+    "keyword": "funderingsonderzoek roden",
+    "intent": "lokaal-commercieel"
+  },
+  {
+    "path": "/funderingsonderzoek-aa-en-hunze/",
+    "label": "Aa en Hunze",
+    "group": "regio",
+    "file": "gemeenten-x.json",
+    "minWords": 1100,
+    "keyword": "funderingsonderzoek gieten",
     "intent": "lokaal-commercieel"
   },
   {
@@ -994,7 +1030,7 @@
     "label": "Franeker",
     "group": "regio",
     "file": "regio-o.json",
-    "minWords": 1050,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek franeker",
     "intent": "lokaal-commercieel"
   },
@@ -1003,7 +1039,7 @@
     "label": "Haren",
     "group": "regio",
     "file": "regio-o.json",
-    "minWords": 1050,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek haren",
     "intent": "lokaal-commercieel"
   },
@@ -1012,7 +1048,7 @@
     "label": "Veendam",
     "group": "regio",
     "file": "regio-o.json",
-    "minWords": 1050,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek veendam",
     "intent": "lokaal-commercieel"
   },
@@ -1021,7 +1057,7 @@
     "label": "Winschoten",
     "group": "regio",
     "file": "regio-o.json",
-    "minWords": 1050,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek winschoten",
     "intent": "lokaal-commercieel"
   },
@@ -1030,7 +1066,7 @@
     "label": "Funderingsscan Leeuwarden",
     "group": "regio",
     "file": "regio-o.json",
-    "minWords": 1050,
+    "minWords": 1100,
     "keyword": "funderingsscan leeuwarden",
     "intent": "lokaal-commercieel"
   },
@@ -1048,7 +1084,7 @@
     "label": "Gemeente Achtkarspelen",
     "group": "regio",
     "file": "gemeenten-q.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek buitenpost",
     "intent": "lokaal-commercieel"
   },
@@ -1057,7 +1093,7 @@
     "label": "Gemeente Dantumadiel",
     "group": "regio",
     "file": "gemeenten-q.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek damwâld",
     "intent": "lokaal-commercieel"
   },
@@ -1066,7 +1102,7 @@
     "label": "Gemeente De Fryske Marren",
     "group": "regio",
     "file": "gemeenten-q.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek joure",
     "intent": "lokaal-commercieel"
   },
@@ -1075,7 +1111,7 @@
     "label": "Gemeente Noardeast-Fryslân",
     "group": "regio",
     "file": "gemeenten-q.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek dokkum",
     "intent": "lokaal-commercieel"
   },
@@ -1084,7 +1120,7 @@
     "label": "Gemeente Ooststellingwerf",
     "group": "regio",
     "file": "gemeenten-q.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek oosterwolde",
     "intent": "lokaal-commercieel"
   },
@@ -1093,7 +1129,7 @@
     "label": "Gemeente Opsterland",
     "group": "regio",
     "file": "gemeenten-r.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek gorredijk",
     "intent": "lokaal-commercieel"
   },
@@ -1102,7 +1138,7 @@
     "label": "Gemeente Tytsjerksteradiel",
     "group": "regio",
     "file": "gemeenten-r.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek burgum",
     "intent": "lokaal-commercieel"
   },
@@ -1111,7 +1147,7 @@
     "label": "Gemeente Weststellingwerf",
     "group": "regio",
     "file": "gemeenten-r.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek wolvega",
     "intent": "lokaal-commercieel"
   },
@@ -1120,7 +1156,7 @@
     "label": "Gemeente Eemsdelta",
     "group": "regio",
     "file": "gemeenten-r.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek eemsdelta",
     "intent": "lokaal-commercieel"
   },
@@ -1129,7 +1165,7 @@
     "label": "Gemeente Het Hogeland",
     "group": "regio",
     "file": "gemeenten-r.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek winsum",
     "intent": "lokaal-commercieel"
   },
@@ -1138,7 +1174,7 @@
     "label": "Gemeente Midden-Groningen",
     "group": "regio",
     "file": "gemeenten-s.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek hoogezand",
     "intent": "lokaal-commercieel"
   },
@@ -1147,7 +1183,7 @@
     "label": "Gemeente Pekela",
     "group": "regio",
     "file": "gemeenten-s.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek oude pekela",
     "intent": "lokaal-commercieel"
   },
@@ -1156,7 +1192,7 @@
     "label": "Gemeente Stadskanaal",
     "group": "regio",
     "file": "gemeenten-s.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek stadskanaal",
     "intent": "lokaal-commercieel"
   },
@@ -1165,7 +1201,7 @@
     "label": "Gemeente Westerkwartier",
     "group": "regio",
     "file": "gemeenten-s.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek zuidhorn",
     "intent": "lokaal-commercieel"
   },
@@ -1174,7 +1210,7 @@
     "label": "Gemeente Westerwolde",
     "group": "regio",
     "file": "gemeenten-s.json",
-    "minWords": 950,
+    "minWords": 1100,
     "keyword": "funderingsonderzoek ter apel",
     "intent": "lokaal-commercieel"
   },

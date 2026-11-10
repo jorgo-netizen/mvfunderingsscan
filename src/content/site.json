@@ -299,6 +299,28 @@
               "href": "/funderingsonderzoek-westerkwartier/"
             }
           ]
+        },
+        {
+          "title": "Noord-Drenthe",
+          "href": "/funderingsonderzoek-noord-drenthe/",
+          "items": [
+            {
+              "label": "Assen",
+              "href": "/funderingsonderzoek-assen/"
+            },
+            {
+              "label": "Gieten, Annen & Rolde",
+              "href": "/funderingsonderzoek-aa-en-hunze/"
+            },
+            {
+              "label": "Roden, Peize & Norg",
+              "href": "/funderingsonderzoek-noordenveld/"
+            },
+            {
+              "label": "Zuidlaren, Vries & Eelde",
+              "href": "/funderingsonderzoek-tynaarlo/"
+            }
+          ]
         }
       ],
       "all": {
@@ -900,6 +922,57 @@
         "Bellingwolde",
         "Sellingen",
         "Bourtange"
+      ]
+    },
+    {
+      "naam": "Assen",
+      "provincie": "Drenthe",
+      "href": "/funderingsonderzoek-assen/",
+      "kernen": [
+        "Assen",
+        "Loon",
+        "Rhee",
+        "Ubbena"
+      ]
+    },
+    {
+      "naam": "Tynaarlo",
+      "provincie": "Drenthe",
+      "href": "/funderingsonderzoek-tynaarlo/",
+      "kernen": [
+        "Zuidlaren",
+        "Vries",
+        "Eelde",
+        "Paterswolde",
+        "Tynaarlo",
+        "Zeijen",
+        "Yde"
+      ]
+    },
+    {
+      "naam": "Noordenveld",
+      "provincie": "Drenthe",
+      "href": "/funderingsonderzoek-noordenveld/",
+      "kernen": [
+        "Roden",
+        "Peize",
+        "Norg",
+        "Nietap",
+        "Veenhuizen",
+        "Een"
+      ]
+    },
+    {
+      "naam": "Aa en Hunze",
+      "provincie": "Drenthe",
+      "href": "/funderingsonderzoek-aa-en-hunze/",
+      "kernen": [
+        "Gieten",
+        "Annen",
+        "Rolde",
+        "Gasselte",
+        "Eext",
+        "Gieterveen"
       ]
     }
   ]

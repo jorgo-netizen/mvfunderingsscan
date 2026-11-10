@@ -65,7 +65,7 @@ const AREA = () => [PROVINCE('Friesland'), PROVINCE('Groningen'),
 /** Werkgebied op gemeenteniveau (voor de organisatie). */
 const AREA_DETAILED = () => [
   ...AREA(),
-  ...GEMEENTEN.map((g) => ({ '@type': 'AdministrativeArea', name: `Gemeente ${g.naam}`, containedInPlace: { '@type': 'AdministrativeArea', name: g.provincie } })),
+  ...GEMEENTEN.filter((g) => g.provincie !== 'Drenthe').map((g) => ({ '@type': 'AdministrativeArea', name: `Gemeente ${g.naam}`, containedInPlace: { '@type': 'AdministrativeArea', name: g.provincie } })),
 ];
 
 /** Werkgebied voor één gemeente, inclusief kernen. */
@@ -329,7 +329,7 @@ const FOOTER_COLS = [
     ['/funderingsonderzoek-heerenveen/', 'Heerenveen'], ['/funderingsonderzoek-groningen-stad/', 'Groningen stad'],
     ['/funderingsonderzoek-appingedam/', 'Appingedam'], ['/funderingsonderzoek-delfzijl/', 'Delfzijl'],
     ['/funderingsonderzoek-franeker/', 'Franeker'], ['/funderingsonderzoek-haren/', 'Haren'], ['/funderingsonderzoek-veendam/', 'Veendam'],
-    ['/funderingsonderzoek-winschoten/', 'Winschoten'], ['/funderingsscan-leeuwarden/', 'Funderingsscan Leeuwarden']]],
+    ['/funderingsonderzoek-winschoten/', 'Winschoten'], ['/funderingsonderzoek-assen/', 'Assen'], ['/funderingsscan-leeuwarden/', 'Funderingsscan Leeuwarden']]],
 ];
 
 export function footer() {

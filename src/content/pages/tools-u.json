@@ -578,7 +578,7 @@
   },
   {
     "path": "/funderingsrisicoklasse-uitgelegd/",
-    "title": "Funderingsrisicoklasse (funderingslabel) A tot en met E uitgelegd",
+    "title": "Funderingsrisicoklasse en funderingslabel A–E uitgelegd",
     "description": "Wat betekent funderingsrisicoklasse (funderingslabel) A, B, C, D of E? Klik op een klasse voor de KCAF-omschrijving, wat het betekent en de vervolgstap.",
     "keyword": "funderingsrisicoklasse",
     "intent": "informatief",

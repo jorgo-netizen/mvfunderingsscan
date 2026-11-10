@@ -1,0 +1,570 @@
+[
+  {
+    "path": "/funderingsonderzoek-aa-en-hunze/",
+    "keyword": "funderingsonderzoek gieten",
+    "intent": "lokaal-commercieel",
+    "nav_active": "/werkgebied/",
+    "title": "Funderingsonderzoek Gieten | MV Funderingsscan",
+    "description": "Funderingsonderzoek in Aa en Hunze: Gieten, Annen, Rolde en Gasselte. Onafhankelijke funderingsscan op Hondsrug of veengrond, met advies. Vanaf €350.",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/werkgebied/",
+        "name": "Werkgebied"
+      },
+      {
+        "href": "/funderingsonderzoek-noord-drenthe/",
+        "name": "Funderingsonderzoek Noord-Drenthe"
+      },
+      {
+        "href": "/funderingsonderzoek-aa-en-hunze/",
+        "name": "Aa en Hunze"
+      }
+    ],
+    "eyebrow": "Werkgebied · Gemeente Aa en Hunze",
+    "h1": "Funderingsonderzoek Gieten, Annen en Rolde",
+    "lead": "MV Funderingsscan doet onafhankelijk funderingsonderzoek in de gemeente Aa en Hunze, met onder meer <strong>Gieten, Annen, Rolde en Gasselte</strong>. De gemeente is genoemd naar twee rivierdalen, de Drentsche Aa en de Hunze, met daartussen de zandrug van de Hondsrug. Een <a href=\"/funderingsscan/\">funderingsscan</a> laat zien hoe jouw woning op die afwisselende bodem staat.",
+    "hero_image": {
+      "name": "funderingsinspectie-woning-gevel",
+      "alt": "Persoon meet met een waterpas langs de bakstenen gevel van een woning"
+    },
+    "facts": [
+      {
+        "label": "Gemeente",
+        "value": "Aa en Hunze (Hondsrug en Hunzedal)"
+      },
+      {
+        "label": "Kernen o.a.",
+        "value": "Gieten, Annen, Rolde, Gasselte"
+      },
+      {
+        "label": "Quick Scan",
+        "value": "vanaf €350 incl. btw"
+      },
+      {
+        "label": "Rapport",
+        "value": "meestal binnen 2 werkdagen na inspectie"
+      }
+    ],
+    "services": [
+      "fase0",
+      "fase1"
+    ],
+    "sections": [
+      {
+        "id": "twee-dalen-een-rug",
+        "h2": "Hoe is de bodem in Aa en Hunze opgebouwd?",
+        "answer": "In het midden ligt de Hondsrug, een zandrug met keileem waarop onder meer Gieten, Annen en Gasselte liggen. Ten oosten daarvan ligt het lagere Hunzedal met veenkoloniale dorpen, en ten westen het beekdal van de Drentsche Aa.",
+        "body": "<p>De Hondsrug is in deze gemeente goed te herkennen: de oude dorpen liggen op het hogere zand, met de essen en brinken die bij Drentse dorpen horen. Die zand- en keileemgrond draagt een woning meestal goed. Lees meer over dit type ondergrond bij <a href=\"/kennisbank/zandbodem/\">wonen op een zandbodem</a>.</p><p>Aan de oostkant zakt het landschap af naar het dal van de Hunze. Daar lag vroeger veel veen, dat grotendeels is afgegraven; dorpen als Gieterveen zijn bij die vervening ontstaan. De bodem is er vaak afgegraven, omgezet en opnieuw ingericht, waardoor hij per perceel kan verschillen. Aan de westkant, rond Rolde, ligt het stroomgebied van de Drentsche Aa, met beekdalen waarin plaatselijk veen zit. Hoe veen zich gedraagt, lees je bij <a href=\"/kennisbank/veenbodem/\">de veenbodem</a>.</p>"
+      },
+      {
+        "id": "risicos-aa-en-hunze",
+        "h2": "Wat zijn typische funderingsrisico's in Aa en Hunze?",
+        "answer": "Op de Hondsrug gaat het vooral om ongelijke zetting bij woningen op staal en bij aanbouwen. In het Hunzedal en de beekdalen kan een resterende veenlaag de bodem gevoelig maken voor wisselend grondwater.",
+        "body": "<p>Op de zandrug staan woningen veelal <a href=\"/fundering-op-staal/\">op staal</a>. Dat is op stevige grond een gebruikelijke fundering, die niet afhankelijk is van grondwater boven de koppen van houten palen. Paalrot, het bekende probleem uit de <a href=\"/funderingsproblemen-klei/\">kleigebieden</a> van Friesland en Groningen, is hier daardoor minder vaak het hoofdthema.</p><div class=\"two-col-list\"><div><h3>Op de Hondsrug</h3><ul class=\"checklist\"><li>Aanbouwen en schuren die ondieper zijn gefundeerd</li><li>Oude boerderijen met bouwdelen uit verschillende perioden</li><li>Plekken waar keileem water vasthoudt</li></ul></div><div><h3>In de lagere delen</h3><ul class=\"checklist\"><li>Een veenrest die bij droogte inklinkt; zie <a href=\"/funderingsproblemen-veen/\">funderingsproblemen op veen</a></li><li>Een omgezette bodem die per perceel verschilt</li><li>Oudere woningen met een onbekend funderingstype</li></ul></div></div><p>Bij woningen van vóór circa 1970 op zachte grond kunnen ook houten palen voorkomen; lees daarover bij <a href=\"/problemen-met-houten-palen/\">problemen met houten palen</a>. Scheuren of een <a href=\"/scheefstand-woning/\">scheefstaande woning</a> zijn een reden om te laten kijken. Welk funderingstype je huis heeft, blijkt alleen uit onderzoek op het adres.</p>"
+      },
+      {
+        "id": "kernen-aa-en-hunze",
+        "h2": "Funderingsonderzoek in Gieten, Annen, Rolde en Gasselte",
+        "answer": "De vier grootste dorpen van Aa en Hunze liggen elk op een andere plek in het landschap. Per dorp zie je hieronder waar een funderingsscan zich op richt.",
+        "body": "<h3>Gieten</h3><p>Gieten ligt op de Hondsrug en heeft een oude kern met daaromheen nieuwere woonwijken. Op het zand van de rug is de ondergrond meestal draagkrachtig. Bij een funderingsscan in Gieten kijken we vooral naar het bouwjaar, verbouwingen en de manier waarop aanbouwen met het hoofdhuis verbonden zijn.</p><h3>Annen</h3><p>Ook Annen ligt op de Hondsrug, aan de noordkant van de gemeente. Naast oudere dorpswoningen en boerderijen staan er uitbreidingen uit latere perioden. Wanneer een woning aan de rand van het dorp naar lagere grond toe staat, besteden we in het bodemonderzoek extra aandacht aan die overgang.</p><h3>Rolde</h3><p>Rolde ligt ten westen van de Hondsrug, dicht bij het dal van de Drentsche Aa. Het is een oud esdorp met een historische kern. Bij woningen dicht bij het beekdal kijken we naar veen en grondwater; in de kern vooral naar oudere panden waarvan het funderingstype onbekend is.</p><h3>Gasselte</h3><p>Gasselte ligt op de oostflank van de Hondsrug, met het Hunzedal en de veenkoloniale dorpen in de buurt. Op korte afstand kan de bodem daardoor veranderen van zand naar afgegraven veengrond. Dat maakt het archief- en bodemonderzoek bij een woning in of rond Gasselte extra waardevol.</p><p>In Eext, Gieterveen en de andere dorpen van de gemeente werken we op dezelfde manier.</p>"
+      },
+      {
+        "id": "uitkomst-aa-en-hunze",
+        "h2": "Welke conclusie geeft een scan in Aa en Hunze?",
+        "answer": "Je krijgt een risico-inschatting en één van vier adviezen: geen directe aanleiding voor vervolgonderzoek, monitoren, gericht aanvullend onderzoek of fase 1.",
+        "body": "<p>Een boerderij op de Hondsrug en een woning in een veenkoloniaal dorp vragen om een andere afweging. Daarom eindigt elk rapport met een advies dat bij jouw situatie past:</p><ul class=\"checklist\"><li><strong>Geen directe aanleiding voor vervolgonderzoek</strong> als niets op een funderingsprobleem wijst.</li><li><strong>Monitoren</strong> als je een scheur of scheefstand beter een tijd kunt volgen; zie <a href=\"/kennisbank/scheurmeting/\">scheurmeting</a>.</li><li><strong>Gericht aanvullend onderzoek</strong> voor één concrete vraag.</li><li><strong>Fase 1</strong> als metingen nodig zijn; zie <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>.</li></ul><p>Die inschatting is iets anders dan de KCAF-klasse A tot en met E die je in een taxatierapport tegenkomt. Lees het verschil bij <a href=\"/funderingsrisicoklasse-uitgelegd/\">funderingsrisicoklassen uitgelegd</a>.</p>"
+      },
+      {
+        "id": "voorbereiding-aa-en-hunze",
+        "h2": "Hoe bereid je de scan voor en wanneer kun je in Aa en Hunze terecht?",
+        "answer": "Maak het kruipruimteluik vrij, leg bouwtekeningen of koopstukken klaar en maak gedateerde foto's van scheuren. De inspectie plannen we meestal binnen enkele werkdagen.",
+        "body": "<ul class=\"checklist\"><li>Zorg dat we de kruipruimte in kunnen kijken; we inspecteren die voor zover hij toegankelijk is.</li><li>Leg tekeningen, vergunningen of de koopstukken klaar. Bij een boerderij is het handig als je weet welke delen later zijn bijgebouwd.</li><li>Maak foto's van scheuren met de datum erbij, zodat we kunnen zien of er iets verandert.</li></ul><p>Het rapport komt meestal binnen 2 werkdagen na de inspectie.</p>"
+      },
+      {
+        "id": "grenzen-scan-aa-en-hunze",
+        "h2": "Wat kan een funderingsscan niet?",
+        "answer": "De scan voert geen herstel uit, voorspelt de toekomst niet met zekerheid en vervangt geen inspectieput of metingen in fase 1.",
+        "body": "<p>MV Funderingsscan herstelt zelf geen funderingen; het advies staat daardoor los van een eventuele vervolgopdracht. De scan beoordeelt wat uit het archief, de bodemgegevens en de zichtbare delen van de woning blijkt. De fundering zelf zie je alleen bij een inspectieput, en langzame bewegingen meet je met <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a>.</p>"
+      },
+      {
+        "id": "kosten-aanvragen-aa-en-hunze",
+        "h2": "Wat kost funderingsonderzoek in Gieten en omgeving?",
+        "answer": "De Quick Scan begint bij €350 inclusief btw, fase 1 met metingen bij €950 inclusief btw. Je kent de prijs vooraf.",
+        "body": "<p>Bekijk <a href=\"/prijzen/\">prijzen</a> of <a href=\"/funderingsscan-aanvragen/\">vraag een funderingsscan aan</a>. Bellen kan op werkdagen van 09:00 tot 17:00 via <a href=\"tel:+31582037172\">+31 (0) 582037172</a>.</p><p>In de buurt doen we ook funderingsonderzoek in <a href=\"/funderingsonderzoek-tynaarlo/\">Tynaarlo</a>, <a href=\"/funderingsonderzoek-assen/\">Assen</a>, <a href=\"/funderingsonderzoek-midden-groningen/\">Midden-Groningen</a> en <a href=\"/funderingsonderzoek-stadskanaal/\">Stadskanaal</a>. Het regio-overzicht staat op <a href=\"/funderingsonderzoek-noord-drenthe/\">funderingsonderzoek in Noord-Drenthe</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Waar kan ik een funderingsscan in Gieten laten doen?",
+        "a": "<p>MV Funderingsscan voert funderingsscans uit in Gieten en de andere dorpen van Aa en Hunze. We plannen de inspectie in Gieten meestal binnen enkele werkdagen in; het rapport met advies heb je doorgaans binnen 2 werkdagen na de inspectie.</p>"
+      },
+      {
+        "q": "Is een woning op de Hondsrug bij Annen of Gasselte veilig gefundeerd?",
+        "a": "<p>De zand- en keileemgrond van de Hondsrug bij Annen en Gasselte draagt meestal goed, maar dat zegt niets over één specifiek huis. Een aanbouw, een overgang naar lagere grond of een oud bouwdeel kan ongelijk zakken. Een funderingsscan van MV Funderingsscan brengt dat per adres in beeld.</p>"
+      },
+      {
+        "q": "Waar let je op bij een woning in een veenkoloniaal dorp zoals Gieterveen?",
+        "a": "<p>In veenkoloniale dorpen als Gieterveen is het veen grotendeels afgegraven en is de bodem per perceel verschillend. MV Funderingsscan kijkt daarom in het bodemonderzoek naar resten veen en de grondwaterstand, en bij de inspectie naar tekenen van ongelijke zakking.</p>"
+      },
+      {
+        "q": "Wat kost funderingsonderzoek in Aa en Hunze?",
+        "a": "<p>Een Quick Scan van MV Funderingsscan in Aa en Hunze kost vanaf €350 inclusief btw. Wil je daarna metingen laten doen, dan begint fase 1 bij €950 inclusief btw. Je hoort de prijs voordat je akkoord geeft.</p>"
+      },
+      {
+        "q": "Komen jullie ook naar Rolde en Eext?",
+        "a": "<p>Ja, Rolde en Eext horen bij de gemeente Aa en Hunze en vallen binnen het werkgebied van MV Funderingsscan. Het onderzoek verloopt daar op dezelfde manier als in Gieten.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/funderingsonderzoek-noord-drenthe/",
+        "label": "Funderingsonderzoek in Noord-Drenthe",
+        "text": "Bodem en risico's in de vier gemeenten van Noord-Drenthe."
+      },
+      {
+        "href": "/funderingsproblemen-veen/",
+        "label": "Funderingsproblemen op veen",
+        "text": "Wat inklinkend veen met een fundering kan doen."
+      },
+      {
+        "href": "/funderingsonderzoek-stadskanaal/",
+        "label": "Funderingsonderzoek in Stadskanaal",
+        "text": "Veenkoloniaal gebied net over de provinciegrens."
+      }
+    ],
+    "cta": [
+      "Woning in Gieten, Annen of Rolde laten onderzoeken?",
+      "Vraag een Quick Scan aan; je weet vooraf wat het kost."
+    ]
+  },
+  {
+    "path": "/funderingsonderzoek-assen/",
+    "keyword": "funderingsonderzoek assen",
+    "intent": "lokaal-commercieel",
+    "nav_active": "/werkgebied/",
+    "title": "Funderingsonderzoek Assen | MV Funderingsscan",
+    "description": "Funderingsonderzoek in Assen, Loon, Rhee en Ubbena: onafhankelijke funderingsscan op zand en keileem, met inspectie, rapport en advies. Vanaf €350.",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/werkgebied/",
+        "name": "Werkgebied"
+      },
+      {
+        "href": "/funderingsonderzoek-noord-drenthe/",
+        "name": "Funderingsonderzoek Noord-Drenthe"
+      },
+      {
+        "href": "/funderingsonderzoek-assen/",
+        "name": "Assen"
+      }
+    ],
+    "eyebrow": "Werkgebied · Gemeente Assen",
+    "h1": "Funderingsonderzoek Assen",
+    "lead": "MV Funderingsscan doet onafhankelijk funderingsonderzoek in <strong>Assen</strong> en in de dorpen Loon, Rhee en Ubbena. Met een <a href=\"/funderingsscan/\">funderingsscan</a> (fase 0) krijg je zicht op de fundering van je woning: we combineren archief- en bodemgegevens met een inspectie op het adres en sluiten af met een concreet advies over de vervolgstap.",
+    "hero_image": {
+      "name": "jaren-dertig-woningen-straat",
+      "alt": "Rij oudere jaren-dertigwoningen in een straat met bomen"
+    },
+    "facts": [
+      {
+        "label": "Gemeente",
+        "value": "Assen (Drents Plateau)"
+      },
+      {
+        "label": "Kernen o.a.",
+        "value": "Assen, Loon, Rhee, Ubbena"
+      },
+      {
+        "label": "Quick Scan",
+        "value": "vanaf €350 incl. btw"
+      },
+      {
+        "label": "Rapport",
+        "value": "meestal binnen 2 werkdagen na inspectie"
+      }
+    ],
+    "services": [
+      "fase0",
+      "fase1"
+    ],
+    "sections": [
+      {
+        "id": "bodem-assen",
+        "h2": "Op wat voor bodem is Assen gebouwd?",
+        "answer": "Assen ligt op het Drents Plateau, waar zand en keileem de ondergrond bepalen. In de beekdalen rond de stad kan de bodem zachter zijn en komt plaatselijk veen voor.",
+        "body": "<p>Een groot deel van de stad staat op zandgrond, met op wisselende diepte een laag keileem. Keileem is een compacte, vaste laag die in een ijstijd is achtergebleven. Hij draagt meestal goed, maar laat water slecht door, waardoor regenwater erboven kan blijven staan. Over het gedrag van zand onder een woning lees je meer bij <a href=\"/kennisbank/zandbodem/\">wonen op een zandbodem</a>.</p><p>Keileem is overigens iets anders dan de zeeklei die je in Friesland en Groningen tegenkomt en die in droge perioden krimpt en bij nattigheid zwelt; dat verschil wordt uitgelegd bij <a href=\"/funderingsproblemen-klei/\">funderingsproblemen op klei</a>. Rond Assen liggen beekdalen die bij het stroomgebied van de Drentsche Aa horen. In zulke laagtes kan veen of losser materiaal in de ondergrond zitten, en daar gedraagt een woning zich anders dan op een stevige zandkop.</p>"
+      },
+      {
+        "id": "risicos-assen",
+        "h2": "Wat zijn typische funderingsrisico's in Assen?",
+        "answer": "In Assen gaat het minder vaak om aangetaste houten palen en vaker om ongelijke zetting: bij woningen op staal, bij aanbouwen en bij woningen aan de rand van een beekdal. Ook langdurige droogte kan meespelen.",
+        "body": "<p>Op zand en keileem is <a href=\"/fundering-op-staal/\">fundering op staal</a> gangbaar: de muren rusten via een gemetselde of betonnen strook direct op de draagkrachtige laag. Zo'n fundering hangt niet af van een constante grondwaterstand, zoals houten palen dat doen. Kwetsbaar wordt hij vooral als de grond eronder niet overal even stevig is, of als een latere uitbouw ondieper is aangelegd dan het hoofdgebouw.</p><ul class=\"checklist\"><li><strong>Overgang naar een beekdal.</strong> Een zachte laag onder een deel van de woning kan leiden tot <a href=\"/verzakking-woning/\">verzakking</a> aan één kant en tot <a href=\"/kennisbank/ongelijke-zetting/\">ongelijke zetting</a>.</li><li><strong>Aanbouw of serre.</strong> Een scheur op de naad tussen oud en nieuw is een veelgezien signaal; zie <a href=\"/kennisbank/scheuren-bij-aanbouw/\">scheuren bij een aanbouw</a>.</li><li><strong>Droge zomers.</strong> Zakt het grondwater dieper weg dan normaal, dan kan een plaatselijke veenlaag inklinken. Hoe dat werkt, staat bij <a href=\"/funderingsproblemen-veen/\">funderingsproblemen op veen</a>.</li><li><strong>Oudere panden.</strong> Bij woningen van vóór circa 1970 is het funderingstype niet altijd vastgelegd. Houten palen zijn op deze bodem minder gebruikelijk, maar onder oudere panden op slappere grond niet uitgesloten; lees daarover bij <a href=\"/problemen-met-houten-palen/\">problemen met houten palen</a>.</li></ul><p>Welke van deze punten bij jouw huis speelt, valt niet uit de wijk af te leiden. Alleen onderzoek op het adres geeft uitsluitsel.</p>"
+      },
+      {
+        "id": "wijken-assen",
+        "h2": "Funderingsonderzoek per wijk in Assen",
+        "answer": "Bouwperiode en woningtype verschillen per deel van de stad, en daarmee ook de vragen die we bij een scan stellen. Het funderingstype van een individuele woning stellen we pas vast na onderzoek.",
+        "body": "<h3>Centrum en oude kern</h3><p>Het centrum is het oudste deel van Assen, met panden uit verschillende perioden naast elkaar en veel gebouwen die in de loop der tijd zijn verbouwd of samengevoegd. Bij zulke panden ontbreken de oorspronkelijke bouwtekeningen nogal eens, zodat het archiefonderzoek extra gewicht krijgt. Ter plaatse letten we op scheefstand, <a href=\"/kennisbank/scheuren-boven-kozijnen/\">scheuren boven kozijnen</a> en verschillen tussen voor- en achterbouw.</p><h3>Assen-Oost</h3><p>In Assen-Oost staat veel naoorlogse woningbouw. Woningen uit die periode zijn doorgaans beter gedocumenteerd dan vooroorlogse panden, maar een latere uitbouw of een afwijkende plek in de ondergrond kan ook hier tot ongelijke zakking leiden. We kijken daarom naar de aansluiting van aanbouwen en naar de vlakheid van de vloeren.</p><h3>Pittelo</h3><p>Pittelo is een naoorlogse woonwijk. De oorspronkelijke fundering is bij woningen uit deze tijd vaak terug te vinden in het bouwarchief van de gemeente. Onze aandacht gaat hier vooral naar wat er later aan de woning is veranderd, zoals uitbouwen, aangebouwde bergingen en verbouwingen aan de draagmuren.</p><h3>Marsdijk</h3><p>Marsdijk is een uitbreidingswijk uit het laatste deel van de twintigste eeuw. Bij deze relatief jonge woningen is een funderingsprobleem minder voor de hand liggend; vaak gaat het om een concrete vraag, zoals een scheur die na een verbouwing is ontstaan.</p><h3>Kloosterveen</h3><p>Kloosterveen is een recente uitbreiding van Assen. De fundering van nieuwbouw wordt ontworpen op basis van grondonderzoek en de gegevens zijn meestal op te vragen. Kom je hier scheuren of een aflopende vloer tegen, dan kijken we naar zetting in de eerste jaren na de bouw en naar ondiep gefundeerde aanbouwen.</p><h3>Baggelhuizen</h3><p>Ook Baggelhuizen is een recente uitbreidingswijk. Voor deze woningen is een funderingsscan zelden een routinestap, maar bij twijfel na oplevering of bij een uitbouw die anders beweegt dan het huis zelf kan een onafhankelijke blik helpen.</p>"
+      },
+      {
+        "id": "uitkomst-assen",
+        "h2": "Welke uitkomst kan een funderingsscan in Assen hebben?",
+        "answer": "Het rapport sluit af met een risico-inschatting en één van vier adviezen, oplopend van geen directe aanleiding voor vervolgonderzoek tot fase 1.",
+        "body": "<p>Omdat veel woningen in Assen op zand en keileem staan, is de uitkomst lang niet altijd dat er meer onderzoek nodig is. Het advies is altijd een van deze vier:</p><ul class=\"checklist\"><li><strong>Geen directe aanleiding voor vervolgonderzoek.</strong> De gegevens en de inspectie geven geen reden om verder te zoeken.</li><li><strong>Monitoren.</strong> Er is iets te zien, maar nog geen beeld van een doorgaande beweging; je volgt bijvoorbeeld een scheur over een langere periode.</li><li><strong>Gericht aanvullend onderzoek.</strong> Eén specifieke vraag verdient een nadere blik, zonder dat een volledige meting nodig is.</li><li><strong>Fase 1.</strong> Metingen aan gevels, vloeren en scheefstand zijn nodig voor een onderbouwd oordeel; zie <a href=\"/fase-1-funderingsonderzoek/\">fase 1 funderingsonderzoek</a>.</li></ul><p>De risico-inschatting in ons rapport is niet hetzelfde als de KCAF-risicoklasse A tot en met E die een taxateur opneemt. Wat die letters wel en niet zeggen, lees je bij <a href=\"/funderingsrisicoklasse-uitgelegd/\">funderingsrisicoklassen uitgelegd</a>.</p>"
+      },
+      {
+        "id": "voorbereiding-assen",
+        "h2": "Hoe bereid je de scan in Assen voor en hoe snel kun je terecht?",
+        "answer": "Zorg dat het kruipruimteluik bereikbaar is, leg bouwtekeningen of koopstukken klaar en maak gedateerde foto's van scheuren. De inspectie in Assen plannen we meestal binnen enkele werkdagen in.",
+        "body": "<ul class=\"checklist\"><li>Haal kasten, kleden of dozen weg boven het luik naar de kruipruimte, zodat we erin kunnen kijken voor zover dat veilig kan. Wat we daar bekijken, staat bij <a href=\"/kennisbank/kruipruimte-inspectie/\">inspectie van de kruipruimte</a>.</li><li>Heb je bouwtekeningen, een bestek, opleverstukken of een eerder bouwkundig rapport, leg die dan klaar. Bij een recent gekochte woning staan er soms gegevens in de koopstukken.</li><li>Fotografeer scheuren met de datum erbij en leg er een liniaal of muntstuk naast. Zo is later te zien of een scheur groeit.</li></ul><p>Na je aanvraag stemmen we een moment af. Het rapport volgt meestal binnen 2 werkdagen na de inspectie, wat handig is als je bijvoorbeeld een bod op een woning in Assen wilt onderbouwen.</p>"
+      },
+      {
+        "id": "grenzen-scan-assen",
+        "h2": "Wat doet de funderingsscan niet?",
+        "answer": "Een scan geeft inzicht in de huidige staat en het risico, maar herstelt niets en voorspelt de toekomst niet met zekerheid. Hij vervangt geen inspectieput of fase 1-metingen.",
+        "body": "<p>MV Funderingsscan voert zelf geen funderingsherstel uit. Daardoor heeft het advies geen belang bij een vervolgopdracht. Daarnaast heeft een scan grenzen die je vooraf moet kennen:</p><ul class=\"checklist\"><li>We graven geen inspectieput en zien de fundering dus niet rechtstreeks; waar dat nodig is, adviseren we het.</li><li>Een visuele inspectie zonder metingen vervangt geen <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a> met waterpassingen en loodmetingen.</li><li>Het rapport beschrijft de situatie op het moment van onderzoek; hoe de bodem zich in de komende jaren gedraagt, kan niemand zeker voorspellen.</li><li>We stellen geen oorzaak van schade vast in juridische zin en doen geen uitspraak over aansprakelijkheid.</li></ul>"
+      },
+      {
+        "id": "kosten-aanvragen-assen",
+        "h2": "Wat kost funderingsonderzoek in Assen en hoe vraag je het aan?",
+        "answer": "Een Quick Scan (fase 0) in Assen kost vanaf €350 inclusief btw; fase 1 met metingen vanaf €950. Je hoort de prijs voordat je akkoord geeft.",
+        "body": "<p>De prijsopbouw is in Assen gelijk aan de rest van ons werkgebied; zie <a href=\"/prijzen/\">prijzen</a>. Je kunt de <a href=\"/funderingsscan-aanvragen/\">funderingsscan aanvragen</a> via het formulier of bellen op <a href=\"tel:+31582037172\">+31 (0) 582037172</a>, op werkdagen tussen 09:00 en 17:00.</p><p>Woon je net buiten de stad? Bekijk dan ook funderingsonderzoek in <a href=\"/funderingsonderzoek-tynaarlo/\">Tynaarlo</a>, <a href=\"/funderingsonderzoek-noordenveld/\">Noordenveld</a> of <a href=\"/funderingsonderzoek-aa-en-hunze/\">Aa en Hunze</a>. Het overzicht voor de hele regio staat op <a href=\"/funderingsonderzoek-noord-drenthe/\">funderingsonderzoek in Noord-Drenthe</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Waar laat ik een funderingsscan in Assen uitvoeren?",
+        "a": "<p>MV Funderingsscan voert funderingsscans uit in heel Assen, van het centrum tot Kloosterveen en Baggelhuizen, en in Loon, Rhee en Ubbena. De inspectie wordt meestal binnen enkele werkdagen ingepland en het rapport volgt doorgaans binnen 2 werkdagen daarna.</p>"
+      },
+      {
+        "q": "Staan woningen in Assen op houten palen?",
+        "a": "<p>Op de zand- en keileembodem van Assen is fundering op staal gangbaar en komen houten palen minder vaak voor dan in Friesland of de stad Groningen. Bij oudere panden op zachtere grond zijn ze niet uitgesloten. Alleen onderzoek op het adres, zoals de funderingsscan van MV Funderingsscan, geeft daar uitsluitsel over.</p>"
+      },
+      {
+        "q": "Heeft funderingsonderzoek in Kloosterveen of Baggelhuizen zin?",
+        "a": "<p>Voor recente woningen in Kloosterveen en Baggelhuizen in Assen is funderingsonderzoek geen standaardstap. Het kan wel zinvol zijn bij scheuren, een aflopende vloer of een uitbouw die anders beweegt dan het huis. MV Funderingsscan kijkt dan onafhankelijk of de fundering een rol speelt.</p>"
+      },
+      {
+        "q": "Wat kost funderingsonderzoek in Assen?",
+        "a": "<p>Een Quick Scan (fase 0) van MV Funderingsscan in Assen kost vanaf €350 inclusief btw. Fase 1 met metingen kost vanaf €950 inclusief btw. Je hoort de prijs vooraf, voordat je akkoord geeft.</p>"
+      },
+      {
+        "q": "Komen jullie ook naar Loon, Rhee en Ubbena?",
+        "a": "<p>Ja, de dorpen Loon, Rhee en Ubbena horen bij de gemeente Assen en vallen binnen het werkgebied van MV Funderingsscan. Het onderzoek en de prijsopbouw zijn daar hetzelfde als in de stad Assen.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/funderingsonderzoek-noord-drenthe/",
+        "label": "Funderingsonderzoek in Noord-Drenthe",
+        "text": "Bodem en risico's in Assen, Tynaarlo, Noordenveld en Aa en Hunze."
+      },
+      {
+        "href": "/fundering-op-staal/",
+        "label": "Fundering op staal",
+        "text": "Het gangbare funderingstype op zand en keileem."
+      },
+      {
+        "href": "/kennisbank/zandbodem/",
+        "label": "Wonen op een zandbodem",
+        "text": "Waarom zand vaak stabiel is en waar je toch op let."
+      }
+    ],
+    "cta": [
+      "Woning in Assen laten onderzoeken?",
+      "Vraag een Quick Scan aan; je weet vooraf wat het kost."
+    ]
+  },
+  {
+    "path": "/funderingsonderzoek-noordenveld/",
+    "keyword": "funderingsonderzoek roden",
+    "intent": "lokaal-commercieel",
+    "nav_active": "/werkgebied/",
+    "title": "Funderingsonderzoek Roden | MV Funderingsscan",
+    "description": "Funderingsonderzoek in Noordenveld: Roden, Peize, Norg en Veenhuizen. Onafhankelijke Quick Scan met archief, bodem, inspectie en advies. Vanaf €350.",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/werkgebied/",
+        "name": "Werkgebied"
+      },
+      {
+        "href": "/funderingsonderzoek-noord-drenthe/",
+        "name": "Funderingsonderzoek Noord-Drenthe"
+      },
+      {
+        "href": "/funderingsonderzoek-noordenveld/",
+        "name": "Noordenveld"
+      }
+    ],
+    "eyebrow": "Werkgebied · Gemeente Noordenveld",
+    "h1": "Funderingsonderzoek Roden, Peize en Norg",
+    "lead": "MV Funderingsscan doet onafhankelijk funderingsonderzoek in de gemeente Noordenveld, met onder meer <strong>Roden, Peize, Norg en Veenhuizen</strong>. Van brinkdorpen op het zand tot een negentiende-eeuwse kolonie in een voormalig veengebied: elke kern vraagt om een eigen blik. Je begint met een <a href=\"/quickscan-fundering/\">Quick Scan</a> die archief, bodem en een inspectie bij je woning combineert.",
+    "hero_image": {
+      "name": "metselwerk-gevel-detail",
+      "alt": "Close-up van oud bakstenen metselwerk met voegen in een gevel"
+    },
+    "facts": [
+      {
+        "label": "Gemeente",
+        "value": "Noordenveld (noordwest-Drenthe)"
+      },
+      {
+        "label": "Kernen o.a.",
+        "value": "Roden, Peize, Norg, Veenhuizen"
+      },
+      {
+        "label": "Quick Scan",
+        "value": "vanaf €350 incl. btw"
+      },
+      {
+        "label": "Rapport",
+        "value": "meestal binnen 2 werkdagen na inspectie"
+      }
+    ],
+    "services": [
+      "fase0",
+      "fase1"
+    ],
+    "sections": [
+      {
+        "id": "bodem-noordenveld",
+        "h2": "Welke ondergrond vind je in Noordenveld?",
+        "answer": "Noordenveld ligt grotendeels op zand en keileem van het Drents Plateau. Langs beken zoals het Peizerdiep en in voormalige veengebieden kan de bodem zachter zijn en veen bevatten.",
+        "body": "<p>Rond Roden en Norg overheerst zandgrond, op veel plekken met keileem op geringe diepte. Zo'n bodem draagt een woning doorgaans goed. Waar de keileem ondiep ligt, kan regenwater wel langer in de bovengrond blijven staan, wat invloed heeft op een kruipruimte die vochtig blijft.</p><p>Het noorden van de gemeente, richting Peize en de grens met Groningen, ligt lager. Langs het Peizerdiep liggen beekdalgronden waar veen kan voorkomen. En Veenhuizen dankt zijn naam aan het veen dat hier ooit is ontgonnen. Op zulke plekken is de ondergrond minder egaal dan op het hogere zand. Meer achtergrond vind je bij <a href=\"/kennisbank/veenbodem/\">de veenbodem</a> en <a href=\"/kennisbank/grondwater-en-fundering/\">grondwater en fundering</a>.</p>"
+      },
+      {
+        "id": "risicos-noordenveld",
+        "h2": "Wat zijn typische funderingsrisico's in Noordenveld?",
+        "answer": "Het grootste aandachtspunt is ongelijke zetting: bij woningen op staal waarvan een deel op zachtere grond staat, bij aanbouwen en bij historische gebouwen die in fasen zijn ontstaan. Paalrot speelt hier een kleinere rol dan in veen- en kleigebieden.",
+        "body": "<p>Woningen op het Drentse zand staan vaak <a href=\"/fundering-op-staal/\">op staal</a>, dus met een fundering die direct op de draagkrachtige laag rust. Aantasting van houten palen, een bekend probleem in de Friese en Groningse <a href=\"/funderingsproblemen-klei/\">kleigebieden</a> en veenweiden, is hier minder vaak aan de orde. Toch zijn er situaties waarin een fundering in Noordenveld onder druk kan komen te staan:</p><ul class=\"checklist\"><li>Een woning die op de overgang van zand naar beekdalgrond staat, waardoor één kant meer zakt dan de andere.</li><li>Een veenlaag onder of naast de woning die bij langdurige droogte inklinkt; zie <a href=\"/funderingsproblemen-veen/\">funderingsproblemen op veen</a>.</li><li>Een aanbouw, garage of serre met een eigen, ondiepere fundering.</li><li>Oudere gebouwen waarvan het funderingstype niet in het archief staat. Bij woningen van vóór circa 1970 op zachte grond zijn <a href=\"/problemen-met-houten-palen/\">houten palen</a> niet uitgesloten.</li></ul><p>Herkenbare signalen zijn onder meer <a href=\"/scheuren-in-gevel/\">scheuren in de gevel</a>, scheefstand en deuren die gaan klemmen. Of de fundering de oorzaak is, blijkt alleen uit onderzoek op het adres.</p>"
+      },
+      {
+        "id": "kernen-noordenveld",
+        "h2": "Funderingsonderzoek in Roden, Peize, Norg en Veenhuizen",
+        "answer": "De vier grootste kernen van Noordenveld verschillen in ligging en karakter. Per kern zie je hieronder waar we bij een funderingsscan op letten.",
+        "body": "<h3>Roden</h3><p>Roden is de grootste kern van Noordenveld, met een oude dorpskern rond de brink en daaromheen uitbreidingswijken uit verschillende perioden. In de kern vind je oudere panden die vaak meermaals zijn verbouwd; in de wijken overheersen naoorlogse woningen. Bij een funderingsscan in Roden bekijken we vooral hoe aanbouwen en verbouwingen zich tot het oorspronkelijke huis verhouden.</p><h3>Peize</h3><p>Peize ligt aan de noordkant van de gemeente, dicht bij het Peizerdiep. Door die ligging aan lagere gronden besteden we in het bodemonderzoek extra aandacht aan veen en de grondwaterstand. Bij oudere woningen en boerderijen kijken we bovendien naar scheuren die op ongelijke zakking kunnen wijzen.</p><h3>Norg</h3><p>Norg is een brinkdorp op het zand, met een oude kern en boerderijen in en rond het dorp. De ondergrond is hier overwegend draagkrachtig. Vragen gaan vaker over een specifieke scheur, een oude schuur die bij het woonhuis is getrokken of een uitbouw die anders reageert dan het hoofdgebouw.</p><h3>Veenhuizen</h3><p>Veenhuizen is in de negentiende eeuw ontstaan als kolonie van de Maatschappij van Weldadigheid en heeft een bijzondere historische bebouwing, met veel monumentale gebouwen. Bij zulke oude panden zijn gegevens over de fundering vaak schaars en is voorzichtigheid geboden bij verbouwingen. Gaat het om een monument, dan is het verstandig om vooraf ook met de gemeente te overleggen over eventuele ingrepen.</p><p>Ook in Nietap, Een en de andere dorpen van Noordenveld voeren we funderingsonderzoek uit.</p>"
+      },
+      {
+        "id": "uitkomst-noordenveld",
+        "h2": "Welk advies kun je na een scan in Noordenveld verwachten?",
+        "answer": "Het rapport geeft een risico-inschatting en één van vier adviezen: geen directe aanleiding voor vervolgonderzoek, monitoren, gericht aanvullend onderzoek of fase 1.",
+        "body": "<p>Op de zandgronden rond Roden en Norg komt het regelmatig voor dat er na de scan geen reden is om verder te gaan. Bij een woning aan een beekdal of een historisch pand kan het advies anders uitvallen. De vier mogelijke adviezen:</p><div class=\"table-wrap\"><table class=\"data-table\"><thead><tr><th scope=\"col\">Advies</th><th scope=\"col\">Wat het betekent</th></tr></thead><tbody><tr><td>Geen directe aanleiding voor vervolgonderzoek</td><td>Er zijn geen aanwijzingen voor een funderingsprobleem gevonden.</td></tr><tr><td>Monitoren</td><td>Je volgt scheuren of scheefstand een tijd om te zien of ze veranderen.</td></tr><tr><td>Gericht aanvullend onderzoek</td><td>Een afgebakende vraag wordt nader onderzocht.</td></tr><tr><td>Fase 1</td><td>Metingen geven een onderbouwd beeld van de fundering.</td></tr></tbody></table></div><p>De risico-inschatting staat los van de KCAF-klasse A tot en met E die een taxateur gebruikt; lees het verschil bij <a href=\"/funderingsrisicoklasse-uitgelegd/\">funderingsrisicoklassen uitgelegd</a>.</p>"
+      },
+      {
+        "id": "voorbereiding-noordenveld",
+        "h2": "Wat regel je vooraf en hoe snel komen we in Noordenveld langs?",
+        "answer": "Maak de kruipruimte bereikbaar, leg tekeningen of koopstukken klaar en fotografeer scheuren met datum. Meestal plannen we de inspectie binnen enkele werkdagen in.",
+        "body": "<ul class=\"checklist\"><li>Het luik naar de kruipruimte moet open kunnen; we inspecteren de ruimte voor zover die bereikbaar is.</li><li>Bouwtekeningen, een verbouwingsvergunning of de stukken van je aankoop helpen bij het archiefonderzoek. Bij een monument kunnen ook eerdere restauratiestukken nuttig zijn.</li><li>Gedateerde foto's van scheuren maken zichtbaar of er in de tussentijd iets is veranderd.</li></ul><p>Na de inspectie ontvang je het rapport meestal binnen 2 werkdagen.</p>"
+      },
+      {
+        "id": "grenzen-scan-noordenveld",
+        "h2": "Wat valt buiten een funderingsscan?",
+        "answer": "Een scan levert geen herstel, geen zekerheid over de toekomst en geen directe blik op de fundering zelf. Daarvoor zijn een inspectieput of fase 1 nodig.",
+        "body": "<p>Omdat MV Funderingsscan geen herstelwerk uitvoert, adviseren we zonder belang bij de uitkomst. De scan is een eerste beoordeling op basis van archief, bodemgegevens en wat zichtbaar is. Hoe de fundering er onder de grond precies bij ligt, zie je alleen met een inspectieput. Kleine bewegingen meet je pas met de waterpassingen en loodmetingen van <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a>.</p>"
+      },
+      {
+        "id": "kosten-aanvragen-noordenveld",
+        "h2": "Wat kost een funderingsscan in Roden en omgeving?",
+        "answer": "De Quick Scan kost vanaf €350 inclusief btw, fase 1 vanaf €950 inclusief btw. Je hoort de prijs vooraf.",
+        "body": "<p>Lees meer op <a href=\"/prijzen/\">prijzen</a> of <a href=\"/funderingsscan-aanvragen/\">vraag de funderingsscan aan</a>. Bellen kan ook: <a href=\"tel:+31582037172\">+31 (0) 582037172</a>, op werkdagen van 09:00 tot 17:00.</p><p>In de omgeving onderzoeken we ook woningen in <a href=\"/funderingsonderzoek-westerkwartier/\">het Westerkwartier</a>, <a href=\"/funderingsonderzoek-tynaarlo/\">Tynaarlo</a> en <a href=\"/funderingsonderzoek-assen/\">Assen</a>. Alles over de regio staat op <a href=\"/funderingsonderzoek-noord-drenthe/\">funderingsonderzoek in Noord-Drenthe</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Waar kan ik funderingsonderzoek in Roden laten doen?",
+        "a": "<p>MV Funderingsscan doet funderingsonderzoek in Roden en de andere kernen van Noordenveld. Een afspraak voor de inspectie is meestal binnen enkele werkdagen mogelijk, en het rapport ontvang je doorgaans binnen 2 werkdagen na het bezoek.</p>"
+      },
+      {
+        "q": "Is een funderingsscan in Roden nodig als mijn huis op zand staat?",
+        "a": "<p>Niet altijd. Zand en keileem rond Roden dragen meestal goed, maar bij scheuren, scheefstand, een aanbouw of een woning aan een beekdal kan een funderingsscan van MV Funderingsscan duidelijkheid geven. Bij een taxatie met klasse D of E is aanvullend onderzoek in principe nodig.</p>"
+      },
+      {
+        "q": "Onderzoeken jullie ook historische panden in Veenhuizen?",
+        "a": "<p>Ja, MV Funderingsscan onderzoekt ook oudere en monumentale gebouwen in Veenhuizen. Omdat funderingsgegevens bij zulke panden vaak ontbreken, weegt de inspectie ter plaatse zwaar. Het rapport geeft aan of verder onderzoek nodig is.</p>"
+      },
+      {
+        "q": "Wat kost funderingsonderzoek in Noordenveld?",
+        "a": "<p>Een Quick Scan van MV Funderingsscan in Noordenveld kost vanaf €350 inclusief btw, fase 1 met metingen vanaf €950 inclusief btw. Je hoort de prijs voordat je akkoord geeft.</p>"
+      },
+      {
+        "q": "Speelt veen een rol bij woningen in Peize?",
+        "a": "<p>Dat kan. Peize ligt dicht bij het Peizerdiep, waar in de lagere gronden veen kan voorkomen. In het bodemonderzoek van de funderingsscan kijkt MV Funderingsscan wat er over de ondergrond en het grondwater op jouw adres in Peize bekend is.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/funderingsonderzoek-noord-drenthe/",
+        "label": "Funderingsonderzoek in Noord-Drenthe",
+        "text": "Zand, keileem en beekdalen in de vier gemeenten."
+      },
+      {
+        "href": "/funderingsonderzoek-westerkwartier/",
+        "label": "Funderingsonderzoek in het Westerkwartier",
+        "text": "De Groningse buurgemeente met klei, zand en veen."
+      },
+      {
+        "href": "/kennisbank/ongelijke-zetting/",
+        "label": "Ongelijke zetting",
+        "text": "Waarom verschil in zakking schadelijker is dan gelijkmatige zakking."
+      }
+    ],
+    "cta": [
+      "Woning in Roden, Peize of Norg laten onderzoeken?",
+      "Vraag een Quick Scan aan; je hoort de prijs vooraf."
+    ]
+  },
+  {
+    "path": "/funderingsonderzoek-tynaarlo/",
+    "keyword": "funderingsonderzoek zuidlaren",
+    "intent": "lokaal-commercieel",
+    "nav_active": "/werkgebied/",
+    "title": "Funderingsonderzoek Zuidlaren | MV Funderingsscan",
+    "description": "Funderingsonderzoek in Tynaarlo: Zuidlaren, Vries, Eelde en Paterswolde. Onafhankelijke funderingsscan met inspectie, rapport en advies, vanaf €350.",
+    "crumbs": [
+      {
+        "href": "/",
+        "name": "Home"
+      },
+      {
+        "href": "/werkgebied/",
+        "name": "Werkgebied"
+      },
+      {
+        "href": "/funderingsonderzoek-noord-drenthe/",
+        "name": "Funderingsonderzoek Noord-Drenthe"
+      },
+      {
+        "href": "/funderingsonderzoek-tynaarlo/",
+        "name": "Tynaarlo"
+      }
+    ],
+    "eyebrow": "Werkgebied · Gemeente Tynaarlo",
+    "h1": "Funderingsonderzoek Zuidlaren, Vries en Eelde",
+    "lead": "MV Funderingsscan doet onafhankelijk funderingsonderzoek in de gemeente Tynaarlo, met onder meer <strong>Zuidlaren, Vries, Eelde en Paterswolde</strong>. Binnen deze ene gemeente wisselt de bodem van de zandrug van de Hondsrug tot lage gronden langs meren en beken. Een <a href=\"/fase-0-funderingsonderzoek/\">Quick Scan (fase 0)</a> laat zien wat dat voor jouw woning betekent.",
+    "hero_image": {
+      "name": "vooroorlogse-woning-voordeur",
+      "alt": "Klassieke houten voordeur in de bakstenen gevel van een oudere woning"
+    },
+    "facts": [
+      {
+        "label": "Gemeente",
+        "value": "Tynaarlo (Hondsrug en Drents Plateau)"
+      },
+      {
+        "label": "Kernen o.a.",
+        "value": "Zuidlaren, Vries, Eelde, Paterswolde"
+      },
+      {
+        "label": "Quick Scan",
+        "value": "vanaf €350 incl. btw"
+      },
+      {
+        "label": "Rapport",
+        "value": "meestal binnen 2 werkdagen na inspectie"
+      }
+    ],
+    "services": [
+      "fase0",
+      "fase1"
+    ],
+    "sections": [
+      {
+        "id": "hondsrug-en-laagtes-tynaarlo",
+        "h2": "Waarom verschilt de bodem zo binnen Tynaarlo?",
+        "answer": "Zuidlaren ligt op de Hondsrug, Vries en Tynaarlo op het zand en keileem van het Drents Plateau, en Eelde en Paterswolde grenzen aan lagere gronden met plaatselijk veen. Daardoor is de ondergrond per kern anders.",
+        "body": "<p>De Hondsrug is een langgerekte zandrug die vanuit de stad Groningen naar het zuidoosten loopt. Zuidlaren ligt op die rug; naar het oosten toe daalt het land af naar het dal van de Hunze en het Zuidlaardermeer, waar de bodem natter en zachter is. Vries, Tynaarlo, Zeijen en Yde liggen meer op het Drents Plateau, met zand en op veel plekken keileem in de ondergrond. Meer over deze grondsoort lees je bij <a href=\"/kennisbank/zandbodem/\">wonen op een zandbodem</a>.</p><p>Aan de westkant van de gemeente, rond Eelde en Paterswolde, liggen het Eelderdiep en het Paterswoldsemeer. In zulke lage gebieden kan veen in de ondergrond zitten. Veen reageert op de grondwaterstand: droogt het uit, dan kan het inklinken, zoals uitgelegd bij <a href=\"/kennisbank/veenbodem/\">de veenbodem</a>.</p>"
+      },
+      {
+        "id": "risicos-tynaarlo",
+        "h2": "Wat zijn typische funderingsrisico's in Tynaarlo?",
+        "answer": "Op de zandgronden draait het vooral om ongelijke zetting van woningen op staal en van aanbouwen. In de lagere delen bij Eelde, Paterswolde en de oostrand van Zuidlaren kan een veenlaag de bodem gevoeliger maken voor droogte.",
+        "body": "<p>Op de zand- en keileemgronden van Tynaarlo zijn woningen vaak <a href=\"/fundering-op-staal/\">op staal gefundeerd</a>. Dat is op een draagkrachtige ondergrond een gebruikelijke en degelijke oplossing. Problemen ontstaan meestal pas als de grond onder de woning niet overal hetzelfde is.</p><div class=\"two-col-list\"><div><h3>Op de hogere zandgronden</h3><ul class=\"checklist\"><li>Een uitbouw of serre die ondieper is gefundeerd dan het huis</li><li>Een oude boerderij die in fasen is uitgebreid</li><li>Plekken waar keileem water vasthoudt rond de fundering</li></ul></div><div><h3>In de lagere delen</h3><ul class=\"checklist\"><li>Een veenlaag die bij een lage grondwaterstand inklinkt</li><li>Een woning die deels op zand, deels op zachtere grond staat</li><li>Oudere panden waarvan het funderingstype onbekend is</li></ul></div></div><p>Zie voor de achtergrond <a href=\"/funderingsproblemen-veen/\">funderingsproblemen op veen</a> en, voor wie de vergelijking met het kleigebied wil maken, <a href=\"/funderingsproblemen-klei/\">funderingsproblemen op klei</a>. Houten palen komen hier minder vaak voor dan in de stad Groningen, maar bij woningen van vóór circa 1970 op zachte grond kan het; zie <a href=\"/problemen-met-houten-palen/\">problemen met houten palen</a>. Wat er onder jouw huis zit, blijkt pas uit onderzoek op het adres.</p>"
+      },
+      {
+        "id": "kernen-tynaarlo",
+        "h2": "Funderingsonderzoek in Zuidlaren, Vries, Eelde en Paterswolde",
+        "answer": "Elke kern in Tynaarlo heeft zijn eigen ligging en woningvoorraad. Hieronder per dorp waar we tijdens een scan extra op letten.",
+        "body": "<h3>Zuidlaren</h3><p>Zuidlaren is een oud Drents dorp met brinken, waar oude boerderijen en dorpswoningen naast nieuwere uitbreidingen staan. Op de Hondsrug zelf is de ondergrond meestal stevig; richting het Zuidlaardermeer wordt hij lager en natter. Bij een funderingsscan in Zuidlaren kijken we daarom niet alleen naar het bouwjaar, maar ook naar de plek van de woning ten opzichte van die overgang.</p><h3>Vries</h3><p>Vries is eveneens een brinkdorp met een oude kern. Rond het dorp liggen nieuwere woonwijken op zand- en keileemgrond. Bij oudere woningen en boerderijen in de kern letten we op uitbreidingen uit verschillende perioden, die elk hun eigen fundering kunnen hebben.</p><h3>Eelde</h3><p>Eelde ligt aan de westrand van de gemeente, in de buurt van het Eelderdiep. Naast oudere dorpsbebouwing staat er veel woningbouw uit de tweede helft van de twintigste eeuw. Bij woningen dicht bij de lagere gronden besteden we in het bodemonderzoek aandacht aan veen en grondwater.</p><h3>Paterswolde</h3><p>Paterswolde grenst aan het Paterswoldsemeer en loopt aan de noordkant over in de Groningse stadsrand. De nabijheid van water en lage gronden maakt het bodemonderzoek hier extra belangrijk. Signalen als <a href=\"/klemmende-deuren-en-ramen/\">klemmende deuren en ramen</a> of een scheur bij een aanbouw nemen we mee in de inspectie.</p><p>Ook in Tynaarlo-dorp, Zeijen en Yde werken we op dezelfde manier.</p>"
+      },
+      {
+        "id": "uitkomst-tynaarlo",
+        "h2": "Wat kan er uit een scan in Tynaarlo komen?",
+        "answer": "Je krijgt een risico-inschatting met één van vier adviezen: geen directe aanleiding voor vervolgonderzoek, monitoren, gericht aanvullend onderzoek of fase 1.",
+        "body": "<p>Een woning op de Hondsrug en een woning aan de rand van het Paterswoldsemeer kunnen tot heel verschillende conclusies leiden. Het rapport vertaalt wat we vonden naar een van deze adviezen:</p><ul class=\"checklist\"><li><strong>Geen directe aanleiding voor vervolgonderzoek</strong>: archief, bodem en inspectie wijzen niet op een funderingsprobleem.</li><li><strong>Monitoren</strong>: je houdt een scheur of scheefstand een tijd in de gaten om te zien of er beweging in zit; zie <a href=\"/kennisbank/monitoring-scheuren/\">scheuren monitoren</a>.</li><li><strong>Gericht aanvullend onderzoek</strong>: een afgebakende vraag, bijvoorbeeld over één gevel of een aanbouw.</li><li><strong>Fase 1</strong>: metingen zijn nodig om de staat van de fundering goed te beoordelen.</li></ul><p>Verwar de risico-inschatting niet met de KCAF-klasse A tot en met E in een taxatierapport. Het verschil staat bij <a href=\"/funderingsrisicoklasse-uitgelegd/\">funderingsrisicoklassen uitgelegd</a>.</p>"
+      },
+      {
+        "id": "voorbereiding-tynaarlo",
+        "h2": "Hoe bereid je een scan in Tynaarlo voor en wanneer kunnen we komen?",
+        "answer": "Maak het kruipruimteluik vrij, zoek bouwtekeningen of koopstukken op en fotografeer scheuren met datum. Een afspraak in Tynaarlo is meestal binnen enkele werkdagen mogelijk.",
+        "body": "<p>Met een paar voorbereidingen haal je meer uit de inspectie:</p><ul class=\"checklist\"><li>Zorg dat we bij het kruipruimteluik kunnen; we bekijken de ruimte voor zover die toegankelijk is.</li><li>Verzamel wat je hebt aan tekeningen, vergunningen of een verbouwingsdossier. Bij een boerderij is ook een overzicht van eerdere verbouwingen nuttig.</li><li>Maak foto's van scheuren met een zichtbare datum, en herhaal dat na een paar weken als je wilt weten of ze veranderen.</li></ul><p>Je rapport ontvang je meestal binnen 2 werkdagen na de inspectie.</p>"
+      },
+      {
+        "id": "grenzen-scan-tynaarlo",
+        "h2": "Waar houdt een funderingsscan op?",
+        "answer": "De scan herstelt niets, geeft geen zekerheid over toekomstige zetting en vervangt geen inspectieput of fase 1 met metingen.",
+        "body": "<p>MV Funderingsscan doet onderzoek en geeft advies, maar voert geen herstelwerk uit; zo blijft het advies onafhankelijk. Een scan kijkt niet onder de grond: de fundering zelf zien we pas als er een inspectieput wordt gegraven. En zonder waterpassingen en loodmetingen kunnen we een kleine, langzame beweging niet meten. Daarvoor is <a href=\"/fase-1-funderingsonderzoek/\">fase 1</a> bedoeld.</p>"
+      },
+      {
+        "id": "kosten-aanvragen-tynaarlo",
+        "h2": "Wat kost funderingsonderzoek in Zuidlaren, Vries of Eelde?",
+        "answer": "Een Quick Scan kost vanaf €350 inclusief btw en fase 1 vanaf €950 inclusief btw. De prijs hoor je vooraf.",
+        "body": "<p>Bekijk de opbouw op <a href=\"/prijzen/\">prijzen</a> of <a href=\"/funderingsscan-aanvragen/\">vraag direct een funderingsscan aan</a>. Je kunt ook bellen naar <a href=\"tel:+31582037172\">+31 (0) 582037172</a>, op werkdagen van 09:00 tot 17:00.</p><p>In de buurt doen we ook funderingsonderzoek in <a href=\"/funderingsonderzoek-assen/\">Assen</a>, <a href=\"/funderingsonderzoek-haren/\">Haren</a>, <a href=\"/funderingsonderzoek-aa-en-hunze/\">Aa en Hunze</a> en <a href=\"/funderingsonderzoek-noordenveld/\">Noordenveld</a>. Het regio-overzicht staat op <a href=\"/funderingsonderzoek-noord-drenthe/\">funderingsonderzoek in Noord-Drenthe</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Waar kan ik een funderingsscan in Zuidlaren laten doen?",
+        "a": "<p>MV Funderingsscan voert funderingsscans uit in Zuidlaren en de rest van de gemeente Tynaarlo. De inspectie wordt meestal binnen enkele werkdagen ingepland, en het rapport met advies volgt doorgaans binnen 2 werkdagen daarna.</p>"
+      },
+      {
+        "q": "Is funderingsonderzoek in Eelde of Paterswolde anders dan op de Hondsrug?",
+        "a": "<p>De werkwijze van MV Funderingsscan is overal gelijk, maar de bodemvragen verschillen. In Eelde en Paterswolde liggen lagere gronden bij het Eelderdiep en het Paterswoldsemeer, waar veen kan voorkomen. Op de Hondsrug bij Zuidlaren is de ondergrond meestal zandig en steviger.</p>"
+      },
+      {
+        "q": "Wat kost funderingsonderzoek in Tynaarlo?",
+        "a": "<p>Een Quick Scan van MV Funderingsscan in Tynaarlo kost vanaf €350 inclusief btw, en fase 1 met metingen vanaf €950 inclusief btw. Je weet de prijs voordat je akkoord geeft.</p>"
+      },
+      {
+        "q": "Moet ik een woning in Vries laten onderzoeken voordat ik een bod doe?",
+        "a": "<p>Dat is niet verplicht, maar bij een oudere woning of boerderij in Vries kan een funderingsscan je bod onderbouwen. MV Funderingsscan levert het rapport meestal binnen 2 werkdagen na de inspectie, zodat je het binnen een koopproces kunt gebruiken.</p>"
+      },
+      {
+        "q": "Komen jullie ook in Tynaarlo-dorp, Zeijen en Yde?",
+        "a": "<p>Ja, alle kernen van de gemeente Tynaarlo vallen binnen het werkgebied van MV Funderingsscan, dus ook Tynaarlo-dorp, Zeijen en Yde. Aanpak en prijsopbouw zijn daar hetzelfde als in Zuidlaren.</p>"
+      }
+    ],
+    "related": [
+      {
+        "href": "/funderingsonderzoek-noord-drenthe/",
+        "label": "Funderingsonderzoek in Noord-Drenthe",
+        "text": "Het overzicht van bodem en risico's in de regio."
+      },
+      {
+        "href": "/funderingsonderzoek-haren/",
+        "label": "Funderingsonderzoek in Haren",
+        "text": "Buurgemeente op dezelfde Hondsrug."
+      },
+      {
+        "href": "/kennisbank/veenbodem/",
+        "label": "De veenbodem",
+        "text": "Waarom veen gevoelig is voor de grondwaterstand."
+      }
+    ],
+    "cta": [
+      "Woning in Zuidlaren, Vries of Eelde laten onderzoeken?",
+      "Vraag een Quick Scan aan; de prijs is vooraf bekend."
+    ]
+  }
+]
