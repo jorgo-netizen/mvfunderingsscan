@@ -815,6 +815,25 @@ test('nieuws: zelftest wordt alleen klikbaar als het blok volledig is; script en
   assert.equal(leesZelftest('## Doe de zelftest\n\n### 1. Vraag\n\n- Ja (**1 punt**)'), null, 'zonder tweede antwoord en uitslag: gewone tekst');
 });
 
+test('redactie: import maakt concepten met controle; HTML wordt veilige Markdown; nooit gepubliceerd', async () => {
+  const { htmlNaarMarkdown } = await import('../api/_lib/redactie.js');
+  assert.equal(htmlNaarMarkdown('<h2>Kop</h2><p>Tekst met <strong>vet</strong> en <a href="https://www.mvfunderingsquickscan.nl/prijzen/">prijzen</a>.</p><ul><li>a</li><li>b</li></ul><script>alert(1)</script><img src=x onerror=alert(1)>'),
+    '## Kop\n\nTekst met **vet** en [prijzen](/prijzen/).\n\n- a\n- b');
+  await newUser('medewerker', 'import@test.nl'); const s = await loginAs('import@test.nl');
+  const db = getDb();
+  const r = await admin(s, 'redactie-import', { method: 'POST', body: { artikelen: [
+    { type: 'kennisartikel', title: 'Geïmporteerd artikel over zetting', meta_description: 'Omschrijving', inhoud_html: '<p>Kort.</p>', tags: 'zetting, klei', interne_links: [{ url: 'https://www.mvfunderingsquickscan.nl/prijzen/', tekst: 'Prijzen' }] },
+    { inhoud: 'zonder titel' },
+  ] } });
+  assert.equal(r.status, 200, r.body);
+  const [a, b] = r.json.resultaten;
+  assert.ok(a.id && a.fouten >= 1, 'te kort artikel wordt geïmporteerd, met open punt'); assert.equal(b.fout, 'Titel ontbreekt.');
+  const c = await db.redConceptGet(a.id);
+  assert.equal(c.status, 'concept'); assert.equal(c.type, 'kennis'); assert.deepEqual(c.zoekwoorden, ['zetting', 'klei']); assert.equal(c.interne_links[0].url, '/prijzen/');
+  assert.equal((await db.newsList()).filter((n) => n.title === c.titel).length, 0, 'niets in Nieuws');
+  assert.equal((await call(beheer, { method: 'POST', url: '/api/beheer/?actie=redactie-import', body: { artikelen: [{ titel: 'x' }] } })).status, 401, 'alleen ingelogd');
+});
+
 test('redactie: kwaliteitscontrole, zelftest en opschonen van invoer', async () => {
   const c = schoonConcept({ ...testConcept(), interne_links: [{ url: 'https://evil.example/', tekst: 'x' }, { url: '/prijzen/', tekst: 'Prijzen' }], afbeelding: '../../etc/passwd' });
   assert.deepEqual(c.interne_links.map((l) => l.url), ['/prijzen/']); assert.equal(c.afbeelding, '');

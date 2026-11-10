@@ -224,3 +224,55 @@ export function naarNieuwsRij(c) {
     status: 'concept',
   };
 }
+
+// ---------------------------------------------------------------- import van kant-en-klare artikelen
+
+const ENTITEITEN = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', euro: '€', ndash: '–', mdash: '—', hellip: '…', lsquo: '‘', rsquo: '’', ldquo: '“', rdquo: '”' };
+const ontsleutel = (s) => s.replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (m, e) => (e[0] === '#' ? String.fromCodePoint(e[1] === 'x' || e[1] === 'X' ? parseInt(e.slice(2), 16) : Number(e.slice(1))) : ENTITEITEN[e.toLowerCase()] ?? m));
+const eigenDomein = (u) => String(u).trim().replace(/^https?:\/\/(www\.)?mvfunderingsquickscan\.nl(?=\/)/i, '');
+
+/** Zet artikel-HTML om naar de beperkte Markdown van het nieuws (koppen, alinea's, lijsten, vet, cursief, links, citaten). Overige HTML verdwijnt. */
+export function htmlNaarMarkdown(html) {
+  let s = String(html || '').replace(/\r\n?/g, '\n');
+  if (!/<[a-z][^>]*>/i.test(s)) return s.trim(); // al Markdown of platte tekst
+  const plat = (x) => x.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+  s = s.replace(/<(script|style|iframe|noscript)[\s\S]*?<\/\1>/gi, '').replace(/<!--[\s\S]*?-->/g, '');
+  s = s.replace(/<a\s[^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi, (m, href, t) => `[${plat(t)}](${eigenDomein(href)})`);
+  s = s.replace(/<(strong|b)\b[^>]*>([\s\S]*?)<\/\1>/gi, (m, tag, t) => `**${t.trim()}**`);
+  s = s.replace(/<(em|i)\b[^>]*>([\s\S]*?)<\/\1>/gi, (m, tag, t) => `*${t.trim()}*`);
+  s = s.replace(/<h[12]\b[^>]*>([\s\S]*?)<\/h[12]>/gi, (m, t) => `\n\n## ${plat(t)}\n\n`);
+  s = s.replace(/<h[3-6]\b[^>]*>([\s\S]*?)<\/h[3-6]>/gi, (m, t) => `\n\n### ${plat(t)}\n\n`);
+  s = s.replace(/<ol\b[^>]*>([\s\S]*?)<\/ol>/gi, (m, t) => `\n\n${[...t.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)].map((x, i) => `${i + 1}. ${plat(x[1])}`).join('\n')}\n\n`);
+  s = s.replace(/<ul\b[^>]*>([\s\S]*?)<\/ul>/gi, (m, t) => `\n\n${[...t.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)].map((x) => `- ${plat(x[1])}`).join('\n')}\n\n`);
+  s = s.replace(/<blockquote\b[^>]*>([\s\S]*?)<\/blockquote>/gi, (m, t) => `\n\n> ${plat(t)}\n\n`);
+  s = s.replace(/<br\s*\/?>/gi, '\n').replace(/<\/(p|div|section|article)>/gi, '\n\n').replace(/<[^>]+>/g, '');
+  return ontsleutel(s).split('\n').map((r) => r.replace(/[ \t]+/g, ' ').trim()).join('\n').replace(/\n{3,}/g, '\n\n').trim();
+}
+
+const SOORT = { nieuws: 'nieuws', nieuwsbericht: 'nieuws', weetje: 'weetje', 'wist je dat': 'weetje', kennis: 'kennis', kennisartikel: 'kennis', regionaal: 'regionaal', regio: 'regionaal', praktijk: 'praktijk', praktijkvoorbeeld: 'praktijk', zelftest: 'zelftest' };
+const eerste = (o, ...keys) => { for (const k of keys) if (o[k] !== undefined && o[k] !== null && o[k] !== '') return o[k]; return undefined; };
+const alsLijst = (v) => (Array.isArray(v) ? v : typeof v === 'string' ? v.split(',').map((x) => x.trim()).filter(Boolean) : []);
+
+/** Eén geïmporteerd artikel (Nederlandse of Engelse veldnamen) → invoer voor schoonConcept. */
+export function importNaarConcept(a = {}) {
+  const soort = String(eerste(a, 'type', 'categorie', 'category') || 'nieuws').toLowerCase().trim();
+  return {
+    type: SOORT[soort] || 'nieuws',
+    titel: eerste(a, 'titel', 'title'),
+    slug: eerste(a, 'slug', 'url_slug'),
+    seo_titel: eerste(a, 'seo_titel', 'seo_title'),
+    meta_description: eerste(a, 'meta_description', 'metabeschrijving'),
+    hoofdzoekwoord: eerste(a, 'hoofdzoekwoord', 'focus_keyword', 'zoekwoord'),
+    zoekwoorden: alsLijst(eerste(a, 'zoekwoorden', 'tags', 'keywords')),
+    intro: htmlNaarMarkdown(eerste(a, 'intro', 'introductie', 'excerpt') || ''),
+    inhoud: htmlNaarMarkdown(eerste(a, 'inhoud', 'inhoud_html', 'html', 'content') || ''),
+    faqs: alsLijst(eerste(a, 'faqs', 'faq', 'veelgestelde_vragen')).map((f) => ({ vraag: eerste(f || {}, 'vraag', 'q', 'question'), antwoord: htmlNaarMarkdown(eerste(f || {}, 'antwoord', 'a', 'answer') || '') })),
+    bronnen: alsLijst(eerste(a, 'bronnen', 'externe_bronnen', 'sources')).map((b) => ({ titel: eerste(b || {}, 'titel', 'title', 'naam'), url: eerste(b || {}, 'url', 'link'), uitgever: eerste(b || {}, 'uitgever', 'publisher'), datum: eerste(b || {}, 'datum', 'date') })),
+    interne_links: alsLijst(eerste(a, 'interne_links', 'internal_links')).map((l) => ({ url: eigenDomein(eerste(l || {}, 'url', 'link') || ''), tekst: eerste(l || {}, 'tekst', 'text', 'anker') })),
+    afbeelding: eerste(a, 'afbeelding', 'image'),
+    afbeelding_alt: eerste(a, 'afbeelding_alt', 'image_alt', 'alt'),
+    zelftest: a.zelftest,
+    onderwerp: eerste(a, 'titel', 'title'),
+    model: 'import',
+  };
+}

@@ -9,7 +9,7 @@ import { readFileSync } from 'node:fs';
 import { isUuid, logError, randomToken, siteUrl, MAX_JSON_BYTES } from './http.js';
 import { slugify } from './markdown.js';
 import { renderNewsArticle } from './news-render.js';
-import { TYPES, CONCEPT_STATUSSEN, BEELDBANK, STANDAARD, instellingen, schoonConcept, controleer, naarNieuwsRij, isUpload, UPLOAD_PREFIX } from './redactie.js';
+import { TYPES, CONCEPT_STATUSSEN, BEELDBANK, STANDAARD, instellingen, schoonConcept, controleer, naarNieuwsRij, isUpload, UPLOAD_PREFIX, importNaarConcept } from './redactie.js';
 const uploadPad = (a) => a.slice(UPLOAD_PREFIX.length);
 const JPEG = [0xff, 0xd8, 0xff];
 const MAX_FOTO = 2.5 * 1024 * 1024;
@@ -85,7 +85,7 @@ export async function redactieActies(db, req, res, actie, user, url, { json, fai
   if (actie === 'redactie-runs') return json(res, 200, { ok: true, items: await db.redRunsList(100) });
 
   if (req.method !== 'POST') return fail(res, 405, 'Alleen POST is toegestaan.');
-  const body = await readJson(req, actie === 'redactie-afbeelding' ? MAX_JSON_BYTES : 512 * 1024);
+  const body = await readJson(req, ['redactie-afbeelding', 'redactie-import'].includes(actie) ? MAX_JSON_BYTES : 512 * 1024);
   const laad = async () => (isUuid(body.id) ? db.redConceptGet(body.id) : null);
 
   // ------------------------------------------------------------ concepten
@@ -99,6 +99,22 @@ export async function redactieActies(db, req, res, actie, user, url, { json, fai
     nieuw.controle = await herControleer(db, { ...c, ...nieuw });
     const opgeslagen = await db.redConceptUpdate(c.id, nieuw);
     return json(res, 200, { ok: true, concept: opgeslagen });
+  }
+  if (actie === 'redactie-import') {
+    // kant-en-klare artikelen worden CONCEPTEN met kwaliteitscontrole; publiceren blijft een aparte handeling
+    const lijst = Array.isArray(body.artikelen) ? body.artikelen : [];
+    if (!lijst.length) return fail(res, 422, 'Geen artikelen gevonden. Gebruik het voorbeeldbestand als basis.');
+    if (lijst.length > 50) return fail(res, 422, 'Maximaal 50 artikelen per import.');
+    const resultaten = [];
+    for (const [i, a] of lijst.entries()) {
+      const c = schoonConcept(importNaarConcept(a && typeof a === 'object' ? a : {}));
+      if (c.titel.length < 3) { resultaten.push({ nr: i + 1, fout: 'Titel ontbreekt.' }); continue; }
+      if (c.type === 'zelftest' && !c.zelftest?.vragen?.length) { resultaten.push({ nr: i + 1, titel: c.titel, fout: 'Zelftest zonder vragen.' }); continue; }
+      c.controle = await herControleer(db, c);
+      const nieuw = await db.redConceptCreate({ ...c, status: 'concept' });
+      resultaten.push({ nr: i + 1, id: nieuw.id, titel: c.titel, type: c.type, fouten: c.controle.fouten.length, waarschuwingen: c.controle.waarschuwingen.length });
+    }
+    return json(res, 200, { ok: true, resultaten });
   }
   if (actie === 'redactie-afbeelding') {
     const c = await laad(); if (!c) return fail(res, 404, 'Concept niet gevonden.');

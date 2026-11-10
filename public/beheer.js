@@ -1047,6 +1047,23 @@
         h('ul', {}, Object.entries(RSTAT).map(([s, l]) => h('li', {}, h('a', { href: `#/redactie/concepten?status=${s}`, text: `${l}: ${d.per_status[s] || 0}` }))))));
   }
 
+  const IMPORT_VOORBEELD = { artikelen: [{
+    type: 'kennis',
+    titel: 'Houten paalfundering: hoe herken je problemen?',
+    slug: 'houten-paalfundering-problemen-herkennen',
+    seo_titel: 'Houten paalfundering: problemen herkennen | MV Funderingsscan',
+    meta_description: 'Welke signalen wijzen op problemen met een houten paalfundering, en wanneer is een Quick Scan zinvol? Uitleg voor woningeigenaren in Friesland en Groningen.',
+    hoofdzoekwoord: 'houten paalfundering',
+    zoekwoorden: ['paalrot', 'funderingsonderzoek', 'droogstand'],
+    intro: 'Een houten paalfundering kan tientallen jaren goed blijven, zolang de palen onder water staan. In dit artikel lees je welke signalen op problemen kunnen wijzen en wat je dan doet.',
+    inhoud_html: '<h2>Wat is een houten paalfundering?</h2><p>Bij een houten paalfundering staat de woning op houten palen die tot in een draagkrachtige laag reiken. Zie ook <a href="/kennisbank/houten-paalfundering/">houten paalfundering</a>.</p><h2>Welke signalen zie je?</h2><ul><li>Scheuren in het metselwerk</li><li>Klemmende deuren en ramen</li></ul><h2>Wat kun je doen?</h2><p>Een <a href="/fase-0-funderingsonderzoek/">Quick Scan</a> geeft een eerste beeld, vanaf €350.</p>',
+    faqs: [{ vraag: 'Hoe lang gaat een houten paalfundering mee?', antwoord: 'Zolang de palen onder water staan, kunnen ze lang meegaan. Bij droogstand kan schimmelaantasting ontstaan.' }],
+    bronnen: [{ titel: 'Handreiking funderingsonderzoek', url: 'https://www.kcaf.nl/', uitgever: 'KCAF', datum: '2026' }],
+    interne_links: [{ url: '/problemen-met-houten-palen/', tekst: 'Problemen met houten palen' }, { url: '/funderingsscan-aanvragen/', tekst: 'Funderingsscan aanvragen' }],
+    afbeelding: 'funderingsinspectie-woning-gevel',
+    afbeelding_alt: 'Medewerker inspecteert de gevel van een woning',
+  }] };
+
   async function redactieConcepten() {
     const params = new URLSearchParams(location.hash.split('?')[1] || '');
     const type = h('select', { id: 'rc-type' }, h('option', { value: '', text: 'Alle soorten' }), Object.entries(RTYPE).map(([k, v]) => h('option', { value: k, text: v })));
@@ -1055,7 +1072,36 @@
     const zoek = () => { location.hash = `#/redactie/concepten?${new URLSearchParams({ type: type.value, status: status.value })}`; };
     type.addEventListener('change', zoek); status.addEventListener('change', zoek);
     const d = await api('redactie-concepten', { params: { type: type.value, status: status.value } });
+    // import: een .json-bestand met één of meer kant-en-klare artikelen → concepten (nooit direct gepubliceerd)
+    const impMsg = flashEl();
+    const impLijst = h('ul', { class: 'portal-list' });
+    const impInput = h('input', { id: 'rc-import', type: 'file', accept: '.json,application/json' });
+    impInput.addEventListener('change', async () => {
+      const f = impInput.files[0]; if (!f) return;
+      impLijst.replaceChildren();
+      try {
+        let data; try { data = JSON.parse(await f.text()); } catch { throw new Error('Dit is geen geldig JSON-bestand. Begin met het voorbeeldbestand.'); }
+        const artikelen = Array.isArray(data) ? data : Array.isArray(data.artikelen) ? data.artikelen : [data];
+        flash(impMsg, `${artikelen.length} artikel(en) worden geïmporteerd…`);
+        const r = await api('redactie-import', { method: 'POST', body: { artikelen } });
+        const goed = r.resultaten.filter((x) => x.id).length;
+        flash(impMsg, `${goed} van ${r.resultaten.length} geïmporteerd als concept. Open ze hieronder om de controle na te lopen.`, goed ? 'ok' : 'error');
+        impLijst.replaceChildren(...r.resultaten.map((x) => h('li', {}, x.id
+          ? [h('a', { href: `#/redactie/concept/${x.id}`, text: `${x.nr}. ${x.titel}` }), h('span', { class: 'portal-muted', text: ` · ${RTYPE[x.type] || x.type} · ${x.fouten} open punt(en), ${x.waarschuwingen} om na te kijken` })]
+          : h('span', { text: `${x.nr}. ${x.titel || '(zonder titel)'}: ${x.fout}` }))));
+      } catch (err) { flash(impMsg, err.message, 'error'); }
+      impInput.value = '';
+    });
+    const voorbeeld = () => {
+      const blob = new Blob([JSON.stringify(IMPORT_VOORBEELD, null, 2)], { type: 'application/json' });
+      const a = h('a', { href: URL.createObjectURL(blob), download: 'import-voorbeeld.json' }); document.body.append(a); a.click(); a.remove();
+    };
+    const importKaart = h('details', { class: 'portal-card' }, h('summary', { text: 'Artikelen importeren (JSON)' }),
+      h('p', { class: 'portal-hint', text: 'Elk artikel wordt een concept met kwaliteitscontrole. Er wordt niets gepubliceerd. HTML in de tekst wordt omgezet naar koppen, alinea\'s, lijsten, vet, cursief en links; overige opmaak verdwijnt.' }),
+      h('p', {}, h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: 'Voorbeeldbestand downloaden', onclick: voorbeeld })),
+      field('Kies een .json-bestand', impInput), impMsg, impLijst);
     render(h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'Concepten' })), rNav('concepten'),
+      importKaart,
       h('div', { class: 'portal-card portal-filters' }, field('Soort', type), field('Status', status)),
       h('div', { class: 'portal-card' }, d.items.length ? h('div', { class: 'portal-table-wrap' }, h('table', { class: 'portal-table' },
         h('thead', {}, h('tr', {}, ['Soort', 'Titel', 'Status', 'Controle', 'Gemaakt'].map((t) => h('th', { scope: 'col', text: t })))),
