@@ -784,6 +784,23 @@ test('redactie: eigen foto uploaden, behouden bij opslaan, overnemen in Nieuws; 
   } finally { delete process.env.REDACTIE_TOKEN; }
 });
 
+test('redactie: zelftest gaat na goedkeuren als concept naar Nieuws, ook een eerder goedgekeurde', async () => {
+  process.env.REDACTIE_TOKEN = BOT_TOKEN;
+  try {
+    await newUser('medewerker', 'zelftest@test.nl'); const s = await loginAs('zelftest@test.nl');
+    const db = getDb();
+    const zelftest = { vragen: Array.from({ length: 5 }, (_, i) => ({ vraag: `Vraag ${i + 1}?`, opties: [{ tekst: 'Ja', punten: 2 }, { tekst: 'Nee', punten: 0 }], uitleg: 'Uitleg.' })),
+      uitslagen: [{ min: 0, max: 4, titel: 'Weinig signalen', tekst: 'Blijf opletten.' }, { min: 5, max: 10, titel: 'Meer signalen', tekst: 'Laat het onderzoeken.' }] };
+    const { json: { id } } = await bot('concept', { concept: testConcept({ type: 'zelftest', titel: 'Herken jij signalen van funderingsschade?', zelftest }) });
+    await db.redConceptUpdate(id, { status: 'goedgekeurd' }); // zoals oude zelftests in Redactie stonden
+    const ok = await admin(s, 'redactie-goedkeuren', { method: 'POST', body: { id, fouten_gecontroleerd: true } });
+    assert.equal(ok.status, 200, ok.body);
+    const n = await db.newsById(ok.json.nieuws_id);
+    assert.equal(n.status, 'concept'); assert.ok(n.content.includes('## Doe de zelftest') && n.content.includes('Ja (**2 punten**)') && n.content.includes('## Wat betekent je score?'));
+    assert.equal((await db.redConceptGet(id)).status, 'overgezet');
+  } finally { delete process.env.REDACTIE_TOKEN; }
+});
+
 test('redactie: kwaliteitscontrole, zelftest en opschonen van invoer', async () => {
   const c = schoonConcept({ ...testConcept(), interne_links: [{ url: 'https://evil.example/', tekst: 'x' }, { url: '/prijzen/', tekst: 'Prijzen' }], afbeelding: '../../etc/passwd' });
   assert.deepEqual(c.interne_links.map((l) => l.url), ['/prijzen/']); assert.equal(c.afbeelding, '');

@@ -1173,7 +1173,7 @@
     const akkoord = h('input', { type: 'checkbox', id: 'rc-akkoord' });
     const knoppen = h('div', { class: 'portal-actions' },
       bewerkbaar ? h('button', { type: 'button', class: 'btn btn-gold', text: 'Opslaan en opnieuw controleren', onclick: async (e) => { busy(e.target, true); await opslaan(false); } }) : null,
-      c.type !== 'zelftest' ? h('a', { class: 'btn btn-ghost-dark', href: `${API}?actie=redactie-voorbeeld&id=${encodeURIComponent(c.id)}`, target: '_blank', rel: 'noopener', text: 'Voorbeeld op de site bekijken' }) : null,
+      h('a', { class: 'btn btn-ghost-dark', href: `${API}?actie=redactie-voorbeeld&id=${encodeURIComponent(c.id)}`, target: '_blank', rel: 'noopener', text: 'Voorbeeld op de site bekijken' }),
       c.status === 'concept' ? h('button', { type: 'button', class: 'btn btn-ghost-dark', text: 'Opnieuw laten schrijven', onclick: async () => {
         const notitie = window.prompt('Wat moet er anders in de nieuwe versie? (optioneel, bijv. "korter", "meer over grondwater")', '');
         if (notitie === null) return;
@@ -1185,15 +1185,16 @@
         if (!window.confirm('Dit concept definitief verwijderen?')) return;
         try { await api('redactie-verwijderen', { method: 'POST', body: { id: c.id, bevestig: true } }); location.hash = '#/redactie/concepten'; } catch (err) { flash(msg, err.message, 'error'); }
       } }) : null);
-    const goedkeuren = c.status === 'concept' ? h('section', { class: 'portal-card portal-red-goedkeuren' },
+    const naarNieuws = c.status === 'concept' || (c.type === 'zelftest' && c.status === 'goedgekeurd');
+    const goedkeuren = naarNieuws ? h('section', { class: 'portal-card portal-red-goedkeuren' },
       h('h2', { class: 'portal-h2', text: 'Goedkeuren' }),
       h('p', { text: c.type === 'zelftest'
-        ? 'Goedkeuren markeert deze zelftest als goedgekeurd. Zelftests worden nog niet op de site getoond.'
+        ? 'Goedkeuren zet deze zelftest als nieuwsbericht in Nieuws, als concept, met de vragen, punten en uitslagen als tekst. Publiceren doe je daarna apart in Nieuws.'
         : 'Goedkeuren zet dit artikel over naar Nieuws, als concept. Het staat dan nog NIET op de site. Publiceren doe je daarna apart in Nieuws.' }),
       (k.fouten || []).length ? h('div', { class: 'portal-check' }, akkoord, h('label', { for: 'rc-akkoord', text: 'Ik heb de openstaande punten uit de controle zelf gecontroleerd en akkoord bevonden.' })) : null,
-      h('button', { type: 'button', class: 'btn btn-navy', text: c.type === 'zelftest' ? 'Zelftest goedkeuren' : 'Goedkeuren en naar Nieuws (als concept)', onclick: async (e) => {
+      h('button', { type: 'button', class: 'btn btn-navy', text: 'Goedkeuren en naar Nieuws (als concept)', onclick: async (e) => {
         if (bewerkbaar && !(await opslaan(true))) return;
-        if (!window.confirm(c.type === 'zelftest' ? 'Deze zelftest goedkeuren?' : 'Dit artikel als concept naar Nieuws zetten? Het wordt nog niet gepubliceerd.')) return;
+        if (!window.confirm('Dit artikel als concept naar Nieuws zetten? Het wordt nog niet gepubliceerd.')) return;
         busy(e.target, true);
         try {
           const r = await api('redactie-goedkeuren', { method: 'POST', body: { id: c.id, fouten_gecontroleerd: akkoord.checked } });

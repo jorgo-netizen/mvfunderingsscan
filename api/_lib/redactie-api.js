@@ -75,7 +75,6 @@ export async function redactieActies(db, req, res, actie, user, url, { json, fai
   if (actie === 'redactie-voorbeeld') {
     const c = isUuid(id) ? await db.redConceptGet(id) : null;
     if (!c) return fail(res, 404, 'Concept niet gevonden.');
-    if (c.type === 'zelftest') return fail(res, 422, 'Een zelftest bekijk je in de editor.');
     const rij = naarNieuwsRij(c);
     const post = { ...rij, featured_image: c.afbeelding ? 'beeldbank' : null, created_at: c.created_at, updated_at: c.updated_at };
     const viaBeeldbank = { ...db, publicUrl: () => (isUpload(c.afbeelding) ? db.publicUrl('nieuws', uploadPad(c.afbeelding)) : `/assets/img/${c.afbeelding}-1024.webp`) };
@@ -136,14 +135,11 @@ export async function redactieActies(db, req, res, actie, user, url, { json, fai
   }
   if (actie === 'redactie-goedkeuren') {
     const c = await laad(); if (!c) return fail(res, 404, 'Concept niet gevonden.');
-    if (c.status !== 'concept') return fail(res, 409, 'Alleen een concept kan worden goedgekeurd.');
+    // eerder goedgekeurde zelftests (uit de tijd dat ze in Redactie bleven) kunnen alsnog naar Nieuws
+    if (c.status !== 'concept' && !(c.type === 'zelftest' && c.status === 'goedgekeurd')) return fail(res, 409, 'Alleen een concept kan worden goedgekeurd.');
     const controle = await herControleer(db, c);
     if (controle.fouten.length && body.fouten_gecontroleerd !== true) return fail(res, 422, `Er staan nog ${controle.fouten.length} punten open in de controle. Los ze op of bevestig dat je ze hebt gecontroleerd.`);
     const stempel = { beoordeeld_door: user.id, beoordeeld_op: new Date().toISOString(), controle, regenereren: false };
-    if (c.type === 'zelftest') {
-      await db.redConceptUpdate(c.id, { ...stempel, status: 'goedgekeurd' });
-      return json(res, 200, { ok: true, status: 'goedgekeurd' });
-    }
     // overzetten naar Nieuws als CONCEPT (nooit gepubliceerd)
     const rij = naarNieuwsRij(c);
     let slug = rij.slug || slugify(rij.title);

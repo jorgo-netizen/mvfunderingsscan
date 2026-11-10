@@ -187,10 +187,21 @@ export function controleer(c, { interneUrls = null, bekend = [], bronTekst = '' 
 const CTA = 'Twijfel je over de fundering van een woning in Friesland, Groningen of Noord-Drenthe? Met een [Quick Scan (fase 0)](/fase-0-funderingsonderzoek/) krijg je een onafhankelijk beeld. [Vraag een funderingsscan aan](/funderingsscan-aanvragen/) of bekijk eerst [wat het kost](/prijzen/).';
 
 /** Bouwt de Markdown voor mvfs_news uit een concept: tekst, uitgelicht blok, FAQ, bronnen, lees ook en CTA. */
+/** Zelftest als leesbare tekst in een nieuwsbericht: vragen met punten, daarna wat je score betekent. */
+export function zelftestMarkdown(z) {
+  if (!z || !(z.vragen || []).length) return '';
+  const pt = (n) => `${n} ${n === 1 ? 'punt' : 'punten'}`;
+  const vragen = z.vragen.map((v, i) => [`### ${i + 1}. ${v.vraag}`, v.opties.map((o) => `- ${o.tekst} (**${pt(o.punten)}**)`).join('\n'), v.uitleg ? `*Uitleg:* ${v.uitleg}` : ''].filter(Boolean).join('\n\n'));
+  const uitslagen = (z.uitslagen || []).map((u) => `### ${u.min}–${u.max} punten: ${u.titel}\n\n${u.tekst}`);
+  return ['## Doe de zelftest', 'Kies bij elke vraag het antwoord dat het best bij je woning past en tel de punten op.', ...vragen,
+    uitslagen.length ? ['## Wat betekent je score?', ...uitslagen].join('\n\n') : '', `> ${z.disclaimer}`].filter(Boolean).join('\n\n');
+}
+
 export function naarNieuwsMarkdown(c) {
   const delen = [];
   if (c.type === 'praktijk') delen.push('> **Fictief voorbeeld:** dit is een verzonnen situatie ter uitleg, geen echte klantcase.');
   delen.push(String(c.inhoud || '').trim());
+  if (c.type === 'zelftest') delen.push(zelftestMarkdown(c.zelftest));
   if ((c.faqs || []).length) delen.push(['## Veelgestelde vragen', ...c.faqs.map((f) => `### ${f.vraag}\n\n${f.antwoord}`)].join('\n\n'));
   const links = (c.interne_links || []).filter((l) => !String(c.inhoud).includes(`](${l.url})`));
   if (links.length) delen.push(['## Lees ook', ...links.map((l) => `- [${l.tekst}](${l.url})`)].join('\n'));
