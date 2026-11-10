@@ -1109,7 +1109,8 @@
         box.replaceChildren(...lijst.map((r, i) => h('div', { class: 'red-rij' },
           velden.map(([k, l, max, area]) => { const e = h(area ? 'textarea' : 'input', { 'aria-label': l, placeholder: l, maxlength: max, rows: area ? 3 : undefined, disabled: !bewerkbaar }); e.value = r[k] || ''; e.addEventListener('input', () => { r[k] = e.value; }); return e; }),
           bewerkbaar ? h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: 'Weg', onclick: () => { lijst.splice(i, 1); teken(); } }) : null)),
-        bewerkbaar ? h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: '+ Toevoegen', onclick: () => { lijst.push({ ...leeg }); teken(); } }) : null);
+        // replaceChildren zet null om in de tekst "null", daarom alleen echte elementen doorgeven
+        bewerkbaar ? h('button', { type: 'button', class: 'btn btn-ghost-dark btn-sm', text: '+ Toevoegen', onclick: () => { lijst.push({ ...leeg }); teken(); } }) : (lijst.length ? '' : h('p', { class: 'portal-hint', text: 'Geen.' })));
       };
       teken(); return box;
     };
