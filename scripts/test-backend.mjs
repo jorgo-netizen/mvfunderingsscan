@@ -798,7 +798,21 @@ test('redactie: zelftest gaat na goedkeuren als concept naar Nieuws, ook een eer
     const n = await db.newsById(ok.json.nieuws_id);
     assert.equal(n.status, 'concept'); assert.ok(n.content.includes('## Doe de zelftest') && n.content.includes('Ja (**2 punten**)') && n.content.includes('## Wat betekent je score?'));
     assert.equal((await db.redConceptGet(id)).status, 'overgezet');
+    // gepubliceerd: de zelftest is klikbaar (radioknoppen, tools.js geladen) in plaats van platte tekst
+    assert.equal((await admin(s, 'nieuws-status', { method: 'POST', body: { id: n.id, status: 'gepubliceerd' } })).status, 200);
+    const pagina = (await call(nieuws, { url: `/nieuws/${n.slug}/` })).body;
+    assert.ok(pagina.includes('data-tool="zelftest"') && pagina.includes('type="radio"') && pagina.includes('data-punten="2"') && pagina.includes('/tools.js'));
+    assert.ok(!pagina.includes('(<strong>2 punten</strong>)'), 'niet meer als tekstlijst');
   } finally { delete process.env.REDACTIE_TOKEN; }
+});
+
+test('nieuws: zelftest wordt alleen klikbaar als het blok volledig is; script en HTML in de tekst worden ge-escaped', async () => {
+  const { leesZelftest } = await import('../api/_lib/news-render.js');
+  const blok = '## Doe de zelftest\n\nIntro.\n\n### 1. Zie je <script>?\n\n- Ja (**3 punten**)\n- Nee (**0 punten**)\n\n*Uitleg:* Uitleg.\n\n## Wat betekent je score?\n\n### 0–3 punten: Uitslag\n\nTekst.\n\n> Disclaimer.\n\nNa de test.';
+  const t = leesZelftest(`Voor.\n\n${blok}`);
+  assert.equal(t.test.vragen[0].opties[0].punten, 3); assert.equal(t.test.uitslagen[0].max, 3); assert.equal(t.test.disclaimer, 'Disclaimer.');
+  assert.ok(t.voor.includes('Voor.') && t.na.includes('Na de test.'));
+  assert.equal(leesZelftest('## Doe de zelftest\n\n### 1. Vraag\n\n- Ja (**1 punt**)'), null, 'zonder tweede antwoord en uitslag: gewone tekst');
 });
 
 test('redactie: kwaliteitscontrole, zelftest en opschonen van invoer', async () => {

@@ -84,11 +84,66 @@ ${ctaBand()}
 ${footer()}`;
 }
 
+/**
+ * Zelftest in een bericht (zoals Redactie die als tekst schrijft, en zoals een medewerker hem in Nieuws kan aanpassen):
+ *   ## Doe de zelftest / intro / ### 1. Vraag / - Antwoord (**2 punten**) / *Uitleg:* … /
+ *   ## Wat betekent je score? / ### 0–4 punten: Titel / tekst / > disclaimer
+ * Geeft { voor, test, na } terug, of null als het blok er niet (volledig) in staat; dan blijft het gewone tekst.
+ */
+export function leesZelftest(content) {
+  const regels = String(content || '').replace(/\r\n?/g, '\n').split('\n');
+  const start = regels.findIndex((r) => r.trim() === '## Doe de zelftest');
+  if (start < 0) return null;
+  const vragen = []; const uitslagen = []; const intro = []; let disclaimer = ''; let deel = 'vragen'; let eind = regels.length;
+  for (let i = start + 1; i < regels.length; i++) {
+    const r = regels[i].trim(); let m;
+    if (r === '## Wat betekent je score?') { deel = 'uitslagen'; continue; }
+    if (r.startsWith('## ')) { eind = i; break; }
+    if (deel === 'uitslagen' && r.startsWith('> ')) { disclaimer = r.slice(2); eind = i + 1; break; }
+    if (deel === 'vragen' && (m = r.match(/^###\s+\d+\.\s+(.+)$/))) vragen.push({ vraag: m[1], opties: [], uitleg: '' });
+    else if (deel === 'vragen' && vragen.length && (m = r.match(/^-\s+(.+?)\s+\(\*\*(\d+)\s+punt(?:en)?\*\*\)$/))) vragen.at(-1).opties.push({ tekst: m[1], punten: Number(m[2]) });
+    else if (deel === 'vragen' && vragen.length && (m = r.match(/^\*Uitleg:\*\s*(.+)$/))) vragen.at(-1).uitleg = m[1];
+    else if (deel === 'vragen' && !vragen.length && r) intro.push(r);
+    else if (deel === 'uitslagen' && (m = r.match(/^###\s+(\d+)\s*[–-]\s*(\d+)\s+punten?:\s*(.+)$/))) uitslagen.push({ min: Number(m[1]), max: Number(m[2]), titel: m[3], tekst: '' });
+    else if (deel === 'uitslagen' && uitslagen.length && r) uitslagen.at(-1).tekst = `${uitslagen.at(-1).tekst} ${r}`.trim();
+  }
+  if (!vragen.length || vragen.some((v) => v.opties.length < 2) || !uitslagen.length) return null;
+  return { voor: regels.slice(0, start).join('\n'), na: regels.slice(eind).join('\n'), test: { intro: intro.join(' '), vragen, uitslagen, disclaimer } };
+}
+
+/** Klikbare zelftest; dezelfde opmaak als de funderingsquiz (tools.css), het gedrag staat in tools.js. */
+function zelftestHtml(t) {
+  const n = t.vragen.length;
+  const qs = t.vragen.map((v, i) => `
+    <fieldset class="qz-q">
+      <legend><span class="tq-num">${i + 1}/${n}</span>${esc(v.vraag)}</legend>
+      <div class="tq-opts">${v.opties.map((o, j) => `<label class="tq-opt"><input type="radio" name="zt${i}" value="${j}" data-punten="${o.punten}"><span>${esc(o.tekst)}</span></label>`).join('')}</div>
+      ${v.uitleg ? `<p class="qz-feedback" data-zt-uitleg hidden>${esc(v.uitleg)}</p>` : ''}
+    </fieldset>`).join('');
+  const uitslagen = t.uitslagen.map((u) => `<div data-zt-uitslag data-min="${u.min}" data-max="${u.max}" hidden><h3>${esc(u.titel)}</h3><p>${esc(u.tekst)}</p></div>`).join('');
+  return `
+<div class="tool tool-quiz" data-tool="zelftest">
+  <div class="sim-head">
+    <span class="sim-badge">Zelftest · ${n} vragen</span>
+    <h3>Doe de zelftest</h3>
+    <p class="sim-instruction">${esc(t.intro || 'Kies bij elke vraag het antwoord dat het best bij je woning past.')}</p>
+  </div>
+  <form class="qz-form" data-zt-form novalidate>${qs}</form>
+  <div class="tool-result tool-result-inline" data-zt-result aria-live="polite" hidden>
+    <p class="tr-count">Je score: <strong data-zt-score>0</strong> punten.</p>
+    ${uitslagen}
+    ${t.disclaimer ? `<p><em>${esc(t.disclaimer)}</em></p>` : ''}
+    <div class="tr-actions"><a class="btn btn-gold" href="/funderingsscan-aanvragen/">Vraag een funderingsscan aan <span aria-hidden="true">→</span></a><a class="btn btn-ghost-dark" href="/fase-0-funderingsonderzoek/">Wat is een Quick Scan?</a><button type="button" class="btn btn-link" data-zt-reset>Opnieuw</button></div>
+  </div>
+</div>`;
+}
+
 /** Detailpagina /nieuws/<slug>/. preview=true: concept-weergave voor medewerkers (noindex, met banner). */
 export function renderNewsArticle(db, post, { preview = false } = {}) {
   const url = `${DOMAIN}/nieuws/${post.slug}/`;
   const crumbs = [{ href: '/', name: 'Home' }, { href: '/nieuws/', name: 'Nieuws' }, { href: `/nieuws/${post.slug}/`, name: post.title }];
-  const { html } = renderMarkdown(post.content);
+  const zt = leesZelftest(post.content);
+  const html = zt ? `${renderMarkdown(zt.voor).html}${zelftestHtml(zt.test)}${renderMarkdown(zt.na).html}` : renderMarkdown(post.content).html;
   const desc = clip(post.meta_description || post.excerpt || plainText(post.content), 158);
   const img = imageUrl(db, post.featured_image);
   const absImg = img && img.startsWith('http') ? img : img ? `${DOMAIN}${img}` : `${DOMAIN}/assets/img/og-mv-funderingsscan.jpg`;
@@ -107,7 +162,7 @@ export function renderNewsArticle(db, post, { preview = false } = {}) {
   }];
   const page = {
     path: `/nieuws/${post.slug}/`, title: `${clip(post.title, 50)} | MV Funderingsscan`, description: desc, schema: preview ? '' : jsonld(graph),
-    og_type: 'article', robots: preview ? 'noindex, nofollow' : undefined, canonical: preview ? false : undefined,
+    og_type: 'article', tools: !!zt, robots: preview ? 'noindex, nofollow' : undefined, canonical: preview ? false : undefined,
   };
   const meta = `<p class="news-hero-meta"><time datetime="${isoDate(published)}">${preview && !post.published_at ? 'Nog niet gepubliceerd' : dateNl(published)}</time>${author ? ` · ${esc(author)}` : ''}</p>`;
   return `${head(page)}

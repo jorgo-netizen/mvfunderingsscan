@@ -193,7 +193,7 @@ export function zelftestMarkdown(z) {
   const pt = (n) => `${n} ${n === 1 ? 'punt' : 'punten'}`;
   const vragen = z.vragen.map((v, i) => [`### ${i + 1}. ${v.vraag}`, v.opties.map((o) => `- ${o.tekst} (**${pt(o.punten)}**)`).join('\n'), v.uitleg ? `*Uitleg:* ${v.uitleg}` : ''].filter(Boolean).join('\n\n'));
   const uitslagen = (z.uitslagen || []).map((u) => `### ${u.min}–${u.max} punten: ${u.titel}\n\n${u.tekst}`);
-  return ['## Doe de zelftest', 'Kies bij elke vraag het antwoord dat het best bij je woning past en tel de punten op.', ...vragen,
+  return ['## Doe de zelftest', 'Kies bij elke vraag het antwoord dat het best bij je woning past. Na de laatste vraag zie je je uitslag.', ...vragen,
     uitslagen.length ? ['## Wat betekent je score?', ...uitslagen].join('\n\n') : '', `> ${z.disclaimer}`].filter(Boolean).join('\n\n');
 }
 

@@ -396,6 +396,34 @@
     });
   });
 
+  /* ------------------------------------------------------------------ zelftest in een nieuwsbericht (punten tellen, geen goed/fout) */
+  $$('[data-tool="zelftest"]').forEach((tool) => {
+    const form = $('[data-zt-form]', tool);
+    const qs = $$('.qz-q', form);
+    const result = $('[data-zt-result]', tool);
+    let started = false;
+    form.addEventListener('change', (e) => {
+      const q = e.target.closest('.qz-q'); if (!q) return;
+      if (!started) { started = true; track('zelftest_started'); }
+      const uitleg = $('[data-zt-uitleg]', q); if (uitleg) uitleg.hidden = false;
+      const gekozen = qs.map((x) => $('input:checked', x));
+      if (gekozen.some((x) => !x)) return;
+      const score = gekozen.reduce((som, x) => som + Number(x.dataset.punten || 0), 0);
+      const blokken = $$('[data-zt-uitslag]', result);
+      // past de score in geen enkele band, dan de dichtstbijzijnde band
+      const afstand = (b) => Math.max(0, Number(b.dataset.min) - score, score - Number(b.dataset.max));
+      const beste = blokken.reduce((a, b) => (afstand(b) < afstand(a) ? b : a), blokken[0]);
+      blokken.forEach((b) => { b.hidden = b !== beste; });
+      $('[data-zt-score]', result).textContent = String(score);
+      if (result.hidden) { result.hidden = false; track('zelftest_completed', { score }); }
+    });
+    $('[data-zt-reset]', result).addEventListener('click', () => {
+      form.reset();
+      qs.forEach((q) => { const u = $('[data-zt-uitleg]', q); if (u) u.hidden = true; });
+      result.hidden = true; focusEl(qs[0]);
+    });
+  });
+
   /* ------------------------------------------------------------------ CTA-klikken */
   document.addEventListener('click', (e) => {
     const a = e.target.closest('[data-track]');
