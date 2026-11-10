@@ -61,6 +61,10 @@ const str = (v, max) => String(v ?? '').replace(/\r\n?/g, '\n').trim().slice(0, 
 const httpsUrl = (u) => { try { const x = new URL(String(u)); return x.protocol === 'https:' || x.protocol === 'http:' ? x.href.slice(0, 1000) : ''; } catch { return ''; } };
 const lijst = (v, n) => (Array.isArray(v) ? v.slice(0, n) : []);
 
+/** Eigen foto bij een concept: "upload:<pad in de bucket nieuws>" (alleen via het beheerportaal te zetten). */
+export const UPLOAD_PREFIX = 'upload:';
+export const isUpload = (a) => typeof a === 'string' && /^upload:redactie\/\d{4}\/[A-Za-z0-9_-]{8,40}\.jpg$/.test(a);
+
 /** Maakt een concept veilig: alleen bekende velden, beperkte lengtes. Status en beoordeling komen NOOIT uit de invoer. */
 export function schoonConcept(input = {}) {
   const type = TYPES.includes(input.type) ? input.type : 'nieuws';

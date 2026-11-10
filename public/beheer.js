@@ -1116,13 +1116,28 @@
     };
     const faqs = JSON.parse(JSON.stringify(c.faqs || [])); const bronnen = JSON.parse(JSON.stringify(c.bronnen || [])); const links = JSON.parse(JSON.stringify(c.interne_links || []));
     const paginaLijst = h('datalist', { id: 'rc-paginas' }, (d.interne_paginas || []).map((p) => h('option', { value: p.url, text: p.titel })));
-    const afb = h('select', { id: 'rc-afb', disabled: !bewerkbaar }, h('option', { value: '', text: 'Geen afbeelding' }), d.beeldbank.map((b) => h('option', { value: b.naam, text: b.alt })));
+    const eigen = /^upload:/.test(c.afbeelding || '');
+    const afb = h('select', { id: 'rc-afb', disabled: !bewerkbaar }, h('option', { value: '', text: 'Geen afbeelding' }),
+      eigen ? h('option', { value: c.afbeelding, text: 'Eigen foto (geüpload)' }) : null, d.beeldbank.map((b) => h('option', { value: b.naam, text: b.alt })));
     afb.value = c.afbeelding || '';
     const afbImg = h('img', { class: 'red-afb', alt: '', width: 320, height: 180 });
-    const toonAfb = () => { afbImg.hidden = !afb.value; if (afb.value) afbImg.src = `/assets/img/${afb.value}-640.webp`; };
+    const toonAfb = () => { afbImg.hidden = !afb.value; if (afb.value) afbImg.src = /^upload:/.test(afb.value) ? d.afbeelding_url : `/assets/img/${afb.value}-640.webp`; };
+    const fotoMsg = flashEl();
+    const fotoInput = h('input', { id: 'rc-foto', type: 'file', accept: 'image/jpeg,image/png,image/webp', disabled: !(bewerkbaar || (c.type === 'zelftest' && c.status === 'goedgekeurd')) });
     const alt = inp('afbeelding_alt', 'Alt-tekst van de afbeelding', { max: 200 });
     afb.addEventListener('change', () => { toonAfb(); const b = d.beeldbank.find((x) => x.naam === afb.value); if (b) alt.el.value = b.alt; });
     toonAfb();
+    fotoInput.addEventListener('change', async () => {
+      const f = fotoInput.files[0]; if (!f) return;
+      flash(fotoMsg, 'Foto wordt verkleind en geüpload…');
+      try {
+        const data = await resizeImage(f, 1600);
+        if (!(await opslaan(true))) return; // eerst je andere wijzigingen bewaren
+        await api('redactie-afbeelding', { method: 'POST', body: { id: c.id, data, alt: alt.el.value } });
+        await redactieConcept(c.id);
+      } catch (err) { flash(fotoMsg, err.message, 'error'); }
+      fotoInput.value = '';
+    });
     let zelftestTekst = null;
     if (c.type === 'zelftest') { zelftestTekst = h('textarea', { id: 'rc-zt', rows: 14, disabled: !bewerkbaar }); zelftestTekst.value = JSON.stringify(c.zelftest || {}, null, 2); }
 
@@ -1203,8 +1218,8 @@
           rijen(links, [['url', '/pagina/', 200], ['tekst', 'Linktekst', 120]], { url: '', tekst: '' })),
         h('section', { class: 'portal-card' },
           h('h2', { class: 'portal-h2', text: 'SEO' }), seo.veld, meta.veld, kw.veld, field('Gerelateerde zoekwoorden (komma-gescheiden)', zw),
-          h('h2', { class: 'portal-h2', text: 'Afbeelding' }), field('Uit de beeldbank van de site', afb), afbImg, alt.veld,
-          h('p', { class: 'portal-hint', text: 'Alleen echte foto\'s van de site. Een andere foto? Upload die na het goedkeuren in Nieuws.' }), bronItems)),
+          h('h2', { class: 'portal-h2', text: 'Afbeelding' }), field('Uit de beeldbank van de site', afb), field('Of een eigen foto van je computer (JPEG, PNG of WebP)', fotoInput), fotoMsg, afbImg, alt.veld,
+          h('p', { class: 'portal-hint', text: 'Een eigen foto wordt verkleind en zonder locatiegegevens opgeslagen. Vul altijd de alt-tekst in: wat is er op de foto te zien?' }), bronItems)),
       knoppen, goedkeuren);
     // datalist koppelen aan de url-velden van de interne links
     view.querySelectorAll('.red-rijen input[placeholder="/pagina/"]').forEach((e) => e.setAttribute('list', 'rc-paginas'));

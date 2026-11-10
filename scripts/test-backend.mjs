@@ -762,6 +762,28 @@ test('redactie: goedkeuren zet een concept als CONCEPT in Nieuws; publiceren is 
   } finally { delete process.env.REDACTIE_TOKEN; }
 });
 
+test('redactie: eigen foto uploaden, behouden bij opslaan, overnemen in Nieuws; geen ander bestandstype', async () => {
+  process.env.REDACTIE_TOKEN = BOT_TOKEN;
+  try {
+    await newUser('medewerker', 'foto@test.nl'); const s = await loginAs('foto@test.nl');
+    const db = getDb();
+    const { json: { id } } = await bot('concept', { concept: testConcept() });
+    const png = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0, 0]).toString('base64');
+    assert.equal((await admin(s, 'redactie-afbeelding', { method: 'POST', body: { id, data: png } })).status, 422, 'alleen de verkleinde JPEG');
+    const jpeg = Buffer.concat([Buffer.from([0xff, 0xd8, 0xff, 0xe0]), Buffer.alloc(200)]).toString('base64');
+    const up = await admin(s, 'redactie-afbeelding', { method: 'POST', body: { id, data: jpeg, alt: 'Scheur in een gevel' } });
+    assert.equal(up.status, 200, up.body); assert.match(up.json.afbeelding, /^upload:redactie\/\d{4}\//);
+    // opslaan met dezelfde waarde houdt de foto; de bot kan zelf geen upload-pad zetten
+    await admin(s, 'redactie-concept-opslaan', { method: 'POST', body: { id, concept: { afbeelding: up.json.afbeelding, afbeelding_alt: 'Scheur in een gevel' } } });
+    assert.equal((await db.redConceptGet(id)).afbeelding, up.json.afbeelding);
+    assert.ok((await admin(s, 'redactie-concept', { query: `&id=${id}` })).json.afbeelding_url, 'voorbeeld van de eigen foto');
+    const ok = await admin(s, 'redactie-goedkeuren', { method: 'POST', body: { id, fouten_gecontroleerd: true } });
+    assert.equal(ok.status, 200, ok.body);
+    const n = await db.newsById(ok.json.nieuws_id);
+    assert.equal(n.featured_image, up.json.afbeelding.slice('upload:'.length)); assert.equal(n.featured_image_alt, 'Scheur in een gevel');
+  } finally { delete process.env.REDACTIE_TOKEN; }
+});
+
 test('redactie: kwaliteitscontrole, zelftest en opschonen van invoer', async () => {
   const c = schoonConcept({ ...testConcept(), interne_links: [{ url: 'https://evil.example/', tekst: 'x' }, { url: '/prijzen/', tekst: 'Prijzen' }], afbeelding: '../../etc/passwd' });
   assert.deepEqual(c.interne_links.map((l) => l.url), ['/prijzen/']); assert.equal(c.afbeelding, '');

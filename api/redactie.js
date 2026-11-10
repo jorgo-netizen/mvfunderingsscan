@@ -10,7 +10,7 @@
  */
 import { getDb } from './_lib/db.js';
 import { sendJson, readJson, safeEqual, clientKey, logError, isUuid } from './_lib/http.js';
-import { schoonConcept, instellingen, TYPES } from './_lib/redactie.js';
+import { schoonConcept, instellingen, TYPES, isUpload } from './_lib/redactie.js';
 
 const NOINDEX = { 'X-Robots-Tag': 'noindex, nofollow', 'Cache-Control': 'no-store' };
 const json = (res, status, body) => sendJson(res, status, body, NOINDEX);
@@ -94,7 +94,8 @@ export default async function handler(req, res) {
         // regeneratie: alleen een concept dat een medewerker heeft teruggestuurd en nog concept is
         const oud = isUuid(body.vervangt) ? await db.redConceptGet(body.vervangt) : null;
         if (!oud || oud.status !== 'concept' || !oud.regenereren) return fail(res, 409, 'Dit concept staat niet klaar om opnieuw te genereren.');
-        opgeslagen = await db.redConceptUpdate(oud.id, { ...c, regenereren: false, regenereer_notitie: '' });
+        const eigenFoto = isUpload(oud.afbeelding) ? { afbeelding: oud.afbeelding, afbeelding_alt: oud.afbeelding_alt } : {};
+        opgeslagen = await db.redConceptUpdate(oud.id, { ...c, ...eigenFoto, regenereren: false, regenereer_notitie: '' });
       } else {
         opgeslagen = await db.redConceptCreate({ ...c, status: 'concept' });
       }
