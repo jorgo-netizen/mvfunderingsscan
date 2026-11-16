@@ -150,8 +150,8 @@ export default async function handler(req, res) {
   }
   if (portaal && portaal.status !== 'niet ingesteld') {
     rows.push(['Mideavastgoed-portaal', portaal.status === 'doorgestuurd'
-      ? (portaal.orderNumber ? `opdracht ${portaal.orderNumber} aangemaakt` : 'ontvangen — handmatig verwerken (zie Funderingsscan-aanvragen)')
-      : `doorsturen mislukt (${portaal.error || 'onbekend'}) — voer de aanvraag zelf in`]);
+      ? (portaal.orderNumber ? `opdracht ${portaal.orderNumber} aangemaakt` : 'ontvangen, handmatig verwerken (zie Funderingsscan-aanvragen)')
+      : `doorsturen mislukt (${portaal.error || 'onbekend'}); voer de aanvraag zelf in`]);
   }
   const subject = `${FORMS[form]}${tracking ? ` ${tracking.dossier}` : ''} – ${clean.naam}${clean.plaats ? ` (${clean.plaats})` : ''}`;
   const html = `<h2 style="font-family:Arial,sans-serif;color:#102945">${esc(FORMS[form])}</h2>

@@ -1,5 +1,5 @@
 {
- "gemaakt": "2026-11-10T13:02:37.520Z",
+ "gemaakt": "2026-11-16T15:24:25.270Z",
  "urls": {
   "/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/",
@@ -523,7 +523,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
-   "hash": "88db422729e5c1f72c6c"
+   "hash": "c18a3a73eebecd39c2b2"
   },
   "/funderingsonderzoek-de-fryske-marren/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-de-fryske-marren/",
@@ -1798,7 +1798,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "8f1d4266fd45e0bae669"
+   "hash": "fa70d23a7ce6b010c29f"
   },
   "/funderingsscan-leeuwarden/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsscan-leeuwarden/",
@@ -2056,7 +2056,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "e2ed464bce3ff3c7cb50"
+   "hash": "5d25e155e4195a53851e"
   },
   "/kennisbank/fundering-op-staal/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/fundering-op-staal/",
@@ -2174,7 +2174,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
-   "hash": "7ddfc25fd2bef93c1686"
+   "hash": "e29fced81631df00e062"
   },
   "/kennisbank/funderingsproblemen-groningen/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsproblemen-groningen/",
@@ -2203,7 +2203,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
-   "hash": "cf392351c08246a3be42"
+   "hash": "cb1dc3f2833fa883d785"
   },
   "/kennisbank/funderingsrapport-lezen/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsrapport-lezen/",
@@ -2728,7 +2728,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
-   "hash": "51cfc7e51182e4ba3ec1"
+   "hash": "a425b26bb906894b3c5c"
   },
   "/kennisbank/klemmende-ramen/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/klemmende-ramen/",
@@ -2815,7 +2815,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
-   "hash": "d7281705bb4b46ab4159"
+   "hash": "8374674a7fd4a92b52c9"
   },
   "/kennisbank/kruipruimte-inspectie/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/kruipruimte-inspectie/",
@@ -2993,7 +2993,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
-   "hash": "4a7ba9f4d93787669f9c"
+   "hash": "c19fa3bdacf2b30e521c"
   },
   "/kennisbank/paalfundering/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/paalfundering/",
@@ -3374,7 +3374,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
-   "hash": "2b40bd3b76b97735297b"
+   "hash": "cfb6e39b338b16eadc97"
   },
   "/kennisbank/veenbodem/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/veenbodem/",
@@ -3404,7 +3404,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
-   "hash": "4b9c1f81587d86a62534"
+   "hash": "c3dd44e1365e055efd45"
   },
   "/kennisbank/verschil-fase-0-en-fase-1/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/verschil-fase-0-en-fase-1/",
@@ -3463,7 +3463,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "e56a7e4502603d4cbe0c"
+   "hash": "f37a1145045296387053"
   },
   "/kennisbank/visuele-funderingsinspectie/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/visuele-funderingsinspectie/",

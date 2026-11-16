@@ -370,7 +370,7 @@
       },
       {
         "q": "Is verzakking bij oude huizen normaal?",
-        "a": "<p>Een beperkte zetting is bij elke woning normaal. Bij oudere woningen, vooral van vóór circa 1970 met houten palen of een fundering op staal, is het wel zinvol om alert te zijn op signalen van ongelijke zakking.</p>"
+        "a": "<p>Een beperkte zetting is bij elke woning normaal. Bij oudere woningen, vooral van vóór circa 1970 met houten palen of een fundering op staal, is het wel zinvol om alert te zijn op signalen van <a href=\"/kennisbank/ongelijke-zetting/\">ongelijke zakking</a>.</p>"
       },
       {
         "q": "Verzakt mijn huis als de buren last hebben?",
@@ -541,7 +541,7 @@
       {
         "id": "wanneer-kan-de-fundering-meespelen",
         "h2": "Wanneer kan de fundering meespelen?",
-        "answer": "De fundering kan meespelen als een kozijn zelf scheef is gaan staan; dat herken je aan een schuin verlopende kier, aan meerdere deuren en ramen die tegelijk klemmen en aan scheuren vanaf de hoeken van kozijnen.",
+        "answer": "De fundering kan meespelen als een kozijn zelf scheef is gaan staan; dat herken je aan een schuin verlopende kier, aan meerdere deuren en <a href=\"/kennisbank/klemmende-ramen/\">ramen die tegelijk klemmen</a> en aan scheuren vanaf de hoeken van kozijnen.",
         "body": "<p>Zakt een deel van de woning meer dan de rest, dan vervormt de muur en daarmee ook het gat waarin het kozijn zit. De deur zelf is dan niet veranderd, maar het kozijn staat niet meer haaks. Kenmerkend is een kier die van boven naar beneden duidelijk in breedte verloopt, terwijl de scharnieren gewoon vastzitten. Als dit bij verschillende deuren aan dezelfde kant van de woning optreedt, is dat een signaal dat het de moeite waard is om verder te kijken.</p><p>In de gids <a href=\"/klemmende-deuren-en-ramen/\">klemmende deuren en ramen</a> lees je uitgebreider hoe vervorming van kozijnen samenhangt met de constructie.</p>"
       },
       {
@@ -964,13 +964,13 @@
         "id": "wat-betekent-veen-voor-funderingen",
         "h2": "Wat betekent veen voor funderingen?",
         "answer": "Op veen worden woningen meestal op palen gebouwd; bij oudere woningen zijn dat vaak houten palen, die gevoelig zijn voor een dalende grondwaterstand, terwijl een fundering op staal op veen extra gevoelig is voor zakking.",
-        "body": "<p>Bij een paalfundering gaat het gewicht door de veenlaag heen naar diepere lagen. De omliggende grond kan dan wel zakken, terwijl de woning blijft staan; dat zie je soms aan tuinen of stoepen die lager komen te liggen dan de woning. Bij <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a> speelt daarnaast de grondwaterstand een grote rol. De uitgebreide gids <a href=\"/funderingsproblemen-veen/\">funderingsproblemen op veen</a> gaat daar verder op in.</p>"
+        "body": "<p>Bij een <a href=\"/kennisbank/paalfundering/\">paalfundering</a> gaat het gewicht door de veenlaag heen naar diepere lagen. De omliggende grond kan dan wel zakken, terwijl de woning blijft staan; dat zie je soms aan tuinen of stoepen die lager komen te liggen dan de woning. Bij <a href=\"/kennisbank/houten-paalfundering/\">houten palen</a> speelt daarnaast de grondwaterstand een grote rol. De uitgebreide gids <a href=\"/funderingsproblemen-veen/\">funderingsproblemen op veen</a> gaat daar verder op in.</p>"
       },
       {
         "id": "waar-komt-veen-voor-in-het-noorden",
         "h2": "Waar komt veen voor in Friesland en Groningen?",
         "answer": "In Friesland liggen grote veengebieden in het midden en zuidoosten, richting Heerenveen en Drachten; in Groningen zijn het oosten en zuidoosten, de Veenkoloniën rond Veendam, van oorsprong veengebied.",
-        "body": "<p>Heerenveen is in de 16e eeuw ontstaan als veenkolonie en Drachten ontwikkelde zich mede door vervening in de 17e eeuw. Het Friese veenweidegebied kent bodemdaling, en het peil wordt er beheerd door het waterschap. Hoeveel veen er onder een specifieke woning zit, verschilt per plek. Lees meer in <a href=\"/kennisbank/funderingsproblemen-friesland/\">funderingsproblemen in Friesland</a>.</p>"
+        "body": "<p>Heerenveen is in de 16e eeuw ontstaan als veenkolonie en Drachten ontwikkelde zich mede door vervening in de 17e eeuw. Het <a href=\"/funderingsproblemen-veenweidegebied-friesland/\">Friese veenweidegebied</a> kent bodemdaling, en het peil wordt er beheerd door het waterschap. Hoeveel veen er onder een specifieke woning zit, verschilt per plek. Lees meer in <a href=\"/kennisbank/funderingsproblemen-friesland/\">funderingsproblemen in Friesland</a>.</p>"
       },
       {
         "id": "voorbeeld-de-tuin-zakt-het-huis-niet",
@@ -1174,7 +1174,7 @@
         "id": "welke-oorzaken-heeft-bodemdaling",
         "h2": "Welke oorzaken heeft bodemdaling?",
         "answer": "De belangrijkste oorzaken in het noorden zijn inklinking van slappe lagen, oxidatie van veen dat droogvalt en, op bepaalde plekken, de winning van delfstoffen zoals gas en zout.",
-        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Inklinking</h3><p>Slappe lagen zoals veen en klei worden onder hun eigen gewicht of onder belasting samengedrukt doordat water eruit wordt geperst.</p></div><div class=\"info-card\"><h3>Veenoxidatie</h3><p>Komt veen boven de grondwaterspiegel te liggen, dan verdwijnt het organische materiaal langzaam door contact met zuurstof.</p></div><div class=\"info-card\"><h3>Delfstofwinning</h3><p>Winning van gas of zout in de diepe ondergrond kan het maaiveld daarboven laten dalen, zoals in delen van Groningen en rond Harlingen.</p></div></div><p>In de praktijk werken oorzaken vaak samen. Een lagere grondwaterstand versnelt bijvoorbeeld de oxidatie van veen, en daarmee de daling. Meer over de bodemsoort zelf lees je in <a href=\"/kennisbank/veenbodem/\">veenbodem</a>.</p>"
+        "body": "<div class=\"info-cards\"><div class=\"info-card\"><h3>Inklinking</h3><p>Slappe lagen zoals veen en klei worden onder hun eigen gewicht of onder belasting samengedrukt doordat water eruit wordt geperst.</p></div><div class=\"info-card\"><h3>Veenoxidatie</h3><p>Komt veen boven de grondwaterspiegel te liggen, dan verdwijnt het organische materiaal langzaam door contact met zuurstof.</p></div><div class=\"info-card\"><h3>Delfstofwinning</h3><p>Winning van gas of zout in de diepe ondergrond kan het maaiveld daarboven laten dalen, zoals in delen van Groningen en rond Harlingen.</p></div></div><p>In de praktijk werken oorzaken vaak samen. Een lagere <a href=\"/kennisbank/grondwatermeting/\">grondwaterstand</a> versnelt bijvoorbeeld de oxidatie van veen, en daarmee de daling. Meer over de bodemsoort zelf lees je in <a href=\"/kennisbank/veenbodem/\">veenbodem</a>.</p>"
       },
       {
         "id": "waar-speelt-bodemdaling-in-het-noorden",
@@ -1214,7 +1214,7 @@
       },
       {
         "q": "Is bodemdaling hetzelfde als verzakking van mijn huis?",
-        "a": "<p>Nee. Bodemdaling gaat over het maaiveld in een gebied. Verzakking gaat over je woning zelf. Bodemdaling kan wel bijdragen aan verzakking, vooral als de grond onder de woning niet overal gelijk zakt.</p>"
+        "a": "<p>Nee. Bodemdaling gaat over het maaiveld in een gebied. <a href=\"/kennisbank/verzakking-woning/\">Verzakking</a> gaat over je woning zelf. Bodemdaling kan wel bijdragen aan verzakking, vooral als de grond onder de woning niet overal gelijk zakt.</p>"
       },
       {
         "q": "Waar meld ik schade door gaswinning?",
@@ -1620,13 +1620,13 @@
         "id": "regelingen-bij-je-gemeente",
         "h2": "Zijn er regelingen voor funderingsherstel?",
         "answer": "Er kunnen regelingen bestaan die per gemeente of regio verschillen; informeer daarom bij je gemeente welke mogelijkheden er voor jouw situatie zijn.",
-        "body": "<p>Gemeenten hebben soms zicht op lokale funderingsproblematiek en op mogelijke ondersteuning. Omdat de voorwaarden en beschikbaarheid kunnen verschillen en veranderen, is je gemeente het beste aanspreekpunt. Daarnaast is sinds 1 juli 2025 het Fonds Duurzaam Funderingsherstel landelijk beschikbaar, met leningen met NHG-borging, en kun je in het Friese veenweidegebied terecht bij het Funderingsloket Fryslân. Algemene informatie over funderingsproblematiek vind je bij het <a href=\"https://www.kcaf.nl/\" rel=\"noopener\" target=\"_blank\">KCAF</a>. Gaat het om schade die je toeschrijft aan gaswinning in Groningen, dan is het Instituut Mijnbouwschade Groningen het loket.</p>"
+        "body": "<p>Gemeenten hebben soms zicht op lokale funderingsproblematiek en op mogelijke ondersteuning. Omdat de voorwaarden en beschikbaarheid kunnen verschillen en veranderen, is je gemeente het beste aanspreekpunt. Daarnaast is sinds 1 juli 2025 het Fonds Duurzaam Funderingsherstel landelijk beschikbaar, met leningen met NHG-borging, en kun je in het Friese veenweidegebied terecht bij het Funderingsloket Fryslân. Daar vergoeden provincie en waterschap sinds 23 juni 2025 volgens het loket 40% van de herstelkosten, tot maximaal €40.000 per woning, voor eigenaar-bewoners van een woning van vóór 1973 met aantoonbare schade uit onderzoek door een erkend bureau. Controleer de actuele voorwaarden op de <a href=\"https://veenweidefryslan.frl/funderingsloketfryslan/subsidies\">subsidiepagina van het Funderingsloket</a>. Algemene informatie over funderingsproblematiek vind je bij het <a href=\"https://www.kcaf.nl/\" rel=\"noopener\" target=\"_blank\">KCAF</a>. Gaat het om schade die je toeschrijft aan gaswinning in Groningen, dan is het Instituut Mijnbouwschade Groningen het loket.</p>"
       },
       {
         "id": "voorbeeld-twee-offertes-die-niet-te-vergelijken-zijn",
         "h2": "Voorbeeld: twee offertes die niet te vergelijken zijn",
         "answer": "In dit voorbeeld lopen twee offertes ver uiteen omdat ze uitgaan van een andere omvang; een onafhankelijk onderzoek had een gemeenschappelijke basis gegeven.",
-        "body": "<p>Een eigenaar met scheuren in de achtergevel vraagt direct twee herstelpartijen om een offerte. De ene stelt herstel van alleen de achtergevel voor, de andere de hele fundering. De bedragen liggen ver uit elkaar en de eigenaar weet niet wat klopt. Met een onderzoek vooraf, eventueel aangevuld met metingen, was duidelijker geweest welk deel van de woning aandacht vraagt, en hadden beide partijen op dezelfde informatie kunnen rekenen.</p>"
+        "body": "<p>Een eigenaar met scheuren in de achtergevel vraagt direct twee herstelpartijen om een offerte. De ene stelt herstel van alleen de achtergevel voor, de andere de hele fundering. De bedragen liggen ver uit elkaar en de eigenaar weet niet wat klopt. Met een onderzoek vooraf, eventueel aangevuld met <a href=\"/kennisbank/kosten-fase-1/\">metingen in fase 1</a>, was duidelijker geweest welk deel van de woning aandacht vraagt, en hadden beide partijen op dezelfde informatie kunnen rekenen.</p>"
       },
       {
         "id": "wanneer-is-onderzoek-verstandig",
@@ -1646,7 +1646,7 @@
       },
       {
         "q": "Wordt funderingsherstel vergoed?",
-        "a": "<p>Dat verschilt per situatie en per gemeente. Informeer bij je gemeente naar mogelijke regelingen. Bij schade door gaswinning in Groningen is het <a href=\"https://www.schadedoormijnbouw.nl/\" rel=\"noopener\" target=\"_blank\">Instituut Mijnbouwschade Groningen</a> het loket.</p>"
+        "a": "<p>Dat verschilt per situatie en per gemeente. Informeer bij je gemeente naar mogelijke regelingen. In het Friese veenweidegebied is er sinds 23 juni 2025 een subsidie voor funderingsherstel van 40%, tot maximaal €40.000 per woning; informatie en voorwaarden staan bij het Funderingsloket Fryslân. Bij schade door gaswinning in Groningen is het <a href=\"https://www.schadedoormijnbouw.nl/\" rel=\"noopener\" target=\"_blank\">Instituut Mijnbouwschade Groningen</a> het loket.</p>"
       },
       {
         "q": "Is onderzoek niet zonde als ik toch moet herstellen?",
@@ -1669,7 +1669,11 @@
         "label": "Funderingsscan bij aankoop",
         "text": "Waarom onderzoek vóór de koop helpt bij je beslissing."
       }
-    ]
+    ],
+    "bron_bedragen": [
+      "40.000"
+    ],
+    "bron_url": "https://veenweidefryslan.frl/funderingsloketfryslan/subsidies"
   },
   {
     "path": "/kennisbank/funderingsproblemen-friesland/",
@@ -1716,7 +1720,7 @@
       {
         "id": "bodemdaling-peil-en-zoutwinning",
         "h2": "Welke rol spelen bodemdaling, peilbeheer en zoutwinning?",
-        "answer": "Het Friese veenweidegebied kent bodemdaling, het waterpeil wordt beheerd door Wetterskip Fryslân, rond Harlingen speelt bodemdaling door zoutwinning en op enkele plekken is er gaswinning.",
+        "answer": "Het <a href=\"/funderingsproblemen-veenweidegebied-friesland/\">Friese veenweidegebied</a> kent bodemdaling, het waterpeil wordt beheerd door Wetterskip Fryslân, rond Harlingen speelt bodemdaling door zoutwinning en op enkele plekken is er gaswinning.",
         "body": "<p>Het peilbeheer bepaalt mede hoe hoog het grondwater staat, en daarmee hoe snel veen oxideert en of houten paalkoppen onder water blijven. Bodemdaling door zoutwinning rond Harlingen is een lokale factor die bij woningen in die omgeving wordt meegewogen. De algemene mechanismen staan beschreven in <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a> en <a href=\"/kennisbank/grondwater-en-fundering/\">grondwater en fundering</a>.</p>"
       },
       {
@@ -1740,7 +1744,7 @@
       {
         "id": "wanneer-is-onderzoek-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
-        "answer": "Onderzoek is verstandig bij aankoop van een oudere woning in Friesland, bij signalen zoals scheuren, scheefstand of klemmende deuren, en als je woning in een veen- of kleigebied staat en je meer inzicht wilt.",
+        "answer": "Onderzoek is verstandig bij <a href=\"/kennisbank/funderingsonderzoek-voor-bod/\">aankoop van een oudere woning</a> in Friesland, bij signalen zoals scheuren, scheefstand of klemmende deuren, en als je woning in een veen- of kleigebied staat en je meer inzicht wilt.",
         "body": "<p>MV Funderingsscan is gevestigd in Leeuwarden en werkt in heel Friesland. Lees meer over onze aanpak in de provincie op <a href=\"/funderingsonderzoek-friesland/\">funderingsonderzoek Friesland</a>, bekijk de <a href=\"/funderingsscan-friesland/\">funderingsscan in Friesland</a> of het hele <a href=\"/werkgebied/\">werkgebied</a>.</p>"
       }
     ],
@@ -1816,7 +1820,7 @@
         "id": "wat-is-de-rol-van-gaswinning",
         "h2": "Wat is de rol van gaswinning?",
         "answer": "De gaswinning uit het Groningenveld heeft geleid tot aardbevingen en bodemdaling; de winning is beëindigd, maar schadeafhandeling en versterking lopen nog. Dat staat naast de bodemfactoren die ook elders in het noorden spelen.",
-        "body": "<p>In delen van de provincie, zoals rond Appingedam en Delfzijl, liggen woningen in het gebied met aardbevingen door gaswinning. In Delfzijl is er veel versterkingswerk aan woningen geweest of nog gaande. De schotelvormige bodemdaling door gaswinning geeft volgens NAM zelf geen gebouwschade; aardbevingen zijn een ander mechanisme. Voor eigenaren is het belangrijk om twee vragen uit elkaar te houden: is er schade die je toeschrijft aan gaswinning, en hoe staat het met de fundering van je woning in het algemeen?</p><div class=\"callout callout-warn\"><strong>Geen schademelding</strong><p>Schade die je toeschrijft aan gaswinning meld je bij het <a href=\"https://www.schadedoormijnbouw.nl/\" rel=\"noopener\" target=\"_blank\">Instituut Mijnbouwschade Groningen (IMG)</a>. Een funderingsscan van MV Funderingsscan is geen schademelding en vervangt die procedure niet.</p></div>"
+        "body": "<p>In delen van de provincie, zoals rond Appingedam en Delfzijl, liggen woningen in het gebied met aardbevingen door gaswinning. In Delfzijl is er veel versterkingswerk aan woningen geweest of nog gaande. De schotelvormige bodemdaling door gaswinning geeft volgens NAM zelf geen gebouwschade; aardbevingen zijn een ander mechanisme. Voor eigenaren is het belangrijk om twee vragen uit elkaar te houden: is er schade die je toeschrijft aan gaswinning, en hoe staat het met de fundering van je woning in het algemeen?</p><div class=\"callout callout-warn\"><strong>Geen schademelding</strong><p>Schade die je toeschrijft aan gaswinning meld je bij het <a href=\"https://www.schadedoormijnbouw.nl/\" rel=\"noopener\" target=\"_blank\">Instituut Mijnbouwschade Groningen (IMG)</a>. Een <a href=\"/kennisbank/wat-is-een-funderingsscan/\">funderingsscan</a> van MV Funderingsscan is geen schademelding en vervangt die procedure niet.</p></div>"
       },
       {
         "id": "groningen-stad-per-wijk-verschillend",
@@ -1839,7 +1843,7 @@
       {
         "id": "wanneer-is-onderzoek-verstandig",
         "h2": "Wanneer is onderzoek verstandig?",
-        "answer": "Onderzoek is verstandig bij aankoop of verkoop van een oudere woning in Groningen, bij signalen zoals scheuren, scheefstand of klemmende deuren, of als je los van een schademelding een onderbouwde inschatting van je funderingsrisico wilt.",
+        "answer": "Onderzoek is verstandig bij <a href=\"/kennisbank/funderingsonderzoek-voor-bod/\">aankoop</a> of verkoop van een oudere woning in Groningen, bij signalen zoals scheuren, scheefstand of klemmende deuren, of als je los van een schademelding een onderbouwde inschatting van je funderingsrisico wilt.",
         "body": "<p>MV Funderingsscan werkt in de hele provincie Groningen. Lees meer op <a href=\"/funderingsonderzoek-groningen/\">funderingsonderzoek Groningen</a> of bekijk de <a href=\"/funderingsscan-groningen/\">funderingsscan in Groningen</a>. Wat er in het vooronderzoek zit, staat bij <a href=\"/fase-0-funderingsonderzoek/\">fase 0</a>.</p>"
       }
     ],
@@ -1927,7 +1931,7 @@
         "id": "wat-is-de-regeling",
         "h2": "Welke subsidie bestaat er voor funderingsonderzoek in Friesland?",
         "answer": "De provincie Fryslân heeft de Subsidieregeling Funderingsonderzoek Fries Veenweidegebied. Die vergoedt een deel van de kosten van onderzoek naar de staat van de fundering van een woning in het veenweidegebied.",
-        "body": "<p>Gedeputeerde Staten van Fryslân hebben de regeling vastgesteld op 19 december 2023. Hij geldt tot en met 2029 en is bedoeld voor eigenaren in het veenweidegebied, waar inklinking van veen en wisselende grondwaterstanden de fundering van oudere woningen kunnen raken. Lees meer over die achtergrond bij <a href=\"/funderingsproblemen-veen/\">funderingsproblemen op veen</a> en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>.</p>\n<p>De volledige tekst staat in de <a href=\"https://lokaleregelgeving.overheid.nl/CVDR713677\" rel=\"noopener\" target=\"_blank\">officiële regeling op lokaleregelgeving.overheid.nl</a>. Op deze pagina vatten we de belangrijkste regels samen in gewone taal. Bij twijfel geldt altijd de tekst van de provincie.</p>"
+        "body": "<p>Gedeputeerde Staten van Fryslân hebben de regeling vastgesteld op 19 december 2023. Hij geldt tot en met 2029 en is bedoeld voor eigenaren in het veenweidegebied, waar inklinking van veen en wisselende grondwaterstanden de fundering van oudere woningen kunnen raken. Lees meer over die achtergrond bij <a href=\"/funderingsproblemen-veen/\">funderingsproblemen op veen</a> en <a href=\"/kennisbank/bodemdaling/\">bodemdaling</a>.</p>\n<p>De volledige tekst staat in de <a href=\"https://lokaleregelgeving.overheid.nl/CVDR713677\" rel=\"noopener\" target=\"_blank\">officiële regeling op lokaleregelgeving.overheid.nl</a>. Op deze pagina vatten we de belangrijkste regels samen in gewone taal. Bij twijfel geldt altijd de tekst van de provincie.</p>\n<div class=\"callout callout-note\"><strong>Ook subsidie voor funderingsherstel</strong><p>Naast deze onderzoeksregeling is er sinds 23 juni 2025 de Subsidieregeling Funderingsherstel Veenweidegebied Fryslân 2025-2029 van provincie en waterschap. Volgens het Funderingsloket vergoedt die 40% van de herstelkosten, tot maximaal €40.000 per woning, als uit onderzoek door een erkend bureau aantoonbare schade blijkt. Zie de <a href=\"https://veenweidefryslan.frl/funderingsloketfryslan/subsidies\">subsidiepagina van het Funderingsloket Fryslân</a>.</p></div>"
       },
       {
         "id": "wie-komt-in-aanmerking",
@@ -1963,7 +1967,7 @@
     "faqs": [
       {
         "q": "Krijg ik subsidie voor een Quick Scan?",
-        "a": "<p>De regeling vraagt een onderzoek naar de staat van de fundering volgens de KCAF-richtlijnen, door een bureau op de KCAF-erkenningslijst. Een Quick Scan is een vooronderzoek. Vraag bij het Fries Funderingsloket na of een bepaald onderzoek in aanmerking komt.</p>"
+        "a": "<p>De regeling vraagt een onderzoek naar de staat van de fundering volgens de KCAF-richtlijnen, door een bureau op de KCAF-erkenningslijst. Een Quick Scan is een vooronderzoek en geen volledig funderingsonderzoek; hij geeft ook geen definitieve uitspraak over de resterende levensduur van een fundering. Vraag bij het Fries Funderingsloket na of een bepaald onderzoek in aanmerking komt.</p>"
       },
       {
         "q": "Mag ik het onderzoek al laten uitvoeren voordat ik subsidie aanvraag?",
@@ -1998,7 +2002,8 @@
     "bron_bedragen": [
       "4.000",
       "7.500",
-      "24.999"
+      "24.999",
+      "40.000"
     ],
     "bron_url": "https://lokaleregelgeving.overheid.nl/CVDR713677"
   }
