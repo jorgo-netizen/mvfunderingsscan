@@ -21,11 +21,15 @@ export const dateNl = (iso) => {
 };
 const isoDate = (iso) => new Date(iso).toISOString();
 const clip = (s, n) => (s.length <= n ? s : `${s.slice(0, n - 1).replace(/\s+\S*$/, '')}…`);
+// meta description: liever eindigen op een hele zin dan midden in een zin afkappen
+const clipZin = (s, n) => { if (s.length <= n) return s; const m = s.slice(0, n).match(/^[\s\S]*[.!?](?=\s)/); return m && m[0].length >= 80 ? m[0] : clip(s, n); };
+// Google News-links zijn versleutelde omleidingen; toon de bronvermelding als gewone tekst
+const zonderGoogleNews = (html) => html.replace(/<a\b[^>]*href="https:\/\/news\.google\.com\/[^"]*"[^>]*>([\s\S]*?)<\/a>/g, '$1');
 
 export const NEWS_TITLE = 'Nieuws over funderingen | MV Funderingsscan';
 const FEED_LINK = `<link rel="alternate" type="application/rss+xml" title="Nieuws van MV Funderingsscan" href="${DOMAIN}/nieuws/feed.xml">
   `;
-const NEWS_DESC = 'Nieuws en achtergronden van MV Funderingsscan over funderingsonderzoek, regelgeving en woningen in Friesland en Groningen.';
+const NEWS_DESC = 'Nieuws en achtergronden van MV Funderingsscan over funderingsonderzoek, regelgeving en woningen in Friesland, Groningen en Noord-Drenthe.';
 
 function imageUrl(db, path) {
   return path ? db.publicUrl('nieuws', path) : null;
@@ -145,8 +149,8 @@ export function renderNewsArticle(db, post, { preview = false } = {}) {
   const url = `${DOMAIN}/nieuws/${post.slug}/`;
   const crumbs = [{ href: '/', name: 'Home' }, { href: '/nieuws/', name: 'Nieuws' }, { href: `/nieuws/${post.slug}/`, name: post.title }];
   const zt = leesZelftest(post.content);
-  const html = zt ? `${renderMarkdown(zt.voor).html}${zelftestHtml(zt.test)}${renderMarkdown(zt.na).html}` : renderMarkdown(post.content).html;
-  const desc = clip(post.meta_description || post.excerpt || plainText(post.content), 158);
+  const html = zonderGoogleNews(zt ? `${renderMarkdown(zt.voor).html}${zelftestHtml(zt.test)}${renderMarkdown(zt.na).html}` : renderMarkdown(post.content).html);
+  const desc = clipZin(post.meta_description || post.excerpt || plainText(post.content), 158);
   const img = imageUrl(db, post.featured_image);
   const absImg = img && img.startsWith('http') ? img : img ? `${DOMAIN}${img}` : `${DOMAIN}/assets/img/og-mv-funderingsscan.jpg`;
   const author = post.show_author && post.author?.name ? post.author.name : null;
@@ -163,7 +167,7 @@ export function renderNewsArticle(db, post, { preview = false } = {}) {
     image: absImg,
   }];
   const page = {
-    path: `/nieuws/${post.slug}/`, title: `${clip(post.title, 50)} | MV Funderingsscan`, description: desc, schema: preview ? '' : jsonld(graph),
+    path: `/nieuws/${post.slug}/`, title: `${clip(post.title, 90)} | MV Funderingsscan`, description: desc, schema: preview ? '' : jsonld(graph),
     og_type: 'article', tools: !!zt, preload: preview ? '' : FEED_LINK, robots: preview ? 'noindex, nofollow' : undefined, canonical: preview ? false : undefined,
   };
   const meta = `<p class="news-hero-meta"><time datetime="${isoDate(published)}">${preview && !post.published_at ? 'Nog niet gepubliceerd' : dateNl(published)}</time>${author ? ` · ${esc(author)}` : ''}</p>`;

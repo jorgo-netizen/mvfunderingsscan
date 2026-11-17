@@ -69,3 +69,19 @@ test('Signalen en indexeerbare pagina\'s', () => {
   }), ['/']);
   assert.deepEqual(sitemapUrls('<url><loc> https://x/a/ </loc></url><url><loc>https://x/b/</loc></url>'), ['https://x/a/', 'https://x/b/']);
 });
+
+test('Nieuwsbericht: titel niet na 50 tekens afgekapt, description eindigt op hele zin, geen Google News-links', async () => {
+  const { renderNewsArticle } = await import('../api/_lib/news-render.js');
+  const zin = 'Bodemdaling en grondwater raken oudere woningen in het Friese veenweidegebied, vooral in de oudere wijken.';
+  const html = renderNewsArticle({}, {
+    slug: 'test', title: 'Funderingsproblemen in het Friese veenweidegebied: woningeigenaren alert',
+    meta_description: `${zin} Welke signalen zie je en hoe krijg je inzicht in je fundering en wat kost dat?`,
+    content: 'Bron: [Artikel - Leeuwarder Courant](https://news.google.com/rss/articles/CBMabc?oc=5) en [KCAF](https://www.kcaf.nl/).',
+    status: 'gepubliceerd', published_at: '2026-11-16T10:00:00Z',
+  });
+  assert.match(html, /<title>Funderingsproblemen in het Friese veenweidegebied: woningeigenaren alert<\/title>/);
+  assert.match(html, new RegExp(`name="description" content="${zin}"`));
+  assert.doesNotMatch(html, /news\.google\.com/);
+  assert.match(html, /Artikel - Leeuwarder Courant/);
+  assert.match(html, /href="https:\/\/www\.kcaf\.nl\/"/);
+});

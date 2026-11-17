@@ -69,6 +69,9 @@ export function personSchemas(domain, orgId) {
   });
 }
 
+/** Auteurs van artikelen: verwijzingen naar de Person-nodes op /over-ons/, met naam zodat ze ook los kloppen. */
+export const authorRefs = (domain) => EXPERTS.map((E) => ({ '@type': 'Person', '@id': personId(domain, E), name: E.naam, url: personId(domain, E) }));
+
 /** sameAs-profielen van het bedrijf: alleen echte URL's. */
 export const ORG_SAME_AS = filledList(EEAT.bedrijf?.sameAs).filter((u) => /^https?:\/\//.test(u));
 

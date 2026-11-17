@@ -5,7 +5,7 @@ import {
   breadcrumbSchema, faqSchema, GEMEENTEN, gemeenteArea,
 } from './layout.mjs';
 import { widgetHtml } from './widgets.mjs';
-import { expertSection, reviewsSection, rapportvoorbeeldSection, personSchemas, bylineHtml } from './eeat.mjs';
+import { expertSection, reviewsSection, rapportvoorbeeldSection, personSchemas, bylineHtml, authorRefs, EXPERT_OK } from './eeat.mjs';
 
 const MAANDEN = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
 const dateNl = (iso) => { const [y, m, d] = iso.split('-').map(Number); return `${d} ${MAANDEN[m - 1]} ${y}`; };
@@ -190,7 +190,7 @@ export function render(page0) {
       description: p.description,
       inLanguage: 'nl-NL',
       mainEntityOfPage: { '@id': url + '#webpagina' },
-      author: { '@id': ORG_ID },
+      author: EXPERT_OK ? authorRefs(DOMAIN) : { '@id': ORG_ID },
       publisher: { '@id': ORG_ID },
       datePublished: TODAY,
       dateModified: TODAY,
@@ -204,7 +204,7 @@ export function render(page0) {
       name: p.defined_term.name,
       description: p.defined_term.description,
       url,
-      inDefinedTermSet: { '@id': `${DOMAIN}/kennisbank/begrippenlijst/#begrippen` },
+      inDefinedTermSet: { '@type': 'DefinedTermSet', '@id': `${DOMAIN}/kennisbank/begrippenlijst/#begrippen`, name: 'Begrippenlijst funderingsonderzoek', url: `${DOMAIN}/kennisbank/begrippenlijst/` },
     });
   }
   if (p.faqs && p.faqs.length) graph.push(faqSchema(url, p.faqs));

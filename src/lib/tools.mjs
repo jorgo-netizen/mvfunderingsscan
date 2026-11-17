@@ -36,7 +36,7 @@ function leadForm(tool, { title = 'Bespreek mijn situatie', intro = 'Laat je geg
   ${PRIVACY}
   <p class="form-status" role="status" aria-live="polite" hidden></p>
   <button type="submit" class="btn btn-gold">${button} <span aria-hidden="true">→</span></button>
-  <div class="tool-lead-success" hidden tabindex="-1"><strong>Bedankt, je bericht is verstuurd.</strong><p>We nemen zo snel mogelijk contact met je op. Liever direct contact? Bel <a href="tel:+31582037172">+31 (0) 582037172</a>.</p></div>
+  <div class="tool-lead-success" hidden tabindex="-1"><strong>Bedankt, je bericht is verstuurd.</strong><p>We nemen zo snel mogelijk contact met je op. Liever direct contact? Bel <a href="tel:+31582037172">058 203 7172</a>.</p></div>
 </form>`;
 }
 
@@ -180,7 +180,7 @@ function vertelwatjezietWidget() {
     ${PRIVACY}
     <p class="form-status" role="status" aria-live="polite" hidden></p>
     <button type="submit" class="btn btn-gold">Vraag een beoordeling aan <span aria-hidden="true">→</span></button>
-    <div class="tool-lead-success" hidden tabindex="-1"><strong>Bedankt, je bericht en foto's zijn verstuurd.</strong><p>We bekijken wat je hebt gestuurd en nemen contact met je op. Liever direct contact? Bel <a href="tel:+31582037172">+31 (0) 582037172</a>.</p></div>
+    <div class="tool-lead-success" hidden tabindex="-1"><strong>Bedankt, je bericht en foto's zijn verstuurd.</strong><p>We bekijken wat je hebt gestuurd en nemen contact met je op. Liever direct contact? Bel <a href="tel:+31582037172">058 203 7172</a>.</p></div>
   </form>
 </div>`;
 }

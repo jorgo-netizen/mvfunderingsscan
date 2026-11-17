@@ -5,7 +5,7 @@
  */
 import { esc, siteUrl, logError } from './http.js';
 
-const NAP = { phone: '+31 (0) 582037172', phoneHref: 'tel:+31582037172', email: 'info@mideavastgoed.nl' };
+const NAP = { phone: '058 203 7172', phoneHref: 'tel:+31582037172', email: 'info@mideavastgoed.nl' };
 
 export async function resendSend(payload, idempotencyKey) {
   const key = process.env.RESEND_API_KEY;

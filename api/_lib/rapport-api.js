@@ -392,8 +392,8 @@ function rapportMail({ naam, nr, adres }) {
 <p style="margin:0 0 14px">Heeft u vragen over de uitkomst of het advies? Neem dan gerust contact met ons op en vermeld het rapportnummer.</p>
 ${NAP.google_review_url ? `<p style="margin:0 0 14px">Bent u tevreden over ons onderzoek? Een beoordeling op Google helpt andere woningeigenaren bij hun keuze: <a href="${NAP.google_review_url}" style="color:#102945;font-weight:bold">beoordeel ons op Google</a>.</p>` : ''}
 <p style="margin:0">Met vriendelijke groet,<br>MV Funderingsscan</p>
-</td></tr><tr><td style="padding:18px 28px;background:#f4f6f8;font-size:13px;color:#5f7286">MV Funderingsscan B.V. · Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden · +31 (0) 582037172 · info@mideavastgoed.nl</td></tr>
+</td></tr><tr><td style="padding:18px 28px;background:#f4f6f8;font-size:13px;color:#5f7286">MV Funderingsscan B.V. · Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden · 058 203 7172 · info@mideavastgoed.nl</td></tr>
 </table></td></tr></table></body></html>`;
-  const text = `Beste ${first || 'opdrachtgever'},\n\nIn de bijlage vindt u het rapport van het Fase 0 Funderingsrisico-onderzoek (QuickScan)${adres ? ` voor ${adres}` : ''}, rapportnummer ${nr}.\n\nHeeft u vragen? Neem contact op en vermeld het rapportnummer.\n\n${NAP.google_review_url ? `Tevreden over ons onderzoek? Beoordeel ons op Google: ${NAP.google_review_url}\n\n` : ''}Met vriendelijke groet,\nMV Funderingsscan\n+31 (0) 582037172 · info@mideavastgoed.nl`;
+  const text = `Beste ${first || 'opdrachtgever'},\n\nIn de bijlage vindt u het rapport van het Fase 0 Funderingsrisico-onderzoek (QuickScan)${adres ? ` voor ${adres}` : ''}, rapportnummer ${nr}.\n\nHeeft u vragen? Neem contact op en vermeld het rapportnummer.\n\n${NAP.google_review_url ? `Tevreden over ons onderzoek? Beoordeel ons op Google: ${NAP.google_review_url}\n\n` : ''}Met vriendelijke groet,\nMV Funderingsscan\n058 203 7172 · info@mideavastgoed.nl`;
   return { subject, html, text };
 }

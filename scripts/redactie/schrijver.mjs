@@ -21,7 +21,7 @@ export const BEDRIJF = `Over MV Funderingsscan (gebruik alleen deze feiten over 
 - Een Quick Scan (fase 0) is een vooronderzoek: archief- en bodemonderzoek, visuele inspectie (kruipruimte voor zover toegankelijk) en een risico-inschatting met advies. Zonder graafwerk. Het is géén uitgebreid funderingsonderzoek en stelt de staat van de palen niet vast.
 - Prijzen: fase 0 vanaf €350, fase 1 vanaf €950, beide inclusief btw. Noem geen andere bedragen van MV Funderingsscan.
 - Na een aanvraag bellen we dezelfde dag terug. Het rapport volgt binnen 2 werkdagen na de opname.
-- Contact: ${NAP.phone_display || '+31 (0) 582037172'}, ${NAP.email || 'info@mideavastgoed.nl'}.
+- Contact: ${NAP.phone_display || '058 203 7172'}, ${NAP.email || 'info@mideavastgoed.nl'}.
 - Noem geen certificeringen, erkenningen, garanties, keurmerken of samenwerkingen.`;
 
 const REGELS = `Schrijfregels:
