@@ -91,6 +91,15 @@ export function orgSchema() {
     description: 'MV Funderingsscan voert onafhankelijk funderingsonderzoek uit voor woningen in Friesland, Groningen en Noord-Drenthe: een Quick Scan (fase 0) en, waar nodig, vervolgonderzoek met metingen (fase 1).',
     telephone: NAP.phone_intl,
     email: NAP.email,
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer service',
+      telephone: NAP.phone_intl,
+      email: NAP.email,
+      availableLanguage: 'nl',
+      areaServed: 'NL',
+      hoursAvailable: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '17:00' },
+    },
     address: {
       '@type': 'PostalAddress',
       streetAddress: NAP.street,

@@ -465,6 +465,18 @@ User-agent: Googlebot
 Allow: /
 Disallow: /api/
 
+# Bewuste keuze: AI-trainings- en zoekcrawlers expliciet toegestaan (zichtbaarheid in ChatGPT, Claude, Gemini, Apple)
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Google-Extended
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: CCBot
+Allow: /
+Disallow: /api/
+
 Sitemap: ${DOMAIN}/sitemap.xml
 Sitemap: ${DOMAIN}/nieuws-sitemap.xml
 `);

@@ -178,7 +178,8 @@ export function render(page0) {
   }, breadcrumbSchema(url, p.crumbs)];
   if (p.path === '/over-ons/') graph.push(...personSchemas(DOMAIN, ORG_ID));
   const gemeente = GEMEENTEN.find((g) => g.href === p.path);
-  for (const key of p.services || []) graph.push(serviceSchema(key, gemeente ? gemeenteArea(gemeente) : null));
+  // zelfde @id = overal dezelfde inhoud; het lokale werkgebied staat in #lokale-dienst hieronder
+  for (const key of p.services || []) graph.push(serviceSchema(key));
   // Lokale dienst per plaatspagina, zodat de plaatsnaam ook in de dienstnaam staat.
   if (gemeente) graph.push({ '@type': 'Service', '@id': url + '#lokale-dienst', name: p.h1, serviceType: 'Funderingsonderzoek', url, provider: { '@id': ORG_ID }, areaServed: gemeenteArea(gemeente) });
   if (p.article) {

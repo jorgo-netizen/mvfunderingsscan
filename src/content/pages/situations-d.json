@@ -652,7 +652,7 @@
     ],
     "eyebrow": "Over MV Funderingsscan",
     "h1": "Over MV Funderingsscan",
-    "lead": "MV Funderingsscan richt zich op funderingsonderzoek voor woningen in Friesland en Groningen. We zijn gevestigd in Leeuwarden en doen uitsluitend onderzoek: we voeren zelf geen funderingsherstel uit. Zo krijg je een onafhankelijk beeld van je woning, te beginnen met een <a href=\"/funderingsscan/\">funderingsscan</a>.",
+    "lead": "MV Funderingsscan richt zich op funderingsonderzoek voor woningen in Friesland, Groningen en Noord-Drenthe. We zijn gevestigd in Leeuwarden en doen uitsluitend onderzoek: we voeren zelf geen funderingsherstel uit. Zo krijg je een onafhankelijk beeld van je woning, te beginnen met een <a href=\"/funderingsscan/\">funderingsscan</a>.",
     "hero_image": {
       "name": "funderingsinspectie-woning-gevel",
       "alt": "Persoon met een waterpas bij de gevel van een woning"
@@ -664,7 +664,7 @@
       },
       {
         "label": "Werkgebied",
-        "value": "Friesland en Groningen"
+        "value": "Friesland, Groningen en Noord-Drenthe"
       },
       {
         "label": "Diensten",

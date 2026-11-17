@@ -1,6 +1,6 @@
 # SEO/GEO-audit mvfunderingsquickscan.nl
 
-Gegenereerd door `npm run audit` op 2026-11-17 – 149 indexeerbare pagina's, 241.654 woorden in totaal.
+Gegenereerd door `npm run audit` op 2026-11-17 – 149 indexeerbare pagina's, 241.655 woorden in totaal.
 
 | URL | Title | H1 | Primair zoekwoord | Zoekintentie | Interne links | Schema | Indexeerbaar | Woorden |
 |---|---|---|---|---|---|---|---|---|
@@ -95,7 +95,7 @@ Gegenereerd door `npm run audit` op 2026-11-17 – 149 indexeerbare pagina's, 24
 | /kennisbank/kleibodem/ | Kleibodem: krimp en zwel uitgelegd \| MV Funderingsscan | Kleibodem: wat is klei en hoe werken krimp en zwel? | kleibodem | informatief | 81 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, DefinedTerm, FAQPage | ja | 1042 |
 | /kennisbank/klemmende-deuren/ | Klemmende deuren en je fundering \| MV Funderingsscan | Klemmende deuren: wanneer zegt het iets over de fundering? | klemmende deuren | informatief | 79 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, FAQPage | ja | 1011 |
 | /kennisbank/klemmende-ramen/ | Klemmende ramen: oorzaken en signalen \| MV Funderingsscan | Klemmende ramen: houtwerking, hang- en sluitwerk of vervorming? | klemmende ramen | informatief | 81 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, FAQPage | ja | 1241 |
-| /kennisbank/kosten-fase-1/ | Kosten fase 1 funderingsonderzoek \| MV Funderingsscan | Kosten fase 1 funderingsonderzoek: wat betaal je en waarvoor? | kosten fase 1 funderingsonderzoek | informatief | 81 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, FAQPage | ja | 1126 |
+| /kennisbank/kosten-fase-1/ | Kosten fase 1 funderingsonderzoek \| MV Funderingsscan | Kosten fase 1 funderingsonderzoek: wat betaal je en waarvoor? | kosten fase 1 funderingsonderzoek | informatief | 80 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, FAQPage | ja | 1124 |
 | /kennisbank/kosten-funderingsherstel/ | Kosten funderingsherstel: wat bepaalt de prijs? | Kosten funderingsherstel: wat bepaalt de prijs? | kosten funderingsherstel | informatief | 79 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, FAQPage | ja | 1134 |
 | /kennisbank/kruipruimte-inspectie/ | Kruipruimte-inspectie: wat wordt er bekeken? | Kruipruimte-inspectie: wat wordt er bekeken en hoe bereid je je voor? | kruipruimte-inspectie | informatief | 80 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, DefinedTerm, FAQPage | ja | 1046 |
 | /kennisbank/lintvoegwaterpassing/ | Lintvoegwaterpassing: uitleg en demo \| MV Funderingsscan | Wat is een lintvoegwaterpassing? | lintvoegwaterpassing | informatief | 88 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Article, DefinedTerm, FAQPage | ja | 4340 |
@@ -139,8 +139,8 @@ Gegenereerd door `npm run audit` op 2026-11-17 – 149 indexeerbare pagina's, 24
 | /kosten-funderingsonderzoek-berekenen/ | Kostenwijzer funderingsonderzoek: welke dienst past? | Kostenwijzer: welk onderzoek past en wat kost het? | kosten funderingsonderzoek | commercieel | 80 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 1139 |
 | /makelaars-en-taxateurs/ | Funderingsonderzoek voor makelaars en taxateurs | Funderingsonderzoek voor makelaars en taxateurs | funderingsonderzoek makelaar taxateur | commercieel | 77 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1274 |
 | /meetwaarden-uitgelegd/ | Meetwaarden fundering uitgelegd: wat betekent 12 mm/m? | Wat betekent mijn meetgegeven? | scheefstand mm per meter | informatief | 79 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 554 |
-| /over-ons/ | Over ons: onafhankelijk funderingsonderzoek | Over MV Funderingsscan | mv funderingsscan | navigatie | 76 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Person, FAQPage | ja | 1008 |
-| /prijzen/ | Prijzen funderingsscan fase 0 en 1, incl. btw | Prijzen funderingsscan: fase 0 en fase 1, inclusief btw | prijzen funderingsscan | commercieel | 81 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1312 |
+| /over-ons/ | Over ons: onafhankelijk funderingsonderzoek | Over MV Funderingsscan | mv funderingsscan | navigatie | 76 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Person, FAQPage | ja | 1010 |
+| /prijzen/ | Kosten funderingsscan 2026: fase 0 en 1 \| MV Funderingsscan | Kosten funderingsscan: prijzen fase 0 en fase 1, inclusief btw | prijzen funderingsscan | commercieel | 81 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 1313 |
 | /privacyverklaring/ | Privacyverklaring \| MV Funderingsscan B.V. | Privacyverklaring | privacyverklaring mv funderingsscan | informatief | 74 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 1899 |
 | /problemen-met-houten-palen/ | Problemen met houten palen onder je woning | Problemen met een houten paalfundering: oorzaken, risico’s en onderzoek | houten paalfundering problemen | informatief | 83 | ProfessionalService, WebSite, WebPage, BreadcrumbList, FAQPage | ja | 1944 |
 | /quickscan-fundering/ | Quickscan fundering in Friesland en Groningen | Quickscan fundering | quickscan fundering (funderingsquickscan) | commercieel | 83 | ProfessionalService, WebSite, WebPage, BreadcrumbList, Service, FAQPage | ja | 3242 |

@@ -745,8 +745,8 @@
   },
   {
     "path": "/prijzen/",
-    "title": "Prijzen funderingsscan fase 0 en 1, incl. btw | MV Funderingsscan",
-    "description": "Prijzen funderingsscan: fase 0 vanaf €350 en fase 1 vanaf €950, inclusief btw. Lees wat er bij de prijs inbegrepen is en waar de exacte prijs van afhangt.",
+    "title": "Kosten funderingsscan 2026: fase 0 en 1 | MV Funderingsscan",
+    "description": "Kosten funderingsscan in 2026: fase 0 vanaf €350 en fase 1 vanaf €950, inclusief btw. Lees wat de prijs bepaalt en wat je ervoor terugkrijgt.",
     "keyword": "kosten funderingsscan",
     "intent": "commercieel",
     "nav_active": "/funderingsscan/",
@@ -765,7 +765,7 @@
       }
     ],
     "eyebrow": "Dienst · Prijzen",
-    "h1": "Prijzen funderingsscan: fase 0 en fase 1, inclusief btw",
+    "h1": "Kosten funderingsscan: prijzen fase 0 en fase 1, inclusief btw",
     "lead": "De <strong>kosten van een funderingsscan</strong> bij MV Funderingsscan beginnen bij €350 voor de <a href=\"/fase-0-funderingsonderzoek/\">Quick Scan (fase 0)</a>. Geeft die aanleiding tot metingen, dan kost fase 1 vanaf €950, afhankelijk van de woning. Alle genoemde prijzen zijn inclusief btw. Je hoort vooraf wat het onderzoek kost, voor woningen in heel Friesland en Groningen.",
     "hero_image": {
       "name": "jaren-dertig-woningen-straat",
