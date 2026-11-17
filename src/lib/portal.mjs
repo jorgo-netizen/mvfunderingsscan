@@ -62,6 +62,8 @@ ${header('')}
             <p><strong>Je rapport staat klaar.</strong> De downloadlink is één minuut geldig en wordt pas gemaakt als je op de knop klikt.</p>
             <button type="button" class="btn btn-gold" data-rapport>Download het rapport (PDF)</button>
             <p class="portal-error" data-rapport-fout role="alert" hidden></p>
+            ${NAP.google_review_url ? `<p>Tevreden over ons onderzoek? Een beoordeling helpt andere woningeigenaren bij hun keuze.</p>
+            <a class="btn btn-ghost-dark" href="${NAP.google_review_url}" target="_blank" rel="noopener">Beoordeel ons op Google</a>` : ''}
           </div>
           <p class="status-report-later" data-veld="report-later" hidden>Het rapport is afgerond. Je ontvangt het rapport van ons zoals met je is afgesproken; heb je het nog niet ontvangen, neem dan contact met ons op.</p>
         </div>

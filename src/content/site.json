@@ -19,7 +19,8 @@
     "geo": {
       "latitude": 53.2152,
       "longitude": 5.7799
-    }
+    },
+    "google_review_url": "https://g.page/r/CShJfZvgwQ1DEBI/review"
   },
   "analytics": {
     "_uitleg": "Google Analytics 4: vul de meet-ID in (begint met G-). Leeg = geen GA4 en geen cookiemelding. GA4 laadt pas na toestemming van de bezoeker. Vercel Web Analytics (zonder cookies) staat los hiervan altijd aan.",

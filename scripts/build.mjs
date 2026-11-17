@@ -215,7 +215,9 @@ function buildHome() {
 
   const url = DOMAIN + '/';
   const title = 'Funderingsonderzoek in Friesland & Groningen | MV Funderingsscan';
-  const graph = [orgSchema(), websiteSchema(), {
+  // homepage blijft ongewijzigd: zonder de sameAs-profielen die de overige pagina's wel hebben
+  const { sameAs: _sameAs, ...orgHome } = orgSchema();
+  const graph = [orgHome, websiteSchema(), {
     '@type': 'WebPage', '@id': url + '#webpagina', url, name: title,
     inLanguage: 'nl-NL', isPartOf: { '@id': SITE_ID }, about: { '@id': ORG_ID },
     primaryImageOfPage: `${DOMAIN}/assets/img/funderingsmeting-laser-tablet-1536.webp`, dateModified: TODAY,
