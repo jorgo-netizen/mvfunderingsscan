@@ -1,5 +1,5 @@
 {
- "gemaakt": "2026-11-16T15:24:25.270Z",
+ "gemaakt": "2026-11-17T09:40:04.737Z",
  "urls": {
   "/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/",
@@ -125,7 +125,7 @@
    "canonical": "https://www.mvfunderingsquickscan.nl/fase-0-funderingsonderzoek-aankoop/",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
    "title": "Fase 0 funderingsonderzoek bij aankoop | MV Funderingsscan",
-   "description": "Fase 0 Quick Scan voor kopers in Friesland en Groningen: vanaf €350, gepland rond je voorbehoud, rapport meestal binnen 2 werkdagen na de inspectie.",
+   "description": "Fase 0 Quick Scan voor kopers in Friesland, Groningen en Noord-Drenthe: vanaf €350, gepland rond je voorbehoud, rapport meestal binnen 2 werkdagen.",
    "h1": [
     "Fase 0 funderingsonderzoek bij aankoop van een woning"
    ],
@@ -150,13 +150,13 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "ff88aac191840c4099ae"
+   "hash": "b1f03f7bbe468e052c21"
   },
   "/fase-0-funderingsonderzoek/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/fase-0-funderingsonderzoek/",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
    "title": "Fase 0 funderingsonderzoek: werkwijze | MV Funderingsscan",
-   "description": "Wat houdt fase 0 funderingsonderzoek in? Lees hoe archief, bodem en inspectie leiden tot één van vier adviezen. Vanaf €350 in Friesland en Groningen.",
+   "description": "Wat houdt fase 0 funderingsonderzoek in? Archief, bodem en inspectie leiden tot één van vier adviezen. Vanaf €350 in Friesland, Groningen en Noord-Drenthe.",
    "h1": [
     "Fase 0 funderingsonderzoek"
    ],
@@ -181,7 +181,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "bd5a3442f588509e3f44"
+   "hash": "048928b24e74e0e59417"
   },
   "/fase-1-funderingsonderzoek/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/fase-1-funderingsonderzoek/",
@@ -460,7 +460,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/vooroorlogse-woning-voordeur.jpg",
-   "hash": "0f400c300bb8416175cd"
+   "hash": "be633117aac0129d86ae"
   },
   "/funderingsonderzoek-bij-verkoop/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-bij-verkoop/",
@@ -1253,7 +1253,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
-   "hash": "f54dddd65151a6c52110"
+   "hash": "755f3410da64f3aa2978"
   },
   "/funderingsonderzoek-tynaarlo/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsonderzoek-tynaarlo/",
@@ -1835,7 +1835,7 @@
    "canonical": "https://www.mvfunderingsquickscan.nl/funderingsscan/",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
    "title": "Funderingsscan voor je woning | MV Funderingsscan",
-   "description": "Onafhankelijke funderingsscan voor je woning in Friesland of Groningen: zonder graafwerk, vanaf €350 en het rapport normaal gesproken binnen 2 werkdagen.",
+   "description": "Onafhankelijke funderingsscan voor je woning in Friesland, Groningen of Noord-Drenthe: zonder graafwerk, vanaf €350, rapport meestal binnen 2 werkdagen.",
    "h1": [
     "Funderingsscan"
    ],
@@ -1860,7 +1860,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "b31a7e4e6999c42dbcec"
+   "hash": "1f1f70e76bfd54854340"
   },
   "/gratis-funderingscheck/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/gratis-funderingscheck/",
@@ -2232,7 +2232,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/metselwerk-gevel-detail.jpg",
-   "hash": "433c6f790273a6846008"
+   "hash": "0a3e1e678519d833e3c2"
   },
   "/kennisbank/funderingsrapport-voor-verkoper/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsrapport-voor-verkoper/",
@@ -2436,7 +2436,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/img/og-mv-funderingsscan.jpg",
-   "hash": "6a2dfc1084540811e8c4"
+   "hash": "a478c1697f866c709f38"
   },
   "/kennisbank/funderingsscan-en-taxatie/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/funderingsscan-en-taxatie/",
@@ -3610,7 +3610,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "eed72925efbf1d2e7be5"
+   "hash": "988a29032ae2f66fe8a5"
   },
   "/kennisbank/wat-is-een-quickscan-fundering/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/kennisbank/wat-is-een-quickscan-fundering/",
@@ -3996,7 +3996,7 @@
    "canonical": "https://www.mvfunderingsquickscan.nl/makelaars-en-taxateurs/",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
    "title": "Funderingsonderzoek voor makelaars en taxateurs",
-   "description": "Funderingsonderzoek voor makelaars en taxateurs in Friesland en Groningen: wat een Quick Scan oplevert, wat niet en hoe je het voor een klant regelt.",
+   "description": "Funderingsonderzoek voor makelaars en taxateurs in Friesland, Groningen en Noord-Drenthe: wat een Quick Scan oplevert, wat niet en hoe je het regelt.",
    "h1": [
     "Funderingsonderzoek voor makelaars en taxateurs"
    ],
@@ -4021,7 +4021,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/jaren-dertig-woningen-straat.jpg",
-   "hash": "3ec37908f71eff5b578e"
+   "hash": "1ef8324a7fb857cd7c48"
   },
   "/meetwaarden-uitgelegd/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/meetwaarden-uitgelegd/",
@@ -4055,7 +4055,7 @@
    "canonical": "https://www.mvfunderingsquickscan.nl/over-ons/",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
    "title": "Over ons: onafhankelijk funderingsonderzoek",
-   "description": "MV Funderingsscan uit Leeuwarden doet uitsluitend funderingsonderzoek voor woningen in Friesland en Groningen, onafhankelijk en zonder eigen herstelwerk.",
+   "description": "MV Funderingsscan uit Leeuwarden doet alleen funderingsonderzoek voor woningen in Friesland, Groningen en Noord-Drenthe: onafhankelijk, zonder herstelwerk.",
    "h1": [
     "Over MV Funderingsscan"
    ],
@@ -4078,7 +4078,7 @@
     "WebSite"
    ],
    "ogImage": "https://www.mvfunderingsquickscan.nl/assets/og/funderingsinspectie-woning-gevel.jpg",
-   "hash": "2630d7b94f2450ea4400"
+   "hash": "431ccdc5f61bf569f098"
   },
   "/prijzen/": {
    "canonical": "https://www.mvfunderingsquickscan.nl/prijzen/",
