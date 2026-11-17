@@ -251,6 +251,10 @@
       "destination": "/api/nieuws"
     },
     {
+      "source": "/nieuws/feed.xml",
+      "destination": "/api/nieuws?feed=1"
+    },
+    {
       "source": "/nieuws/:slug/",
       "destination": "/api/nieuws?slug=:slug"
     },

@@ -142,6 +142,24 @@ test('autorisatie: geen toegang zonder login, CSRF verplicht, rol gecontroleerd,
 });
 
 // ---------------------------------------------------------------- nieuws
+test('nieuws: RSS-feed bevat alleen gepubliceerde berichten, ge-escaped, en de nieuwspagina verwijst ernaar', async () => {
+  await newUser('medewerker', 'feed@test.nl');
+  const s = await loginAs('feed@test.nl');
+  const content = '## Kop\n\nTekst voor de feedtest met voldoende inhoud om te kunnen publiceren. '.repeat(4);
+  const pub = await admin(s, 'nieuws-opslaan', { method: 'POST', body: { title: 'Feedbericht <b>&</b> test', slug: 'feedbericht-test', excerpt: 'Intro van het feedbericht', content } });
+  await admin(s, 'nieuws-status', { method: 'POST', body: { id: pub.json.item.id, status: 'gepubliceerd' } });
+  await admin(s, 'nieuws-opslaan', { method: 'POST', body: { title: 'Geheim concept', slug: 'geheim-concept', content } });
+  const feed = await call(nieuws, { url: '/api/nieuws?feed=1' });
+  assert.equal(feed.status, 200);
+  assert.ok(feed.body.startsWith('<?xml') && feed.body.includes('<rss version="2.0"'));
+  assert.ok(feed.body.includes('<link>https://www.mvfunderingsquickscan.nl/nieuws/feedbericht-test/</link>'));
+  assert.ok(feed.body.includes('Feedbericht &lt;b&gt;&amp;&lt;/b&gt; test'), 'titel ge-escaped');
+  assert.ok(!feed.body.includes('geheim-concept'), 'concepten staan niet in de feed');
+  const pagina = await call(nieuws, { url: '/api/nieuws?slug=feedbericht-test' });
+  assert.ok(pagina.body.includes('type="application/rss+xml"'));
+  await admin(s, 'nieuws-verwijderen', { method: 'POST', body: { id: pub.json.item.id, bevestig: true } });
+});
+
 test('nieuws: concept, unieke slug, publiceren, aanpassen, depubliceren, verwijderen', async () => {
   await newUser('medewerker');
   const s = await loginAs('medewerker@test.nl');

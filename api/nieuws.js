@@ -3,11 +3,12 @@
  *   /nieuws/                → overzicht van gepubliceerde berichten
  *   /nieuws/<slug>/         → artikel (alleen als het gepubliceerd is; concepten geven 404)
  *   /nieuws-sitemap.xml     → sitemap met gepubliceerde berichten
+ *   /nieuws/feed.xml        → RSS-feed met gepubliceerde berichten
  * Nieuwe of gewijzigde berichten zijn binnen ongeveer een minuut zichtbaar (CDN-cache van 60 s).
  */
 import { getDb } from './_lib/db.js';
 import { sendHtml, sendText, logError } from './_lib/http.js';
-import { renderNewsIndex, renderNewsArticle, newsSitemap } from './_lib/news-render.js';
+import { renderNewsIndex, renderNewsArticle, newsSitemap, newsFeed } from './_lib/news-render.js';
 import { isSlug } from './_lib/markdown.js';
 import { head, header, footer, esc } from '../src/lib/layout.mjs';
 
@@ -36,6 +37,10 @@ export default async function handler(req, res) {
     if (param('sitemap') === '1' || url.pathname === '/nieuws-sitemap.xml') {
       const posts = db ? await db.newsList({ status: 'gepubliceerd' }) : [];
       return sendText(res, 200, newsSitemap(posts), 'application/xml; charset=utf-8', CACHE);
+    }
+    if (param('feed') === '1' || url.pathname === '/nieuws/feed.xml') {
+      const posts = db ? await db.newsList({ status: 'gepubliceerd' }) : [];
+      return sendText(res, 200, newsFeed(db, posts), 'application/rss+xml; charset=utf-8', CACHE);
     }
     const slug = param('slug') || (fromPath ? decodeURIComponent(fromPath[1]) : null);
     if (slug) {

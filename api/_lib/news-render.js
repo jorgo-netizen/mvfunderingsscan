@@ -23,6 +23,8 @@ const isoDate = (iso) => new Date(iso).toISOString();
 const clip = (s, n) => (s.length <= n ? s : `${s.slice(0, n - 1).replace(/\s+\S*$/, '')}…`);
 
 export const NEWS_TITLE = 'Nieuws over funderingen | MV Funderingsscan';
+const FEED_LINK = `<link rel="alternate" type="application/rss+xml" title="Nieuws van MV Funderingsscan" href="${DOMAIN}/nieuws/feed.xml">
+  `;
 const NEWS_DESC = 'Nieuws en achtergronden van MV Funderingsscan over funderingsonderzoek, regelgeving en woningen in Friesland en Groningen.';
 
 function imageUrl(db, path) {
@@ -68,7 +70,7 @@ export function renderNewsIndex(db, posts) {
       </div>`;
   const page = {
     path: '/nieuws/', title: NEWS_TITLE, description: NEWS_DESC, schema: jsonld(graph),
-    robots: posts.length ? undefined : 'noindex, follow',
+    robots: posts.length ? undefined : 'noindex, follow', preload: FEED_LINK,
   };
   return `${head(page)}
 ${header('/nieuws/')}
@@ -162,7 +164,7 @@ export function renderNewsArticle(db, post, { preview = false } = {}) {
   }];
   const page = {
     path: `/nieuws/${post.slug}/`, title: `${clip(post.title, 50)} | MV Funderingsscan`, description: desc, schema: preview ? '' : jsonld(graph),
-    og_type: 'article', tools: !!zt, robots: preview ? 'noindex, nofollow' : undefined, canonical: preview ? false : undefined,
+    og_type: 'article', tools: !!zt, preload: preview ? '' : FEED_LINK, robots: preview ? 'noindex, nofollow' : undefined, canonical: preview ? false : undefined,
   };
   const meta = `<p class="news-hero-meta"><time datetime="${isoDate(published)}">${preview && !post.published_at ? 'Nog niet gepubliceerd' : dateNl(published)}</time>${author ? ` · ${esc(author)}` : ''}</p>`;
   return `${head(page)}
@@ -182,6 +184,39 @@ ${html}
 ${ctaBand()}
 </main>
 ${footer()}`;
+}
+
+/** RSS-feed van gepubliceerde berichten (voor feedlezers en om berichten door te zetten naar het Google-bedrijfsprofiel). */
+export function newsFeed(db, posts) {
+  const x = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  const rfc = (iso) => new Date(iso).toUTCString();
+  const items = posts.slice(0, 30).map((p) => {
+    const link = `${DOMAIN}/nieuws/${p.slug}/`;
+    const img = imageUrl(db, p.featured_image);
+    const abs = img && (img.startsWith('http') ? img : `${DOMAIN}${img}`);
+    return `  <item>
+    <title>${x(p.title)}</title>
+    <link>${link}</link>
+    <guid isPermaLink="true">${link}</guid>
+    <pubDate>${rfc(p.published_at || p.created_at)}</pubDate>
+    <description>${x(clip(p.excerpt || plainText(p.content), 600))}</description>${abs ? `
+    <media:content url="${x(abs)}" medium="image"${p.featured_image_alt ? `><media:description>${x(p.featured_image_alt)}</media:description></media:content>` : '/>'}` : ''}
+  </item>`;
+  });
+  const laatst = posts[0] ? rfc(posts[0].updated_at || posts[0].published_at) : new Date().toUTCString();
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+  <title>${x(NEWS_TITLE)}</title>
+  <link>${DOMAIN}/nieuws/</link>
+  <atom:link href="${DOMAIN}/nieuws/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>${x(NEWS_DESC)}</description>
+  <language>nl-NL</language>
+  <lastBuildDate>${laatst}</lastBuildDate>
+${items.join('\n')}
+</channel>
+</rss>
+`;
 }
 
 /** Aparte sitemap voor nieuws (de statische sitemap.xml wordt bij de build gemaakt). */
