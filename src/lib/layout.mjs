@@ -142,7 +142,8 @@ export function serviceSchema(key, area = null) {
   };
   if (s.offers) {
     const spec = { '@type': 'PriceSpecification', priceCurrency: 'EUR', valueAddedTaxIncluded: true, ...s.offers };
-    out.offers = { '@type': 'Offer', priceCurrency: 'EUR', priceSpecification: spec, url: s.url };
+    // price = vanafprijs; de precieze prijs staat in de priceSpecification en offerte
+    out.offers = { '@type': 'Offer', price: s.offers.minPrice, priceCurrency: 'EUR', availability: 'https://schema.org/InStock', priceSpecification: spec, url: s.url };
   }
   return out;
 }
