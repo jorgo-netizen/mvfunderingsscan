@@ -160,6 +160,23 @@ test('nieuws: RSS-feed bevat alleen gepubliceerde berichten, ge-escaped, en de n
   await admin(s, 'nieuws-verwijderen', { method: 'POST', body: { id: pub.json.item.id, bevestig: true } });
 });
 
+test('nieuws: export voor het CMS alleen voor beheerders, alleen gepubliceerde berichten', async () => {
+  await newUser('beheerder', 'cms-export@test.nl'); await newUser('medewerker', 'cms-export-mw@test.nl');
+  const s = await loginAs('cms-export@test.nl');
+  const content = '## Kop\n\nTekst voor de CMS-export met voldoende inhoud om te kunnen publiceren. '.repeat(4);
+  const pub = await admin(s, 'nieuws-opslaan', { method: 'POST', body: { title: 'CMS-exportbericht', slug: 'cms-exportbericht', excerpt: 'Intro', content } });
+  await admin(s, 'nieuws-status', { method: 'POST', body: { id: pub.json.item.id, status: 'gepubliceerd' } });
+  const concept = await admin(s, 'nieuws-opslaan', { method: 'POST', body: { title: 'Concept niet exporteren', slug: 'cms-concept', content } });
+  const r = await admin(s, 'nieuws-cms-export');
+  assert.equal(r.status, 200); assert.match(r.headers['content-disposition'], /attachment/);
+  const item = r.json.find((i) => i.slug === 'cms-exportbericht');
+  assert.equal(item.type, 'news'); assert.equal(item.template, 'fs.nieuws'); assert.equal(item.publish, true); assert.ok(item.publishedAt);
+  assert.deepEqual(item.blocks[0], { type: 'heading', level: 2, text: 'Kop' });
+  assert.ok(!r.json.some((i) => i.slug === 'cms-concept'), 'concepten niet in de export');
+  assert.equal((await admin(await loginAs('cms-export-mw@test.nl'), 'nieuws-cms-export')).status, 403);
+  for (const id of [pub.json.item.id, concept.json.item.id]) await admin(s, 'nieuws-verwijderen', { method: 'POST', body: { id, bevestig: true } });
+});
+
 test('nieuws: concept, unieke slug, publiceren, aanpassen, depubliceren, verwijderen', async () => {
   await newUser('medewerker');
   const s = await loginAs('medewerker@test.nl');

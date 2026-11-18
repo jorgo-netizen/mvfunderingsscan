@@ -135,7 +135,7 @@
       h('td', { text: n.published_at ? fmt(n.published_at) : '–' }),
       h('td', { text: fmt(n.updated_at) })));
     render(
-      h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'Nieuwsberichten' }), h('a', { class: 'btn btn-gold', href: '#/nieuws/nieuw', text: 'Nieuw bericht' })),
+      h('div', { class: 'portal-toolbar' }, h('h1', { class: 'portal-h1', text: 'Nieuwsberichten' }), me?.role === 'beheerder' ? h('a', { class: 'btn', href: `${API}?actie=nieuws-cms-export`, download: 'cms-nieuws-funderingsscan.json', text: 'Nieuws exporteren voor CMS' }) : '', h('a', { class: 'btn btn-gold', href: '#/nieuws/nieuw', text: 'Nieuw bericht' })),
       d.items.length
         ? h('div', { class: 'portal-card portal-table-wrap' }, h('table', { class: 'portal-table' }, h('thead', {}, h('tr', {}, ['Titel', 'Status', 'Gepubliceerd', 'Laatst gewijzigd'].map((t) => h('th', { scope: 'col', text: t })))), h('tbody', {}, rows)))
         : h('div', { class: 'portal-card' }, h('p', { text: 'Er zijn nog geen nieuwsberichten. Maak je eerste bericht aan.' })),

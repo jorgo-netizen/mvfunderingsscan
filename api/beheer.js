@@ -15,6 +15,7 @@ import { renderNewsArticle } from './_lib/news-render.js';
 import { rapportActies } from './_lib/rapport-api.js';
 import { redactieActies } from './_lib/redactie-api.js';
 import { meldIndexNow, INDEXNOW_HOST } from './_lib/indexnow.js';
+import { nieuwsItem } from './_lib/cms-nieuws.js';
 
 const NOINDEX = { 'X-Robots-Tag': 'noindex, nofollow', 'Referrer-Policy': 'no-referrer' };
 const json = (res, status, body) => sendJson(res, status, body, NOINDEX);
@@ -63,6 +64,13 @@ const publicNews = (n) => n && ({ ...n, author: undefined, author_name: n.author
 
 async function newsActions(db, req, res, actie, user, url) {
   if (actie === 'nieuws-lijst') return json(res, 200, { ok: true, items: await db.newsList() });
+  if (actie === 'nieuws-cms-export') {
+    // Gepubliceerde berichten als importbestand voor het centrale CMS (Website beheren → Inhoud importeren).
+    if (user.role !== 'beheerder') return fail(res, 403, 'Alleen een beheerder kan het nieuws exporteren.');
+    const lijst = await db.newsList({ status: 'gepubliceerd' });
+    const items = await Promise.all(lijst.map(async (n) => nieuwsItem(await db.newsBySlug(n.slug))));
+    return sendJson(res, 200, items, { ...NOINDEX, 'Content-Disposition': 'attachment; filename="cms-nieuws-funderingsscan.json"' });
+  }
   if (actie === 'nieuws') {
     const n = isUuid(url.searchParams.get('id')) ? await db.newsById(url.searchParams.get('id')) : null;
     return n ? json(res, 200, { ok: true, item: { ...publicNews(n), image_url: n.featured_image ? db.publicUrl('nieuws', n.featured_image) : null } }) : fail(res, 404, 'Bericht niet gevonden.');
