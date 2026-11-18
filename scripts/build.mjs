@@ -22,6 +22,7 @@ import { aanvraagForm, contactForm } from '../src/lib/forms.mjs';
 import { openPlaceholders, SHOW_PLACEHOLDERS, rapportvoorbeeldCard, setMedewerkers } from '../src/lib/eeat.mjs';
 import { statusPage, beheerPage } from '../src/lib/portal.mjs';
 import { isSleutel } from '../api/_lib/indexnow.js';
+import { laadCms } from './cms.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, 'dist');
@@ -629,5 +630,6 @@ export async function laadMedewerkers({ quiet = false } = {}) {
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   await laadMedewerkers();
+  await laadCms(pages);
   build();
 }
