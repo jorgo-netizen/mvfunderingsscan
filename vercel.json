@@ -270,6 +270,9 @@
     "api/beheer.js": {
       "includeFiles": "{src,rapport-sjabloon}/**",
       "maxDuration": 30
+    },
+    "api/cms-preview.js": {
+      "includeFiles": "src/**"
     }
   }
 }

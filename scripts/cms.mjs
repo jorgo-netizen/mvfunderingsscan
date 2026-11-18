@@ -1,18 +1,19 @@
 /**
- * Koppeling met het centrale Midea Vastgoed CMS (mideavastgoed.app/marketing), fase 1.
+ * Koppeling met het centrale Midea Vastgoed CMS (mideavastgoed.app/marketing).
  *
- * Bij de build haalt de site de GEPUBLICEERDE pagina's op en neemt per bestaande pagina alleen deze velden over:
- * SEO-title, meta description, H1, intro (lead), ALT van de hero-afbeelding en de FAQ's.
+ * Bij de build haalt de site de GEPUBLICEERDE pagina's op en neemt per bestaande pagina deze velden over:
+ * fase 1: SEO-title, meta description, H1, intro (lead), ALT van de hero-afbeelding en de FAQ's;
+ * fase 2 (sjabloon fs.pagina): eyebrow, kruimelpad, diensten, secties (kop, kort antwoord, tekst) en "Verder lezen".
  * - Een veld wordt alleen overgenomen als het in het CMS echt anders is dan de huidige inhoud
  *   (vergeleken in CMS-vorm), dus ongewijzigde velden blijven byte-voor-byte gelijk.
- * - Layout, secties, facts, prijzen, URL's, redirects en structured data blijven uit de site zelf komen.
+ * - Layout, facts/prijzen, widgets, sectie-id's (ankers), URL's, redirects en structured data blijven uit de site zelf komen.
  * - Geen CMS_API_KEY, API onbereikbaar of fout antwoord: de lokale JSON blijft de bron; de build faalt nooit.
  * De sleutel staat alleen als env CMS_API_KEY in Vercel (server-side bij de build), nooit in code of output.
  */
-import { renderMarkdown } from '../api/_lib/markdown.js';
+import { renderMarkdown, slugify } from '../api/_lib/markdown.js';
 import { htmlNaarMarkdown } from '../api/_lib/redactie.js';
 
-export const CMS_BASE = 'https://mideavastgoed.app/api/cms/v1/funderingsscan';
+export const CMS_BASE = 'https://www.mideavastgoed.app/api/cms/v1/funderingsscan'; // met www: de kale domeinnaam stuurt door en dan valt de Authorization-header weg
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const norm = (s) => String(s ?? '').replace(/\s+/g, ' ').trim();
 const tekst = (v, max) => (typeof v === 'string' && v.trim() && v.length <= max ? v.trim() : null);
@@ -56,10 +57,50 @@ export function overlay(p, cms, { defaultDescription = '' } = {}) {
   if (items.length && !zelfde) {
     // Ongewijzigde vragen houden hun huidige HTML; alleen nieuwe of aangepaste worden uit Markdown opgebouwd.
     p.faqs = items.map((f) => p.faqs.find((o, i) => f.q === norm(nu.faqs[i].q) && norm(f.a) === norm(nu.faqs[i].a))
-      ?? { q: esc(f.q), a: renderMarkdown(f.a).html });
+      ?? { q: f.q, a: renderMarkdown(f.a).html }); // q wordt bij het renderen ge-escaped
     gewijzigd.push('faqs');
   }
+  if (cms.template === 'fs.pagina' && cms.fields) fase2(p, cms.fields, gewijzigd);
   return gewijzigd;
+}
+
+// HTML uit het CMS is daar al gesaneerd; dit is een tweede slot: nooit scripts, event-handlers of javascript:-links.
+const veilig = (h) => typeof h === 'string' && h.length <= 60000 && !/<\/?(script|iframe|object|embed|style)\b|\son[a-z]+\s*=|javascript:/i.test(h);
+const intern = (href) => typeof href === 'string' && /^\/[\w\-./#]*$/.test(href);
+const json = (x) => JSON.stringify(x);
+
+function fase2(p, f, gewijzigd) {
+  const eb = regel(f.eyebrow, 200);
+  if (eb && veilig(eb) && eb !== norm(p.eyebrow)) { p.eyebrow = eb; gewijzigd.push('eyebrow'); }
+  if (Array.isArray(f.crumbs) && f.crumbs.length && f.crumbs.every((c) => intern(c?.href) && regel(c?.name, 120))) {
+    const c = f.crumbs.map((x) => ({ href: x.href, name: norm(x.name) }));
+    if (json(c) !== json(p.crumbs.map((x) => ({ href: x.href, name: norm(x.name) })))) { p.crumbs = c; gewijzigd.push('crumbs'); }
+  }
+  if (Array.isArray(f.services) && f.services.every((x) => ['funderingsscan', 'fase0', 'fase1'].includes(x)) && json(f.services) !== json(p.services || [])) {
+    p.services = [...new Set(f.services)]; gewijzigd.push('services');
+  }
+  if (Array.isArray(f.related) && f.related.every((x) => intern(x?.href) && veilig(x.label) && veilig(x.text ?? ''))) {
+    const rel = f.related.map((x) => ({ href: x.href, label: x.label, text: x.text ?? '' }));
+    if (json(rel.map((x) => [x.href, norm(x.label), norm(x.text)])) !== json((p.related || []).map((x) => [x.href, norm(x.label), norm(x.text)]))) { p.related = rel; gewijzigd.push('related'); }
+  }
+  if (Array.isArray(f.sections) && f.sections.length) {
+    const oud = new Map(p.sections.map((x) => [x.id, x])); const ids = new Set(); const nieuw = [];
+    for (const x of f.sections) {
+      const h2 = tekst(x?.h2, 300); const answer = typeof x?.answer === 'string' ? x.answer.trim() : ''; const body = typeof x?.body === 'string' ? x.body : '';
+      if (!h2 || ![h2, answer, body].every(veilig)) return console.warn(`⚠ CMS: ${p.path} secties niet overgenomen (ongeldige of onveilige inhoud).`);
+      const o = typeof x.id === 'string' ? oud.get(x.id) : undefined;
+      // id = anker van interne links: bestaande blijven, een nieuwe sectie krijgt er een uit de kop.
+      let id = o?.id || (typeof x.id === 'string' && /^[a-z0-9-]{1,80}$/.test(x.id) ? x.id : slugify(h2.replace(/<[^>]+>/g, '')).slice(0, 60) || 'sectie');
+      for (let n = 2; ids.has(id); n++) id = `${id.replace(/-\d+$/, '')}-${n}`;
+      ids.add(id);
+      const s = o ? { ...o } : { id, h2, answer, body };
+      if (o && norm(h2) !== norm(o.h2)) s.h2 = h2;
+      if (o && norm(answer) !== norm(o.answer)) s.answer = answer;
+      if (o && norm(body) !== norm(o.body)) s.body = body;
+      nieuw.push(s);
+    }
+    if (json(nieuw) !== json(p.sections)) { p.sections = nieuw; gewijzigd.push('sections'); }
+  }
 }
 
 /** Haalt gepubliceerde CMS-pagina's op en past ze toe op `pages` (in place). Geeft het aantal aangepaste pagina's. */

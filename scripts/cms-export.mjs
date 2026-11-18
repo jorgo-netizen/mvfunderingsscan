@@ -1,7 +1,7 @@
 /**
  * Exporteert de site naar het importformaat van het centrale CMS (Website beheren → "Inhoud importeren (JSON)"):
  * tmp/cms-import-funderingsscan.json.
- * - 144 pagina's: type page, sjabloon fs.pagina, als concept (publish:false). De velden title/description/h1/intro/
+ * - 144 pagina's: type page, sjabloon fs.pagina, direct gepubliceerd (publish:true). De velden title/description/h1/intro/
  *   hero.alt/faqs zijn precies de waarden die de site ongewijzigd laten (zie test-cms.mjs).
  * - Gepubliceerde nieuwsberichten uit Supabase (alleen als SUPABASE_URL en SUPABASE_SERVICE_KEY gezet zijn):
  *   type news, sjabloon fs.nieuws, publish:true met de oorspronkelijke datum en dezelfde slug.
@@ -32,7 +32,7 @@ export function paginaItem(p) {
       eyebrow: p.eyebrow ?? '', hero: p.hero_image ? { mediaId: null, name: p.hero_image.name, alt: p.hero_image.alt } : null,
       crumbs: p.crumbs || [], facts: p.facts || [], services: p.services || [], sections: p.sections || [], faqs: d.faqs, ...los, meta,
     },
-    publish: false,
+    publish: true, // inhoud is identiek aan de site, dus direct publiceren is veilig (besluit Jorgo, 18-11-2026)
   };
 }
 

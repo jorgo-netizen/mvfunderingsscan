@@ -397,8 +397,8 @@ export function breadcrumbsHtml(crumbs) {
 
 export function faqItems(faqs, openFirst = true) {
   return faqs.map((f, i) => `      <details class="faq-item"${i === 0 && openFirst ? ' open' : ''}>
-        <summary>${esc(f.q)}</summary>
-        <div class="faq-body">${f.a}</div>
+        <summary${f._cmsIndex === undefined ? '' : ` data-cms-field="fields.faqs.${f._cmsIndex}.q"`}>${esc(f.q)}</summary>
+        <div class="faq-body"${f._cmsIndex === undefined ? '' : ` data-cms-field="fields.faqs.${f._cmsIndex}.a"`}>${f.a}</div>
       </details>`).join('\n');
 }
 

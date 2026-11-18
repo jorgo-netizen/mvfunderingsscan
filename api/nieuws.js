@@ -7,6 +7,7 @@
  * Nieuwe of gewijzigde berichten zijn binnen ongeveer een minuut zichtbaar (CDN-cache van 60 s).
  */
 import { getDb } from './_lib/db.js';
+import { cmsNieuwsDb } from './_lib/cms-nieuws.js';
 import { sendHtml, sendText, logError } from './_lib/http.js';
 import { renderNewsIndex, renderNewsArticle, newsSitemap, newsFeed } from './_lib/news-render.js';
 import { isSlug } from './_lib/markdown.js';
@@ -29,7 +30,7 @@ ${footer()}`;
 export default async function handler(req, res) {
   if (req.method !== 'GET' && req.method !== 'HEAD') return sendText(res, 405, 'Alleen GET is toegestaan.');
   const url = new URL(req.url, 'http://localhost');
-  const db = getDb();
+  const db = cmsNieuwsDb(getDb()); // bron: centraal CMS, met de database als terugval
   try {
     // Vercel geeft bij rewrites de parameters in req.query; lokaal staan ze in de URL.
     const param = (k) => (req.query && typeof req.query[k] === 'string' ? req.query[k] : url.searchParams.get(k));
