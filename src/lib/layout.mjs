@@ -203,7 +203,7 @@ export function head(page) {
   const ogAlt = page.og_image ? page.og_image.alt : 'Persoon met een waterpas bij de gevel van een woning';
   // Google toont ongeveer 60 tekens: bij een langere titel valt de merknaam weg (die staat al in og:site_name en de site-naam van Google)
   const SUFFIX = ' | MV Funderingsscan';
-  const titel = page.title.length > 60 && page.title.endsWith(SUFFIX) && page.title.length - SUFFIX.length >= 35 ? page.title.slice(0, -SUFFIX.length) : page.title;
+  const titel = !page.merkInTitel && page.title.length > 60 && page.title.endsWith(SUFFIX) && page.title.length - SUFFIX.length >= 35 ? page.title.slice(0, -SUFFIX.length) : page.title;
   const preload = page.preload || '';
   const robots = page.robots || 'index, follow, max-image-preview:large, max-snippet:-1';
   const canonical = page.canonical !== false ? `<link rel="canonical" href="${url}">\n  ` : '';
@@ -371,7 +371,7 @@ ${cols}
   </div>
   <div class="container footer-bottom">
     <span>© <span id="year">2026</span> ${NAP.legal_name || NAP.name}${NAP.kvk ? ` · KvK ${NAP.kvk}` : ''} · mvfunderingsquickscan.nl</span>
-    <nav class="footer-meta" aria-label="Overige pagina's"><a href="/over-ons/">Over ons</a><a href="/werkwijze/">Werkwijze</a><a href="/kennisbank/">Kennisbank</a><a href="/nieuws/">Nieuws</a><a href="/contact/">Contact</a><a href="/funderingsscan-aanvragen/">Aanvragen</a><a href="/privacyverklaring/">Privacy</a><a href="/algemene-voorwaarden/">Voorwaarden</a><a class="footer-login" href="/beheer/" rel="nofollow"><svg aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Inloggen</a></nav>
+    <nav class="footer-meta" aria-label="Overige pagina's"><a href="/over-ons/">Over ons</a><a href="/werkwijze/">Werkwijze</a><a href="/kennisbank/">Kennisbank</a><a href="/nieuws/">Nieuws</a><a href="/contact/">Contact</a><a href="/funderingsscan-aanvragen/">Aanvragen</a><a href="/privacyverklaring/">Privacy</a><a href="/algemene-voorwaarden/">Voorwaarden</a></nav>
   </div>
 </footer>
 

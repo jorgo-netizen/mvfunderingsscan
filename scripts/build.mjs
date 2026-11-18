@@ -60,9 +60,10 @@ const cases = existsSync(CASES_DIR)
 const homeTemplate = readFileSync(join(ROOT, 'src', 'templates', 'home-main.html'), 'utf8').replace(/\r\n/g, '\n');
 
 // ---------------------------------------------------------------- wijzigingsdatum per pagina
-// src/content/lastmod.json bewaart per pagina een vingerafdruk van de inhoud (<main>) en de datum waarop die
-// voor het laatst veranderde. Alleen een inhoudelijke wijziging geeft een nieuwe datum (niet menu, footer of
-// versienummers van bestanden). Die datum komt in de sitemap, dateModified en "Laatst inhoudelijk bijgewerkt".
+// src/content/lastmod.json bewaart per pagina een vingerafdruk van de inhoud en de datum waarop die voor het
+// laatst veranderde. De vingerafdruk komt uit de eigen bron van de pagina (het JSON-object of de tekst van een
+// speciale pagina), zodat een sitebrede wijziging (menu, footer, telefoonnotatie, auteursblok, versienummers)
+// niet alle pagina's een nieuwe datum geeft. Alleen pagina's zonder bron vallen terug op de opgebouwde <main>. Die datum komt in de sitemap, dateModified en "Laatst inhoudelijk bijgewerkt".
 const LASTMOD_FILE = join(CONTENT, 'lastmod.json');
 const LASTMOD = existsSync(LASTMOD_FILE) ? JSON.parse(readFileSync(LASTMOD_FILE, 'utf8')) : {};
 const BOUWDATUM = new Date().toISOString().slice(0, 10);
@@ -70,11 +71,11 @@ const MAANDEN_NL = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'jul
 const datumNl = (iso) => { const [y, m, d] = iso.split('-').map(Number); return `${d} ${MAANDEN_NL[m - 1]} ${y}`; };
 let lastmodGewijzigd = false;
 const paginaDatum = {};
-function metDatum(path, html) {
+function metDatum(path, html, bron) {
   const main = (html.match(/<main[\s\S]*<\/main>/) || [''])[0]
     .replace(/<time[^>]*>[^<]*<\/time>/g, '').replace(/\?v=[\w-]+/g, '').replace(/"date(Modified|Published)": "[^"]*"/g, '');
   if (!main) return html;
-  const hash = createHash('sha256').update(main).digest('hex').slice(0, 16);
+  const hash = createHash('sha256').update(bron === undefined ? main : JSON.stringify(bron)).digest('hex').slice(0, 16);
   const oud = LASTMOD[path];
   const datum = oud && oud.hash === hash ? oud.datum : BOUWDATUM;
   if (!oud || oud.hash !== hash) { LASTMOD[path] = { hash, datum, eerste: oud?.eerste || datum }; lastmodGewijzigd = true; }
@@ -86,8 +87,8 @@ function metDatum(path, html) {
     .split(`property="article:published_time" content="${TODAY}"`).join(`property="article:published_time" content="${LASTMOD[path].eerste}"`);
 }
 
-function write(path, content) {
-  if (path.endsWith('/') && content.includes('<main')) content = metDatum(path, content);
+function write(path, content, bron) {
+  if (path.endsWith('/') && content.includes('<main')) content = metDatum(path, content, bron);
   const target = path.endsWith('/') ? join(OUT, path, 'index.html') : join(OUT, path);
   mkdirSync(dirname(target), { recursive: true });
   writeFileSync(target, content, 'utf8');
@@ -130,7 +131,7 @@ ${body}
 ${faqs ? faqHtml(faqs) : ''}
 </main>
 ${footer()}`;
-  write(path, head({ path, title, description, schema: jsonld(graph) }) + '\n' + html);
+  write(path, head({ path, title, description, schema: jsonld(graph) }) + '\n' + html, { title, description, h1, lead, body, faqs });
 }
 
 // =================================================================== homepage
@@ -214,18 +215,18 @@ function buildHome() {
   if (s.includes('{{')) throw new Error('Onvervangen placeholder in home-main.html');
 
   const url = DOMAIN + '/';
-  const title = 'Funderingsonderzoek in Friesland & Groningen | MV Funderingsscan';
+  const title = 'Funderingsonderzoek Friesland & Groningen | MV Funderingsscan';
   const graph = [orgSchema(), websiteSchema(), {
     '@type': 'WebPage', '@id': url + '#webpagina', url, name: title,
     inLanguage: 'nl-NL', isPartOf: { '@id': SITE_ID }, about: { '@id': ORG_ID },
     primaryImageOfPage: `${DOMAIN}/assets/img/funderingsmeting-laser-tablet-1536.webp`, dateModified: TODAY,
   }, serviceSchema('funderingsscan'), serviceSchema('fase0'), serviceSchema('fase1'), faqSchema(url, home.faqs)];
   write('/', head({
-    path: '/', title,
+    path: '/', title, merkInTitel: true, // homepage: merknaam altijd zichtbaar in de title
     description: 'Onafhankelijk funderingsonderzoek in Friesland, Groningen en Noord-Drenthe. Quick Scan vanaf €350 incl. btw, rapport binnen 2 werkdagen. Vraag een scan aan.',
     schema: jsonld(graph),
     preload: '<link rel="preload" as="image" type="image/webp" fetchpriority="high" imagesrcset="/assets/img/funderingsmeting-laser-tablet-640.webp 640w, /assets/img/funderingsmeting-laser-tablet-1024.webp 1024w, /assets/img/funderingsmeting-laser-tablet-1536.webp 1536w" imagesizes="(min-width: 1181px) 80vw, 100vw">\n  ',
-  }) + '\n' + header('/') + s + footer());
+  }) + '\n' + header('/') + s + footer(), { template: homeTemplate, home });
 }
 
 // =================================================================== aanvragen
@@ -565,11 +566,11 @@ export function build({ quiet = false } = {}) {
   // volgorde van urls.json aanhouden voor een logische sitemap
   const order = new Map(urls.map((u, i) => [u.path, i]));
   for (const p of [...pages].sort((a, b) => (order.get(a.path) ?? 999) - (order.get(b.path) ?? 999))) {
-    write(p.path, render(p));
+    write(p.path, render(p), p);
     paths.push(p.path);
   }
   if (cases.length) {
-    for (const c of cases) { write(c.path, render(c)); paths.push(c.path); }
+    for (const c of cases) { write(c.path, render(c), c); paths.push(c.path); }
     specialPage({
       path: '/praktijkvoorbeelden/',
       title: 'Praktijkvoorbeelden funderingsonderzoek | MV Funderingsscan',
