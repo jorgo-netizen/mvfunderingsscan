@@ -41,15 +41,11 @@ function factsCard(facts, title = 'In het kort') {
       </aside>`;
 }
 
-// Alleen in de CMS-bewerkmodus (api/cms-preview.js): markeringen voor bewerkbare velden. Live HTML blijft gelijk.
-const cmsVeld = (aan, naam) => (aan ? ` data-cms-field="${naam}"` : '');
-
 function sectionHtml(s) {
   const sid = s.id ? ` id="${s.id}"` : '';
-  const i = s._cmsIndex; const v = (k) => cmsVeld(i !== undefined, `fields.sections.${i}.${k}`);
-  const answer = s.answer ? `<p class="answer-first"${v('answer')}>${s.answer}</p>` : '';
-  return `        <section class="prose-section reveal"${sid}${v('body')}>
-          <h2${v('h2')}>${s.h2}</h2>
+  const answer = s.answer ? `<p class="answer-first">${s.answer}</p>` : '';
+  return `        <section class="prose-section reveal"${sid}>
+          <h2>${s.h2}</h2>
           ${answer}
           ${s.widget_position === 'after' ? (s.body || '') + widgetHtml(s.widget) : widgetHtml(s.widget) + (s.body || '')}
         </section>`;
@@ -219,7 +215,7 @@ export function render(page0) {
   };
 
   const heroImg = p.hero_image
-    ? `<div class="page-hero-media"${cmsVeld(p._cms, 'fields.hero')}>${img(p.hero_image.name, p.hero_image.alt, '100vw', { lazy: false })}</div>`
+    ? `<div class="page-hero-media">${img(p.hero_image.name, p.hero_image.alt, '100vw', { lazy: false })}</div>`
     : '';
   const buttons = p.hero_buttons || `<a class="btn btn-gold btn-lg" href="/funderingsscan-aanvragen/">Vraag een funderingsscan aan <span aria-hidden="true">→</span></a>
           <a class="btn btn-outline-light btn-lg" href="${NAP.phone_href}">Bel ${NAP.phone_display}</a>`;
@@ -237,9 +233,9 @@ export function render(page0) {
   <div class="container page-hero-inner">
     <div class="page-hero-copy">
       ${breadcrumbsHtml(p.crumbs)}
-      <p class="eyebrow eyebrow-light"${cmsVeld(p._cms, 'fields.eyebrow')}>${p.eyebrow}</p>
-      <h1 id="page-title"${cmsVeld(p._cms, 'h1')}>${p.h1}</h1>
-      <p class="page-hero-lead"${cmsVeld(p._cms, 'intro')}>${p.lead}</p>
+      <p class="eyebrow eyebrow-light">${p.eyebrow}</p>
+      <h1 id="page-title">${p.h1}</h1>
+      <p class="page-hero-lead">${p.lead}</p>
       <div class="hero-buttons">
         ${buttons}
       </div>
