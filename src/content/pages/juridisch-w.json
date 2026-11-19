@@ -150,7 +150,7 @@
   {
     "path": "/algemene-voorwaarden/",
     "title": "Algemene voorwaarden | MV Funderingsscan B.V.",
-    "description": "De algemene voorwaarden van MV Funderingsscan B.V. voor offertes, Fase 0 QuickScan, Fase 1 funderingsonderzoek en rapporten.",
+    "description": "Algemene voorwaarden van MV Funderingsscan B.V. met DNR2025 als bijlage: offertes, Fase 0 QuickScan, Fase 1, betaling, rapport en aansprakelijkheid.",
     "keyword": "algemene voorwaarden mv funderingsscan",
     "intent": "informatief",
     "nav_active": "/contact/",
@@ -166,7 +166,7 @@
     ],
     "eyebrow": "Juridisch",
     "h1": "Algemene voorwaarden",
-    "lead": "Deze voorwaarden gelden voor alle offertes, opdrachten en diensten van MV Funderingsscan. Ze beschrijven wat je van ons onderzoek kunt verwachten, wat we van jou nodig hebben en welke afspraken gelden over betaling, het rapport en aansprakelijkheid.",
+    "lead": "Op al onze opdrachten is De Nieuwe Regeling 2025 (DNR2025) van toepassing, aangevuld met deze algemene voorwaarden. Hieronder staat de volledige tekst. <a href=\"/documenten/algemene-voorwaarden-mv-funderings-quickscan.pdf\">Download de voorwaarden met de complete DNR2025 als PDF</a>.",
     "facts": [
       {
         "label": "Onderneming",
@@ -174,13 +174,23 @@
       },
       {
         "label": "Versie",
-        "value": "1.0 · 26 oktober 2026"
+        "value": "november 2026"
+      },
+      {
+        "label": "Van toepassing",
+        "value": "DNR2025 (Bijlage B)"
       },
       {
         "label": "Vragen",
         "value": "<a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>"
       }
     ],
+    "bron_bedragen": [
+      "1.000.000",
+      "2.500.000",
+      "75.000"
+    ],
+    "bron_url": "https://www.bna.nl/",
     "sections": [
       {
         "id": "gegevens",
@@ -191,98 +201,128 @@
       {
         "id": "artikel-1-definities",
         "h2": "Artikel 1 – Definities",
-        "answer": "In deze voorwaarden hebben de volgende begrippen een vaste betekenis.",
-        "body": "<ul><li><strong>Opdrachtgever:</strong> iedere persoon of organisatie die ons om een offerte vraagt of een opdracht geeft.</li><li><strong>Consument:</strong> een opdrachtgever die als privépersoon handelt, dus niet voor een beroep of bedrijf.</li><li><strong>Opdracht:</strong> de afspraak dat wij voor de opdrachtgever een dienst uitvoeren.</li><li><strong>Fase 0 funderingsrisico-onderzoek (QuickScan):</strong> een beperkt onderzoek naar het funderingsrisico, op basis van archief- en bodemgegevens, een visuele inspectie en eenvoudige metingen, zoals beschreven op de pagina <a href=\"/fase-0-funderingsonderzoek/\">Fase 0 funderingsonderzoek</a>.</li><li><strong>Fase 1 funderingsonderzoek:</strong> een uitgebreider, niet-destructief onderzoek met meer metingen, zoals beschreven op de pagina <a href=\"/fase-1-funderingsonderzoek/\">Fase 1 funderingsonderzoek</a>.</li><li><strong>Online check:</strong> de gratis vragenlijst en hulpmiddelen op de website. Dat is geen onderzoek en geen advies.</li><li><strong>Rapport:</strong> het schriftelijke verslag van onze bevindingen, beoordeling en advies.</li><li><strong>Pand:</strong> de woning of het gebouw waarop de opdracht betrekking heeft.</li></ul>"
+        "answer": "1.1 In deze algemene voorwaarden hebben de volgende begrippen de hierna omschreven betekenis. Begrippen die hier niet zijn omschreven, hebben de betekenis die DNR2025 daaraan geeft.",
+        "body": "<ul><li><strong>Adviseur</strong>: MV Funderingsscan B.V., handelend onder de naam MV Funderings QuickScan, gevestigd aan de Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden, ingeschreven bij de Kamer van Koophandel onder nummer 42204729. In deze voorwaarden ook aangeduid als “wij” of “ons”.</li><li><strong>Opdrachtgever</strong>: iedere natuurlijke persoon of rechtspersoon die de adviseur om een offerte vraagt of een opdracht verstrekt.</li><li><strong>Consument</strong>: een opdrachtgever die een natuurlijke persoon is en niet handelt in de uitoefening van een beroep of bedrijf.</li><li><strong>Zakelijke opdrachtgever</strong>: een opdrachtgever die geen consument is.</li><li><strong>Opdracht</strong>: de overeenkomst waarbij de adviseur zich jegens de opdrachtgever verbindt tot het verrichten van de in de offerte of opdrachtbevestiging omschreven werkzaamheden.</li><li><strong>Fase 0 funderingsrisico-onderzoek (QuickScan)</strong>: een beperkt onderzoek naar het funderingsrisico op basis van beschikbare archief- en bodemgegevens, een visuele inspectie en eenvoudige metingen, zoals nader omschreven in artikel 6.</li><li><strong>Fase 1 funderingsonderzoek</strong>: een uitgebreider, niet-destructief onderzoek met aanvullende metingen en onderzoekshandelingen, zoals nader omschreven in artikel 7.</li><li><strong>Vervolgonderzoek</strong>: ieder onderzoek dat verder gaat dan de overeengekomen fase, waaronder een Fase 1- of Fase 2-onderzoek, waarvoor een afzonderlijke opdracht nodig is.</li><li><strong>Online check</strong>: de gratis vragenlijsten, rekenhulpen en andere hulpmiddelen op de website van de adviseur. Een online check is geen onderzoek en geen professioneel advies.</li><li><strong>Rapport</strong>: het schriftelijke verslag van de bevindingen, de beoordeling en het advies van de adviseur.</li><li><strong>Pand</strong>: de woning of het gebouw waarop de opdracht betrekking heeft.</li><li><strong>DNR2025</strong>: De Nieuwe Regeling 2025 – Rechtsverhouding opdrachtgever – architect/ingenieur, uitgegeven door BNA en Koninklijke NLingenieurs, waarvan de volledige en ongewijzigde tekst als Bijlage B bij deze voorwaarden is gevoegd.</li><li><strong>Schriftelijk</strong>: per brief of per e-mail, of via een ander elektronisch middel waarmee de inhoud duurzaam kan worden vastgelegd.</li></ul>"
       },
       {
         "id": "artikel-2-toepasselijkheid",
-        "h2": "Artikel 2 – Wanneer gelden deze voorwaarden?",
-        "answer": "Deze voorwaarden gelden voor al onze offertes, opdrachten en diensten. Afwijkende afspraken gelden alleen als we die schriftelijk hebben gemaakt.",
-        "body": "<ol><li>Voorwaarden van de opdrachtgever gelden niet, tenzij we daar schriftelijk mee hebben ingestemd.</li><li>Is een bepaling ongeldig, dan blijven de andere bepalingen gelden. We vervangen de ongeldige bepaling dan door een geldige die er zo dicht mogelijk bij komt.</li><li>Ben je consument, dan gaan de wettelijke regels die jou beschermen altijd voor als deze voorwaarden daarvan in jouw nadeel afwijken.</li></ol>"
+        "h2": "Artikel 2 – Toepasselijkheid van DNR2025 en deze voorwaarden",
+        "answer": "2.1 De adviseur werkt volgens De Nieuwe Regeling 2025 (DNR2025). DNR2025 is uitdrukkelijk van toepassing op alle offertes, opdrachtbevestigingen en opdrachten van de adviseur, inclusief Fase 0- en Fase 1-onderzoeken en aanverwante adviesdiensten.",
+        "body": "<p><strong>2.2</strong> Deze algemene voorwaarden vullen DNR2025 aan. Zij zijn eveneens van toepassing op alle offertes, opdrachtbevestigingen en opdrachten van de adviseur.</p><p><strong>2.3</strong> Bij tegenstrijdigheid tussen documenten geldt de volgende rangorde, waarbij een eerder genoemd document voorgaat:</p><ul><li>a. dwingendrechtelijke wettelijke bepalingen, waaronder de bepalingen ter bescherming van consumenten;</li><li>b. uitdrukkelijk en schriftelijk overeengekomen afwijkingen in de offerte of opdrachtbevestiging;</li><li>c. DNR2025;</li><li>d. deze algemene voorwaarden.</li></ul><p><strong>2.4</strong> Bepalingen in deze algemene voorwaarden die DNR2025 aanvullen en daarmee niet in strijd zijn, blijven onverkort van kracht.</p><p><strong>2.5</strong> De adviseur stelt deze algemene voorwaarden en de volledige tekst van DNR2025 vóór of uiterlijk bij het aangaan van de opdracht aan de opdrachtgever ter beschikking, onder meer door toezending als bijlage bij de offerte of opdrachtbevestiging. Op verzoek worden zij kosteloos toegezonden.</p><p><strong>2.6</strong> Algemene voorwaarden van de opdrachtgever zijn niet van toepassing, tenzij de adviseur deze vooraf uitdrukkelijk en schriftelijk heeft aanvaard.</p><p><strong>2.7</strong> Is een bepaling van deze voorwaarden nietig of wordt zij vernietigd, dan blijven de overige bepalingen van kracht. Partijen vervangen de betreffende bepaling dan door een geldige bepaling die zo dicht mogelijk aansluit bij de strekking van de oorspronkelijke bepaling.</p>"
       },
       {
         "id": "artikel-3-offertes-en-prijzen",
         "h2": "Artikel 3 – Offertes en prijzen",
-        "answer": "De prijzen op de website zijn vanafprijzen. De prijs voor jouw opdracht staat in de offerte of opdrachtbevestiging.",
-        "body": "<ol><li>Onze offertes zijn vrijblijvend en gelden zo lang als in de offerte staat.</li><li>Op de <a href=\"/prijzen/\">prijzenpagina</a> staan vanafprijzen. De uiteindelijke prijs hangt af van het pand en de situatie en staat in de offerte of opdrachtbevestiging.</li><li>Prijzen voor consumenten zijn inclusief btw. Eventuele extra kosten, zoals reiskosten, noemen we vooraf.</li><li>Een duidelijke vergissing of verschrijving in een offerte of op de website bindt ons niet.</li></ol>"
+        "answer": "3.1 Prijzen op de website van de adviseur zijn vanafprijzen. De prijs die voor de opdracht geldt, staat in de offerte of opdrachtbevestiging.",
+        "body": "<p><strong>3.2</strong> Offertes zijn vrijblijvend en geldig gedurende de termijn die in de offerte is vermeld. De prijs hangt onder meer af van het pand, de locatie, de omvang van het onderzoek en de omstandigheden ter plaatse.</p><p><strong>3.3</strong> Prijzen voor consumenten zijn inclusief btw. Prijzen voor zakelijke opdrachtgevers zijn exclusief btw, tenzij anders vermeld. Eventuele bijkomende kosten, zoals reiskosten of extra onderzoekshandelingen, worden vooraf in de offerte of opdrachtbevestiging vermeld of vooraf met de opdrachtgever overeengekomen.</p><p><strong>3.4</strong> De adviseur is niet gebonden aan een offerte of prijsvermelding die een kennelijke vergissing of verschrijving bevat.</p><p><strong>3.5</strong> Werkzaamheden die niet in de offerte of opdrachtbevestiging zijn omschreven, worden alleen uitgevoerd nadat partijen daarover vooraf overeenstemming hebben bereikt, inclusief de prijs.</p>"
       },
       {
         "id": "artikel-4-opdracht",
-        "h2": "Artikel 4 – Hoe komt een opdracht tot stand?",
-        "answer": "De opdracht komt tot stand als je onze offerte of opdrachtbevestiging aanvaardt, per e-mail, via de website of mondeling, of als we met jouw instemming met het werk beginnen.",
-        "body": "<p>Een aanvraag via de website is nog geen opdracht. Na je aanvraag nemen we contact met je op om de situatie en de prijs te bespreken. Pas als je daarmee akkoord gaat, is er een opdracht. We mogen een opdracht weigeren, bijvoorbeeld als het pand buiten ons werkgebied ligt of als het gevraagde onderzoek niet bij de situatie past.</p>"
+        "h2": "Artikel 4 – Totstandkoming van de opdracht",
+        "answer": "4.1 De opdracht komt tot stand wanneer de opdrachtgever de offerte of opdrachtbevestiging aanvaardt, of wanneer de adviseur met instemming van de opdrachtgever met de werkzaamheden begint.",
+        "body": "<p><strong>4.2</strong> Een aanvraag via de website, per e-mail of per telefoon is nog geen opdracht. Na een aanvraag bespreekt de adviseur de situatie, de onderzoeksbehoefte en de prijs met de aanvrager.</p><p><strong>4.3</strong> Komt een opdracht met een consument mondeling of telefonisch tot stand, dan bevestigt de adviseur de opdracht met de belangrijkste afspraken op een duurzame gegevensdrager, zoals per e-mail.</p><p><strong>4.4</strong> De adviseur kan een aanvraag weigeren, bijvoorbeeld wanneer het pand buiten het werkgebied ligt of het gevraagde onderzoek naar het oordeel van de adviseur niet passend is.</p>"
       },
       {
         "id": "artikel-5-uitvoering",
         "h2": "Artikel 5 – Uitvoering van de opdracht",
-        "answer": "We voeren de opdracht zorgvuldig en vakkundig uit, volgens onze werkwijze en de richtlijnen die daarvoor gelden. We doen ons best om tot een goed resultaat te komen, maar kunnen geen uitkomst garanderen.",
-        "body": "<ol><li>Wij hebben een inspanningsverplichting, geen resultaatsverplichting.</li><li>Het onderzoek wordt uitgevoerd door een gecertificeerde adviseur, volgens de werkwijze op de pagina <a href=\"/werkwijze/\">werkwijze</a>.</li><li>Het rapport sturen we normaal gesproken binnen 2 werkdagen na de inspectie. Termijnen zijn een indicatie en geen fatale termijnen, tenzij we schriftelijk iets anders hebben afgesproken.</li><li>We mogen voor onderdelen van de opdracht andere deskundigen inschakelen. We blijven dan verantwoordelijk voor de opdracht.</li></ol>"
+        "answer": "5.1 De adviseur voert de opdracht zorgvuldig, onafhankelijk en naar beste kunnen en wetenschap uit, met inachtneming van de geldende wet- en regelgeving, de overeengekomen opdracht en artikel 3 van DNR2025.",
+        "body": "<p><strong>5.2</strong> De adviseur heeft een inspanningsverplichting en geen resultaatsverplichting. De adviseur garandeert geen bepaalde onderzoeksuitkomst.</p><p><strong>5.3</strong> Het onderzoek wordt uitgevoerd door een deskundige adviseur, volgens de overeengekomen onderzoeksfase en onderzoeksmethode.</p><p><strong>5.4</strong> Het rapport wordt in de regel binnen twee werkdagen na de inspectie verstrekt, tenzij anders is overeengekomen. Overeenkomstig artikel 3.2 van DNR2025 zijn termijnen alleen fataal als dat duidelijk en schriftelijk is overeengekomen.</p><p><strong>5.5</strong> De adviseur informeert de opdrachtgever tijdig over de voortgang en waarschuwt de opdrachtgever schriftelijk voor onjuistheden of onvolledigheden in de door of namens de opdrachtgever verstrekte gegevens, overeenkomstig artikel 3.5 van DNR2025.</p><p><strong>5.6</strong> De adviseur mag derdenadviseurs inschakelen overeenkomstig artikel 5 van DNR2025. Dit beperkt de verantwoordelijkheid van de adviseur voor een zorgvuldige uitvoering niet.</p>"
       },
       {
-        "id": "artikel-6-grenzen-van-het-onderzoek",
-        "h2": "Artikel 6 – Wat het onderzoek wel en niet is",
-        "answer": "Een Fase 0 funderingsrisico-onderzoek is een beperkt onderzoek dat een inschatting geeft van het funderingsrisico. Het is geen volledig funderingsonderzoek en geeft geen zekerheid over de werkelijke staat van de fundering.",
-        "body": "<ol><li>Bij een Fase 0-onderzoek wordt de fundering niet ontgraven of van dichtbij bekeken. De beoordeling is gebaseerd op beschikbare gegevens, een visuele inspectie boven het maaiveld en eenvoudige metingen.</li><li>De uitkomst is een momentopname. Je kunt er geen garantie aan ontlenen over de staat, de resterende levensduur of het ontbreken van gebreken van de fundering. In het rapport staat hoe lang de uitkomst geldig is (in de regel zes maanden).</li><li>Een Fase 0-onderzoek vervangt geen Fase 1- of Fase 2-onderzoek. Adviseren we vervolgonderzoek, dan beslis jij of je dat laat doen.</li><li>De uitkomst hangt mede af van gegevens die jij of anderen aanleveren en van openbare bronnen. We hoeven die niet zelf te controleren, maar melden het als we twijfelen aan de juistheid.</li><li>Onderdelen die niet zichtbaar of niet bereikbaar zijn, vallen buiten het onderzoek. We doen geen destructief onderzoek, tenzij we dat uitdrukkelijk afspreken.</li><li>De <a href=\"/gratis-funderingscheck/\">online check</a> en andere hulpmiddelen op de website geven alleen een eerste indruk. Daaraan kun je geen rechten ontlenen.</li></ol>"
+        "id": "artikel-6-fase-0-quickscan",
+        "h2": "Artikel 6 – Reikwijdte van een Fase 0 funderingsrisico-onderzoek (QuickScan)",
+        "answer": "6.1 Een Fase 0 funderingsrisico-onderzoek is een beperkt onderzoek dat een inschatting geeft van het funderingsrisico van het pand. Het is uitdrukkelijk geen volledig funderingsonderzoek.",
+        "body": "<p><strong>6.2</strong> Tenzij in de offerte of opdrachtbevestiging anders is vermeld, omvat een Fase 0-onderzoek:</p><ul><li>a. het raadplegen van beschikbare archiefgegevens en bodemgegevens;</li><li>b. een visuele inspectie van de zichtbare en bereikbare delen van het pand boven het maaiveld en, voor zover overeengekomen, bereikbaar en veilig toegankelijk, van de kruipruimte;</li><li>c. eenvoudige metingen;</li><li>d. een rapport met een inschatting van het funderingsrisico en, waar van toepassing, een advies over vervolgonderzoek.</li></ul><p><strong>6.3</strong> Een Fase 0-onderzoek omvat niet:</p><ul><li>a. het ontgraven of blootleggen van de fundering of het van dichtbij beoordelen van de fundering zelf;</li><li>b. destructief onderzoek, zoals het openbreken van vloeren, wanden of afwerkingen;</li><li>c. de beoordeling van niet-zichtbare of niet-bereikbare onderdelen;</li><li>d. een Fase 1- of Fase 2-onderzoek of ander vervolgonderzoek;</li><li>e. constructieve berekeningen, een herstelplan of een herstelontwerp;</li><li>f. een bouwkundige keuring van het pand als geheel of een taxatie.</li></ul><p><strong>6.4</strong> Een Fase 0-onderzoek geeft geen zekerheid en geen garantie over de werkelijke staat van de fundering, de resterende levensduur daarvan of het ontbreken van gebreken. De uitkomst is een momentopname. In het rapport staat hoe lang de uitkomst als actueel kan worden beschouwd; in de regel is dat zes maanden.</p><p><strong>6.5</strong> Een Fase 0-onderzoek vervangt geen Fase 1- of Fase 2-onderzoek. Adviseert de adviseur vervolgonderzoek, dan beslist de opdrachtgever of dat wordt uitgevoerd. Daarvoor is een afzonderlijke opdracht nodig.</p><p><strong>6.6</strong> De beoordeling steunt mede op gegevens van de opdrachtgever, van derden en uit openbare bronnen. De adviseur hoeft deze gegevens niet volledig zelfstandig te verifiëren, maar waarschuwt de opdrachtgever wanneer hij redelijkerwijs twijfelt aan de juistheid of volledigheid daarvan.</p><p><strong>6.7</strong> Een online check op de website geeft uitsluitend een eerste indicatie. Aan een online check kunnen geen rechten worden ontleend.</p>"
       },
       {
-        "id": "artikel-7-medewerking",
-        "h2": "Artikel 7 – Wat we van jou nodig hebben",
-        "answer": "Je zorgt dat we op tijd de gegevens en toegang krijgen die we nodig hebben, en dat de informatie die je geeft juist en volledig is.",
-        "body": "<ol><li>Je geeft ons op het afgesproken moment toegang tot het pand en zorgt voor een veilige werkplek. Ruimtes die we moeten inspecteren, zoals een kruipruimte, moeten bereikbaar zijn.</li><li>Ben je niet de eigenaar van het pand, dan zorg je dat de eigenaar en de bewoners akkoord zijn met het onderzoek.</li><li>Krijgen we niet op tijd de gegevens of toegang die nodig zijn, dan mogen we de uitvoering uitstellen en de extra kosten in rekening brengen, zoals een vergeefse rit.</li></ol>"
+        "id": "artikel-7-fase-1-en-vervolgonderzoek",
+        "h2": "Artikel 7 – Fase 1 funderingsonderzoek en vervolgonderzoek",
+        "answer": "7.1 Een Fase 1 funderingsonderzoek is een uitgebreider, niet-destructief onderzoek met aanvullende metingen en onderzoekshandelingen. De omvang, de onderzoekshandelingen en de prijs worden in de offerte of opdrachtbevestiging vastgelegd.",
+        "body": "<p><strong>7.2</strong> Ook een Fase 1-onderzoek geeft geen garantie over de werkelijke staat van de fundering. De beperkingen van artikel 6.4 en 6.6 zijn van overeenkomstige toepassing, voor zover de offerte of opdrachtbevestiging niets anders bepaalt.</p><p><strong>7.3</strong> Destructief onderzoek, zoals ontgraven of openbreken, vindt alleen plaats als dat uitdrukkelijk schriftelijk is overeengekomen.</p><p><strong>7.4</strong> Overeenkomstig artikel 3.3 van DNR2025 start de adviseur een volgende fase pas na schriftelijke toestemming van de opdrachtgever.</p>"
       },
       {
-        "id": "artikel-8-betaling",
-        "h2": "Artikel 8 – Betaling",
-        "answer": "Je betaalt binnen de termijn die op de factuur staat. Betaal je niet op tijd, dan kunnen we rente en incassokosten in rekening brengen volgens de wet.",
-        "body": "<ol><li>De betalingstermijn en de manier van betalen staan op de factuur of in de opdrachtbevestiging.</li><li>Betaal je niet op tijd, dan ben je in verzuim. We mogen dan de wettelijke rente in rekening brengen en, na een aanmaning, de buitengerechtelijke incassokosten volgens de wettelijke regeling. Ben je consument, dan sturen we eerst een kosteloze aanmaning met een betalingstermijn van 14 dagen.</li><li>We mogen het rapport pas leveren als de factuur is betaald, tenzij dat tegenover een consument onredelijk is.</li></ol>"
+        "id": "artikel-8-medewerking",
+        "h2": "Artikel 8 – Verplichtingen van de opdrachtgever",
+        "answer": "8.1 De opdrachtgever verleent de medewerking die redelijkerwijs nodig is voor een behoorlijke uitvoering van de opdracht en verstrekt tijdig juiste en volledige informatie en documenten, overeenkomstig artikel 4 van DNR2025.",
+        "body": "<p><strong>8.2</strong> De opdrachtgever zorgt op het afgesproken tijdstip voor toegang tot het pand, een veilige werkomgeving en de bereikbaarheid van de te inspecteren ruimtes, waaronder een eventuele kruipruimte.</p><p><strong>8.3</strong> Is de opdrachtgever niet de eigenaar van het pand, dan zorgt de opdrachtgever vooraf voor toestemming van de eigenaar en, waar nodig, van de bewoners.</p><p><strong>8.4</strong> De opdrachtgever meldt tijdig omstandigheden, wijzigingen of beperkingen die van invloed kunnen zijn op de uitvoering. Ontbreekt de benodigde informatie of toegang, dan mag de adviseur de uitvoering uitstellen. Redelijke extra kosten die daardoor ontstaan, zoals een vergeefse rit, mogen in rekening worden gebracht voor zover de wet dat toestaat.</p>"
       },
       {
-        "id": "artikel-9-annuleren",
-        "h2": "Artikel 9 – Wijzigen of annuleren",
-        "answer": "Wil je de opdracht wijzigen of annuleren, laat het ons dan zo snel mogelijk schriftelijk weten. Wat annuleren kost, staat in de opdrachtbevestiging.",
-        "body": "<ol><li>Een wijziging van de opdracht voeren we uit nadat we er samen afspraken over hebben gemaakt. Dat kan gevolgen hebben voor de prijs en de planning.</li><li>Annuleer je na de termijn die in de opdrachtbevestiging staat, of ben je niet aanwezig op de afspraak, dan mogen we de kosten die we al hebben gemaakt in rekening brengen.</li><li>Ben je consument, dan blijft je wettelijke herroepingsrecht (artikel 10) altijd gelden.</li></ol>"
+        "id": "artikel-9-betaling",
+        "h2": "Artikel 9 – Betaling",
+        "answer": "9.1 Betaling vindt plaats volgens het betalingsschema en de betalingstermijn in de offerte, opdrachtbevestiging of factuur. Is niets anders overeengekomen, dan geldt de betalingstermijn van artikel 13.4 van DNR2025: dertig kalenderdagen na factuurdatum.",
+        "body": "<p><strong>9.2</strong> Bij niet-tijdige betaling is de opdrachtgever in verzuim en is de wettelijke rente verschuldigd, overeenkomstig artikel 13.5 van DNR2025. Voor consumenten is dat de wettelijke rente van artikel 6:119 BW.</p><p><strong>9.3</strong> Een betwisting van een factuur moet schriftelijk en gemotiveerd plaatsvinden vóór de vervaldatum, overeenkomstig artikel 13.6 van DNR2025. Het onbetwiste deel wordt binnen de normale betalingstermijn voldaan.</p><p><strong>9.4</strong> Buitengerechtelijke incassokosten worden in rekening gebracht met inachtneming van artikel 13.7 van DNR2025 en de wettelijke regels. Bij een consument worden deze kosten pas in rekening gebracht nadat de consument na het intreden van het verzuim schriftelijk is aangemaand en een termijn van veertien dagen heeft gekregen om alsnog te betalen, en ten hoogste tot de wettelijk toegestane bedragen.</p><p><strong>9.5</strong> Bij betalingsverzuim mag de adviseur de uitvoering van de opdracht opschorten, voor zover de wet en DNR2025 dat toestaan.</p>"
       },
       {
-        "id": "artikel-10-herroepingsrecht",
-        "h2": "Artikel 10 – Herroepingsrecht voor consumenten",
-        "answer": "Geef je als consument een opdracht op afstand (via de website, e-mail of telefoon) of buiten ons kantoor, dan kun je die binnen 14 dagen zonder opgaaf van redenen ontbinden.",
-        "body": "<ol><li>De bedenktijd van 14 dagen begint op de dag nadat de opdracht tot stand is gekomen.</li><li>Je maakt gebruik van je herroepingsrecht door ons dat binnen de bedenktijd duidelijk te laten weten, bijvoorbeeld per e-mail naar info@mideavastgoed.nl.</li><li>Heb je ons uitdrukkelijk gevraagd binnen de bedenktijd met het onderzoek te beginnen, en herroep je daarna, dan betaal je een evenredig deel van de prijs voor wat we al hebben gedaan.</li><li>Is het onderzoek met jouw uitdrukkelijke instemming binnen de bedenktijd volledig uitgevoerd, en heb je verklaard dat je dan je herroepingsrecht verliest, dan kun je niet meer herroepen.</li></ol>"
+        "id": "artikel-10-wijzigen-annuleren-opzeggen",
+        "h2": "Artikel 10 – Wijzigen, annuleren en opzeggen",
+        "answer": "10.1 Wijzigingen van de opdracht worden tijdig tussen partijen overeengekomen en schriftelijk vastgelegd, overeenkomstig artikel 17 van DNR2025. Een wijziging kan gevolgen hebben voor prijs, omvang en planning; de adviseur wijst de opdrachtgever daar tijdig op.",
+        "body": "<p><strong>10.2</strong> Wil de opdrachtgever een afspraak verzetten of de opdracht annuleren, dan meldt hij dat zo spoedig mogelijk schriftelijk.</p><p><strong>10.3</strong> Annulering geldt als opzegging van de opdracht. Opzegging en de gevolgen daarvan worden beheerst door de artikelen 18 en 19 van DNR2025. De opdrachtgever vergoedt dan de reeds verrichte werkzaamheden en de redelijke gemaakte of nog te maken kosten op basis van de stand van de werkzaamheden.</p><p><strong>10.4</strong> Is de opdrachtgever een consument, dan wordt deze vergoeding overeenkomstig artikel 19.2 van DNR2025 gematigd voor zover zij anders niet redelijk is (artikel 7:411 BW), en is de opzegvergoeding van artikel 19.4 van DNR2025 niet verschuldigd. Ontbinding van de overeenkomst blijft voor een consument mogelijk (artikel 18.2 van DNR2025).</p><p><strong>10.5</strong> Het wettelijke herroepingsrecht van een consument (artikel 11) blijft onverminderd van kracht.</p>"
       },
       {
-        "id": "artikel-11-rapport",
-        "h2": "Artikel 11 – Het rapport en het gebruik ervan",
-        "answer": "Het rapport is bedoeld voor de opdrachtgever en voor het doel waarvoor het is gemaakt. Je mag het delen met bijvoorbeeld je makelaar, taxateur of financier, maar niet aanpassen.",
-        "body": "<ol><li>Je mag het rapport alleen in zijn geheel en ongewijzigd delen. Delen met partijen die bij de aankoop, verkoop of financiering betrokken zijn, mag zonder onze toestemming.</li><li>Het auteursrecht op rapporten, werkwijzen en documenten blijft bij ons, tenzij we schriftelijk iets anders afspreken.</li><li>Anderen dan de opdrachtgever kunnen geen rechten aan het rapport ontlenen.</li><li>Hoe we met persoonsgegevens omgaan, lees je in onze <a href=\"/privacyverklaring/\">privacyverklaring</a>.</li></ol>"
+        "id": "artikel-11-herroepingsrecht",
+        "h2": "Artikel 11 – Herroepingsrecht voor consumenten",
+        "answer": "11.1 Sluit een consument de opdracht op afstand (bijvoorbeeld via de website, per e-mail of per telefoon) of buiten de bedrijfsruimte van de adviseur, dan heeft de consument het recht de opdracht binnen veertien dagen zonder opgave van redenen te herroepen.",
+        "body": "<p><strong>11.2</strong> De bedenktijd begint op de dag nadat de opdracht tot stand is gekomen.</p><p><strong>11.3</strong> De consument kan herroepen door de adviseur binnen de bedenktijd een ondubbelzinnige verklaring te sturen, bijvoorbeeld per e-mail aan <a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a> of per post aan het adres in artikel 1. De consument kan daarvoor het modelformulier voor herroeping in Bijlage A gebruiken, maar is daartoe niet verplicht.</p><p><strong>11.4</strong> De adviseur begint alleen tijdens de bedenktijd met de werkzaamheden als de consument daar uitdrukkelijk om heeft verzocht. Herroept de consument daarna, dan is de consument een bedrag verschuldigd dat evenredig is aan het deel van de opdracht dat op het moment van herroeping al is uitgevoerd, vergeleken met de volledige opdracht.</p><p><strong>11.5</strong> Het herroepingsrecht vervalt zodra de opdracht volledig is uitgevoerd, mits de consument vooraf uitdrukkelijk heeft ingestemd met het beginnen van de uitvoering tijdens de bedenktijd en heeft verklaard afstand te doen van het herroepingsrecht zodra de opdracht volledig is uitgevoerd. De adviseur bevestigt dit verzoek en deze verklaring op een duurzame gegevensdrager.</p><p><strong>11.6</strong> Na een geldige herroeping betaalt de adviseur reeds ontvangen bedragen, onder aftrek van een eventueel verschuldigd evenredig bedrag, zo spoedig mogelijk en uiterlijk binnen veertien dagen terug.</p>"
       },
       {
-        "id": "artikel-12-aansprakelijkheid",
-        "h2": "Artikel 12 – Aansprakelijkheid",
-        "answer": "Maken we een fout, dan zijn we aansprakelijk voor de directe schade die daardoor ontstaat, tot het factuurbedrag van de opdracht. Voor schade door opzet of bewuste roekeloosheid geldt die grens niet.",
-        "body": "<ol><li>We zijn alleen aansprakelijk voor directe schade die het gevolg is van een tekortkoming die ons kan worden toegerekend.</li><li>Onze aansprakelijkheid is beperkt tot het bedrag dat we voor de opdracht hebben gefactureerd (exclusief btw). Hebben we een verzekering die de schade dekt, dan is de aansprakelijkheid beperkt tot het bedrag dat die verzekering uitkeert, als dat hoger is.</li><li>We zijn niet aansprakelijk voor indirecte schade, zoals gevolgschade, gederfde winst of waardedaling van het pand.</li><li>We zijn niet aansprakelijk voor schade die ontstaat doordat: het onderzoek de grenzen heeft die in artikel 6 staan; gegevens van de opdrachtgever of anderen onjuist of onvolledig waren; gebreken niet zichtbaar of niet bereikbaar waren; of op basis van het rapport beslissingen zijn genomen zonder het geadviseerde vervolgonderzoek.</li><li>Meld schade zo snel mogelijk schriftelijk bij ons nadat je die hebt ontdekt, zodat we de oorzaak kunnen onderzoeken en de schade kunnen beperken.</li><li>Deze beperkingen gelden niet bij opzet of bewuste roekeloosheid, en niet voor zover de wet ze tegenover consumenten niet toestaat.</li></ol>"
+        "id": "artikel-12-rapport",
+        "h2": "Artikel 12 – Rapport en gebruiksrechten",
+        "answer": "12.1 Het rapport is opgesteld voor de opdrachtgever en uitsluitend voor het doel dat in de opdracht is overeengekomen.",
+        "body": "<p><strong>12.2</strong> Na voltooiing van de opdracht en volledige betaling verkrijgt de opdrachtgever het gebruiksrecht van artikel 8 van DNR2025: een niet-exclusief, niet-overdraagbaar en onherroepelijk gebruiksrecht, uitsluitend voor het overeengekomen doel en gebruik.</p><p><strong>12.3</strong> De opdrachtgever mag het rapport voor het overeengekomen doel verstrekken aan direct betrokken partijen, zoals een verkoper, makelaar, hypotheekverstrekker of notaris, met inachtneming van artikel 8 van DNR2025. Hergebruik of aanpassing voor een ander doel vereist voorafgaande schriftelijke toestemming van de adviseur, die daar redelijke voorwaarden en een vergoeding aan kan verbinden (artikel 8.2 van DNR2025).</p><p><strong>12.4</strong> De intellectuele eigendomsrechten op de resultaten van de opdracht berusten overeenkomstig artikel 9 van DNR2025 bij de adviseur.</p><p><strong>12.5</strong> Het rapport mag niet zonder toestemming van de adviseur worden gewijzigd, en niet zodanig gedeeltelijk worden gebruikt of openbaar gemaakt dat de context of strekking wordt aangetast.</p><p><strong>12.6</strong> Gebruikt de adviseur resultaten van een opdracht voor referentie- of promotiedoeleinden, zoals bedoeld in artikel 8.4 van DNR2025, dan doet hij dat bij consumenten alleen in een vorm waarin het pand en de opdrachtgever niet herkenbaar zijn, tenzij de opdrachtgever uitdrukkelijk toestemming heeft gegeven.</p>"
       },
       {
-        "id": "artikel-13-overmacht",
-        "h2": "Artikel 13 – Overmacht",
-        "answer": "Kunnen we door overmacht niet doen wat we hebben afgesproken, dan schuiven onze verplichtingen op. Duurt dat te lang, dan mogen we allebei de opdracht beëindigen.",
-        "body": "<p>Onder overmacht vallen onder meer extreme weersomstandigheden, ziekte van de adviseur, geen toegang tot het pand en storingen bij leveranciers. Duurt de overmacht zo lang dat redelijkerwijs niet van een van ons kan worden gevraagd de opdracht voort te zetten, dan mogen beide partijen de opdracht kosteloos ontbinden. Wat al is uitgevoerd, wordt naar verhouding afgerekend.</p>"
+        "id": "artikel-13-aansprakelijkheid",
+        "h2": "Artikel 13 – Aansprakelijkheid",
+        "answer": "13.1 Op de aansprakelijkheid van de adviseur is artikel 14 van DNR2025 van toepassing. De aansprakelijkheid wordt uitsluitend vastgesteld binnen de grenzen en voorwaarden van dat artikel, behoudens dwingend recht.",
+        "body": "<p><strong>13.2</strong> De adviseur is alleen aansprakelijk voor zijn eigen toerekenbare tekortkoming en voor die van door hem ingeschakelde derdenadviseurs (artikelen 14.1 en 14.3 van DNR2025).</p><p><strong>13.3</strong> Bij een tekortkoming stelt de opdrachtgever de adviseur eerst schriftelijk in gebreke en geeft hij een redelijke termijn om alsnog deugdelijk na te komen, tenzij nakoming blijvend onmogelijk is of sprake is van een fatale termijn (artikel 14.2 van DNR2025).</p><p><strong>13.4</strong> Tenzij sprake is van opzet of bewuste roekeloosheid van de adviseur, is de aansprakelijkheid per opdracht beperkt overeenkomstig artikel 14.9 van DNR2025 tot:</p><ul><li>a. het honorarium exclusief btw dat voor de betreffende opdracht is of zal worden betaald, met een maximum van € 1.000.000; of</li><li>b. alleen als dit uitdrukkelijk schriftelijk is overeengekomen: driemaal dat honorarium exclusief btw, met een maximum van € 2.500.000.</li></ul><p><strong>13.5</strong> Is de opdrachtgever een consument, dan is de maximale aansprakelijkheid van de adviseur nooit lager dan € 75.000 (artikel 14.10 van DNR2025).</p><p><strong>13.6</strong> De schadeposten die in artikel 14.7 van DNR2025 zijn genoemd, komen niet voor vergoeding in aanmerking, behoudens voor zover dwingend recht anders bepaalt.</p><p><strong>13.7</strong> Voor zakelijke opdrachtgevers geldt de vervaltermijn van artikel 14.11 van DNR2025: iedere rechtsvordering vervalt door het verloop van vijf jaar na beëindiging of voltooiing van de opdracht. Voor consumenten geldt deze contractuele vervaltermijn niet; voor hen gelden de wettelijke verjaringstermijnen.</p><p><strong>13.8</strong> De vrijwaring van artikel 14.5 van DNR2025 geldt jegens consumenten alleen voor zover die bepaling in de gegeven omstandigheden niet onredelijk bezwarend is.</p><p><strong>13.9</strong> Artikel 16 van deze voorwaarden (verzekering) beperkt noch verruimt de aansprakelijkheid van de adviseur.</p>"
       },
       {
-        "id": "artikel-14-klachten",
-        "h2": "Artikel 14 – Klachten",
-        "answer": "Ben je niet tevreden over onze dienst of het rapport, laat het ons dan zo snel mogelijk weten. We nemen elke klacht serieus en zoeken samen naar een oplossing.",
-        "body": "<ol><li>Meld een klacht binnen bekwame tijd nadat je het probleem hebt ontdekt, het liefst per e-mail naar <a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>, met een duidelijke omschrijving.</li><li>We reageren zo snel mogelijk inhoudelijk op je klacht en laten je weten wanneer je een oplossing kunt verwachten.</li><li>Een klacht schort je betalingsverplichting niet op, tenzij we samen iets anders afspreken.</li></ol>"
+        "id": "artikel-14-overmacht",
+        "h2": "Artikel 14 – Overmacht",
+        "answer": "14.1 Kan een partij haar verplichtingen niet nakomen door een oorzaak die haar niet kan worden toegerekend (overmacht), dan worden die verplichtingen opgeschort zolang de overmachtssituatie duurt. Hieronder kunnen onder meer vallen: extreme weersomstandigheden, ziekte van de uitvoerende adviseur zonder redelijk alternatief, onbereikbaarheid van het pand, storingen bij essentiële leveranciers en overheidsmaatregelen.",
+        "body": "<p><strong>14.2</strong> Duurt de overmachtssituatie zo lang dat nakoming redelijkerwijs niet meer kan worden verlangd, dan overleggen partijen over aanpassing of beëindiging van de opdracht. De financiële gevolgen worden geregeld volgens de overeenkomst, DNR2025 en de wet.</p>"
       },
       {
-        "id": "artikel-15-recht",
-        "h2": "Artikel 15 – Toepasselijk recht en geschillen",
-        "answer": "Op onze opdrachten en deze voorwaarden is Nederlands recht van toepassing. Komen we er samen niet uit, dan beslist de bevoegde rechter.",
-        "body": "<p>Geschillen leggen we voor aan de rechtbank Noord-Nederland, tenzij de wet een andere rechter aanwijst. Ben je consument, dan mag je binnen een maand nadat we ons schriftelijk op deze bepaling hebben beroepen, kiezen voor de rechter die volgens de wet bevoegd is.</p>"
+        "id": "artikel-15-klachten",
+        "h2": "Artikel 15 – Klachten",
+        "answer": "15.1 Klachten over de dienstverlening of het rapport meldt de opdrachtgever binnen bekwame tijd nadat hij de tekortkoming heeft ontdekt of redelijkerwijs had moeten ontdekken, schriftelijk aan <a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a>, met een duidelijke omschrijving en vermelding van de opdracht waarop de klacht betrekking heeft.",
+        "body": "<p><strong>15.2</strong> De adviseur bevestigt de ontvangst van de klacht en reageert binnen een redelijke termijn inhoudelijk. Partijen proberen een klacht in onderling overleg op te lossen.</p><p><strong>15.3</strong> Het indienen van een klacht schort de betalingsverplichting niet op, behalve voor zover de wet of een schriftelijke afspraak anders bepaalt. Een gemotiveerde betwisting van een factuur verloopt volgens artikel 9.3.</p><p><strong>15.4</strong> De waarschuwingsplicht van de opdrachtgever uit artikel 4.3 van DNR2025 blijft onverminderd van toepassing.</p>"
       },
       {
-        "id": "artikel-16-wijzigingen",
-        "h2": "Artikel 16 – Wijziging van deze voorwaarden",
-        "answer": "We kunnen deze voorwaarden wijzigen. De nieuwe versie geldt voor opdrachten die daarna tot stand komen. De actuele versie staat altijd op deze pagina.",
-        "body": "<p>Voor een opdracht gelden de voorwaarden die van toepassing waren op het moment dat de opdracht tot stand kwam. Wil je de voorwaarden als pdf of op papier ontvangen? Vraag het ons, dan sturen we ze kosteloos toe.</p>"
+        "id": "artikel-16-verzekering",
+        "h2": "Artikel 16 – Verzekering, DNR2025 en clausule BAV.1020.34",
+        "answer": "16.1 De adviseur werkt volgens DNR2025 en verklaart deze regeling op al zijn opdrachten van toepassing, zoals bepaald in artikel 2.",
+        "body": "<p><strong>16.2</strong> De adviseur houdt overeenkomstig artikel 16.1 van DNR2025 een passende beroeps- en bedrijfsaansprakelijkheidsverzekering in stand, met dekking voor aansprakelijkheid die voortvloeit uit de overeengekomen werkzaamheden. Op verzoek verstrekt de adviseur een actueel verzekeringscertificaat (artikel 16.2 van DNR2025).</p><p><strong>16.3</strong> De beroepsaansprakelijkheidsverzekering van de adviseur bevat clausule BAV.1020.34. Deze clausule betreft een zogenoemde ‘even/alsof’-dekking.</p><p><strong>16.4</strong> Het voordeel van deze clausule is dat bij afwijkingen van, dan wel het niet hanteren van, de in de offerte voorgeschreven voorwaarden, onder bepaalde voorwaarden gedeeltelijk een vangnet kan bestaan voor te vergoeden schade en kosten van verweer. De schadebehandeling kan dan plaatsvinden alsof de betreffende voorwaarden wel waren overeengekomen.</p><p><strong>16.5</strong> Deze clausule is geen garantie dat schade volledig door de verzekeraar wordt vergoed. De dekking blijft altijd afhankelijk van de daadwerkelijke polisvoorwaarden, de verzekerde bedragen, de uitsluitingen en de overige bepalingen van de verzekering.</p><p><strong>16.6</strong> De aansprakelijkheid van de adviseur op grond van de met de opdrachtgever gesloten overeenkomst kan hoger zijn dan het bedrag dat de verzekeraar daadwerkelijk uitkeert. De verzekering en clausule BAV.1020.34 beperken de rechten van de opdrachtgever tegenover de adviseur niet; die worden uitsluitend bepaald door artikel 13 van deze voorwaarden en artikel 14 van DNR2025.</p><p><strong>16.7</strong> Om die reden komt de adviseur DNR2025 onverkort met de opdrachtgever overeen en stelt hij de volledige tekst daarvan vóór of uiterlijk bij het aangaan van de opdracht ter beschikking.</p>"
+      },
+      {
+        "id": "artikel-17-vertrouwelijkheid",
+        "h2": "Artikel 17 – Vertrouwelijkheid en persoonsgegevens",
+        "answer": "17.1 Partijen behandelen vertrouwelijke informatie overeenkomstig artikel 6 van DNR2025 en maken die niet aan derden bekend, tenzij dat nodig is voor de uitvoering van de opdracht, wettelijk verplicht is of nodig is voor de verdediging van gerechtvaardigde belangen.",
+        "body": "<p><strong>17.2</strong> Partijen voldoen aan de toepasselijke wet- en regelgeving over de verwerking van persoonsgegevens, waaronder de Algemene verordening gegevensbescherming (AVG), overeenkomstig artikel 7 van DNR2025. De adviseur verwerkt persoonsgegevens volgens zijn privacyverklaring op <a href=\"/\">www.mvfunderingsquickscan.nl</a>.</p>"
+      },
+      {
+        "id": "artikel-18-recht-en-geschillen",
+        "h2": "Artikel 18 – Toepasselijk recht en geschillen",
+        "answer": "18.1 Op de opdracht en deze voorwaarden is Nederlands recht van toepassing (artikel 22.1 van DNR2025).",
+        "body": "<p><strong>18.2</strong> Partijen proberen een geschil eerst in onderling overleg op te lossen (artikel 22.2 van DNR2025).</p><p><strong>18.3</strong> Komen partijen er niet uit, dan wordt het geschil beslecht door de bevoegde rechter, tenzij partijen in de offerte of opdrachtbevestiging uitdrukkelijk arbitrage volgens het Arbitragereglement van de Raad van Arbitrage in bouwgeschillen zijn overeengekomen (artikel 22.3 van DNR2025). Een geschil dat tot de bevoegdheid van de kantonrechter behoort, kan altijd aan de kantonrechter worden voorgelegd.</p><p><strong>18.4</strong> Is de opdrachtgever een consument, dan wordt een geschil alleen via arbitrage beslecht onder de voorwaarden van artikel 22.4 van DNR2025. Zonder die voorwaarden blijft de consument altijd vrij het geschil aan de bevoegde rechter voor te leggen.</p>"
+      },
+      {
+        "id": "artikel-19-slotbepalingen",
+        "h2": "Artikel 19 – Slotbepalingen",
+        "answer": "19.1 De adviseur mag deze voorwaarden wijzigen. Gewijzigde voorwaarden gelden alleen voor opdrachten die worden aangegaan nadat de gewijzigde versie aan de opdrachtgever ter beschikking is gesteld. Voor lopende opdrachten blijven de voorwaarden gelden die bij het aangaan van de opdracht van toepassing waren, tenzij partijen schriftelijk anders overeenkomen.",
+        "body": "<p><strong>19.2</strong> Deze voorwaarden zijn te raadplegen op <a href=\"/\">www.mvfunderingsquickscan.nl</a> en worden op verzoek kosteloos toegezonden.</p>"
+      },
+      {
+        "id": "bijlage-a-modelformulier",
+        "h2": "Bijlage A – Modelformulier voor herroeping",
+        "answer": "Alleen voor consumenten die een opdracht op afstand of buiten onze bedrijfsruimte hebben gesloten (zie artikel 11). Je mag dit formulier gebruiken, maar het hoeft niet.",
+        "body": "<p>(Dit formulier alleen invullen en terugzenden wanneer u de overeenkomst wilt herroepen.)</p><p>Aan: MV Funderingsscan B.V. (MV Funderings QuickScan), Mr. P.J. Troelstraweg 149 unit 23, 8919 AA Leeuwarden, <a href=\"mailto:info@mideavastgoed.nl\">info@mideavastgoed.nl</a></p><p>Ik/Wij (*) deel/delen (*) u hierbij mede dat ik/wij (*) onze overeenkomst betreffende de levering van de volgende dienst herroep/herroepen (*):</p><p>Opdracht gegeven op (*): ______________________</p><p>Naam/Namen consument(en): ______________________________________</p><p>Adres consument(en): __________________________________________</p><p>Handtekening van consument(en) (alleen wanneer dit formulier op papier wordt ingediend): ______________________</p><p>Datum: ______________________</p><p>(*) Doorhalen wat niet van toepassing is.</p>"
+      },
+      {
+        "id": "bijlage-b-dnr2025",
+        "h2": "Bijlage B – De Nieuwe Regeling 2025 (DNR2025)",
+        "answer": "Op al onze opdrachten is De Nieuwe Regeling 2025 (DNR2025) van toepassing, de standaardregeling van BNA en Koninklijke NLingenieurs voor de rechtsverhouding tussen opdrachtgever en architect/ingenieur. De volledige en ongewijzigde tekst staat in de PDF.",
+        "body": "<p><a href=\"/documenten/algemene-voorwaarden-mv-funderings-quickscan.pdf\">Download de algemene voorwaarden inclusief de volledige DNR2025 (PDF)</a>. Daarin staan deze voorwaarden met daarachter de officiële tekst van DNR2025 als Bijlage B.</p>"
       }
     ],
     "faqs": [
@@ -299,8 +339,12 @@
         "a": "<p>Ja. Je mag het rapport in zijn geheel en ongewijzigd delen met partijen die bij de aankoop, verkoop of financiering betrokken zijn.</p>"
       },
       {
-        "q": "Kan ik een opdracht kosteloos annuleren?",
-        "a": "<p>Als consument heb je bij een opdracht op afstand 14 dagen bedenktijd. Daarnaast staat in de opdrachtbevestiging tot wanneer je kosteloos kunt annuleren.</p>"
+        "q": "Kan ik een opdracht annuleren?",
+        "a": "<p>Ja. Als consument heb je bij een opdracht op afstand of buiten onze bedrijfsruimte 14 dagen bedenktijd (artikel 11). Annuleer je later, dan geldt dat als opzegging: je betaalt dan voor het werk dat al is gedaan en de redelijke kosten die al zijn gemaakt. Voor consumenten wordt dat bedrag zo nodig verlaagd tot wat redelijk is (artikel 10).</p>"
+      },
+      {
+        "q": "Wat is DNR2025 en waarom geldt die?",
+        "a": "<p>DNR2025 (De Nieuwe Regeling 2025) is de standaardregeling van BNA en Koninklijke NLingenieurs voor opdrachten aan architecten en ingenieurs. Wij verklaren DNR2025 van toepassing op al onze opdrachten; onze eigen voorwaarden vullen die regeling aan. De volledige tekst staat in de <a href=\"/documenten/algemene-voorwaarden-mv-funderings-quickscan.pdf\">PDF</a>.</p>"
       }
     ],
     "related": [

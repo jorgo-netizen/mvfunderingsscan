@@ -105,6 +105,7 @@ for (const [path, p] of Object.entries(pages).sort()) {
   }
   for (const href of p.links) {
     if (/^(tel:|mailto:|https?:)/.test(href)) continue;
+    if (/^\/documenten\/[\w.-]+\.pdf$/.test(href)) { if (!existsSync(join(DIST, href))) problems.push(`${tag} ontbrekend document ${href}`); continue; }
     const [base, frag] = href.split('#');
     const target = base === '' ? path : base;
     if (!pages[target] && !DYNAMIC.has(target)) problems.push(`${tag} kapotte link ${href}`);
